@@ -1,0 +1,76 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023, MLX Contributors
+# This file is distributed under the same license as the MLX package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: MLX 0.4\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-12-08 12:56+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../src/python/_autosummary/mlx.core.random.uniform.rst:2
+msgid "mlx.core.random.uniform"
+msgstr ""
+
+#: ../../../docstring of
+#: mlx.core.random.pybind11_detail_function_record_v1_system_libstdcpp_gxx_abi_1xxx_use_cxx11_abi_1.uniform:1
+msgid "Generate uniformly distributed random numbers."
+msgstr ""
+
+#: ../../../docstring of
+#: mlx.core.random.pybind11_detail_function_record_v1_system_libstdcpp_gxx_abi_1xxx_use_cxx11_abi_1.uniform:3
+msgid ""
+"The values are sampled uniformly in the half-open interval ``[low, high)``. "
+"The lower and upper bound can be scalars or arrays and must be broadcastable "
+"to ``shape``."
+msgstr ""
+
+#: ../../../src/python/_autosummary/mlx.core.random.uniform.rst:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../docstring of
+#: mlx.core.random.pybind11_detail_function_record_v1_system_libstdcpp_gxx_abi_1xxx_use_cxx11_abi_1.uniform:7
+msgid "Lower bound of the distribution. Default is ``0``."
+msgstr ""
+
+#: ../../../docstring of
+#: mlx.core.random.pybind11_detail_function_record_v1_system_libstdcpp_gxx_abi_1xxx_use_cxx11_abi_1.uniform:9
+msgid "Upper bound of the distribution. Default is ``1``."
+msgstr ""
+
+#: ../../../docstring of
+#: mlx.core.random.pybind11_detail_function_record_v1_system_libstdcpp_gxx_abi_1xxx_use_cxx11_abi_1.uniform:11
+msgid "Shape of the output. Default is ``()``."
+msgstr ""
+
+#: ../../../docstring of
+#: mlx.core.random.pybind11_detail_function_record_v1_system_libstdcpp_gxx_abi_1xxx_use_cxx11_abi_1.uniform:13
+msgid "A PRNG key. Default: ``None``."
+msgstr ""
+
+#: ../../../docstring of
+#: mlx.core.random.pybind11_detail_function_record_v1_system_libstdcpp_gxx_abi_1xxx_use_cxx11_abi_1.uniform:15
+msgid "Type of the output. Default is ``float32``."
+msgstr ""
+
+#: ../../../src/python/_autosummary/mlx.core.random.uniform.rst:0
+msgid "Returns"
+msgstr ""
+
+#: ../../../docstring of
+#: mlx.core.random.pybind11_detail_function_record_v1_system_libstdcpp_gxx_abi_1xxx_use_cxx11_abi_1.uniform:18
+msgid "The output array random values."
+msgstr ""
+
+#: ../../../src/python/_autosummary/mlx.core.random.uniform.rst:0
+msgid "Return type"
+msgstr ""
