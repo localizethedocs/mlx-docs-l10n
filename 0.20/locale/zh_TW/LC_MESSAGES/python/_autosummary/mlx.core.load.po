@@ -1,0 +1,75 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023, MLX Contributors
+# This file is distributed under the same license as the MLX package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: MLX 0.20\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-12-08 12:56+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../src/python/_autosummary/mlx.core.load.rst:2
+msgid "mlx.core.load"
+msgstr ""
+
+#: ../../../docstring of mlx.core.load:1
+msgid "Load array(s) from a binary file."
+msgstr ""
+
+#: ../../../docstring of mlx.core.load:3
+msgid ""
+"The supported formats are ``.npy``, ``.npz``, ``.safetensors``, and ``."
+"gguf``."
+msgstr ""
+
+#: ../../../src/python/_autosummary/mlx.core.load.rst:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../docstring of mlx.core.load:6
+msgid "File in which the array is saved."
+msgstr ""
+
+#: ../../../docstring of mlx.core.load:8
+msgid ""
+"Format of the file. If ``None``, the format is inferred from the file "
+"extension. Supported formats: ``npy``, ``npz``, and ``safetensors``. "
+"Default: ``None``."
+msgstr ""
+
+#: ../../../docstring of mlx.core.load:12
+msgid ""
+"Load the metadata for formats which support matadata. The metadata will be "
+"returned as an additional dictionary. Default: ``False``."
+msgstr ""
+
+#: ../../../src/python/_autosummary/mlx.core.load.rst:0
+msgid "Returns"
+msgstr ""
+
+#: ../../../docstring of mlx.core.load:17
+msgid ""
+"A single array if loading from a ``.npy`` file or a dict mapping names to "
+"arrays if loading from a ``.npz`` or ``.safetensors`` file. If "
+"``return_metadata` is ``True`` an additional dictionary of metadata will be "
+"returned."
+msgstr ""
+
+#: ../../../src/python/_autosummary/mlx.core.load.rst:0
+msgid "Return type"
+msgstr ""
+
+#: ../../../docstring of mlx.core.load:25
+msgid ""
+"When loading unsupported quantization formats from GGUF, tensors will "
+"automatically cast to ``mx.float16``"
+msgstr ""
