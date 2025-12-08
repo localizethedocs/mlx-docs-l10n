@@ -1,0 +1,76 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023, MLX Contributors
+# This file is distributed under the same license as the MLX package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: MLX 0.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-12-08 12:20+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../src/python/optimizers/optimizer.rst:2
+msgid "Optimizer"
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/optimizers/optimizers.py:docstring
+#: of mlx.optimizers.optimizers.Optimizer:1
+msgid ""
+"The base class for all optimizers. It allows us to implement an optimizer on "
+"a per-parameter basis and apply it to a parameter tree."
+msgstr ""
+
+#: ../../../src/python/optimizers/optimizer.rst:10
+msgid "Attributes"
+msgstr ""
+
+#: ../../../src/python/optimizers/optimizer.rst:15:<autosummary>:1
+msgid ":py:obj:`Optimizer.state <mlx.optimizers.Optimizer.state>`\\"
+msgstr ""
+
+#: ../../../src/python/optimizers/optimizer.rst:15:<autosummary>:1
+msgid "The optimizer's state dictionary."
+msgstr ""
+
+#: ../../../src/python/optimizers/optimizer.rst:17
+msgid "Methods"
+msgstr ""
+
+#: ../../../src/python/optimizers/optimizer.rst:23:<autosummary>:1
+msgid ""
+":py:obj:`Optimizer.apply_gradients <mlx.optimizers.Optimizer."
+"apply_gradients>`\\ \\(gradients\\, parameters\\)"
+msgstr ""
+
+#: ../../../src/python/optimizers/optimizer.rst:23:<autosummary>:1
+msgid ""
+"Apply the gradients to the parameters and return the updated parameters."
+msgstr ""
+
+#: ../../../src/python/optimizers/optimizer.rst:23:<autosummary>:1
+msgid ""
+":py:obj:`Optimizer.init <mlx.optimizers.Optimizer.init>`\\ \\(parameters\\)"
+msgstr ""
+
+#: ../../../src/python/optimizers/optimizer.rst:23:<autosummary>:1
+msgid "Initialize the optimizer's state"
+msgstr ""
+
+#: ../../../src/python/optimizers/optimizer.rst:23:<autosummary>:1
+msgid ""
+":py:obj:`Optimizer.update <mlx.optimizers.Optimizer.update>`\\ \\(model\\, "
+"gradients\\)"
+msgstr ""
+
+#: ../../../src/python/optimizers/optimizer.rst:23:<autosummary>:1
+msgid ""
+"Apply the gradients to the parameters of the model and update the model with "
+"the new parameters."
+msgstr ""
