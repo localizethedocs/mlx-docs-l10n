@@ -1,0 +1,59 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023, Apple
+# This file is distributed under the same license as the MLX package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: MLX 0.27\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-12-08 12:54+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../src/python/_autosummary/mlx.core.meshgrid.rst:2
+msgid "mlx.core.meshgrid"
+msgstr ""
+
+#: ../../../docstring of mlx.core.meshgrid:1
+msgid "Generate multidimensional coordinate grids from 1-D coordinate arrays"
+msgstr ""
+
+#: ../../../src/python/_autosummary/mlx.core.meshgrid.rst:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../docstring of mlx.core.meshgrid:3
+msgid "Input arrays."
+msgstr ""
+
+#: ../../../docstring of mlx.core.meshgrid:5
+msgid ""
+"If ``True``, a sparse grid is returned in which each output array has a "
+"single non-zero element. If ``False``, a dense grid is returned. Defaults to "
+"``False``."
+msgstr ""
+
+#: ../../../docstring of mlx.core.meshgrid:9
+msgid ""
+"Cartesian ('xy') or matrix ('ij') indexing of the output arrays. Defaults to "
+"``'xy'``."
+msgstr ""
+
+#: ../../../src/python/_autosummary/mlx.core.meshgrid.rst:0
+msgid "Returns"
+msgstr ""
+
+#: ../../../docstring of mlx.core.meshgrid:13
+msgid "The output arrays."
+msgstr ""
+
+#: ../../../src/python/_autosummary/mlx.core.meshgrid.rst:0
+msgid "Return type"
+msgstr ""

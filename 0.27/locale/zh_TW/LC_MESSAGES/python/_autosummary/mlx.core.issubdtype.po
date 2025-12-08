@@ -1,0 +1,68 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023, Apple
+# This file is distributed under the same license as the MLX package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: MLX 0.27\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-12-08 12:54+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../src/python/_autosummary/mlx.core.issubdtype.rst:2
+msgid "mlx.core.issubdtype"
+msgstr ""
+
+#: ../../../docstring of mlx.core.issubdtype:1
+msgid ""
+"Check if a :obj:`Dtype` or :obj:`DtypeCategory` is a subtype of another."
+msgstr ""
+
+#: ../../../docstring of mlx.core.issubdtype:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../docstring of mlx.core.issubdtype:4 mlx.core.issubdtype:5
+msgid "First dtype or category."
+msgstr ""
+
+#: ../../../docstring of mlx.core.issubdtype:6 mlx.core.issubdtype:7
+msgid "Second dtype or category."
+msgstr ""
+
+#: ../../../docstring of mlx.core.issubdtype:0
+msgid "Returns"
+msgstr ""
+
+#: ../../../docstring of mlx.core.issubdtype:9
+msgid ""
+"A boolean indicating if the first input is a subtype of the second input."
+msgstr ""
+
+#: ../../../docstring of mlx.core.issubdtype:0
+msgid "Return type"
+msgstr ""
+
+#: ../../../docstring of mlx.core.issubdtype:14
+msgid "Example"
+msgstr ""
+
+#: ../../../docstring of mlx.core.issubdtype:27
+msgid "Similar types of different sizes are not subdtypes of each other:"
+msgstr ""
+
+#: ../../../docstring of mlx.core.issubdtype:34
+msgid "but both are subtypes of `floating`:"
+msgstr ""
+
+#: ../../../docstring of mlx.core.issubdtype:41
+msgid "For convenience, dtype-like objects are allowed too:"
+msgstr ""
