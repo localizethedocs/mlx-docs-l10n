@@ -1,0 +1,78 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023, Apple
+# This file is distributed under the same license as the MLX package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: MLX 0.30\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-12-08 12:54+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../src/python/nn/_autosummary_functions/mlx.nn.losses.huber_loss.rst:2
+msgid "mlx.nn.losses.huber\\_loss"
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/losses.py:docstring
+#: of mlx.nn.losses.huber_loss:1
+msgid "Computes the Huber loss between inputs and targets."
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/losses.py:docstring
+#: of mlx.nn.losses.huber_loss:3
+msgid ""
+"l_{\\delta}(a) =\n"
+"\\left\\{ \\begin{array}{ll}\n"
+"    \\frac{1}{2} a^2 & \\text{for } |a| \\leq \\delta, \\\\\n"
+"    \\delta \\left( |a| - \\frac{1}{2} \\delta \\right) & "
+"\\text{otherwise.}\n"
+"\\end{array} \\right."
+msgstr ""
+
+#: ../../../src/python/nn/_autosummary_functions/mlx.nn.losses.huber_loss.rst:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/losses.py:docstring
+#: of mlx.nn.losses.huber_loss:11
+msgid "The predicted values."
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/losses.py:docstring
+#: of mlx.nn.losses.huber_loss:13
+msgid "The target values."
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/losses.py:docstring
+#: of mlx.nn.losses.huber_loss:15
+msgid ""
+"The threshold at which to change between L1 and L2 loss. Default: ``1.0``."
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/losses.py:docstring
+#: of mlx.nn.losses.huber_loss:18
+msgid ""
+"Specifies the reduction to apply to the output: ``'none'`` | ``'mean'`` | "
+"``'sum'``. Default: ``'none'``."
+msgstr ""
+
+#: ../../../src/python/nn/_autosummary_functions/mlx.nn.losses.huber_loss.rst:0
+msgid "Returns"
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/losses.py:docstring
+#: of mlx.nn.losses.huber_loss:22
+msgid "The computed Huber loss."
+msgstr ""
+
+#: ../../../src/python/nn/_autosummary_functions/mlx.nn.losses.huber_loss.rst:0
+msgid "Return type"
+msgstr ""
