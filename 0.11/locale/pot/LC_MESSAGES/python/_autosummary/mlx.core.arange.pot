@@ -1,0 +1,74 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023, MLX Contributors
+# This file is distributed under the same license as the MLX package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: MLX 0.11\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-12-08 12:58+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../src/python/_autosummary/mlx.core.arange.rst:2
+msgid "mlx.core.arange"
+msgstr ""
+
+#: ../../../docstring of mlx.core.arange:1
+msgid "Generates ranges of numbers."
+msgstr ""
+
+#: ../../../docstring of mlx.core.arange:3
+msgid ""
+"Generate numbers in the half-open interval ``[start, stop)`` in increments "
+"of ``step``."
+msgstr ""
+
+#: ../../../src/python/_autosummary/mlx.core.arange.rst:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../docstring of mlx.core.arange:6
+msgid "Starting value which defaults to ``0``."
+msgstr ""
+
+#: ../../../docstring of mlx.core.arange:8
+msgid "Stopping value."
+msgstr ""
+
+#: ../../../docstring of mlx.core.arange:10
+msgid "Increment which defaults to ``1``."
+msgstr ""
+
+#: ../../../docstring of mlx.core.arange:12
+msgid ""
+"Specifies the data type of the output. If unspecified will default to "
+"``float32`` if any of ``start``, ``stop``, or ``step`` are ``float``. "
+"Otherwise will default to ``int32``."
+msgstr ""
+
+#: ../../../src/python/_autosummary/mlx.core.arange.rst:0
+msgid "Returns"
+msgstr ""
+
+#: ../../../docstring of mlx.core.arange:18
+msgid "The range of values."
+msgstr ""
+
+#: ../../../src/python/_autosummary/mlx.core.arange.rst:0
+msgid "Return type"
+msgstr ""
+
+#: ../../../docstring of mlx.core.arange:23
+msgid ""
+"Following the Numpy convention the actual increment used to generate numbers "
+"is ``dtype(start + step) - dtype(start)``. This can lead to unexpected "
+"results for example if `start + step` is a fractional value and the `dtype` "
+"is integral."
+msgstr ""
