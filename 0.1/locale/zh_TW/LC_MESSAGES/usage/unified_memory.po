@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../../src/usage/unified_memory.rst:4
 msgid "Unified Memory"
-msgstr ""
+msgstr "統一記憶體"
 
 #: ../../../src/usage/unified_memory.rst:8
 msgid ""
@@ -38,10 +38,12 @@ msgid ""
 "a = mx.random.normal((100,))\n"
 "b = mx.random.normal((100,))"
 msgstr ""
+"a = mx.random.normal((100,))\n"
+"b = mx.random.normal((100,))"
 
 #: ../../../src/usage/unified_memory.rst:19
 msgid "Both ``a`` and ``b`` live in unified memory."
-msgstr ""
+msgstr "``a`` 和 ``b`` 皆存在於統一記憶體中。"
 
 #: ../../../src/usage/unified_memory.rst:21
 msgid ""
@@ -56,6 +58,8 @@ msgid ""
 "mx.add(a, b, stream=mx.cpu)\n"
 "mx.add(a, b, stream=mx.gpu)"
 msgstr ""
+"mx.add(a, b, stream=mx.cpu)\n"
+"mx.add(a, b, stream=mx.gpu)"
 
 #: ../../../src/usage/unified_memory.rst:30
 msgid ""
@@ -77,6 +81,8 @@ msgid ""
 "c = mx.add(a, b, stream=mx.cpu)\n"
 "d = mx.add(a, c, stream=mx.gpu)"
 msgstr ""
+"c = mx.add(a, b, stream=mx.cpu)\n"
+"d = mx.add(a, c, stream=mx.gpu)"
 
 #: ../../../src/usage/unified_memory.rst:44
 msgid ""
@@ -105,6 +111,11 @@ msgid ""
 "      b = mx.exp(b, stream=d2)\n"
 "  return x, b"
 msgstr ""
+"def fun(a, b, d1, d2):\n"
+"  x = mx.matmul(a, b, stream=d1)\n"
+"  for _ in range(500):\n"
+"      b = mx.exp(b, stream=d2)\n"
+"  return x, b"
 
 #: ../../../src/usage/unified_memory.rst:64
 msgid "which we want to run with the following arguments:"
@@ -115,6 +126,8 @@ msgid ""
 "a = mx.random.uniform(shape=(4096, 512))\n"
 "b = mx.random.uniform(shape=(512, 4))"
 msgstr ""
+"a = mx.random.uniform(shape=(4096, 512))\n"
+"b = mx.random.uniform(shape=(512, 4))"
 
 #: ../../../src/usage/unified_memory.rst:71
 msgid ""
