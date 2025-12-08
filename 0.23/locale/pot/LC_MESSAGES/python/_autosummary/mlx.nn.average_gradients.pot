@@ -1,0 +1,67 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023, MLX Contributors
+# This file is distributed under the same license as the MLX package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: MLX 0.23\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-12-08 15:56+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../src/python/_autosummary/mlx.nn.average_gradients.rst:2
+msgid "mlx.nn.average\\_gradients"
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/utils.py:docstring
+#: of mlx.nn.utils.average_gradients:1
+msgid ""
+"Average the gradients across the distributed processes in the passed group."
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/utils.py:docstring
+#: of mlx.nn.utils.average_gradients:3
+msgid ""
+"This helper enables concatenating several gradients of small arrays to one "
+"big all reduce call for better networking performance."
+msgstr ""
+
+#: ../../../src/python/_autosummary/mlx.nn.average_gradients.rst:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/utils.py:docstring
+#: of mlx.nn.utils.average_gradients:6
+msgid ""
+"The Python tree containing the gradients (it should have the same structure "
+"across processes)"
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/utils.py:docstring
+#: of mlx.nn.utils.average_gradients:9
+msgid ""
+"The group of processes to average the gradients. If set to ``None`` the "
+"global group is used. Default: ``None``."
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/utils.py:docstring
+#: of mlx.nn.utils.average_gradients:13
+msgid ""
+"Group arrays until their size in bytes exceeds this number. Perform one "
+"communication step per group of arrays. If less or equal to 0 array grouping "
+"is disabled. Default: ``32MiB``."
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/utils.py:docstring
+#: of mlx.nn.utils.average_gradients:17
+msgid ""
+"If provided cast to this type before performing the communication. Typically "
+"cast to a smaller float to reduce the communication size. Default: ``None``."
+msgstr ""
