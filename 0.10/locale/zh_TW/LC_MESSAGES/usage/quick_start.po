@@ -1,0 +1,104 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023, MLX Contributors
+# This file is distributed under the same license as the MLX package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: MLX 0.10\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-12-08 12:56+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../src/usage/quick_start.rst:2
+msgid "Quick Start Guide"
+msgstr ""
+
+#: ../../../src/usage/quick_start.rst:6
+msgid "Basics"
+msgstr ""
+
+#: ../../../src/usage/quick_start.rst:10
+msgid "Import ``mlx.core`` and make an :class:`array`:"
+msgstr ""
+
+#: ../../../src/usage/quick_start.rst:12
+msgid ""
+">> import mlx.core as mx\n"
+">> a = mx.array([1, 2, 3, 4])\n"
+">> a.shape\n"
+"[4]\n"
+">> a.dtype\n"
+"int32\n"
+">> b = mx.array([1.0, 2.0, 3.0, 4.0])\n"
+">> b.dtype\n"
+"float32"
+msgstr ""
+
+#: ../../../src/usage/quick_start.rst:24
+msgid ""
+"Operations in MLX are lazy. The outputs of MLX operations are not computed "
+"until they are needed. To force an array to be evaluated use :func:`eval`.  "
+"Arrays will automatically be evaluated in a few cases. For example, "
+"inspecting a scalar with :meth:`array.item`, printing an array, or "
+"converting an array from :class:`array` to :class:`numpy.ndarray` all "
+"automatically evaluate the array."
+msgstr ""
+
+#: ../../../src/usage/quick_start.rst:31
+msgid ""
+">> c = a + b    # c not yet evaluated\n"
+">> mx.eval(c)  # evaluates c\n"
+">> c = a + b\n"
+">> print(c)     # Also evaluates c\n"
+"array([2, 4, 6, 8], dtype=float32)\n"
+">> c = a + b\n"
+">> import numpy as np\n"
+">> np.array(c)   # Also evaluates c\n"
+"array([2., 4., 6., 8.], dtype=float32)"
+msgstr ""
+
+#: ../../../src/usage/quick_start.rst:44
+msgid "See the page on :ref:`Lazy Evaluation <lazy eval>` for more details."
+msgstr ""
+
+#: ../../../src/usage/quick_start.rst:47
+msgid "Function and Graph Transformations"
+msgstr ""
+
+#: ../../../src/usage/quick_start.rst:49
+msgid ""
+"MLX has standard function transformations like :func:`grad` and :func:"
+"`vmap`. Transformations can be composed arbitrarily. For example "
+"``grad(vmap(grad(fn)))`` (or any other composition) is allowed."
+msgstr ""
+
+#: ../../../src/usage/quick_start.rst:53
+msgid ""
+">> x = mx.array(0.0)\n"
+">> mx.sin(x)\n"
+"array(0, dtype=float32)\n"
+">> mx.grad(mx.sin)(x)\n"
+"array(1, dtype=float32)\n"
+">> mx.grad(mx.grad(mx.sin))(x)\n"
+"array(-0, dtype=float32)"
+msgstr ""
+
+#: ../../../src/usage/quick_start.rst:63
+msgid ""
+"Other gradient transformations include :func:`vjp` for vector-Jacobian "
+"products and :func:`jvp` for Jacobian-vector products."
+msgstr ""
+
+#: ../../../src/usage/quick_start.rst:66
+msgid ""
+"Use :func:`value_and_grad` to efficiently compute both a function's output "
+"and gradient with respect to the function's input."
+msgstr ""
