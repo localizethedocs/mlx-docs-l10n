@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../../src/index.rst:28
 msgid "Install"
-msgstr ""
+msgstr "安裝"
 
 #: ../../../src/index.rst:34
 msgid "Usage"
@@ -27,19 +27,19 @@ msgstr ""
 
 #: ../../../src/index.rst:50
 msgid "Examples"
-msgstr ""
+msgstr "範例"
 
 #: ../../../src/index.rst:58
 msgid "Python API Reference"
-msgstr ""
+msgstr "Python API 參考"
 
 #: ../../../src/index.rst:78
 msgid "C++ API Reference"
-msgstr ""
+msgstr "C++ API 參考"
 
 #: ../../../src/index.rst:84
 msgid "Further Reading"
-msgstr ""
+msgstr "延伸閱讀"
 
 #: ../../../src/index.rst:2
 msgid "MLX"
@@ -51,6 +51,8 @@ msgid ""
 "machine learning on Apple silicon, brought to you by Apple machine learning "
 "research."
 msgstr ""
+"MLX 是一個類似 NumPy 的陣列框架，為 Apple 晶片上的高效且靈活的機器學習而設"
+"計，由 Apple 機器學習研究團隊提供。"
 
 #: ../../../src/index.rst:7
 msgid ""
@@ -60,7 +62,7 @@ msgstr ""
 
 #: ../../../src/index.rst:10
 msgid "The main differences between MLX and NumPy are:"
-msgstr ""
+msgstr "MLX 與 NumPy 之間的主要差異為："
 
 #: ../../../src/index.rst:12
 msgid ""
