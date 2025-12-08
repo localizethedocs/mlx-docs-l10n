@@ -1,0 +1,519 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023, MLX Contributors
+# This file is distributed under the same license as the MLX package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: MLX 0.25\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-12-08 12:39+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../src/usage/distributed.rst:4
+msgid "Distributed Communication"
+msgstr ""
+
+#: ../../../src/usage/distributed.rst:8
+msgid ""
+"MLX supports distributed communication operations that allow the "
+"computational cost of training or inference to be shared across many "
+"physical machines. At the moment we support two different communication "
+"backends:"
+msgstr ""
+
+#: ../../../src/usage/distributed.rst:12
+msgid ""
+"`MPI <https://en.wikipedia.org/wiki/Message_Passing_Interface>`_ a full-"
+"featured and mature distributed communications library"
+msgstr ""
+
+#: ../../../src/usage/distributed.rst:14
+msgid ""
+"A **ring** backend of our own that uses native TCP sockets and should be "
+"faster for thunderbolt connections."
+msgstr ""
+
+#: ../../../src/usage/distributed.rst:17
+msgid ""
+"The list of all currently supported operations and their documentation can "
+"be seen in the :ref:`API docs<distributed>`."
+msgstr ""
+
+#: ../../../src/usage/distributed.rst:21
+msgid ""
+"Some operations may not be supported or not as fast as they should be. We "
+"are adding more and tuning the ones we have as we are figuring out the best "
+"way to do distributed computing on Macs using MLX."
+msgstr ""
+
+#: ../../../src/usage/distributed.rst:26
+msgid "Getting Started"
+msgstr ""
+
+#: ../../../src/usage/distributed.rst:28
+msgid "A distributed program in MLX is as simple as:"
+msgstr ""
+
+#: ../../../src/usage/distributed.rst:30
+msgid ""
+"import mlx.core as mx\n"
+"\n"
+"world = mx.distributed.init()\n"
+"x = mx.distributed.all_sum(mx.ones(10))\n"
+"print(world.rank(), x)"
+msgstr ""
+
+#: ../../../src/usage/distributed.rst:38
+msgid ""
+"The program above sums the array ``mx.ones(10)`` across all distributed "
+"processes. However, when this script is run with ``python`` only one process "
+"is launched and no distributed communication takes place. Namely, all "
+"operations in ``mx.distributed`` are noops when the distributed group has a "
+"size of one. This property allows us to avoid code that checks if we are in "
+"a distributed setting similar to the one below:"
+msgstr ""
+
+#: ../../../src/usage/distributed.rst:45
+msgid ""
+"import mlx.core as mx\n"
+"\n"
+"x = ...\n"
+"world = mx.distributed.init()\n"
+"# No need for the check we can simply do x = mx.distributed.all_sum(x)\n"
+"if world.size() > 1:\n"
+"    x = mx.distributed.all_sum(x)"
+msgstr ""
+
+#: ../../../src/usage/distributed.rst:56
+msgid "Running Distributed Programs"
+msgstr ""
+
+#: ../../../src/usage/distributed.rst:58
+msgid ""
+"MLX provides ``mlx.launch`` a helper script to launch distributed programs. "
+"Continuing with our initial example we can run it on localhost with 4 "
+"processes using"
+msgstr ""
+
+#: ../../../src/usage/distributed.rst:61
+msgid ""
+"$ mlx.launch -n 4 my_script.py\n"
+"3 array([4, 4, 4, ..., 4, 4, 4], dtype=float32)\n"
+"2 array([4, 4, 4, ..., 4, 4, 4], dtype=float32)\n"
+"1 array([4, 4, 4, ..., 4, 4, 4], dtype=float32)\n"
+"0 array([4, 4, 4, ..., 4, 4, 4], dtype=float32)"
+msgstr ""
+
+#: ../../../src/usage/distributed.rst:69
+msgid ""
+"We can also run it on some remote hosts by providing their IPs (provided "
+"that the script exists on all hosts and they are reachable by ssh)"
+msgstr ""
+
+#: ../../../src/usage/distributed.rst:72
+msgid ""
+"$ mlx.launch --hosts ip1,ip2,ip3,ip4 my_script.py\n"
+"3 array([4, 4, 4, ..., 4, 4, 4], dtype=float32)\n"
+"2 array([4, 4, 4, ..., 4, 4, 4], dtype=float32)\n"
+"1 array([4, 4, 4, ..., 4, 4, 4], dtype=float32)\n"
+"0 array([4, 4, 4, ..., 4, 4, 4], dtype=float32)"
+msgstr ""
+
+#: ../../../src/usage/distributed.rst:80
+msgid ""
+"Consult the dedicated :doc:`usage guide<launching_distributed>` for more "
+"information on using ``mlx.launch``."
+msgstr ""
+
+#: ../../../src/usage/distributed.rst:84
+msgid "Selecting Backend"
+msgstr ""
+
+#: ../../../src/usage/distributed.rst:86
+msgid ""
+"You can select the backend you want to use when calling :func:`init` by "
+"passing one of ``{'any', 'ring', 'mpi'}``. When passing ``any``, MLX will "
+"try to initialize the ``ring`` backend and if it fails the ``mpi`` backend. "
+"If they both fail then a singleton group is created."
+msgstr ""
+
+#: ../../../src/usage/distributed.rst:92
+msgid ""
+"After a distributed backend is successfully initialized :func:`init` will "
+"return **the same backend** if called without arguments or with backend set "
+"to ``any``."
+msgstr ""
+
+#: ../../../src/usage/distributed.rst:96
+msgid ""
+"The following examples aim to clarify the backend initialization logic in "
+"MLX:"
+msgstr ""
+
+#: ../../../src/usage/distributed.rst:98
+msgid ""
+"# Case 1: Initialize MPI regardless if it was possible to initialize the "
+"ring backend\n"
+"world = mx.distributed.init(backend=\"mpi\")\n"
+"world2 = mx.distributed.init()  # subsequent calls return the MPI backend!\n"
+"\n"
+"# Case 2: Initialize any backend\n"
+"world = mx.distributed.init(backend=\"any\")  # equivalent to no arguments\n"
+"world2 = mx.distributed.init()  # same as above\n"
+"\n"
+"# Case 3: Initialize both backends at the same time\n"
+"world_mpi = mx.distributed.init(backend=\"mpi\")\n"
+"world_ring = mx.distributed.init(backend=\"ring\")\n"
+"world_any = mx.distributed.init()  # same as MPI because it was initialized "
+"first!"
+msgstr ""
+
+#: ../../../src/usage/distributed.rst:114
+msgid "Training Example"
+msgstr ""
+
+#: ../../../src/usage/distributed.rst:116
+msgid ""
+"In this section we will adapt an MLX training loop to support data parallel "
+"distributed training. Namely, we will average the gradients across a set of "
+"hosts before applying them to the model."
+msgstr ""
+
+#: ../../../src/usage/distributed.rst:120
+msgid ""
+"Our training loop looks like the following code snippet if we omit the "
+"model, dataset and optimizer initialization."
+msgstr ""
+
+#: ../../../src/usage/distributed.rst:123
+msgid ""
+"model = ...\n"
+"optimizer = ...\n"
+"dataset = ...\n"
+"\n"
+"def step(model, x, y):\n"
+"    loss, grads = loss_grad_fn(model, x, y)\n"
+"    optimizer.update(model, grads)\n"
+"    return loss\n"
+"\n"
+"for x, y in dataset:\n"
+"    loss = step(model, x, y)\n"
+"    mx.eval(loss, model.parameters())"
+msgstr ""
+
+#: ../../../src/usage/distributed.rst:138
+msgid ""
+"All we have to do to average the gradients across machines is perform an :"
+"func:`all_sum` and divide by the size of the :class:`Group`. Namely we have "
+"to :func:`mlx.utils.tree_map` the gradients with following function."
+msgstr ""
+
+#: ../../../src/usage/distributed.rst:142
+msgid ""
+"def all_avg(x):\n"
+"    return mx.distributed.all_sum(x) / mx.distributed.init().size()"
+msgstr ""
+
+#: ../../../src/usage/distributed.rst:147
+msgid ""
+"Putting everything together our training loop step looks as follows with "
+"everything else remaining the same."
+msgstr ""
+
+#: ../../../src/usage/distributed.rst:150
+msgid ""
+"from mlx.utils import tree_map\n"
+"\n"
+"def all_reduce_grads(grads):\n"
+"    N = mx.distributed.init().size()\n"
+"    if N == 1:\n"
+"        return grads\n"
+"    return tree_map(\n"
+"        lambda x: mx.distributed.all_sum(x) / N,\n"
+"        grads\n"
+"    )\n"
+"\n"
+"def step(model, x, y):\n"
+"    loss, grads = loss_grad_fn(model, x, y)\n"
+"    grads = all_reduce_grads(grads)  # <--- This line was added\n"
+"    optimizer.update(model, grads)\n"
+"    return loss"
+msgstr ""
+
+#: ../../../src/usage/distributed.rst:170
+msgid "Utilizing ``nn.average_gradients``"
+msgstr ""
+
+#: ../../../src/usage/distributed.rst:172
+msgid ""
+"Although the code example above works correctly; it performs one "
+"communication per gradient. It is significantly more efficient to aggregate "
+"several gradients together and perform fewer communication steps."
+msgstr ""
+
+#: ../../../src/usage/distributed.rst:176
+msgid ""
+"This is the purpose of :func:`mlx.nn.average_gradients`. The final code "
+"looks almost identical to the example above:"
+msgstr ""
+
+#: ../../../src/usage/distributed.rst:179
+msgid ""
+"model = ...\n"
+"optimizer = ...\n"
+"dataset = ...\n"
+"\n"
+"def step(model, x, y):\n"
+"    loss, grads = loss_grad_fn(model, x, y)\n"
+"    grads = mlx.nn.average_gradients(grads) # <---- This line was added\n"
+"    optimizer.update(model, grads)\n"
+"    return loss\n"
+"\n"
+"for x, y in dataset:\n"
+"    loss = step(model, x, y)\n"
+"    mx.eval(loss, model.parameters())"
+msgstr ""
+
+#: ../../../src/usage/distributed.rst:197
+msgid "Getting Started with MPI"
+msgstr ""
+
+#: ../../../src/usage/distributed.rst:199
+msgid ""
+"MLX already comes with the ability to \"talk\" to MPI if it is installed on "
+"the machine. Launching distributed MLX programs that use MPI can be done "
+"with ``mpirun`` as expected. However, in the following examples we will be "
+"using ``mlx.launch --backend mpi`` which takes care of some nuisances such "
+"as setting absolute paths for the ``mpirun`` executable and the ``libmpi."
+"dyld`` shared library."
+msgstr ""
+
+#: ../../../src/usage/distributed.rst:206
+msgid ""
+"The simplest possible usage is the following which, assuming the minimal "
+"example in the beginning of this page, should result in:"
+msgstr ""
+
+#: ../../../src/usage/distributed.rst:209
+msgid ""
+"$ mlx.launch --backend mpi -n 2 test.py\n"
+"1 array([2, 2, 2, ..., 2, 2, 2], dtype=float32)\n"
+"0 array([2, 2, 2, ..., 2, 2, 2], dtype=float32)"
+msgstr ""
+
+#: ../../../src/usage/distributed.rst:215
+msgid ""
+"The above launches two processes on the same (local) machine and we can see "
+"both standard output streams. The processes send the array of 1s to each "
+"other and compute the sum which is printed. Launching with ``mlx.launch -n "
+"4 ...`` would print 4 etc."
+msgstr ""
+
+#: ../../../src/usage/distributed.rst:221
+msgid "Installing MPI"
+msgstr ""
+
+#: ../../../src/usage/distributed.rst:223
+msgid ""
+"MPI can be installed with Homebrew, using the Anaconda package manager or "
+"compiled from source. Most of our testing is done using ``openmpi`` "
+"installed with the Anaconda package manager as follows:"
+msgstr ""
+
+#: ../../../src/usage/distributed.rst:227
+msgid "$ conda install conda-forge::openmpi"
+msgstr ""
+
+#: ../../../src/usage/distributed.rst:231
+msgid ""
+"Installing with Homebrew may require specifying the location of ``libmpi."
+"dyld`` so that MLX can find it and load it at runtime. This can simply be "
+"achieved by passing the ``DYLD_LIBRARY_PATH`` environment variable to "
+"``mpirun`` and it is done automatically by ``mlx.launch``."
+msgstr ""
+
+#: ../../../src/usage/distributed.rst:236
+msgid ""
+"$ mpirun -np 2 -x DYLD_LIBRARY_PATH=/opt/homebrew/lib/ python test.py\n"
+"$ # or simply\n"
+"$ mlx.launch -n 2 test.py"
+msgstr ""
+
+#: ../../../src/usage/distributed.rst:243
+msgid "Setting up Remote Hosts"
+msgstr ""
+
+#: ../../../src/usage/distributed.rst:245
+msgid ""
+"MPI can automatically connect to remote hosts and set up the communication "
+"over the network if the remote hosts can be accessed via ssh. A good "
+"checklist to debug connectivity issues is the following:"
+msgstr ""
+
+#: ../../../src/usage/distributed.rst:249
+msgid ""
+"``ssh hostname`` works from all machines to all machines without asking for "
+"password or host confirmation"
+msgstr ""
+
+#: ../../../src/usage/distributed.rst:251
+msgid "``mpirun`` is accessible on all machines."
+msgstr ""
+
+#: ../../../src/usage/distributed.rst:252
+msgid ""
+"Ensure that the ``hostname`` used by MPI is the one that you have configured "
+"in the ``.ssh/config`` files on all machines."
+msgstr ""
+
+#: ../../../src/usage/distributed.rst:256
+msgid "Tuning MPI All Reduce"
+msgstr ""
+
+#: ../../../src/usage/distributed.rst:260
+msgid ""
+"For faster all reduce consider using the ring backend either with "
+"Thunderbolt connections or over Ethernet."
+msgstr ""
+
+#: ../../../src/usage/distributed.rst:263
+msgid ""
+"Configure MPI to use N tcp connections between each host to improve "
+"bandwidth by passing ``--mca btl_tcp_links N``."
+msgstr ""
+
+#: ../../../src/usage/distributed.rst:266
+msgid ""
+"Force MPI to use the most performant network interface by setting ``--mca "
+"btl_tcp_if_include <iface>`` where ``<iface>`` should be the interface you "
+"want to use."
+msgstr ""
+
+#: ../../../src/usage/distributed.rst:271
+msgid "Getting Started with Ring"
+msgstr ""
+
+#: ../../../src/usage/distributed.rst:273
+msgid ""
+"The ring backend does not depend on any third party library so it is always "
+"available. It uses TCP sockets so the nodes need to be reachable via a "
+"network. As the name suggests the nodes are connected in a ring which means "
+"that rank 1 can only communicate with rank 0 and rank 2, rank 2 only with "
+"rank 1 and rank 3 and so on and so forth. As a result :func:`send` and :func:"
+"`recv` with arbitrary sender and receiver is not supported in the ring "
+"backend."
+msgstr ""
+
+#: ../../../src/usage/distributed.rst:281
+msgid "Defining a Ring"
+msgstr ""
+
+#: ../../../src/usage/distributed.rst:283
+msgid ""
+"The easiest way to define and use a ring is via a JSON hostfile and the "
+"``mlx.launch`` :doc:`helper script <launching_distributed>`. For each node "
+"one defines a hostname to ssh into to run commands on this node and one or "
+"more IPs that this node will listen to for connections."
+msgstr ""
+
+#: ../../../src/usage/distributed.rst:288
+msgid ""
+"For example the hostfile below defines a 4 node ring. ``hostname1`` will be "
+"rank 0, ``hostname2`` rank 1 etc."
+msgstr ""
+
+#: ../../../src/usage/distributed.rst:291
+msgid ""
+"[\n"
+"    {\"ssh\": \"hostname1\", \"ips\": [\"123.123.123.1\"]},\n"
+"    {\"ssh\": \"hostname2\", \"ips\": [\"123.123.123.2\"]},\n"
+"    {\"ssh\": \"hostname3\", \"ips\": [\"123.123.123.3\"]},\n"
+"    {\"ssh\": \"hostname4\", \"ips\": [\"123.123.123.4\"]}\n"
+"]"
+msgstr ""
+
+#: ../../../src/usage/distributed.rst:300
+msgid ""
+"Running ``mlx.launch --hostfile ring-4.json my_script.py`` will ssh into "
+"each node, run the script which will listen for connections in each of the "
+"provided IPs. Specifically, ``hostname1`` will connect to ``123.123.123.2`` "
+"and accept a connection from ``123.123.123.4`` and so on and so forth."
+msgstr ""
+
+#: ../../../src/usage/distributed.rst:306
+msgid "Thunderbolt Ring"
+msgstr ""
+
+#: ../../../src/usage/distributed.rst:308
+msgid ""
+"Although the ring backend can have benefits over MPI even for Ethernet, its "
+"main purpose is to use Thunderbolt rings for higher bandwidth communication. "
+"Setting up such thunderbolt rings can be done manually, but is a relatively "
+"tedious process. To simplify this, we provide the utility ``mlx."
+"distributed_config``."
+msgstr ""
+
+#: ../../../src/usage/distributed.rst:313
+msgid ""
+"To use ``mlx.distributed_config`` your computers need to be accessible by "
+"ssh via Ethernet or Wi-Fi. Subsequently, connect them via thunderbolt cables "
+"and then call the utility as follows:"
+msgstr ""
+
+#: ../../../src/usage/distributed.rst:317
+msgid "mlx.distributed_config --verbose --hosts host1,host2,host3,host4"
+msgstr ""
+
+#: ../../../src/usage/distributed.rst:321
+msgid ""
+"By default the script will attempt to discover the thunderbolt ring and "
+"provide you with the commands to configure each node as well as the "
+"``hostfile.json`` to use with ``mlx.launch``. If password-less ``sudo`` is "
+"available on the nodes then ``--auto-setup`` can be used to configure them "
+"automatically."
+msgstr ""
+
+#: ../../../src/usage/distributed.rst:326
+msgid ""
+"To validate your connection without configuring anything ``mlx."
+"distributed_config`` can also plot the ring using DOT format."
+msgstr ""
+
+#: ../../../src/usage/distributed.rst:329
+msgid ""
+"mlx.distributed_config --verbose --hosts host1,host2,host3,host4 --dot >ring."
+"dot\n"
+"dot -Tpng ring.dot >ring.png\n"
+"open ring.png"
+msgstr ""
+
+#: ../../../src/usage/distributed.rst:335
+msgid ""
+"If you want to go through the process manually, the steps are as follows:"
+msgstr ""
+
+#: ../../../src/usage/distributed.rst:337
+msgid "Disable the thunderbolt bridge interface"
+msgstr ""
+
+#: ../../../src/usage/distributed.rst:338
+msgid ""
+"For the cable connecting rank ``i`` to rank ``i + 1`` find the interfaces "
+"corresponding to that cable in nodes ``i`` and ``i + 1``."
+msgstr ""
+
+#: ../../../src/usage/distributed.rst:340
+msgid ""
+"Set up a unique subnetwork connecting the two nodes for the corresponding "
+"interfaces. For instance if the cable corresponds to ``en2`` on node ``i`` "
+"and ``en2`` also on node ``i + 1`` then we may assign IPs ``192.168.0.1`` "
+"and ``192.168.0.2`` respectively to the two nodes. For more details you can "
+"see the commands prepared by the utility script."
+msgstr ""
