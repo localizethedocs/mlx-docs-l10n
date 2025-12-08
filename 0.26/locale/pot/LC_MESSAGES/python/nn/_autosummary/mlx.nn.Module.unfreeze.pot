@@ -1,0 +1,85 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023, Apple
+# This file is distributed under the same license as the MLX package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: MLX 0.26\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-12-08 12:22+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../src/python/nn/_autosummary/mlx.nn.Module.unfreeze.rst:2
+msgid "mlx.nn.Module.unfreeze"
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/base.py:docstring
+#: of mlx.nn.layers.base.Module.unfreeze:1
+msgid "Unfreeze the Module's parameters or some of them."
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/base.py:docstring
+#: of mlx.nn.layers.base.Module.unfreeze:3
+msgid ""
+"This function is idempotent ie unfreezing a model that is not frozen is a "
+"noop."
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/base.py:docstring
+#: of mlx.nn.layers.base.Module.unfreeze:7
+msgid "Example"
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/base.py:docstring
+#: of mlx.nn.layers.base.Module.unfreeze:8
+msgid "For instance to only train the biases of a Transformer one can do:"
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/base.py:docstring
+#: of mlx.nn.layers.base.Module.unfreeze:10
+msgid ""
+"model = nn.Transformer()\n"
+"model.freeze()\n"
+"model.unfreeze(keys=\"bias\")"
+msgstr ""
+
+#: ../../../src/python/nn/_autosummary/mlx.nn.Module.unfreeze.rst:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/base.py:docstring
+#: of mlx.nn.layers.base.Module.unfreeze:16
+msgid ""
+"If True then unfreeze the parameters of the submodules as well. Default: "
+"``True``."
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/base.py:docstring
+#: of mlx.nn.layers.base.Module.unfreeze:19
+msgid ""
+"If provided then only these parameters will be unfrozen otherwise all the "
+"parameters of a module. For instance unfreeze all biases by calling ``module."
+"unfreeze(keys=\"bias\")``."
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/base.py:docstring
+#: of mlx.nn.layers.base.Module.unfreeze:24
+msgid ""
+"If set to ``True`` validate that the passed keys exist. Default: ``False``."
+msgstr ""
+
+#: ../../../src/python/nn/_autosummary/mlx.nn.Module.unfreeze.rst:0
+msgid "Returns"
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/base.py:docstring
+#: of mlx.nn.layers.base.Module.unfreeze:28
+msgid "The module instance after unfreezing the parameters."
+msgstr ""
