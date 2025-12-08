@@ -1,0 +1,59 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023, Apple
+# This file is distributed under the same license as the MLX package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: MLX 0.30\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-12-08 12:54+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../src/python/_autosummary/mlx.core.softmax.rst:2
+msgid "mlx.core.softmax"
+msgstr ""
+
+#: ../../../docstring of mlx.core.softmax:1
+msgid "Perform the softmax along the given axis."
+msgstr ""
+
+#: ../../../docstring of mlx.core.softmax:3
+msgid "This operation is a numerically stable version of:"
+msgstr ""
+
+#: ../../../docstring of mlx.core.softmax:5
+msgid "exp(a) / sum(exp(a), axis, keepdims=True)"
+msgstr ""
+
+#: ../../../src/python/_autosummary/mlx.core.softmax.rst:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../docstring of mlx.core.softmax:9
+msgid "Input array."
+msgstr ""
+
+#: ../../../docstring of mlx.core.softmax:11
+msgid ""
+"Optional axis or axes to compute the softmax over. If unspecified this "
+"performs the softmax over the full array."
+msgstr ""
+
+#: ../../../src/python/_autosummary/mlx.core.softmax.rst:0
+msgid "Returns"
+msgstr ""
+
+#: ../../../docstring of mlx.core.softmax:16
+msgid "The output of the softmax."
+msgstr ""
+
+#: ../../../src/python/_autosummary/mlx.core.softmax.rst:0
+msgid "Return type"
+msgstr ""

@@ -1,0 +1,68 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023, Apple
+# This file is distributed under the same license as the MLX package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: MLX 0.30\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-12-08 12:54+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../src/python/_autosummary/mlx.core.linalg.eigvals.rst:2
+msgid "mlx.core.linalg.eigvals"
+msgstr ""
+
+#: ../../../docstring of mlx.core.linalg.eigvals:1
+msgid "Compute the eigenvalues of a square matrix."
+msgstr ""
+
+#: ../../../docstring of mlx.core.linalg.eigvals:3
+msgid ""
+"This function differs from :func:`numpy.linalg.eigvals` in that the return "
+"type is always complex even if the eigenvalues are all real."
+msgstr ""
+
+#: ../../../docstring of mlx.core.linalg.eigvals:6
+msgid ""
+"This function supports arrays with at least 2 dimensions. When the input has "
+"more than two dimensions, the eigenvalues are computed for each matrix in "
+"the last two dimensions."
+msgstr ""
+
+#: ../../../docstring of mlx.core.linalg.eigvals:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../docstring of mlx.core.linalg.eigvals:10
+msgid "The input array."
+msgstr ""
+
+#: ../../../docstring of mlx.core.linalg.eigvals:12
+msgid ""
+"Stream or device. Defaults to ``None`` in which case the default stream of "
+"the default device is used."
+msgstr ""
+
+#: ../../../docstring of mlx.core.linalg.eigvals:0
+msgid "Returns"
+msgstr ""
+
+#: ../../../docstring of mlx.core.linalg.eigvals:16
+msgid "The eigenvalues (not necessarily in order)."
+msgstr ""
+
+#: ../../../docstring of mlx.core.linalg.eigvals:0
+msgid "Return type"
+msgstr ""
+
+#: ../../../docstring of mlx.core.linalg.eigvals:20
+msgid "Example"
+msgstr ""
