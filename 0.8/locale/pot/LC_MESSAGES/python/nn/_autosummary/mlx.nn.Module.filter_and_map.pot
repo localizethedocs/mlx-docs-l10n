@@ -1,0 +1,68 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023, MLX Contributors
+# This file is distributed under the same license as the MLX package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: MLX 0.8\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-12-08 12:57+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../src/python/nn/_autosummary/mlx.nn.Module.filter_and_map.rst:2
+msgid "mlx.nn.Module.filter\\_and\\_map"
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/base.py:docstring
+#: of mlx.nn.layers.base.Module.filter_and_map:1
+msgid ""
+"Recursively filter the contents of the module using ``filter_fn``, namely "
+"only select keys and values where ``filter_fn`` returns true."
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/base.py:docstring
+#: of mlx.nn.layers.base.Module.filter_and_map:4
+msgid ""
+"This is used to implement :meth:`parameters` and :meth:"
+"`trainable_parameters` but it can also be used to extract any subset of the "
+"module's parameters."
+msgstr ""
+
+#: ../../../src/python/nn/_autosummary/mlx.nn.Module.filter_and_map.rst:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/base.py:docstring
+#: of mlx.nn.layers.base.Module.filter_and_map:7
+msgid ""
+"Given a value, the key in which it is found and the containing module, "
+"decide whether to keep the value or drop it."
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/base.py:docstring
+#: of mlx.nn.layers.base.Module.filter_and_map:11
+msgid "Optionally transform the value before returning it."
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/base.py:docstring
+#: of mlx.nn.layers.base.Module.filter_and_map:14
+msgid ""
+"Given a value, the key in which it is found and the containing module decide "
+"if it is a leaf."
+msgstr ""
+
+#: ../../../src/python/nn/_autosummary/mlx.nn.Module.filter_and_map.rst:0
+msgid "Returns"
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/base.py:docstring
+#: of mlx.nn.layers.base.Module.filter_and_map:18
+msgid "A dictionary containing the contents of the module recursively filtered"
+msgstr ""

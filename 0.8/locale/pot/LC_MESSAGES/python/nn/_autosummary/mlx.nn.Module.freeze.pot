@@ -1,0 +1,77 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023, MLX Contributors
+# This file is distributed under the same license as the MLX package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: MLX 0.8\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-12-08 12:57+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../src/python/nn/_autosummary/mlx.nn.Module.freeze.rst:2
+msgid "mlx.nn.Module.freeze"
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/base.py:docstring
+#: of mlx.nn.layers.base.Module.freeze:1
+msgid ""
+"Freeze the Module's parameters or some of them. Freezing a parameter means "
+"not computing gradients for it."
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/base.py:docstring
+#: of mlx.nn.layers.base.Module.freeze:4
+msgid "This function is idempotent i.e. freezing a frozen model is a no-op."
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/base.py:docstring
+#: of mlx.nn.layers.base.Module.freeze:7
+msgid "Example"
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/base.py:docstring
+#: of mlx.nn.layers.base.Module.freeze:8
+msgid "For instance to only train the attention parameters from a Transformer:"
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/base.py:docstring
+#: of mlx.nn.layers.base.Module.freeze:10
+msgid ""
+"model = nn.Transformer()\n"
+"model.freeze()\n"
+"model.apply_to_modules(lambda k, v: v.unfreeze() if k."
+"endswith(\"attention\") else None)"
+msgstr ""
+
+#: ../../../src/python/nn/_autosummary/mlx.nn.Module.freeze.rst:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/base.py:docstring
+#: of mlx.nn.layers.base.Module.freeze:16
+msgid ""
+"If True then freeze the parameters of the submodules as well. Default: "
+"``True``."
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/base.py:docstring
+#: of mlx.nn.layers.base.Module.freeze:19
+msgid ""
+"If provided then only these parameters will be frozen otherwise all the "
+"parameters of a module. For instance freeze all biases by calling ``module."
+"freeze(keys=\"bias\")``."
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/base.py:docstring
+#: of mlx.nn.layers.base.Module.freeze:24
+msgid ""
+"If set to ``True`` validate that the passed keys exist. Default: ``False``."
+msgstr ""
