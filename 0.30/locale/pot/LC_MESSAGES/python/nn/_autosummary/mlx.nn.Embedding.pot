@@ -1,0 +1,74 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023, Apple
+# This file is distributed under the same license as the MLX package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: MLX 0.30\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-12-08 12:54+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../src/python/nn/_autosummary/mlx.nn.Embedding.rst:2
+msgid "mlx.nn.Embedding"
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/embedding.py:docstring
+#: of mlx.nn.layers.embedding.Embedding:1
+msgid ""
+"Implements a simple lookup table that maps each input integer to a high-"
+"dimensional vector."
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/embedding.py:docstring
+#: of mlx.nn.layers.embedding.Embedding:4
+msgid ""
+"Typically used to embed discrete tokens for processing by neural networks."
+msgstr ""
+
+#: ../../../src/python/nn/_autosummary/mlx.nn.Embedding.rst:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/embedding.py:docstring
+#: of mlx.nn.layers.embedding.Embedding:6
+msgid ""
+"How many possible discrete tokens can we embed. Usually called the "
+"vocabulary size."
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/embedding.py:docstring
+#: of mlx.nn.layers.embedding.Embedding:9
+msgid "The dimensionality of the embeddings."
+msgstr ""
+
+#: ../../../src/python/nn/_autosummary/mlx.nn.Embedding.rst:12
+msgid "Methods"
+msgstr ""
+
+#: ../../../src/python/nn/_autosummary/mlx.nn.Embedding.rst:16:<autosummary>:1
+msgid ":py:obj:`as_linear <mlx.nn.Embedding.as_linear>`\\ \\(x\\)"
+msgstr ""
+
+#: ../../../src/python/nn/_autosummary/mlx.nn.Embedding.rst:16:<autosummary>:1
+msgid "Call the embedding layer as a linear layer."
+msgstr ""
+
+#: ../../../src/python/nn/_autosummary/mlx.nn.Embedding.rst:16:<autosummary>:1
+msgid ""
+":py:obj:`to_quantized <mlx.nn.Embedding.to_quantized>`\\ "
+"\\(\\[group\\_size\\, bits\\, mode\\]\\)"
+msgstr ""
+
+#: ../../../src/python/nn/_autosummary/mlx.nn.Embedding.rst:16:<autosummary>:1
+msgid ""
+"Return a :obj:`QuantizedEmbedding` layer that approximates this embedding "
+"layer."
+msgstr ""

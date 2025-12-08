@@ -1,0 +1,82 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023, Apple
+# This file is distributed under the same license as the MLX package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: MLX 0.30\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-12-08 12:54+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../src/python/_autosummary/mlx.core.arange.rst:2
+msgid "mlx.core.arange"
+msgstr ""
+
+#: ../../../docstring of mlx.core.arange:1
+msgid "Overloaded function."
+msgstr ""
+
+#: ../../../docstring of mlx.core.arange:3
+msgid ""
+"``arange(start : Union[int, float], stop : Union[int, float], step : "
+"Union[None, int, float], dtype: Optional[Dtype] = None, *, stream: "
+"Union[None, Stream, Device] = None) -> array``"
+msgstr ""
+
+#: ../../../docstring of mlx.core.arange:5
+msgid "Generates ranges of numbers."
+msgstr ""
+
+#: ../../../docstring of mlx.core.arange:7
+msgid ""
+"Generate numbers in the half-open interval ``[start, stop)`` in increments "
+"of ``step``."
+msgstr ""
+
+#: ../../../docstring of mlx.core.arange:10
+msgid "Args:"
+msgstr ""
+
+#: ../../../docstring of mlx.core.arange:11
+msgid ""
+"start (float or int, optional): Starting value which defaults to ``0``. stop "
+"(float or int): Stopping value. step (float or int, optional): Increment "
+"which defaults to ``1``. dtype (Dtype, optional): Specifies the data type of "
+"the output. If unspecified will default to ``float32`` if any of ``start``, "
+"``stop``, or ``step`` are ``float``. Otherwise will default to ``int32``."
+msgstr ""
+
+#: ../../../docstring of mlx.core.arange:16
+msgid "Returns:"
+msgstr ""
+
+#: ../../../docstring of mlx.core.arange:17
+msgid "array: The range of values."
+msgstr ""
+
+#: ../../../docstring of mlx.core.arange:19
+msgid "Note:"
+msgstr ""
+
+#: ../../../docstring of mlx.core.arange:20
+msgid ""
+"Following the Numpy convention the actual increment used to generate numbers "
+"is ``dtype(start + step) - dtype(start)``. This can lead to unexpected "
+"results for example if `start + step` is a fractional value and the `dtype` "
+"is integral."
+msgstr ""
+
+#: ../../../docstring of mlx.core.arange:26
+msgid ""
+"``arange(stop : Union[int, float], step : Union[None, int, float] = None, "
+"dtype: Optional[Dtype] = None, *, stream: Union[None, Stream, Device] = "
+"None) -> array``"
+msgstr ""
