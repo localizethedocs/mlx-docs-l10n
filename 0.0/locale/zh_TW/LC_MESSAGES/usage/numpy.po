@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../../src/usage/numpy.rst:4
 msgid "Conversion to NumPy and Other Frameworks"
-msgstr ""
+msgstr "轉換成 NumPy 和其他框架"
 
 #: ../../../src/usage/numpy.rst:6
 msgid ""

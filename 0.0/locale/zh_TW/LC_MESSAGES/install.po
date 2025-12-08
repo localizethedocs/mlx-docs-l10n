@@ -19,11 +19,11 @@ msgstr ""
 
 #: ../../../src/install.rst:2
 msgid "Build and Install"
-msgstr ""
+msgstr "建置與安裝"
 
 #: ../../../src/install.rst:5
 msgid "Python Installation"
-msgstr ""
+msgstr "Python 安裝"
 
 #: ../../../src/install.rst:7
 msgid ""
@@ -92,7 +92,7 @@ msgstr ""
 
 #: ../../../src/install.rst:50
 msgid "Build from source"
-msgstr ""
+msgstr "從來源碼建置"
 
 #: ../../../src/install.rst:53
 msgid "Build Requirements"
@@ -234,11 +234,11 @@ msgstr ""
 
 #: ../../../src/install.rst:145
 msgid "Build Options"
-msgstr ""
+msgstr "建置選項"
 
 #: ../../../src/install.rst:149
 msgid "Option"
-msgstr ""
+msgstr "選項"
 
 #: ../../../src/install.rst:150
 msgid "Default"
@@ -246,32 +246,32 @@ msgstr ""
 
 #: ../../../src/install.rst:151
 msgid "MLX_BUILD_TESTS"
-msgstr ""
+msgstr "MLX_BUILD_TESTS"
 
 #: ../../../src/install.rst:152 ../../../src/install.rst:158
 msgid "ON"
-msgstr ""
+msgstr "ON"
 
 #: ../../../src/install.rst:153
 msgid "MLX_BUILD_EXAMPLES"
-msgstr ""
+msgstr "MLX_BUILD_EXAMPLES"
 
 #: ../../../src/install.rst:154 ../../../src/install.rst:156
 #: ../../../src/install.rst:160
 msgid "OFF"
-msgstr ""
+msgstr "OFF"
 
 #: ../../../src/install.rst:155
 msgid "MLX_BUILD_BENCHMARKS"
-msgstr ""
+msgstr "MLX_BUILD_BENCHMARKS"
 
 #: ../../../src/install.rst:157
 msgid "MLX_BUILD_METAL"
-msgstr ""
+msgstr "MLX_BUILD_METAL"
 
 #: ../../../src/install.rst:159
 msgid "MLX_BUILD_PYTHON_BINDINGS"
-msgstr ""
+msgstr "MLX_BUILD_PYTHON_BINDINGS"
 
 #: ../../../src/install.rst:165
 msgid ""
@@ -282,7 +282,7 @@ msgstr ""
 
 #: ../../../src/install.rst:169
 msgid "export DEVELOPER_DIR=\"/path/to/Xcode.app/Contents/Developer/\""
-msgstr ""
+msgstr "export DEVELOPER_DIR=\"/path/to/Xcode.app/Contents/Developer/\""
 
 #: ../../../src/install.rst:173
 msgid ""
@@ -292,7 +292,7 @@ msgstr ""
 
 #: ../../../src/install.rst:176
 msgid "xcrun -sdk macosx --show-sdk-version"
-msgstr ""
+msgstr "xcrun -sdk macosx --show-sdk-version"
 
 #: ../../../src/install.rst:185
 msgid "Metal not found"
