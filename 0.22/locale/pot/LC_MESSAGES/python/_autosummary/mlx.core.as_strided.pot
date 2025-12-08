@@ -1,0 +1,73 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023, MLX Contributors
+# This file is distributed under the same license as the MLX package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: MLX 0.22\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-12-08 12:45+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../src/python/_autosummary/mlx.core.as_strided.rst:2
+msgid "mlx.core.as\\_strided"
+msgstr ""
+
+#: ../../../docstring of mlx.core.as_strided:1
+msgid "Create a view into the array with the given shape and strides."
+msgstr ""
+
+#: ../../../docstring of mlx.core.as_strided:3
+msgid ""
+"The resulting array will always be as if the provided array was row "
+"contiguous regardless of the provided arrays storage order and current "
+"strides."
+msgstr ""
+
+#: ../../../docstring of mlx.core.as_strided:8
+msgid ""
+"Note that this function should be used with caution as it changes the shape "
+"and strides of the array directly. This can lead to the resulting array "
+"pointing to invalid memory locations which can result into crashes."
+msgstr ""
+
+#: ../../../src/python/_autosummary/mlx.core.as_strided.rst:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../docstring of mlx.core.as_strided:13
+msgid "Input array"
+msgstr ""
+
+#: ../../../docstring of mlx.core.as_strided:15
+msgid "The shape of the resulting array. If None it defaults to ``a.shape()``."
+msgstr ""
+
+#: ../../../docstring of mlx.core.as_strided:18
+msgid ""
+"The strides of the resulting array. If None it defaults to the reverse "
+"exclusive cumulative product of ``a.shape()``."
+msgstr ""
+
+#: ../../../docstring of mlx.core.as_strided:22
+msgid "Skip that many elements from the beginning of the input array."
+msgstr ""
+
+#: ../../../src/python/_autosummary/mlx.core.as_strided.rst:0
+msgid "Returns"
+msgstr ""
+
+#: ../../../docstring of mlx.core.as_strided:26
+msgid "The output array which is the strided view of the input."
+msgstr ""
+
+#: ../../../src/python/_autosummary/mlx.core.as_strided.rst:0
+msgid "Return type"
+msgstr ""

@@ -1,0 +1,75 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023, MLX Contributors
+# This file is distributed under the same license as the MLX package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: MLX 0.22\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-12-08 12:45+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../src/python/_autosummary/mlx.core.dequantize.rst:2
+msgid "mlx.core.dequantize"
+msgstr ""
+
+#: ../../../docstring of mlx.core.dequantize:1
+msgid ""
+"Dequantize the matrix ``w`` using the provided ``scales`` and ``biases`` and "
+"the ``group_size`` and ``bits`` configuration."
+msgstr ""
+
+#: ../../../docstring of mlx.core.dequantize:4
+msgid ""
+"Formally, given the notation in :func:`quantize`, we compute :math:`w_i` "
+"from :math:`\\hat{w_i}` and corresponding :math:`s` and :math:`\\beta` as "
+"follows"
+msgstr ""
+
+#: ../../../docstring of mlx.core.dequantize:8
+msgid "w_i = s \\hat{w_i} - \\beta"
+msgstr ""
+
+#: ../../../src/python/_autosummary/mlx.core.dequantize.rst:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../docstring of mlx.core.dequantize:12
+msgid "Matrix to be quantized"
+msgstr ""
+
+#: ../../../docstring of mlx.core.dequantize:14
+msgid "The scales to use per ``group_size`` elements of ``w``"
+msgstr ""
+
+#: ../../../docstring of mlx.core.dequantize:16
+msgid "The biases to use per ``group_size`` elements of ``w``"
+msgstr ""
+
+#: ../../../docstring of mlx.core.dequantize:18
+msgid ""
+"The size of the group in ``w`` that shares a scale and bias. Default: ``64``."
+msgstr ""
+
+#: ../../../docstring of mlx.core.dequantize:21
+msgid "The number of bits occupied by each element in ``w``. Default: ``4``."
+msgstr ""
+
+#: ../../../src/python/_autosummary/mlx.core.dequantize.rst:0
+msgid "Returns"
+msgstr ""
+
+#: ../../../docstring of mlx.core.dequantize:25
+msgid "The dequantized version of ``w``"
+msgstr ""
+
+#: ../../../src/python/_autosummary/mlx.core.dequantize.rst:0
+msgid "Return type"
+msgstr ""
