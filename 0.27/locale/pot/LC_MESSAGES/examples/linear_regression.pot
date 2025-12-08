@@ -1,0 +1,124 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023, Apple
+# This file is distributed under the same license as the MLX package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: MLX 0.27\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-12-08 12:54+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../src/examples/linear_regression.rst:4
+msgid "Linear Regression"
+msgstr ""
+
+#: ../../../src/examples/linear_regression.rst:6
+msgid ""
+"Let's implement a basic linear regression model as a starting point to learn "
+"MLX. First import the core package and setup some problem metadata:"
+msgstr ""
+
+#: ../../../src/examples/linear_regression.rst:9
+msgid ""
+"import mlx.core as mx\n"
+"\n"
+"num_features = 100\n"
+"num_examples = 1_000\n"
+"num_iters = 10_000  # iterations of SGD\n"
+"lr = 0.01  # learning rate for SGD"
+msgstr ""
+
+#: ../../../src/examples/linear_regression.rst:19
+msgid "We'll generate a synthetic dataset by:"
+msgstr ""
+
+#: ../../../src/examples/linear_regression.rst:21
+msgid "Sampling the design matrix ``X``."
+msgstr ""
+
+#: ../../../src/examples/linear_regression.rst:22
+msgid "Sampling a ground truth parameter vector ``w_star``."
+msgstr ""
+
+#: ../../../src/examples/linear_regression.rst:23
+msgid ""
+"Compute the dependent values ``y`` by adding Gaussian noise to ``X @ "
+"w_star``."
+msgstr ""
+
+#: ../../../src/examples/linear_regression.rst:25
+msgid ""
+"# True parameters\n"
+"w_star = mx.random.normal((num_features,))\n"
+"\n"
+"# Input examples (design matrix)\n"
+"X = mx.random.normal((num_examples, num_features))\n"
+"\n"
+"# Noisy labels\n"
+"eps = 1e-2 * mx.random.normal((num_examples,))\n"
+"y = X @ w_star + eps"
+msgstr ""
+
+#: ../../../src/examples/linear_regression.rst:38
+msgid ""
+"We will use SGD to find the optimal weights. To start, define the squared "
+"loss and get the gradient function of the loss with respect to the "
+"parameters."
+msgstr ""
+
+#: ../../../src/examples/linear_regression.rst:41
+msgid ""
+"def loss_fn(w):\n"
+"    return 0.5 * mx.mean(mx.square(X @ w - y))\n"
+"\n"
+"grad_fn = mx.grad(loss_fn)"
+msgstr ""
+
+#: ../../../src/examples/linear_regression.rst:48
+msgid ""
+"Start the optimization by initializing the parameters ``w`` randomly. Then "
+"repeatedly update the parameters for ``num_iters`` iterations."
+msgstr ""
+
+#: ../../../src/examples/linear_regression.rst:51
+msgid ""
+"w = 1e-2 * mx.random.normal((num_features,))\n"
+"\n"
+"for _ in range(num_iters):\n"
+"    grad = grad_fn(w)\n"
+"    w = w - lr * grad\n"
+"    mx.eval(w)"
+msgstr ""
+
+#: ../../../src/examples/linear_regression.rst:60
+msgid ""
+"Finally, compute the loss of the learned parameters and verify that they are "
+"close to the ground truth parameters."
+msgstr ""
+
+#: ../../../src/examples/linear_regression.rst:63
+msgid ""
+"loss = loss_fn(w)\n"
+"error_norm = mx.sum(mx.square(w - w_star)).item() ** 0.5\n"
+"\n"
+"print(\n"
+"    f\"Loss {loss.item():.5f}, |w-w*| = {error_norm:.5f}, \"\n"
+")\n"
+"# Should print something close to: Loss 0.00005, |w-w*| = 0.00364"
+msgstr ""
+
+#: ../../../src/examples/linear_regression.rst:73
+msgid ""
+"Complete `linear regression <https://github.com/ml-explore/mlx/tree/main/"
+"examples/python/linear_regression.py>`_ and `logistic regression <https://"
+"github.com/ml-explore/mlx/tree/main/examples/python/logistic_regression."
+"py>`_ examples are available in the MLX GitHub repo."
+msgstr ""
