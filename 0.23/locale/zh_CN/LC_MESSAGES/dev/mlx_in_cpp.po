@@ -1,0 +1,216 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023, MLX Contributors
+# This file is distributed under the same license as the MLX package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: MLX 0.23\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-12-08 15:56+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../src/dev/mlx_in_cpp.rst:4
+msgid "Using MLX in C++"
+msgstr ""
+
+#: ../../../src/dev/mlx_in_cpp.rst:6
+msgid "You can use MLX in a C++ project with CMake."
+msgstr ""
+
+#: ../../../src/dev/mlx_in_cpp.rst:10
+msgid ""
+"This guide is based one the following `example using MLX in C++ <https://"
+"github.com/ml-explore/mlx/tree/main/examples/cmake_project>`_"
+msgstr ""
+
+#: ../../../src/dev/mlx_in_cpp.rst:13
+msgid "First install MLX:"
+msgstr ""
+
+#: ../../../src/dev/mlx_in_cpp.rst:15
+msgid "pip install -U mlx"
+msgstr ""
+
+#: ../../../src/dev/mlx_in_cpp.rst:19
+msgid ""
+"You can also install the MLX Python package from source or just the C++ "
+"library. For more information see the :ref:`documentation on installing MLX "
+"<build_and_install>`."
+msgstr ""
+
+#: ../../../src/dev/mlx_in_cpp.rst:23
+msgid "Next make an example program in ``example.cpp``:"
+msgstr ""
+
+#: ../../../src/dev/mlx_in_cpp.rst:25
+msgid ""
+"#include <iostream>\n"
+"\n"
+"#include \"mlx/mlx.h\"\n"
+"\n"
+"namespace mx = mlx::core;\n"
+"\n"
+"int main() {\n"
+"  auto x = mx::array({1, 2, 3});\n"
+"  auto y = mx::array({1, 2, 3});\n"
+"  std::cout << x + y << std::endl;\n"
+"  return 0;\n"
+"}"
+msgstr ""
+
+#: ../../../src/dev/mlx_in_cpp.rst:40
+msgid "The next step is to setup a CMake file in ``CMakeLists.txt``:"
+msgstr ""
+
+#: ../../../src/dev/mlx_in_cpp.rst:42
+msgid ""
+"cmake_minimum_required(VERSION 3.27)\n"
+"\n"
+"project(example LANGUAGES CXX)\n"
+"\n"
+"set(CMAKE_CXX_STANDARD 17)\n"
+"set(CMAKE_CXX_STANDARD_REQUIRED ON)"
+msgstr ""
+
+#: ../../../src/dev/mlx_in_cpp.rst:52
+msgid ""
+"Depending on how you installed MLX, you may need to tell CMake where to find "
+"it."
+msgstr ""
+
+#: ../../../src/dev/mlx_in_cpp.rst:55
+msgid ""
+"If you installed MLX with Python, then add the following to the CMake file:"
+msgstr ""
+
+#: ../../../src/dev/mlx_in_cpp.rst:57
+msgid ""
+"find_package(\n"
+"  Python 3.9\n"
+"  COMPONENTS Interpreter Development.Module\n"
+"  REQUIRED)\n"
+"execute_process(\n"
+"  COMMAND \"${Python_EXECUTABLE}\" -m mlx --cmake-dir\n"
+"  OUTPUT_STRIP_TRAILING_WHITESPACE\n"
+"  OUTPUT_VARIABLE MLX_ROOT)"
+msgstr ""
+
+#: ../../../src/dev/mlx_in_cpp.rst:68
+msgid ""
+"If you installed the MLX C++ package to a system path, then CMake should be "
+"able to find it. If you installed it to a non-standard location or CMake "
+"can't find MLX then set ``MLX_ROOT`` to the location where MLX is installed:"
+msgstr ""
+
+#: ../../../src/dev/mlx_in_cpp.rst:72
+msgid "set(MLX_ROOT \"/path/to/mlx/\")"
+msgstr ""
+
+#: ../../../src/dev/mlx_in_cpp.rst:76
+msgid "Next, instruct CMake to find MLX:"
+msgstr ""
+
+#: ../../../src/dev/mlx_in_cpp.rst:78
+msgid "find_package(MLX CONFIG REQUIRED)"
+msgstr ""
+
+#: ../../../src/dev/mlx_in_cpp.rst:82
+msgid "Finally, add the ``example.cpp`` program as an executable and link MLX."
+msgstr ""
+
+#: ../../../src/dev/mlx_in_cpp.rst:84
+msgid ""
+"add_executable(example example.cpp)\n"
+"target_link_libraries(example PRIVATE mlx)"
+msgstr ""
+
+#: ../../../src/dev/mlx_in_cpp.rst:89
+msgid "You can build the example with:"
+msgstr ""
+
+#: ../../../src/dev/mlx_in_cpp.rst:91
+msgid ""
+"cmake -B build -DCMAKE_BUILD_TYPE=Release\n"
+"cmake --build build"
+msgstr ""
+
+#: ../../../src/dev/mlx_in_cpp.rst:96
+msgid "And run it with:"
+msgstr ""
+
+#: ../../../src/dev/mlx_in_cpp.rst:98
+msgid "./build/example"
+msgstr ""
+
+#: ../../../src/dev/mlx_in_cpp.rst:102
+msgid ""
+"Note ``find_package(MLX CONFIG REQUIRED)`` sets the following variables:"
+msgstr ""
+
+#: ../../../src/dev/mlx_in_cpp.rst:104
+msgid "Package Variables"
+msgstr ""
+
+#: ../../../src/dev/mlx_in_cpp.rst:108
+msgid "Variable"
+msgstr ""
+
+#: ../../../src/dev/mlx_in_cpp.rst:109
+msgid "Description"
+msgstr ""
+
+#: ../../../src/dev/mlx_in_cpp.rst:110
+msgid "MLX_FOUND"
+msgstr ""
+
+#: ../../../src/dev/mlx_in_cpp.rst:111
+msgid "``True`` if MLX is found"
+msgstr ""
+
+#: ../../../src/dev/mlx_in_cpp.rst:112
+msgid "MLX_INCLUDE_DIRS"
+msgstr ""
+
+#: ../../../src/dev/mlx_in_cpp.rst:113
+msgid "Include directory"
+msgstr ""
+
+#: ../../../src/dev/mlx_in_cpp.rst:114
+msgid "MLX_LIBRARIES"
+msgstr ""
+
+#: ../../../src/dev/mlx_in_cpp.rst:115
+msgid "Libraries to link against"
+msgstr ""
+
+#: ../../../src/dev/mlx_in_cpp.rst:116
+msgid "MLX_CXX_FLAGS"
+msgstr ""
+
+#: ../../../src/dev/mlx_in_cpp.rst:117
+msgid "Additional compiler flags"
+msgstr ""
+
+#: ../../../src/dev/mlx_in_cpp.rst:118
+msgid "MLX_BUILD_ACCELERATE"
+msgstr ""
+
+#: ../../../src/dev/mlx_in_cpp.rst:119
+msgid "``True`` if MLX was built with Accelerate"
+msgstr ""
+
+#: ../../../src/dev/mlx_in_cpp.rst:120
+msgid "MLX_BUILD_METAL"
+msgstr ""
+
+#: ../../../src/dev/mlx_in_cpp.rst:121
+msgid "``True`` if MLX was built with Metal"
+msgstr ""
