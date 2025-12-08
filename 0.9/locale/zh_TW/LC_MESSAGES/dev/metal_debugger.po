@@ -1,0 +1,89 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023, MLX Contributors
+# This file is distributed under the same license as the MLX package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: MLX 0.9\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-12-08 13:00+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../src/dev/metal_debugger.rst:2
+msgid "Metal Debugger"
+msgstr ""
+
+#: ../../../src/dev/metal_debugger.rst:4
+msgid ""
+"Profiling is a key step for performance optimization. You can build MLX with "
+"the ``MLX_METAL_DEBUG`` option to improve the Metal debugging and "
+"optimization workflow. The ``MLX_METAL_DEBUG`` debug option:"
+msgstr ""
+
+#: ../../../src/dev/metal_debugger.rst:8
+msgid ""
+"Records source during Metal compilation, for later inspection while "
+"debugging."
+msgstr ""
+
+#: ../../../src/dev/metal_debugger.rst:10
+msgid ""
+"Labels Metal objects such as command queues, improving capture readability."
+msgstr ""
+
+#: ../../../src/dev/metal_debugger.rst:12
+msgid ""
+"The ``metal::start_capture`` function initiates a capture of all MLX GPU "
+"work."
+msgstr ""
+
+#: ../../../src/dev/metal_debugger.rst:14
+msgid ""
+"int main() {\n"
+"    metal::start_capture(\"/Users/Jane/Developer/MLX.gputrace\");\n"
+"\n"
+"    auto a = arange(10.f, 20.f, 1.f, float32);\n"
+"    auto b = arange(30.f, 40.f, 1.f, float32);\n"
+"    auto c = add(a, b);\n"
+"\n"
+"    eval(c);\n"
+"\n"
+"    metal::stop_capture();\n"
+"}"
+msgstr ""
+
+#: ../../../src/dev/metal_debugger.rst:28
+msgid ""
+"You can open and replay the GPU trace in Xcode. The ``Dependencies`` view "
+"has a great overview of all operations. Checkout the `Metal debugger "
+"documentation`_ for more information."
+msgstr ""
+
+#: ../../../src/dev/metal_debugger.rst:36
+msgid "Xcode Workflow"
+msgstr ""
+
+#: ../../../src/dev/metal_debugger.rst:38
+msgid ""
+"You can skip saving to a path by running within Xcode. First, generate an "
+"Xcode project using CMake."
+msgstr ""
+
+#: ../../../src/dev/metal_debugger.rst:41
+msgid ""
+"mkdir build && cd build\n"
+"cmake .. -DMLX_METAL_DEBUG=ON -G Xcode\n"
+"open mlx.xcodeproj"
+msgstr ""
+
+#: ../../../src/dev/metal_debugger.rst:47
+msgid "Select the ``metal_capture`` example schema and run."
+msgstr ""

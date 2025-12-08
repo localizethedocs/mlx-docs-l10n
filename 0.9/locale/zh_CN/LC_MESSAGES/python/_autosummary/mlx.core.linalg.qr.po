@@ -1,0 +1,62 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023, MLX Contributors
+# This file is distributed under the same license as the MLX package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: MLX 0.9\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-12-08 13:00+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../src/python/_autosummary/mlx.core.linalg.qr.rst:2
+msgid "mlx.core.linalg.qr"
+msgstr ""
+
+#: ../../../docstring of mlx.core.linalg.qr:1
+msgid "The QR factorization of the input matrix."
+msgstr ""
+
+#: ../../../docstring of mlx.core.linalg.qr:3
+msgid ""
+"This function supports arrays with at least 2 dimensions. The matrices which "
+"are factorized are assumed to be in the last two dimensions of the input."
+msgstr ""
+
+#: ../../../docstring of mlx.core.linalg.qr:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../docstring of mlx.core.linalg.qr:7
+msgid "Input array."
+msgstr ""
+
+#: ../../../docstring of mlx.core.linalg.qr:9
+msgid ""
+"Stream or device. Defaults to ``None`` in which case the default stream of "
+"the default device is used."
+msgstr ""
+
+#: ../../../docstring of mlx.core.linalg.qr:0
+msgid "Returns"
+msgstr ""
+
+#: ../../../docstring of mlx.core.linalg.qr:13
+msgid "The ``Q`` and ``R`` matrices."
+msgstr ""
+
+#: ../../../docstring of mlx.core.linalg.qr:0
+msgid "Return type"
+msgstr ""
+
+#: ../../../docstring of mlx.core.linalg.qr:17
+msgid "Example"
+msgstr ""

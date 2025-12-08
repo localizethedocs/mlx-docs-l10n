@@ -1,0 +1,190 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023, MLX Contributors
+# This file is distributed under the same license as the MLX package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: MLX 0.9\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-12-08 13:00+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../src/examples/mlp.rst:4
+msgid "Multi-Layer Perceptron"
+msgstr ""
+
+#: ../../../src/examples/mlp.rst:6
+msgid ""
+"In this example we'll learn to use ``mlx.nn`` by implementing a simple multi-"
+"layer perceptron to classify MNIST."
+msgstr ""
+
+#: ../../../src/examples/mlp.rst:9
+msgid "As a first step import the MLX packages we need:"
+msgstr ""
+
+#: ../../../src/examples/mlp.rst:11
+msgid ""
+"import mlx.core as mx\n"
+"import mlx.nn as nn\n"
+"import mlx.optimizers as optim\n"
+"\n"
+"import numpy as np"
+msgstr ""
+
+#: ../../../src/examples/mlp.rst:20
+msgid ""
+"The model is defined as the ``MLP`` class which inherits from :class:`mlx.nn."
+"Module`. We follow the standard idiom to make a new module:"
+msgstr ""
+
+#: ../../../src/examples/mlp.rst:23
+msgid ""
+"Define an ``__init__`` where the parameters and/or submodules are setup. See "
+"the :ref:`Module class docs<module_class>` for more information on how :"
+"class:`mlx.nn.Module` registers parameters."
+msgstr ""
+
+#: ../../../src/examples/mlp.rst:26
+msgid "Define a ``__call__`` where the computation is implemented."
+msgstr ""
+
+#: ../../../src/examples/mlp.rst:28
+msgid ""
+"class MLP(nn.Module):\n"
+"    def __init__(\n"
+"        self, num_layers: int, input_dim: int, hidden_dim: int, output_dim: "
+"int\n"
+"    ):\n"
+"        super().__init__()\n"
+"        layer_sizes = [input_dim] + [hidden_dim] * num_layers + "
+"[output_dim]\n"
+"        self.layers = [\n"
+"            nn.Linear(idim, odim)\n"
+"            for idim, odim in zip(layer_sizes[:-1], layer_sizes[1:])\n"
+"        ]\n"
+"\n"
+"    def __call__(self, x):\n"
+"        for l in self.layers[:-1]:\n"
+"            x = mx.maximum(l(x), 0.0)\n"
+"        return self.layers[-1](x)"
+msgstr ""
+
+#: ../../../src/examples/mlp.rst:47
+msgid ""
+"We define the loss function which takes the mean of the per-example cross "
+"entropy loss.  The ``mlx.nn.losses`` sub-package has implementations of some "
+"commonly used loss functions."
+msgstr ""
+
+#: ../../../src/examples/mlp.rst:51
+msgid ""
+"def loss_fn(model, X, y):\n"
+"    return mx.mean(nn.losses.cross_entropy(model(X), y))"
+msgstr ""
+
+#: ../../../src/examples/mlp.rst:56
+msgid ""
+"We also need a function to compute the accuracy of the model on the "
+"validation set:"
+msgstr ""
+
+#: ../../../src/examples/mlp.rst:59
+msgid ""
+"def eval_fn(model, X, y):\n"
+"    return mx.mean(mx.argmax(model(X), axis=1) == y)"
+msgstr ""
+
+#: ../../../src/examples/mlp.rst:64
+msgid ""
+"Next, setup the problem parameters and load the data. To load the data, you "
+"need our `mnist data loader <https://github.com/ml-explore/mlx-examples/blob/"
+"main/mnist/mnist.py>`_, which we will import as `mnist`."
+msgstr ""
+
+#: ../../../src/examples/mlp.rst:69
+msgid ""
+"num_layers = 2\n"
+"hidden_dim = 32\n"
+"num_classes = 10\n"
+"batch_size = 256\n"
+"num_epochs = 10\n"
+"learning_rate = 1e-1\n"
+"\n"
+"# Load the data\n"
+"import mnist\n"
+"train_images, train_labels, test_images, test_labels = map(\n"
+"    mx.array, mnist.mnist()\n"
+")"
+msgstr ""
+
+#: ../../../src/examples/mlp.rst:84
+msgid ""
+"Since we're using SGD, we need an iterator which shuffles and constructs "
+"minibatches of examples in the training set:"
+msgstr ""
+
+#: ../../../src/examples/mlp.rst:87
+msgid ""
+"def batch_iterate(batch_size, X, y):\n"
+"    perm = mx.array(np.random.permutation(y.size))\n"
+"    for s in range(0, y.size, batch_size):\n"
+"        ids = perm[s : s + batch_size]\n"
+"        yield X[ids], y[ids]"
+msgstr ""
+
+#: ../../../src/examples/mlp.rst:96
+msgid ""
+"Finally, we put it all together by instantiating the model, the :class:`mlx."
+"optimizers.SGD` optimizer, and running the training loop:"
+msgstr ""
+
+#: ../../../src/examples/mlp.rst:99
+msgid ""
+"# Load the model\n"
+"model = MLP(num_layers, train_images.shape[-1], hidden_dim, num_classes)\n"
+"mx.eval(model.parameters())\n"
+"\n"
+"# Get a function which gives the loss and gradient of the\n"
+"# loss with respect to the model's trainable parameters\n"
+"loss_and_grad_fn = nn.value_and_grad(model, loss_fn)\n"
+"\n"
+"# Instantiate the optimizer\n"
+"optimizer = optim.SGD(learning_rate=learning_rate)\n"
+"\n"
+"for e in range(num_epochs):\n"
+"    for X, y in batch_iterate(batch_size, train_images, train_labels):\n"
+"        loss, grads = loss_and_grad_fn(model, X, y)\n"
+"\n"
+"        # Update the optimizer state and model parameters\n"
+"        # in a single call\n"
+"        optimizer.update(model, grads)\n"
+"\n"
+"        # Force a graph evaluation\n"
+"        mx.eval(model.parameters(), optimizer.state)\n"
+"\n"
+"    accuracy = eval_fn(model, test_images, test_labels)\n"
+"    print(f\"Epoch {e}: Test accuracy {accuracy.item():.3f}\")"
+msgstr ""
+
+#: ../../../src/examples/mlp.rst:128
+msgid ""
+"The :func:`mlx.nn.value_and_grad` function is a convenience function to get "
+"the gradient of a loss with respect to the trainable parameters of a model. "
+"This should not be confused with :func:`mlx.core.value_and_grad`."
+msgstr ""
+
+#: ../../../src/examples/mlp.rst:132
+msgid ""
+"The model should train to a decent accuracy (about 95%) after just a few "
+"passes over the training set. The `full example <https://github.com/ml-"
+"explore/mlx-examples/tree/main/mnist>`_ is available in the MLX GitHub repo."
+msgstr ""
