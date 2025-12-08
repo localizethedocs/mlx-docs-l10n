@@ -1,0 +1,68 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023, MLX Contributors
+# This file is distributed under the same license as the MLX package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: MLX 0.17\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-12-08 12:57+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../src/python/_autosummary/mlx.core.distributed.recv_like.rst:2
+msgid "mlx.core.distributed.recv\\_like"
+msgstr ""
+
+#: ../../../docstring of mlx.core.distributed.recv_like:1
+msgid ""
+"Recv an array with shape and type like ``x`` from process with rank ``src``."
+msgstr ""
+
+#: ../../../docstring of mlx.core.distributed.recv_like:4
+msgid ""
+"It is equivalent to calling ``mx.distributed.recv(x.shape, x.dtype, src)``."
+msgstr ""
+
+#: ../../../src/python/_autosummary/mlx.core.distributed.recv_like.rst:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../docstring of mlx.core.distributed.recv_like:6
+msgid "An array defining the shape and dtype of the array we are receiving."
+msgstr ""
+
+#: ../../../docstring of mlx.core.distributed.recv_like:9
+msgid "Rank of the source process in the group."
+msgstr ""
+
+#: ../../../docstring of mlx.core.distributed.recv_like:11
+msgid ""
+"The group of processes that will participate in the recv. If set to ``None`` "
+"the global group is used. Default: ``None``."
+msgstr ""
+
+#: ../../../docstring of mlx.core.distributed.recv_like:15
+msgid ""
+"Stream or device. Defaults to ``None`` in which case the default stream of "
+"the default device is used."
+msgstr ""
+
+#: ../../../src/python/_autosummary/mlx.core.distributed.recv_like.rst:0
+msgid "Returns"
+msgstr ""
+
+#: ../../../docstring of mlx.core.distributed.recv_like:19
+msgid "The array that was received from ``src``."
+msgstr ""
+
+#: ../../../src/python/_autosummary/mlx.core.distributed.recv_like.rst:0
+msgid "Return type"
+msgstr ""
