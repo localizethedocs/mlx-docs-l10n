@@ -1,0 +1,60 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023, MLX Contributors
+# This file is distributed under the same license as the MLX package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: MLX 0.13\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-12-08 12:16+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../src/python/_autosummary/mlx.core.fast.rms_norm.rst:2
+msgid "mlx.core.fast.rms\\_norm"
+msgstr ""
+
+#: ../../../docstring of mlx.core.fast.rms_norm:1
+msgid "Root Mean Square normalization (RMS norm)."
+msgstr ""
+
+#: ../../../docstring of mlx.core.fast.rms_norm:3
+msgid "The normalization is with respect to the last axis of the input ``x``."
+msgstr ""
+
+#: ../../../src/python/_autosummary/mlx.core.fast.rms_norm.rst:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../docstring of mlx.core.fast.rms_norm:5
+msgid "Input array."
+msgstr ""
+
+#: ../../../docstring of mlx.core.fast.rms_norm:7
+msgid ""
+"A multiplicative weight to scale the result by. The ``weight`` should be one-"
+"dimensional with the same size as the last axis of ``x``."
+msgstr ""
+
+#: ../../../docstring of mlx.core.fast.rms_norm:11
+msgid "A small additive constant for numerical stability."
+msgstr ""
+
+#: ../../../src/python/_autosummary/mlx.core.fast.rms_norm.rst:0
+msgid "Returns"
+msgstr ""
+
+#: ../../../docstring of mlx.core.fast.rms_norm:14
+msgid "The output array."
+msgstr ""
+
+#: ../../../src/python/_autosummary/mlx.core.fast.rms_norm.rst:0
+msgid "Return type"
+msgstr ""

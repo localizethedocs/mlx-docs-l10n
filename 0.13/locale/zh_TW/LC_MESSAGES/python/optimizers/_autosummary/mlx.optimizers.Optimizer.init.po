@@ -1,0 +1,53 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023, MLX Contributors
+# This file is distributed under the same license as the MLX package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: MLX 0.13\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-12-08 12:16+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../src/python/optimizers/_autosummary/mlx.optimizers.Optimizer.init.rst:2
+msgid "mlx.optimizers.Optimizer.init"
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/optimizers/optimizers.py:docstring
+#: of mlx.optimizers.optimizers.Optimizer.init:1
+msgid "Initialize the optimizer's state"
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/optimizers/optimizers.py:docstring
+#: of mlx.optimizers.optimizers.Optimizer.init:3
+msgid ""
+"This function can be used to initialize optimizers which have state (like "
+"momentum in :class:`SGD`). Using this method is optional as the optimizer "
+"will initialize itself if the state is not yet set. However, there are some "
+"cases where explicit initialization is useful in order to have access to "
+"the :attr:`Optimizer.state` before the first call to :meth:`Optimizer."
+"update`."
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/optimizers/optimizers.py:docstring
+#: of mlx.optimizers.optimizers.Optimizer.init:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/optimizers/optimizers.py:docstring
+#: of mlx.optimizers.optimizers.Optimizer.init:10
+msgid "A Python tree of parameters."
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/optimizers/optimizers.py:docstring
+#: of mlx.optimizers.optimizers.Optimizer.init:14
+msgid "Example"
+msgstr ""

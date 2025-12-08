@@ -1,0 +1,270 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023, MLX Contributors
+# This file is distributed under the same license as the MLX package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: MLX 0.13\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-12-08 12:16+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../src/python/nn.rst:6
+msgid "Neural Networks"
+msgstr ""
+
+#: ../../../src/python/nn.rst:8
+msgid ""
+"Writing arbitrarily complex neural networks in MLX can be done using only :"
+"class:`mlx.core.array` and :meth:`mlx.core.value_and_grad`. However, this "
+"requires the user to write again and again the same simple neural network "
+"operations as well as handle all the parameter state and initialization "
+"manually and explicitly."
+msgstr ""
+
+#: ../../../src/python/nn.rst:13
+msgid ""
+"The module :mod:`mlx.nn` solves this problem by providing an intuitive way "
+"of composing neural network layers, initializing their parameters, freezing "
+"them for finetuning and more."
+msgstr ""
+
+#: ../../../src/python/nn.rst:18
+msgid "Quick Start with Neural Networks"
+msgstr ""
+
+#: ../../../src/python/nn.rst:20
+msgid ""
+"import mlx.core as mx\n"
+"import mlx.nn as nn\n"
+"\n"
+"class MLP(nn.Module):\n"
+"    def __init__(self, in_dims: int, out_dims: int):\n"
+"        super().__init__()\n"
+"\n"
+"        self.layers = [\n"
+"            nn.Linear(in_dims, 128),\n"
+"            nn.Linear(128, 128),\n"
+"            nn.Linear(128, out_dims),\n"
+"        ]\n"
+"\n"
+"    def __call__(self, x):\n"
+"        for i, l in enumerate(self.layers):\n"
+"            x = mx.maximum(x, 0) if i > 0 else x\n"
+"            x = l(x)\n"
+"        return x\n"
+"\n"
+"# The model is created with all its parameters but nothing is initialized\n"
+"# yet because MLX is lazily evaluated\n"
+"mlp = MLP(2, 10)\n"
+"\n"
+"# We can access its parameters by calling mlp.parameters()\n"
+"params = mlp.parameters()\n"
+"print(params[\"layers\"][0][\"weight\"].shape)\n"
+"\n"
+"# Printing a parameter will cause it to be evaluated and thus initialized\n"
+"print(params[\"layers\"][0])\n"
+"\n"
+"# We can also force evaluate all parameters to initialize the model\n"
+"mx.eval(mlp.parameters())\n"
+"\n"
+"# A simple loss function.\n"
+"# NOTE: It doesn't matter how it uses the mlp model. It currently captures\n"
+"#       it from the local scope. It could be a positional argument or a\n"
+"#       keyword argument.\n"
+"def l2_loss(x, y):\n"
+"    y_hat = mlp(x)\n"
+"    return (y_hat - y).square().mean()\n"
+"\n"
+"# Calling `nn.value_and_grad` instead of `mx.value_and_grad` returns the\n"
+"# gradient with respect to `mlp.trainable_parameters()`\n"
+"loss_and_grad = nn.value_and_grad(mlp, l2_loss)"
+msgstr ""
+
+#: ../../../src/python/nn.rst:70
+msgid "The Module Class"
+msgstr ""
+
+#: ../../../src/python/nn.rst:72
+msgid ""
+"The workhorse of any neural network library is the :class:`Module` class. In "
+"MLX the :class:`Module` class is a container of :class:`mlx.core.array` or :"
+"class:`Module` instances. Its main function is to provide a way to "
+"recursively **access** and **update** its parameters and those of its "
+"submodules."
+msgstr ""
+
+#: ../../../src/python/nn.rst:79
+msgid "Parameters"
+msgstr ""
+
+#: ../../../src/python/nn.rst:81
+msgid ""
+"A parameter of a module is any public member of type :class:`mlx.core.array` "
+"(its name should not start with ``_``). It can be arbitrarily nested in "
+"other :class:`Module` instances or lists and dictionaries."
+msgstr ""
+
+#: ../../../src/python/nn.rst:85
+msgid ""
+":meth:`Module.parameters` can be used to extract a nested dictionary with "
+"all the parameters of a module and its submodules."
+msgstr ""
+
+#: ../../../src/python/nn.rst:88
+msgid ""
+"A :class:`Module` can also keep track of \"frozen\" parameters. See the :"
+"meth:`Module.freeze` method for more details. :meth:`mlx.nn.value_and_grad` "
+"the gradients returned will be with respect to these trainable parameters."
+msgstr ""
+
+#: ../../../src/python/nn.rst:94
+msgid "Updating the Parameters"
+msgstr ""
+
+#: ../../../src/python/nn.rst:96
+msgid ""
+"MLX modules allow accessing and updating individual parameters. However, "
+"most times we need to update large subsets of a module's parameters. This "
+"action is performed by :meth:`Module.update`."
+msgstr ""
+
+#: ../../../src/python/nn.rst:102
+msgid "Inspecting Modules"
+msgstr ""
+
+#: ../../../src/python/nn.rst:104
+msgid ""
+"The simplest way to see the model architecture is to print it. Following "
+"along with the above example, you can print the ``MLP`` with:"
+msgstr ""
+
+#: ../../../src/python/nn.rst:107
+msgid "print(mlp)"
+msgstr ""
+
+#: ../../../src/python/nn.rst:111
+msgid "This will display:"
+msgstr ""
+
+#: ../../../src/python/nn.rst:113
+msgid ""
+"MLP(\n"
+"  (layers.0): Linear(input_dims=2, output_dims=128, bias=True)\n"
+"  (layers.1): Linear(input_dims=128, output_dims=128, bias=True)\n"
+"  (layers.2): Linear(input_dims=128, output_dims=10, bias=True)\n"
+")"
+msgstr ""
+
+#: ../../../src/python/nn.rst:121
+msgid ""
+"To get more detailed information on the arrays in a :class:`Module` you can "
+"use :func:`mlx.utils.tree_map` on the parameters. For example, to see the "
+"shapes of all the parameters in a :class:`Module` do:"
+msgstr ""
+
+#: ../../../src/python/nn.rst:125
+msgid ""
+"from mlx.utils import tree_map\n"
+"shapes = tree_map(lambda p: p.shape, mlp.parameters())"
+msgstr ""
+
+#: ../../../src/python/nn.rst:130
+msgid ""
+"As another example, you can count the number of parameters in a :class:"
+"`Module` with:"
+msgstr ""
+
+#: ../../../src/python/nn.rst:133
+msgid ""
+"from mlx.utils import tree_flatten\n"
+"num_params = sum(v.size for _, v in tree_flatten(mlp.parameters()))"
+msgstr ""
+
+#: ../../../src/python/nn.rst:140
+msgid "Value and Grad"
+msgstr ""
+
+#: ../../../src/python/nn.rst:142
+msgid ""
+"Using a :class:`Module` does not preclude using MLX's high order function "
+"transformations (:meth:`mlx.core.value_and_grad`, :meth:`mlx.core.grad`, "
+"etc.). However, these function transformations assume pure functions, namely "
+"the parameters should be passed as an argument to the function being "
+"transformed."
+msgstr ""
+
+#: ../../../src/python/nn.rst:147
+msgid "There is an easy pattern to achieve that with MLX modules"
+msgstr ""
+
+#: ../../../src/python/nn.rst:149
+msgid ""
+"model = ...\n"
+"\n"
+"def f(params, other_inputs):\n"
+"    model.update(params)  # <---- Necessary to make the model use the passed "
+"parameters\n"
+"    return model(other_inputs)\n"
+"\n"
+"f(model.trainable_parameters(), mx.zeros((10,)))"
+msgstr ""
+
+#: ../../../src/python/nn.rst:159
+msgid ""
+"However, :meth:`mlx.nn.value_and_grad` provides precisely this pattern and "
+"only computes the gradients with respect to the trainable parameters of the "
+"model."
+msgstr ""
+
+#: ../../../src/python/nn.rst:162
+msgid "In detail:"
+msgstr ""
+
+#: ../../../src/python/nn.rst:164
+msgid ""
+"it wraps the passed function with a function that calls :meth:`Module."
+"update` to make sure the model is using the provided parameters."
+msgstr ""
+
+#: ../../../src/python/nn.rst:166
+msgid ""
+"it calls :meth:`mlx.core.value_and_grad` to transform the function into a "
+"function that also computes the gradients with respect to the passed "
+"parameters."
+msgstr ""
+
+#: ../../../src/python/nn.rst:168
+msgid ""
+"it wraps the returned function with a function that passes the trainable "
+"parameters as the first argument to the function returned by :meth:`mlx.core."
+"value_and_grad`"
+msgstr ""
+
+#: ../../../src/python/nn.rst:177:<autosummary>:1
+msgid ":py:obj:`value_and_grad <mlx.nn.value_and_grad>`\\ \\(model\\, fn\\)"
+msgstr ""
+
+#: ../../../src/python/nn.rst:177:<autosummary>:1
+msgid ""
+"Transform the passed function ``fn`` to a function that computes the "
+"gradients of ``fn`` wrt the model's trainable parameters and also its value."
+msgstr ""
+
+#: ../../../src/python/nn.rst:177:<autosummary>:1
+msgid ""
+":py:obj:`quantize <mlx.nn.quantize>`\\ \\(model\\[\\, group\\_size\\, "
+"bits\\, ...\\]\\)"
+msgstr ""
+
+#: ../../../src/python/nn.rst:177:<autosummary>:1
+msgid "Quantize the sub-modules of a module according to a predicate."
+msgstr ""
