@@ -1,0 +1,50 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023, MLX Contributors
+# This file is distributed under the same license as the MLX package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: MLX 0.12\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-12-08 12:57+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../src/python/_autosummary/mlx.core.save_gguf.rst:2
+msgid "mlx.core.save\\_gguf"
+msgstr ""
+
+#: ../../../docstring of mlx.core.save_gguf:1
+msgid "Save array(s) to a binary file in ``.gguf`` format."
+msgstr ""
+
+#: ../../../docstring of mlx.core.save_gguf:3
+msgid ""
+"See the `GGUF documentation <https://github.com/ggerganov/ggml/blob/master/"
+"docs/gguf.md>`_ for more information on the format."
+msgstr ""
+
+#: ../../../src/python/_autosummary/mlx.core.save_gguf.rst:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../docstring of mlx.core.save_gguf:7
+msgid "File in which the array is saved."
+msgstr ""
+
+#: ../../../docstring of mlx.core.save_gguf:9
+msgid "The dictionary of names to arrays to"
+msgstr ""
+
+#: ../../../docstring of mlx.core.save_gguf:13
+msgid ""
+"metadata to be saved. The values can be a scalar or 1D obj:`array`, a :obj:"
+"`str`, or a :obj:`list` of :obj:`str`."
+msgstr ""
