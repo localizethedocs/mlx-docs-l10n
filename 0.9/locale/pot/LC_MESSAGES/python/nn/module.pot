@@ -1,0 +1,287 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023, MLX Contributors
+# This file is distributed under the same license as the MLX package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: MLX 0.9\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-12-08 13:00+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../src/python/nn/module.rst:2
+msgid "Module"
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/base.py:docstring
+#: of mlx.nn.layers.base.Module:1
+msgid "Base class for building neural networks with MLX."
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/base.py:docstring
+#: of mlx.nn.layers.base.Module:3
+msgid ""
+"All the layers provided in :mod:`mlx.nn.layers` subclass this class and your "
+"models should do the same."
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/base.py:docstring
+#: of mlx.nn.layers.base.Module:6
+msgid ""
+"A ``Module`` can contain other ``Module`` instances or :class:`mlx.core."
+"array` instances in arbitrary nesting of python lists or dicts. The "
+"``Module`` then allows recursively extracting all the :class:`mlx.core."
+"array` instances using :meth:`mlx.nn.Module.parameters`."
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/base.py:docstring
+#: of mlx.nn.layers.base.Module:11
+msgid ""
+"In addition, the ``Module`` has the concept of trainable and non trainable "
+"parameters (called \"frozen\"). When using :func:`mlx.nn.value_and_grad` the "
+"gradients are returned only with respect to the trainable parameters. All "
+"arrays in a module are trainable unless they are added in the \"frozen\" set "
+"by calling :meth:`freeze`."
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/base.py:docstring
+#: of mlx.nn.layers.base.Module:17
+msgid ""
+"import mlx.core as mx\n"
+"import mlx.nn as nn\n"
+"\n"
+"class MyMLP(nn.Module):\n"
+"    def __init__(self, in_dims: int, out_dims: int, hidden_dims: int = 16):\n"
+"        super().__init__()\n"
+"\n"
+"        self.in_proj = nn.Linear(in_dims, hidden_dims)\n"
+"        self.out_proj = nn.Linear(hidden_dims, out_dims)\n"
+"\n"
+"    def __call__(self, x):\n"
+"        x = self.in_proj(x)\n"
+"        x = mx.maximum(x, 0)\n"
+"        return self.out_proj(x)\n"
+"\n"
+"model = MyMLP(2, 1)\n"
+"\n"
+"# All the model parameters are created but since MLX is lazy by\n"
+"# default, they are not evaluated yet. Calling `mx.eval` actually\n"
+"# allocates memory and initializes the parameters.\n"
+"mx.eval(model.parameters())\n"
+"\n"
+"# Setting a parameter to a new value is as simply as accessing that\n"
+"# parameter and assigning a new array to it.\n"
+"model.in_proj.weight = model.in_proj.weight * 2\n"
+"mx.eval(model.parameters())"
+msgstr ""
+
+#: ../../../src/python/nn/module.rst:9
+msgid "Attributes"
+msgstr ""
+
+#: ../../../src/python/nn/module.rst:15:<autosummary>:1
+msgid ":py:obj:`Module.training <mlx.nn.Module.training>`\\"
+msgstr ""
+
+#: ../../../src/python/nn/module.rst:15:<autosummary>:1
+msgid "Boolean indicating if the model is in training mode."
+msgstr ""
+
+#: ../../../src/python/nn/module.rst:15:<autosummary>:1
+msgid ":py:obj:`Module.state <mlx.nn.Module.state>`\\"
+msgstr ""
+
+#: ../../../src/python/nn/module.rst:15:<autosummary>:1
+msgid "The module's state dictionary"
+msgstr ""
+
+#: ../../../src/python/nn/module.rst:17
+msgid "Methods"
+msgstr ""
+
+#: ../../../src/python/nn/module.rst:38:<autosummary>:1
+msgid ""
+":py:obj:`Module.apply <mlx.nn.Module.apply>`\\ \\(map\\_fn\\[\\, "
+"filter\\_fn\\]\\)"
+msgstr ""
+
+#: ../../../src/python/nn/module.rst:38:<autosummary>:1
+msgid ""
+"Map all the parameters using the provided ``map_fn`` and immediately update "
+"the module with the mapped parameters."
+msgstr ""
+
+#: ../../../src/python/nn/module.rst:38:<autosummary>:1
+msgid ""
+":py:obj:`Module.apply_to_modules <mlx.nn.Module.apply_to_modules>`\\ "
+"\\(apply\\_fn\\)"
+msgstr ""
+
+#: ../../../src/python/nn/module.rst:38:<autosummary>:1
+msgid ""
+"Apply a function to all the modules in this instance (including this "
+"instance)."
+msgstr ""
+
+#: ../../../src/python/nn/module.rst:38:<autosummary>:1
+msgid ":py:obj:`Module.children <mlx.nn.Module.children>`\\ \\(\\)"
+msgstr ""
+
+#: ../../../src/python/nn/module.rst:38:<autosummary>:1
+msgid "Return the direct descendants of this Module instance."
+msgstr ""
+
+#: ../../../src/python/nn/module.rst:38:<autosummary>:1
+msgid ":py:obj:`Module.eval <mlx.nn.Module.eval>`\\ \\(\\)"
+msgstr ""
+
+#: ../../../src/python/nn/module.rst:38:<autosummary>:1
+msgid "Set the model to evaluation mode."
+msgstr ""
+
+#: ../../../src/python/nn/module.rst:38:<autosummary>:1
+msgid ""
+":py:obj:`Module.filter_and_map <mlx.nn.Module.filter_and_map>`\\ "
+"\\(filter\\_fn\\[\\, map\\_fn\\, ...\\]\\)"
+msgstr ""
+
+#: ../../../src/python/nn/module.rst:38:<autosummary>:1
+msgid ""
+"Recursively filter the contents of the module using ``filter_fn``, namely "
+"only select keys and values where ``filter_fn`` returns true."
+msgstr ""
+
+#: ../../../src/python/nn/module.rst:38:<autosummary>:1
+msgid ""
+":py:obj:`Module.freeze <mlx.nn.Module.freeze>`\\ \\(\\*\\[\\, recurse\\, "
+"keys\\, strict\\]\\)"
+msgstr ""
+
+#: ../../../src/python/nn/module.rst:38:<autosummary>:1
+msgid "Freeze the Module's parameters or some of them."
+msgstr ""
+
+#: ../../../src/python/nn/module.rst:38:<autosummary>:1
+msgid ":py:obj:`Module.leaf_modules <mlx.nn.Module.leaf_modules>`\\ \\(\\)"
+msgstr ""
+
+#: ../../../src/python/nn/module.rst:38:<autosummary>:1
+msgid "Return the submodules that do not contain other modules."
+msgstr ""
+
+#: ../../../src/python/nn/module.rst:38:<autosummary>:1
+msgid ""
+":py:obj:`Module.load_weights <mlx.nn.Module.load_weights>`\\ "
+"\\(file\\_or\\_weights\\[\\, strict\\]\\)"
+msgstr ""
+
+#: ../../../src/python/nn/module.rst:38:<autosummary>:1
+msgid ""
+"Update the model's weights from a ``.npz``, a ``.safetensors`` file, or a "
+"list."
+msgstr ""
+
+#: ../../../src/python/nn/module.rst:38:<autosummary>:1
+msgid ":py:obj:`Module.modules <mlx.nn.Module.modules>`\\ \\(\\)"
+msgstr ""
+
+#: ../../../src/python/nn/module.rst:38:<autosummary>:1
+msgid "Return a list with all the modules in this instance."
+msgstr ""
+
+#: ../../../src/python/nn/module.rst:38:<autosummary>:1
+msgid ":py:obj:`Module.named_modules <mlx.nn.Module.named_modules>`\\ \\(\\)"
+msgstr ""
+
+#: ../../../src/python/nn/module.rst:38:<autosummary>:1
+msgid ""
+"Return a list with all the modules in this instance and their name with dot "
+"notation."
+msgstr ""
+
+#: ../../../src/python/nn/module.rst:38:<autosummary>:1
+msgid ":py:obj:`Module.parameters <mlx.nn.Module.parameters>`\\ \\(\\)"
+msgstr ""
+
+#: ../../../src/python/nn/module.rst:38:<autosummary>:1
+msgid ""
+"Recursively return all the :class:`mlx.core.array` members of this Module as "
+"a dict of dicts and lists."
+msgstr ""
+
+#: ../../../src/python/nn/module.rst:38:<autosummary>:1
+msgid ":py:obj:`Module.save_weights <mlx.nn.Module.save_weights>`\\ \\(file\\)"
+msgstr ""
+
+#: ../../../src/python/nn/module.rst:38:<autosummary>:1
+msgid "Save the model's weights to a file."
+msgstr ""
+
+#: ../../../src/python/nn/module.rst:38:<autosummary>:1
+msgid ""
+":py:obj:`Module.set_dtype <mlx.nn.Module.set_dtype>`\\ \\(dtype\\[\\, "
+"predicate\\]\\)"
+msgstr ""
+
+#: ../../../src/python/nn/module.rst:38:<autosummary>:1
+msgid "Set the dtype of the module's parameters."
+msgstr ""
+
+#: ../../../src/python/nn/module.rst:38:<autosummary>:1
+msgid ":py:obj:`Module.train <mlx.nn.Module.train>`\\ \\(\\[mode\\]\\)"
+msgstr ""
+
+#: ../../../src/python/nn/module.rst:38:<autosummary>:1
+msgid "Set the model in or out of training mode."
+msgstr ""
+
+#: ../../../src/python/nn/module.rst:38:<autosummary>:1
+msgid ""
+":py:obj:`Module.trainable_parameters <mlx.nn.Module.trainable_parameters>`\\ "
+"\\(\\)"
+msgstr ""
+
+#: ../../../src/python/nn/module.rst:38:<autosummary>:1
+msgid ""
+"Recursively return all the non frozen :class:`mlx.core.array` members of "
+"this Module as a dict of dicts and lists."
+msgstr ""
+
+#: ../../../src/python/nn/module.rst:38:<autosummary>:1
+msgid ""
+":py:obj:`Module.unfreeze <mlx.nn.Module.unfreeze>`\\ \\(\\*\\[\\, recurse\\, "
+"keys\\, strict\\]\\)"
+msgstr ""
+
+#: ../../../src/python/nn/module.rst:38:<autosummary>:1
+msgid "Unfreeze the Module's parameters or some of them."
+msgstr ""
+
+#: ../../../src/python/nn/module.rst:38:<autosummary>:1
+msgid ":py:obj:`Module.update <mlx.nn.Module.update>`\\ \\(parameters\\)"
+msgstr ""
+
+#: ../../../src/python/nn/module.rst:38:<autosummary>:1
+msgid ""
+"Replace the parameters of this Module with the provided ones in the dict of "
+"dicts and lists."
+msgstr ""
+
+#: ../../../src/python/nn/module.rst:38:<autosummary>:1
+msgid ""
+":py:obj:`Module.update_modules <mlx.nn.Module.update_modules>`\\ "
+"\\(modules\\)"
+msgstr ""
+
+#: ../../../src/python/nn/module.rst:38:<autosummary>:1
+msgid ""
+"Replace the child modules of this :class:`Module` instance with the provided "
+"ones in the dict of dicts and lists."
+msgstr ""
