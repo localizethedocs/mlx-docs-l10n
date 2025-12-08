@@ -1,0 +1,70 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023, Apple
+# This file is distributed under the same license as the MLX package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: MLX 0.29\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-12-08 12:54+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../src/python/_autosummary/mlx.core.distributed.init.rst:2
+msgid "mlx.core.distributed.init"
+msgstr ""
+
+#: ../../../docstring of mlx.core.distributed.init:1
+msgid ""
+"Initialize the communication backend and create the global communication "
+"group."
+msgstr ""
+
+#: ../../../docstring of mlx.core.distributed.init:4
+msgid "Example"
+msgstr ""
+
+#: ../../../docstring of mlx.core.distributed.init:5
+msgid ""
+"import mlx.core as mx\n"
+"\n"
+"group = mx.distributed.init(backend=\"ring\")"
+msgstr ""
+
+#: ../../../src/python/_autosummary/mlx.core.distributed.init.rst:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../docstring of mlx.core.distributed.init:11
+msgid ""
+"If set to False it returns a singleton group in case ``mx.distributed."
+"is_available()`` returns False otherwise it throws a runtime error. Default: "
+"``False``"
+msgstr ""
+
+#: ../../../docstring of mlx.core.distributed.init:15
+msgid ""
+"Which distributed backend to initialize. Possible values ``mpi``, ``ring``, "
+"``nccl``, ``any``. If set to ``any`` all available backends are tried and "
+"the first one that succeeds becomes the global group which will be returned "
+"in subsequent calls. Default: ``any``"
+msgstr ""
+
+#: ../../../src/python/_autosummary/mlx.core.distributed.init.rst:0
+msgid "Returns"
+msgstr ""
+
+#: ../../../docstring of mlx.core.distributed.init:22
+msgid "The group representing all the launched processes."
+msgstr ""
+
+#: ../../../src/python/_autosummary/mlx.core.distributed.init.rst:0
+msgid "Return type"
+msgstr ""

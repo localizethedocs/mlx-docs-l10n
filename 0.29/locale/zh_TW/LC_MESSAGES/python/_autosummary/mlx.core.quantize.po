@@ -1,0 +1,244 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023, Apple
+# This file is distributed under the same license as the MLX package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: MLX 0.29\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-12-08 12:54+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../src/python/_autosummary/mlx.core.quantize.rst:2
+msgid "mlx.core.quantize"
+msgstr ""
+
+#: ../../../docstring of mlx.core.quantize:1
+msgid "Quantize the array ``w``."
+msgstr ""
+
+#: ../../../docstring of mlx.core.quantize:3
+msgid ""
+"Note, every ``group_size`` elements in a row of ``w`` are quantized "
+"together. Hence, the last dimension of ``w`` should be divisible by "
+"``group_size``."
+msgstr ""
+
+#: ../../../docstring of mlx.core.quantize:9
+msgid ""
+"``quantize`` only supports inputs with two or more dimensions with the last "
+"dimension divisible by ``group_size``"
+msgstr ""
+
+#: ../../../docstring of mlx.core.quantize:12
+msgid ""
+"The supported quantization modes are ``\"affine\"``, ``\"mxfp4\"``, "
+"``\"mxfp8\"``, and ``\"nvfp4\"``. They are described in more detail below."
+msgstr ""
+
+#: ../../../docstring of mlx.core.quantize:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../docstring of mlx.core.quantize:15
+msgid "Array to be quantized"
+msgstr ""
+
+#: ../../../docstring of mlx.core.quantize:17
+msgid ""
+"The size of the group in ``w`` that shares a scale and bias. See supported "
+"values and defaults in the :ref:`table of quantization modes <quantize-"
+"modes>`. Default: ``None``."
+msgstr ""
+
+#: ../../../docstring of mlx.core.quantize:21
+msgid ""
+"The number of bits occupied by each element of ``w`` in the quantized array. "
+"See supported values and defaults in the :ref:`table of quantization modes "
+"<quantize-modes>`. Default: ``None``."
+msgstr ""
+
+#: ../../../docstring of mlx.core.quantize:25
+msgid "The quantization mode. Default: ``\"affine\"``."
+msgstr ""
+
+#: ../../../docstring of mlx.core.quantize:0
+msgid "Returns"
+msgstr ""
+
+#: ../../../docstring of mlx.core.quantize:28
+msgid ""
+"A tuple with either two or three elements containing:  * w_q (array): The "
+"quantized version of ``w`` * scales (array): The quantization scales * "
+"biases (array): The quantization biases (returned for ``mode==\"affine\"``)."
+msgstr ""
+
+#: ../../../docstring of mlx.core.quantize:28
+msgid "A tuple with either two or three elements containing:"
+msgstr ""
+
+#: ../../../docstring of mlx.core.quantize:30
+msgid "w_q (array): The quantized version of ``w``"
+msgstr ""
+
+#: ../../../docstring of mlx.core.quantize:31
+msgid "scales (array): The quantization scales"
+msgstr ""
+
+#: ../../../docstring of mlx.core.quantize:32
+msgid ""
+"biases (array): The quantization biases (returned for ``mode==\"affine\"``)."
+msgstr ""
+
+#: ../../../docstring of mlx.core.quantize:0
+msgid "Return type"
+msgstr ""
+
+#: ../../../docstring of mlx.core.quantize:36
+msgid "Notes"
+msgstr ""
+
+#: ../../../docstring of mlx.core.quantize:39
+msgid "Quantization modes"
+msgstr ""
+
+#: ../../../docstring of mlx.core.quantize:42
+msgid "mode"
+msgstr ""
+
+#: ../../../docstring of mlx.core.quantize:42
+msgid "group size"
+msgstr ""
+
+#: ../../../docstring of mlx.core.quantize:42
+msgid "bits"
+msgstr ""
+
+#: ../../../docstring of mlx.core.quantize:42
+msgid "scale type"
+msgstr ""
+
+#: ../../../docstring of mlx.core.quantize:42
+msgid "bias"
+msgstr ""
+
+#: ../../../docstring of mlx.core.quantize:44
+msgid "affine"
+msgstr ""
+
+#: ../../../docstring of mlx.core.quantize:44
+msgid "32, 64\\ :sup:`*`, 128"
+msgstr ""
+
+#: ../../../docstring of mlx.core.quantize:44
+msgid "2, 3, 4\\ :sup:`*`, 5, 6, 8"
+msgstr ""
+
+#: ../../../docstring of mlx.core.quantize:44
+msgid "same as input"
+msgstr ""
+
+#: ../../../docstring of mlx.core.quantize:44
+msgid "yes"
+msgstr ""
+
+#: ../../../docstring of mlx.core.quantize:45
+msgid "mxfp4"
+msgstr ""
+
+#: ../../../docstring of mlx.core.quantize:45 mlx.core.quantize:46
+msgid "32\\ :sup:`*`"
+msgstr ""
+
+#: ../../../docstring of mlx.core.quantize:45 mlx.core.quantize:46
+#: mlx.core.quantize:47
+msgid "4\\ :sup:`*`"
+msgstr ""
+
+#: ../../../docstring of mlx.core.quantize:45 mlx.core.quantize:46
+msgid "e8m0"
+msgstr ""
+
+#: ../../../docstring of mlx.core.quantize:45 mlx.core.quantize:46
+#: mlx.core.quantize:47
+msgid "no"
+msgstr ""
+
+#: ../../../docstring of mlx.core.quantize:46
+msgid "mxfp8"
+msgstr ""
+
+#: ../../../docstring of mlx.core.quantize:47
+msgid "nvfp4"
+msgstr ""
+
+#: ../../../docstring of mlx.core.quantize:47
+msgid "16\\ :sup:`*`"
+msgstr ""
+
+#: ../../../docstring of mlx.core.quantize:47
+msgid "e4m3"
+msgstr ""
+
+#: ../../../docstring of mlx.core.quantize:50
+msgid ":sup:`*` indicates the default value when unspecified."
+msgstr ""
+
+#: ../../../docstring of mlx.core.quantize:52
+msgid ""
+"The ``\"affine\"`` mode quantizes groups of :math:`g` consecutive elements "
+"in a row of ``w``. For each group the quantized representation of each "
+"element :math:`\\hat{w_i}` is computed as follows:"
+msgstr ""
+
+#: ../../../docstring of mlx.core.quantize:56
+msgid ""
+"\\begin{aligned}\n"
+"  \\alpha &= \\max_i w_i \\\\\n"
+"  \\beta &= \\min_i w_i \\\\\n"
+"  s &= \\frac{\\alpha - \\beta}{2^b - 1} \\\\\n"
+"  \\hat{w_i} &= \\textrm{round}\\left( \\frac{w_i - \\beta}{s}\\right).\n"
+"\\end{aligned}"
+msgstr ""
+
+#: ../../../docstring of mlx.core.quantize:65
+msgid ""
+"After the above computation, :math:`\\hat{w_i}` fits in :math:`b` bits and "
+"is packed in an unsigned 32-bit integer from the lower to upper bits. For "
+"instance, for 4-bit quantization we fit 8 elements in an unsigned 32 bit "
+"integer where the 1st element occupies the 4 least significant bits, the 2nd "
+"bits 4-7 etc."
+msgstr ""
+
+#: ../../../docstring of mlx.core.quantize:71
+msgid ""
+"To dequantize the elements of ``w``, we also save :math:`s` and :math:"
+"`\\beta` which are the returned ``scales`` and ``biases`` respectively."
+msgstr ""
+
+#: ../../../docstring of mlx.core.quantize:75
+msgid ""
+"The ``\"mxfp4\"``, ``\"mxfp8\"``, and ``\"nvfp4\"`` modes similarly quantize "
+"groups of :math:`g` elements of ``w``. For the ``\"mx\"`` modes, the group "
+"size must be ``32``.  For ``\"nvfp4\"`` the group size must be 16. The "
+"elements are quantized to 4-bit or 8-bit precision floating-point values: "
+"E2M1 for ``\"fp4\"`` and E4M3 for ``\"fp8\"``. There is a shared 8-bit scale "
+"per group. The ``\"mx\"`` modes us an E8M0 scale and the ``\"nv\"`` mode "
+"uses an E4M3 scale. Unlike ``affine`` quantization, these modes does not "
+"have a bias value."
+msgstr ""
+
+#: ../../../docstring of mlx.core.quantize:85
+msgid ""
+"More details on the ``\"mx\"`` formats can be found in the `specification "
+"<https://www.opencompute.org/documents/ocp-microscaling-formats-mx-v1-0-spec-"
+"final-pdf>`_."
+msgstr ""
