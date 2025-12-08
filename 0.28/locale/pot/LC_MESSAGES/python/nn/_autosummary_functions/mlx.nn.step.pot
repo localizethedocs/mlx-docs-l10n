@@ -1,0 +1,52 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023, Apple
+# This file is distributed under the same license as the MLX package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: MLX 0.28\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-12-08 12:32+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../src/python/nn/_autosummary_functions/mlx.nn.step.rst:2
+msgid "mlx.nn.step"
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/activations.py:docstring
+#: of mlx.nn.layers.activations.step:1
+msgid "Applies the Step Activation Function."
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/activations.py:docstring
+#: of mlx.nn.layers.activations.step:3
+msgid ""
+"This function implements a binary step activation, where the output is set "
+"to 1 if the input is greater than a specified threshold, and 0 otherwise."
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/activations.py:docstring
+#: of mlx.nn.layers.activations.step:6
+msgid ""
+"\\text{step}(x) = \\begin{cases}\n"
+"0 & \\text{if } x < \\text{threshold} \\\\\n"
+"1 & \\text{if } x \\geq \\text{threshold}\n"
+"\\end{cases}\n"
+"\n"
+msgstr ""
+
+#: ../../../src/python/nn/_autosummary_functions/mlx.nn.step.rst:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/activations.py:docstring
+#: of mlx.nn.layers.activations.step:12
+msgid "The value to threshold at."
+msgstr ""
