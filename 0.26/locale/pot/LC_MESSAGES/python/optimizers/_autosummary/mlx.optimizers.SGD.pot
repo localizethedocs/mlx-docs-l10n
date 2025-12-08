@@ -1,0 +1,99 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023, Apple
+# This file is distributed under the same license as the MLX package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: MLX 0.26\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-12-08 12:22+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../src/python/optimizers/_autosummary/mlx.optimizers.SGD.rst:2
+msgid "mlx.optimizers.SGD"
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/optimizers/optimizers.py:docstring
+#: of mlx.optimizers.optimizers.SGD:1
+msgid "The stochastic gradient descent optimizer."
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/optimizers/optimizers.py:docstring
+#: of mlx.optimizers.optimizers.SGD:3
+msgid "Updates a parameter :math:`w` with a gradient :math:`g` as follows"
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/optimizers/optimizers.py:docstring
+#: of mlx.optimizers.optimizers.SGD:5
+msgid ""
+"v_{t+1} &= \\mu v_t + (1 - \\tau) g_t \\\\\n"
+"w_{t+1} &= w_t - \\lambda v_{t+1}"
+msgstr ""
+
+#: ../../../src/python/optimizers/_autosummary/mlx.optimizers.SGD.rst:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/optimizers/optimizers.py:docstring
+#: of mlx.optimizers.optimizers.SGD:10
+msgid "The learning rate :math:`\\lambda`."
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/optimizers/optimizers.py:docstring
+#: of mlx.optimizers.optimizers.SGD:12
+msgid "The momentum strength :math:`\\mu`. Default: ``0``"
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/optimizers/optimizers.py:docstring
+#: of mlx.optimizers.optimizers.SGD:14
+msgid "The weight decay (L2 penalty). Default: ``0``"
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/optimizers/optimizers.py:docstring
+#: of mlx.optimizers.optimizers.SGD:16
+msgid "Dampening for momentum :math:`\\tau`. Default: ``0``"
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/optimizers/optimizers.py:docstring
+#: of mlx.optimizers.optimizers.SGD:18
+msgid "Enables Nesterov momentum. Default: ``False``"
+msgstr ""
+
+#: ../../../src/python/optimizers/_autosummary/mlx.optimizers.SGD.rst:12
+msgid "Methods"
+msgstr ""
+
+#: ../../../src/python/optimizers/_autosummary/mlx.optimizers.SGD.rst:17:<autosummary>:1
+msgid ""
+":py:obj:`__init__ <mlx.optimizers.SGD.__init__>`\\ \\(learning\\_rate\\[\\, "
+"momentum\\, ...\\]\\)"
+msgstr ""
+
+#: ../../../src/python/optimizers/_autosummary/mlx.optimizers.SGD.rst:17:<autosummary>:1
+msgid ""
+":py:obj:`apply_single <mlx.optimizers.SGD.apply_single>`\\ \\(gradient\\, "
+"parameter\\, state\\)"
+msgstr ""
+
+#: ../../../src/python/optimizers/_autosummary/mlx.optimizers.SGD.rst:17:<autosummary>:1
+msgid ""
+"Performs the SGD parameter update and stores :math:`v` in the optimizer "
+"state."
+msgstr ""
+
+#: ../../../src/python/optimizers/_autosummary/mlx.optimizers.SGD.rst:17:<autosummary>:1
+msgid ""
+":py:obj:`init_single <mlx.optimizers.SGD.init_single>`\\ \\(parameter\\, "
+"state\\)"
+msgstr ""
+
+#: ../../../src/python/optimizers/_autosummary/mlx.optimizers.SGD.rst:17:<autosummary>:1
+msgid "Initialize optimizer state"
+msgstr ""
