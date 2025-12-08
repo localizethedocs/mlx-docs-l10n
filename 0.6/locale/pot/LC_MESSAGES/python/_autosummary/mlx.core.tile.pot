@@ -1,0 +1,54 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023, MLX Contributors
+# This file is distributed under the same license as the MLX package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: MLX 0.6\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-12-08 12:13+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../src/python/_autosummary/mlx.core.tile.rst:2
+msgid "mlx.core.tile"
+msgstr ""
+
+#: ../../../docstring of
+#: mlx.core.pybind11_detail_function_record_v1_system_libstdcpp_gxx_abi_1xxx_use_cxx11_abi_1.tile:1
+msgid ""
+"Construct an array by repeating ``a`` the number of times given by ``reps``."
+msgstr ""
+
+#: ../../../src/python/_autosummary/mlx.core.tile.rst:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../docstring of
+#: mlx.core.pybind11_detail_function_record_v1_system_libstdcpp_gxx_abi_1xxx_use_cxx11_abi_1.tile:3
+msgid "Input array"
+msgstr ""
+
+#: ../../../docstring of
+#: mlx.core.pybind11_detail_function_record_v1_system_libstdcpp_gxx_abi_1xxx_use_cxx11_abi_1.tile:5
+msgid "The number of times to repeat ``a`` along each axis."
+msgstr ""
+
+#: ../../../src/python/_autosummary/mlx.core.tile.rst:0
+msgid "Returns"
+msgstr ""
+
+#: ../../../docstring of
+#: mlx.core.pybind11_detail_function_record_v1_system_libstdcpp_gxx_abi_1xxx_use_cxx11_abi_1.tile:8
+msgid "The tiled array."
+msgstr ""
+
+#: ../../../src/python/_autosummary/mlx.core.tile.rst:0
+msgid "Return type"
+msgstr ""
