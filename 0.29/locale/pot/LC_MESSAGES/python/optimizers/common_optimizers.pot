@@ -1,0 +1,133 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023, Apple
+# This file is distributed under the same license as the MLX package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: MLX 0.29\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-12-08 12:54+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../src/python/optimizers/common_optimizers.rst:4
+msgid "Common Optimizers"
+msgstr ""
+
+#: ../../../src/python/optimizers/common_optimizers.rst:22:<autosummary>:1
+msgid ""
+":py:obj:`SGD <mlx.optimizers.SGD>`\\ \\(learning\\_rate\\[\\, momentum\\, "
+"weight\\_decay\\, ...\\]\\)"
+msgstr ""
+
+#: ../../../src/python/optimizers/common_optimizers.rst:22:<autosummary>:1
+msgid "The stochastic gradient descent optimizer."
+msgstr ""
+
+#: ../../../src/python/optimizers/common_optimizers.rst:22:<autosummary>:1
+msgid ""
+":py:obj:`RMSprop <mlx.optimizers.RMSprop>`\\ \\(learning\\_rate\\[\\, "
+"alpha\\, eps\\]\\)"
+msgstr ""
+
+#: ../../../src/python/optimizers/common_optimizers.rst:22:<autosummary>:1
+msgid "The RMSprop optimizer [1]."
+msgstr ""
+
+#: ../../../src/python/optimizers/common_optimizers.rst:22:<autosummary>:1
+msgid ""
+":py:obj:`Adagrad <mlx.optimizers.Adagrad>`\\ \\(learning\\_rate\\[\\, "
+"eps\\]\\)"
+msgstr ""
+
+#: ../../../src/python/optimizers/common_optimizers.rst:22:<autosummary>:1
+msgid "The Adagrad optimizer [1]."
+msgstr ""
+
+#: ../../../src/python/optimizers/common_optimizers.rst:22:<autosummary>:1
+msgid ""
+":py:obj:`Adafactor <mlx.optimizers.Adafactor>`\\ \\(\\[learning\\_rate\\, "
+"eps\\, ...\\]\\)"
+msgstr ""
+
+#: ../../../src/python/optimizers/common_optimizers.rst:22:<autosummary>:1
+msgid "The Adafactor optimizer."
+msgstr ""
+
+#: ../../../src/python/optimizers/common_optimizers.rst:22:<autosummary>:1
+msgid ""
+":py:obj:`AdaDelta <mlx.optimizers.AdaDelta>`\\ \\(learning\\_rate\\[\\, "
+"rho\\, eps\\]\\)"
+msgstr ""
+
+#: ../../../src/python/optimizers/common_optimizers.rst:22:<autosummary>:1
+msgid "The AdaDelta optimizer with a learning rate [1]."
+msgstr ""
+
+#: ../../../src/python/optimizers/common_optimizers.rst:22:<autosummary>:1
+msgid ""
+":py:obj:`Adam <mlx.optimizers.Adam>`\\ \\(learning\\_rate\\[\\, betas\\, "
+"eps\\, ...\\]\\)"
+msgstr ""
+
+#: ../../../src/python/optimizers/common_optimizers.rst:22:<autosummary>:1
+msgid "The Adam optimizer [1]."
+msgstr ""
+
+#: ../../../src/python/optimizers/common_optimizers.rst:22:<autosummary>:1
+msgid ""
+":py:obj:`AdamW <mlx.optimizers.AdamW>`\\ \\(learning\\_rate\\[\\, betas\\, "
+"eps\\, ...\\]\\)"
+msgstr ""
+
+#: ../../../src/python/optimizers/common_optimizers.rst:22:<autosummary>:1
+msgid "The AdamW optimizer [1]."
+msgstr ""
+
+#: ../../../src/python/optimizers/common_optimizers.rst:22:<autosummary>:1
+msgid ""
+":py:obj:`Adamax <mlx.optimizers.Adamax>`\\ \\(learning\\_rate\\[\\, betas\\, "
+"eps\\]\\)"
+msgstr ""
+
+#: ../../../src/python/optimizers/common_optimizers.rst:22:<autosummary>:1
+msgid "The Adamax optimizer, a variant of Adam based on the infinity norm [1]."
+msgstr ""
+
+#: ../../../src/python/optimizers/common_optimizers.rst:22:<autosummary>:1
+msgid ""
+":py:obj:`Lion <mlx.optimizers.Lion>`\\ \\(learning\\_rate\\[\\, betas\\, "
+"weight\\_decay\\]\\)"
+msgstr ""
+
+#: ../../../src/python/optimizers/common_optimizers.rst:22:<autosummary>:1
+msgid "The Lion optimizer [1]."
+msgstr ""
+
+#: ../../../src/python/optimizers/common_optimizers.rst:22:<autosummary>:1
+msgid ""
+":py:obj:`MultiOptimizer <mlx.optimizers.MultiOptimizer>`\\ "
+"\\(optimizers\\[\\, filters\\]\\)"
+msgstr ""
+
+#: ../../../src/python/optimizers/common_optimizers.rst:22:<autosummary>:1
+msgid ""
+"Wraps a list of optimizers with corresponding weight predicates/filters to "
+"make it easy to use different optimizers for different weights."
+msgstr ""
+
+#: ../../../src/python/optimizers/common_optimizers.rst:22:<autosummary>:1
+msgid ""
+":py:obj:`Muon <mlx.optimizers.Muon>`\\ \\(learning\\_rate\\[\\, "
+"momentum\\, ...\\]\\)"
+msgstr ""
+
+#: ../../../src/python/optimizers/common_optimizers.rst:22:<autosummary>:1
+msgid "The Muon optimizer."
+msgstr ""
