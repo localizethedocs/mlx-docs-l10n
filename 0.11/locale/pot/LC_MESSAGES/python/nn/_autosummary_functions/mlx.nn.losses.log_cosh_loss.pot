@@ -1,0 +1,76 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023, MLX Contributors
+# This file is distributed under the same license as the MLX package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: MLX 0.11\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-12-08 12:58+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../src/python/nn/_autosummary_functions/mlx.nn.losses.log_cosh_loss.rst:2
+msgid "mlx.nn.losses.log\\_cosh\\_loss"
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/losses.py:docstring
+#: of mlx.nn.losses.log_cosh_loss:1
+msgid "Computes the log cosh loss between inputs and targets."
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/losses.py:docstring
+#: of mlx.nn.losses.log_cosh_loss:3
+msgid ""
+"Logcosh acts like L2 loss for small errors, ensuring stable gradients, and "
+"like the L1 loss for large errors, reducing sensitivity to outliers. This "
+"dual behavior offers a balanced, robust approach for regression tasks."
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/losses.py:docstring
+#: of mlx.nn.losses.log_cosh_loss:7
+msgid ""
+"\\text{logcosh}(y_{\\text{true}}, y_{\\text{pred}}) =\n"
+"     \\frac{1}{n} \\sum_{i=1}^{n}\n"
+"     \\log(\\cosh(y_{\\text{pred}}^{(i)} - y_{\\text{true}}^{(i)}))"
+msgstr ""
+
+#: ../../../src/python/nn/_autosummary_functions/mlx.nn.losses.log_cosh_loss.rst:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/losses.py:docstring
+#: of mlx.nn.losses.log_cosh_loss:14
+msgid "The predicted values."
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/losses.py:docstring
+#: of mlx.nn.losses.log_cosh_loss:16
+msgid "The target values."
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/losses.py:docstring
+#: of mlx.nn.losses.log_cosh_loss:18
+msgid ""
+"Specifies the reduction to apply to the output: ``'none'`` | ``'mean'`` | "
+"``'sum'``. Default: ``'none'``."
+msgstr ""
+
+#: ../../../src/python/nn/_autosummary_functions/mlx.nn.losses.log_cosh_loss.rst:0
+msgid "Returns"
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/losses.py:docstring
+#: of mlx.nn.losses.log_cosh_loss:22
+msgid "The computed log cosh loss."
+msgstr ""
+
+#: ../../../src/python/nn/_autosummary_functions/mlx.nn.losses.log_cosh_loss.rst:0
+msgid "Return type"
+msgstr ""
