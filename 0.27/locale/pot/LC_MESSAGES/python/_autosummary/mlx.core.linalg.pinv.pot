@@ -1,0 +1,59 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023, Apple
+# This file is distributed under the same license as the MLX package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: MLX 0.27\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-12-08 12:54+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../src/python/_autosummary/mlx.core.linalg.pinv.rst:2
+msgid "mlx.core.linalg.pinv"
+msgstr ""
+
+#: ../../../docstring of mlx.core.linalg.pinv:1
+msgid "Compute the (Moore-Penrose) pseudo-inverse of a matrix."
+msgstr ""
+
+#: ../../../docstring of mlx.core.linalg.pinv:3
+msgid ""
+"This function calculates a generalized inverse of a matrix using its "
+"singular-value decomposition. This function supports arrays with at least 2 "
+"dimensions. When the input has more than two dimensions, the inverse is "
+"computed for each matrix in the last two dimensions of ``a``."
+msgstr ""
+
+#: ../../../src/python/_autosummary/mlx.core.linalg.pinv.rst:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../docstring of mlx.core.linalg.pinv:8
+msgid "Input array."
+msgstr ""
+
+#: ../../../docstring of mlx.core.linalg.pinv:10
+msgid ""
+"Stream or device. Defaults to ``None`` in which case the default stream of "
+"the default device is used."
+msgstr ""
+
+#: ../../../src/python/_autosummary/mlx.core.linalg.pinv.rst:0
+msgid "Returns"
+msgstr ""
+
+#: ../../../docstring of mlx.core.linalg.pinv:14
+msgid "``aplus`` such that ``a @ aplus @ a = a``"
+msgstr ""
+
+#: ../../../src/python/_autosummary/mlx.core.linalg.pinv.rst:0
+msgid "Return type"
+msgstr ""
