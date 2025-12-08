@@ -1,0 +1,80 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023, MLX Contributors
+# This file is distributed under the same license as the MLX package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: MLX 0.25\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-12-08 12:39+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../src/python/_autosummary/mlx.core.linalg.eigh.rst:2
+msgid "mlx.core.linalg.eigh"
+msgstr ""
+
+#: ../../../docstring of mlx.core.linalg.eigh:1
+msgid ""
+"Compute the eigenvalues and eigenvectors of a complex Hermitian or real "
+"symmetric matrix."
+msgstr ""
+
+#: ../../../docstring of mlx.core.linalg.eigh:4
+msgid ""
+"This function supports arrays with at least 2 dimensions. When the input has "
+"more than two dimensions, the eigenvalues and eigenvectors are computed for "
+"each matrix in the last two dimensions."
+msgstr ""
+
+#: ../../../docstring of mlx.core.linalg.eigh:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../docstring of mlx.core.linalg.eigh:8
+msgid "Input array. Must be a real symmetric or complex Hermitian matrix."
+msgstr ""
+
+#: ../../../docstring of mlx.core.linalg.eigh:11
+msgid ""
+"Whether to use the upper (``\"U\"``) or lower (``\"L\"``) triangle of the "
+"matrix.  Default: ``\"L\"``."
+msgstr ""
+
+#: ../../../docstring of mlx.core.linalg.eigh:14
+msgid ""
+"Stream or device. Defaults to ``None`` in which case the default stream of "
+"the default device is used."
+msgstr ""
+
+#: ../../../docstring of mlx.core.linalg.eigh:0
+msgid "Returns"
+msgstr ""
+
+#: ../../../docstring of mlx.core.linalg.eigh:18
+msgid ""
+"A tuple containing the eigenvalues in ascending order and the normalized "
+"eigenvectors. The column ``v[:, i]`` is the eigenvector corresponding to the "
+"i-th eigenvalue."
+msgstr ""
+
+#: ../../../docstring of mlx.core.linalg.eigh:0
+msgid "Return type"
+msgstr ""
+
+#: ../../../docstring of mlx.core.linalg.eigh:25
+msgid ""
+"The input matrix is assumed to be symmetric (or Hermitian). Only the "
+"selected triangle is used. No checks for symmetry are performed."
+msgstr ""
+
+#: ../../../docstring of mlx.core.linalg.eigh:29
+msgid "Example"
+msgstr ""
