@@ -1,0 +1,56 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023, MLX Contributors
+# This file is distributed under the same license as the MLX package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: MLX 0.22\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-12-08 12:45+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../src/python/_autosummary/mlx.core.sigmoid.rst:2
+msgid "mlx.core.sigmoid"
+msgstr ""
+
+#: ../../../docstring of mlx.core.sigmoid:1
+msgid "Element-wise logistic sigmoid."
+msgstr ""
+
+#: ../../../docstring of mlx.core.sigmoid:3
+msgid "The logistic sigmoid function is:"
+msgstr ""
+
+#: ../../../docstring of mlx.core.sigmoid:5
+msgid ""
+"\\mathrm{sigmoid}(x) = \\frac{1}{1 + e^{-x}}\n"
+"\n"
+msgstr ""
+
+#: ../../../src/python/_autosummary/mlx.core.sigmoid.rst:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../docstring of mlx.core.sigmoid:8
+msgid "Input array."
+msgstr ""
+
+#: ../../../src/python/_autosummary/mlx.core.sigmoid.rst:0
+msgid "Returns"
+msgstr ""
+
+#: ../../../docstring of mlx.core.sigmoid:11
+msgid "The logistic sigmoid of ``a``."
+msgstr ""
+
+#: ../../../src/python/_autosummary/mlx.core.sigmoid.rst:0
+msgid "Return type"
+msgstr ""
