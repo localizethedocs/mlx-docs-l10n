@@ -27,7 +27,7 @@ msgstr ""
 
 #: ../../../src/usage/saving_and_loading.rst:10
 msgid "Serialization Formats"
-msgstr ""
+msgstr "序列化格式"
 
 #: ../../../src/usage/saving_and_loading.rst:14
 msgid "Format"
