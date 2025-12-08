@@ -1,0 +1,109 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023, MLX Contributors
+# This file is distributed under the same license as the MLX package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: MLX 0.15\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-12-08 12:49+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../src/python/nn/_autosummary_functions/mlx.nn.losses.triplet_loss.rst:2
+msgid "mlx.nn.losses.triplet\\_loss"
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/losses.py:docstring
+#: of mlx.nn.losses.triplet_loss:1
+msgid ""
+"Computes the triplet loss for a set of anchor, positive, and negative "
+"samples. Margin is represented with alpha in the math section."
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/losses.py:docstring
+#: of mlx.nn.losses.triplet_loss:4
+msgid "\\max\\left(\\|A - P\\|_p - \\|A - N\\|_p + \\alpha, 0\\right)"
+msgstr ""
+
+#: ../../../src/python/nn/_autosummary_functions/mlx.nn.losses.triplet_loss.rst:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/losses.py:docstring
+#: of mlx.nn.losses.triplet_loss:8
+msgid "The anchor samples."
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/losses.py:docstring
+#: of mlx.nn.losses.triplet_loss:10
+msgid "The positive samples."
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/losses.py:docstring
+#: of mlx.nn.losses.triplet_loss:12
+msgid "The negative samples."
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/losses.py:docstring
+#: of mlx.nn.losses.triplet_loss:14
+msgid "The distribution axis. Default: ``-1``."
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/losses.py:docstring
+#: of mlx.nn.losses.triplet_loss:16
+msgid "The norm degree for pairwise distance. Default: ``2``."
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/losses.py:docstring
+#: of mlx.nn.losses.triplet_loss:18
+msgid "Margin for the triplet loss. Defaults to ``1.0``."
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/losses.py:docstring
+#: of mlx.nn.losses.triplet_loss:20
+msgid ""
+"Small positive constant to prevent numerical instability. Defaults to "
+"``1e-6``."
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/losses.py:docstring
+#: of mlx.nn.losses.triplet_loss:22
+msgid ""
+"Specifies the reduction to apply to the output: ``'none'`` | ``'mean'`` | "
+"``'sum'``. Default: ``'none'``."
+msgstr ""
+
+#: ../../../src/python/nn/_autosummary_functions/mlx.nn.losses.triplet_loss.rst:0
+msgid "Returns"
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/losses.py:docstring
+#: of mlx.nn.losses.triplet_loss:26
+msgid ""
+"Computed triplet loss. If reduction is \"none\", returns a tensor of the "
+"same shape as input;           if reduction is \"mean\" or \"sum\", returns "
+"a scalar tensor."
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/losses.py:docstring
+#: of mlx.nn.losses.triplet_loss:28
+msgid ""
+"Computed triplet loss. If reduction is \"none\", returns a tensor of the "
+"same shape as input;"
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/losses.py:docstring
+#: of mlx.nn.losses.triplet_loss:29
+msgid "if reduction is \"mean\" or \"sum\", returns a scalar tensor."
+msgstr ""
+
+#: ../../../src/python/nn/_autosummary_functions/mlx.nn.losses.triplet_loss.rst:0
+msgid "Return type"
+msgstr ""
