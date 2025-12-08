@@ -1,0 +1,165 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023, MLX Contributors
+# This file is distributed under the same license as the MLX package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: MLX 0.16\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-12-08 13:00+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../src/python/nn/losses.rst:6
+msgid "Loss Functions"
+msgstr ""
+
+#: ../../../src/python/nn/losses.rst:25:<autosummary>:1
+msgid ""
+":py:obj:`binary_cross_entropy <mlx.nn.losses.binary_cross_entropy>`\\ "
+"\\(inputs\\, targets\\[\\, ...\\]\\)"
+msgstr ""
+
+#: ../../../src/python/nn/losses.rst:25:<autosummary>:1
+msgid "Computes the binary cross entropy loss."
+msgstr ""
+
+#: ../../../src/python/nn/losses.rst:25:<autosummary>:1
+msgid ""
+":py:obj:`cosine_similarity_loss <mlx.nn.losses.cosine_similarity_loss>`\\ "
+"\\(x1\\, x2\\[\\, axis\\, eps\\, ...\\]\\)"
+msgstr ""
+
+#: ../../../src/python/nn/losses.rst:25:<autosummary>:1
+msgid "Computes the cosine similarity between the two inputs."
+msgstr ""
+
+#: ../../../src/python/nn/losses.rst:25:<autosummary>:1
+msgid ""
+":py:obj:`cross_entropy <mlx.nn.losses.cross_entropy>`\\ \\(logits\\, "
+"targets\\[\\, weights\\, ...\\]\\)"
+msgstr ""
+
+#: ../../../src/python/nn/losses.rst:25:<autosummary>:1
+msgid "Computes the cross entropy loss."
+msgstr ""
+
+#: ../../../src/python/nn/losses.rst:25:<autosummary>:1
+msgid ""
+":py:obj:`gaussian_nll_loss <mlx.nn.losses.gaussian_nll_loss>`\\ \\(inputs\\, "
+"targets\\, vars\\[\\, ...\\]\\)"
+msgstr ""
+
+#: ../../../src/python/nn/losses.rst:25:<autosummary>:1
+msgid "Computes the negative log likelihood loss for a Gaussian distribution."
+msgstr ""
+
+#: ../../../src/python/nn/losses.rst:25:<autosummary>:1
+msgid ""
+":py:obj:`hinge_loss <mlx.nn.losses.hinge_loss>`\\ \\(inputs\\, targets\\[\\, "
+"reduction\\]\\)"
+msgstr ""
+
+#: ../../../src/python/nn/losses.rst:25:<autosummary>:1
+msgid "Computes the hinge loss between inputs and targets."
+msgstr ""
+
+#: ../../../src/python/nn/losses.rst:25:<autosummary>:1
+msgid ""
+":py:obj:`huber_loss <mlx.nn.losses.huber_loss>`\\ \\(inputs\\, targets\\[\\, "
+"delta\\, reduction\\]\\)"
+msgstr ""
+
+#: ../../../src/python/nn/losses.rst:25:<autosummary>:1
+msgid "Computes the Huber loss between inputs and targets."
+msgstr ""
+
+#: ../../../src/python/nn/losses.rst:25:<autosummary>:1
+msgid ""
+":py:obj:`kl_div_loss <mlx.nn.losses.kl_div_loss>`\\ \\(inputs\\, "
+"targets\\[\\, axis\\, reduction\\]\\)"
+msgstr ""
+
+#: ../../../src/python/nn/losses.rst:25:<autosummary>:1
+msgid "Computes the Kullback-Leibler divergence loss."
+msgstr ""
+
+#: ../../../src/python/nn/losses.rst:25:<autosummary>:1
+msgid ""
+":py:obj:`l1_loss <mlx.nn.losses.l1_loss>`\\ \\(predictions\\, targets\\[\\, "
+"reduction\\]\\)"
+msgstr ""
+
+#: ../../../src/python/nn/losses.rst:25:<autosummary>:1
+msgid "Computes the L1 loss."
+msgstr ""
+
+#: ../../../src/python/nn/losses.rst:25:<autosummary>:1
+msgid ""
+":py:obj:`log_cosh_loss <mlx.nn.losses.log_cosh_loss>`\\ \\(inputs\\, "
+"targets\\[\\, reduction\\]\\)"
+msgstr ""
+
+#: ../../../src/python/nn/losses.rst:25:<autosummary>:1
+msgid "Computes the log cosh loss between inputs and targets."
+msgstr ""
+
+#: ../../../src/python/nn/losses.rst:25:<autosummary>:1
+msgid ""
+":py:obj:`margin_ranking_loss <mlx.nn.losses.margin_ranking_loss>`\\ "
+"\\(inputs1\\, inputs2\\, targets\\)"
+msgstr ""
+
+#: ../../../src/python/nn/losses.rst:25:<autosummary>:1
+msgid ""
+"Calculate the margin ranking loss that loss given inputs :math:`x_1`, :math:"
+"`x_2` and a label :math:`y` (containing 1 or -1)."
+msgstr ""
+
+#: ../../../src/python/nn/losses.rst:25:<autosummary>:1
+msgid ""
+":py:obj:`mse_loss <mlx.nn.losses.mse_loss>`\\ \\(predictions\\, "
+"targets\\[\\, reduction\\]\\)"
+msgstr ""
+
+#: ../../../src/python/nn/losses.rst:25:<autosummary>:1
+msgid "Computes the mean squared error loss."
+msgstr ""
+
+#: ../../../src/python/nn/losses.rst:25:<autosummary>:1
+msgid ""
+":py:obj:`nll_loss <mlx.nn.losses.nll_loss>`\\ \\(inputs\\, targets\\[\\, "
+"axis\\, reduction\\]\\)"
+msgstr ""
+
+#: ../../../src/python/nn/losses.rst:25:<autosummary>:1
+msgid "Computes the negative log likelihood loss."
+msgstr ""
+
+#: ../../../src/python/nn/losses.rst:25:<autosummary>:1
+msgid ""
+":py:obj:`smooth_l1_loss <mlx.nn.losses.smooth_l1_loss>`\\ \\(predictions\\, "
+"targets\\[\\, beta\\, ...\\]\\)"
+msgstr ""
+
+#: ../../../src/python/nn/losses.rst:25:<autosummary>:1
+msgid "Computes the smooth L1 loss."
+msgstr ""
+
+#: ../../../src/python/nn/losses.rst:25:<autosummary>:1
+msgid ""
+":py:obj:`triplet_loss <mlx.nn.losses.triplet_loss>`\\ \\(anchors\\, "
+"positives\\, negatives\\)"
+msgstr ""
+
+#: ../../../src/python/nn/losses.rst:25:<autosummary>:1
+msgid ""
+"Computes the triplet loss for a set of anchor, positive, and negative "
+"samples."
+msgstr ""
