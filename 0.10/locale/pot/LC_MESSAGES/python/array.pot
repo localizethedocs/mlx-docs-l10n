@@ -1,0 +1,487 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023, MLX Contributors
+# This file is distributed under the same license as the MLX package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: MLX 0.10\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-12-08 12:56+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../src/python/array.rst:4
+msgid "Array"
+msgstr ""
+
+#: ../../../src/python/array.rst:59:<autosummary>:1
+msgid ":py:obj:`array <mlx.core.array>`\\ \\(\\*args\\, \\*\\*kwargs\\)"
+msgstr ""
+
+#: ../../../src/python/array.rst:59:<autosummary>:1
+msgid "An N-dimensional array object."
+msgstr ""
+
+#: ../../../src/python/array.rst:59:<autosummary>:1
+msgid ""
+":py:obj:`array.astype <mlx.core.array.astype>`\\ \\(self\\, dtype\\[\\, "
+"stream\\]\\)"
+msgstr ""
+
+#: ../../../src/python/array.rst:59:<autosummary>:1
+msgid "Cast the array to a specified type."
+msgstr ""
+
+#: ../../../src/python/array.rst:59:<autosummary>:1
+msgid ":py:obj:`array.at <mlx.core.array.at>`\\"
+msgstr ""
+
+#: ../../../src/python/array.rst:59:<autosummary>:1
+msgid "Used to apply updates at the given indices."
+msgstr ""
+
+#: ../../../src/python/array.rst:59:<autosummary>:1
+msgid ":py:obj:`array.item <mlx.core.array.item>`\\ \\(self\\)"
+msgstr ""
+
+#: ../../../src/python/array.rst:59:<autosummary>:1
+msgid "Access the value of a scalar array."
+msgstr ""
+
+#: ../../../src/python/array.rst:59:<autosummary>:1
+msgid ":py:obj:`array.tolist <mlx.core.array.tolist>`\\ \\(self\\)"
+msgstr ""
+
+#: ../../../src/python/array.rst:59:<autosummary>:1
+msgid "Convert the array to a Python :class:`list`."
+msgstr ""
+
+#: ../../../src/python/array.rst:59:<autosummary>:1
+msgid ":py:obj:`array.dtype <mlx.core.array.dtype>`\\"
+msgstr ""
+
+#: ../../../src/python/array.rst:59:<autosummary>:1
+msgid "The array's :class:`Dtype`."
+msgstr ""
+
+#: ../../../src/python/array.rst:59:<autosummary>:1
+msgid ":py:obj:`array.itemsize <mlx.core.array.itemsize>`\\"
+msgstr ""
+
+#: ../../../src/python/array.rst:59:<autosummary>:1
+msgid "The size of the array's datatype in bytes."
+msgstr ""
+
+#: ../../../src/python/array.rst:59:<autosummary>:1
+msgid ":py:obj:`array.nbytes <mlx.core.array.nbytes>`\\"
+msgstr ""
+
+#: ../../../src/python/array.rst:59:<autosummary>:1
+msgid "The number of bytes in the array."
+msgstr ""
+
+#: ../../../src/python/array.rst:59:<autosummary>:1
+msgid ":py:obj:`array.ndim <mlx.core.array.ndim>`\\"
+msgstr ""
+
+#: ../../../src/python/array.rst:59:<autosummary>:1
+msgid "The array's dimension."
+msgstr ""
+
+#: ../../../src/python/array.rst:59:<autosummary>:1
+msgid ":py:obj:`array.shape <mlx.core.array.shape>`\\"
+msgstr ""
+
+#: ../../../src/python/array.rst:59:<autosummary>:1
+msgid "The shape of the array as a Python tuple."
+msgstr ""
+
+#: ../../../src/python/array.rst:59:<autosummary>:1
+msgid ":py:obj:`array.size <mlx.core.array.size>`\\"
+msgstr ""
+
+#: ../../../src/python/array.rst:59:<autosummary>:1
+msgid "Number of elements in the array."
+msgstr ""
+
+#: ../../../src/python/array.rst:59:<autosummary>:1
+msgid ""
+":py:obj:`array.abs <mlx.core.array.abs>`\\ \\(self\\, \\*\\[\\, stream\\]\\)"
+msgstr ""
+
+#: ../../../src/python/array.rst:59:<autosummary>:1
+msgid "See :func:`abs`."
+msgstr ""
+
+#: ../../../src/python/array.rst:59:<autosummary>:1
+msgid ""
+":py:obj:`array.all <mlx.core.array.all>`\\ \\(self\\[\\, axis\\, keepdims\\, "
+"stream\\]\\)"
+msgstr ""
+
+#: ../../../src/python/array.rst:59:<autosummary>:1
+msgid "See :func:`all`."
+msgstr ""
+
+#: ../../../src/python/array.rst:59:<autosummary>:1
+msgid ""
+":py:obj:`array.any <mlx.core.array.any>`\\ \\(self\\[\\, axis\\, keepdims\\, "
+"stream\\]\\)"
+msgstr ""
+
+#: ../../../src/python/array.rst:59:<autosummary>:1
+msgid "See :func:`any`."
+msgstr ""
+
+#: ../../../src/python/array.rst:59:<autosummary>:1
+msgid ""
+":py:obj:`array.argmax <mlx.core.array.argmax>`\\ \\(self\\[\\, axis\\, "
+"keepdims\\, stream\\]\\)"
+msgstr ""
+
+#: ../../../src/python/array.rst:59:<autosummary>:1
+msgid "See :func:`argmax`."
+msgstr ""
+
+#: ../../../src/python/array.rst:59:<autosummary>:1
+msgid ""
+":py:obj:`array.argmin <mlx.core.array.argmin>`\\ \\(self\\[\\, axis\\, "
+"keepdims\\, stream\\]\\)"
+msgstr ""
+
+#: ../../../src/python/array.rst:59:<autosummary>:1
+msgid "See :func:`argmin`."
+msgstr ""
+
+#: ../../../src/python/array.rst:59:<autosummary>:1
+msgid ""
+":py:obj:`array.cos <mlx.core.array.cos>`\\ \\(self\\, \\*\\[\\, stream\\]\\)"
+msgstr ""
+
+#: ../../../src/python/array.rst:59:<autosummary>:1
+msgid "See :func:`cos`."
+msgstr ""
+
+#: ../../../src/python/array.rst:59:<autosummary>:1
+msgid ""
+":py:obj:`array.cummax <mlx.core.array.cummax>`\\ \\(self\\[\\, axis\\, "
+"reverse\\, ...\\]\\)"
+msgstr ""
+
+#: ../../../src/python/array.rst:59:<autosummary>:1
+msgid "See :func:`cummax`."
+msgstr ""
+
+#: ../../../src/python/array.rst:59:<autosummary>:1
+msgid ""
+":py:obj:`array.cummin <mlx.core.array.cummin>`\\ \\(self\\[\\, axis\\, "
+"reverse\\, ...\\]\\)"
+msgstr ""
+
+#: ../../../src/python/array.rst:59:<autosummary>:1
+msgid "See :func:`cummin`."
+msgstr ""
+
+#: ../../../src/python/array.rst:59:<autosummary>:1
+msgid ""
+":py:obj:`array.cumprod <mlx.core.array.cumprod>`\\ \\(self\\[\\, axis\\, "
+"reverse\\, ...\\]\\)"
+msgstr ""
+
+#: ../../../src/python/array.rst:59:<autosummary>:1
+msgid "See :func:`cumprod`."
+msgstr ""
+
+#: ../../../src/python/array.rst:59:<autosummary>:1
+msgid ""
+":py:obj:`array.cumsum <mlx.core.array.cumsum>`\\ \\(self\\[\\, axis\\, "
+"reverse\\, ...\\]\\)"
+msgstr ""
+
+#: ../../../src/python/array.rst:59:<autosummary>:1
+msgid "See :func:`cumsum`."
+msgstr ""
+
+#: ../../../src/python/array.rst:59:<autosummary>:1
+msgid ""
+":py:obj:`array.diag <mlx.core.array.diag>`\\ \\(self\\[\\, k\\, stream\\]\\)"
+msgstr ""
+
+#: ../../../src/python/array.rst:59:<autosummary>:1
+msgid "Extract a diagonal or construct a diagonal matrix."
+msgstr ""
+
+#: ../../../src/python/array.rst:59:<autosummary>:1
+msgid ""
+":py:obj:`array.diagonal <mlx.core.array.diagonal>`\\ \\(self\\[\\, offset\\, "
+"axis1\\, axis2\\, ...\\]\\)"
+msgstr ""
+
+#: ../../../src/python/array.rst:59:<autosummary>:1
+msgid "See :func:`diagonal`."
+msgstr ""
+
+#: ../../../src/python/array.rst:59:<autosummary>:1
+msgid ""
+":py:obj:`array.exp <mlx.core.array.exp>`\\ \\(self\\, \\*\\[\\, stream\\]\\)"
+msgstr ""
+
+#: ../../../src/python/array.rst:59:<autosummary>:1
+msgid "See :func:`exp`."
+msgstr ""
+
+#: ../../../src/python/array.rst:59:<autosummary>:1
+msgid ""
+":py:obj:`array.flatten <mlx.core.array.flatten>`\\ \\(self\\[\\, "
+"start\\_axis\\, end\\_axis\\, ...\\]\\)"
+msgstr ""
+
+#: ../../../src/python/array.rst:59:<autosummary>:1
+msgid "See :func:`flatten`."
+msgstr ""
+
+#: ../../../src/python/array.rst:59:<autosummary>:1
+msgid ""
+":py:obj:`array.log <mlx.core.array.log>`\\ \\(self\\, \\*\\[\\, stream\\]\\)"
+msgstr ""
+
+#: ../../../src/python/array.rst:59:<autosummary>:1
+msgid "See :func:`log`."
+msgstr ""
+
+#: ../../../src/python/array.rst:59:<autosummary>:1
+msgid ""
+":py:obj:`array.log10 <mlx.core.array.log10>`\\ \\(self\\, \\*\\[\\, "
+"stream\\]\\)"
+msgstr ""
+
+#: ../../../src/python/array.rst:59:<autosummary>:1
+msgid "See :func:`log10`."
+msgstr ""
+
+#: ../../../src/python/array.rst:59:<autosummary>:1
+msgid ""
+":py:obj:`array.log1p <mlx.core.array.log1p>`\\ \\(self\\, \\*\\[\\, "
+"stream\\]\\)"
+msgstr ""
+
+#: ../../../src/python/array.rst:59:<autosummary>:1
+msgid "See :func:`log1p`."
+msgstr ""
+
+#: ../../../src/python/array.rst:59:<autosummary>:1
+msgid ""
+":py:obj:`array.log2 <mlx.core.array.log2>`\\ \\(self\\, \\*\\[\\, "
+"stream\\]\\)"
+msgstr ""
+
+#: ../../../src/python/array.rst:59:<autosummary>:1
+msgid "See :func:`log2`."
+msgstr ""
+
+#: ../../../src/python/array.rst:59:<autosummary>:1
+msgid ""
+":py:obj:`array.logsumexp <mlx.core.array.logsumexp>`\\ \\(self\\[\\, axis\\, "
+"keepdims\\, stream\\]\\)"
+msgstr ""
+
+#: ../../../src/python/array.rst:59:<autosummary>:1
+msgid "See :func:`logsumexp`."
+msgstr ""
+
+#: ../../../src/python/array.rst:59:<autosummary>:1
+msgid ""
+":py:obj:`array.max <mlx.core.array.max>`\\ \\(self\\[\\, axis\\, keepdims\\, "
+"stream\\]\\)"
+msgstr ""
+
+#: ../../../src/python/array.rst:59:<autosummary>:1
+msgid "See :func:`max`."
+msgstr ""
+
+#: ../../../src/python/array.rst:59:<autosummary>:1
+msgid ""
+":py:obj:`array.mean <mlx.core.array.mean>`\\ \\(self\\[\\, axis\\, "
+"keepdims\\, stream\\]\\)"
+msgstr ""
+
+#: ../../../src/python/array.rst:59:<autosummary>:1
+msgid "See :func:`mean`."
+msgstr ""
+
+#: ../../../src/python/array.rst:59:<autosummary>:1
+msgid ""
+":py:obj:`array.min <mlx.core.array.min>`\\ \\(self\\[\\, axis\\, keepdims\\, "
+"stream\\]\\)"
+msgstr ""
+
+#: ../../../src/python/array.rst:59:<autosummary>:1
+msgid "See :func:`min`."
+msgstr ""
+
+#: ../../../src/python/array.rst:59:<autosummary>:1
+msgid ""
+":py:obj:`array.moveaxis <mlx.core.array.moveaxis>`\\ \\(self\\, source\\, "
+"destination\\, \\*\\)"
+msgstr ""
+
+#: ../../../src/python/array.rst:59:<autosummary>:1
+msgid "See :func:`moveaxis`."
+msgstr ""
+
+#: ../../../src/python/array.rst:59:<autosummary>:1
+msgid ""
+":py:obj:`array.prod <mlx.core.array.prod>`\\ \\(self\\[\\, axis\\, "
+"keepdims\\, stream\\]\\)"
+msgstr ""
+
+#: ../../../src/python/array.rst:59:<autosummary>:1
+msgid "See :func:`prod`."
+msgstr ""
+
+#: ../../../src/python/array.rst:59:<autosummary>:1
+msgid ""
+":py:obj:`array.reciprocal <mlx.core.array.reciprocal>`\\ \\(self\\, "
+"\\*\\[\\, stream\\]\\)"
+msgstr ""
+
+#: ../../../src/python/array.rst:59:<autosummary>:1
+msgid "See :func:`reciprocal`."
+msgstr ""
+
+#: ../../../src/python/array.rst:59:<autosummary>:1
+msgid ""
+":py:obj:`array.reshape <mlx.core.array.reshape>`\\ \\(self\\, \\*shape\\[\\, "
+"stream\\]\\)"
+msgstr ""
+
+#: ../../../src/python/array.rst:59:<autosummary>:1
+msgid ""
+"Equivalent to :func:`reshape` but the shape can be passed either as a :obj:"
+"`tuple` or as separate arguments."
+msgstr ""
+
+#: ../../../src/python/array.rst:59:<autosummary>:1
+msgid ""
+":py:obj:`array.round <mlx.core.array.round>`\\ \\(self\\[\\, decimals\\, "
+"stream\\]\\)"
+msgstr ""
+
+#: ../../../src/python/array.rst:59:<autosummary>:1
+msgid "See :func:`round`."
+msgstr ""
+
+#: ../../../src/python/array.rst:59:<autosummary>:1
+msgid ""
+":py:obj:`array.rsqrt <mlx.core.array.rsqrt>`\\ \\(self\\, \\*\\[\\, "
+"stream\\]\\)"
+msgstr ""
+
+#: ../../../src/python/array.rst:59:<autosummary>:1
+msgid "See :func:`rsqrt`."
+msgstr ""
+
+#: ../../../src/python/array.rst:59:<autosummary>:1
+msgid ""
+":py:obj:`array.sin <mlx.core.array.sin>`\\ \\(self\\, \\*\\[\\, stream\\]\\)"
+msgstr ""
+
+#: ../../../src/python/array.rst:59:<autosummary>:1
+msgid "See :func:`sin`."
+msgstr ""
+
+#: ../../../src/python/array.rst:59:<autosummary>:1
+msgid ""
+":py:obj:`array.split <mlx.core.array.split>`\\ \\(self\\, "
+"indices\\_or\\_sections\\[\\, ...\\]\\)"
+msgstr ""
+
+#: ../../../src/python/array.rst:59:<autosummary>:1
+msgid "See :func:`split`."
+msgstr ""
+
+#: ../../../src/python/array.rst:59:<autosummary>:1
+msgid ""
+":py:obj:`array.sqrt <mlx.core.array.sqrt>`\\ \\(self\\, \\*\\[\\, "
+"stream\\]\\)"
+msgstr ""
+
+#: ../../../src/python/array.rst:59:<autosummary>:1
+msgid "See :func:`sqrt`."
+msgstr ""
+
+#: ../../../src/python/array.rst:59:<autosummary>:1
+msgid ""
+":py:obj:`array.square <mlx.core.array.square>`\\ \\(self\\, \\*\\[\\, "
+"stream\\]\\)"
+msgstr ""
+
+#: ../../../src/python/array.rst:59:<autosummary>:1
+msgid "See :func:`square`."
+msgstr ""
+
+#: ../../../src/python/array.rst:59:<autosummary>:1
+msgid ""
+":py:obj:`array.squeeze <mlx.core.array.squeeze>`\\ \\(self\\[\\, axis\\, "
+"stream\\]\\)"
+msgstr ""
+
+#: ../../../src/python/array.rst:59:<autosummary>:1
+msgid "See :func:`squeeze`."
+msgstr ""
+
+#: ../../../src/python/array.rst:59:<autosummary>:1
+msgid ""
+":py:obj:`array.swapaxes <mlx.core.array.swapaxes>`\\ \\(self\\, axis1\\, "
+"axis2\\, \\*\\[\\, stream\\]\\)"
+msgstr ""
+
+#: ../../../src/python/array.rst:59:<autosummary>:1
+msgid "See :func:`swapaxes`."
+msgstr ""
+
+#: ../../../src/python/array.rst:59:<autosummary>:1
+msgid ""
+":py:obj:`array.sum <mlx.core.array.sum>`\\ \\(self\\[\\, axis\\, keepdims\\, "
+"stream\\]\\)"
+msgstr ""
+
+#: ../../../src/python/array.rst:59:<autosummary>:1
+msgid "See :func:`sum`."
+msgstr ""
+
+#: ../../../src/python/array.rst:59:<autosummary>:1
+msgid ""
+":py:obj:`array.transpose <mlx.core.array.transpose>`\\ \\(self\\, "
+"\\*axes\\[\\, stream\\]\\)"
+msgstr ""
+
+#: ../../../src/python/array.rst:59:<autosummary>:1
+msgid ""
+"Equivalent to :func:`transpose` but the axes can be passed either as a tuple "
+"or as separate arguments."
+msgstr ""
+
+#: ../../../src/python/array.rst:59:<autosummary>:1
+msgid ":py:obj:`array.T <mlx.core.array.T>`\\"
+msgstr ""
+
+#: ../../../src/python/array.rst:59:<autosummary>:1
+msgid "Equivalent to calling ``self.transpose()`` with no arguments."
+msgstr ""
+
+#: ../../../src/python/array.rst:59:<autosummary>:1
+msgid ""
+":py:obj:`array.var <mlx.core.array.var>`\\ \\(self\\[\\, axis\\, keepdims\\, "
+"ddof\\, stream\\]\\)"
+msgstr ""
+
+#: ../../../src/python/array.rst:59:<autosummary>:1
+msgid "See :func:`var`."
+msgstr ""
