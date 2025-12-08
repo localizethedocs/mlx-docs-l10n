@@ -1,0 +1,64 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023, MLX Contributors
+# This file is distributed under the same license as the MLX package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: MLX 0.18\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-12-08 13:03+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../src/python/_autosummary/mlx.core.distributed.Group.rst:2
+msgid "mlx.core.distributed.Group"
+msgstr ""
+
+#: ../../../docstring of mlx.core.distributed.Group:1
+msgid ""
+"An :class:`mlx.core.distributed.Group` represents a group of independent mlx "
+"processes that can communicate."
+msgstr ""
+
+#: ../../../src/python/_autosummary/mlx.core.distributed.Group.rst:13
+msgid "Methods"
+msgstr ""
+
+#: ../../../src/python/_autosummary/mlx.core.distributed.Group.rst:19:<autosummary>:1
+msgid ""
+":py:obj:`__init__ <mlx.core.distributed.Group.__init__>`\\ \\(\\*args\\, "
+"\\*\\*kwargs\\)"
+msgstr ""
+
+#: ../../../src/python/_autosummary/mlx.core.distributed.Group.rst:19:<autosummary>:1
+msgid ":py:obj:`rank <mlx.core.distributed.Group.rank>`\\ \\(self\\)"
+msgstr ""
+
+#: ../../../src/python/_autosummary/mlx.core.distributed.Group.rst:19:<autosummary>:1
+msgid "Get the rank of this process"
+msgstr ""
+
+#: ../../../src/python/_autosummary/mlx.core.distributed.Group.rst:19:<autosummary>:1
+msgid ":py:obj:`size <mlx.core.distributed.Group.size>`\\ \\(self\\)"
+msgstr ""
+
+#: ../../../src/python/_autosummary/mlx.core.distributed.Group.rst:19:<autosummary>:1
+msgid "Get the size of the group"
+msgstr ""
+
+#: ../../../src/python/_autosummary/mlx.core.distributed.Group.rst:19:<autosummary>:1
+msgid ""
+":py:obj:`split <mlx.core.distributed.Group.split>`\\ \\(self\\, color\\[\\, "
+"key\\]\\)"
+msgstr ""
+
+#: ../../../src/python/_autosummary/mlx.core.distributed.Group.rst:19:<autosummary>:1
+msgid "Split the group to subgroups based on the provided color."
+msgstr ""
