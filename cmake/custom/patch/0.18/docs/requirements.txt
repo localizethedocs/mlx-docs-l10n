@@ -1,0 +1,8 @@
+# dependencies for building documentation
+sphinx == 8.2.3
+breathe
+sphinx-book-theme == 1.1.4
+
+# dependencies for building mlx package
+cmake == 4.0.3
+nanobind == 2.2.0

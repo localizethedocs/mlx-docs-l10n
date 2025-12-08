@@ -1,0 +1,7 @@
+# dependencies for building documentation
+sphinx == 8.2.3
+sphinx-book-theme == 1.1.4
+
+# dependencies for building mlx package
+cmake == 4.0.3
+nanobind @ git+https://github.com/wjakob/nanobind.git@2f04eac452a6d9142dedb957701bdb20125561e4
