@@ -1,0 +1,181 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023, Apple
+# This file is distributed under the same license as the MLX package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: MLX 0.28\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-12-08 12:32+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../src/usage/launching_distributed.rst:6
+msgid "Launching Distributed Programs"
+msgstr ""
+
+#: ../../../src/usage/launching_distributed.rst:10
+msgid ""
+"Installing the MLX python package provides a helper script ``mlx.launch`` "
+"that can be used to run python scripts distributed on several nodes. It "
+"allows launching using either the MPI backend or the ring backend. See the :"
+"doc:`distributed docs <distributed>` for the different backends."
+msgstr ""
+
+#: ../../../src/usage/launching_distributed.rst:16
+msgid "Usage"
+msgstr ""
+
+#: ../../../src/usage/launching_distributed.rst:18
+msgid "The minimal usage example of ``mlx.launch`` is simply"
+msgstr ""
+
+#: ../../../src/usage/launching_distributed.rst:20
+msgid "mlx.launch --hosts ip1,ip2 my_script.py"
+msgstr ""
+
+#: ../../../src/usage/launching_distributed.rst:24
+msgid "or for testing on localhost"
+msgstr ""
+
+#: ../../../src/usage/launching_distributed.rst:26
+msgid "mlx.launch -n 2 my_script.py"
+msgstr ""
+
+#: ../../../src/usage/launching_distributed.rst:30
+msgid ""
+"The ``mlx.launch`` command connects to the provided host and launches the "
+"input script on each host. It monitors each of the launched processes and "
+"terminates the rest if one of them fails unexpectedly or if ``mlx.launch`` "
+"is terminated. It also takes care of forwarding the output of each remote "
+"process to stdout and stderr respectively."
+msgstr ""
+
+#: ../../../src/usage/launching_distributed.rst:37
+msgid "Providing Hosts"
+msgstr ""
+
+#: ../../../src/usage/launching_distributed.rst:39
+msgid ""
+"Hosts can be provided as command line arguments, like above, but the way "
+"that allows to fully define a list of hosts is via a JSON hostfile. The "
+"hostfile has a very simple schema. It is simply a list of objects that "
+"define each host via a hostname to ssh to and a list of IPs to utilize for "
+"the communication."
+msgstr ""
+
+#: ../../../src/usage/launching_distributed.rst:44
+msgid ""
+"[\n"
+"    {\"ssh\": \"hostname1\", \"ips\": [\"123.123.1.1\", \"123.123.2.1\"]},\n"
+"    {\"ssh\": \"hostname2\", \"ips\": [\"123.123.1.2\", \"123.123.2.2\"]}\n"
+"]"
+msgstr ""
+
+#: ../../../src/usage/launching_distributed.rst:51
+msgid ""
+"You can use ``mlx.distributed_config --over ethernet`` to create a hostfile "
+"with IPs corresponding to the ``en0`` interface."
+msgstr ""
+
+#: ../../../src/usage/launching_distributed.rst:55
+msgid "Setting up Remote Hosts"
+msgstr ""
+
+#: ../../../src/usage/launching_distributed.rst:57
+msgid ""
+"In order to be able to launch the script on each host we need to be able to "
+"connect via ssh. Moreover the input script and python binary need to be on "
+"each host and on the same path. A good checklist to debug errors is the "
+"following:"
+msgstr ""
+
+#: ../../../src/usage/launching_distributed.rst:61
+msgid "``ssh hostname`` works without asking for password or host confirmation"
+msgstr ""
+
+#: ../../../src/usage/launching_distributed.rst:62
+msgid ""
+"the python binary is available on all hosts at the same path. You can use "
+"``mlx.launch --print-python`` to see what that path is."
+msgstr ""
+
+#: ../../../src/usage/launching_distributed.rst:64
+msgid "the script you want to run is available on all hosts at the same path"
+msgstr ""
+
+#: ../../../src/usage/launching_distributed.rst:69
+msgid "MPI Specifics"
+msgstr ""
+
+#: ../../../src/usage/launching_distributed.rst:71
+msgid ""
+"One can use MPI by passing ``--backend mpi`` to ``mlx.launch``. In that "
+"case, ``mlx.launch`` is a thin wrapper over ``mpirun``. Moreover,"
+msgstr ""
+
+#: ../../../src/usage/launching_distributed.rst:74
+msgid "The IPs in the hostfile are ignored"
+msgstr ""
+
+#: ../../../src/usage/launching_distributed.rst:75
+msgid ""
+"The ssh connectivity requirement is stronger as every node needs to be able "
+"to connect to every other node"
+msgstr ""
+
+#: ../../../src/usage/launching_distributed.rst:77
+msgid "``mpirun`` needs to be available on every node at the same path"
+msgstr ""
+
+#: ../../../src/usage/launching_distributed.rst:79
+msgid ""
+"Finally, one can pass arguments to ``mpirun`` using ``--mpi-arg``. For "
+"instance to choose a specific interface for the byte-transfer-layer of MPI "
+"we can call ``mlx.launch`` as follows:"
+msgstr ""
+
+#: ../../../src/usage/launching_distributed.rst:83
+msgid ""
+"mlx.launch --backend mpi --mpi-arg '--mca btl_tcp_if_include en0' --hostfile "
+"hosts.json my_script.py"
+msgstr ""
+
+#: ../../../src/usage/launching_distributed.rst:91
+msgid "Ring Specifics"
+msgstr ""
+
+#: ../../../src/usage/launching_distributed.rst:93
+msgid ""
+"The ring backend, which is also the default backend, can be explicitly "
+"selected with the argument ``--backend ring``. The ring backend has some "
+"specific requirements and arguments that are different to MPI:"
+msgstr ""
+
+#: ../../../src/usage/launching_distributed.rst:97
+msgid ""
+"The argument ``--hosts`` only accepts IPs and not hostnames. If we need to "
+"ssh to a hostname that does not correspond to the IP we want to bind to we "
+"have to provide a hostfile."
+msgstr ""
+
+#: ../../../src/usage/launching_distributed.rst:100
+msgid ""
+"``--starting-port`` defines the port to bind to on the remote hosts. "
+"Specifically rank 0 for the first IP will use this port and each subsequent "
+"IP or rank will add 1 to this port."
+msgstr ""
+
+#: ../../../src/usage/launching_distributed.rst:103
+msgid ""
+"``--connections-per-ip`` allows us to increase the number of connections "
+"between neighboring nodes. This corresponds to ``--mca btl_tcp_links 2`` for "
+"``mpirun``."
+msgstr ""
