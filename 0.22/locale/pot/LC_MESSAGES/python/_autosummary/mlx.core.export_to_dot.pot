@@ -1,0 +1,54 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023, MLX Contributors
+# This file is distributed under the same license as the MLX package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: MLX 0.22\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-12-08 12:45+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../src/python/_autosummary/mlx.core.export_to_dot.rst:2
+msgid "mlx.core.export\\_to\\_dot"
+msgstr ""
+
+#: ../../../docstring of mlx.core.export_to_dot:1
+msgid "Export a graph to DOT format for visualization."
+msgstr ""
+
+#: ../../../docstring of mlx.core.export_to_dot:3
+msgid ""
+"A variable number of output arrays can be provided for exporting The graph "
+"exported will recursively include all unevaluated inputs of the provided "
+"outputs."
+msgstr ""
+
+#: ../../../docstring of mlx.core.export_to_dot:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../docstring of mlx.core.export_to_dot:7
+msgid "The file path to export to."
+msgstr ""
+
+#: ../../../docstring of mlx.core.export_to_dot:9
+msgid "The output arrays."
+msgstr ""
+
+#: ../../../docstring of mlx.core.export_to_dot:11
+msgid ""
+"Provide some names for arrays in the graph to make the result easier to "
+"parse."
+msgstr ""
+
+#: ../../../docstring of mlx.core.export_to_dot:16
+msgid "Example"
+msgstr ""

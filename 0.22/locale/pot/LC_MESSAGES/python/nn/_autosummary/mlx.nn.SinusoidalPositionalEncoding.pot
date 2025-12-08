@@ -1,0 +1,74 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023, MLX Contributors
+# This file is distributed under the same license as the MLX package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: MLX 0.22\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-12-08 12:45+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../src/python/nn/_autosummary/mlx.nn.SinusoidalPositionalEncoding.rst:2
+msgid "mlx.nn.SinusoidalPositionalEncoding"
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/positional_encoding.py:docstring
+#: of mlx.nn.layers.positional_encoding.SinusoidalPositionalEncoding:1
+msgid "Implements sinusoidal positional encoding."
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/positional_encoding.py:docstring
+#: of mlx.nn.layers.positional_encoding.SinusoidalPositionalEncoding:3
+msgid ""
+"For more details see the paper `Attention Is All You Need <https://arxiv.org/"
+"abs/1706.03762>`_."
+msgstr ""
+
+#: ../../../src/python/nn/_autosummary/mlx.nn.SinusoidalPositionalEncoding.rst:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/positional_encoding.py:docstring
+#: of mlx.nn.layers.positional_encoding.SinusoidalPositionalEncoding:6
+msgid "The dimensionality of the resulting positional embeddings."
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/positional_encoding.py:docstring
+#: of mlx.nn.layers.positional_encoding.SinusoidalPositionalEncoding:8
+msgid "The minimum frequency expected. Default: ``0.0001``."
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/positional_encoding.py:docstring
+#: of mlx.nn.layers.positional_encoding.SinusoidalPositionalEncoding:11
+msgid "The maximum frequency expected. Default: ``1``."
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/positional_encoding.py:docstring
+#: of mlx.nn.layers.positional_encoding.SinusoidalPositionalEncoding:14
+msgid "A multiplicative scale for the embeddings. Default: ``sqrt(2/dims)``."
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/positional_encoding.py:docstring
+#: of mlx.nn.layers.positional_encoding.SinusoidalPositionalEncoding:17
+msgid ""
+"If ``True`` embed using ``[cos(x); sin(x)]`` instead of the reverse. "
+"Default: ``False``."
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/positional_encoding.py:docstring
+#: of mlx.nn.layers.positional_encoding.SinusoidalPositionalEncoding:20
+msgid ""
+"If ``True`` multiply the frequencies with :math:`2\\pi`. Default: ``False``."
+msgstr ""
+
+#: ../../../src/python/nn/_autosummary/mlx.nn.SinusoidalPositionalEncoding.rst:12
+msgid "Methods"
+msgstr ""
