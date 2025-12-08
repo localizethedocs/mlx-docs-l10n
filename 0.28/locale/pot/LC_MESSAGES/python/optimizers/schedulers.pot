@@ -1,0 +1,71 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023, Apple
+# This file is distributed under the same license as the MLX package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: MLX 0.28\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-12-08 12:32+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../src/python/optimizers/schedulers.rst:4
+msgid "Schedulers"
+msgstr ""
+
+#: ../../../src/python/optimizers/schedulers.rst:15:<autosummary>:1
+msgid ""
+":py:obj:`cosine_decay <mlx.optimizers.cosine_decay>`\\ \\(init\\, "
+"decay\\_steps\\[\\, end\\]\\)"
+msgstr ""
+
+#: ../../../src/python/optimizers/schedulers.rst:15:<autosummary>:1
+msgid "Make a cosine decay scheduler."
+msgstr ""
+
+#: ../../../src/python/optimizers/schedulers.rst:15:<autosummary>:1
+msgid ""
+":py:obj:`exponential_decay <mlx.optimizers.exponential_decay>`\\ \\(init\\, "
+"decay\\_rate\\)"
+msgstr ""
+
+#: ../../../src/python/optimizers/schedulers.rst:15:<autosummary>:1
+msgid "Make an exponential decay scheduler."
+msgstr ""
+
+#: ../../../src/python/optimizers/schedulers.rst:15:<autosummary>:1
+msgid ""
+":py:obj:`join_schedules <mlx.optimizers.join_schedules>`\\ \\(schedules\\, "
+"boundaries\\)"
+msgstr ""
+
+#: ../../../src/python/optimizers/schedulers.rst:15:<autosummary>:1
+msgid "Join multiple schedules to create a new schedule."
+msgstr ""
+
+#: ../../../src/python/optimizers/schedulers.rst:15:<autosummary>:1
+msgid ""
+":py:obj:`linear_schedule <mlx.optimizers.linear_schedule>`\\ \\(init\\, "
+"end\\, steps\\)"
+msgstr ""
+
+#: ../../../src/python/optimizers/schedulers.rst:15:<autosummary>:1
+msgid "Make a linear scheduler."
+msgstr ""
+
+#: ../../../src/python/optimizers/schedulers.rst:15:<autosummary>:1
+msgid ""
+":py:obj:`step_decay <mlx.optimizers.step_decay>`\\ \\(init\\, "
+"decay\\_rate\\, step\\_size\\)"
+msgstr ""
+
+#: ../../../src/python/optimizers/schedulers.rst:15:<autosummary>:1
+msgid "Make a step decay scheduler."
+msgstr ""
