@@ -13,22 +13,22 @@
     },
     "zh_CN" : 
     {
-      "branch" : "",
+      "branch" : "main",
       "commit" : 
       {
-        "date" : "",
-        "hash" : "",
-        "title" : ""
+        "date" : "2025-12-07 06:11:00 -0800",
+        "hash" : "a4b3bc969b0f645209430475797d4fab8c67a70b",
+        "title" : "Try not to fail when there should be memory available (#2869)"
       }
     },
     "zh_TW" : 
     {
-      "branch" : "",
+      "branch" : "main",
       "commit" : 
       {
-        "date" : "",
-        "hash" : "",
-        "title" : ""
+        "date" : "2025-12-07 06:11:00 -0800",
+        "hash" : "a4b3bc969b0f645209430475797d4fab8c67a70b",
+        "title" : "Try not to fail when there should be memory available (#2869)"
       }
     }
   },
