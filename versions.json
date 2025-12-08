@@ -1,0 +1,134 @@
+{
+  "dev" : [
+    {
+      "VERSION" : "main",
+      "VERSION_COMPENDIUM" : ""
+    }
+  ],
+  "rel" : [
+    {
+      "VERSION" : "0.30",
+      "VERSION_COMPENDIUM" : "main"
+    },
+    {
+      "VERSION" : "0.29",
+      "VERSION_COMPENDIUM" : "main"
+    },
+    {
+      "VERSION" : "0.28",
+      "VERSION_COMPENDIUM" : "main"
+    },
+    {
+      "VERSION" : "0.27",
+      "VERSION_COMPENDIUM" : "main"
+    },
+    {
+      "VERSION" : "0.26",
+      "VERSION_COMPENDIUM" : "main"
+    },
+    {
+      "VERSION" : "0.25",
+      "VERSION_COMPENDIUM" : "main"
+    },
+    {
+      "VERSION" : "0.24",
+      "VERSION_COMPENDIUM" : "main"
+    },
+    {
+      "VERSION" : "0.23",
+      "VERSION_COMPENDIUM" : "main"
+    },
+    {
+      "VERSION" : "0.22",
+      "VERSION_COMPENDIUM" : "main"
+    },
+    {
+      "VERSION" : "0.21",
+      "VERSION_COMPENDIUM" : "main"
+    },
+    {
+      "VERSION" : "0.20",
+      "VERSION_COMPENDIUM" : "main"
+    },
+    {
+      "VERSION" : "0.19",
+      "VERSION_COMPENDIUM" : "main"
+    },
+    {
+      "VERSION" : "0.18",
+      "VERSION_COMPENDIUM" : "main"
+    },
+    {
+      "VERSION" : "0.17",
+      "VERSION_COMPENDIUM" : "main"
+    },
+    {
+      "VERSION" : "0.16",
+      "VERSION_COMPENDIUM" : "main"
+    },
+    {
+      "VERSION" : "0.15",
+      "VERSION_COMPENDIUM" : "main"
+    },
+    {
+      "VERSION" : "0.14",
+      "VERSION_COMPENDIUM" : "main"
+    },
+    {
+      "VERSION" : "0.13",
+      "VERSION_COMPENDIUM" : "main"
+    },
+    {
+      "VERSION" : "0.12",
+      "VERSION_COMPENDIUM" : "main"
+    },
+    {
+      "VERSION" : "0.11",
+      "VERSION_COMPENDIUM" : "main"
+    },
+    {
+      "VERSION" : "0.10",
+      "VERSION_COMPENDIUM" : "main"
+    },
+    {
+      "VERSION" : "0.9",
+      "VERSION_COMPENDIUM" : "main"
+    },
+    {
+      "VERSION" : "0.8",
+      "VERSION_COMPENDIUM" : "main"
+    },
+    {
+      "VERSION" : "0.7",
+      "VERSION_COMPENDIUM" : "main"
+    },
+    {
+      "VERSION" : "0.6",
+      "VERSION_COMPENDIUM" : "main"
+    },
+    {
+      "VERSION" : "0.5",
+      "VERSION_COMPENDIUM" : "main"
+    },
+    {
+      "VERSION" : "0.4",
+      "VERSION_COMPENDIUM" : "main"
+    },
+    {
+      "VERSION" : "0.3",
+      "VERSION_COMPENDIUM" : "main"
+    },
+    {
+      "VERSION" : "0.2",
+      "VERSION_COMPENDIUM" : "main"
+    },
+    {
+      "VERSION" : "0.1",
+      "VERSION_COMPENDIUM" : "main"
+    },
+    {
+      "VERSION" : "0.0",
+      "VERSION_COMPENDIUM" : "main"
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+# dependencies for building documentation
+sphinx == 8.2.3
+sphinx-book-theme == 1.1.4
+
+# dependencies for building mlx package
+cmake == 4.0.3
+pybind11[global] == 3.0.1
+pybind11-stubgen == 2.5.5
