@@ -1,0 +1,39 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023, MLX Contributors
+# This file is distributed under the same license as the MLX package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: MLX 0.12\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-12-08 12:57+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../src/python/linalg.rst:4
+msgid "Linear Algebra"
+msgstr ""
+
+#: ../../../src/python/linalg.rst:12:<autosummary>:1
+msgid ""
+":py:obj:`norm <mlx.core.linalg.norm>`\\ \\(a\\, \\/\\[\\, ord\\, axis\\, "
+"keepdims\\, stream\\]\\)"
+msgstr ""
+
+#: ../../../src/python/linalg.rst:12:<autosummary>:1
+msgid "Matrix or vector norm."
+msgstr ""
+
+#: ../../../src/python/linalg.rst:12:<autosummary>:1
+msgid ":py:obj:`qr <mlx.core.linalg.qr>`\\ \\(a\\, \\*\\[\\, stream\\]\\)"
+msgstr ""
+
+#: ../../../src/python/linalg.rst:12:<autosummary>:1
+msgid "The QR factorization of the input matrix."
+msgstr ""
