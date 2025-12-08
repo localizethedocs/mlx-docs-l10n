@@ -1,0 +1,88 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023, MLX Contributors
+# This file is distributed under the same license as the MLX package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: MLX 0.13\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-12-08 12:16+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../src/python/nn/_autosummary_functions/mlx.nn.losses.cross_entropy.rst:2
+msgid "mlx.nn.losses.cross\\_entropy"
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/losses.py:docstring
+#: of mlx.nn.losses.cross_entropy:1
+msgid "Computes the cross entropy loss."
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/losses.py:docstring
+#: of mlx.nn.losses.cross_entropy:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/losses.py:docstring
+#: of mlx.nn.losses.cross_entropy:3
+msgid "The unnormalized logits."
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/losses.py:docstring
+#: of mlx.nn.losses.cross_entropy:5
+msgid ""
+"The ground truth values. These can be class indices or probabilities for "
+"each class. If the ``targets`` are class indices, then ``targets`` shape "
+"should match the ``logits`` shape with the ``axis`` dimension removed. If "
+"the ``targets`` are probabilities (or one-hot encoded), then the ``targets`` "
+"shape should be the same as the ``logits`` shape."
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/losses.py:docstring
+#: of mlx.nn.losses.cross_entropy:12
+msgid "Optional weights for each target. Default: ``None``."
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/losses.py:docstring
+#: of mlx.nn.losses.cross_entropy:14
+msgid "The axis over which to compute softmax. Default: ``-1``."
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/losses.py:docstring
+#: of mlx.nn.losses.cross_entropy:16
+msgid "Label smoothing factor. Default: ``0``."
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/losses.py:docstring
+#: of mlx.nn.losses.cross_entropy:18
+msgid ""
+"Specifies the reduction to apply to the output: ``'none'`` | ``'mean'`` | "
+"``'sum'``. Default: ``'none'``."
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/losses.py:docstring
+#: of mlx.nn.losses.cross_entropy:0
+msgid "Returns"
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/losses.py:docstring
+#: of mlx.nn.losses.cross_entropy:22
+msgid "The computed cross entropy loss."
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/losses.py:docstring
+#: of mlx.nn.losses.cross_entropy:0
+msgid "Return type"
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/losses.py:docstring
+#: of mlx.nn.losses.cross_entropy:26
+msgid "Examples"
+msgstr ""
