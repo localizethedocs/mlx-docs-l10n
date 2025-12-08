@@ -1,0 +1,36 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023, MLX Contributors
+# This file is distributed under the same license as the MLX package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: MLX 0.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-12-08 12:20+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../src/usage/using_streams.rst:4
+msgid "Using Streams"
+msgstr ""
+
+#: ../../../src/usage/using_streams.rst:9
+msgid "Specifying the :obj:`Stream`"
+msgstr ""
+
+#: ../../../src/usage/using_streams.rst:11
+msgid ""
+"All operations (including random number generation) take an optional keyword "
+"argument ``stream``. The ``stream`` kwarg specifies which :obj:`Stream` the "
+"operation should run on. If the stream is unspecified then the operation is "
+"run on the default stream of the default device: ``mx.default_stream(mx."
+"default_device())``.  The ``stream`` kwarg can also be a :obj:`Device` (e.g. "
+"``stream=my_device``) in which case the operation is run on the default "
+"stream of the provided device ``mx.default_stream(my_device)``."
+msgstr ""
