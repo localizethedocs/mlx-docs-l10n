@@ -1,0 +1,50 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023, MLX Contributors
+# This file is distributed under the same license as the MLX package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: MLX 0.14\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-12-08 12:13+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../src/python/optimizers/_autosummary/mlx.optimizers.Optimizer.apply_gradients.rst:2
+msgid "mlx.optimizers.Optimizer.apply\\_gradients"
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/optimizers/optimizers.py:docstring
+#: of mlx.optimizers.optimizers.Optimizer.apply_gradients:1
+msgid ""
+"Apply the gradients to the parameters and return the updated parameters."
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/optimizers/optimizers.py:docstring
+#: of mlx.optimizers.optimizers.Optimizer.apply_gradients:3
+msgid ""
+"Can be used to update a model via ``model.update(opt.apply_gradients(grads, "
+"model))`` which is precisely how :meth:`Optimizer.update` is implemented."
+msgstr ""
+
+#: ../../../src/python/optimizers/_autosummary/mlx.optimizers.Optimizer.apply_gradients.rst:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/optimizers/optimizers.py:docstring
+#: of mlx.optimizers.optimizers.Optimizer.apply_gradients:7
+msgid "A Python tree of gradients."
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/optimizers/optimizers.py:docstring
+#: of mlx.optimizers.optimizers.Optimizer.apply_gradients:9
+msgid ""
+"A Python tree of parameters. It can be a superset of the gradients. In that "
+"case the returned python tree will be of the same structure as the gradients."
+msgstr ""

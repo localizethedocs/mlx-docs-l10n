@@ -1,0 +1,196 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023, MLX Contributors
+# This file is distributed under the same license as the MLX package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: MLX 0.14\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-12-08 12:13+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../src/python/nn/functions.rst:6
+msgid "Functions"
+msgstr ""
+
+#: ../../../src/python/nn/functions.rst:8
+msgid ""
+"Layers without parameters (e.g. activation functions) are also provided as "
+"simple functions."
+msgstr ""
+
+#: ../../../src/python/nn/functions.rst:35:<autosummary>:1
+msgid ":py:obj:`elu <mlx.nn.elu>`\\ \\(x\\[\\, alpha\\]\\)"
+msgstr ""
+
+#: ../../../src/python/nn/functions.rst:35:<autosummary>:1
+msgid "Applies the Exponential Linear Unit."
+msgstr ""
+
+#: ../../../src/python/nn/functions.rst:35:<autosummary>:1
+msgid ":py:obj:`gelu <mlx.nn.gelu>`\\ \\(x\\)"
+msgstr ""
+
+#: ../../../src/python/nn/functions.rst:35:<autosummary>:1
+msgid "Applies the Gaussian Error Linear Units function."
+msgstr ""
+
+#: ../../../src/python/nn/functions.rst:35:<autosummary>:1
+msgid ":py:obj:`gelu_approx <mlx.nn.gelu_approx>`\\ \\(x\\)"
+msgstr ""
+
+#: ../../../src/python/nn/functions.rst:35:<autosummary>:1
+msgid "An approximation to Gaussian Error Linear Unit."
+msgstr ""
+
+#: ../../../src/python/nn/functions.rst:35:<autosummary>:1
+msgid ":py:obj:`gelu_fast_approx <mlx.nn.gelu_fast_approx>`\\ \\(x\\)"
+msgstr ""
+
+#: ../../../src/python/nn/functions.rst:35:<autosummary>:1
+msgid "A fast approximation to Gaussian Error Linear Unit."
+msgstr ""
+
+#: ../../../src/python/nn/functions.rst:35:<autosummary>:1
+msgid ":py:obj:`glu <mlx.nn.glu>`\\ \\(x\\[\\, axis\\]\\)"
+msgstr ""
+
+#: ../../../src/python/nn/functions.rst:35:<autosummary>:1
+msgid "Applies the gated linear unit function."
+msgstr ""
+
+#: ../../../src/python/nn/functions.rst:35:<autosummary>:1
+msgid ":py:obj:`hardswish <mlx.nn.hardswish>`\\ \\(x\\)"
+msgstr ""
+
+#: ../../../src/python/nn/functions.rst:35:<autosummary>:1
+msgid "Applies the hardswish function, element-wise."
+msgstr ""
+
+#: ../../../src/python/nn/functions.rst:35:<autosummary>:1
+msgid ""
+":py:obj:`leaky_relu <mlx.nn.leaky_relu>`\\ \\(x\\[\\, negative\\_slope\\]\\)"
+msgstr ""
+
+#: ../../../src/python/nn/functions.rst:35:<autosummary>:1
+msgid "Applies the Leaky Rectified Linear Unit."
+msgstr ""
+
+#: ../../../src/python/nn/functions.rst:35:<autosummary>:1
+msgid ":py:obj:`log_sigmoid <mlx.nn.log_sigmoid>`\\ \\(x\\)"
+msgstr ""
+
+#: ../../../src/python/nn/functions.rst:35:<autosummary>:1
+msgid "Applies the Log Sigmoid function."
+msgstr ""
+
+#: ../../../src/python/nn/functions.rst:35:<autosummary>:1
+msgid ":py:obj:`log_softmax <mlx.nn.log_softmax>`\\ \\(x\\[\\, axis\\]\\)"
+msgstr ""
+
+#: ../../../src/python/nn/functions.rst:35:<autosummary>:1
+msgid "Applies the Log Softmax function."
+msgstr ""
+
+#: ../../../src/python/nn/functions.rst:35:<autosummary>:1
+msgid ":py:obj:`mish <mlx.nn.mish>`\\ \\(x\\)"
+msgstr ""
+
+#: ../../../src/python/nn/functions.rst:35:<autosummary>:1
+msgid "Applies the Mish function, element-wise."
+msgstr ""
+
+#: ../../../src/python/nn/functions.rst:35:<autosummary>:1
+msgid ":py:obj:`prelu <mlx.nn.prelu>`\\ \\(x\\, alpha\\)"
+msgstr ""
+
+#: ../../../src/python/nn/functions.rst:35:<autosummary>:1
+msgid "Applies the element-wise parametric ReLU."
+msgstr ""
+
+#: ../../../src/python/nn/functions.rst:35:<autosummary>:1
+msgid ":py:obj:`relu <mlx.nn.relu>`\\ \\(x\\)"
+msgstr ""
+
+#: ../../../src/python/nn/functions.rst:35:<autosummary>:1
+msgid "Applies the Rectified Linear Unit."
+msgstr ""
+
+#: ../../../src/python/nn/functions.rst:35:<autosummary>:1
+msgid ":py:obj:`relu6 <mlx.nn.relu6>`\\ \\(x\\)"
+msgstr ""
+
+#: ../../../src/python/nn/functions.rst:35:<autosummary>:1
+msgid "Applies the Rectified Linear Unit 6."
+msgstr ""
+
+#: ../../../src/python/nn/functions.rst:35:<autosummary>:1
+msgid ":py:obj:`selu <mlx.nn.selu>`\\ \\(x\\)"
+msgstr ""
+
+#: ../../../src/python/nn/functions.rst:35:<autosummary>:1
+msgid "Applies the Scaled Exponential Linear Unit."
+msgstr ""
+
+#: ../../../src/python/nn/functions.rst:35:<autosummary>:1
+msgid ":py:obj:`sigmoid <mlx.nn.sigmoid>`\\ \\(x\\)"
+msgstr ""
+
+#: ../../../src/python/nn/functions.rst:35:<autosummary>:1
+msgid "Applies the sigmoid function."
+msgstr ""
+
+#: ../../../src/python/nn/functions.rst:35:<autosummary>:1
+msgid ":py:obj:`silu <mlx.nn.silu>`\\ \\(x\\)"
+msgstr ""
+
+#: ../../../src/python/nn/functions.rst:35:<autosummary>:1
+msgid "Applies the Sigmoid Linear Unit."
+msgstr ""
+
+#: ../../../src/python/nn/functions.rst:35:<autosummary>:1
+msgid ":py:obj:`softmax <mlx.nn.softmax>`\\ \\(x\\[\\, axis\\]\\)"
+msgstr ""
+
+#: ../../../src/python/nn/functions.rst:35:<autosummary>:1
+msgid "Applies the Softmax function."
+msgstr ""
+
+#: ../../../src/python/nn/functions.rst:35:<autosummary>:1
+msgid ":py:obj:`softplus <mlx.nn.softplus>`\\ \\(x\\)"
+msgstr ""
+
+#: ../../../src/python/nn/functions.rst:35:<autosummary>:1
+msgid "Applies the Softplus function."
+msgstr ""
+
+#: ../../../src/python/nn/functions.rst:35:<autosummary>:1
+msgid ":py:obj:`softshrink <mlx.nn.softshrink>`\\ \\(x\\[\\, lambd\\]\\)"
+msgstr ""
+
+#: ../../../src/python/nn/functions.rst:35:<autosummary>:1
+msgid "Applies the Softshrink activation function."
+msgstr ""
+
+#: ../../../src/python/nn/functions.rst:35:<autosummary>:1
+msgid ":py:obj:`step <mlx.nn.step>`\\ \\(x\\[\\, threshold\\]\\)"
+msgstr ""
+
+#: ../../../src/python/nn/functions.rst:35:<autosummary>:1
+msgid "Applies the Step Activation Function."
+msgstr ""
+
+#: ../../../src/python/nn/functions.rst:35:<autosummary>:1
+msgid ":py:obj:`tanh <mlx.nn.tanh>`\\ \\(x\\)"
+msgstr ""
+
+#: ../../../src/python/nn/functions.rst:35:<autosummary>:1
+msgid "Applies the hyperbolic tangent function."
+msgstr ""
