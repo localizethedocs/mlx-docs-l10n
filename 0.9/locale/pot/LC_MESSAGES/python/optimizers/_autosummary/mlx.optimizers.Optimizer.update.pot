@@ -1,0 +1,44 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023, MLX Contributors
+# This file is distributed under the same license as the MLX package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: MLX 0.9\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-12-08 13:00+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../src/python/optimizers/_autosummary/mlx.optimizers.Optimizer.update.rst:2
+msgid "mlx.optimizers.Optimizer.update"
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/optimizers/optimizers.py:docstring
+#: of mlx.optimizers.optimizers.Optimizer.update:1
+msgid ""
+"Apply the gradients to the parameters of the model and update the model with "
+"the new parameters."
+msgstr ""
+
+#: ../../../src/python/optimizers/_autosummary/mlx.optimizers.Optimizer.update.rst:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/optimizers/optimizers.py:docstring
+#: of mlx.optimizers.optimizers.Optimizer.update:4
+msgid "An mlx module to be updated."
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/optimizers/optimizers.py:docstring
+#: of mlx.optimizers.optimizers.Optimizer.update:6
+msgid ""
+"A Python tree of gradients, most likely computed via :func:`mlx.nn."
+"value_and_grad`."
+msgstr ""
