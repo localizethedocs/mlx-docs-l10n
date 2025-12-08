@@ -1,0 +1,51 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023, MLX Contributors
+# This file is distributed under the same license as the MLX package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: MLX 0.21\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-12-08 12:17+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../src/python/_autosummary/mlx.core.ones.rst:2
+msgid "mlx.core.ones"
+msgstr ""
+
+#: ../../../docstring of mlx.core.ones:1
+msgid "Construct an array of ones."
+msgstr ""
+
+#: ../../../src/python/_autosummary/mlx.core.ones.rst:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../docstring of mlx.core.ones:3
+msgid "The shape of the output array."
+msgstr ""
+
+#: ../../../docstring of mlx.core.ones:5
+msgid ""
+"Data type of the output array. If unspecified the output type defaults to "
+"``float32``."
+msgstr ""
+
+#: ../../../src/python/_autosummary/mlx.core.ones.rst:0
+msgid "Returns"
+msgstr ""
+
+#: ../../../docstring of mlx.core.ones:9
+msgid "The array of ones with the specified shape."
+msgstr ""
+
+#: ../../../src/python/_autosummary/mlx.core.ones.rst:0
+msgid "Return type"
+msgstr ""
