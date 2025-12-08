@@ -1,0 +1,61 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023, MLX Contributors
+# This file is distributed under the same license as the MLX package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: MLX 0.17\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-12-08 12:57+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../src/python/_autosummary/mlx.core.tri.rst:2
+msgid "mlx.core.tri"
+msgstr ""
+
+#: ../../../docstring of mlx.core.tri:1
+msgid "An array with ones at and below the given diagonal and zeros elsewhere."
+msgstr ""
+
+#: ../../../src/python/_autosummary/mlx.core.tri.rst:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../docstring of mlx.core.tri:3
+msgid "The number of rows in the output."
+msgstr ""
+
+#: ../../../docstring of mlx.core.tri:5
+msgid "The number of cols in the output. Defaults to ``None``."
+msgstr ""
+
+#: ../../../docstring of mlx.core.tri:7
+msgid "The diagonal of the 2-D array. Defaults to ``0``."
+msgstr ""
+
+#: ../../../docstring of mlx.core.tri:9
+msgid "Data type of the output array. Defaults to ``float32``."
+msgstr ""
+
+#: ../../../docstring of mlx.core.tri:11
+msgid "Stream or device. Defaults to ``None``."
+msgstr ""
+
+#: ../../../src/python/_autosummary/mlx.core.tri.rst:0
+msgid "Returns"
+msgstr ""
+
+#: ../../../docstring of mlx.core.tri:14
+msgid "Array with its lower triangle filled with ones and zeros elsewhere"
+msgstr ""
+
+#: ../../../src/python/_autosummary/mlx.core.tri.rst:0
+msgid "Return type"
+msgstr ""
