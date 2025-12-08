@@ -19,11 +19,11 @@ msgstr ""
 
 #: ../../../src/install.rst:4
 msgid "Build and Install"
-msgstr ""
+msgstr "建置與安裝"
 
 #: ../../../src/install.rst:7
 msgid "Python Installation"
-msgstr ""
+msgstr "Python 安裝"
 
 #: ../../../src/install.rst:9
 msgid ""
@@ -144,7 +144,7 @@ msgstr ""
 
 #: ../../../src/install.rst:81
 msgid "Build from source"
-msgstr ""
+msgstr "從來源碼建置"
 
 #: ../../../src/install.rst:84
 msgid "Build Requirements"
@@ -279,11 +279,11 @@ msgstr ""
 
 #: ../../../src/install.rst:177
 msgid "Build Options"
-msgstr ""
+msgstr "建置選項"
 
 #: ../../../src/install.rst:181
 msgid "Option"
-msgstr ""
+msgstr "選項"
 
 #: ../../../src/install.rst:182
 msgid "Default"
@@ -291,55 +291,55 @@ msgstr ""
 
 #: ../../../src/install.rst:183
 msgid "MLX_BUILD_TESTS"
-msgstr ""
+msgstr "MLX_BUILD_TESTS"
 
 #: ../../../src/install.rst:184 ../../../src/install.rst:190
 #: ../../../src/install.rst:192 ../../../src/install.rst:198
 #: ../../../src/install.rst:200
 msgid "ON"
-msgstr ""
+msgstr "ON"
 
 #: ../../../src/install.rst:185
 msgid "MLX_BUILD_EXAMPLES"
-msgstr ""
+msgstr "MLX_BUILD_EXAMPLES"
 
 #: ../../../src/install.rst:186 ../../../src/install.rst:188
 #: ../../../src/install.rst:194 ../../../src/install.rst:196
 #: ../../../src/install.rst:202
 msgid "OFF"
-msgstr ""
+msgstr "OFF"
 
 #: ../../../src/install.rst:187
 msgid "MLX_BUILD_BENCHMARKS"
-msgstr ""
+msgstr "MLX_BUILD_BENCHMARKS"
 
 #: ../../../src/install.rst:189
 msgid "MLX_BUILD_METAL"
-msgstr ""
+msgstr "MLX_BUILD_METAL"
 
 #: ../../../src/install.rst:191
 msgid "MLX_BUILD_CPU"
-msgstr ""
+msgstr "MLX_BUILD_CPU"
 
 #: ../../../src/install.rst:193
 msgid "MLX_BUILD_PYTHON_BINDINGS"
-msgstr ""
+msgstr "MLX_BUILD_PYTHON_BINDINGS"
 
 #: ../../../src/install.rst:195
 msgid "MLX_METAL_DEBUG"
-msgstr ""
+msgstr "MLX_METAL_DEBUG"
 
 #: ../../../src/install.rst:197
 msgid "MLX_BUILD_SAFETENSORS"
-msgstr ""
+msgstr "MLX_BUILD_SAFETENSORS"
 
 #: ../../../src/install.rst:199
 msgid "MLX_BUILD_GGUF"
-msgstr ""
+msgstr "MLX_BUILD_GGUF"
 
 #: ../../../src/install.rst:201
 msgid "MLX_METAL_JIT"
-msgstr ""
+msgstr "MLX_METAL_JIT"
 
 #: ../../../src/install.rst:206
 msgid ""
@@ -350,7 +350,7 @@ msgstr ""
 
 #: ../../../src/install.rst:210
 msgid "export DEVELOPER_DIR=\"/path/to/Xcode.app/Contents/Developer/\""
-msgstr ""
+msgstr "export DEVELOPER_DIR=\"/path/to/Xcode.app/Contents/Developer/\""
 
 #: ../../../src/install.rst:214
 msgid ""
@@ -360,7 +360,7 @@ msgstr ""
 
 #: ../../../src/install.rst:217
 msgid "xcrun -sdk macosx --show-sdk-version"
-msgstr ""
+msgstr "xcrun -sdk macosx --show-sdk-version"
 
 #: ../../../src/install.rst:223
 msgid "Binary Size Minimization"
@@ -389,6 +389,13 @@ msgid ""
 "  -DMLX_BUILD_GGUF=OFF \\\n"
 "  -DMLX_METAL_JIT=ON"
 msgstr ""
+"cmake .. \\\n"
+"  -DCMAKE_BUILD_TYPE=MinSizeRel \\\n"
+"  -DBUILD_SHARED_LIBS=ON \\\n"
+"  -DMLX_BUILD_CPU=OFF \\\n"
+"  -DMLX_BUILD_SAFETENSORS=OFF \\\n"
+"  -DMLX_BUILD_GGUF=OFF \\\n"
+"  -DMLX_METAL_JIT=ON"
 
 #: ../../../src/install.rst:242
 msgid ""
@@ -459,6 +466,8 @@ msgid ""
 "mkdir -p build && cd build\n"
 "cmake .. -DMLX_BUILD_CUDA=ON && make -j"
 msgstr ""
+"mkdir -p build && cd build\n"
+"cmake .. -DMLX_BUILD_CUDA=ON && make -j"
 
 #: ../../../src/install.rst:298
 msgid "Metal not found"
