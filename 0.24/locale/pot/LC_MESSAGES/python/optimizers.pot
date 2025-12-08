@@ -1,0 +1,105 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023, MLX Contributors
+# This file is distributed under the same license as the MLX package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: MLX 0.24\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-12-08 12:20+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../src/python/optimizers.rst:6
+msgid "Optimizers"
+msgstr ""
+
+#: ../../../src/python/optimizers.rst:8
+msgid ""
+"The optimizers in MLX can be used both with :mod:`mlx.nn` but also with "
+"pure :mod:`mlx.core` functions. A typical example involves calling :meth:"
+"`Optimizer.update` to update a model's parameters based on the loss "
+"gradients and subsequently calling :func:`mlx.core.eval` to evaluate both "
+"the model's parameters and the **optimizer state**."
+msgstr ""
+
+#: ../../../src/python/optimizers.rst:14
+msgid ""
+"# Create a model\n"
+"model = MLP(num_layers, train_images.shape[-1], hidden_dim, num_classes)\n"
+"mx.eval(model.parameters())\n"
+"\n"
+"# Create the gradient function and the optimizer\n"
+"loss_and_grad_fn = nn.value_and_grad(model, loss_fn)\n"
+"optimizer = optim.SGD(learning_rate=learning_rate)\n"
+"\n"
+"for e in range(num_epochs):\n"
+"    for X, y in batch_iterate(batch_size, train_images, train_labels):\n"
+"        loss, grads = loss_and_grad_fn(model, X, y)\n"
+"\n"
+"        # Update the model with the gradients. So far no computation has "
+"happened.\n"
+"        optimizer.update(model, grads)\n"
+"\n"
+"        # Compute the new parameters but also the optimizer state.\n"
+"        mx.eval(model.parameters(), optimizer.state)"
+msgstr ""
+
+#: ../../../src/python/optimizers.rst:35
+msgid "Saving and Loading"
+msgstr ""
+
+#: ../../../src/python/optimizers.rst:37
+msgid ""
+"To serialize an optimizer, save its state. To load an optimizer, load and "
+"set the saved state. Here's a simple example:"
+msgstr ""
+
+#: ../../../src/python/optimizers.rst:40
+msgid ""
+"import mlx.core as mx\n"
+"from mlx.utils import tree_flatten, tree_unflatten\n"
+"import mlx.optimizers as optim\n"
+"\n"
+"optimizer = optim.Adam(learning_rate=1e-2)\n"
+"\n"
+"# Perform some updates with the optimizer\n"
+"model = {\"w\" : mx.zeros((5, 5))}\n"
+"grads = {\"w\" : mx.ones((5, 5))}\n"
+"optimizer.update(model, grads)\n"
+"\n"
+"# Save the state\n"
+"state = tree_flatten(optimizer.state)\n"
+"mx.save_safetensors(\"optimizer.safetensors\", dict(state))\n"
+"\n"
+"# Later on, for example when loading from a checkpoint,\n"
+"# recreate the optimizer and load the state\n"
+"optimizer = optim.Adam(learning_rate=1e-2)\n"
+"\n"
+"state = tree_unflatten(list(mx.load(\"optimizer.safetensors\").items()))\n"
+"optimizer.state = state"
+msgstr ""
+
+#: ../../../src/python/optimizers.rst:64
+msgid ""
+"Note, not every optimizer configuation parameter is saved in the state. For "
+"example, for Adam the learning rate is saved but the ``betas`` and ``eps`` "
+"parameters are not. A good rule of thumb is if the parameter can be "
+"scheduled then it will be included in the optimizer state."
+msgstr ""
+
+#: ../../../src/python/optimizers.rst:78:<autosummary>:1
+msgid ""
+":py:obj:`clip_grad_norm <mlx.optimizers.clip_grad_norm>`\\ \\(grads\\, "
+"max\\_norm\\)"
+msgstr ""
+
+#: ../../../src/python/optimizers.rst:78:<autosummary>:1
+msgid "Clips the global norm of the gradients."
+msgstr ""
