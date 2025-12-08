@@ -1,0 +1,86 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023, Apple
+# This file is distributed under the same license as the MLX package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: MLX main\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-12-08 12:09+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../src/python/_autosummary/mlx.core.quantized_matmul.rst:2
+msgid "mlx.core.quantized\\_matmul"
+msgstr ""
+
+#: ../../../docstring of mlx.core.quantized_matmul:1
+msgid ""
+"Perform the matrix multiplication with the quantized matrix ``w``. The "
+"quantization uses one floating point scale and bias per ``group_size`` of "
+"elements. Each element in ``w`` takes ``bits`` bits and is packed in an "
+"unsigned 32 bit integer."
+msgstr ""
+
+#: ../../../src/python/_autosummary/mlx.core.quantized_matmul.rst:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../docstring of mlx.core.quantized_matmul:6
+msgid "Input array"
+msgstr ""
+
+#: ../../../docstring of mlx.core.quantized_matmul:8
+msgid "Quantized matrix packed in unsigned integers"
+msgstr ""
+
+#: ../../../docstring of mlx.core.quantized_matmul:10
+msgid "The scales to use per ``group_size`` elements of ``w``"
+msgstr ""
+
+#: ../../../docstring of mlx.core.quantized_matmul:12
+msgid ""
+"The biases to use per ``group_size`` elements of ``w``. Default: ``None``."
+msgstr ""
+
+#: ../../../docstring of mlx.core.quantized_matmul:15
+msgid ""
+"Defines whether to multiply with the transposed ``w`` or not, namely whether "
+"we are performing ``x @ w.T`` or ``x @ w``. Default: ``True``."
+msgstr ""
+
+#: ../../../docstring of mlx.core.quantized_matmul:19
+msgid ""
+"The size of the group in ``w`` that shares a scale and bias. See supported "
+"values and defaults in the :ref:`table of quantization modes <quantize-"
+"modes>`. Default: ``None``."
+msgstr ""
+
+#: ../../../docstring of mlx.core.quantized_matmul:23
+msgid ""
+"The number of bits occupied by each element of ``w`` in the quantized array. "
+"See supported values and defaults in the :ref:`table of quantization modes "
+"<quantize-modes>`. Default: ``None``."
+msgstr ""
+
+#: ../../../docstring of mlx.core.quantized_matmul:27
+msgid "The quantization mode. Default: ``\"affine\"``."
+msgstr ""
+
+#: ../../../src/python/_autosummary/mlx.core.quantized_matmul.rst:0
+msgid "Returns"
+msgstr ""
+
+#: ../../../docstring of mlx.core.quantized_matmul:30
+msgid "The result of the multiplication of ``x`` with ``w``."
+msgstr ""
+
+#: ../../../src/python/_autosummary/mlx.core.quantized_matmul.rst:0
+msgid "Return type"
+msgstr ""
