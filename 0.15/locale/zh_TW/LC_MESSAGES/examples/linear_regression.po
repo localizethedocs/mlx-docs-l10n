@@ -98,6 +98,12 @@ msgid ""
 "    w = w - lr * grad\n"
 "    mx.eval(w)"
 msgstr ""
+"w = 1e-2 * mx.random.normal((num_features,))\n"
+"\n"
+"for _ in range(num_iters):\n"
+"    grad = grad_fn(w)\n"
+"    w = w - lr * grad\n"
+"    mx.eval(w)"
 
 #: ../../../src/examples/linear_regression.rst:60
 msgid ""
