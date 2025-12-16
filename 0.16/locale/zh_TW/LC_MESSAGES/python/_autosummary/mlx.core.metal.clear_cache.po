@@ -23,7 +23,7 @@ msgstr ""
 
 #: ../../../docstring of mlx.core.metal.clear_cache:1
 msgid "Clear the memory cache."
-msgstr ""
+msgstr "清除記憶體快取。"
 
 #: ../../../docstring of mlx.core.metal.clear_cache:3
 msgid "After calling this, :func:`get_cache_memory` should return ``0``."
