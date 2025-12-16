@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../../src/examples/llama-inference.rst:2
 msgid "LLM inference"
-msgstr ""
+msgstr "LLM 推理"
 
 #: ../../../src/examples/llama-inference.rst:4
 msgid ""
@@ -549,7 +549,7 @@ msgstr ""
 
 #: ../../../src/examples/llama-inference.rst:370
 msgid "Download the code"
-msgstr ""
+msgstr "下載程式碼"
 
 #: ../../../src/examples/llama-inference.rst:372
 msgid "The full example code is available in `mlx-examples`_."
