@@ -1287,7 +1287,7 @@ msgstr ""
 
 #: ../../../src/dev/extensions.rst:937
 msgid "Download the code"
-msgstr ""
+msgstr "下載程式碼"
 
 #: ../../../src/dev/extensions.rst:939
 msgid "The full example code is available in `mlx <code>`_."
