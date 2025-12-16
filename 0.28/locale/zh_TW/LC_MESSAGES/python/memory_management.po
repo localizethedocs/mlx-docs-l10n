@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../../src/python/memory_management.rst:2
 msgid "Memory Management"
-msgstr ""
+msgstr "記憶體管理"
 
 #: ../../../src/python/memory_management.rst:16:<autosummary>:1
 msgid ":py:obj:`get_active_memory <mlx.core.get_active_memory>`\\ \\(\\)"
@@ -83,4 +83,4 @@ msgstr ""
 
 #: ../../../src/python/memory_management.rst:16:<autosummary>:1
 msgid "Clear the memory cache."
-msgstr ""
+msgstr "清除記憶體快取。"
