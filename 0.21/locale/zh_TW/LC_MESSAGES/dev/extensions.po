@@ -1216,7 +1216,7 @@ msgstr ""
 
 #: ../../../src/dev/extensions.rst:893
 msgid "Download the code"
-msgstr ""
+msgstr "下載程式碼"
 
 #: ../../../src/dev/extensions.rst:895
 msgid ""
