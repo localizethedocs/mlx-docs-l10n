@@ -1,0 +1,52 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023, MLX Contributors
+# This file is distributed under the same license as the MLX package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: MLX 0.19\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-12-08 12:31+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../src/python/_autosummary/mlx.core.divide.rst:2
+msgid "mlx.core.divide"
+msgstr ""
+
+#: ../../../docstring of mlx.core.divide:1
+msgid "Element-wise division."
+msgstr ""
+
+#: ../../../docstring of mlx.core.divide:3
+msgid ""
+"Divide two arrays with numpy-style broadcasting semantics. Either or both "
+"input arrays can also be scalars."
+msgstr ""
+
+#: ../../../src/python/_autosummary/mlx.core.divide.rst:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../docstring of mlx.core.divide:6 mlx.core.divide:8
+msgid "Input array or scalar."
+msgstr ""
+
+#: ../../../src/python/_autosummary/mlx.core.divide.rst:0
+msgid "Returns"
+msgstr ""
+
+#: ../../../docstring of mlx.core.divide:11
+msgid "The quotient ``a / b``."
+msgstr ""
+
+#: ../../../src/python/_autosummary/mlx.core.divide.rst:0
+msgid "Return type"
+msgstr ""

@@ -1,0 +1,50 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023, MLX Contributors
+# This file is distributed under the same license as the MLX package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: MLX 0.19\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-12-08 12:31+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../src/python/nn/_autosummary/mlx.nn.ELU.rst:2
+msgid "mlx.nn.ELU"
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/activations.py:docstring
+#: of mlx.nn.layers.activations.ELU:1
+msgid "Applies the Exponential Linear Unit."
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/activations.py:docstring
+#: of mlx.nn.layers.activations.ELU:2
+msgid "Simply ``mx.where(x > 0, x, alpha * (mx.exp(x) - 1))``."
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/activations.py:docstring
+#: of mlx.nn.layers.activations.ELU:4
+msgid "See :func:`elu` for the functional equivalent."
+msgstr ""
+
+#: ../../../src/python/nn/_autosummary/mlx.nn.ELU.rst:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/activations.py:docstring
+#: of mlx.nn.layers.activations.ELU:6
+msgid "the :math:`\\alpha` value for the ELU formulation. Default: ``1.0``"
+msgstr ""
+
+#: ../../../src/python/nn/_autosummary/mlx.nn.ELU.rst:12
+msgid "Methods"
+msgstr ""
