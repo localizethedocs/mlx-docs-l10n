@@ -1,0 +1,174 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023, MLX Contributors
+# This file is distributed under the same license as the MLX package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: MLX 0.3\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-12-08 12:56+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../src/usage/numpy.rst:4
+msgid "Conversion to NumPy and Other Frameworks"
+msgstr ""
+
+#: ../../../src/usage/numpy.rst:6
+msgid ""
+"MLX array implements the `Python Buffer Protocol <https://docs.python.org/3/"
+"c-api/buffer.html>`_. Let's convert an array to NumPy and back."
+msgstr ""
+
+#: ../../../src/usage/numpy.rst:9
+msgid ""
+"import mlx.core as mx\n"
+"import numpy as np\n"
+"\n"
+"a = mx.arange(3)\n"
+"b = np.array(a) # copy of a\n"
+"c = mx.array(b) # copy of b"
+msgstr ""
+
+#: ../../../src/usage/numpy.rst:20
+msgid ""
+"Since NumPy does not support ``bfloat16`` arrays, you will need to convert "
+"to ``float16`` or ``float32`` first: ``np.array(a.astype(mx.float32))``. "
+"Otherwise, you will receive an error like: ``Item size 2 for PEP 3118 buffer "
+"format string does not match the dtype V item size 0.``"
+msgstr ""
+
+#: ../../../src/usage/numpy.rst:24
+msgid ""
+"By default, NumPy copies data to a new array. This can be prevented by "
+"creating an array view:"
+msgstr ""
+
+#: ../../../src/usage/numpy.rst:26
+msgid ""
+"a = mx.arange(3)\n"
+"a_view = np.array(a, copy=False)\n"
+"print(a_view.flags.owndata) # False\n"
+"a_view[0] = 1\n"
+"print(a[0].item()) # 1"
+msgstr ""
+
+#: ../../../src/usage/numpy.rst:34
+msgid ""
+"A NumPy array view is a normal NumPy array, except that it does not own its "
+"memory. This means writing to the view is reflected in the original array."
+msgstr ""
+
+#: ../../../src/usage/numpy.rst:37
+msgid ""
+"While this is quite powerful to prevent copying arrays, it should be noted "
+"that external changes to the memory of arrays cannot be reflected in "
+"gradients."
+msgstr ""
+
+#: ../../../src/usage/numpy.rst:39
+msgid "Let's demonstrate this in an example:"
+msgstr ""
+
+#: ../../../src/usage/numpy.rst:41
+msgid ""
+"def f(x):\n"
+"    x_view = np.array(x, copy=False)\n"
+"    x_view[:] *= x_view # modify memory without telling mx\n"
+"    return x.sum()\n"
+"\n"
+"x = mx.array([3.0])\n"
+"y, df = mx.value_and_grad(f)(x)\n"
+"print(\"f(x) = x² =\", y.item()) # 9.0\n"
+"print(\"f'(x) = 2x !=\", df.item()) # 1.0"
+msgstr ""
+
+#: ../../../src/usage/numpy.rst:54
+msgid ""
+"The function ``f`` indirectly modifies the array ``x`` through a memory "
+"view. However, this modification is not reflected in the gradient, as seen "
+"in the last line outputting ``1.0``, representing the gradient of the sum "
+"operation alone. The squaring of ``x`` occurs externally to MLX, meaning "
+"that no gradient is incorporated. It's important to note that a similar "
+"issue arises during array conversion and copying. For instance, a function "
+"defined as ``mx.array(np.array(x)**2).sum()`` would also result in an "
+"incorrect gradient, even though no in-place operations on MLX memory are "
+"executed."
+msgstr ""
+
+#: ../../../src/usage/numpy.rst:63
+msgid "PyTorch"
+msgstr ""
+
+#: ../../../src/usage/numpy.rst:67
+msgid ""
+"PyTorch Support for :obj:`memoryview` is experimental and can break for "
+"multi-dimensional arrays. Casting to NumPy first is advised for now."
+msgstr ""
+
+#: ../../../src/usage/numpy.rst:70
+msgid ""
+"PyTorch supports the buffer protocol, but it requires an explicit :obj:"
+"`memoryview`."
+msgstr ""
+
+#: ../../../src/usage/numpy.rst:72
+msgid ""
+"import mlx.core as mx\n"
+"import torch\n"
+"\n"
+"a = mx.arange(3)\n"
+"b = torch.tensor(memoryview(a))\n"
+"c = mx.array(b.numpy())"
+msgstr ""
+
+#: ../../../src/usage/numpy.rst:81
+msgid ""
+"Conversion from PyTorch tensors back to arrays must be done via intermediate "
+"NumPy arrays with ``numpy()``."
+msgstr ""
+
+#: ../../../src/usage/numpy.rst:84
+msgid "JAX"
+msgstr ""
+
+#: ../../../src/usage/numpy.rst:85
+msgid "JAX fully supports the buffer protocol."
+msgstr ""
+
+#: ../../../src/usage/numpy.rst:87
+msgid ""
+"import mlx.core as mx\n"
+"import jax.numpy as jnp\n"
+"\n"
+"a = mx.arange(3)\n"
+"b = jnp.array(a)\n"
+"c = mx.array(b)"
+msgstr ""
+
+#: ../../../src/usage/numpy.rst:97
+msgid "TensorFlow"
+msgstr ""
+
+#: ../../../src/usage/numpy.rst:99
+msgid ""
+"TensorFlow supports the buffer protocol, but it requires an explicit :obj:"
+"`memoryview`."
+msgstr ""
+
+#: ../../../src/usage/numpy.rst:101
+msgid ""
+"import mlx.core as mx\n"
+"import tensorflow as tf\n"
+"\n"
+"a = mx.arange(3)\n"
+"b = tf.constant(memoryview(a))\n"
+"c = mx.array(b)"
+msgstr ""
