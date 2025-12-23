@@ -1,0 +1,73 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023, MLX Contributors
+# This file is distributed under the same license as the MLX package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: MLX 0.16\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-12-08 13:00+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../src/python/_autosummary/mlx.core.random.multivariate_normal.rst:2
+msgid "mlx.core.random.multivariate\\_normal"
+msgstr ""
+
+#: ../../../docstring of mlx.core.random.multivariate_normal:1
+msgid "Generate jointly-normal random samples given a mean and covariance."
+msgstr ""
+
+#: ../../../docstring of mlx.core.random.multivariate_normal:3
+msgid ""
+"The matrix ``cov`` must be positive semi-definite. The behavior is undefined "
+"if it is not.  The only supported ``dtype`` is ``float32``."
+msgstr ""
+
+#: ../../../src/python/_autosummary/mlx.core.random.multivariate_normal.rst:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../docstring of mlx.core.random.multivariate_normal:6
+msgid "array of shape ``(..., n)``, the mean of the distribution."
+msgstr ""
+
+#: ../../../docstring of mlx.core.random.multivariate_normal:9
+msgid ""
+"array  of shape ``(..., n, n)``, the covariance matrix of the distribution. "
+"The batch shape ``...`` must be broadcast-compatible with that of ``mean``."
+msgstr ""
+
+#: ../../../docstring of mlx.core.random.multivariate_normal:13
+msgid ""
+"The output shape must be broadcast-compatible with ``mean.shape[:-1]`` and "
+"``cov.shape[:-2]``. If empty, the result shape is determined by broadcasting "
+"the batch shapes of ``mean`` and ``cov``. Default: ``[]``."
+msgstr ""
+
+#: ../../../docstring of mlx.core.random.multivariate_normal:18
+msgid "The output type. Default: ``float32``."
+msgstr ""
+
+#: ../../../docstring of mlx.core.random.multivariate_normal:20
+msgid "A PRNG key. Default: ``None``."
+msgstr ""
+
+#: ../../../src/python/_autosummary/mlx.core.random.multivariate_normal.rst:0
+msgid "Returns"
+msgstr ""
+
+#: ../../../docstring of mlx.core.random.multivariate_normal:23
+msgid "The output array of random values."
+msgstr ""
+
+#: ../../../src/python/_autosummary/mlx.core.random.multivariate_normal.rst:0
+msgid "Return type"
+msgstr ""
