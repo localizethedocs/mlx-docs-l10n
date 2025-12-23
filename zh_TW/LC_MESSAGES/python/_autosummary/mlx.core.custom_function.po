@@ -1,0 +1,137 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023, MLX Contributors
+# This file is distributed under the same license as the MLX package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: MLX 0.22\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-12-08 12:45+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../src/python/_autosummary/mlx.core.custom_function.rst:2
+msgid "mlx.core.custom\\_function"
+msgstr ""
+
+#: ../../../docstring of mlx.core.custom_function:1
+msgid "Set up a function for custom gradient and vmap definitions."
+msgstr ""
+
+#: ../../../docstring of mlx.core.custom_function:3
+msgid ""
+"This class is meant to be used as a function decorator. Instances are "
+"callables that behave identically to the wrapped function. However, when a "
+"function transformation is used (e.g. computing gradients using :func:"
+"`value_and_grad`) then the functions defined via :meth:`custom_function."
+"vjp`, :meth:`custom_function.jvp` and :meth:`custom_function.vmap` are used "
+"instead of the default transformation."
+msgstr ""
+
+#: ../../../docstring of mlx.core.custom_function:10
+msgid ""
+"Note, all custom transformations are optional. Undefined transformations "
+"fall back to the default behaviour."
+msgstr ""
+
+#: ../../../docstring of mlx.core.custom_function:14
+msgid "Example"
+msgstr ""
+
+#: ../../../docstring of mlx.core.custom_function:15
+msgid ""
+"import mlx.core as mx\n"
+"\n"
+"@mx.custom_function\n"
+"def f(x, y):\n"
+"    return mx.sin(x) * y\n"
+"\n"
+"@f.vjp\n"
+"def f_vjp(primals, cotangent, output):\n"
+"    x, y = primals\n"
+"    return cotan * mx.cos(x) * y, cotan * mx.sin(x)\n"
+"\n"
+"@f.jvp\n"
+"def f_jvp(primals, tangents):\n"
+"  x, y = primals\n"
+"  dx, dy = tangents\n"
+"  return dx * mx.cos(x) * y + dy * mx.sin(x)\n"
+"\n"
+"@f.vmap\n"
+"def f_vmap(inputs, axes):\n"
+"  x, y = inputs\n"
+"  ax, ay = axes\n"
+"  if ay != ax and ax is not None:\n"
+"      y = y.swapaxes(ay, ax)\n"
+"  return mx.sin(x) * y, (ax or ay)"
+msgstr ""
+
+#: ../../../docstring of mlx.core.custom_function:42
+msgid ""
+"All ``custom_function`` instances behave as pure functions. Namely, any "
+"variables captured will be treated as constants and no gradients will be "
+"computed with respect to the captured arrays. For instance:"
+msgstr ""
+
+#: ../../../docstring of mlx.core.custom_function:46
+msgid ""
+"import mlx.core as mx\n"
+"\n"
+"def g(x, y):\n"
+"  @mx.custom_function\n"
+"  def f(x):\n"
+"    return x * y\n"
+"\n"
+"  @f.vjp\n"
+"  def f_vjp(x, dx, fx):\n"
+"    # Note that we have only x, dx and fx and nothing with respect to y\n"
+"    raise ValueError(\"Abort!\")\n"
+"\n"
+"  return f(x)\n"
+"\n"
+"x = mx.array(2.0)\n"
+"y = mx.array(3.0)\n"
+"print(g(x, y))                     # prints 6.0\n"
+"print(mx.grad(g)(x, y))            # Raises exception\n"
+"print(mx.grad(g, argnums=1)(x, y)) # prints 0.0"
+msgstr ""
+
+#: ../../../src/python/_autosummary/mlx.core.custom_function.rst:13
+msgid "Methods"
+msgstr ""
+
+#: ../../../src/python/_autosummary/mlx.core.custom_function.rst:19:<autosummary>:1
+msgid ""
+":py:obj:`__init__ <mlx.core.custom_function.__init__>`\\ \\(self\\, f\\)"
+msgstr ""
+
+#: ../../../src/python/_autosummary/mlx.core.custom_function.rst:19:<autosummary>:1
+msgid ":py:obj:`jvp <mlx.core.custom_function.jvp>`\\ \\(self\\, f\\)"
+msgstr ""
+
+#: ../../../src/python/_autosummary/mlx.core.custom_function.rst:19:<autosummary>:1
+msgid "Define a custom jvp for the wrapped function."
+msgstr ""
+
+#: ../../../src/python/_autosummary/mlx.core.custom_function.rst:19:<autosummary>:1
+msgid ":py:obj:`vjp <mlx.core.custom_function.vjp>`\\ \\(self\\, f\\)"
+msgstr ""
+
+#: ../../../src/python/_autosummary/mlx.core.custom_function.rst:19:<autosummary>:1
+msgid "Define a custom vjp for the wrapped function."
+msgstr ""
+
+#: ../../../src/python/_autosummary/mlx.core.custom_function.rst:19:<autosummary>:1
+msgid ":py:obj:`vmap <mlx.core.custom_function.vmap>`\\ \\(self\\, f\\)"
+msgstr ""
+
+#: ../../../src/python/_autosummary/mlx.core.custom_function.rst:19:<autosummary>:1
+msgid "Define a custom vectorization transformation for the wrapped function."
+msgstr ""
