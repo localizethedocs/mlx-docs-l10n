@@ -1,0 +1,63 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023, Apple
+# This file is distributed under the same license as the MLX package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: MLX 0.26\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-12-08 12:22+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../src/python/_autosummary/mlx.core.fft.irfft.rst:2
+msgid "mlx.core.fft.irfft"
+msgstr ""
+
+#: ../../../docstring of mlx.core.fft.irfft:1
+msgid "The inverse of :func:`rfft`."
+msgstr ""
+
+#: ../../../docstring of mlx.core.fft.irfft:3
+msgid ""
+"The output has the same shape as the input except along ``axis`` in which "
+"case it has size ``n``."
+msgstr ""
+
+#: ../../../src/python/_autosummary/mlx.core.fft.irfft.rst:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../docstring of mlx.core.fft.irfft:6
+msgid "The input array."
+msgstr ""
+
+#: ../../../docstring of mlx.core.fft.irfft:8
+msgid ""
+"Size of the transformed axis. The corresponding axis in the input is "
+"truncated or padded with zeros to match ``n // 2 + 1``. The default value is "
+"``a.shape[axis] // 2 + 1``."
+msgstr ""
+
+#: ../../../docstring of mlx.core.fft.irfft:13
+msgid "Axis along which to perform the FFT. The default is ``-1``."
+msgstr ""
+
+#: ../../../src/python/_autosummary/mlx.core.fft.irfft.rst:0
+msgid "Returns"
+msgstr ""
+
+#: ../../../docstring of mlx.core.fft.irfft:17
+msgid "The real array containing the inverse of :func:`rfft`."
+msgstr ""
+
+#: ../../../src/python/_autosummary/mlx.core.fft.irfft.rst:0
+msgid "Return type"
+msgstr ""
