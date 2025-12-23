@@ -1,0 +1,158 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023, MLX Contributors
+# This file is distributed under the same license as the MLX package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: MLX 0.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-12-08 12:56+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../src/python/random.rst:4
+msgid "Random"
+msgstr ""
+
+#: ../../../src/python/random.rst:6
+msgid ""
+"Random sampling functions in MLX use an implicit global PRNG state by "
+"default. However, all function take an optional ``key`` keyword argument for "
+"when more fine-grained control or explicit state management is needed."
+msgstr ""
+
+#: ../../../src/python/random.rst:10
+msgid "For example, you can generate random numbers with:"
+msgstr ""
+
+#: ../../../src/python/random.rst:12
+msgid ""
+"for _ in range(3):\n"
+"  print(mx.random.uniform())"
+msgstr ""
+
+#: ../../../src/python/random.rst:17
+msgid ""
+"which will print a sequence of unique pseudo random numbers. Alternatively "
+"you can explicitly set the key:"
+msgstr ""
+
+#: ../../../src/python/random.rst:20
+msgid ""
+"key = mx.random.key(0)\n"
+"for _ in range(3):\n"
+"  print(mx.random.uniform(key=key))"
+msgstr ""
+
+#: ../../../src/python/random.rst:26
+msgid "which will yield the same pseudo random number at each iteration."
+msgstr ""
+
+#: ../../../src/python/random.rst:28
+msgid ""
+"Following `JAX's PRNG design <https://jax.readthedocs.io/en/latest/jep/263-"
+"prng.html>`_ we use a splittable version of Threefry, which is a counter-"
+"based PRNG."
+msgstr ""
+
+#: ../../../src/python/random.rst:45:<autosummary>:1
+msgid ""
+":py:obj:`bernoulli <mlx.core.random.bernoulli>`\\ \\(\\[p\\, shape\\, key\\, "
+"stream\\]\\)"
+msgstr ""
+
+#: ../../../src/python/random.rst:45:<autosummary>:1
+msgid "Generate Bernoulli random values."
+msgstr ""
+
+#: ../../../src/python/random.rst:45:<autosummary>:1
+msgid ""
+":py:obj:`categorical <mlx.core.random.categorical>`\\ \\(logits\\[\\, "
+"axis\\, shape\\, ...\\]\\)"
+msgstr ""
+
+#: ../../../src/python/random.rst:45:<autosummary>:1
+msgid "Sample from a categorical distribution."
+msgstr ""
+
+#: ../../../src/python/random.rst:45:<autosummary>:1
+msgid ""
+":py:obj:`gumbel <mlx.core.random.gumbel>`\\ \\(\\[shape\\, dtype\\, "
+"stream\\, key\\]\\)"
+msgstr ""
+
+#: ../../../src/python/random.rst:45:<autosummary>:1
+msgid "Sample from the standard Gumbel distribution."
+msgstr ""
+
+#: ../../../src/python/random.rst:45:<autosummary>:1
+msgid ":py:obj:`key <mlx.core.random.key>`\\ \\(seed\\)"
+msgstr ""
+
+#: ../../../src/python/random.rst:45:<autosummary>:1
+msgid "Get a PRNG key from a seed."
+msgstr ""
+
+#: ../../../src/python/random.rst:45:<autosummary>:1
+msgid ""
+":py:obj:`normal <mlx.core.random.normal>`\\ \\(\\[shape\\, dtype\\, key\\, "
+"stream\\]\\)"
+msgstr ""
+
+#: ../../../src/python/random.rst:45:<autosummary>:1
+msgid "Generate normally distributed random numbers."
+msgstr ""
+
+#: ../../../src/python/random.rst:45:<autosummary>:1
+msgid ""
+":py:obj:`randint <mlx.core.random.randint>`\\ \\(low\\, high\\[\\, shape\\, "
+"dtype\\, key\\, stream\\]\\)"
+msgstr ""
+
+#: ../../../src/python/random.rst:45:<autosummary>:1
+msgid "Generate random integers from the given interval."
+msgstr ""
+
+#: ../../../src/python/random.rst:45:<autosummary>:1
+msgid ":py:obj:`seed <mlx.core.random.seed>`\\ \\(seed\\)"
+msgstr ""
+
+#: ../../../src/python/random.rst:45:<autosummary>:1
+msgid "Seed the global PRNG."
+msgstr ""
+
+#: ../../../src/python/random.rst:45:<autosummary>:1
+msgid ""
+":py:obj:`split <mlx.core.random.split>`\\ \\(key\\[\\, num\\, stream\\]\\)"
+msgstr ""
+
+#: ../../../src/python/random.rst:45:<autosummary>:1
+msgid "Split a PRNG key into sub keys."
+msgstr ""
+
+#: ../../../src/python/random.rst:45:<autosummary>:1
+msgid ""
+":py:obj:`truncated_normal <mlx.core.random.truncated_normal>`\\ \\(lower\\, "
+"upper\\[\\, shape\\, ...\\]\\)"
+msgstr ""
+
+#: ../../../src/python/random.rst:45:<autosummary>:1
+msgid "Generate values from a truncated normal distribution."
+msgstr ""
+
+#: ../../../src/python/random.rst:45:<autosummary>:1
+msgid ""
+":py:obj:`uniform <mlx.core.random.uniform>`\\ \\(\\[low\\, high\\, shape\\, "
+"dtype\\, key\\, stream\\]\\)"
+msgstr ""
+
+#: ../../../src/python/random.rst:45:<autosummary>:1
+msgid "Generate uniformly distributed random numbers."
+msgstr ""
