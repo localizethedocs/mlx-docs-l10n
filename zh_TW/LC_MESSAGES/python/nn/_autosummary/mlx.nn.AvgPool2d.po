@@ -1,0 +1,84 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023, Apple
+# This file is distributed under the same license as the MLX package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: MLX 0.28\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-12-08 12:32+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../src/python/nn/_autosummary/mlx.nn.AvgPool2d.rst:2
+msgid "mlx.nn.AvgPool2d"
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/pooling.py:docstring
+#: of mlx.nn.layers.pooling.AvgPool2d:1
+msgid "Applies 2-dimensional average pooling."
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/pooling.py:docstring
+#: of mlx.nn.layers.pooling.AvgPool2d:3
+msgid ""
+"Spatially downsamples the input by taking the average of a sliding window of "
+"size ``kernel_size`` and sliding stride ``stride``."
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/pooling.py:docstring
+#: of mlx.nn.layers.pooling.AvgPool2d:6
+msgid ""
+"The parameters ``kernel_size``, ``stride``, and ``padding`` can either be:"
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/pooling.py:docstring
+#: of mlx.nn.layers.pooling.AvgPool2d:8
+msgid ""
+"a single ``int`` -- in which case the same value is used for both the height "
+"and width axis."
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/pooling.py:docstring
+#: of mlx.nn.layers.pooling.AvgPool2d:10
+msgid ""
+"a ``tuple`` of two ``int`` s -- in which case, the first ``int`` is used for "
+"the height axis, the second ``int`` for the width axis."
+msgstr ""
+
+#: ../../../src/python/nn/_autosummary/mlx.nn.AvgPool2d.rst:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/pooling.py:docstring
+#: of mlx.nn.layers.pooling.AvgPool2d:13
+msgid "The size of the pooling window."
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/pooling.py:docstring
+#: of mlx.nn.layers.pooling.AvgPool2d:15
+msgid "The stride of the pooling window. Default: ``kernel_size``."
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/pooling.py:docstring
+#: of mlx.nn.layers.pooling.AvgPool2d:18
+msgid ""
+"How much zero padding to apply to the input. The padding is applied on both "
+"sides of the height and width axis. Default: ``0``."
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/pooling.py:docstring
+#: of mlx.nn.layers.pooling.AvgPool2d:24
+msgid "Examples"
+msgstr ""
+
+#: ../../../src/python/nn/_autosummary/mlx.nn.AvgPool2d.rst:12
+msgid "Methods"
+msgstr ""

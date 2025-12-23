@@ -1,0 +1,74 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023, Apple
+# This file is distributed under the same license as the MLX package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: MLX 0.28\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-12-08 12:32+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../src/python/fast.rst:4
+msgid "Fast"
+msgstr ""
+
+#: ../../../src/python/fast.rst:15:<autosummary>:1
+msgid ""
+":py:obj:`rms_norm <mlx.core.fast.rms_norm>`\\ \\(x\\, weight\\, eps\\, "
+"\\*\\[\\, stream\\]\\)"
+msgstr ""
+
+#: ../../../src/python/fast.rst:15:<autosummary>:1
+msgid "Root Mean Square normalization (RMS norm)."
+msgstr ""
+
+#: ../../../src/python/fast.rst:15:<autosummary>:1
+msgid ""
+":py:obj:`layer_norm <mlx.core.fast.layer_norm>`\\ \\(x\\, weight\\, bias\\, "
+"eps\\, \\*\\[\\, stream\\]\\)"
+msgstr ""
+
+#: ../../../src/python/fast.rst:15:<autosummary>:1
+msgid "Layer normalization."
+msgstr ""
+
+#: ../../../src/python/fast.rst:15:<autosummary>:1
+msgid ""
+":py:obj:`rope <mlx.core.fast.rope>`\\ \\(a\\, dims\\, \\*\\, traditional\\, "
+"base\\, scale\\, ...\\)"
+msgstr ""
+
+#: ../../../src/python/fast.rst:15:<autosummary>:1
+msgid "Apply rotary positional encoding to the input."
+msgstr ""
+
+#: ../../../src/python/fast.rst:15:<autosummary>:1
+msgid ""
+":py:obj:`scaled_dot_product_attention <mlx.core.fast."
+"scaled_dot_product_attention>`\\ \\(q\\, k\\, v\\, \\*\\, scale\\)"
+msgstr ""
+
+#: ../../../src/python/fast.rst:15:<autosummary>:1
+msgid ""
+"A fast implementation of multi-head attention: ``O = softmax(Q @ K.T, "
+"dim=-1) @ V``."
+msgstr ""
+
+#: ../../../src/python/fast.rst:15:<autosummary>:1
+msgid ""
+":py:obj:`metal_kernel <mlx.core.fast.metal_kernel>`\\ \\(name\\, "
+"input\\_names\\, ...\\[\\, ...\\]\\)"
+msgstr ""
+
+#: ../../../src/python/fast.rst:15:<autosummary>:1
+msgid "A jit-compiled custom Metal kernel defined from a source string."
+msgstr ""
