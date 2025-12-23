@@ -8,10 +8,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MLX 0.30\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-12-08 12:54+0000\n"
+"POT-Creation-Date: 2025-12-23 09:21+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -358,11 +359,34 @@ msgstr ""
 msgid ""
 "In order to have the change of state reflected in the outputs of ``fun`` you "
 "again have two options. The first option is to simply pass ``state`` as "
-"input to the function. In some cases this can be pretty inconvenient. "
-"Hence, :func:`compile` also has a parameter to capture implicit inputs:"
+"input to the function."
 msgstr ""
 
-#: ../../../src/usage/compile.rst:263
+#: ../../../src/usage/compile.rst:262
+msgid ""
+"state = [mx.array(1.0)]\n"
+"\n"
+"@mx.compile\n"
+"def fun(x, state):\n"
+"    return x + state[0]\n"
+"\n"
+"# Prints array(2, dtype=float32)\n"
+"print(fun(mx.array(1.0), state))\n"
+"\n"
+"# Update state\n"
+"state[0] = mx.array(5.0)\n"
+"\n"
+"# Prints array(6, dtype=float32)\n"
+"print(fun(mx.array(1.0), state))"
+msgstr ""
+
+#: ../../../src/usage/compile.rst:279
+msgid ""
+"In some cases this can be pretty inconvenient. Hence, :func:`compile` also "
+"has a parameter to capture implicit inputs:"
+msgstr ""
+
+#: ../../../src/usage/compile.rst:282
 msgid ""
 "from functools import partial\n"
 "state = [mx.array(1.0)]\n"
@@ -382,11 +406,11 @@ msgid ""
 "print(fun(mx.array(1.0)))"
 msgstr ""
 
-#: ../../../src/usage/compile.rst:284
+#: ../../../src/usage/compile.rst:303
 msgid "Compiling Training Graphs"
 msgstr ""
 
-#: ../../../src/usage/compile.rst:286
+#: ../../../src/usage/compile.rst:305
 msgid ""
 "This section will step through how to use :func:`compile` with a simple "
 "example of a common setup: training a model with :obj:`mlx.nn.Module` using "
@@ -394,11 +418,11 @@ msgid ""
 "the full forward, backward, and update with :func:`compile`."
 msgstr ""
 
-#: ../../../src/usage/compile.rst:291
+#: ../../../src/usage/compile.rst:310
 msgid "To start, here is the simple example without any compilation:"
 msgstr ""
 
-#: ../../../src/usage/compile.rst:293
+#: ../../../src/usage/compile.rst:312
 msgid ""
 "import mlx.core as mx\n"
 "import mlx.nn as nn\n"
@@ -429,14 +453,14 @@ msgid ""
 "    mx.eval(model.parameters(), optimizer.state)"
 msgstr ""
 
-#: ../../../src/usage/compile.rst:323
+#: ../../../src/usage/compile.rst:342
 msgid ""
 "To compile the update we can put it all in a function and compile it with "
 "the appropriate input and output captures. Here's the same example but "
 "compiled:"
 msgstr ""
 
-#: ../../../src/usage/compile.rst:326
+#: ../../../src/usage/compile.rst:345
 msgid ""
 "import mlx.core as mx\n"
 "import mlx.nn as nn\n"
@@ -477,7 +501,7 @@ msgid ""
 "    print(loss)"
 msgstr ""
 
-#: ../../../src/usage/compile.rst:369
+#: ../../../src/usage/compile.rst:388
 msgid ""
 "If you are using a module which performs random sampling such as :func:`mlx."
 "nn.Dropout`, make sure you also include ``mx.random.state`` in the ``state`` "
@@ -485,17 +509,17 @@ msgid ""
 "mx.random.state]``."
 msgstr ""
 
-#: ../../../src/usage/compile.rst:377
+#: ../../../src/usage/compile.rst:396
 msgid ""
 "For more examples of compiling full training graphs checkout the  `MLX "
 "Examples <https://github.com/ml-explore/mlx-examples>`_ GitHub repo."
 msgstr ""
 
-#: ../../../src/usage/compile.rst:381
+#: ../../../src/usage/compile.rst:400
 msgid "Transformations with Compile"
 msgstr ""
 
-#: ../../../src/usage/compile.rst:383
+#: ../../../src/usage/compile.rst:402
 msgid ""
 "In MLX function transformations are composable. You can apply any function "
 "transformation to the output of any other function transformation. For more "
@@ -503,11 +527,11 @@ msgid ""
 "<function_transforms>`."
 msgstr ""
 
-#: ../../../src/usage/compile.rst:388
+#: ../../../src/usage/compile.rst:407
 msgid "Compiling transformed functions works just as expected:"
 msgstr ""
 
-#: ../../../src/usage/compile.rst:390
+#: ../../../src/usage/compile.rst:409
 msgid ""
 "grad_fn = mx.grad(mx.exp)\n"
 "\n"
@@ -520,21 +544,21 @@ msgid ""
 "print(compiled_grad_fn(mx.array(1.0)))"
 msgstr ""
 
-#: ../../../src/usage/compile.rst:404
+#: ../../../src/usage/compile.rst:423
 msgid ""
 "In order to compile as much as possible, a transformation of a compiled "
 "function will not by default be compiled. To compile the transformed "
 "function simply pass it through :func:`compile`."
 msgstr ""
 
-#: ../../../src/usage/compile.rst:408
+#: ../../../src/usage/compile.rst:427
 msgid ""
 "You can also compile functions which themselves call compiled functions. A "
 "good practice is to compile the outer most function to give :func:`compile` "
 "the most opportunity to optimize the computation graph:"
 msgstr ""
 
-#: ../../../src/usage/compile.rst:412
+#: ../../../src/usage/compile.rst:431
 msgid ""
 "@mx.compile\n"
 "def inner(x):\n"
@@ -548,11 +572,11 @@ msgid ""
 "fun = mx.compile(outer)"
 msgstr ""
 
-#: ../../../src/usage/compile.rst:430
+#: ../../../src/usage/compile.rst:449
 msgid "Shapeless Compilation"
 msgstr ""
 
-#: ../../../src/usage/compile.rst:432
+#: ../../../src/usage/compile.rst:451
 msgid ""
 "When the shape of an input to a compiled function changes, the function is "
 "recompiled. You can compile a function once and run it on inputs with "
@@ -561,7 +585,7 @@ msgid ""
 "recompiled."
 msgstr ""
 
-#: ../../../src/usage/compile.rst:438
+#: ../../../src/usage/compile.rst:457
 msgid ""
 "def fun(x, y):\n"
 "    return mx.abs(x + y)\n"
@@ -581,7 +605,7 @@ msgid ""
 "print(compiled_fun(x, y))"
 msgstr ""
 
-#: ../../../src/usage/compile.rst:458
+#: ../../../src/usage/compile.rst:477
 msgid ""
 "Use shapeless compilations carefully. Since compilation is not triggered "
 "when shapes change, any graphs which are conditional on the input shapes "
@@ -589,7 +613,7 @@ msgid ""
 "sometimes subtle to detect. For example:"
 msgstr ""
 
-#: ../../../src/usage/compile.rst:463
+#: ../../../src/usage/compile.rst:482
 msgid ""
 "def fun(x):\n"
 "    return x.reshape(x.shape[0] * x.shape[1], -1)\n"
@@ -606,14 +630,14 @@ msgid ""
 "out = compiled_fun(x)"
 msgstr ""
 
-#: ../../../src/usage/compile.rst:479
+#: ../../../src/usage/compile.rst:498
 msgid ""
 "The second call to the ``compiled_fun`` fails because of the call to :func:"
 "`reshape` which uses the static shape of ``x`` in the first call. We can fix "
 "this by using :func:`flatten` to avoid hardcoding the shape of ``x``:"
 msgstr ""
 
-#: ../../../src/usage/compile.rst:483
+#: ../../../src/usage/compile.rst:502
 msgid ""
 "def fun(x):\n"
 "    return x.flatten(0, 1)\n"
