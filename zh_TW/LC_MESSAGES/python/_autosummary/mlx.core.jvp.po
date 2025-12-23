@@ -1,0 +1,67 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023, Apple
+# This file is distributed under the same license as the MLX package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: MLX 0.29\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-12-08 12:54+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../src/python/_autosummary/mlx.core.jvp.rst:2
+msgid "mlx.core.jvp"
+msgstr ""
+
+#: ../../../docstring of mlx.core.jvp:1
+msgid "Compute the Jacobian-vector product."
+msgstr ""
+
+#: ../../../docstring of mlx.core.jvp:3
+msgid ""
+"This computes the product of the Jacobian of a function ``fun`` evaluated at "
+"``primals`` with the ``tangents``."
+msgstr ""
+
+#: ../../../src/python/_autosummary/mlx.core.jvp.rst:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../docstring of mlx.core.jvp:6
+msgid ""
+"A function which takes a variable number of :class:`array` and returns a "
+"single :class:`array` or list of :class:`array`."
+msgstr ""
+
+#: ../../../docstring of mlx.core.jvp:9
+msgid "A list of :class:`array` at which to evaluate the Jacobian."
+msgstr ""
+
+#: ../../../docstring of mlx.core.jvp:12
+msgid ""
+"A list of :class:`array` which are the \"vector\" in the Jacobian-vector "
+"product. The ``tangents`` should be the same in number, shape, and type as "
+"the inputs of ``fun`` (i.e. the ``primals``)."
+msgstr ""
+
+#: ../../../src/python/_autosummary/mlx.core.jvp.rst:0
+msgid "Returns"
+msgstr ""
+
+#: ../../../docstring of mlx.core.jvp:17
+msgid ""
+"A list of the Jacobian-vector products which is the same in number, shape, "
+"and type of the inputs to ``fun``."
+msgstr ""
+
+#: ../../../src/python/_autosummary/mlx.core.jvp.rst:0
+msgid "Return type"
+msgstr ""

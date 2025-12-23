@@ -1,0 +1,269 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023, Apple
+# This file is distributed under the same license as the MLX package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: MLX 0.29\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-12-08 12:54+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../src/usage/function_transforms.rst:4
+msgid "Function Transforms"
+msgstr ""
+
+#: ../../../src/usage/function_transforms.rst:8
+msgid ""
+"MLX uses composable function transformations for automatic differentiation, "
+"vectorization, and compute graph optimizations. To see the complete list of "
+"function transformations check-out the :ref:`API documentation <transforms>`."
+msgstr ""
+
+#: ../../../src/usage/function_transforms.rst:12
+msgid ""
+"The key idea behind composable function transformations is that every "
+"transformation returns a function which can be further transformed."
+msgstr ""
+
+#: ../../../src/usage/function_transforms.rst:15
+msgid "Here is a simple example:"
+msgstr ""
+
+#: ../../../src/usage/function_transforms.rst:17
+msgid ""
+">>> dfdx = mx.grad(mx.sin)\n"
+">>> dfdx(mx.array(mx.pi))\n"
+"array(-1, dtype=float32)\n"
+">>> mx.cos(mx.array(mx.pi))\n"
+"array(-1, dtype=float32)"
+msgstr ""
+
+#: ../../../src/usage/function_transforms.rst:26
+msgid ""
+"The output of :func:`grad` on :func:`sin` is simply another function. In "
+"this case it is the gradient of the sine function which is exactly the "
+"cosine function. To get the second derivative you can do:"
+msgstr ""
+
+#: ../../../src/usage/function_transforms.rst:30
+msgid ""
+">>> d2fdx2 = mx.grad(mx.grad(mx.sin))\n"
+">>> d2fdx2(mx.array(mx.pi / 2))\n"
+"array(-1, dtype=float32)\n"
+">>> mx.sin(mx.array(mx.pi / 2))\n"
+"array(1, dtype=float32)"
+msgstr ""
+
+#: ../../../src/usage/function_transforms.rst:38
+msgid ""
+"Using :func:`grad` on the output of :func:`grad` is always ok. You keep "
+"getting higher order derivatives."
+msgstr ""
+
+#: ../../../src/usage/function_transforms.rst:41
+msgid ""
+"Any of the MLX function transformations can be composed in any order to any "
+"depth. See the following sections for more information on :ref:`automatic "
+"differentiation <auto diff>` and :ref:`automatic vectorization <vmap>`. For "
+"more information on :func:`compile` see the :ref:`compile documentation "
+"<compile>`."
+msgstr ""
+
+#: ../../../src/usage/function_transforms.rst:48
+msgid "Automatic Differentiation"
+msgstr ""
+
+#: ../../../src/usage/function_transforms.rst:52
+msgid ""
+"Automatic differentiation in MLX works on functions rather than on implicit "
+"graphs."
+msgstr ""
+
+#: ../../../src/usage/function_transforms.rst:57
+msgid ""
+"If you are coming to MLX from PyTorch, you no longer need functions like "
+"``backward``, ``zero_grad``, and ``detach``, or properties like "
+"``requires_grad``."
+msgstr ""
+
+#: ../../../src/usage/function_transforms.rst:61
+msgid ""
+"The most basic example is taking the gradient of a scalar-valued function as "
+"we saw above. You can use the :func:`grad` and :func:`value_and_grad` "
+"function to compute gradients of more complex functions. By default these "
+"functions compute the gradient with respect to the first argument:"
+msgstr ""
+
+#: ../../../src/usage/function_transforms.rst:66
+msgid ""
+"def loss_fn(w, x, y):\n"
+"   return mx.mean(mx.square(w * x - y))\n"
+"\n"
+"w = mx.array(1.0)\n"
+"x = mx.array([0.5, -0.5])\n"
+"y = mx.array([1.5, -1.5])\n"
+"\n"
+"# Computes the gradient of loss_fn with respect to w:\n"
+"grad_fn = mx.grad(loss_fn)\n"
+"dloss_dw = grad_fn(w, x, y)\n"
+"# Prints array(-1, dtype=float32)\n"
+"print(dloss_dw)\n"
+"\n"
+"# To get the gradient with respect to x we can do:\n"
+"grad_fn = mx.grad(loss_fn, argnums=1)\n"
+"dloss_dx = grad_fn(w, x, y)\n"
+"# Prints array([-1, 1], dtype=float32)\n"
+"print(dloss_dx)"
+msgstr ""
+
+#: ../../../src/usage/function_transforms.rst:88
+msgid ""
+"One way to get the loss and gradient is to call ``loss_fn`` followed by "
+"``grad_fn``, but this can result in a lot of redundant work. Instead, you "
+"should use :func:`value_and_grad`. Continuing the above example:"
+msgstr ""
+
+#: ../../../src/usage/function_transforms.rst:93
+msgid ""
+"# Computes the gradient of loss_fn with respect to w:\n"
+"loss_and_grad_fn = mx.value_and_grad(loss_fn)\n"
+"loss, dloss_dw = loss_and_grad_fn(w, x, y)\n"
+"\n"
+"# Prints array(1, dtype=float32)\n"
+"print(loss)\n"
+"\n"
+"# Prints array(-1, dtype=float32)\n"
+"print(dloss_dw)"
+msgstr ""
+
+#: ../../../src/usage/function_transforms.rst:106
+msgid ""
+"You can also take the gradient with respect to arbitrarily nested Python "
+"containers of arrays (specifically any of :obj:`list`, :obj:`tuple`, or :obj:"
+"`dict`)."
+msgstr ""
+
+#: ../../../src/usage/function_transforms.rst:110
+msgid ""
+"Suppose we wanted a weight and a bias parameter in the above example. A nice "
+"way to do that is the following:"
+msgstr ""
+
+#: ../../../src/usage/function_transforms.rst:113
+msgid ""
+"def loss_fn(params, x, y):\n"
+"   w, b = params[\"weight\"], params[\"bias\"]\n"
+"   h = w * x + b\n"
+"   return mx.mean(mx.square(h - y))\n"
+"\n"
+"params = {\"weight\": mx.array(1.0), \"bias\": mx.array(0.0)}\n"
+"x = mx.array([0.5, -0.5])\n"
+"y = mx.array([1.5, -1.5])\n"
+"\n"
+"# Computes the gradient of loss_fn with respect to both the\n"
+"# weight and bias:\n"
+"grad_fn = mx.grad(loss_fn)\n"
+"grads = grad_fn(params, x, y)\n"
+"\n"
+"# Prints\n"
+"# {'weight': array(-1, dtype=float32), 'bias': array(0, dtype=float32)}\n"
+"print(grads)"
+msgstr ""
+
+#: ../../../src/usage/function_transforms.rst:133
+msgid ""
+"Notice the tree structure of the parameters is preserved in the gradients."
+msgstr ""
+
+#: ../../../src/usage/function_transforms.rst:135
+msgid ""
+"In some cases you may want to stop gradients from propagating through a part "
+"of the function. You can use the :func:`stop_gradient` for that."
+msgstr ""
+
+#: ../../../src/usage/function_transforms.rst:140
+msgid "Automatic Vectorization"
+msgstr ""
+
+#: ../../../src/usage/function_transforms.rst:144
+msgid ""
+"Use :func:`vmap` to automate vectorizing complex functions. Here we'll go "
+"through a basic and contrived example for the sake of clarity, but :func:"
+"`vmap` can be quite powerful for more complex functions which are difficult "
+"to optimize by hand."
+msgstr ""
+
+#: ../../../src/usage/function_transforms.rst:151
+msgid ""
+"Some operations are not yet supported with :func:`vmap`. If you encounter an "
+"error like: ``ValueError: Primitive's vmap not implemented.`` file an `issue "
+"<https://github.com/ml-explore/mlx/issues>`_ and include your function. We "
+"will prioritize including it."
+msgstr ""
+
+#: ../../../src/usage/function_transforms.rst:156
+msgid ""
+"A naive way to add the elements from two sets of vectors is with a loop:"
+msgstr ""
+
+#: ../../../src/usage/function_transforms.rst:158
+msgid ""
+"xs = mx.random.uniform(shape=(4096, 100))\n"
+"ys = mx.random.uniform(shape=(100, 4096))\n"
+"\n"
+"def naive_add(xs, ys):\n"
+"    return [xs[i] + ys[:, i] for i in range(xs.shape[0])]"
+msgstr ""
+
+#: ../../../src/usage/function_transforms.rst:166
+msgid ""
+"Instead you can use :func:`vmap` to automatically vectorize the addition:"
+msgstr ""
+
+#: ../../../src/usage/function_transforms.rst:168
+msgid ""
+"# Vectorize over the second dimension of x and the\n"
+"# first dimension of y\n"
+"vmap_add = mx.vmap(lambda x, y: x + y, in_axes=(0, 1))"
+msgstr ""
+
+#: ../../../src/usage/function_transforms.rst:174
+msgid ""
+"The ``in_axes`` parameter can be used to specify which dimensions of the "
+"corresponding input to vectorize over. Similarly, use ``out_axes`` to "
+"specify where the vectorized axes should be in the outputs."
+msgstr ""
+
+#: ../../../src/usage/function_transforms.rst:178
+msgid "Let's time these two different versions:"
+msgstr ""
+
+#: ../../../src/usage/function_transforms.rst:180
+msgid ""
+"import timeit\n"
+"\n"
+"print(timeit.timeit(lambda: mx.eval(naive_add(xs, ys)), number=100))\n"
+"print(timeit.timeit(lambda: mx.eval(vmap_add(xs, ys)), number=100))"
+msgstr ""
+
+#: ../../../src/usage/function_transforms.rst:187
+msgid ""
+"On an M1 Max the naive version takes in total ``5.639`` seconds whereas the "
+"vectorized version takes only ``0.024`` seconds, more than 200 times faster."
+msgstr ""
+
+#: ../../../src/usage/function_transforms.rst:190
+msgid ""
+"Of course, this operation is quite contrived. A better approach is to simply "
+"do ``xs + ys.T``, but for more complex functions :func:`vmap` can be quite "
+"handy."
+msgstr ""
