@@ -1,0 +1,220 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023, MLX Contributors
+# This file is distributed under the same license as the MLX package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: MLX 0.10\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-12-08 12:56+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../src/usage/lazy_evaluation.rst:4
+msgid "Lazy Evaluation"
+msgstr ""
+
+#: ../../../src/usage/lazy_evaluation.rst:9
+msgid "Why Lazy Evaluation"
+msgstr ""
+
+#: ../../../src/usage/lazy_evaluation.rst:11
+msgid ""
+"When you perform operations in MLX, no computation actually happens. Instead "
+"a compute graph is recorded. The actual computation only happens if an :func:"
+"`eval` is performed."
+msgstr ""
+
+#: ../../../src/usage/lazy_evaluation.rst:15
+msgid ""
+"MLX uses lazy evaluation because it has some nice features, some of which we "
+"describe below."
+msgstr ""
+
+#: ../../../src/usage/lazy_evaluation.rst:19
+msgid "Transforming Compute Graphs"
+msgstr ""
+
+#: ../../../src/usage/lazy_evaluation.rst:21
+msgid ""
+"Lazy evaluation let's us record a compute graph without actually doing any "
+"computations. This is useful for function transformations like :func:`grad` "
+"and :func:`vmap` and graph optimizations."
+msgstr ""
+
+#: ../../../src/usage/lazy_evaluation.rst:25
+msgid ""
+"Currently, MLX does not compile and rerun compute graphs. They are all "
+"generated dynamically. However, lazy evaluation makes it much easier to "
+"integrate compilation for future performance enhancements."
+msgstr ""
+
+#: ../../../src/usage/lazy_evaluation.rst:30
+msgid "Only Compute What You Use"
+msgstr ""
+
+#: ../../../src/usage/lazy_evaluation.rst:32
+msgid ""
+"In MLX you do not need to worry as much about computing outputs that are "
+"never used. For example:"
+msgstr ""
+
+#: ../../../src/usage/lazy_evaluation.rst:35
+msgid ""
+"def fun(x):\n"
+"    a = fun1(x)\n"
+"    b = expensive_fun(a)\n"
+"    return a, b\n"
+"\n"
+"y, _ = fun(x)"
+msgstr ""
+
+#: ../../../src/usage/lazy_evaluation.rst:44
+msgid ""
+"Here, we never actually compute the output of ``expensive_fun``. Use this "
+"pattern with care though, as the graph of ``expensive_fun`` is still built, "
+"and that has some cost associated to it."
+msgstr ""
+
+#: ../../../src/usage/lazy_evaluation.rst:48
+msgid ""
+"Similarly, lazy evaluation can be beneficial for saving memory while keeping "
+"code simple. Say you have a very large model ``Model`` derived from :obj:"
+"`mlx.nn.Module`. You can instantiate this model with ``model = Model()``. "
+"Typically, this will initialize all of the weights as ``float32``, but the "
+"initialization does not actually compute anything until you perform an :func:"
+"`eval`. If you update the model with ``float16`` weights, your maximum "
+"consumed memory will be half that required if eager computation was used "
+"instead."
+msgstr ""
+
+#: ../../../src/usage/lazy_evaluation.rst:57
+msgid "This pattern is simple to do in MLX thanks to lazy computation:"
+msgstr ""
+
+#: ../../../src/usage/lazy_evaluation.rst:59
+msgid ""
+"model = Model() # no memory used yet\n"
+"model.load_weights(\"weights_fp16.safetensors\")"
+msgstr ""
+
+#: ../../../src/usage/lazy_evaluation.rst:65
+msgid "When to Evaluate"
+msgstr ""
+
+#: ../../../src/usage/lazy_evaluation.rst:67
+msgid ""
+"A common question is when to use :func:`eval`. The trade-off is between "
+"letting graphs get too large and not batching enough useful work."
+msgstr ""
+
+#: ../../../src/usage/lazy_evaluation.rst:70
+msgid "For example:"
+msgstr ""
+
+#: ../../../src/usage/lazy_evaluation.rst:72
+msgid ""
+"for _ in range(100):\n"
+"     a = a + b\n"
+"     mx.eval(a)\n"
+"     b = b * 2\n"
+"     mx.eval(b)"
+msgstr ""
+
+#: ../../../src/usage/lazy_evaluation.rst:80
+msgid ""
+"This is a bad idea because there is some fixed overhead with each graph "
+"evaluation. On the other hand, there is some slight overhead which grows "
+"with the compute graph size, so extremely large graphs (while "
+"computationally correct) can be costly."
+msgstr ""
+
+#: ../../../src/usage/lazy_evaluation.rst:85
+msgid ""
+"Luckily, a wide range of compute graph sizes work pretty well with MLX: "
+"anything from a few tens of operations to many thousands of operations per "
+"evaluation should be okay."
+msgstr ""
+
+#: ../../../src/usage/lazy_evaluation.rst:89
+msgid ""
+"Most numerical computations have an iterative outer loop (e.g. the iteration "
+"in stochastic gradient descent). A natural and usually efficient place to "
+"use :func:`eval` is at each iteration of this outer loop."
+msgstr ""
+
+#: ../../../src/usage/lazy_evaluation.rst:93
+msgid "Here is a concrete example:"
+msgstr ""
+
+#: ../../../src/usage/lazy_evaluation.rst:95
+msgid ""
+"for batch in dataset:\n"
+"\n"
+"    # Nothing has been evaluated yet\n"
+"    loss, grad = value_and_grad_fn(model, batch)\n"
+"\n"
+"    # Still nothing has been evaluated\n"
+"    optimizer.update(model, grad)\n"
+"\n"
+"    # Evaluate the loss and the new parameters which will\n"
+"    # run the full gradient computation and optimizer update\n"
+"    mx.eval(loss, model.parameters())"
+msgstr ""
+
+#: ../../../src/usage/lazy_evaluation.rst:110
+msgid ""
+"An important behavior to be aware of is when the graph will be implicitly "
+"evaluated. Anytime you ``print`` an array, convert it to an :obj:`numpy."
+"ndarray`, or otherwise access it's memory via :obj:`memoryview`, the graph "
+"will be evaluated. Saving arrays via :func:`save` (or any other MLX saving "
+"functions) will also evaluate the array."
+msgstr ""
+
+#: ../../../src/usage/lazy_evaluation.rst:117
+msgid ""
+"Calling :func:`array.item` on a scalar array will also evaluate it. In the "
+"example above, printing the loss (``print(loss)``) or adding the loss scalar "
+"to a list (``losses.append(loss.item())``) would cause a graph evaluation. "
+"If these lines are before ``mx.eval(loss, model.parameters())`` then this "
+"will be a partial evaluation, computing only the forward pass."
+msgstr ""
+
+#: ../../../src/usage/lazy_evaluation.rst:123
+msgid ""
+"Also, calling :func:`eval` on an array or set of arrays multiple times is "
+"perfectly fine. This is effectively a no-op."
+msgstr ""
+
+#: ../../../src/usage/lazy_evaluation.rst:128
+msgid "Using scalar arrays for control-flow will cause an evaluation."
+msgstr ""
+
+#: ../../../src/usage/lazy_evaluation.rst:130
+msgid "Here is an example:"
+msgstr ""
+
+#: ../../../src/usage/lazy_evaluation.rst:132
+msgid ""
+"def fun(x):\n"
+"    h, y = first_layer(x)\n"
+"    if y > 0:  # An evaluation is done here!\n"
+"        z  = second_layer_a(h)\n"
+"    else:\n"
+"        z  = second_layer_b(h)\n"
+"    return z"
+msgstr ""
+
+#: ../../../src/usage/lazy_evaluation.rst:142
+msgid ""
+"Using arrays for control flow should be done with care. The above example "
+"works and can even be used with gradient transformations. However, this can "
+"be very inefficient if evaluations are done too frequently."
+msgstr ""
