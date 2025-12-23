@@ -1,0 +1,75 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023, MLX Contributors
+# This file is distributed under the same license as the MLX package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: MLX 0.15\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-12-08 12:49+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../src/python/_autosummary/mlx.core.random.categorical.rst:2
+msgid "mlx.core.random.categorical"
+msgstr ""
+
+#: ../../../docstring of mlx.core.random.categorical:1
+msgid "Sample from a categorical distribution."
+msgstr ""
+
+#: ../../../docstring of mlx.core.random.categorical:3
+msgid ""
+"The values are sampled from the categorical distribution specified by the "
+"unnormalized values in ``logits``. Note, at most one of ``shape`` or "
+"``num_samples`` can be specified. If both are ``None``, the output has the "
+"same shape as ``logits`` with the ``axis`` dimension removed."
+msgstr ""
+
+#: ../../../src/python/_autosummary/mlx.core.random.categorical.rst:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../docstring of mlx.core.random.categorical:8
+msgid "The *unnormalized* categorical distribution(s)."
+msgstr ""
+
+#: ../../../docstring of mlx.core.random.categorical:10
+msgid "The axis which specifies the distribution. Default is ``-1``."
+msgstr ""
+
+#: ../../../docstring of mlx.core.random.categorical:13
+msgid ""
+"The shape of the output. This must be broadcast compatable with ``logits."
+"shape`` with the ``axis`` dimension removed. Default: ``None``"
+msgstr ""
+
+#: ../../../docstring of mlx.core.random.categorical:17
+msgid ""
+"The number of samples to draw from each of the categorical distributions in "
+"``logits``. The output will have ``num_samples`` in the last dimension. "
+"Default: ``None``."
+msgstr ""
+
+#: ../../../docstring of mlx.core.random.categorical:21
+msgid "A PRNG key. Default: None."
+msgstr ""
+
+#: ../../../src/python/_autosummary/mlx.core.random.categorical.rst:0
+msgid "Returns"
+msgstr ""
+
+#: ../../../docstring of mlx.core.random.categorical:24
+msgid "The ``shape``-sized output array with type ``uint32``."
+msgstr ""
+
+#: ../../../src/python/_autosummary/mlx.core.random.categorical.rst:0
+msgid "Return type"
+msgstr ""
