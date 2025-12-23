@@ -1,0 +1,86 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023, Apple
+# This file is distributed under the same license as the MLX package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: MLX 0.30\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-12-08 12:54+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../src/python/nn/_autosummary/mlx.nn.GELU.rst:2
+msgid "mlx.nn.GELU"
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/activations.py:docstring
+#: of mlx.nn.layers.activations.GELU:1
+msgid "Applies the Gaussian Error Linear Units."
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/activations.py:docstring
+#: of mlx.nn.layers.activations.GELU:3
+msgid ""
+"\\textrm{GELU}(x) = x * \\Phi(x)\n"
+"\n"
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/activations.py:docstring
+#: of mlx.nn.layers.activations.GELU:6
+msgid "where :math:`\\Phi(x)` is the Gaussian CDF."
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/activations.py:docstring
+#: of mlx.nn.layers.activations.GELU:8
+msgid "However, if ``approx`` is set to 'precise' or 'fast' it applies"
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/activations.py:docstring
+#: of mlx.nn.layers.activations.GELU:10
+msgid ""
+"\\textrm{GELUApprox}(x) &= 0.5 * x * \\left(1 + "
+"\\text{Tanh}\\left((\\sqrt{2 / \\pi} * \\left(x + 0.044715 * "
+"x^3\\right)\\right)\\right) \\\\\n"
+"\\textrm{GELUFast}(x) &= x * \\sigma\\left(1.702 * x\\right)\n"
+"\n"
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/activations.py:docstring
+#: of mlx.nn.layers.activations.GELU:14
+msgid "respectively."
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/activations.py:docstring
+#: of mlx.nn.layers.activations.GELU:17
+msgid ""
+"For compatibility with the PyTorch API, 'tanh' can be used as an alias for "
+"'precise'."
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/activations.py:docstring
+#: of mlx.nn.layers.activations.GELU:20
+msgid ""
+"See :func:`gelu`, :func:`gelu_approx` and :func:`gelu_fast_approx` for the "
+"functional equivalents and information regarding error bounds."
+msgstr ""
+
+#: ../../../src/python/nn/_autosummary/mlx.nn.GELU.rst:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/activations.py:docstring
+#: of mlx.nn.layers.activations.GELU:24
+msgid "Which approximation to gelu to use if any."
+msgstr ""
+
+#: ../../../src/python/nn/_autosummary/mlx.nn.GELU.rst:12
+msgid "Methods"
+msgstr ""

@@ -1,0 +1,94 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023, Apple
+# This file is distributed under the same license as the MLX package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: MLX 0.30\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-12-08 12:54+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../src/python/_autosummary/mlx.core.array.at.rst:2
+msgid "mlx.core.array.at"
+msgstr ""
+
+#: ../../../docstring of mlx.core.array.at:1
+msgid "Used to apply updates at the given indices."
+msgstr ""
+
+#: ../../../docstring of mlx.core.array.at:5
+msgid ""
+"Regular in-place updates map to assignment. For instance ``x[idx] += y`` "
+"maps to ``x[idx] = x[idx] + y``. As a result, assigning to the same index "
+"ignores all but one update. Using ``x.at[idx].add(y)`` will correctly apply "
+"all updates to all indices."
+msgstr ""
+
+#: ../../../docstring of mlx.core.array.at:13
+msgid "array.at syntax"
+msgstr ""
+
+#: ../../../docstring of mlx.core.array.at:14
+msgid "In-place syntax"
+msgstr ""
+
+#: ../../../docstring of mlx.core.array.at:15
+msgid "``x = x.at[idx].add(y)``"
+msgstr ""
+
+#: ../../../docstring of mlx.core.array.at:16
+msgid "``x[idx] += y``"
+msgstr ""
+
+#: ../../../docstring of mlx.core.array.at:17
+msgid "``x = x.at[idx].subtract(y)``"
+msgstr ""
+
+#: ../../../docstring of mlx.core.array.at:18
+msgid "``x[idx] -= y``"
+msgstr ""
+
+#: ../../../docstring of mlx.core.array.at:19
+msgid "``x = x.at[idx].multiply(y)``"
+msgstr ""
+
+#: ../../../docstring of mlx.core.array.at:20
+msgid "``x[idx] *= y``"
+msgstr ""
+
+#: ../../../docstring of mlx.core.array.at:21
+msgid "``x = x.at[idx].divide(y)``"
+msgstr ""
+
+#: ../../../docstring of mlx.core.array.at:22
+msgid "``x[idx] /= y``"
+msgstr ""
+
+#: ../../../docstring of mlx.core.array.at:23
+msgid "``x = x.at[idx].maximum(y)``"
+msgstr ""
+
+#: ../../../docstring of mlx.core.array.at:24
+msgid "``x[idx] = mx.maximum(x[idx], y)``"
+msgstr ""
+
+#: ../../../docstring of mlx.core.array.at:25
+msgid "``x = x.at[idx].minimum(y)``"
+msgstr ""
+
+#: ../../../docstring of mlx.core.array.at:26
+msgid "``x[idx] = mx.minimum(x[idx], y)``"
+msgstr ""
+
+#: ../../../docstring of mlx.core.array.at:29
+msgid "Example"
+msgstr ""

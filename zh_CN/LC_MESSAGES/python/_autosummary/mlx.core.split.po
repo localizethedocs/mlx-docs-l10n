@@ -1,0 +1,62 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023, Apple
+# This file is distributed under the same license as the MLX package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: MLX 0.30\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-12-08 12:54+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../src/python/_autosummary/mlx.core.split.rst:2
+msgid "mlx.core.split"
+msgstr ""
+
+#: ../../../docstring of mlx.core.split:1
+msgid "Split an array along a given axis."
+msgstr ""
+
+#: ../../../docstring of mlx.core.split:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../docstring of mlx.core.split:3
+msgid "Input array."
+msgstr ""
+
+#: ../../../docstring of mlx.core.split:5
+msgid ""
+"If ``indices_or_sections`` is an integer the array is split into that many "
+"sections of equal size. An error is raised if this is not possible. If "
+"``indices_or_sections`` is a list, then the indices are the split points, "
+"and the array is divided into ``len(indices_or_sections) + 1`` sub-arrays."
+msgstr ""
+
+#: ../../../docstring of mlx.core.split:12
+msgid "Axis to split along, defaults to `0`."
+msgstr ""
+
+#: ../../../docstring of mlx.core.split:0
+msgid "Returns"
+msgstr ""
+
+#: ../../../docstring of mlx.core.split:15
+msgid "A list of split arrays."
+msgstr ""
+
+#: ../../../docstring of mlx.core.split:0
+msgid "Return type"
+msgstr ""
+
+#: ../../../docstring of mlx.core.split:19
+msgid "Example"
+msgstr ""
