@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MLX 0.30\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-12-08 12:54+0000\n"
+"POT-Creation-Date: 2025-12-23 09:21+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -58,10 +58,21 @@ msgstr ""
 
 #: ../../../docstring of mlx.core.vjp:17
 msgid ""
-"A list of the vector-Jacobian products which is the same in number, shape, "
-"and type of the outputs of ``fun``."
+"A tuple with the outputs of ``fun`` in the first position and the vector-"
+"Jacobian products in the second position."
 msgstr ""
 
 #: ../../../src/python/_autosummary/mlx.core.vjp.rst:0
 msgid "Return type"
+msgstr ""
+
+#: ../../../docstring of mlx.core.vjp:23
+msgid "Example"
+msgstr ""
+
+#: ../../../docstring of mlx.core.vjp:24
+msgid ""
+"import mlx.core as mx\n"
+"\n"
+"outs, vjps = mx.vjp(mx.sin, (mx.array(1.0),), (mx.array(1.0),))"
 msgstr ""
