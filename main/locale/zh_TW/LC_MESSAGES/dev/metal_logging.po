@@ -1,0 +1,74 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023, Apple
+# This file is distributed under the same license as the MLX package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: MLX main\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-12-22 08:23+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../src/dev/metal_logging.rst:2
+msgid "Metal Logging"
+msgstr ""
+
+#: ../../../src/dev/metal_logging.rst:4
+msgid ""
+"In debug builds, MLX compiles Metal kernels with ``os_log`` enabled so "
+"shader warnings and debug messages are visible during development."
+msgstr ""
+
+#: ../../../src/dev/metal_logging.rst:8
+msgid ""
+"Metal logging is only available with Metal 3.2 or higher (macOS 15 and up, "
+"iOS 18 and up)."
+msgstr ""
+
+#: ../../../src/dev/metal_logging.rst:11
+msgid "To enable logging from kernels, first make sure to build in debug mode:"
+msgstr ""
+
+#: ../../../src/dev/metal_logging.rst:13
+msgid "DEBUG=1 python -m pip install -e ."
+msgstr ""
+
+#: ../../../src/dev/metal_logging.rst:17
+msgid ""
+"Then, in the kernel source code include MLX's logging shim and use ``mlx::"
+"os_log``:"
+msgstr ""
+
+#: ../../../src/dev/metal_logging.rst:20
+msgid ""
+"#include \"mlx/backend/metal/kernels/logging.h\"\n"
+"\n"
+"constant mlx::os_log logger(\"mlx\", \"my_kernel\");\n"
+"\n"
+"kernel void my_kernel(/* ... */) {\n"
+"// ...\n"
+"  logger.log_debug(\"unexpected state: idx=%u\", idx);\n"
+"}"
+msgstr ""
+
+#: ../../../src/dev/metal_logging.rst:31
+msgid ""
+"When you run the program, set the Metal log level to your desired level and "
+"forward logs to ``stderr``:"
+msgstr ""
+
+#: ../../../src/dev/metal_logging.rst:34
+msgid "MTL_LOG_LEVEL=MTLLogLevelDebug MTL_LOG_TO_STDERR=1 python script.py"
+msgstr ""
+
+#: ../../../src/dev/metal_logging.rst:38
+msgid "See the `Metal logging guide`_ for more details."
+msgstr ""

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MLX main\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-12-08 12:09+0000\n"
+"POT-Creation-Date: 2025-12-22 08:23+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -278,7 +278,8 @@ msgstr ""
 #: ../../../src/usage/indexing.rst:186
 msgid ""
 ">>> a = mx.arange(1000).reshape(10, 10, 10)\n"
-">>> a[mx.random.randn(10, 10) > 0.0] = 0  # valid: mask covers axes 0 and 1"
+">>> a[mx.random.normal((10, 10)) > 0.0] = 0  # valid: mask covers axes 0 and "
+"1"
 msgstr ""
 
 #: ../../../src/usage/indexing.rst:191
