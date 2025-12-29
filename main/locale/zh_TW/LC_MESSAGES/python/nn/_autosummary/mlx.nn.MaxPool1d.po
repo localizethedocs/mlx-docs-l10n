@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MLX main\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-12-08 12:09+0000\n"
+"POT-Creation-Date: 2025-12-22 08:23+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -57,8 +57,8 @@ msgstr ""
 #: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/pooling.py:docstring
 #: of mlx.nn.layers.pooling.MaxPool1d:17
 msgid "Examples"
-msgstr ""
+msgstr "範例"
 
 #: ../../../src/python/nn/_autosummary/mlx.nn.MaxPool1d.rst:12
 msgid "Methods"
-msgstr ""
+msgstr "方法"
