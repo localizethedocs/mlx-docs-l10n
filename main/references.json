@@ -37,9 +37,9 @@
     "branch" : "main",
     "commit" : 
     {
-      "date" : "2025-12-22 09:42:20 +0900",
-      "hash" : "b01fc7eac79289efd70f2475adf3f3a36fc5159a",
-      "title" : "Fix stubgen (#2942)"
+      "date" : "2025-12-28 06:16:13 -0800",
+      "hash" : "d9b950eb2f1bb695853e93adddbae47bfecc972a",
+      "title" : "refactor: use time.perf_counter for consistent and accurate benchmarking (#2943)"
     }
   },
   "type" : "branch",
