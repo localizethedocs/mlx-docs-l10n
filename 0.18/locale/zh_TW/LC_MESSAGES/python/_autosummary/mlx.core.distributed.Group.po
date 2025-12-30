@@ -29,7 +29,7 @@ msgstr ""
 
 #: ../../../src/python/_autosummary/mlx.core.distributed.Group.rst:13
 msgid "Methods"
-msgstr ""
+msgstr "方法"
 
 #: ../../../src/python/_autosummary/mlx.core.distributed.Group.rst:19:<autosummary>:1
 msgid ""
