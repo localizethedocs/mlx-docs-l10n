@@ -100,8 +100,8 @@ msgstr ""
 #: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/pooling.py:docstring
 #: of mlx.nn.layers.pooling.AvgPool2d:35
 msgid "Examples"
-msgstr ""
+msgstr "範例"
 
 #: ../../../src/python/nn/_autosummary/mlx.nn.AvgPool2d.rst:12
 msgid "Methods"
-msgstr ""
+msgstr "方法"

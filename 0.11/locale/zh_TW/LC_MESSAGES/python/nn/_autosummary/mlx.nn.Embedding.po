@@ -52,7 +52,7 @@ msgstr ""
 
 #: ../../../src/python/nn/_autosummary/mlx.nn.Embedding.rst:12
 msgid "Methods"
-msgstr ""
+msgstr "方法"
 
 #: ../../../src/python/nn/_autosummary/mlx.nn.Embedding.rst:15:<autosummary>:1
 msgid ":py:obj:`as_linear <mlx.nn.Embedding.as_linear>`\\ \\(x\\)"
