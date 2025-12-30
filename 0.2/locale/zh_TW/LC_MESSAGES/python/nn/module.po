@@ -105,7 +105,7 @@ msgstr ""
 
 #: ../../../src/python/nn/module.rst:17
 msgid "Methods"
-msgstr ""
+msgstr "方法"
 
 #: ../../../src/python/nn/module.rst:37:<autosummary>:1
 msgid ""
