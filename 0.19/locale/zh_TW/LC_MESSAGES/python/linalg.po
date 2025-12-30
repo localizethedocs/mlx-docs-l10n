@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../../src/python/linalg.rst:4
 msgid "Linear Algebra"
-msgstr ""
+msgstr "線性代數"
 
 #: ../../../src/python/linalg.rst:20:<autosummary>:1
 msgid ":py:obj:`inv <mlx.core.linalg.inv>`\\ \\(a\\, \\*\\[\\, stream\\]\\)"

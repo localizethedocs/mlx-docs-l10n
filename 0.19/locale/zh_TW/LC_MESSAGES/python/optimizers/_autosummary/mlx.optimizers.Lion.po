@@ -74,7 +74,7 @@ msgstr ""
 
 #: ../../../src/python/optimizers/_autosummary/mlx.optimizers.Lion.rst:12
 msgid "Methods"
-msgstr ""
+msgstr "方法"
 
 #: ../../../src/python/optimizers/_autosummary/mlx.optimizers.Lion.rst:17:<autosummary>:1
 msgid ""
