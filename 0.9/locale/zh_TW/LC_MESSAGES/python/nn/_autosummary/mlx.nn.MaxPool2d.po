@@ -101,4 +101,4 @@ msgstr ""
 #: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/pooling.py:docstring
 #: of mlx.nn.layers.pooling.MaxPool2d:35
 msgid "Examples"
-msgstr ""
+msgstr "範例"
