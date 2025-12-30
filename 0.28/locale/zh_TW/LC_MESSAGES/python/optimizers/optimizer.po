@@ -42,7 +42,7 @@ msgstr ""
 
 #: ../../../src/python/optimizers/optimizer.rst:17
 msgid "Methods"
-msgstr ""
+msgstr "方法"
 
 #: ../../../src/python/optimizers/optimizer.rst:23:<autosummary>:1
 msgid ""
