@@ -27,7 +27,7 @@ msgstr ""
 
 #: ../../../src/python/_autosummary/mlx.core.finfo.rst:13
 msgid "Methods"
-msgstr ""
+msgstr "方法"
 
 #: ../../../src/python/_autosummary/mlx.core.finfo.rst:21:<autosummary>:1
 msgid ":py:obj:`__init__ <mlx.core.finfo.__init__>`\\ \\(self\\, arg\\, \\/\\)"
