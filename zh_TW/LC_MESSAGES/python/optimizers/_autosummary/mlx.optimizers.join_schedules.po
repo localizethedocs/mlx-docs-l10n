@@ -1,0 +1,51 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023, MLX Contributors
+# This file is distributed under the same license as the MLX package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: MLX 0.25\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-12-08 12:39+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../src/python/optimizers/_autosummary/mlx.optimizers.join_schedules.rst:2
+msgid "mlx.optimizers.join\\_schedules"
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/optimizers/schedulers.py:docstring
+#: of mlx.optimizers.schedulers.join_schedules:1
+msgid "Join multiple schedules to create a new schedule."
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/optimizers/schedulers.py:docstring
+#: of mlx.optimizers.schedulers.join_schedules:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/optimizers/schedulers.py:docstring
+#: of mlx.optimizers.schedulers.join_schedules:3
+msgid ""
+"A list of schedules. Schedule :math:`i+1` receives a step count indicating "
+"the number of steps since the :math:`i`-th boundary."
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/optimizers/schedulers.py:docstring
+#: of mlx.optimizers.schedulers.join_schedules:7
+msgid ""
+"A list of integers of length ``len(schedules) - 1`` that indicates when to "
+"transition between schedules."
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/optimizers/schedulers.py:docstring
+#: of mlx.optimizers.schedulers.join_schedules:12
+msgid "Example"
+msgstr ""
