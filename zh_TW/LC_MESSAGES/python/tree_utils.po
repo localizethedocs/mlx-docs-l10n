@@ -1,0 +1,87 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023, MLX Contributors
+# This file is distributed under the same license as the MLX package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: MLX 0.23\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-12-08 15:56+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../src/python/tree_utils.rst:4
+msgid "Tree Utils"
+msgstr ""
+
+#: ../../../src/python/tree_utils.rst:6
+msgid ""
+"In MLX we consider a python tree to be an arbitrarily nested collection of "
+"dictionaries, lists and tuples without cycles. Functions in this module that "
+"return python trees will be using the default python ``dict``, ``list`` and "
+"``tuple`` but they can usually process objects that inherit from any of "
+"these."
+msgstr ""
+
+#: ../../../src/python/tree_utils.rst:12
+msgid "Dictionaries should have keys that are valid python identifiers."
+msgstr ""
+
+#: ../../../src/python/tree_utils.rst:23:<autosummary>:1
+msgid ""
+":py:obj:`tree_flatten <mlx.utils.tree_flatten>`\\ \\(tree\\[\\, prefix\\, "
+"is\\_leaf\\]\\)"
+msgstr ""
+
+#: ../../../src/python/tree_utils.rst:23:<autosummary>:1
+msgid "Flattens a Python tree to a list of key, value tuples."
+msgstr ""
+
+#: ../../../src/python/tree_utils.rst:23:<autosummary>:1
+msgid ":py:obj:`tree_unflatten <mlx.utils.tree_unflatten>`\\ \\(tree\\)"
+msgstr ""
+
+#: ../../../src/python/tree_utils.rst:23:<autosummary>:1
+msgid "Recreate a Python tree from its flat representation."
+msgstr ""
+
+#: ../../../src/python/tree_utils.rst:23:<autosummary>:1
+msgid ""
+":py:obj:`tree_map <mlx.utils.tree_map>`\\ \\(fn\\, tree\\, \\*rest\\[\\, "
+"is\\_leaf\\]\\)"
+msgstr ""
+
+#: ../../../src/python/tree_utils.rst:23:<autosummary>:1
+msgid ""
+"Applies ``fn`` to the leaves of the Python tree ``tree`` and returns a new "
+"collection with the results."
+msgstr ""
+
+#: ../../../src/python/tree_utils.rst:23:<autosummary>:1
+msgid ""
+":py:obj:`tree_map_with_path <mlx.utils.tree_map_with_path>`\\ \\(fn\\, "
+"tree\\, \\*rest\\[\\, ...\\]\\)"
+msgstr ""
+
+#: ../../../src/python/tree_utils.rst:23:<autosummary>:1
+msgid ""
+"Applies ``fn`` to the path and leaves of the Python tree ``tree`` and "
+"returns a new collection with the results."
+msgstr ""
+
+#: ../../../src/python/tree_utils.rst:23:<autosummary>:1
+msgid ""
+":py:obj:`tree_reduce <mlx.utils.tree_reduce>`\\ \\(fn\\, tree\\[\\, "
+"initializer\\, is\\_leaf\\]\\)"
+msgstr ""
+
+#: ../../../src/python/tree_utils.rst:23:<autosummary>:1
+msgid "Applies a reduction to the leaves of a Python tree."
+msgstr ""

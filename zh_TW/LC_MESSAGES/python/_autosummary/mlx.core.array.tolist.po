@@ -1,0 +1,63 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023, MLX Contributors
+# This file is distributed under the same license as the MLX package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: MLX 0.23\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-12-08 15:56+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../src/python/_autosummary/mlx.core.array.tolist.rst:2
+msgid "mlx.core.array.tolist"
+msgstr ""
+
+#: ../../../docstring of mlx.core.array.tolist:1
+msgid "Convert the array to a Python :class:`list`."
+msgstr ""
+
+#: ../../../src/python/_autosummary/mlx.core.array.tolist.rst:0
+msgid "Returns"
+msgstr ""
+
+#: ../../../docstring of mlx.core.array.tolist:3
+msgid ""
+"The Python list.  If the array is a scalar then a standard Python scalar is "
+"returned.  If the array has more than one dimension then the result is a "
+"nested list of lists.  The value type of the list corresponding to the last "
+"dimension is either ``bool``, ``int`` or ``float`` depending on the "
+"``dtype`` of the array."
+msgstr ""
+
+#: ../../../docstring of mlx.core.array.tolist:3
+msgid "The Python list."
+msgstr ""
+
+#: ../../../docstring of mlx.core.array.tolist:5
+msgid "If the array is a scalar then a standard Python scalar is returned."
+msgstr ""
+
+#: ../../../docstring of mlx.core.array.tolist:7
+msgid ""
+"If the array has more than one dimension then the result is a nested list of "
+"lists."
+msgstr ""
+
+#: ../../../docstring of mlx.core.array.tolist:10
+msgid ""
+"The value type of the list corresponding to the last dimension is either "
+"``bool``, ``int`` or ``float`` depending on the ``dtype`` of the array."
+msgstr ""
+
+#: ../../../src/python/_autosummary/mlx.core.array.tolist.rst:0
+msgid "Return type"
+msgstr ""
