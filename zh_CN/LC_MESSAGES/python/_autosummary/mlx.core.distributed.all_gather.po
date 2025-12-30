@@ -1,0 +1,58 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023, MLX Contributors
+# This file is distributed under the same license as the MLX package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: MLX 0.16\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-12-08 13:00+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../src/python/_autosummary/mlx.core.distributed.all_gather.rst:2
+msgid "mlx.core.distributed.all\\_gather"
+msgstr ""
+
+#: ../../../docstring of mlx.core.distributed.all_gather:1
+msgid "Gather arrays from all processes."
+msgstr ""
+
+#: ../../../docstring of mlx.core.distributed.all_gather:3
+msgid ""
+"Gather the ``x`` arrays from all processes in the group and concatenate them "
+"along the first axis. The arrays should all have the same shape."
+msgstr ""
+
+#: ../../../src/python/_autosummary/mlx.core.distributed.all_gather.rst:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../docstring of mlx.core.distributed.all_gather:6
+msgid "Input array."
+msgstr ""
+
+#: ../../../docstring of mlx.core.distributed.all_gather:8
+msgid ""
+"The group of processes that will participate in the gather. If set to "
+"``None`` the global group is used. Default: ``None``."
+msgstr ""
+
+#: ../../../src/python/_autosummary/mlx.core.distributed.all_gather.rst:0
+msgid "Returns"
+msgstr ""
+
+#: ../../../docstring of mlx.core.distributed.all_gather:13
+msgid "The concatenation of all ``x`` arrays."
+msgstr ""
+
+#: ../../../src/python/_autosummary/mlx.core.distributed.all_gather.rst:0
+msgid "Return type"
+msgstr ""
