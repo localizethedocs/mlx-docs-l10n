@@ -1,0 +1,224 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023, Apple
+# This file is distributed under the same license as the MLX package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: MLX 0.26\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-12-08 12:22+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../src/python/nn/functions.rst:6
+msgid "Functions"
+msgstr ""
+
+#: ../../../src/python/nn/functions.rst:8
+msgid ""
+"Layers without parameters (e.g. activation functions) are also provided as "
+"simple functions."
+msgstr ""
+
+#: ../../../src/python/nn/functions.rst:39:<autosummary>:1
+msgid ":py:obj:`elu <mlx.nn.elu>`\\"
+msgstr ""
+
+#: ../../../src/python/nn/functions.rst:39:<autosummary>:1
+msgid "elu(x, alpha=1.0)"
+msgstr ""
+
+#: ../../../src/python/nn/functions.rst:39:<autosummary>:1
+msgid ":py:obj:`celu <mlx.nn.celu>`\\"
+msgstr ""
+
+#: ../../../src/python/nn/functions.rst:39:<autosummary>:1
+msgid "celu(x, alpha=1.0)"
+msgstr ""
+
+#: ../../../src/python/nn/functions.rst:39:<autosummary>:1
+msgid ":py:obj:`gelu <mlx.nn.gelu>`\\"
+msgstr ""
+
+#: ../../../src/python/nn/functions.rst:39:<autosummary>:1
+msgid "gelu(x) -> mlx.core.array"
+msgstr ""
+
+#: ../../../src/python/nn/functions.rst:39:<autosummary>:1
+msgid ":py:obj:`gelu_approx <mlx.nn.gelu_approx>`\\"
+msgstr ""
+
+#: ../../../src/python/nn/functions.rst:39:<autosummary>:1
+msgid "gelu_approx(x)"
+msgstr ""
+
+#: ../../../src/python/nn/functions.rst:39:<autosummary>:1
+msgid ":py:obj:`gelu_fast_approx <mlx.nn.gelu_fast_approx>`\\"
+msgstr ""
+
+#: ../../../src/python/nn/functions.rst:39:<autosummary>:1
+msgid "gelu_fast_approx(x)"
+msgstr ""
+
+#: ../../../src/python/nn/functions.rst:39:<autosummary>:1
+msgid ":py:obj:`glu <mlx.nn.glu>`\\ \\(x\\[\\, axis\\]\\)"
+msgstr ""
+
+#: ../../../src/python/nn/functions.rst:39:<autosummary>:1
+msgid "Applies the gated linear unit function."
+msgstr ""
+
+#: ../../../src/python/nn/functions.rst:39:<autosummary>:1
+msgid ":py:obj:`hard_shrink <mlx.nn.hard_shrink>`\\"
+msgstr ""
+
+#: ../../../src/python/nn/functions.rst:39:<autosummary>:1
+msgid "hard_shrink(x, lambd=0.5)"
+msgstr ""
+
+#: ../../../src/python/nn/functions.rst:39:<autosummary>:1
+msgid ":py:obj:`hard_tanh <mlx.nn.hard_tanh>`\\"
+msgstr ""
+
+#: ../../../src/python/nn/functions.rst:39:<autosummary>:1
+msgid "hard_tanh(x, min_val=-1.0, max_val=1.0)"
+msgstr ""
+
+#: ../../../src/python/nn/functions.rst:39:<autosummary>:1
+msgid ":py:obj:`hardswish <mlx.nn.hardswish>`\\"
+msgstr ""
+
+#: ../../../src/python/nn/functions.rst:39:<autosummary>:1
+msgid "hardswish(x)"
+msgstr ""
+
+#: ../../../src/python/nn/functions.rst:39:<autosummary>:1
+msgid ":py:obj:`leaky_relu <mlx.nn.leaky_relu>`\\"
+msgstr ""
+
+#: ../../../src/python/nn/functions.rst:39:<autosummary>:1
+msgid "leaky_relu(x, negative_slope=0.01)"
+msgstr ""
+
+#: ../../../src/python/nn/functions.rst:39:<autosummary>:1
+msgid ":py:obj:`log_sigmoid <mlx.nn.log_sigmoid>`\\"
+msgstr ""
+
+#: ../../../src/python/nn/functions.rst:39:<autosummary>:1
+msgid "log_sigmoid(x)"
+msgstr ""
+
+#: ../../../src/python/nn/functions.rst:39:<autosummary>:1
+msgid ":py:obj:`log_softmax <mlx.nn.log_softmax>`\\"
+msgstr ""
+
+#: ../../../src/python/nn/functions.rst:39:<autosummary>:1
+msgid "log_softmax(x, axis=-1)"
+msgstr ""
+
+#: ../../../src/python/nn/functions.rst:39:<autosummary>:1
+msgid ":py:obj:`mish <mlx.nn.mish>`\\"
+msgstr ""
+
+#: ../../../src/python/nn/functions.rst:39:<autosummary>:1
+msgid "mlx.core.array) -> mlx.core.array"
+msgstr ""
+
+#: ../../../src/python/nn/functions.rst:39:<autosummary>:1
+msgid ":py:obj:`prelu <mlx.nn.prelu>`\\"
+msgstr ""
+
+#: ../../../src/python/nn/functions.rst:39:<autosummary>:1
+msgid ":py:obj:`relu <mlx.nn.relu>`\\"
+msgstr ""
+
+#: ../../../src/python/nn/functions.rst:39:<autosummary>:1
+msgid "relu(x)"
+msgstr ""
+
+#: ../../../src/python/nn/functions.rst:39:<autosummary>:1
+msgid ":py:obj:`relu6 <mlx.nn.relu6>`\\"
+msgstr ""
+
+#: ../../../src/python/nn/functions.rst:39:<autosummary>:1
+msgid "relu6(x)"
+msgstr ""
+
+#: ../../../src/python/nn/functions.rst:39:<autosummary>:1
+msgid ":py:obj:`selu <mlx.nn.selu>`\\"
+msgstr ""
+
+#: ../../../src/python/nn/functions.rst:39:<autosummary>:1
+msgid "selu(x)"
+msgstr ""
+
+#: ../../../src/python/nn/functions.rst:39:<autosummary>:1
+msgid ":py:obj:`sigmoid <mlx.nn.sigmoid>`\\"
+msgstr ""
+
+#: ../../../src/python/nn/functions.rst:39:<autosummary>:1
+msgid "sigmoid(x)"
+msgstr ""
+
+#: ../../../src/python/nn/functions.rst:39:<autosummary>:1
+msgid ":py:obj:`silu <mlx.nn.silu>`\\"
+msgstr ""
+
+#: ../../../src/python/nn/functions.rst:39:<autosummary>:1
+msgid "silu(x)"
+msgstr ""
+
+#: ../../../src/python/nn/functions.rst:39:<autosummary>:1
+msgid ":py:obj:`softmax <mlx.nn.softmax>`\\"
+msgstr ""
+
+#: ../../../src/python/nn/functions.rst:39:<autosummary>:1
+msgid "softmax(x, axis=-1)"
+msgstr ""
+
+#: ../../../src/python/nn/functions.rst:39:<autosummary>:1
+msgid ":py:obj:`softmin <mlx.nn.softmin>`\\"
+msgstr ""
+
+#: ../../../src/python/nn/functions.rst:39:<autosummary>:1
+msgid "softmin(x, axis=-1)"
+msgstr ""
+
+#: ../../../src/python/nn/functions.rst:39:<autosummary>:1
+msgid ":py:obj:`softplus <mlx.nn.softplus>`\\"
+msgstr ""
+
+#: ../../../src/python/nn/functions.rst:39:<autosummary>:1
+msgid "softplus(x)"
+msgstr ""
+
+#: ../../../src/python/nn/functions.rst:39:<autosummary>:1
+msgid ":py:obj:`softshrink <mlx.nn.softshrink>`\\"
+msgstr ""
+
+#: ../../../src/python/nn/functions.rst:39:<autosummary>:1
+msgid "float = 0.5)"
+msgstr ""
+
+#: ../../../src/python/nn/functions.rst:39:<autosummary>:1
+msgid ":py:obj:`step <mlx.nn.step>`\\"
+msgstr ""
+
+#: ../../../src/python/nn/functions.rst:39:<autosummary>:1
+msgid "float = 0.0)"
+msgstr ""
+
+#: ../../../src/python/nn/functions.rst:39:<autosummary>:1
+msgid ":py:obj:`tanh <mlx.nn.tanh>`\\ \\(x\\)"
+msgstr ""
+
+#: ../../../src/python/nn/functions.rst:39:<autosummary>:1
+msgid "Applies the hyperbolic tangent function."
+msgstr ""
