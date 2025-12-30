@@ -1,0 +1,67 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023, MLX Contributors
+# This file is distributed under the same license as the MLX package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: MLX 0.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-12-08 12:58+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../src/python/_autosummary/mlx.core.simplify.rst:2
+msgid "mlx.core.simplify"
+msgstr ""
+
+#: ../../../docstring of
+#: mlx.core.pybind11_detail_function_record_v1_system_libstdcpp_gxx_abi_1xxx_use_cxx11_abi_1.simplify:1
+msgid "Simplify the graph that computes the arrays."
+msgstr ""
+
+#: ../../../docstring of
+#: mlx.core.pybind11_detail_function_record_v1_system_libstdcpp_gxx_abi_1xxx_use_cxx11_abi_1.simplify:3
+msgid ""
+"Run a few fast graph simplification operations to reuse computation and "
+"reduce memory consumption. This function is meant to be run every time so "
+"its overhead should be small, approximately 1ms for a graph with a few "
+"thousand nodes."
+msgstr ""
+
+#: ../../../docstring of
+#: mlx.core.pybind11_detail_function_record_v1_system_libstdcpp_gxx_abi_1xxx_use_cxx11_abi_1.simplify:8
+msgid ""
+"import mlx.core as mx\n"
+"\n"
+"def foo(x):\n"
+"  y = x @ x\n"
+"  z = x @ x\n"
+"  return y + z\n"
+"\n"
+"x = mx.ones((10, 10))\n"
+"y = foo(x)\n"
+"z = foo(x)\n"
+"\n"
+"# Computes the matmul twice\n"
+"mx.eval(y)\n"
+"\n"
+"# Computes the matmul once\n"
+"mx.simplify(z)\n"
+"mx.eval(z)"
+msgstr ""
+
+#: ../../../src/python/_autosummary/mlx.core.simplify.rst:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../docstring of
+#: mlx.core.pybind11_detail_function_record_v1_system_libstdcpp_gxx_abi_1xxx_use_cxx11_abi_1.simplify:28
+msgid "Any number of arrays and/or trees of arrays to be simplified."
+msgstr ""
