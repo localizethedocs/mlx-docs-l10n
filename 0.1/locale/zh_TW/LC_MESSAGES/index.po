@@ -43,7 +43,7 @@ msgstr "延伸閱讀"
 
 #: ../../../src/index.rst:2
 msgid "MLX"
-msgstr ""
+msgstr "MLX"
 
 #: ../../../src/index.rst:4
 msgid ""

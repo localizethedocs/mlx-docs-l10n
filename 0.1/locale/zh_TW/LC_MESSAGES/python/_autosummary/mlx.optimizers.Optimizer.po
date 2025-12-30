@@ -45,7 +45,7 @@ msgstr ""
 
 #: ../../../src/python/_autosummary/mlx.optimizers.Optimizer.rst:12
 msgid "Methods"
-msgstr ""
+msgstr "方法"
 
 #: ../../../src/python/_autosummary/mlx.optimizers.Optimizer.rst:18:<autosummary>:1
 msgid ":py:obj:`__init__ <mlx.optimizers.Optimizer.__init__>`\\ \\(\\)"

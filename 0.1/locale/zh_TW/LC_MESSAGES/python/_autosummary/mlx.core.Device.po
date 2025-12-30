@@ -23,7 +23,7 @@ msgstr ""
 
 #: ../../../src/python/_autosummary/mlx.core.Device.rst:13
 msgid "Methods"
-msgstr ""
+msgstr "方法"
 
 #: ../../../src/python/_autosummary/mlx.core.Device.rst:21:<autosummary>:1
 msgid ""
