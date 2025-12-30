@@ -1,0 +1,38 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023, MLX Contributors
+# This file is distributed under the same license as the MLX package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: MLX 0.22\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-12-08 12:45+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../src/python/nn/_autosummary/mlx.nn.Sigmoid.rst:2
+msgid "mlx.nn.Sigmoid"
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/activations.py:docstring
+#: of mlx.nn.layers.activations.Sigmoid:1
+msgid "Applies the sigmoid function, element-wise."
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/activations.py:docstring
+#: of mlx.nn.layers.activations.Sigmoid:3
+msgid ""
+"\\text{Sigmoid}(x) = \\sigma(x) = \\frac{1}{1 + \\exp(-x)}\n"
+"\n"
+msgstr ""
+
+#: ../../../src/python/nn/_autosummary/mlx.nn.Sigmoid.rst:12
+msgid "Methods"
+msgstr "方法"
