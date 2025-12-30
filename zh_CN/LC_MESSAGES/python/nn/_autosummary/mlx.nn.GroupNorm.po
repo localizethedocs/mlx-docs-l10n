@@ -1,0 +1,90 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023, MLX Contributors
+# This file is distributed under the same license as the MLX package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: MLX 0.6\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-12-08 12:13+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../src/python/nn/_autosummary/mlx.nn.GroupNorm.rst:2
+msgid "mlx.nn.GroupNorm"
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/normalization.py:docstring
+#: of mlx.nn.layers.normalization.GroupNorm:1
+msgid "Applies Group Normalization [1] to the inputs."
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/normalization.py:docstring
+#: of mlx.nn.layers.normalization.GroupNorm:3
+msgid "Computes the same normalization as layer norm, namely"
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/normalization.py:docstring
+#: of mlx.nn.layers.normalization.GroupNorm:5
+msgid "y = \\frac{x - E[x]}{\\sqrt{Var[x]} + \\epsilon} \\gamma + \\beta,"
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/normalization.py:docstring
+#: of mlx.nn.layers.normalization.GroupNorm:9
+msgid ""
+"where :math:`\\gamma` and :math:`\\beta` are learned per feature dimension "
+"parameters initialized at 1 and 0 respectively. However, the mean and "
+"variance are computed over the spatial dimensions and each group of "
+"features. In particular, the input is split into num_groups across the "
+"feature dimension."
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/normalization.py:docstring
+#: of mlx.nn.layers.normalization.GroupNorm:15
+msgid ""
+"The feature dimension is assumed to be the last dimension and the dimensions "
+"that precede it (except the first) are considered the spatial dimensions."
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/normalization.py:docstring
+#: of mlx.nn.layers.normalization.GroupNorm:18
+msgid "[1]: https://arxiv.org/abs/1803.08494"
+msgstr ""
+
+#: ../../../src/python/nn/_autosummary/mlx.nn.GroupNorm.rst:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/normalization.py:docstring
+#: of mlx.nn.layers.normalization.GroupNorm:20
+msgid "Number of groups to separate the features into"
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/normalization.py:docstring
+#: of mlx.nn.layers.normalization.GroupNorm:22
+msgid "The feature dimensions of the input to normalize over"
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/normalization.py:docstring
+#: of mlx.nn.layers.normalization.GroupNorm:24
+msgid "A small additive constant for numerical stability"
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/normalization.py:docstring
+#: of mlx.nn.layers.normalization.GroupNorm:26
+msgid "If True learn an affine transform to apply after the normalization."
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/normalization.py:docstring
+#: of mlx.nn.layers.normalization.GroupNorm:29
+msgid ""
+"If True perform the group normalization in the same order/grouping as "
+"PyTorch."
+msgstr ""
