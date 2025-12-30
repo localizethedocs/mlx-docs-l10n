@@ -97,4 +97,4 @@ msgstr ""
 #: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/normalization.py:docstring
 #: of mlx.nn.layers.normalization.BatchNorm:38
 msgid "Examples"
-msgstr ""
+msgstr "範例"
