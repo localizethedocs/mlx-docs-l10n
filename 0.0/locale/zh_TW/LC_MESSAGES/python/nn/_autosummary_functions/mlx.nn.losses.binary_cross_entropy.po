@@ -73,4 +73,4 @@ msgstr ""
 #: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/losses.py:docstring
 #: of mlx.nn.losses.binary_cross_entropy:18
 msgid "Examples"
-msgstr ""
+msgstr "範例"
