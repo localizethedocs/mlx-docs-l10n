@@ -27,7 +27,7 @@ msgstr ""
 
 #: ../../../src/python/_autosummary/stream_class.rst:13
 msgid "Methods"
-msgstr ""
+msgstr "方法"
 
 #: ../../../src/python/_autosummary/stream_class.rst:21:<autosummary>:1
 msgid ""
