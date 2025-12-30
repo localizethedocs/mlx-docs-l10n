@@ -287,4 +287,4 @@ msgstr ""
 #: ../../../docstring of
 #: mlx.core.linalg.pybind11_detail_function_record_v1_system_libstdcpp_gxx_abi_1xxx_use_cxx11_abi_1.norm:69
 msgid "Examples"
-msgstr ""
+msgstr "範例"
