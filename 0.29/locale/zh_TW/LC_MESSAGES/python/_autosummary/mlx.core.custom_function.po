@@ -105,7 +105,7 @@ msgstr ""
 
 #: ../../../src/python/_autosummary/mlx.core.custom_function.rst:13
 msgid "Methods"
-msgstr ""
+msgstr "方法"
 
 #: ../../../src/python/_autosummary/mlx.core.custom_function.rst:19:<autosummary>:1
 msgid ""

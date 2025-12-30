@@ -3629,7 +3629,7 @@ msgstr ""
 
 #: ext/napoleon/docstring.py:896
 msgid "Examples"
-msgstr ""
+msgstr "範例"
 
 #: ext/napoleon/docstring.py:956
 msgid "Notes"

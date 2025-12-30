@@ -72,4 +72,4 @@ msgstr ""
 
 #: ../../../src/python/nn/_autosummary/mlx.nn.SinusoidalPositionalEncoding.rst:12
 msgid "Methods"
-msgstr ""
+msgstr "方法"
