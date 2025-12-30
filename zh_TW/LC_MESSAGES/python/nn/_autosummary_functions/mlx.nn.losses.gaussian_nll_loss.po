@@ -1,0 +1,100 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023, MLX Contributors
+# This file is distributed under the same license as the MLX package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: MLX 0.15\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-12-08 12:49+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../src/python/nn/_autosummary_functions/mlx.nn.losses.gaussian_nll_loss.rst:2
+msgid "mlx.nn.losses.gaussian\\_nll\\_loss"
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/losses.py:docstring
+#: of mlx.nn.losses.gaussian_nll_loss:1
+msgid "Computes the negative log likelihood loss for a Gaussian distribution."
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/losses.py:docstring
+#: of mlx.nn.losses.gaussian_nll_loss:3
+msgid "The loss is given by:"
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/losses.py:docstring
+#: of mlx.nn.losses.gaussian_nll_loss:5
+msgid ""
+"\\frac{1}{2}\\left(\\log\\left(\\max\\left(\\text{vars},\n"
+"\\ \\epsilon\\right)\\right) + \\frac{\\left(\\text{inputs} - "
+"\\text{targets} \\right)^2}\n"
+"{\\max\\left(\\text{vars}, \\ \\epsilon \\right)}\\right) + \\text{const.}\n"
+"\n"
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/losses.py:docstring
+#: of mlx.nn.losses.gaussian_nll_loss:10
+msgid ""
+"where ``inputs`` are the predicted means and ``vars`` are the the predicted "
+"variances."
+msgstr ""
+
+#: ../../../src/python/nn/_autosummary_functions/mlx.nn.losses.gaussian_nll_loss.rst:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/losses.py:docstring
+#: of mlx.nn.losses.gaussian_nll_loss:13
+msgid "The predicted expectation of the Gaussian distribution."
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/losses.py:docstring
+#: of mlx.nn.losses.gaussian_nll_loss:15
+msgid "The target values (samples from the Gaussian distribution)."
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/losses.py:docstring
+#: of mlx.nn.losses.gaussian_nll_loss:17
+msgid "The predicted variance of the Gaussian distribution."
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/losses.py:docstring
+#: of mlx.nn.losses.gaussian_nll_loss:19
+msgid ""
+"Whether to include the constant term in the loss calculation. Default: "
+"``False``."
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/losses.py:docstring
+#: of mlx.nn.losses.gaussian_nll_loss:22
+msgid "Small positive constant for numerical stability. Default: ``1e-6``."
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/losses.py:docstring
+#: of mlx.nn.losses.gaussian_nll_loss:25
+msgid ""
+"Specifies the reduction to apply to the output: ``'none'`` | ``'mean'`` | "
+"``'sum'``. Default: ``'none'``."
+msgstr ""
+
+#: ../../../src/python/nn/_autosummary_functions/mlx.nn.losses.gaussian_nll_loss.rst:0
+msgid "Returns"
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/losses.py:docstring
+#: of mlx.nn.losses.gaussian_nll_loss:29
+msgid "The Gaussian NLL loss."
+msgstr ""
+
+#: ../../../src/python/nn/_autosummary_functions/mlx.nn.losses.gaussian_nll_loss.rst:0
+msgid "Return type"
+msgstr ""
