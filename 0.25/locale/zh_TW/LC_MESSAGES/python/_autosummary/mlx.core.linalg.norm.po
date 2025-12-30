@@ -238,4 +238,4 @@ msgstr ""
 
 #: ../../../docstring of mlx.core.linalg.norm:67
 msgid "Examples"
-msgstr ""
+msgstr "範例"
