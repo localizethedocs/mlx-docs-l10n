@@ -1,0 +1,94 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023, Apple
+# This file is distributed under the same license as the MLX package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: MLX 0.29\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-12-08 12:54+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../src/python/nn/_autosummary/mlx.nn.Module.load_weights.rst:2
+msgid "mlx.nn.Module.load\\_weights"
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/base.py:docstring
+#: of mlx.nn.layers.base.Module.load_weights:1
+msgid ""
+"Update the model's weights from a ``.npz``, a ``.safetensors`` file, or a "
+"list."
+msgstr ""
+
+#: ../../../src/python/nn/_autosummary/mlx.nn.Module.load_weights.rst:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/base.py:docstring
+#: of mlx.nn.layers.base.Module.load_weights:3
+msgid ""
+"The path to the weights ``.npz`` file (``.npz`` or ``.safetensors``) or a "
+"list of pairs of parameter names and arrays."
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/base.py:docstring
+#: of mlx.nn.layers.base.Module.load_weights:7
+msgid ""
+"If ``True`` then checks that the provided weights exactly match the "
+"parameters of the model. Otherwise, only the weights actually contained in "
+"the model are loaded and shapes are not checked. Default: ``True``."
+msgstr ""
+
+#: ../../../src/python/nn/_autosummary/mlx.nn.Module.load_weights.rst:0
+msgid "Returns"
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/base.py:docstring
+#: of mlx.nn.layers.base.Module.load_weights:13
+msgid "The module instance after updating the weights."
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/base.py:docstring
+#: of mlx.nn.layers.base.Module.load_weights:16
+msgid "Example"
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/base.py:docstring
+#: of mlx.nn.layers.base.Module.load_weights:17
+msgid ""
+"import mlx.core as mx\n"
+"import mlx.nn as nn\n"
+"model = nn.Linear(10, 10)\n"
+"\n"
+"# Load from file\n"
+"model.load_weights(\"weights.npz\")\n"
+"\n"
+"# Load from .safetensors file\n"
+"model.load_weights(\"weights.safetensors\")\n"
+"\n"
+"# Load from list\n"
+"weights = [\n"
+"    (\"weight\", mx.random.uniform(shape=(10, 10))),\n"
+"    (\"bias\",  mx.zeros((10,))),\n"
+"]\n"
+"model.load_weights(weights)\n"
+"\n"
+"# Missing weight\n"
+"weights = [\n"
+"    (\"weight\", mx.random.uniform(shape=(10, 10))),\n"
+"]\n"
+"\n"
+"# Raises a ValueError exception\n"
+"model.load_weights(weights)\n"
+"\n"
+"# Ok, only updates the weight but not the bias\n"
+"model.load_weights(weights, strict=False)"
+msgstr ""
