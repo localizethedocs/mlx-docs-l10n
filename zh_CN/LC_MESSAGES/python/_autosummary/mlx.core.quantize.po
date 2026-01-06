@@ -1,0 +1,141 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023, MLX Contributors
+# This file is distributed under the same license as the MLX package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: MLX 0.2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-12-08 12:55+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../src/python/_autosummary/mlx.core.quantize.rst:2
+msgid "mlx.core.quantize"
+msgstr ""
+
+#: ../../../docstring of
+#: mlx.core.pybind11_detail_function_record_v1_system_libstdcpp_gxx_abi_1xxx_use_cxx11_abi_1.quantize:1
+msgid "Quantize the matrix ``w`` using ``bits`` bits per element."
+msgstr ""
+
+#: ../../../docstring of
+#: mlx.core.pybind11_detail_function_record_v1_system_libstdcpp_gxx_abi_1xxx_use_cxx11_abi_1.quantize:3
+msgid ""
+"Note, every ``group_size`` elements in a row of ``w`` are quantized "
+"together. Hence, number of columns of ``w`` should be divisible by "
+"``group_size``. In particular, the rows of ``w`` are divided into groups of "
+"size ``group_size`` which are quantized together."
+msgstr ""
+
+#: ../../../docstring of
+#: mlx.core.pybind11_detail_function_record_v1_system_libstdcpp_gxx_abi_1xxx_use_cxx11_abi_1.quantize:10
+msgid ""
+"``quantize`` currently only supports 2D inputs with dimensions which are "
+"multiples of 32"
+msgstr ""
+
+#: ../../../docstring of
+#: mlx.core.pybind11_detail_function_record_v1_system_libstdcpp_gxx_abi_1xxx_use_cxx11_abi_1.quantize:12
+msgid ""
+"Formally, for a group of :math:`g` consecutive elements :math:`w_1` to :math:"
+"`w_g` in a row of ``w`` we compute the quantized representation of each "
+"element :math:`\\hat{w_i}` as follows"
+msgstr ""
+
+#: ../../../docstring of
+#: mlx.core.pybind11_detail_function_record_v1_system_libstdcpp_gxx_abi_1xxx_use_cxx11_abi_1.quantize:16
+msgid ""
+"\\begin{aligned}\n"
+"  \\alpha &= \\max_i w_i \\\\\n"
+"  \\beta &= \\min_i w_i \\\\\n"
+"  s &= \\frac{\\alpha - \\beta}{2^b - 1} \\\\\n"
+"  \\hat{w_i} &= \\textrm{round}\\left( \\frac{w_i - \\beta}{s}\\right).\n"
+"\\end{aligned}"
+msgstr ""
+
+#: ../../../docstring of
+#: mlx.core.pybind11_detail_function_record_v1_system_libstdcpp_gxx_abi_1xxx_use_cxx11_abi_1.quantize:25
+msgid ""
+"After the above computation, :math:`\\hat{w_i}` fits in :math:`b` bits and "
+"is packed in an unsigned 32-bit integer from the lower to upper bits. For "
+"instance, for 4-bit quantization we fit 8 elements in an unsigned 32 bit "
+"integer where the 1st element occupies the 4 least significant bits, the 2nd "
+"bits 4-7 etc."
+msgstr ""
+
+#: ../../../docstring of
+#: mlx.core.pybind11_detail_function_record_v1_system_libstdcpp_gxx_abi_1xxx_use_cxx11_abi_1.quantize:31
+msgid ""
+"In order to be able to dequantize the elements of ``w`` we also need to "
+"save :math:`s` and :math:`\\beta` which are the returned ``scales`` and "
+"``biases`` respectively."
+msgstr ""
+
+#: ../../../src/python/_autosummary/mlx.core.quantize.rst:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../docstring of
+#: mlx.core.pybind11_detail_function_record_v1_system_libstdcpp_gxx_abi_1xxx_use_cxx11_abi_1.quantize:35
+msgid "Matrix to be quantized"
+msgstr ""
+
+#: ../../../docstring of
+#: mlx.core.pybind11_detail_function_record_v1_system_libstdcpp_gxx_abi_1xxx_use_cxx11_abi_1.quantize:37
+msgid ""
+"The size of the group in ``w`` that shares a scale and bias. (default: "
+"``64``)"
+msgstr ""
+
+#: ../../../docstring of
+#: mlx.core.pybind11_detail_function_record_v1_system_libstdcpp_gxx_abi_1xxx_use_cxx11_abi_1.quantize:40
+msgid ""
+"The number of bits occupied by each element of ``w`` in the returned "
+"quantized matrix. (default: ``4``)"
+msgstr ""
+
+#: ../../../src/python/_autosummary/mlx.core.quantize.rst:0
+msgid "Returns"
+msgstr ""
+
+#: ../../../docstring of
+#: mlx.core.pybind11_detail_function_record_v1_system_libstdcpp_gxx_abi_1xxx_use_cxx11_abi_1.quantize:44
+msgid ""
+"A tuple containing    - w_q (array): The quantized version of ``w``   - "
+"scales (array): The scale to multiply each element with, namely :math:`s`   "
+"- biases (array): The biases to add to each element, namely :math:`\\beta`"
+msgstr ""
+
+#: ../../../docstring of
+#: mlx.core.pybind11_detail_function_record_v1_system_libstdcpp_gxx_abi_1xxx_use_cxx11_abi_1.quantize:46
+msgid "A tuple containing"
+msgstr ""
+
+#: ../../../docstring of
+#: mlx.core.pybind11_detail_function_record_v1_system_libstdcpp_gxx_abi_1xxx_use_cxx11_abi_1.quantize:48
+msgid "w_q (array): The quantized version of ``w``"
+msgstr ""
+
+#: ../../../docstring of
+#: mlx.core.pybind11_detail_function_record_v1_system_libstdcpp_gxx_abi_1xxx_use_cxx11_abi_1.quantize:49
+msgid ""
+"scales (array): The scale to multiply each element with, namely :math:`s`"
+msgstr ""
+
+#: ../../../docstring of
+#: mlx.core.pybind11_detail_function_record_v1_system_libstdcpp_gxx_abi_1xxx_use_cxx11_abi_1.quantize:50
+msgid ""
+"biases (array): The biases to add to each element, namely :math:`\\beta`"
+msgstr ""
+
+#: ../../../src/python/_autosummary/mlx.core.quantize.rst:0
+msgid "Return type"
+msgstr ""
