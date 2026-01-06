@@ -1,0 +1,89 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023, MLX Contributors
+# This file is distributed under the same license as the MLX package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: MLX 0.11\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-12-08 12:58+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../src/python/metal.rst:2
+msgid "Metal"
+msgstr ""
+
+#: ../../../src/python/metal.rst:16:<autosummary>:1
+msgid ":py:obj:`is_available <mlx.core.metal.is_available>`\\ \\(\\)"
+msgstr ""
+
+#: ../../../src/python/metal.rst:16:<autosummary>:1
+msgid "Check if the Metal back-end is available."
+msgstr ""
+
+#: ../../../src/python/metal.rst:16:<autosummary>:1
+msgid ":py:obj:`get_active_memory <mlx.core.metal.get_active_memory>`\\ \\(\\)"
+msgstr ""
+
+#: ../../../src/python/metal.rst:16:<autosummary>:1
+msgid "Get the actively used memory in bytes."
+msgstr ""
+
+#: ../../../src/python/metal.rst:16:<autosummary>:1
+msgid ":py:obj:`get_peak_memory <mlx.core.metal.get_peak_memory>`\\ \\(\\)"
+msgstr ""
+
+#: ../../../src/python/metal.rst:16:<autosummary>:1
+msgid "Get the peak amount of used memory in bytes."
+msgstr ""
+
+#: ../../../src/python/metal.rst:16:<autosummary>:1
+msgid ":py:obj:`get_cache_memory <mlx.core.metal.get_cache_memory>`\\ \\(\\)"
+msgstr ""
+
+#: ../../../src/python/metal.rst:16:<autosummary>:1
+msgid "Get the cache size in bytes."
+msgstr ""
+
+#: ../../../src/python/metal.rst:16:<autosummary>:1
+msgid ""
+":py:obj:`set_memory_limit <mlx.core.metal.set_memory_limit>`\\ \\(limit\\, "
+"\\*\\[\\, relaxed\\]\\)"
+msgstr ""
+
+#: ../../../src/python/metal.rst:16:<autosummary>:1
+msgid "Set the memory limit."
+msgstr ""
+
+#: ../../../src/python/metal.rst:16:<autosummary>:1
+msgid ""
+":py:obj:`set_cache_limit <mlx.core.metal.set_cache_limit>`\\ \\(limit\\)"
+msgstr ""
+
+#: ../../../src/python/metal.rst:16:<autosummary>:1
+msgid "Set the free cache limit."
+msgstr ""
+
+#: ../../../src/python/metal.rst:16:<autosummary>:1
+msgid ":py:obj:`start_capture <mlx.core.metal.start_capture>`\\ \\(path\\)"
+msgstr ""
+
+#: ../../../src/python/metal.rst:16:<autosummary>:1
+msgid "Start a Metal capture."
+msgstr ""
+
+#: ../../../src/python/metal.rst:16:<autosummary>:1
+msgid ":py:obj:`stop_capture <mlx.core.metal.stop_capture>`\\ \\(\\)"
+msgstr ""
+
+#: ../../../src/python/metal.rst:16:<autosummary>:1
+msgid "Stop a Metal capture."
+msgstr ""
