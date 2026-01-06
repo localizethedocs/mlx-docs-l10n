@@ -1,0 +1,53 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023, MLX Contributors
+# This file is distributed under the same license as the MLX package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: MLX 0.17\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-12-08 12:57+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../src/python/_autosummary/mlx.core.divmod.rst:2
+msgid "mlx.core.divmod"
+msgstr ""
+
+#: ../../../docstring of mlx.core.divmod:1
+msgid "Element-wise quotient and remainder."
+msgstr ""
+
+#: ../../../docstring of mlx.core.divmod:3
+msgid ""
+"The fuction ``divmod(a, b)`` is equivalent to but faster than ``(a // b, a % "
+"b)``. The function uses numpy-style broadcasting semantics. Either or both "
+"input arrays can also be scalars."
+msgstr ""
+
+#: ../../../src/python/_autosummary/mlx.core.divmod.rst:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../docstring of mlx.core.divmod:7 mlx.core.divmod:9
+msgid "Input array or scalar."
+msgstr ""
+
+#: ../../../src/python/_autosummary/mlx.core.divmod.rst:0
+msgid "Returns"
+msgstr ""
+
+#: ../../../docstring of mlx.core.divmod:12
+msgid "The quotient ``a // b`` and remainder ``a % b``."
+msgstr ""
+
+#: ../../../src/python/_autosummary/mlx.core.divmod.rst:0
+msgid "Return type"
+msgstr ""
