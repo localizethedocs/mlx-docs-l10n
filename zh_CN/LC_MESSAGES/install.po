@@ -1,0 +1,425 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023, MLX Contributors
+# This file is distributed under the same license as the MLX package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: MLX 0.22\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-12-08 12:45+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../src/install.rst:4
+msgid "Build and Install"
+msgstr ""
+
+#: ../../../src/install.rst:7
+msgid "Python Installation"
+msgstr ""
+
+#: ../../../src/install.rst:9
+msgid ""
+"MLX is available on PyPI. All you have to do to use MLX with your own Apple "
+"silicon computer is"
+msgstr ""
+
+#: ../../../src/install.rst:12
+msgid "pip install mlx"
+msgstr ""
+
+#: ../../../src/install.rst:16
+msgid "To install from PyPI you must meet the following requirements:"
+msgstr ""
+
+#: ../../../src/install.rst:18
+msgid "Using an M series chip (Apple silicon)"
+msgstr ""
+
+#: ../../../src/install.rst:19
+msgid "Using a native Python >= 3.9"
+msgstr ""
+
+#: ../../../src/install.rst:20
+msgid "macOS >= 13.5"
+msgstr ""
+
+#: ../../../src/install.rst:23
+msgid ""
+"MLX is only available on devices running macOS >= 13.5 It is highly "
+"recommended to use macOS 14 (Sonoma)"
+msgstr ""
+
+#: ../../../src/install.rst:27
+msgid "MLX is also available on conda-forge. To install MLX with conda do:"
+msgstr ""
+
+#: ../../../src/install.rst:29
+msgid "conda install conda-forge::mlx"
+msgstr ""
+
+#: ../../../src/install.rst:35 ../../../src/install.rst:217
+msgid "Troubleshooting"
+msgstr ""
+
+#: ../../../src/install.rst:37
+msgid ""
+"*My OS and Python versions are in the required range but pip still does not "
+"find a matching distribution.*"
+msgstr ""
+
+#: ../../../src/install.rst:40
+msgid "Probably you are using a non-native Python. The output of"
+msgstr ""
+
+#: ../../../src/install.rst:42
+msgid "python -c \"import platform; print(platform.processor())\""
+msgstr ""
+
+#: ../../../src/install.rst:46
+msgid ""
+"should be ``arm``. If it is ``i386`` (and you have M series machine) then "
+"you are using a non-native Python. Switch your Python to a native Python. A "
+"good way to do this is with `Conda <https://stackoverflow.com/q/65415996>`_."
+msgstr ""
+
+#: ../../../src/install.rst:52
+msgid "Build from source"
+msgstr ""
+
+#: ../../../src/install.rst:55
+msgid "Build Requirements"
+msgstr ""
+
+#: ../../../src/install.rst:57
+msgid "A C++ compiler with C++17 support (e.g. Clang >= 5.0)"
+msgstr ""
+
+#: ../../../src/install.rst:58
+msgid "`cmake <https://cmake.org/>`_ -- version 3.25 or later, and ``make``"
+msgstr ""
+
+#: ../../../src/install.rst:59
+msgid "Xcode >= 15.0 and macOS SDK >= 14.0"
+msgstr ""
+
+#: ../../../src/install.rst:62
+msgid ""
+"Ensure your shell environment is native ``arm``, not ``x86`` via Rosetta. If "
+"the output of ``uname -p`` is ``x86``, see the :ref:`troubleshooting section "
+"<build shell>` below."
+msgstr ""
+
+#: ../../../src/install.rst:66
+msgid "Python API"
+msgstr ""
+
+#: ../../../src/install.rst:68
+msgid ""
+"To build and install the MLX python library from source, first, clone MLX "
+"from `its GitHub repo <https://github.com/ml-explore/mlx>`_:"
+msgstr ""
+
+#: ../../../src/install.rst:71 ../../../src/install.rst:116
+msgid "git clone git@github.com:ml-explore/mlx.git mlx && cd mlx"
+msgstr ""
+
+#: ../../../src/install.rst:75
+msgid "Then simply build and install MLX using pip:"
+msgstr ""
+
+#: ../../../src/install.rst:77
+msgid "CMAKE_BUILD_PARALLEL_LEVEL=8 pip install ."
+msgstr ""
+
+#: ../../../src/install.rst:81
+msgid ""
+"For developing, install the package with development dependencies, and use "
+"an editable install:"
+msgstr ""
+
+#: ../../../src/install.rst:84
+msgid "CMAKE_BUILD_PARALLEL_LEVEL=8 pip install -e \".[dev]\""
+msgstr ""
+
+#: ../../../src/install.rst:88
+msgid ""
+"Once the development dependencies are installed, you can build faster with:"
+msgstr ""
+
+#: ../../../src/install.rst:90
+msgid "CMAKE_BUILD_PARALLEL_LEVEL=8 python setup.py build_ext --inplace"
+msgstr ""
+
+#: ../../../src/install.rst:94
+msgid "Run the tests with:"
+msgstr ""
+
+#: ../../../src/install.rst:96
+msgid "python -m unittest discover python/tests"
+msgstr ""
+
+#: ../../../src/install.rst:100
+msgid ""
+"Optional: Install stubs to enable auto completions and type checking from "
+"your IDE:"
+msgstr ""
+
+#: ../../../src/install.rst:103
+msgid "python setup.py generate_stubs"
+msgstr ""
+
+#: ../../../src/install.rst:108
+msgid "C++ API"
+msgstr ""
+
+#: ../../../src/install.rst:110
+msgid "Currently, MLX must be built and installed from source."
+msgstr ""
+
+#: ../../../src/install.rst:112
+msgid ""
+"Similarly to the python library, to build and install the MLX C++ library "
+"start by cloning MLX from `its GitHub repo <https://github.com/ml-explore/"
+"mlx>`_:"
+msgstr ""
+
+#: ../../../src/install.rst:120
+msgid "Create a build directory and run CMake and make:"
+msgstr ""
+
+#: ../../../src/install.rst:122
+msgid ""
+"mkdir -p build && cd build\n"
+"cmake .. && make -j"
+msgstr ""
+
+#: ../../../src/install.rst:127
+msgid "Run tests with:"
+msgstr ""
+
+#: ../../../src/install.rst:129
+msgid "make test"
+msgstr ""
+
+#: ../../../src/install.rst:133
+msgid "Install with:"
+msgstr ""
+
+#: ../../../src/install.rst:135
+msgid "make install"
+msgstr ""
+
+#: ../../../src/install.rst:139
+msgid ""
+"Note that the built ``mlx.metallib`` file should be either at the same "
+"directory as the executable statically linked to ``libmlx.a`` or the "
+"preprocessor constant ``METAL_PATH`` should be defined at build time and it "
+"should point to the path to the built metal library."
+msgstr ""
+
+#: ../../../src/install.rst:144
+msgid "Build Options"
+msgstr ""
+
+#: ../../../src/install.rst:148
+msgid "Option"
+msgstr ""
+
+#: ../../../src/install.rst:149
+msgid "Default"
+msgstr ""
+
+#: ../../../src/install.rst:150
+msgid "MLX_BUILD_TESTS"
+msgstr ""
+
+#: ../../../src/install.rst:151 ../../../src/install.rst:157
+#: ../../../src/install.rst:159 ../../../src/install.rst:165
+#: ../../../src/install.rst:167
+msgid "ON"
+msgstr ""
+
+#: ../../../src/install.rst:152
+msgid "MLX_BUILD_EXAMPLES"
+msgstr ""
+
+#: ../../../src/install.rst:153 ../../../src/install.rst:155
+#: ../../../src/install.rst:161 ../../../src/install.rst:163
+#: ../../../src/install.rst:169
+msgid "OFF"
+msgstr ""
+
+#: ../../../src/install.rst:154
+msgid "MLX_BUILD_BENCHMARKS"
+msgstr ""
+
+#: ../../../src/install.rst:156
+msgid "MLX_BUILD_METAL"
+msgstr ""
+
+#: ../../../src/install.rst:158
+msgid "MLX_BUILD_CPU"
+msgstr ""
+
+#: ../../../src/install.rst:160
+msgid "MLX_BUILD_PYTHON_BINDINGS"
+msgstr ""
+
+#: ../../../src/install.rst:162
+msgid "MLX_METAL_DEBUG"
+msgstr ""
+
+#: ../../../src/install.rst:164
+msgid "MLX_BUILD_SAFETENSORS"
+msgstr ""
+
+#: ../../../src/install.rst:166
+msgid "MLX_BUILD_GGUF"
+msgstr ""
+
+#: ../../../src/install.rst:168
+msgid "MLX_METAL_JIT"
+msgstr ""
+
+#: ../../../src/install.rst:173
+msgid ""
+"If you have multiple Xcode installations and wish to use a specific one "
+"while building, you can do so by adding the following environment variable "
+"before building"
+msgstr ""
+
+#: ../../../src/install.rst:177
+msgid "export DEVELOPER_DIR=\"/path/to/Xcode.app/Contents/Developer/\""
+msgstr ""
+
+#: ../../../src/install.rst:181
+msgid ""
+"Further, you can use the following command to find out which macOS SDK will "
+"be used"
+msgstr ""
+
+#: ../../../src/install.rst:184
+msgid "xcrun -sdk macosx --show-sdk-version"
+msgstr ""
+
+#: ../../../src/install.rst:189
+msgid "Binary Size Minimization"
+msgstr ""
+
+#: ../../../src/install.rst:191
+msgid ""
+"To produce a smaller binary use the CMake flags "
+"``CMAKE_BUILD_TYPE=MinSizeRel`` and ``BUILD_SHARED_LIBS=ON``."
+msgstr ""
+
+#: ../../../src/install.rst:194
+msgid ""
+"The MLX CMake build has several additional options to make smaller binaries. "
+"For example, if you don't need the CPU backend or support for safetensors "
+"and GGUF, you can do:"
+msgstr ""
+
+#: ../../../src/install.rst:198
+msgid ""
+"cmake .. \\\n"
+"  -DCMAKE_BUILD_TYPE=MinSizeRel \\\n"
+"  -DBUILD_SHARED_LIBS=ON \\\n"
+"  -DMLX_BUILD_CPU=OFF \\\n"
+"  -DMLX_BUILD_SAFETENSORS=OFF \\\n"
+"  -DMLX_BUILD_GGUF=OFF \\\n"
+"  -DMLX_METAL_JIT=ON"
+msgstr ""
+
+#: ../../../src/install.rst:208
+msgid ""
+"THE ``MLX_METAL_JIT`` flag minimizes the size of the MLX Metal library which "
+"contains pre-built GPU kernels. This substantially reduces the size of the "
+"Metal library by run-time compiling kernels the first time they are used in "
+"MLX on a given machine. Note run-time compilation incurs a cold-start cost "
+"which can be anwywhere from a few hundred millisecond to a few seconds "
+"depending on the application. Once a kernel is compiled, it will be cached "
+"by the system. The Metal kernel cache persists across reboots."
+msgstr ""
+
+#: ../../../src/install.rst:220
+msgid "Metal not found"
+msgstr ""
+
+#: ../../../src/install.rst:222
+msgid "You see the following error when you try to build:"
+msgstr ""
+
+#: ../../../src/install.rst:224
+msgid ""
+"error: unable to find utility \"metal\", not a developer tool or in PATH"
+msgstr ""
+
+#: ../../../src/install.rst:228
+msgid "To fix this, first make sure you have Xcode installed:"
+msgstr ""
+
+#: ../../../src/install.rst:230
+msgid "xcode-select --install"
+msgstr ""
+
+#: ../../../src/install.rst:234
+msgid "Then set the active developer directory:"
+msgstr ""
+
+#: ../../../src/install.rst:236
+msgid "sudo xcode-select --switch /Applications/Xcode.app/Contents/Developer"
+msgstr ""
+
+#: ../../../src/install.rst:241
+msgid "x86 Shell"
+msgstr ""
+
+#: ../../../src/install.rst:245
+msgid ""
+"If the output of ``uname -p``  is ``x86`` then your shell is running as x86 "
+"via Rosetta instead of natively."
+msgstr ""
+
+#: ../../../src/install.rst:248
+msgid ""
+"To fix this, find the application in Finder (``/Applications`` for iTerm, ``/"
+"Applications/Utilities`` for Terminal), right-click, and click “Get Info”. "
+"Uncheck “Open using Rosetta”, close the “Get Info” window, and restart your "
+"terminal."
+msgstr ""
+
+#: ../../../src/install.rst:253
+msgid "Verify the terminal is now running natively the following command:"
+msgstr ""
+
+#: ../../../src/install.rst:255
+msgid ""
+"$ uname -p\n"
+"arm"
+msgstr ""
+
+#: ../../../src/install.rst:260
+msgid "Also check that cmake is using the correct architecture:"
+msgstr ""
+
+#: ../../../src/install.rst:262
+msgid ""
+"$ cmake --system-information | grep CMAKE_HOST_SYSTEM_PROCESSOR\n"
+"CMAKE_HOST_SYSTEM_PROCESSOR \"arm64\""
+msgstr ""
+
+#: ../../../src/install.rst:267
+msgid ""
+"If you see ``\"x86_64\"``, try re-installing ``cmake``. If you see "
+"``\"arm64\"`` but the build errors out with \"Building for x86_64 on macOS "
+"is not supported.\" wipe your build cache with ``rm -rf build/`` and try "
+"again."
+msgstr ""
