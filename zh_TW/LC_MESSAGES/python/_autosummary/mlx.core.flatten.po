@@ -1,0 +1,72 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023, Apple
+# This file is distributed under the same license as the MLX package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: MLX 0.28\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-12-08 12:32+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../src/python/_autosummary/mlx.core.flatten.rst:2
+msgid "mlx.core.flatten"
+msgstr ""
+
+#: ../../../docstring of mlx.core.flatten:1
+msgid "Flatten an array."
+msgstr ""
+
+#: ../../../docstring of mlx.core.flatten:3
+msgid ""
+"The axes flattened will be between ``start_axis`` and ``end_axis``, "
+"inclusive. Negative axes are supported. After converting negative axis to "
+"positive, axes outside the valid range will be clamped to a valid value, "
+"``start_axis`` to ``0`` and ``end_axis`` to ``ndim - 1``."
+msgstr ""
+
+#: ../../../docstring of mlx.core.flatten:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../docstring of mlx.core.flatten:8
+msgid "Input array."
+msgstr ""
+
+#: ../../../docstring of mlx.core.flatten:10
+msgid "The first dimension to flatten. Defaults to ``0``."
+msgstr ""
+
+#: ../../../docstring of mlx.core.flatten:12
+msgid "The last dimension to flatten. Defaults to ``-1``."
+msgstr ""
+
+#: ../../../docstring of mlx.core.flatten:14
+msgid ""
+"Stream or device. Defaults to ``None`` in which case the default stream of "
+"the default device is used."
+msgstr ""
+
+#: ../../../docstring of mlx.core.flatten:0
+msgid "Returns"
+msgstr ""
+
+#: ../../../docstring of mlx.core.flatten:18
+msgid "The flattened array."
+msgstr ""
+
+#: ../../../docstring of mlx.core.flatten:0
+msgid "Return type"
+msgstr ""
+
+#: ../../../docstring of mlx.core.flatten:22
+msgid "Example"
+msgstr ""
