@@ -1,0 +1,154 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023, MLX Contributors
+# This file is distributed under the same license as the MLX package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: MLX 0.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-12-08 12:20+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../src/python/data_types.rst:6
+msgid "Data Types"
+msgstr ""
+
+#: ../../../src/python/data_types.rst:10
+msgid ""
+"The default floating point type is ``float32`` and the default integer type "
+"is ``int32``. The table below shows supported values for :obj:`Dtype`."
+msgstr ""
+
+#: ../../../src/python/data_types.rst:13
+msgid "Supported Data Types"
+msgstr ""
+
+#: ../../../src/python/data_types.rst:17
+msgid "Type"
+msgstr ""
+
+#: ../../../src/python/data_types.rst:18
+msgid "Bytes"
+msgstr ""
+
+#: ../../../src/python/data_types.rst:19
+msgid "Description"
+msgstr ""
+
+#: ../../../src/python/data_types.rst:20
+msgid "``bool_``"
+msgstr ""
+
+#: ../../../src/python/data_types.rst:21 ../../../src/python/data_types.rst:24
+#: ../../../src/python/data_types.rst:36
+msgid "1"
+msgstr ""
+
+#: ../../../src/python/data_types.rst:22
+msgid "Boolean (``True``, ``False``) data type"
+msgstr ""
+
+#: ../../../src/python/data_types.rst:23
+msgid "``uint8``"
+msgstr ""
+
+#: ../../../src/python/data_types.rst:25
+msgid "8-bit unsigned integer"
+msgstr ""
+
+#: ../../../src/python/data_types.rst:26
+msgid "``uint16``"
+msgstr ""
+
+#: ../../../src/python/data_types.rst:27 ../../../src/python/data_types.rst:39
+#: ../../../src/python/data_types.rst:48
+msgid "2"
+msgstr ""
+
+#: ../../../src/python/data_types.rst:28
+msgid "16-bit unsigned integer"
+msgstr ""
+
+#: ../../../src/python/data_types.rst:29
+msgid "``uint32``"
+msgstr ""
+
+#: ../../../src/python/data_types.rst:30 ../../../src/python/data_types.rst:42
+#: ../../../src/python/data_types.rst:51
+msgid "4"
+msgstr ""
+
+#: ../../../src/python/data_types.rst:31
+msgid "32-bit unsigned integer"
+msgstr ""
+
+#: ../../../src/python/data_types.rst:32
+msgid "``uint64``"
+msgstr ""
+
+#: ../../../src/python/data_types.rst:33 ../../../src/python/data_types.rst:45
+msgid "8"
+msgstr ""
+
+#: ../../../src/python/data_types.rst:34
+msgid "64-bit unsigned integer"
+msgstr ""
+
+#: ../../../src/python/data_types.rst:35
+msgid "``int8``"
+msgstr ""
+
+#: ../../../src/python/data_types.rst:37
+msgid "8-bit signed integer"
+msgstr ""
+
+#: ../../../src/python/data_types.rst:38
+msgid "``int16``"
+msgstr ""
+
+#: ../../../src/python/data_types.rst:40
+msgid "16-bit signed integer"
+msgstr ""
+
+#: ../../../src/python/data_types.rst:41
+msgid "``int32``"
+msgstr ""
+
+#: ../../../src/python/data_types.rst:43
+msgid "32-bit signed integer"
+msgstr ""
+
+#: ../../../src/python/data_types.rst:44
+msgid "``int64``"
+msgstr ""
+
+#: ../../../src/python/data_types.rst:46
+msgid "64-bit signed integer"
+msgstr ""
+
+#: ../../../src/python/data_types.rst:47
+msgid "``float16``"
+msgstr ""
+
+#: ../../../src/python/data_types.rst:49
+msgid ""
+"16-bit float, only available with `ARM C language extensions <https://"
+"developer.arm.com/documentation/101028/0012/3--C-language-extensions?"
+"lang=en>`_"
+msgstr ""
+
+#: ../../../src/python/data_types.rst:50
+msgid "``float32``"
+msgstr ""
+
+#: ../../../src/python/data_types.rst:52
+msgid "32-bit float"
+msgstr ""
