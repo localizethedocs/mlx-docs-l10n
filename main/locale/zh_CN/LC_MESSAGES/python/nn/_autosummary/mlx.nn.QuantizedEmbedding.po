@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MLX main\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-12-22 08:23+0000\n"
+"POT-Creation-Date: 2026-01-12 08:24+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -53,14 +53,14 @@ msgstr ""
 #: of mlx.nn.layers.quantized.QuantizedEmbedding:12
 msgid ""
 "The group size to use for the quantized weight. See :func:`~mlx.core."
-"quantize`. Default: ``64``."
+"quantize`. Default: ``None``."
 msgstr ""
 
 #: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/quantized.py:docstring
 #: of mlx.nn.layers.quantized.QuantizedEmbedding:15
 msgid ""
 "The bit width to use for the quantized weight. See :func:`~mlx.core."
-"quantize`. Default: ``4``."
+"quantize`. Default: ``None``."
 msgstr ""
 
 #: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/quantized.py:docstring

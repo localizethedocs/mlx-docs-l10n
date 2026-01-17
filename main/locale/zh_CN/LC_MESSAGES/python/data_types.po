@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MLX main\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-12-22 08:23+0000\n"
+"POT-Creation-Date: 2026-01-12 08:24+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -82,7 +82,7 @@ msgid "``uint32``"
 msgstr ""
 
 #: ../../../src/python/data_types.rst:28 ../../../src/python/data_types.rst:40
-#: ../../../src/python/data_types.rst:52 ../../../src/python/data_types.rst:55
+#: ../../../src/python/data_types.rst:52
 msgid "4"
 msgstr ""
 
@@ -95,7 +95,7 @@ msgid "``uint64``"
 msgstr ""
 
 #: ../../../src/python/data_types.rst:31 ../../../src/python/data_types.rst:43
-#: ../../../src/python/data_types.rst:58
+#: ../../../src/python/data_types.rst:55 ../../../src/python/data_types.rst:58
 msgid "8"
 msgstr ""
 
