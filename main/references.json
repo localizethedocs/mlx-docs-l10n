@@ -37,9 +37,9 @@
     "branch" : "main",
     "commit" : 
     {
-      "date" : "2025-12-22 09:42:20 +0900",
-      "hash" : "b01fc7eac79289efd70f2475adf3f3a36fc5159a",
-      "title" : "Fix stubgen (#2942)"
+      "date" : "2026-01-10 15:32:54 -0800",
+      "hash" : "43341e8d533000090a94fdddb7f39c91a1240307",
+      "title" : "Swizzle scales (#2979)"
     }
   },
   "type" : "branch",
