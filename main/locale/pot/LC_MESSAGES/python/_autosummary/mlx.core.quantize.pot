@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MLX main\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-12-22 08:23+0000\n"
+"POT-Creation-Date: 2026-01-26 08:24+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -158,8 +158,7 @@ msgstr ""
 msgid "32\\ :sup:`*`"
 msgstr ""
 
-#: ../../../docstring of mlx.core.quantize:45 mlx.core.quantize:46
-#: mlx.core.quantize:47
+#: ../../../docstring of mlx.core.quantize:45 mlx.core.quantize:47
 msgid "4\\ :sup:`*`"
 msgstr ""
 
@@ -174,6 +173,10 @@ msgstr ""
 
 #: ../../../docstring of mlx.core.quantize:46
 msgid "mxfp8"
+msgstr ""
+
+#: ../../../docstring of mlx.core.quantize:46
+msgid "8\\ :sup:`*`"
 msgstr ""
 
 #: ../../../docstring of mlx.core.quantize:47
@@ -231,7 +234,7 @@ msgid ""
 "size must be ``32``.  For ``\"nvfp4\"`` the group size must be 16. The "
 "elements are quantized to 4-bit or 8-bit precision floating-point values: "
 "E2M1 for ``\"fp4\"`` and E4M3 for ``\"fp8\"``. There is a shared 8-bit scale "
-"per group. The ``\"mx\"`` modes us an E8M0 scale and the ``\"nv\"`` mode "
+"per group. The ``\"mx\"`` modes use an E8M0 scale and the ``\"nv\"`` mode "
 "uses an E4M3 scale. Unlike ``affine`` quantization, these modes does not "
 "have a bias value."
 msgstr ""

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MLX main\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-01-12 08:24+0000\n"
+"POT-Creation-Date: 2026-01-26 08:24+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -151,7 +151,7 @@ msgid "Build Requirements"
 msgstr ""
 
 #: ../../../src/install.rst:86
-msgid "A C++ compiler with C++17 support (e.g. Clang >= 5.0)"
+msgid "A C++ compiler with C++20 support (e.g. Clang >= 15.0)"
 msgstr ""
 
 #: ../../../src/install.rst:87
