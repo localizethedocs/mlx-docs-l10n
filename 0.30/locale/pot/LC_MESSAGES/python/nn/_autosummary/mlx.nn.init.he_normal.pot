@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MLX 0.30\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-12-23 09:21+0000\n"
+"POT-Creation-Date: 2026-01-27 09:28+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -64,7 +64,7 @@ msgstr ""
 
 #: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/init.py:docstring
 #: of mlx.nn.init.he_normal:18
-msgid "The data type of the array. Defaults to mx.float32."
+msgid "The data type of the array. Default: ``float32``."
 msgstr ""
 
 #: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/init.py:docstring
