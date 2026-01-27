@@ -1,0 +1,62 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023, MLX Contributors
+# This file is distributed under the same license as the MLX package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: MLX 0.9\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-12-08 13:00+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../src/python/nn/_autosummary/mlx.nn.Module.update_modules.rst:2
+msgid "mlx.nn.Module.update\\_modules"
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/base.py:docstring
+#: of mlx.nn.layers.base.Module.update_modules:1
+msgid ""
+"Replace the child modules of this :class:`Module` instance with the provided "
+"ones in the dict of dicts and lists."
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/base.py:docstring
+#: of mlx.nn.layers.base.Module.update_modules:4
+msgid ""
+"It is the equivalent of :meth:`Module.update` but for modules instead of "
+"parameters and allows us to flexibly edit complex architectures by "
+"programmatically swapping layers."
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/base.py:docstring
+#: of mlx.nn.layers.base.Module.update_modules:8
+msgid ""
+"The passed in parameters dictionary need not be a full dictionary similar "
+"to :meth:`parameters`. Only the provided locations will be updated."
+msgstr ""
+
+#: ../../../src/python/nn/_autosummary/mlx.nn.Module.update_modules.rst:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/base.py:docstring
+#: of mlx.nn.layers.base.Module.update_modules:12
+msgid "A complete or partial dictionary of the modules submodules."
+msgstr ""
+
+#: ../../../src/python/nn/_autosummary/mlx.nn.Module.update_modules.rst:0
+msgid "Returns"
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/base.py:docstring
+#: of mlx.nn.layers.base.Module.update_modules:16
+msgid "The module instance after updating the submodules."
+msgstr ""
