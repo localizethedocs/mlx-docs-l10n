@@ -1,0 +1,63 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023, MLX Contributors
+# This file is distributed under the same license as the MLX package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: MLX 0.16\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-12-08 13:00+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../src/python/_autosummary/mlx.core.view.rst:2
+msgid "mlx.core.view"
+msgstr ""
+
+#: ../../../docstring of mlx.core.view:1
+msgid "View the array as a different type."
+msgstr ""
+
+#: ../../../docstring of mlx.core.view:3
+msgid ""
+"The output shape changes along the last axis if the input array's type and "
+"the input ``dtype`` do not have the same size."
+msgstr ""
+
+#: ../../../docstring of mlx.core.view:6
+msgid ""
+"Note: the view op does not imply that the input and output arrays share "
+"their underlying data. The view only gaurantees that the binary "
+"representation of each element (or group of elements) is the same."
+msgstr ""
+
+#: ../../../src/python/_autosummary/mlx.core.view.rst:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../docstring of mlx.core.view:10
+msgid "Input array or scalar."
+msgstr ""
+
+#: ../../../docstring of mlx.core.view:12
+msgid "The data type to change to."
+msgstr ""
+
+#: ../../../src/python/_autosummary/mlx.core.view.rst:0
+msgid "Returns"
+msgstr ""
+
+#: ../../../docstring of mlx.core.view:15
+msgid "The array with the new type."
+msgstr ""
+
+#: ../../../src/python/_autosummary/mlx.core.view.rst:0
+msgid "Return type"
+msgstr ""
