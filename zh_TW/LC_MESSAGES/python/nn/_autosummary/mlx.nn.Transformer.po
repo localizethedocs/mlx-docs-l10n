@@ -1,0 +1,125 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023, MLX Contributors
+# This file is distributed under the same license as the MLX package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: MLX 0.17\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-12-08 12:57+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../src/python/nn/_autosummary/mlx.nn.Transformer.rst:2
+msgid "mlx.nn.Transformer"
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/transformer.py:docstring
+#: of mlx.nn.layers.transformer.Transformer:1
+msgid "Implements a standard Transformer model."
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/transformer.py:docstring
+#: of mlx.nn.layers.transformer.Transformer:3
+msgid ""
+"The implementation is based on `Attention Is All You Need <https://arxiv.org/"
+"abs/1706.03762>`_."
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/transformer.py:docstring
+#: of mlx.nn.layers.transformer.Transformer:6
+msgid ""
+"The Transformer model contains an encoder and a decoder. The encoder "
+"processes the input sequence and the decoder generates the output sequence. "
+"The interaction between encoder and decoder happens through the attention "
+"mechanism."
+msgstr ""
+
+#: ../../../src/python/nn/_autosummary/mlx.nn.Transformer.rst:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/transformer.py:docstring
+#: of mlx.nn.layers.transformer.Transformer:11
+msgid ""
+"The number of expected features in the encoder/decoder inputs. Default: "
+"``512``."
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/transformer.py:docstring
+#: of mlx.nn.layers.transformer.Transformer:14
+msgid "The number of attention heads. Default: ``8``."
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/transformer.py:docstring
+#: of mlx.nn.layers.transformer.Transformer:17
+msgid ""
+"The number of encoder layers in the Transformer encoder. Default: ``6``."
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/transformer.py:docstring
+#: of mlx.nn.layers.transformer.Transformer:20
+msgid ""
+"The number of decoder layers in the Transformer decoder. Default: ``6``."
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/transformer.py:docstring
+#: of mlx.nn.layers.transformer.Transformer:23
+msgid ""
+"The hidden dimension of the MLP block in each Transformer layer. Defaults to "
+"``4*dims`` if not provided. Default: ``None``."
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/transformer.py:docstring
+#: of mlx.nn.layers.transformer.Transformer:27
+msgid ""
+"The dropout value for the Transformer encoder and decoder. Dropout is used "
+"after each attention layer and the activation in the MLP layer. Default: "
+"``0.0``."
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/transformer.py:docstring
+#: of mlx.nn.layers.transformer.Transformer:31
+msgid ""
+"the activation function for the MLP hidden layer. Default: :func:`mlx.nn."
+"relu`."
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/transformer.py:docstring
+#: of mlx.nn.layers.transformer.Transformer:34
+msgid ""
+"A custom encoder to replace the standard Transformer encoder. Default: "
+"``None``."
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/transformer.py:docstring
+#: of mlx.nn.layers.transformer.Transformer:37
+msgid ""
+"A custom decoder to replace the standard Transformer decoder. Default: "
+"``None``."
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/transformer.py:docstring
+#: of mlx.nn.layers.transformer.Transformer:40
+msgid ""
+"if ``True``, encoder and decoder layers will perform layer normalization "
+"before attention and MLP operations, otherwise after. Default: ``True``."
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/transformer.py:docstring
+#: of mlx.nn.layers.transformer.Transformer:44
+msgid ""
+"if ``True`` perform gradient checkpointing to reduce the memory usage at the "
+"expense of more computation. Default: ``False``."
+msgstr ""
+
+#: ../../../src/python/nn/_autosummary/mlx.nn.Transformer.rst:12
+msgid "Methods"
+msgstr "方法"
