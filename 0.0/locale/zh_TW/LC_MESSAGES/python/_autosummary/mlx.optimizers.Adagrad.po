@@ -24,7 +24,7 @@ msgstr ""
 #: ../../../../../../.conda/lib/python3.12/site-packages/mlx/optimizers.py:docstring
 #: of mlx.optimizers.Adagrad:1
 msgid "The Adagrad optimizer [1]."
-msgstr ""
+msgstr "Adagrad 最佳化器 [1]。"
 
 #: ../../../../../../.conda/lib/python3.12/site-packages/mlx/optimizers.py:docstring
 #: of mlx.optimizers.Adagrad:3
@@ -47,7 +47,7 @@ msgstr ""
 
 #: ../../../src/python/_autosummary/mlx.optimizers.Adagrad.rst:0
 msgid "Parameters"
-msgstr ""
+msgstr "參數"
 
 #: ../../../../../../.conda/lib/python3.12/site-packages/mlx/optimizers.py:docstring
 #: of mlx.optimizers.Adagrad:13

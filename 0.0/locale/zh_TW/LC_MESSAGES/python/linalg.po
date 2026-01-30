@@ -29,4 +29,4 @@ msgstr ""
 
 #: ../../../src/python/linalg.rst:11:<autosummary>:1
 msgid "Matrix or vector norm."
-msgstr ""
+msgstr "矩陣或向量範數。"

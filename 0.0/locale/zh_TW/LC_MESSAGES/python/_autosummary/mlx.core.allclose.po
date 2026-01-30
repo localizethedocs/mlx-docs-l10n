@@ -24,12 +24,12 @@ msgstr ""
 #: ../../../docstring of
 #: mlx.core.pybind11_detail_function_record_v1_system_libstdcpp_gxx_abi_1xxx_use_cxx11_abi_1.allclose:1
 msgid "Approximate comparison of two arrays."
-msgstr ""
+msgstr "兩個陣列的近似比較。"
 
 #: ../../../docstring of
 #: mlx.core.pybind11_detail_function_record_v1_system_libstdcpp_gxx_abi_1xxx_use_cxx11_abi_1.allclose:3
 msgid "The arrays are considered equal if:"
-msgstr ""
+msgstr "在以下情況視為陣列相等："
 
 #: ../../../docstring of
 #: mlx.core.pybind11_detail_function_record_v1_system_libstdcpp_gxx_abi_1xxx_use_cxx11_abi_1.allclose:5
@@ -41,37 +41,37 @@ msgstr ""
 msgid ""
 "Note unlike :func:`array_equal`, this function supports numpy-style "
 "broadcasting."
-msgstr ""
+msgstr "注意：不同於 :func:`array_equal`，此函式支援 numpy 風格廣播。"
 
 #: ../../../src/python/_autosummary/mlx.core.allclose.rst:0
 msgid "Parameters"
-msgstr ""
+msgstr "參數"
 
 #: ../../../docstring of
 #: mlx.core.pybind11_detail_function_record_v1_system_libstdcpp_gxx_abi_1xxx_use_cxx11_abi_1.allclose:12
 #: mlx.core.pybind11_detail_function_record_v1_system_libstdcpp_gxx_abi_1xxx_use_cxx11_abi_1.allclose:14
 msgid "Input array."
-msgstr ""
+msgstr "輸入陣列。"
 
 #: ../../../docstring of
 #: mlx.core.pybind11_detail_function_record_v1_system_libstdcpp_gxx_abi_1xxx_use_cxx11_abi_1.allclose:16
 msgid "Relative tolerance."
-msgstr ""
+msgstr "相對容差。"
 
 #: ../../../docstring of
 #: mlx.core.pybind11_detail_function_record_v1_system_libstdcpp_gxx_abi_1xxx_use_cxx11_abi_1.allclose:18
 msgid "Absolute tolerance."
-msgstr ""
+msgstr "絕對容差。"
 
 #: ../../../src/python/_autosummary/mlx.core.allclose.rst:0
 msgid "Returns"
-msgstr ""
+msgstr "回傳"
 
 #: ../../../docstring of
 #: mlx.core.pybind11_detail_function_record_v1_system_libstdcpp_gxx_abi_1xxx_use_cxx11_abi_1.allclose:21
 msgid "The boolean output scalar indicating if the arrays are close."
-msgstr ""
+msgstr "布林輸出純量，表示陣列是否相近。"
 
 #: ../../../src/python/_autosummary/mlx.core.allclose.rst:0
 msgid "Return type"
-msgstr ""
+msgstr "回傳型別"

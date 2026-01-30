@@ -59,7 +59,7 @@ msgstr ""
 
 #: ../../../src/python/_autosummary/mlx.core.simplify.rst:0
 msgid "Parameters"
-msgstr ""
+msgstr "參數"
 
 #: ../../../docstring of
 #: mlx.core.pybind11_detail_function_record_v1_system_libstdcpp_gxx_abi_1xxx_use_cxx11_abi_1.simplify:28

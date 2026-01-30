@@ -24,7 +24,7 @@ msgstr ""
 #: ../../../../../../.conda/lib/python3.12/site-packages/mlx/optimizers.py:docstring
 #: of mlx.optimizers.AdaDelta:1
 msgid "The AdaDelta optimizer with a learning rate [1]."
-msgstr ""
+msgstr "帶有學習率的 AdaDelta 最佳化器 [1]。"
 
 #: ../../../../../../.conda/lib/python3.12/site-packages/mlx/optimizers.py:docstring
 #: of mlx.optimizers.AdaDelta:3
@@ -50,7 +50,7 @@ msgstr ""
 
 #: ../../../src/python/_autosummary/mlx.optimizers.AdaDelta.rst:0
 msgid "Parameters"
-msgstr ""
+msgstr "參數"
 
 #: ../../../../../../.conda/lib/python3.12/site-packages/mlx/optimizers.py:docstring
 #: of mlx.optimizers.AdaDelta:14

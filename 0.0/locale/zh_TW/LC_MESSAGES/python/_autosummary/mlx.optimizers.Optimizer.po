@@ -27,6 +27,8 @@ msgid ""
 "The base class for all optimizers. It allows us to implement an optimizer on "
 "a per-parameter basis and apply it to a parameter tree."
 msgstr ""
+"所有最佳化器的基底類別。它讓我們能以逐參數的方式實作最佳化器，並將其套用到參"
+"數樹。"
 
 #: ../../../../../../.conda/lib/python3.12/site-packages/mlx/optimizers.py:docstring
 #: of mlx.optimizers.Optimizer:6
@@ -60,7 +62,7 @@ msgstr ""
 #: ../../../src/python/_autosummary/mlx.optimizers.Optimizer.rst:18:<autosummary>:1
 msgid ""
 "Apply the gradients to the parameters and return the updated parameters."
-msgstr ""
+msgstr "將梯度套用到參數並回傳更新後的參數。"
 
 #: ../../../src/python/_autosummary/mlx.optimizers.Optimizer.rst:18:<autosummary>:1
 msgid ""
@@ -82,4 +84,4 @@ msgstr ""
 msgid ""
 "Apply the gradients to the parameters of the model and update the model with "
 "the new parameters."
-msgstr ""
+msgstr "將梯度套用到模型參數，並用新參數更新模型。"

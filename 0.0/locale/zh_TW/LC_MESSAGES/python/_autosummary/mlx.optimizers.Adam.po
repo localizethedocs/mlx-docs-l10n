@@ -24,7 +24,7 @@ msgstr ""
 #: ../../../../../../.conda/lib/python3.12/site-packages/mlx/optimizers.py:docstring
 #: of mlx.optimizers.Adam:1
 msgid "The Adam optimizer [1]."
-msgstr ""
+msgstr "Adam 最佳化器 [1]。"
 
 #: ../../../../../../.conda/lib/python3.12/site-packages/mlx/optimizers.py:docstring
 #: of mlx.optimizers.Adam:3
@@ -50,7 +50,7 @@ msgstr ""
 
 #: ../../../src/python/_autosummary/mlx.optimizers.Adam.rst:0
 msgid "Parameters"
-msgstr ""
+msgstr "參數"
 
 #: ../../../../../../.conda/lib/python3.12/site-packages/mlx/optimizers.py:docstring
 #: of mlx.optimizers.Adam:15

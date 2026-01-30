@@ -24,7 +24,7 @@ msgstr ""
 #: ../../../docstring of
 #: mlx.core.pybind11_detail_function_record_v1_system_libstdcpp_gxx_abi_1xxx_use_cxx11_abi_1.array_equal:1
 msgid "Array equality check."
-msgstr ""
+msgstr "陣列相等性檢查。"
 
 #: ../../../docstring of
 #: mlx.core.pybind11_detail_function_record_v1_system_libstdcpp_gxx_abi_1xxx_use_cxx11_abi_1.array_equal:3
@@ -33,16 +33,18 @@ msgid ""
 "have the same shape and their values are equal. The arrays need not have the "
 "same type to be considered equal."
 msgstr ""
+"比較兩個陣列是否相等。只有在陣列形狀相同且值相等時才回傳 ``True``。陣列不必具"
+"有相同型別也可視為相等。"
 
 #: ../../../src/python/_autosummary/mlx.core.array_equal.rst:0
 msgid "Parameters"
-msgstr ""
+msgstr "參數"
 
 #: ../../../docstring of
 #: mlx.core.pybind11_detail_function_record_v1_system_libstdcpp_gxx_abi_1xxx_use_cxx11_abi_1.array_equal:7
 #: mlx.core.pybind11_detail_function_record_v1_system_libstdcpp_gxx_abi_1xxx_use_cxx11_abi_1.array_equal:9
 msgid "Input array or scalar."
-msgstr ""
+msgstr "輸入陣列或純量。"
 
 #: ../../../docstring of
 #: mlx.core.pybind11_detail_function_record_v1_system_libstdcpp_gxx_abi_1xxx_use_cxx11_abi_1.array_equal:11
@@ -51,13 +53,13 @@ msgstr ""
 
 #: ../../../src/python/_autosummary/mlx.core.array_equal.rst:0
 msgid "Returns"
-msgstr ""
+msgstr "回傳"
 
 #: ../../../docstring of
 #: mlx.core.pybind11_detail_function_record_v1_system_libstdcpp_gxx_abi_1xxx_use_cxx11_abi_1.array_equal:15
 msgid "A scalar boolean array."
-msgstr ""
+msgstr "布林純量陣列。"
 
 #: ../../../src/python/_autosummary/mlx.core.array_equal.rst:0
 msgid "Return type"
-msgstr ""
+msgstr "回傳型別"

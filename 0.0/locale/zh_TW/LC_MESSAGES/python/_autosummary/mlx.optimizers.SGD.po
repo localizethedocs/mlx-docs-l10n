@@ -24,7 +24,7 @@ msgstr ""
 #: ../../../../../../.conda/lib/python3.12/site-packages/mlx/optimizers.py:docstring
 #: of mlx.optimizers.SGD:1
 msgid "The stochastic gradient descent optimizer."
-msgstr ""
+msgstr "隨機梯度下降最佳化器。"
 
 #: ../../../../../../.conda/lib/python3.12/site-packages/mlx/optimizers.py:docstring
 #: of mlx.optimizers.SGD:3
@@ -40,7 +40,7 @@ msgstr ""
 
 #: ../../../src/python/_autosummary/mlx.optimizers.SGD.rst:0
 msgid "Parameters"
-msgstr ""
+msgstr "參數"
 
 #: ../../../../../../.conda/lib/python3.12/site-packages/mlx/optimizers.py:docstring
 #: of mlx.optimizers.SGD:10
