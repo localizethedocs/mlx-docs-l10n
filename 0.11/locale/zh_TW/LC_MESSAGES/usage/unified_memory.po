@@ -26,12 +26,14 @@ msgid ""
 "Apple silicon has a unified memory architecture. The CPU and GPU have direct "
 "access to the same memory pool. MLX is designed to take advantage of that."
 msgstr ""
+"Apple silicon 採用統一記憶體架構。CPU 與 GPU 可直接存取同一個記憶體池。MLX 的"
+"設計即是為了善用這項特性。"
 
 #: ../../../src/usage/unified_memory.rst:11
 msgid ""
 "Concretely, when you make an array in MLX you don't have to specify its "
 "location:"
-msgstr ""
+msgstr "更具體地說，在 MLX 中建立陣列時不需要指定其位置："
 
 #: ../../../src/usage/unified_memory.rst:14
 msgid ""
@@ -52,6 +54,8 @@ msgid ""
 "``b`` without needing to move them from one memory location to another. For "
 "example:"
 msgstr ""
+"在 MLX 中，你不需要把陣列搬移到裝置上，而是在執行運算時指定裝置。任何裝置都能"
+"在 ``a`` 與 ``b`` 上執行任何運算，而不必在不同記憶體位置間搬移。例如："
 
 #: ../../../src/usage/unified_memory.rst:25
 msgid ""
@@ -68,6 +72,9 @@ msgid ""
 "dependencies between them. See :ref:`using_streams` for more information the "
 "semantics of streams in MLX."
 msgstr ""
+"在上例中，CPU 與 GPU 都會執行相同的加法運算。因為兩者之間沒有相依性，所以這些"
+"運算可以（而且很可能會）並行執行。關於 MLX 中串流語意的更多資訊，請參考 :ref:"
+"`using_streams`。"
 
 #: ../../../src/usage/unified_memory.rst:35
 msgid ""
@@ -75,6 +82,8 @@ msgid ""
 "so there is no possibility for race conditions. If there are dependencies, "
 "the MLX scheduler will automatically manage them. For example:"
 msgstr ""
+"在上述 ``add`` 範例中，運算之間沒有相依性，因此不會產生競態條件。若存在相依"
+"性，MLX 排程器會自動管理。例如："
 
 #: ../../../src/usage/unified_memory.rst:39
 msgid ""
@@ -92,16 +101,21 @@ msgid ""
 "``add`` only starts executing after the first is complete and ``c`` is "
 "available."
 msgstr ""
+"在上述情況下，第二個 ``add`` 在 GPU 上執行，但它相依於第一個在 CPU 上執行的 "
+"``add`` 的輸出。MLX 會自動在兩個串流間插入相依性，讓第二個 ``add`` 只有在第一"
+"個完成且 ``c`` 可用後才開始執行。"
 
 #: ../../../src/usage/unified_memory.rst:51
 msgid "A Simple Example"
-msgstr ""
+msgstr "簡單範例"
 
 #: ../../../src/usage/unified_memory.rst:53
 msgid ""
 "Here is a more interesting (albeit slightly contrived example) of how "
 "unified memory can be helpful. Suppose we have the following computation:"
 msgstr ""
+"以下是更有趣（雖然稍微刻意）的例子，說明統一記憶體如何提供幫助。假設我們有以"
+"下計算："
 
 #: ../../../src/usage/unified_memory.rst:56
 msgid ""
@@ -119,7 +133,7 @@ msgstr ""
 
 #: ../../../src/usage/unified_memory.rst:64
 msgid "which we want to run with the following arguments:"
-msgstr ""
+msgstr "我們希望使用下列參數執行："
 
 #: ../../../src/usage/unified_memory.rst:66
 msgid ""
@@ -136,6 +150,8 @@ msgid ""
 "CPU, since they are very small and would probably be overhead bound on the "
 "GPU."
 msgstr ""
+"第一個 ``matmul`` 運算計算密度高，適合在 GPU 上執行。第二段運算序列非常小，"
+"在 GPU 上可能受限於開銷，因此更適合在 CPU 上執行。"
 
 #: ../../../src/usage/unified_memory.rst:75
 msgid ""
@@ -144,3 +160,5 @@ msgid ""
 "is only about 1.4 milliseconds, about twice as fast. These times were "
 "measured on an M1 Max."
 msgstr ""
+"如果完全在 GPU 上計時，耗時為 2.8 毫秒。但若以 ``d1=mx.gpu``、``d2=mx.cpu`` "
+"執行，時間約為 1.4 毫秒，快了約兩倍。這些數據是在 M1 Max 上測得。"

@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../../src/python/tree_utils.rst:4
 msgid "Tree Utils"
-msgstr ""
+msgstr "樹狀工具"
 
 #: ../../../src/python/tree_utils.rst:6
 msgid ""
@@ -29,10 +29,13 @@ msgid ""
 "``tuple`` but they can usually process objects that inherit from any of "
 "these."
 msgstr ""
+"在 MLX 中，我們將 Python 樹狀結構視為由字典、列表與元組任意巢狀組成、且沒有循"
+"環的集合。本模組中回傳 Python 樹狀結構的函式會使用預設的 ``dict``、``list`` "
+"與 ``tuple``，但通常也能處理繼承自這些型別的物件。"
 
 #: ../../../src/python/tree_utils.rst:12
 msgid "Dictionaries should have keys that are valid python identifiers."
-msgstr ""
+msgstr "字典的鍵應是有效的 Python 識別字。"
 
 #: ../../../src/python/tree_utils.rst:22:<autosummary>:1
 msgid ""
@@ -42,7 +45,7 @@ msgstr ""
 
 #: ../../../src/python/tree_utils.rst:22:<autosummary>:1
 msgid "Flattens a Python tree to a list of key, value tuples."
-msgstr ""
+msgstr "將 Python 樹狀結構扁平化為鍵、值元組的列表。"
 
 #: ../../../src/python/tree_utils.rst:22:<autosummary>:1
 msgid ":py:obj:`tree_unflatten <mlx.utils.tree_unflatten>`\\ \\(tree\\)"
@@ -50,7 +53,7 @@ msgstr ""
 
 #: ../../../src/python/tree_utils.rst:22:<autosummary>:1
 msgid "Recreate a Python tree from its flat representation."
-msgstr ""
+msgstr "從扁平表示重建 Python 樹狀結構。"
 
 #: ../../../src/python/tree_utils.rst:22:<autosummary>:1
 msgid ""
@@ -62,7 +65,7 @@ msgstr ""
 msgid ""
 "Applies ``fn`` to the leaves of the Python tree ``tree`` and returns a new "
 "collection with the results."
-msgstr ""
+msgstr "將 ``fn`` 套用到 Python 樹 ``tree`` 的葉節點，並回傳包含結果的新集合。"
 
 #: ../../../src/python/tree_utils.rst:22:<autosummary>:1
 msgid ""
@@ -75,3 +78,4 @@ msgid ""
 "Applies ``fn`` to the path and leaves of the Python tree ``tree`` and "
 "returns a new collection with the results."
 msgstr ""
+"將 ``fn`` 套用到 Python 樹 ``tree`` 的路徑與葉節點，並回傳包含結果的新集合。"
