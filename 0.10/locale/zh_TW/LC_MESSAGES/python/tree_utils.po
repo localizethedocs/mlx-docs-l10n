@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../../src/python/tree_utils.rst:4
 msgid "Tree Utils"
-msgstr ""
+msgstr "樹狀工具"
 
 #: ../../../src/python/tree_utils.rst:6
 msgid ""
@@ -29,10 +29,13 @@ msgid ""
 "``tuple`` but they can usually process objects that inherit from any of "
 "these."
 msgstr ""
+"在 MLX 中，我們將 Python 樹狀結構視為由字典、列表與元組任意巢狀組成、且沒有循"
+"環的集合。本模組中回傳 Python 樹狀結構的函式會使用預設的 ``dict``、``list`` "
+"與 ``tuple``，但通常也能處理繼承自這些型別的物件。"
 
 #: ../../../src/python/tree_utils.rst:12
 msgid "Dictionaries should have keys that are valid python identifiers."
-msgstr ""
+msgstr "字典的鍵應是有效的 Python 識別字。"
 
 #: ../../../src/python/tree_utils.rst:21:<autosummary>:1
 msgid ""
