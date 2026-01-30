@@ -23,7 +23,7 @@ msgstr ""
 
 #: ../../../docstring of mlx.core.linalg.lu_factor:1
 msgid "Computes a compact representation of the LU factorization."
-msgstr ""
+msgstr "計算 LU 分解的緊湊表示。"
 
 #: ../../../src/python/_autosummary/mlx.core.linalg.lu_factor.rst:0
 msgid "Parameters"

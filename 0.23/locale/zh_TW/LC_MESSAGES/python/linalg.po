@@ -27,7 +27,7 @@ msgstr ""
 
 #: ../../../src/python/linalg.rst:24:<autosummary>:1
 msgid "Compute the inverse of a square matrix."
-msgstr ""
+msgstr "計算方陣的反矩陣。"
 
 #: ../../../src/python/linalg.rst:24:<autosummary>:1
 msgid ""
@@ -37,7 +37,7 @@ msgstr ""
 
 #: ../../../src/python/linalg.rst:24:<autosummary>:1
 msgid "Compute the inverse of a triangular square matrix."
-msgstr ""
+msgstr "計算三角方陣的反矩陣。"
 
 #: ../../../src/python/linalg.rst:24:<autosummary>:1
 msgid ""
@@ -47,7 +47,7 @@ msgstr ""
 
 #: ../../../src/python/linalg.rst:24:<autosummary>:1
 msgid "Matrix or vector norm."
-msgstr ""
+msgstr "矩陣或向量範數。"
 
 #: ../../../src/python/linalg.rst:24:<autosummary>:1
 msgid ""
@@ -59,7 +59,7 @@ msgstr ""
 msgid ""
 "Compute the Cholesky decomposition of a real symmetric positive semi-"
 "definite matrix."
-msgstr ""
+msgstr "計算實對稱半正定矩陣的 Cholesky 分解。"
 
 #: ../../../src/python/linalg.rst:24:<autosummary>:1
 msgid ""
@@ -71,7 +71,7 @@ msgstr ""
 msgid ""
 "Compute the inverse of a real symmetric positive semi-definite matrix using "
 "it's Cholesky decomposition."
-msgstr ""
+msgstr "使用 Cholesky 分解計算實對稱半正定矩陣的反矩陣。"
 
 #: ../../../src/python/linalg.rst:24:<autosummary>:1
 msgid ""
@@ -81,7 +81,7 @@ msgstr ""
 
 #: ../../../src/python/linalg.rst:24:<autosummary>:1
 msgid "Compute the cross product of two arrays along a specified axis."
-msgstr ""
+msgstr "沿指定軸計算兩個陣列的叉積。"
 
 #: ../../../src/python/linalg.rst:24:<autosummary>:1
 msgid ":py:obj:`qr <mlx.core.linalg.qr>`\\ \\(a\\, \\*\\[\\, stream\\]\\)"
@@ -89,7 +89,7 @@ msgstr ""
 
 #: ../../../src/python/linalg.rst:24:<autosummary>:1
 msgid "The QR factorization of the input matrix."
-msgstr ""
+msgstr "輸入矩陣的 QR 分解。"
 
 #: ../../../src/python/linalg.rst:24:<autosummary>:1
 msgid ""
@@ -98,7 +98,7 @@ msgstr ""
 
 #: ../../../src/python/linalg.rst:24:<autosummary>:1
 msgid "The Singular Value Decomposition (SVD) of the input matrix."
-msgstr ""
+msgstr "輸入矩陣的奇異值分解（SVD）。"
 
 #: ../../../src/python/linalg.rst:24:<autosummary>:1
 msgid ""
@@ -109,7 +109,7 @@ msgstr ""
 #: ../../../src/python/linalg.rst:24:<autosummary>:1
 msgid ""
 "Compute the eigenvalues of a complex Hermitian or real symmetric matrix."
-msgstr ""
+msgstr "計算複數 Hermitian 或實對稱矩陣的特徵值。"
 
 #: ../../../src/python/linalg.rst:24:<autosummary>:1
 msgid ":py:obj:`eigh <mlx.core.linalg.eigh>`\\ \\(a\\[\\, UPLO\\, stream\\]\\)"
@@ -119,7 +119,7 @@ msgstr ""
 msgid ""
 "Compute the eigenvalues and eigenvectors of a complex Hermitian or real "
 "symmetric matrix."
-msgstr ""
+msgstr "計算複數 Hermitian 或實對稱矩陣的特徵值與特徵向量。"
 
 #: ../../../src/python/linalg.rst:24:<autosummary>:1
 msgid ":py:obj:`lu <mlx.core.linalg.lu>`\\ \\(a\\, \\*\\[\\, stream\\]\\)"
@@ -127,7 +127,7 @@ msgstr ""
 
 #: ../../../src/python/linalg.rst:24:<autosummary>:1
 msgid "Compute the LU factorization of the given matrix ``A``."
-msgstr ""
+msgstr "計算給定矩陣 ``A`` 的 LU 分解。"
 
 #: ../../../src/python/linalg.rst:24:<autosummary>:1
 msgid ""
@@ -137,7 +137,7 @@ msgstr ""
 
 #: ../../../src/python/linalg.rst:24:<autosummary>:1
 msgid "Computes a compact representation of the LU factorization."
-msgstr ""
+msgstr "計算 LU 分解的緊湊表示。"
 
 #: ../../../src/python/linalg.rst:24:<autosummary>:1
 msgid ""
@@ -146,7 +146,7 @@ msgstr ""
 
 #: ../../../src/python/linalg.rst:24:<autosummary>:1
 msgid "Compute the solution to a system of linear equations ``AX = B``."
-msgstr ""
+msgstr "計算線性方程組 ``AX = B`` 的解。"
 
 #: ../../../src/python/linalg.rst:24:<autosummary>:1
 msgid ""
@@ -157,4 +157,4 @@ msgstr ""
 #: ../../../src/python/linalg.rst:24:<autosummary>:1
 msgid ""
 "Computes the solution of a triangular system of linear equations ``AX = B``."
-msgstr ""
+msgstr "計算三角線性方程組 ``AX = B`` 的解。"
