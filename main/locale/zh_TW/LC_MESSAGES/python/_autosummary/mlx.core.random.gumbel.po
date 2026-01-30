@@ -23,7 +23,7 @@ msgstr ""
 
 #: ../../../docstring of mlx.core.random.gumbel:1
 msgid "Sample from the standard Gumbel distribution."
-msgstr ""
+msgstr "從標準 Gumbel 分佈取樣。"
 
 #: ../../../docstring of mlx.core.random.gumbel:3
 msgid ""

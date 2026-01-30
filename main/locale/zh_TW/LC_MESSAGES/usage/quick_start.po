@@ -19,15 +19,15 @@ msgstr ""
 
 #: ../../../src/usage/quick_start.rst:2
 msgid "Quick Start Guide"
-msgstr ""
+msgstr "快速開始指南"
 
 #: ../../../src/usage/quick_start.rst:6
 msgid "Basics"
-msgstr ""
+msgstr "基礎"
 
 #: ../../../src/usage/quick_start.rst:10
 msgid "Import ``mlx.core`` and make an :class:`array`:"
-msgstr ""
+msgstr "匯入 ``mlx.core`` 並建立 :class:`array`："
 
 #: ../../../src/usage/quick_start.rst:12
 msgid ""
@@ -51,6 +51,10 @@ msgid ""
 "converting an array from :class:`array` to :class:`numpy.ndarray` all "
 "automatically evaluate the array."
 msgstr ""
+"MLX 的運算是惰性的。MLX 運算的輸出只有在需要時才會被計算。若要強制計算陣列，"
+"請使用 :func:`eval`。在某些情況下陣列會自動被計算，例如使用 :meth:`array."
+"item` 檢視純量、列印陣列，或將 :class:`array` 轉換為 :class:`numpy.ndarray`，"
+"都會自動計算該陣列。"
 
 #: ../../../src/usage/quick_start.rst:31
 msgid ""
@@ -67,11 +71,11 @@ msgstr ""
 
 #: ../../../src/usage/quick_start.rst:44
 msgid "See the page on :ref:`Lazy Evaluation <lazy eval>` for more details."
-msgstr ""
+msgstr "更多細節請參閱 :ref:`Lazy Evaluation <lazy eval>` 頁面。"
 
 #: ../../../src/usage/quick_start.rst:47
 msgid "Function and Graph Transformations"
-msgstr ""
+msgstr "函式與圖形轉換"
 
 #: ../../../src/usage/quick_start.rst:49
 msgid ""
@@ -79,6 +83,8 @@ msgid ""
 "`vmap`. Transformations can be composed arbitrarily. For example "
 "``grad(vmap(grad(fn)))`` (or any other composition) is allowed."
 msgstr ""
+"MLX 具備標準的函式轉換，例如 :func:`grad` 與 :func:`vmap`。轉換可以任意組合，"
+"例如允許 ``grad(vmap(grad(fn)))``（或其他任意組合）。"
 
 #: ../../../src/usage/quick_start.rst:53
 msgid ""
@@ -96,9 +102,13 @@ msgid ""
 "Other gradient transformations include :func:`vjp` for vector-Jacobian "
 "products and :func:`jvp` for Jacobian-vector products."
 msgstr ""
+"其他梯度轉換包含用於向量-雅可比乘積的 :func:`vjp`，以及用於雅可比-向量乘積"
+"的 :func:`jvp`。"
 
 #: ../../../src/usage/quick_start.rst:66
 msgid ""
 "Use :func:`value_and_grad` to efficiently compute both a function's output "
 "and gradient with respect to the function's input."
 msgstr ""
+"使用 :func:`value_and_grad` 可有效率地同時計算函式的輸出，以及相對於輸入的梯"
+"度。"

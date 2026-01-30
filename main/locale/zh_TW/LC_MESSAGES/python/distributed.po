@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../../src/python/distributed.rst:6
 msgid "Distributed Communication"
-msgstr ""
+msgstr "分散式通訊"
 
 #: ../../../src/python/distributed.rst:8
 msgid ""

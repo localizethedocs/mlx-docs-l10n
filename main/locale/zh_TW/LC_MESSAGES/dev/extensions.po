@@ -989,7 +989,7 @@ msgstr ""
 
 #: ../../../src/dev/extensions.rst:720
 msgid "Usage"
-msgstr ""
+msgstr "使用方式"
 
 #: ../../../src/dev/extensions.rst:722
 msgid ""

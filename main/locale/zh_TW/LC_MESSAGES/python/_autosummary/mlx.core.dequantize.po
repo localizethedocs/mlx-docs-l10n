@@ -81,7 +81,7 @@ msgstr ""
 
 #: ../../../docstring of mlx.core.dequantize:30
 msgid "Notes"
-msgstr ""
+msgstr "備註"
 
 #: ../../../docstring of mlx.core.dequantize:31
 msgid ""
