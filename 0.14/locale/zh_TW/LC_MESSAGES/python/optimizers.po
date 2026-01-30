@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../../src/python/optimizers.rst:6
 msgid "Optimizers"
-msgstr ""
+msgstr "最佳化器"
 
 #: ../../../src/python/optimizers.rst:8
 msgid ""
@@ -29,6 +29,9 @@ msgid ""
 "gradients and subsequently calling :func:`mlx.core.eval` to evaluate both "
 "the model's parameters and the **optimizer state**."
 msgstr ""
+"MLX 的最佳化器既可與 :mod:`mlx.nn` 搭配使用，也可用於純 :mod:`mlx.core` 函"
+"式。典型作法是呼叫 :meth:`Optimizer.update` 依據損失梯度更新模型參數，接著呼"
+"叫 :func:`mlx.core.eval` 同時計算模型參數與 **最佳化器狀態**。"
 
 #: ../../../src/python/optimizers.rst:14
 msgid ""
@@ -60,4 +63,4 @@ msgstr ""
 
 #: ../../../src/python/optimizers.rst:43:<autosummary>:1
 msgid "Clips the global norm of the gradients."
-msgstr ""
+msgstr "裁剪梯度的全域範數。"

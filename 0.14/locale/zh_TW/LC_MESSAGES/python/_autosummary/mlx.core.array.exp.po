@@ -23,4 +23,4 @@ msgstr ""
 
 #: ../../../docstring of mlx.core.array.exp:1
 msgid "See :func:`exp`."
-msgstr ""
+msgstr "請參見 :func:`exp`。"
