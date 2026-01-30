@@ -24,7 +24,7 @@ msgstr ""
 #: ../../../docstring of
 #: mlx.core.pybind11_detail_function_record_v1_system_libstdcpp_gxx_abi_1xxx_use_cxx11_abi_1.grad:1
 msgid "Returns a function which computes the gradient of ``fun``."
-msgstr ""
+msgstr "回傳一個計算 ``fun`` 梯度的函式。"
 
 #: ../../../src/python/_autosummary/mlx.core.grad.rst:0
 msgid "Parameters"

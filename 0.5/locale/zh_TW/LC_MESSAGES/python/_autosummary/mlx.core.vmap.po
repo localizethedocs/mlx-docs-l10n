@@ -24,7 +24,7 @@ msgstr ""
 #: ../../../docstring of
 #: mlx.core.pybind11_detail_function_record_v1_system_libstdcpp_gxx_abi_1xxx_use_cxx11_abi_1.vmap:1
 msgid "Returns a vectorized version of ``fun``."
-msgstr ""
+msgstr "回傳 ``fun`` 的向量化版本。"
 
 #: ../../../src/python/_autosummary/mlx.core.vmap.rst:0
 msgid "Parameters"

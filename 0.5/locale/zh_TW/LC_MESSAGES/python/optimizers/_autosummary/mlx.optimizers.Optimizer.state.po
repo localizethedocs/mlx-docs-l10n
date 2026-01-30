@@ -24,4 +24,4 @@ msgstr ""
 #: ../../../../../../.conda/lib/python3.12/site-packages/mlx/optimizers/optimizers.py:docstring
 #: of mlx.optimizers.Optimizer.state:1
 msgid "The optimizer's state dictionary."
-msgstr ""
+msgstr "最佳化器的狀態字典。"

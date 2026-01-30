@@ -24,7 +24,7 @@ msgstr ""
 #: ../../../docstring of
 #: mlx.core.fft.pybind11_detail_function_record_v1_system_libstdcpp_gxx_abi_1xxx_use_cxx11_abi_1.irfft2:1
 msgid "The inverse of :func:`rfft2`."
-msgstr ""
+msgstr ":func:`rfft2` 的反運算。"
 
 #: ../../../docstring of
 #: mlx.core.fft.pybind11_detail_function_record_v1_system_libstdcpp_gxx_abi_1xxx_use_cxx11_abi_1.irfft2:3

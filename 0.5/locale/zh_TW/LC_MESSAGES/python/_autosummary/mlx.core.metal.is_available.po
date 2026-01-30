@@ -24,4 +24,4 @@ msgstr ""
 #: ../../../docstring of
 #: mlx.core.metal.pybind11_detail_function_record_v1_system_libstdcpp_gxx_abi_1xxx_use_cxx11_abi_1.is_available:1
 msgid "Check if the Metal back-end is available."
-msgstr ""
+msgstr "檢查 Metal 後端是否可用。"
