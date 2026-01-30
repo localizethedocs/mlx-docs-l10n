@@ -26,11 +26,11 @@ msgstr ""
 msgid ""
 "Apply the gradients to the parameters of the model and update the model with "
 "the new parameters."
-msgstr ""
+msgstr "將梯度套用到模型參數，並用新參數更新模型。"
 
 #: ../../../src/python/_autosummary/mlx.optimizers.Optimizer.update.rst:0
 msgid "Parameters"
-msgstr ""
+msgstr "參數"
 
 #: ../../../../../../.conda/lib/python3.12/site-packages/mlx/optimizers.py:docstring
 #: of mlx.optimizers.Optimizer.update:4

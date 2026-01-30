@@ -3063,11 +3063,11 @@ msgstr ""
 
 #: domains/std/__init__.py:175
 msgid "Type"
-msgstr ""
+msgstr "型別"
 
 #: domains/std/__init__.py:185
 msgid "Default"
-msgstr ""
+msgstr "預設"
 
 #: domains/std/__init__.py:242
 #, python-format
@@ -3633,7 +3633,7 @@ msgstr "範例"
 
 #: ext/napoleon/docstring.py:956
 msgid "Notes"
-msgstr ""
+msgstr "備註"
 
 #: ext/napoleon/docstring.py:965
 msgid "Other Parameters"

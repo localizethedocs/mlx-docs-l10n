@@ -25,7 +25,7 @@ msgstr ""
 #: of mlx.optimizers.Optimizer.apply_gradients:1
 msgid ""
 "Apply the gradients to the parameters and return the updated parameters."
-msgstr ""
+msgstr "將梯度套用到參數並回傳更新後的參數。"
 
 #: ../../../../../../.conda/lib/python3.12/site-packages/mlx/optimizers.py:docstring
 #: of mlx.optimizers.Optimizer.apply_gradients:3
@@ -36,7 +36,7 @@ msgstr ""
 
 #: ../../../src/python/_autosummary/mlx.optimizers.Optimizer.apply_gradients.rst:0
 msgid "Parameters"
-msgstr ""
+msgstr "參數"
 
 #: ../../../../../../.conda/lib/python3.12/site-packages/mlx/optimizers.py:docstring
 #: of mlx.optimizers.Optimizer.apply_gradients:7
