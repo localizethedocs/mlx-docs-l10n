@@ -24,7 +24,7 @@ msgstr ""
 #: ../../../docstring of mlx.core.distributed.recv_like:1
 msgid ""
 "Recv an array with shape and type like ``x`` from process with rank ``src``."
-msgstr ""
+msgstr "從排名為 ``src`` 的程序接收形狀與型別如 ``x`` 的陣列。"
 
 #: ../../../docstring of mlx.core.distributed.recv_like:4
 msgid ""

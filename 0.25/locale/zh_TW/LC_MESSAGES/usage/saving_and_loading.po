@@ -19,11 +19,11 @@ msgstr ""
 
 #: ../../../src/usage/saving_and_loading.rst:4
 msgid "Saving and Loading Arrays"
-msgstr ""
+msgstr "儲存與載入陣列"
 
 #: ../../../src/usage/saving_and_loading.rst:8
 msgid "MLX supports multiple array serialization formats."
-msgstr ""
+msgstr "MLX 支援多種陣列序列化格式。"
 
 #: ../../../src/usage/saving_and_loading.rst:10
 msgid "Serialization Formats"
@@ -31,19 +31,19 @@ msgstr "序列化格式"
 
 #: ../../../src/usage/saving_and_loading.rst:14
 msgid "Format"
-msgstr ""
+msgstr "格式"
 
 #: ../../../src/usage/saving_and_loading.rst:15
 msgid "Extension"
-msgstr ""
+msgstr "副檔名"
 
 #: ../../../src/usage/saving_and_loading.rst:16
 msgid "Function"
-msgstr ""
+msgstr "函式"
 
 #: ../../../src/usage/saving_and_loading.rst:17
 msgid "Notes"
-msgstr ""
+msgstr "備註"
 
 #: ../../../src/usage/saving_and_loading.rst:18
 msgid "NumPy"
@@ -59,11 +59,11 @@ msgstr ""
 
 #: ../../../src/usage/saving_and_loading.rst:21
 msgid "Single arrays only"
-msgstr ""
+msgstr "僅支援單一陣列"
 
 #: ../../../src/usage/saving_and_loading.rst:22
 msgid "NumPy archive"
-msgstr ""
+msgstr "NumPy 封存"
 
 #: ../../../src/usage/saving_and_loading.rst:23
 msgid "``.npz``"
@@ -71,13 +71,13 @@ msgstr ""
 
 #: ../../../src/usage/saving_and_loading.rst:24
 msgid ":func:`savez` and :func:`savez_compressed`"
-msgstr ""
+msgstr ":func:`savez` 與 :func:`savez_compressed`"
 
 #: ../../../src/usage/saving_and_loading.rst:25
 #: ../../../src/usage/saving_and_loading.rst:29
 #: ../../../src/usage/saving_and_loading.rst:33
 msgid "Multiple arrays"
-msgstr ""
+msgstr "多個陣列"
 
 #: ../../../src/usage/saving_and_loading.rst:26
 msgid "Safetensors"
@@ -109,10 +109,12 @@ msgid ""
 "formats. It determines the format from the extensions. The output of :func:"
 "`load` depends on the format."
 msgstr ""
+":func:`load` 函式可載入任何支援的序列化格式。它會依副檔名判斷格式。:func:"
+"`load` 的輸出會依格式而定。"
 
 #: ../../../src/usage/saving_and_loading.rst:39
 msgid "Here's an example of saving a single array to a file:"
-msgstr ""
+msgstr "以下是將單一陣列儲存到檔案的範例："
 
 #: ../../../src/usage/saving_and_loading.rst:41
 msgid ""
@@ -126,6 +128,8 @@ msgid ""
 "extension is automatically added). Including the extension is optional; if "
 "it is missing it will be added. You can load the array with:"
 msgstr ""
+"陣列 ``a`` 會儲存為 ``array.npy``（注意副檔名會自動加上）。是否包含副檔名是可"
+"選的；若省略就會自動加上。你可以用以下方式載入陣列："
 
 #: ../../../src/usage/saving_and_loading.rst:50
 msgid ""
@@ -135,7 +139,7 @@ msgstr ""
 
 #: ../../../src/usage/saving_and_loading.rst:55
 msgid "Here's an example of saving several arrays to a single file:"
-msgstr ""
+msgstr "以下是將多個陣列儲存到單一檔案的範例："
 
 #: ../../../src/usage/saving_and_loading.rst:57
 msgid ""
@@ -150,6 +154,8 @@ msgid ""
 "arrays as arguments. If the keywords are missing, then default names will be "
 "provided. This can be loaded with:"
 msgstr ""
+"為了與 :func:`numpy.savez` 相容，MLX 的 :func:`savez` 以陣列作為引數。若未提"
+"供關鍵字，會使用預設名稱。可透過以下方式載入："
 
 #: ../../../src/usage/saving_and_loading.rst:67
 msgid ""
@@ -159,13 +165,15 @@ msgstr ""
 
 #: ../../../src/usage/saving_and_loading.rst:72
 msgid "In this case :func:`load` returns a dictionary of names to arrays."
-msgstr ""
+msgstr "在此情況下 :func:`load` 會回傳名稱到陣列的字典。"
 
 #: ../../../src/usage/saving_and_loading.rst:74
 msgid ""
 "The functions :func:`save_safetensors` and :func:`save_gguf` are similar to :"
 "func:`savez`, but they take as input a :obj:`dict` of string names to arrays:"
 msgstr ""
+":func:`save_safetensors` 與 :func:`save_gguf` 類似於 :func:`savez`，但它們的"
+"輸入是字串名稱到陣列的 :obj:`dict`："
 
 #: ../../../src/usage/saving_and_loading.rst:77
 msgid ""

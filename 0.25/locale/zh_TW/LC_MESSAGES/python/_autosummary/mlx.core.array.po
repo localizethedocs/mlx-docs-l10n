@@ -23,7 +23,7 @@ msgstr ""
 
 #: ../../../docstring of mlx.core.array:1
 msgid "An N-dimensional array object."
-msgstr ""
+msgstr "N 維陣列物件。"
 
 #: ../../../src/python/_autosummary/mlx.core.array.rst:13
 msgid "Methods"
@@ -41,7 +41,7 @@ msgstr ""
 
 #: ../../../src/python/_autosummary/mlx.core.array.rst:65:<autosummary>:1
 msgid "See :func:`abs`."
-msgstr ""
+msgstr "請參見 :func:`abs`。"
 
 #: ../../../src/python/_autosummary/mlx.core.array.rst:65:<autosummary>:1
 msgid ""
@@ -51,7 +51,7 @@ msgstr ""
 
 #: ../../../src/python/_autosummary/mlx.core.array.rst:65:<autosummary>:1
 msgid "See :func:`all`."
-msgstr ""
+msgstr "請參見 :func:`all`。"
 
 #: ../../../src/python/_autosummary/mlx.core.array.rst:65:<autosummary>:1
 msgid ""
@@ -61,7 +61,7 @@ msgstr ""
 
 #: ../../../src/python/_autosummary/mlx.core.array.rst:65:<autosummary>:1
 msgid "See :func:`any`."
-msgstr ""
+msgstr "請參見 :func:`any`。"
 
 #: ../../../src/python/_autosummary/mlx.core.array.rst:65:<autosummary>:1
 msgid ""
@@ -71,7 +71,7 @@ msgstr ""
 
 #: ../../../src/python/_autosummary/mlx.core.array.rst:65:<autosummary>:1
 msgid "See :func:`argmax`."
-msgstr ""
+msgstr "請參見 :func:`argmax`。"
 
 #: ../../../src/python/_autosummary/mlx.core.array.rst:65:<autosummary>:1
 msgid ""
@@ -81,7 +81,7 @@ msgstr ""
 
 #: ../../../src/python/_autosummary/mlx.core.array.rst:65:<autosummary>:1
 msgid "See :func:`argmin`."
-msgstr ""
+msgstr "請參見 :func:`argmin`。"
 
 #: ../../../src/python/_autosummary/mlx.core.array.rst:65:<autosummary>:1
 msgid ""
@@ -91,7 +91,7 @@ msgstr ""
 
 #: ../../../src/python/_autosummary/mlx.core.array.rst:65:<autosummary>:1
 msgid "Cast the array to a specified type."
-msgstr ""
+msgstr "將陣列轉型為指定型別。"
 
 #: ../../../src/python/_autosummary/mlx.core.array.rst:65:<autosummary>:1
 msgid ""
@@ -100,7 +100,7 @@ msgstr ""
 
 #: ../../../src/python/_autosummary/mlx.core.array.rst:65:<autosummary>:1
 msgid "See :func:`conj`."
-msgstr ""
+msgstr "請參見 :func:`conj`。"
 
 #: ../../../src/python/_autosummary/mlx.core.array.rst:65:<autosummary>:1
 msgid ":py:obj:`cos <mlx.core.array.cos>`\\ \\(self\\, \\*\\[\\, stream\\]\\)"
@@ -108,7 +108,7 @@ msgstr ""
 
 #: ../../../src/python/_autosummary/mlx.core.array.rst:65:<autosummary>:1
 msgid "See :func:`cos`."
-msgstr ""
+msgstr "請參見 :func:`cos`。"
 
 #: ../../../src/python/_autosummary/mlx.core.array.rst:65:<autosummary>:1
 msgid ""
@@ -118,7 +118,7 @@ msgstr ""
 
 #: ../../../src/python/_autosummary/mlx.core.array.rst:65:<autosummary>:1
 msgid "See :func:`cummax`."
-msgstr ""
+msgstr "請參見 :func:`cummax`。"
 
 #: ../../../src/python/_autosummary/mlx.core.array.rst:65:<autosummary>:1
 msgid ""
@@ -128,7 +128,7 @@ msgstr ""
 
 #: ../../../src/python/_autosummary/mlx.core.array.rst:65:<autosummary>:1
 msgid "See :func:`cummin`."
-msgstr ""
+msgstr "請參見 :func:`cummin`。"
 
 #: ../../../src/python/_autosummary/mlx.core.array.rst:65:<autosummary>:1
 msgid ""
@@ -138,7 +138,7 @@ msgstr ""
 
 #: ../../../src/python/_autosummary/mlx.core.array.rst:65:<autosummary>:1
 msgid "See :func:`cumprod`."
-msgstr ""
+msgstr "請參見 :func:`cumprod`。"
 
 #: ../../../src/python/_autosummary/mlx.core.array.rst:65:<autosummary>:1
 msgid ""
@@ -148,7 +148,7 @@ msgstr ""
 
 #: ../../../src/python/_autosummary/mlx.core.array.rst:65:<autosummary>:1
 msgid "See :func:`cumsum`."
-msgstr ""
+msgstr "請參見 :func:`cumsum`。"
 
 #: ../../../src/python/_autosummary/mlx.core.array.rst:65:<autosummary>:1
 msgid ":py:obj:`diag <mlx.core.array.diag>`\\ \\(self\\[\\, k\\, stream\\]\\)"
@@ -156,7 +156,7 @@ msgstr ""
 
 #: ../../../src/python/_autosummary/mlx.core.array.rst:65:<autosummary>:1
 msgid "Extract a diagonal or construct a diagonal matrix."
-msgstr ""
+msgstr "擷取對角線或建構對角矩陣。"
 
 #: ../../../src/python/_autosummary/mlx.core.array.rst:65:<autosummary>:1
 msgid ""
@@ -166,7 +166,7 @@ msgstr ""
 
 #: ../../../src/python/_autosummary/mlx.core.array.rst:65:<autosummary>:1
 msgid "See :func:`diagonal`."
-msgstr ""
+msgstr "請參見 :func:`diagonal`。"
 
 #: ../../../src/python/_autosummary/mlx.core.array.rst:65:<autosummary>:1
 msgid ":py:obj:`exp <mlx.core.array.exp>`\\ \\(self\\, \\*\\[\\, stream\\]\\)"
@@ -174,7 +174,7 @@ msgstr ""
 
 #: ../../../src/python/_autosummary/mlx.core.array.rst:65:<autosummary>:1
 msgid "See :func:`exp`."
-msgstr ""
+msgstr "請參見 :func:`exp`。"
 
 #: ../../../src/python/_autosummary/mlx.core.array.rst:65:<autosummary>:1
 msgid ""
@@ -184,7 +184,7 @@ msgstr ""
 
 #: ../../../src/python/_autosummary/mlx.core.array.rst:65:<autosummary>:1
 msgid "See :func:`flatten`."
-msgstr ""
+msgstr "請參見 :func:`flatten`。"
 
 #: ../../../src/python/_autosummary/mlx.core.array.rst:65:<autosummary>:1
 msgid ":py:obj:`item <mlx.core.array.item>`\\ \\(self\\)"
@@ -200,7 +200,7 @@ msgstr ""
 
 #: ../../../src/python/_autosummary/mlx.core.array.rst:65:<autosummary>:1
 msgid "See :func:`log`."
-msgstr ""
+msgstr "請參見 :func:`log`。"
 
 #: ../../../src/python/_autosummary/mlx.core.array.rst:65:<autosummary>:1
 msgid ""
@@ -209,7 +209,7 @@ msgstr ""
 
 #: ../../../src/python/_autosummary/mlx.core.array.rst:65:<autosummary>:1
 msgid "See :func:`log10`."
-msgstr ""
+msgstr "請參見 :func:`log10`。"
 
 #: ../../../src/python/_autosummary/mlx.core.array.rst:65:<autosummary>:1
 msgid ""
@@ -227,7 +227,7 @@ msgstr ""
 
 #: ../../../src/python/_autosummary/mlx.core.array.rst:65:<autosummary>:1
 msgid "See :func:`log2`."
-msgstr ""
+msgstr "請參見 :func:`log2`。"
 
 #: ../../../src/python/_autosummary/mlx.core.array.rst:65:<autosummary>:1
 msgid ""
@@ -237,7 +237,7 @@ msgstr ""
 
 #: ../../../src/python/_autosummary/mlx.core.array.rst:65:<autosummary>:1
 msgid "See :func:`logcumsumexp`."
-msgstr ""
+msgstr "請參見 :func:`logcumsumexp`。"
 
 #: ../../../src/python/_autosummary/mlx.core.array.rst:65:<autosummary>:1
 msgid ""
@@ -257,7 +257,7 @@ msgstr ""
 
 #: ../../../src/python/_autosummary/mlx.core.array.rst:65:<autosummary>:1
 msgid "See :func:`max`."
-msgstr ""
+msgstr "請參見 :func:`max`。"
 
 #: ../../../src/python/_autosummary/mlx.core.array.rst:65:<autosummary>:1
 msgid ""
@@ -277,7 +277,7 @@ msgstr ""
 
 #: ../../../src/python/_autosummary/mlx.core.array.rst:65:<autosummary>:1
 msgid "See :func:`min`."
-msgstr ""
+msgstr "請參見 :func:`min`。"
 
 #: ../../../src/python/_autosummary/mlx.core.array.rst:65:<autosummary>:1
 msgid ""
@@ -307,7 +307,7 @@ msgstr ""
 
 #: ../../../src/python/_autosummary/mlx.core.array.rst:65:<autosummary>:1
 msgid "See :func:`reciprocal`."
-msgstr ""
+msgstr "請參見 :func:`reciprocal`。"
 
 #: ../../../src/python/_autosummary/mlx.core.array.rst:65:<autosummary>:1
 msgid ""
@@ -329,7 +329,7 @@ msgstr ""
 
 #: ../../../src/python/_autosummary/mlx.core.array.rst:65:<autosummary>:1
 msgid "See :func:`round`."
-msgstr ""
+msgstr "請參見 :func:`round`。"
 
 #: ../../../src/python/_autosummary/mlx.core.array.rst:65:<autosummary>:1
 msgid ""
@@ -338,7 +338,7 @@ msgstr ""
 
 #: ../../../src/python/_autosummary/mlx.core.array.rst:65:<autosummary>:1
 msgid "See :func:`rsqrt`."
-msgstr ""
+msgstr "請參見 :func:`rsqrt`。"
 
 #: ../../../src/python/_autosummary/mlx.core.array.rst:65:<autosummary>:1
 msgid ":py:obj:`sin <mlx.core.array.sin>`\\ \\(self\\, \\*\\[\\, stream\\]\\)"
@@ -346,7 +346,7 @@ msgstr ""
 
 #: ../../../src/python/_autosummary/mlx.core.array.rst:65:<autosummary>:1
 msgid "See :func:`sin`."
-msgstr ""
+msgstr "請參見 :func:`sin`。"
 
 #: ../../../src/python/_autosummary/mlx.core.array.rst:65:<autosummary>:1
 msgid ""
@@ -365,7 +365,7 @@ msgstr ""
 
 #: ../../../src/python/_autosummary/mlx.core.array.rst:65:<autosummary>:1
 msgid "See :func:`sqrt`."
-msgstr ""
+msgstr "請參見 :func:`sqrt`。"
 
 #: ../../../src/python/_autosummary/mlx.core.array.rst:65:<autosummary>:1
 msgid ""
@@ -374,7 +374,7 @@ msgstr ""
 
 #: ../../../src/python/_autosummary/mlx.core.array.rst:65:<autosummary>:1
 msgid "See :func:`square`."
-msgstr ""
+msgstr "請參見 :func:`square`。"
 
 #: ../../../src/python/_autosummary/mlx.core.array.rst:65:<autosummary>:1
 msgid ""
@@ -384,7 +384,7 @@ msgstr ""
 
 #: ../../../src/python/_autosummary/mlx.core.array.rst:65:<autosummary>:1
 msgid "See :func:`squeeze`."
-msgstr ""
+msgstr "請參見 :func:`squeeze`。"
 
 #: ../../../src/python/_autosummary/mlx.core.array.rst:65:<autosummary>:1
 msgid ""
@@ -414,7 +414,7 @@ msgstr ""
 
 #: ../../../src/python/_autosummary/mlx.core.array.rst:65:<autosummary>:1
 msgid "See :func:`swapaxes`."
-msgstr ""
+msgstr "請參見 :func:`swapaxes`。"
 
 #: ../../../src/python/_autosummary/mlx.core.array.rst:65:<autosummary>:1
 msgid ":py:obj:`tolist <mlx.core.array.tolist>`\\ \\(self\\)"
@@ -444,7 +444,7 @@ msgstr ""
 
 #: ../../../src/python/_autosummary/mlx.core.array.rst:65:<autosummary>:1
 msgid "See :func:`var`."
-msgstr ""
+msgstr "請參見 :func:`var`。"
 
 #: ../../../src/python/_autosummary/mlx.core.array.rst:65:<autosummary>:1
 msgid ""
@@ -454,7 +454,7 @@ msgstr ""
 
 #: ../../../src/python/_autosummary/mlx.core.array.rst:65:<autosummary>:1
 msgid "See :func:`view`."
-msgstr ""
+msgstr "請參見 :func:`view`。"
 
 #: ../../../src/python/_autosummary/mlx.core.array.rst:67
 msgid "Attributes"
@@ -466,7 +466,7 @@ msgstr ""
 
 #: ../../../src/python/_autosummary/mlx.core.array.rst:77:<autosummary>:1
 msgid "Equivalent to calling ``self.transpose()`` with no arguments."
-msgstr ""
+msgstr "等同於呼叫 ``self.transpose()`` 且不帶參數。"
 
 #: ../../../src/python/_autosummary/mlx.core.array.rst:77:<autosummary>:1
 msgid ":py:obj:`at <mlx.core.array.at>`\\"
@@ -474,7 +474,7 @@ msgstr ""
 
 #: ../../../src/python/_autosummary/mlx.core.array.rst:77:<autosummary>:1
 msgid "Used to apply updates at the given indices."
-msgstr ""
+msgstr "用於在指定索引處套用更新。"
 
 #: ../../../src/python/_autosummary/mlx.core.array.rst:77:<autosummary>:1
 msgid ":py:obj:`dtype <mlx.core.array.dtype>`\\"
@@ -482,7 +482,7 @@ msgstr ""
 
 #: ../../../src/python/_autosummary/mlx.core.array.rst:77:<autosummary>:1
 msgid "The array's :class:`Dtype`."
-msgstr ""
+msgstr "陣列的 :class:`Dtype`。"
 
 #: ../../../src/python/_autosummary/mlx.core.array.rst:77:<autosummary>:1
 msgid ":py:obj:`itemsize <mlx.core.array.itemsize>`\\"
@@ -514,7 +514,7 @@ msgstr ""
 
 #: ../../../src/python/_autosummary/mlx.core.array.rst:77:<autosummary>:1
 msgid "The shape of the array as a Python tuple."
-msgstr ""
+msgstr "以 Python tuple 表示的陣列形狀。"
 
 #: ../../../src/python/_autosummary/mlx.core.array.rst:77:<autosummary>:1
 msgid ":py:obj:`size <mlx.core.array.size>`\\"
@@ -522,4 +522,4 @@ msgstr ""
 
 #: ../../../src/python/_autosummary/mlx.core.array.rst:77:<autosummary>:1
 msgid "Number of elements in the array."
-msgstr ""
+msgstr "陣列中的元素數量。"
