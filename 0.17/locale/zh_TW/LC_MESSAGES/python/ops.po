@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../../src/python/ops.rst:4
 msgid "Operations"
-msgstr ""
+msgstr "運算"
 
 #: ../../../src/python/ops.rst:171:<autosummary>:1
 msgid ":py:obj:`abs <mlx.core.abs>`\\ \\(a\\, \\/\\, \\*\\[\\, stream\\]\\)"
@@ -27,7 +27,7 @@ msgstr ""
 
 #: ../../../src/python/ops.rst:171:<autosummary>:1
 msgid "Element-wise absolute value."
-msgstr ""
+msgstr "逐元素絕對值。"
 
 #: ../../../src/python/ops.rst:171:<autosummary>:1
 msgid ":py:obj:`add <mlx.core.add>`\\ \\(a\\, b\\[\\, stream\\]\\)"
@@ -65,7 +65,7 @@ msgstr ""
 
 #: ../../../src/python/ops.rst:171:<autosummary>:1
 msgid "Approximate comparison of two arrays."
-msgstr ""
+msgstr "兩個陣列的近似比較。"
 
 #: ../../../src/python/ops.rst:171:<autosummary>:1
 msgid ""
@@ -75,7 +75,7 @@ msgstr ""
 
 #: ../../../src/python/ops.rst:171:<autosummary>:1
 msgid "An `or` reduction over the given axes."
-msgstr ""
+msgstr "在指定軸上進行 `or` 歸約。"
 
 #: ../../../src/python/ops.rst:171:<autosummary>:1
 msgid ":py:obj:`arange <mlx.core.arange>`\\ \\(\\-\\> array\\)"
@@ -92,7 +92,7 @@ msgstr ""
 
 #: ../../../src/python/ops.rst:171:<autosummary>:1
 msgid "Element-wise inverse cosine."
-msgstr ""
+msgstr "逐元素反餘弦。"
 
 #: ../../../src/python/ops.rst:171:<autosummary>:1
 msgid ""
@@ -128,7 +128,7 @@ msgstr ""
 
 #: ../../../src/python/ops.rst:171:<autosummary>:1
 msgid "Element-wise inverse tangent."
-msgstr ""
+msgstr "逐元素反正切。"
 
 #: ../../../src/python/ops.rst:171:<autosummary>:1
 msgid ""
@@ -157,7 +157,7 @@ msgstr ""
 
 #: ../../../src/python/ops.rst:171:<autosummary>:1
 msgid "Indices of the maximum values along the axis."
-msgstr ""
+msgstr "沿指定軸的最大值索引。"
 
 #: ../../../src/python/ops.rst:171:<autosummary>:1
 msgid ""
@@ -167,7 +167,7 @@ msgstr ""
 
 #: ../../../src/python/ops.rst:171:<autosummary>:1
 msgid "Indices of the minimum values along the axis."
-msgstr ""
+msgstr "沿指定軸的最小值索引。"
 
 #: ../../../src/python/ops.rst:171:<autosummary>:1
 msgid ""
@@ -186,7 +186,7 @@ msgstr ""
 
 #: ../../../src/python/ops.rst:171:<autosummary>:1
 msgid "Returns the indices that sort the array."
-msgstr ""
+msgstr "回傳可排序陣列的索引。"
 
 #: ../../../src/python/ops.rst:171:<autosummary>:1
 msgid ""
@@ -196,7 +196,7 @@ msgstr ""
 
 #: ../../../src/python/ops.rst:171:<autosummary>:1
 msgid "Array equality check."
-msgstr ""
+msgstr "陣列相等性檢查。"
 
 #: ../../../src/python/ops.rst:171:<autosummary>:1
 msgid ""
@@ -486,7 +486,7 @@ msgstr ""
 
 #: ../../../src/python/ops.rst:171:<autosummary>:1
 msgid "Extract a diagonal or construct a diagonal matrix."
-msgstr ""
+msgstr "擷取對角線或建構對角矩陣。"
 
 #: ../../../src/python/ops.rst:171:<autosummary>:1
 msgid ""
@@ -759,7 +759,7 @@ msgstr ""
 #: ../../../src/python/ops.rst:171:<autosummary>:1
 msgid ""
 "Check if a :obj:`Dtype` or :obj:`DtypeCategory` is a subtype of another."
-msgstr ""
+msgstr "檢查 :obj:`Dtype` 或 :obj:`DtypeCategory` 是否為另一者的子型別。"
 
 #: ../../../src/python/ops.rst:171:<autosummary>:1
 msgid ""

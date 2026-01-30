@@ -27,7 +27,7 @@ msgstr ""
 
 #: ../../../src/python/linalg.rst:17:<autosummary>:1
 msgid "Compute the inverse of a square matrix."
-msgstr ""
+msgstr "計算方陣的反矩陣。"
 
 #: ../../../src/python/linalg.rst:17:<autosummary>:1
 msgid ""
@@ -37,7 +37,7 @@ msgstr ""
 
 #: ../../../src/python/linalg.rst:17:<autosummary>:1
 msgid "Compute the inverse of a triangular square matrix."
-msgstr ""
+msgstr "計算三角方陣的反矩陣。"
 
 #: ../../../src/python/linalg.rst:17:<autosummary>:1
 msgid ""
@@ -47,7 +47,7 @@ msgstr ""
 
 #: ../../../src/python/linalg.rst:17:<autosummary>:1
 msgid "Matrix or vector norm."
-msgstr ""
+msgstr "矩陣或向量範數。"
 
 #: ../../../src/python/linalg.rst:17:<autosummary>:1
 msgid ""
@@ -59,7 +59,7 @@ msgstr ""
 msgid ""
 "Compute the Cholesky decomposition of a real symmetric positive semi-"
 "definite matrix."
-msgstr ""
+msgstr "計算實對稱半正定矩陣的 Cholesky 分解。"
 
 #: ../../../src/python/linalg.rst:17:<autosummary>:1
 msgid ""
@@ -71,7 +71,7 @@ msgstr ""
 msgid ""
 "Compute the inverse of a real symmetric positive semi-definite matrix using "
 "it's Cholesky decomposition."
-msgstr ""
+msgstr "使用 Cholesky 分解計算實對稱半正定矩陣的反矩陣。"
 
 #: ../../../src/python/linalg.rst:17:<autosummary>:1
 msgid ":py:obj:`qr <mlx.core.linalg.qr>`\\ \\(a\\, \\*\\[\\, stream\\]\\)"
@@ -79,7 +79,7 @@ msgstr ""
 
 #: ../../../src/python/linalg.rst:17:<autosummary>:1
 msgid "The QR factorization of the input matrix."
-msgstr ""
+msgstr "輸入矩陣的 QR 分解。"
 
 #: ../../../src/python/linalg.rst:17:<autosummary>:1
 msgid ":py:obj:`svd <mlx.core.linalg.svd>`\\ \\(a\\, \\*\\[\\, stream\\]\\)"
@@ -87,4 +87,4 @@ msgstr ""
 
 #: ../../../src/python/linalg.rst:17:<autosummary>:1
 msgid "The Singular Value Decomposition (SVD) of the input matrix."
-msgstr ""
+msgstr "輸入矩陣的奇異值分解（SVD）。"

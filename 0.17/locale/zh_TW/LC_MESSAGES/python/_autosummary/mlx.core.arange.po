@@ -23,13 +23,13 @@ msgstr ""
 
 #: ../../../docstring of mlx.core.arange:1
 msgid "Generates ranges of numbers."
-msgstr ""
+msgstr "產生數值範圍。"
 
 #: ../../../docstring of mlx.core.arange:3
 msgid ""
 "Generate numbers in the half-open interval ``[start, stop)`` in increments "
 "of ``step``."
-msgstr ""
+msgstr "以 ``step`` 為增量，在半開區間 ``[start, stop)`` 產生數值。"
 
 #: ../../../src/python/_autosummary/mlx.core.arange.rst:0
 msgid "Parameters"
@@ -73,3 +73,6 @@ msgid ""
 "results for example if `start + step` is a fractional value and the `dtype` "
 "is integral."
 msgstr ""
+"遵循 Numpy 慣例，用於產生數值的實際增量為 ``dtype(start + step) - "
+"dtype(start)``。這可能造成非預期結果，例如 `start + step` 為小數但 `dtype` 為"
+"整數型別時。"

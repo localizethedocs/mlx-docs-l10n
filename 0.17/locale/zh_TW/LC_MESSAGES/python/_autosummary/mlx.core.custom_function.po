@@ -23,7 +23,7 @@ msgstr ""
 
 #: ../../../docstring of mlx.core.custom_function:1
 msgid "Set up a function for custom gradient and vmap definitions."
-msgstr ""
+msgstr "建立可自訂梯度與 vmap 定義的函式。"
 
 #: ../../../docstring of mlx.core.custom_function:3
 msgid ""

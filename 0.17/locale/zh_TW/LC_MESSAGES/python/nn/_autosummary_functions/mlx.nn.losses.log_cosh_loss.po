@@ -24,7 +24,7 @@ msgstr ""
 #: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/losses.py:docstring
 #: of mlx.nn.losses.log_cosh_loss:1
 msgid "Computes the log cosh loss between inputs and targets."
-msgstr ""
+msgstr "計算輸入與目標之間的 log cosh 損失。"
 
 #: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/losses.py:docstring
 #: of mlx.nn.losses.log_cosh_loss:3
