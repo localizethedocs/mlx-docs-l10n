@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../../src/dev/metal_debugger.rst:2
 msgid "Metal Debugger"
-msgstr ""
+msgstr "Metal 除錯器"
 
 #: ../../../src/dev/metal_debugger.rst:4
 msgid ""
@@ -27,17 +27,19 @@ msgid ""
 "the ``MLX_METAL_DEBUG`` option to improve the Metal debugging and "
 "optimization workflow. The ``MLX_METAL_DEBUG`` debug option:"
 msgstr ""
+"效能剖析是效能最佳化的關鍵步驟。你可以在建置 MLX 時使用 ``MLX_METAL_DEBUG`` "
+"選項，以改善 Metal 除錯與最佳化的工作流程。``MLX_METAL_DEBUG`` 除錯選項會："
 
 #: ../../../src/dev/metal_debugger.rst:8
 msgid ""
 "Records source during Metal compilation, for later inspection while "
 "debugging."
-msgstr ""
+msgstr "在 Metal 編譯期間記錄來源碼，以便稍後除錯時檢視。"
 
 #: ../../../src/dev/metal_debugger.rst:10
 msgid ""
 "Labels Metal objects such as command queues, improving capture readability."
-msgstr ""
+msgstr "為 Metal 物件（例如命令佇列）加上標籤，提升擷取內容的可讀性。"
 
 #: ../../../src/dev/metal_debugger.rst:12
 msgid ""
@@ -66,16 +68,19 @@ msgid ""
 "has a great overview of all operations. Checkout the `Metal debugger "
 "documentation`_ for more information."
 msgstr ""
+"你可以在 Xcode 中開啟並重播 GPU 追蹤。``Dependencies`` 檢視提供所有運算的完整"
+"概覽。更多資訊請參考 `Metal debugger documentation`_。"
 
 #: ../../../src/dev/metal_debugger.rst:36
 msgid "Xcode Workflow"
-msgstr ""
+msgstr "Xcode 工作流程"
 
 #: ../../../src/dev/metal_debugger.rst:38
 msgid ""
 "You can skip saving to a path by running within Xcode. First, generate an "
 "Xcode project using CMake."
 msgstr ""
+"你可以直接在 Xcode 中執行而不必儲存到路徑。首先用 CMake 產生 Xcode 專案。"
 
 #: ../../../src/dev/metal_debugger.rst:41
 msgid ""
@@ -86,4 +91,4 @@ msgstr ""
 
 #: ../../../src/dev/metal_debugger.rst:47
 msgid "Select the ``metal_capture`` example schema and run."
-msgstr ""
+msgstr "選擇 ``metal_capture`` 範例方案並執行。"
