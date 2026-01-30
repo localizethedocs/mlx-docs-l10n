@@ -27,7 +27,7 @@ msgstr ""
 
 #: ../../../src/python/metal.rst:19:<autosummary>:1
 msgid "Check if the Metal back-end is available."
-msgstr ""
+msgstr "檢查 Metal 後端是否可用。"
 
 #: ../../../src/python/metal.rst:19:<autosummary>:1
 msgid ":py:obj:`device_info <mlx.core.metal.device_info>`\\ \\(\\)"
@@ -35,7 +35,7 @@ msgstr ""
 
 #: ../../../src/python/metal.rst:19:<autosummary>:1
 msgid "Get information about the GPU device and system settings."
-msgstr ""
+msgstr "取得 GPU 裝置與系統設定資訊。"
 
 #: ../../../src/python/metal.rst:19:<autosummary>:1
 msgid ":py:obj:`get_active_memory <mlx.core.metal.get_active_memory>`\\ \\(\\)"
@@ -102,7 +102,7 @@ msgstr ""
 
 #: ../../../src/python/metal.rst:19:<autosummary>:1
 msgid "Start a Metal capture."
-msgstr ""
+msgstr "開始 Metal 捕獲。"
 
 #: ../../../src/python/metal.rst:19:<autosummary>:1
 msgid ":py:obj:`stop_capture <mlx.core.metal.stop_capture>`\\ \\(\\)"
@@ -110,4 +110,4 @@ msgstr ""
 
 #: ../../../src/python/metal.rst:19:<autosummary>:1
 msgid "Stop a Metal capture."
-msgstr ""
+msgstr "停止 Metal 捕獲。"
