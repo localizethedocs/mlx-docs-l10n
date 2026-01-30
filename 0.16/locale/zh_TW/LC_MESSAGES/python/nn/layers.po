@@ -178,7 +178,7 @@ msgstr ""
 
 #: ../../../src/python/nn/layers.rst:59:<autosummary>:1
 msgid "Applies the hardswish function, element-wise."
-msgstr ""
+msgstr "逐元素套用 hardswish 函式。"
 
 #: ../../../src/python/nn/layers.rst:59:<autosummary>:1
 msgid ""

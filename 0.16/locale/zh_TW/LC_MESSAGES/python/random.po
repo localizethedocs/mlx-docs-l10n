@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../../src/python/random.rst:4
 msgid "Random"
-msgstr ""
+msgstr "隨機"
 
 #: ../../../src/python/random.rst:6
 msgid ""
@@ -27,10 +27,12 @@ msgid ""
 "default. However, all function take an optional ``key`` keyword argument for "
 "when more fine-grained control or explicit state management is needed."
 msgstr ""
+"MLX 的隨機取樣函式預設使用隱式的全域 PRNG 狀態。不過，所有函式都提供可選的 "
+"``key`` 關鍵字引數，以便在需要更細緻的控制或明確的狀態管理時使用。"
 
 #: ../../../src/python/random.rst:10
 msgid "For example, you can generate random numbers with:"
-msgstr ""
+msgstr "例如，你可以用以下方式產生隨機數："
 
 #: ../../../src/python/random.rst:12
 msgid ""
@@ -42,7 +44,7 @@ msgstr ""
 msgid ""
 "which will print a sequence of unique pseudo random numbers. Alternatively "
 "you can explicitly set the key:"
-msgstr ""
+msgstr "這會列印一串不重複的偽隨機數。你也可以明確設定 key："
 
 #: ../../../src/python/random.rst:20
 msgid ""
@@ -53,7 +55,7 @@ msgstr ""
 
 #: ../../../src/python/random.rst:26
 msgid "which will yield the same pseudo random number at each iteration."
-msgstr ""
+msgstr "這樣每次迭代都會產生相同的偽隨機數。"
 
 #: ../../../src/python/random.rst:28
 msgid ""
@@ -61,6 +63,8 @@ msgid ""
 "prng.html>`_ we use a splittable version of Threefry, which is a counter-"
 "based PRNG."
 msgstr ""
+"我們遵循 `JAX 的 PRNG 設計 <https://jax.readthedocs.io/en/latest/jep/263-"
+"prng.html>`_，採用可分割的 Threefry（以計數器為基礎的 PRNG）。"
 
 #: ../../../src/python/random.rst:47:<autosummary>:1
 msgid ""
@@ -70,7 +74,7 @@ msgstr ""
 
 #: ../../../src/python/random.rst:47:<autosummary>:1
 msgid "Generate Bernoulli random values."
-msgstr ""
+msgstr "產生伯努利隨機值。"
 
 #: ../../../src/python/random.rst:47:<autosummary>:1
 msgid ""
@@ -80,7 +84,7 @@ msgstr ""
 
 #: ../../../src/python/random.rst:47:<autosummary>:1
 msgid "Sample from a categorical distribution."
-msgstr ""
+msgstr "從類別分佈取樣。"
 
 #: ../../../src/python/random.rst:47:<autosummary>:1
 msgid ""
@@ -90,7 +94,7 @@ msgstr ""
 
 #: ../../../src/python/random.rst:47:<autosummary>:1
 msgid "Sample from the standard Gumbel distribution."
-msgstr ""
+msgstr "從標準 Gumbel 分佈取樣。"
 
 #: ../../../src/python/random.rst:47:<autosummary>:1
 msgid ":py:obj:`key <mlx.core.random.key>`\\ \\(seed\\)"
@@ -98,7 +102,7 @@ msgstr ""
 
 #: ../../../src/python/random.rst:47:<autosummary>:1
 msgid "Get a PRNG key from a seed."
-msgstr ""
+msgstr "由種子取得 PRNG key。"
 
 #: ../../../src/python/random.rst:47:<autosummary>:1
 msgid ""
@@ -108,7 +112,7 @@ msgstr ""
 
 #: ../../../src/python/random.rst:47:<autosummary>:1
 msgid "Generate normally distributed random numbers."
-msgstr ""
+msgstr "產生常態分佈的隨機數。"
 
 #: ../../../src/python/random.rst:47:<autosummary>:1
 msgid ""
@@ -118,7 +122,7 @@ msgstr ""
 
 #: ../../../src/python/random.rst:47:<autosummary>:1
 msgid "Generate jointly-normal random samples given a mean and covariance."
-msgstr ""
+msgstr "在給定平均與共變異數下產生多變量常態隨機樣本。"
 
 #: ../../../src/python/random.rst:47:<autosummary>:1
 msgid ""
@@ -128,7 +132,7 @@ msgstr ""
 
 #: ../../../src/python/random.rst:47:<autosummary>:1
 msgid "Generate random integers from the given interval."
-msgstr ""
+msgstr "從指定區間產生隨機整數。"
 
 #: ../../../src/python/random.rst:47:<autosummary>:1
 msgid ":py:obj:`seed <mlx.core.random.seed>`\\ \\(seed\\)"
@@ -136,7 +140,7 @@ msgstr ""
 
 #: ../../../src/python/random.rst:47:<autosummary>:1
 msgid "Seed the global PRNG."
-msgstr ""
+msgstr "為全域 PRNG 設定種子。"
 
 #: ../../../src/python/random.rst:47:<autosummary>:1
 msgid ""
@@ -146,7 +150,7 @@ msgstr ""
 
 #: ../../../src/python/random.rst:47:<autosummary>:1
 msgid "Split a PRNG key into sub keys."
-msgstr ""
+msgstr "將 PRNG key 拆分為子 key。"
 
 #: ../../../src/python/random.rst:47:<autosummary>:1
 msgid ""
@@ -156,7 +160,7 @@ msgstr ""
 
 #: ../../../src/python/random.rst:47:<autosummary>:1
 msgid "Generate values from a truncated normal distribution."
-msgstr ""
+msgstr "從截斷常態分佈產生數值。"
 
 #: ../../../src/python/random.rst:47:<autosummary>:1
 msgid ""
@@ -166,7 +170,7 @@ msgstr ""
 
 #: ../../../src/python/random.rst:47:<autosummary>:1
 msgid "Generate uniformly distributed random numbers."
-msgstr ""
+msgstr "產生均勻分佈的隨機數。"
 
 #: ../../../src/python/random.rst:47:<autosummary>:1
 msgid ""
@@ -176,4 +180,4 @@ msgstr ""
 
 #: ../../../src/python/random.rst:47:<autosummary>:1
 msgid "Sample numbers from a Laplace distribution."
-msgstr ""
+msgstr "從拉普拉斯分佈取樣。"

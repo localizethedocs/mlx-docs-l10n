@@ -23,7 +23,7 @@ msgstr ""
 
 #: ../../../docstring of mlx.core.metal.set_memory_limit:1
 msgid "Set the memory limit."
-msgstr ""
+msgstr "設定記憶體上限。"
 
 #: ../../../docstring of mlx.core.metal.set_memory_limit:3
 msgid ""
@@ -41,7 +41,7 @@ msgstr ""
 
 #: ../../../src/python/_autosummary/mlx.core.metal.set_memory_limit.rst:0
 msgid "Parameters"
-msgstr ""
+msgstr "參數"
 
 #: ../../../docstring of mlx.core.metal.set_memory_limit:11
 msgid "Memory limit in bytes."
@@ -54,7 +54,7 @@ msgstr ""
 
 #: ../../../src/python/_autosummary/mlx.core.metal.set_memory_limit.rst:0
 msgid "Returns"
-msgstr ""
+msgstr "回傳"
 
 #: ../../../docstring of mlx.core.metal.set_memory_limit:17
 msgid "The previous memory limit in bytes."
@@ -62,4 +62,4 @@ msgstr ""
 
 #: ../../../src/python/_autosummary/mlx.core.metal.set_memory_limit.rst:0
 msgid "Return type"
-msgstr ""
+msgstr "回傳型別"

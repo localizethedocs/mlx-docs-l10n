@@ -32,6 +32,8 @@ msgid ""
 "Infinite values are considered equal if they have the same sign, NaN values "
 "are not equal unless ``equal_nan`` is ``True``."
 msgstr ""
+"無限值若符號相同則視為相等；NaN 值除非 ``equal_nan`` 為 ``True``，否則視為不"
+"相等。"
 
 #: ../../../docstring of mlx.core.isclose:6
 msgid "Two values are considered equal if:"
@@ -45,7 +47,7 @@ msgstr ""
 msgid ""
 "Note unlike :func:`array_equal`, this function supports numpy-style "
 "broadcasting."
-msgstr ""
+msgstr "注意：不同於 :func:`array_equal`，此函式支援 numpy 風格廣播。"
 
 #: ../../../src/python/_autosummary/mlx.core.isclose.rst:0
 msgid "Parameters"
@@ -57,15 +59,15 @@ msgstr ""
 
 #: ../../../docstring of mlx.core.isclose:19
 msgid "Relative tolerance."
-msgstr ""
+msgstr "相對容差。"
 
 #: ../../../docstring of mlx.core.isclose:21
 msgid "Absolute tolerance."
-msgstr ""
+msgstr "絕對容差。"
 
 #: ../../../docstring of mlx.core.isclose:23
 msgid "If ``True``, NaNs are considered equal. Defaults to ``False``."
-msgstr ""
+msgstr "若為 ``True``，NaN 會視為相等。預設為 ``False``。"
 
 #: ../../../src/python/_autosummary/mlx.core.isclose.rst:0
 msgid "Returns"
@@ -73,7 +75,7 @@ msgstr ""
 
 #: ../../../docstring of mlx.core.isclose:27
 msgid "The boolean output scalar indicating if the arrays are close."
-msgstr ""
+msgstr "布林輸出純量，表示陣列是否相近。"
 
 #: ../../../src/python/_autosummary/mlx.core.isclose.rst:0
 msgid "Return type"
