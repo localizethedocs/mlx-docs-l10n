@@ -27,7 +27,7 @@ msgstr ""
 
 #: ../../../src/python/fft.rst:24:<autosummary>:1
 msgid "One dimensional discrete Fourier Transform."
-msgstr ""
+msgstr "一維離散傅立葉轉換。"
 
 #: ../../../src/python/fft.rst:24:<autosummary>:1
 msgid ""
@@ -36,7 +36,7 @@ msgstr ""
 
 #: ../../../src/python/fft.rst:24:<autosummary>:1
 msgid "One dimensional inverse discrete Fourier Transform."
-msgstr ""
+msgstr "一維離散傅立葉反轉換。"
 
 #: ../../../src/python/fft.rst:24:<autosummary>:1
 msgid ""
@@ -45,7 +45,7 @@ msgstr ""
 
 #: ../../../src/python/fft.rst:24:<autosummary>:1
 msgid "Two dimensional discrete Fourier Transform."
-msgstr ""
+msgstr "二維離散傅立葉轉換。"
 
 #: ../../../src/python/fft.rst:24:<autosummary>:1
 msgid ""
@@ -54,7 +54,7 @@ msgstr ""
 
 #: ../../../src/python/fft.rst:24:<autosummary>:1
 msgid "Two dimensional inverse discrete Fourier Transform."
-msgstr ""
+msgstr "二維離散傅立葉反轉換。"
 
 #: ../../../src/python/fft.rst:24:<autosummary>:1
 msgid ""
@@ -63,7 +63,7 @@ msgstr ""
 
 #: ../../../src/python/fft.rst:24:<autosummary>:1
 msgid "n-dimensional discrete Fourier Transform."
-msgstr ""
+msgstr "$n$ 維離散傅立葉轉換。"
 
 #: ../../../src/python/fft.rst:24:<autosummary>:1
 msgid ""
@@ -72,7 +72,7 @@ msgstr ""
 
 #: ../../../src/python/fft.rst:24:<autosummary>:1
 msgid "n-dimensional inverse discrete Fourier Transform."
-msgstr ""
+msgstr "$n$ 維離散傅立葉反轉換。"
 
 #: ../../../src/python/fft.rst:24:<autosummary>:1
 msgid ""
@@ -81,7 +81,7 @@ msgstr ""
 
 #: ../../../src/python/fft.rst:24:<autosummary>:1
 msgid "One dimensional discrete Fourier Transform on a real input."
-msgstr ""
+msgstr "對實數輸入的一維離散傅立葉轉換。"
 
 #: ../../../src/python/fft.rst:24:<autosummary>:1
 msgid ""
@@ -90,7 +90,7 @@ msgstr ""
 
 #: ../../../src/python/fft.rst:24:<autosummary>:1
 msgid "The inverse of :func:`rfft`."
-msgstr ""
+msgstr ":func:`rfft` 的反運算。"
 
 #: ../../../src/python/fft.rst:24:<autosummary>:1
 msgid ""
@@ -99,7 +99,7 @@ msgstr ""
 
 #: ../../../src/python/fft.rst:24:<autosummary>:1
 msgid "Two dimensional real discrete Fourier Transform."
-msgstr ""
+msgstr "二維實數離散傅立葉轉換。"
 
 #: ../../../src/python/fft.rst:24:<autosummary>:1
 msgid ""
@@ -108,7 +108,7 @@ msgstr ""
 
 #: ../../../src/python/fft.rst:24:<autosummary>:1
 msgid "The inverse of :func:`rfft2`."
-msgstr ""
+msgstr ":func:`rfft2` 的反運算。"
 
 #: ../../../src/python/fft.rst:24:<autosummary>:1
 msgid ""
@@ -117,7 +117,7 @@ msgstr ""
 
 #: ../../../src/python/fft.rst:24:<autosummary>:1
 msgid "n-dimensional real discrete Fourier Transform."
-msgstr ""
+msgstr "$n$ 維實數離散傅立葉轉換。"
 
 #: ../../../src/python/fft.rst:24:<autosummary>:1
 msgid ""
@@ -126,7 +126,7 @@ msgstr ""
 
 #: ../../../src/python/fft.rst:24:<autosummary>:1
 msgid "The inverse of :func:`rfftn`."
-msgstr ""
+msgstr ":func:`rfftn` 的反運算。"
 
 #: ../../../src/python/fft.rst:24:<autosummary>:1
 msgid ""
@@ -135,7 +135,7 @@ msgstr ""
 
 #: ../../../src/python/fft.rst:24:<autosummary>:1
 msgid "Shift the zero-frequency component to the center of the spectrum."
-msgstr ""
+msgstr "將零頻率成分移到頻譜中心。"
 
 #: ../../../src/python/fft.rst:24:<autosummary>:1
 msgid ""
@@ -145,4 +145,4 @@ msgstr ""
 
 #: ../../../src/python/fft.rst:24:<autosummary>:1
 msgid "The inverse of :func:`fftshift`."
-msgstr ""
+msgstr ":func:`fftshift` 的反運算。"
