@@ -33,7 +33,7 @@ msgstr ""
 
 #: ../../../src/python/nn/functions.rst:24:<autosummary>:1
 msgid "Applies the Gaussian Error Linear Units function."
-msgstr ""
+msgstr "套用高斯誤差線性單元（GELU）函式。"
 
 #: ../../../src/python/nn/functions.rst:24:<autosummary>:1
 msgid ":py:obj:`gelu_approx <mlx.nn.gelu_approx>`\\ \\(x\\)"
@@ -49,7 +49,7 @@ msgstr ""
 
 #: ../../../src/python/nn/functions.rst:24:<autosummary>:1
 msgid "A fast approximation to Gaussian Error Linear Unit."
-msgstr ""
+msgstr "高斯誤差線性單元的快速近似版本。"
 
 #: ../../../src/python/nn/functions.rst:24:<autosummary>:1
 msgid ":py:obj:`mish <mlx.nn.mish>`\\ \\(x\\)"

@@ -36,7 +36,7 @@ msgstr ""
 
 #: ../../../src/dev/extensions.rst:15
 msgid "Introducing the Example"
-msgstr ""
+msgstr "範例介紹"
 
 #: ../../../src/dev/extensions.rst:17
 msgid ""
@@ -107,7 +107,7 @@ msgstr ""
 
 #: ../../../src/dev/extensions.rst:52
 msgid "Operations and Primitives"
-msgstr ""
+msgstr "運算與原語"
 
 #: ../../../src/dev/extensions.rst:54
 msgid ""
@@ -118,7 +118,7 @@ msgstr ""
 
 #: ../../../src/dev/extensions.rst:59
 msgid "Operations"
-msgstr ""
+msgstr "運算"
 
 #: ../../../src/dev/extensions.rst:61
 msgid ""
@@ -189,7 +189,7 @@ msgstr ""
 
 #: ../../../src/dev/extensions.rst:114
 msgid "Primitives"
-msgstr ""
+msgstr "原語"
 
 #: ../../../src/dev/extensions.rst:116
 msgid ""
@@ -279,6 +279,9 @@ msgid ""
 "data type, shape, the :class:`Primitive` that computes it, and the :class:"
 "`array` inputs that are passed to the primitive."
 msgstr ""
+"運算可以使用此 :class:`Primitive` 在計算圖中新增一個 :class:`array`。建立:"
+"class:`array` 時可提供其資料型別、形狀、負責計算它的 :class:`Primitive`，以及"
+"傳給該原語的 :class:`array` 輸入。"
 
 #: ../../../src/dev/extensions.rst:193
 msgid ""
@@ -325,29 +328,29 @@ msgstr ""
 
 #: ../../../src/dev/extensions.rst:231
 msgid "This operation now handles the following:"
-msgstr ""
+msgstr "此運算現在會處理以下事項："
 
 #: ../../../src/dev/extensions.rst:233
 msgid "Upcast inputs and resolve the output data type."
-msgstr ""
+msgstr "將輸入升型並決定輸出資料型別。"
 
 #: ../../../src/dev/extensions.rst:234
 msgid "Broadcast the inputs and resolve the output shape."
-msgstr ""
+msgstr "廣播輸入並決定輸出形狀。"
 
 #: ../../../src/dev/extensions.rst:235
 msgid ""
 "Construct the primitive :class:`Axpby` using the given stream, ``alpha``, "
 "and ``beta``."
-msgstr ""
+msgstr "使用給定的 stream、``alpha`` 與 ``beta`` 建立 :class:`Axpby` 原語。"
 
 #: ../../../src/dev/extensions.rst:236
 msgid "Construct the output :class:`array` using the primitive and the inputs."
-msgstr ""
+msgstr "使用原語與輸入建立輸出 :class:`array`。"
 
 #: ../../../src/dev/extensions.rst:239
 msgid "Implementing the Primitive"
-msgstr ""
+msgstr "實作原語"
 
 #: ../../../src/dev/extensions.rst:241
 msgid ""
@@ -603,15 +606,15 @@ msgstr ""
 
 #: ../../../src/dev/extensions.rst:434
 msgid "A walkthrough of the metal compute pipeline: `Metal Example`_"
-msgstr ""
+msgstr "Metal 計算管線導覽：`Metal Example`_"
 
 #: ../../../src/dev/extensions.rst:435
 msgid "Documentation for metal shading language: `Metal Specification`_"
-msgstr ""
+msgstr "Metal 著色語言文件：`Metal Specification`_"
 
 #: ../../../src/dev/extensions.rst:436
 msgid "Using metal from C++: `Metal-cpp`_"
-msgstr ""
+msgstr "從 C++ 使用 Metal：`Metal-cpp`_"
 
 #: ../../../src/dev/extensions.rst:438
 msgid ""
@@ -774,7 +777,7 @@ msgstr ""
 #: ../../../src/dev/extensions.rst:576
 msgid ""
 "We can now call the :meth:`axpby` operation on both the CPU and the GPU!"
-msgstr ""
+msgstr "現在我們可以在 CPU 和 GPU 上呼叫 :meth:`axpby` 運算了！"
 
 #: ../../../src/dev/extensions.rst:578
 msgid ""
@@ -791,7 +794,7 @@ msgstr ""
 
 #: ../../../src/dev/extensions.rst:589
 msgid "Primitive Transforms"
-msgstr ""
+msgstr "原語轉換"
 
 #: ../../../src/dev/extensions.rst:591
 msgid ""
@@ -866,11 +869,11 @@ msgstr ""
 
 #: ../../../src/dev/extensions.rst:653
 msgid "Building and Binding"
-msgstr ""
+msgstr "建置與綁定"
 
 #: ../../../src/dev/extensions.rst:655
 msgid "Let's look at the overall directory structure first."
-msgstr ""
+msgstr "先看看整體目錄結構。"
 
 #: ../../../src/dev/extensions.rst:657 ../../../src/dev/extensions.rst:834
 msgid "extensions"
@@ -914,7 +917,7 @@ msgstr ""
 
 #: ../../../src/dev/extensions.rst:668
 msgid "``extensions/axpby/`` defines the C++ extension library"
-msgstr ""
+msgstr "``extensions/axpby/`` 定義 C++ 擴充程式庫"
 
 #: ../../../src/dev/extensions.rst:669
 msgid ""
@@ -940,7 +943,7 @@ msgstr ""
 
 #: ../../../src/dev/extensions.rst:678
 msgid "Binding to Python"
-msgstr ""
+msgstr "綁定到 Python"
 
 #: ../../../src/dev/extensions.rst:680
 msgid ""
@@ -987,7 +990,7 @@ msgstr ""
 msgid ""
 "Most of the complexity in the above example comes from additional bells and "
 "whistles such as the literal names and doc-strings."
-msgstr ""
+msgstr "上述範例的大部分複雜度來自額外的裝飾細節，例如字面名稱與文件字串。"
 
 #: ../../../src/dev/extensions.rst:722
 msgid ""
@@ -999,7 +1002,7 @@ msgstr ""
 
 #: ../../../src/dev/extensions.rst:730
 msgid "Building with CMake"
-msgstr ""
+msgstr "使用 CMake 建置"
 
 #: ../../../src/dev/extensions.rst:732
 msgid ""
@@ -1081,7 +1084,7 @@ msgstr ""
 
 #: ../../../src/dev/extensions.rst:797
 msgid "Building with ``setuptools``"
-msgstr ""
+msgstr "使用 ``setuptools`` 建置"
 
 #: ../../../src/dev/extensions.rst:799
 msgid ""
@@ -1117,6 +1120,8 @@ msgid ""
 "We treat ``extensions/mlx_sample_extensions`` as the package directory even "
 "though it only contains a ``__init__.py`` to ensure the following:"
 msgstr ""
+"我們將 ``extensions/mlx_sample_extensions`` 視為軟體包目錄，即使它只包含 "
+"``__init__.py``，也能確保以下事項："
 
 #: ../../../src/dev/extensions.rst:825
 msgid ""
@@ -1129,6 +1134,8 @@ msgid ""
 "The C++ extension library and the metal library are co-located with the "
 "python bindings and copied together if the package is installed"
 msgstr ""
+"C++ 擴充程式庫與 Metal 程式庫會與 Python 綁定放在同一位置，並在安裝軟體包時一"
+"併複製"
 
 #: ../../../src/dev/extensions.rst:829
 msgid ""
@@ -1146,11 +1153,11 @@ msgstr ""
 
 #: ../../../src/dev/extensions.rst:837
 msgid "│   ├── libmlx_ext.dylib # C++ extension library"
-msgstr ""
+msgstr "│   ├── libmlx_ext.dylib # C++ 擴充程式庫"
 
 #: ../../../src/dev/extensions.rst:838
 msgid "│   ├── mlx_ext.metallib # Metal library"
-msgstr ""
+msgstr "│   ├── mlx_ext.metallib # Metal 程式庫"
 
 #: ../../../src/dev/extensions.rst:839
 msgid "│   └── mlx_sample_extensions.cpython-3x-darwin.so # Python Binding"
@@ -1171,7 +1178,7 @@ msgstr ""
 
 #: ../../../src/dev/extensions.rst:848
 msgid "Usage"
-msgstr ""
+msgstr "使用方式"
 
 #: ../../../src/dev/extensions.rst:850
 msgid ""
@@ -1200,7 +1207,7 @@ msgstr ""
 
 #: ../../../src/dev/extensions.rst:868
 msgid "Output:"
-msgstr ""
+msgstr "輸出："
 
 #: ../../../src/dev/extensions.rst:870
 msgid ""
@@ -1211,7 +1218,7 @@ msgstr ""
 
 #: ../../../src/dev/extensions.rst:877
 msgid "Results"
-msgstr ""
+msgstr "結果"
 
 #: ../../../src/dev/extensions.rst:879
 msgid ""
@@ -1283,7 +1290,7 @@ msgstr ""
 
 #: ../../../src/dev/extensions.rst:935
 msgid "Scripts"
-msgstr ""
+msgstr "腳本"
 
 #: ../../../src/dev/extensions.rst:937
 msgid "Download the code"

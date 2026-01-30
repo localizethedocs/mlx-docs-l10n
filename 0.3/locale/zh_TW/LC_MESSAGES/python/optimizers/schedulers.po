@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../../src/python/optimizers/schedulers.rst:4
 msgid "Schedulers"
-msgstr ""
+msgstr "排程器"
 
 #: ../../../src/python/optimizers/schedulers.rst:13:<autosummary>:1
 msgid ""
@@ -29,7 +29,7 @@ msgstr ""
 
 #: ../../../src/python/optimizers/schedulers.rst:13:<autosummary>:1
 msgid "Make a step decay scheduler."
-msgstr ""
+msgstr "建立階梯衰減排程器。"
 
 #: ../../../src/python/optimizers/schedulers.rst:13:<autosummary>:1
 msgid ""
@@ -39,7 +39,7 @@ msgstr ""
 
 #: ../../../src/python/optimizers/schedulers.rst:13:<autosummary>:1
 msgid "Make an exponential decay scheduler."
-msgstr ""
+msgstr "建立指數衰減排程器。"
 
 #: ../../../src/python/optimizers/schedulers.rst:13:<autosummary>:1
 msgid ""
@@ -49,4 +49,4 @@ msgstr ""
 
 #: ../../../src/python/optimizers/schedulers.rst:13:<autosummary>:1
 msgid "Make a cosine decay scheduler."
-msgstr ""
+msgstr "建立餘弦衰減排程器。"

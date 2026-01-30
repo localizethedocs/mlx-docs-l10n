@@ -44,12 +44,17 @@ msgid ""
 "Otherwise, you will receive an error like: ``Item size 2 for PEP 3118 buffer "
 "format string does not match the dtype V item size 0.``"
 msgstr ""
+"由於 NumPy 不支援 ``bfloat16`` 陣列，你需要先轉成 ``float16`` 或 "
+"``float32``：``np.array(a.astype(mx.float32))``。否則會出現例如 ``Item size "
+"2 for PEP 3118 buffer format string does not match the dtype V item size 0."
+"`` 的錯誤。"
 
 #: ../../../src/usage/numpy.rst:24
 msgid ""
 "By default, NumPy copies data to a new array. This can be prevented by "
 "creating an array view:"
 msgstr ""
+"預設情況下，NumPy 會把資料複製到新陣列。可以透過建立陣列檢視來避免複製："
 
 #: ../../../src/usage/numpy.rst:26
 msgid ""
@@ -65,6 +70,8 @@ msgid ""
 "A NumPy array view is a normal NumPy array, except that it does not own its "
 "memory. This means writing to the view is reflected in the original array."
 msgstr ""
+"NumPy 陣列檢視本質上仍是一般的 NumPy 陣列，只是它不擁有記憶體。因此對檢視的寫"
+"入會反映到原始陣列。"
 
 #: ../../../src/usage/numpy.rst:37
 msgid ""
@@ -72,10 +79,11 @@ msgid ""
 "that external changes to the memory of arrays cannot be reflected in "
 "gradients."
 msgstr ""
+"雖然這能有效避免陣列複製，但要注意，對陣列記憶體的外部修改不會反映在梯度中。"
 
 #: ../../../src/usage/numpy.rst:39
 msgid "Let's demonstrate this in an example:"
-msgstr ""
+msgstr "讓我們用範例示範："
 
 #: ../../../src/usage/numpy.rst:41
 msgid ""
@@ -112,12 +120,14 @@ msgid ""
 "PyTorch Support for :obj:`memoryview` is experimental and can break for "
 "multi-dimensional arrays. Casting to NumPy first is advised for now."
 msgstr ""
+"PyTorch 對 :obj:`memoryview` 的支援屬於實驗性，對多維陣列可能失效。建議目前先"
+"轉為 NumPy。"
 
 #: ../../../src/usage/numpy.rst:70
 msgid ""
 "PyTorch supports the buffer protocol, but it requires an explicit :obj:"
 "`memoryview`."
-msgstr ""
+msgstr "PyTorch 支援緩衝區協定，但需要明確的 :obj:`memoryview`。"
 
 #: ../../../src/usage/numpy.rst:72
 msgid ""
@@ -133,7 +143,7 @@ msgstr ""
 msgid ""
 "Conversion from PyTorch tensors back to arrays must be done via intermediate "
 "NumPy arrays with ``numpy()``."
-msgstr ""
+msgstr "從 PyTorch 張量轉回陣列必須透過中間的 NumPy 陣列（使用 ``numpy()``）。"
 
 #: ../../../src/usage/numpy.rst:84
 msgid "JAX"
@@ -141,7 +151,7 @@ msgstr ""
 
 #: ../../../src/usage/numpy.rst:85
 msgid "JAX fully supports the buffer protocol."
-msgstr ""
+msgstr "JAX 完整支援緩衝區協定。"
 
 #: ../../../src/usage/numpy.rst:87
 msgid ""
@@ -161,7 +171,7 @@ msgstr ""
 msgid ""
 "TensorFlow supports the buffer protocol, but it requires an explicit :obj:"
 "`memoryview`."
-msgstr ""
+msgstr "TensorFlow 支援緩衝區協定，但需要明確的 :obj:`memoryview`。"
 
 #: ../../../src/usage/numpy.rst:101
 msgid ""
