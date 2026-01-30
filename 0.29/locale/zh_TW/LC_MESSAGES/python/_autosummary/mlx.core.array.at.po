@@ -23,7 +23,7 @@ msgstr ""
 
 #: ../../../docstring of mlx.core.array.at:1
 msgid "Used to apply updates at the given indices."
-msgstr ""
+msgstr "用於在指定索引處套用更新。"
 
 #: ../../../docstring of mlx.core.array.at:5
 msgid ""
@@ -32,14 +32,17 @@ msgid ""
 "ignores all but one update. Using ``x.at[idx].add(y)`` will correctly apply "
 "all updates to all indices."
 msgstr ""
+"一般原地更新會對應到賦值。例如 ``x[idx] += y`` 會對應為 ``x[idx] = x[idx] + "
+"y``。因此，對同一索引的多次賦值除了其中一次外都會被忽略。使用 ``x.at[idx]."
+"add(y)`` 會正確地將所有更新套用到所有索引。"
 
 #: ../../../docstring of mlx.core.array.at:13
 msgid "array.at syntax"
-msgstr ""
+msgstr "array.at 語法"
 
 #: ../../../docstring of mlx.core.array.at:14
 msgid "In-place syntax"
-msgstr ""
+msgstr "原地語法"
 
 #: ../../../docstring of mlx.core.array.at:15
 msgid "``x = x.at[idx].add(y)``"
@@ -91,4 +94,4 @@ msgstr ""
 
 #: ../../../docstring of mlx.core.array.at:29
 msgid "Example"
-msgstr ""
+msgstr "範例"

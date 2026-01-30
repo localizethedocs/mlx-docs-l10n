@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../../src/python/export.rst:4
 msgid "Export Functions"
-msgstr ""
+msgstr "匯出函式"
 
 #: ../../../src/python/export.rst:14:<autosummary>:1
 msgid ""
@@ -29,7 +29,7 @@ msgstr ""
 
 #: ../../../src/python/export.rst:14:<autosummary>:1
 msgid "Export an MLX function."
-msgstr ""
+msgstr "匯出 MLX 函式。"
 
 #: ../../../src/python/export.rst:14:<autosummary>:1
 msgid ":py:obj:`import_function <mlx.core.import_function>`\\ \\(file\\)"
@@ -37,7 +37,7 @@ msgstr ""
 
 #: ../../../src/python/export.rst:14:<autosummary>:1
 msgid "Import a function from a file."
-msgstr ""
+msgstr "從檔案匯入函式。"
 
 #: ../../../src/python/export.rst:14:<autosummary>:1
 msgid ""
@@ -48,7 +48,7 @@ msgstr ""
 #: ../../../src/python/export.rst:14:<autosummary>:1
 msgid ""
 "Make a callable object to export multiple traces of a function to a file."
-msgstr ""
+msgstr "建立可呼叫物件以將函式的多個 trace 匯出到檔案。"
 
 #: ../../../src/python/export.rst:14:<autosummary>:1
 msgid ""
@@ -58,4 +58,4 @@ msgstr ""
 
 #: ../../../src/python/export.rst:14:<autosummary>:1
 msgid "Export a graph to DOT format for visualization."
-msgstr ""
+msgstr "匯出圖形為 DOT 格式以供視覺化。"

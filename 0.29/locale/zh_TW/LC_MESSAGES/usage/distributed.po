@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../../src/usage/distributed.rst:4
 msgid "Distributed Communication"
-msgstr ""
+msgstr "分散式通訊"
 
 #: ../../../src/usage/distributed.rst:8
 msgid ""
@@ -50,7 +50,7 @@ msgstr ""
 msgid ""
 "The list of all currently supported operations and their documentation can "
 "be seen in the :ref:`API docs<distributed>`."
-msgstr ""
+msgstr "目前支援的所有操作及其文件，請參見 :ref:`API 文件<distributed>`。"
 
 #: ../../../src/usage/distributed.rst:22
 msgid ""
@@ -61,11 +61,11 @@ msgstr ""
 
 #: ../../../src/usage/distributed.rst:27
 msgid "Getting Started"
-msgstr ""
+msgstr "開始使用"
 
 #: ../../../src/usage/distributed.rst:29
 msgid "A distributed program in MLX is as simple as:"
-msgstr ""
+msgstr "在 MLX 中，分散式程式可簡單寫成："
 
 #: ../../../src/usage/distributed.rst:31
 msgid ""
@@ -85,6 +85,10 @@ msgid ""
 "size of one. This property allows us to avoid code that checks if we are in "
 "a distributed setting similar to the one below:"
 msgstr ""
+"上述程式會在所有分散式行程之間對 ``mx.ones(10)`` 進行求和。然而用 ``python`` "
+"執行此腳本時只會啟動一個行程，因此不會進行分散式通訊。也就是說，當分散式群組"
+"大小為 1 時，``mx.distributed`` 中的所有操作都是空操作。這個特性讓我們可以避"
+"免寫出需要檢查是否在分散式環境下的程式碼，例如："
 
 #: ../../../src/usage/distributed.rst:46
 msgid ""
@@ -99,7 +103,7 @@ msgstr ""
 
 #: ../../../src/usage/distributed.rst:57
 msgid "Running Distributed Programs"
-msgstr ""
+msgstr "執行分散式程式"
 
 #: ../../../src/usage/distributed.rst:59
 msgid ""
@@ -107,6 +111,8 @@ msgid ""
 "Continuing with our initial example we can run it on localhost with 4 "
 "processes using"
 msgstr ""
+"MLX 提供 ``mlx.launch`` 這個輔助腳本用來啟動分散式程式。延續前面的範例，我們"
+"可以在本機以 4 個行程執行："
 
 #: ../../../src/usage/distributed.rst:62
 msgid ""
@@ -122,6 +128,8 @@ msgid ""
 "We can also run it on some remote hosts by providing their IPs (provided "
 "that the script exists on all hosts and they are reachable by ssh)"
 msgstr ""
+"我們也可以提供遠端主機的 IP 來執行（前提是腳本在所有主機上都存在，且可透過 "
+"ssh 連線）。"
 
 #: ../../../src/usage/distributed.rst:73
 msgid ""
@@ -137,10 +145,12 @@ msgid ""
 "Consult the dedicated :doc:`usage guide<launching_distributed>` for more "
 "information on using ``mlx.launch``."
 msgstr ""
+"更多關於 ``mlx.launch`` 的使用方式，請參考專門的 :doc:`使用指南"
+"<launching_distributed>`。"
 
 #: ../../../src/usage/distributed.rst:85
 msgid "Selecting Backend"
-msgstr ""
+msgstr "選擇後端"
 
 #: ../../../src/usage/distributed.rst:87
 msgid ""
@@ -156,12 +166,14 @@ msgid ""
 "return **the same backend** if called without arguments or with backend set "
 "to ``any``."
 msgstr ""
+"分散式後端成功初始化後，再次呼叫 :func:`init`（不帶參數或設定為 ``any``）會回"
+"傳**相同的後端**。"
 
 #: ../../../src/usage/distributed.rst:96
 msgid ""
 "The following examples aim to clarify the backend initialization logic in "
 "MLX:"
-msgstr ""
+msgstr "以下範例用來說明 MLX 中後端初始化的邏輯："
 
 #: ../../../src/usage/distributed.rst:98
 msgid ""
@@ -183,7 +195,7 @@ msgstr ""
 
 #: ../../../src/usage/distributed.rst:114
 msgid "Training Example"
-msgstr ""
+msgstr "訓練範例"
 
 #: ../../../src/usage/distributed.rst:116
 msgid ""
@@ -191,12 +203,14 @@ msgid ""
 "distributed training. Namely, we will average the gradients across a set of "
 "hosts before applying them to the model."
 msgstr ""
+"本節將把 MLX 的訓練迴圈改為支援資料平行的分散式訓練。也就是在將梯度套用到模型"
+"前，先在多台主機間對梯度取平均。"
 
 #: ../../../src/usage/distributed.rst:120
 msgid ""
 "Our training loop looks like the following code snippet if we omit the "
 "model, dataset and optimizer initialization."
-msgstr ""
+msgstr "若省略模型、資料集與最佳化器的初始化，我們的訓練迴圈如下："
 
 #: ../../../src/usage/distributed.rst:123
 msgid ""
@@ -220,6 +234,8 @@ msgid ""
 "func:`all_sum` and divide by the size of the :class:`Group`. Namely we have "
 "to :func:`mlx.utils.tree_map` the gradients with following function."
 msgstr ""
+"要在多台機器間對梯度取平均，只需執行 :func:`all_sum` 並除以 :class:`Group` 的"
+"大小。也就是用下列函式對梯度做 :func:`mlx.utils.tree_map`："
 
 #: ../../../src/usage/distributed.rst:142
 msgid ""
@@ -231,7 +247,7 @@ msgstr ""
 msgid ""
 "Putting everything together our training loop step looks as follows with "
 "everything else remaining the same."
-msgstr ""
+msgstr "把所有內容整合後，在其他部分不變的情況下，訓練步驟如下："
 
 #: ../../../src/usage/distributed.rst:150
 msgid ""
@@ -255,7 +271,7 @@ msgstr ""
 
 #: ../../../src/usage/distributed.rst:170
 msgid "Utilizing ``nn.average_gradients``"
-msgstr ""
+msgstr "使用 ``nn.average_gradients``"
 
 #: ../../../src/usage/distributed.rst:172
 msgid ""
@@ -263,12 +279,15 @@ msgid ""
 "communication per gradient. It is significantly more efficient to aggregate "
 "several gradients together and perform fewer communication steps."
 msgstr ""
+"雖然上面的程式碼可以正確運作，但每個梯度都會進行一次通訊。將多個梯度聚合後再"
+"通訊，會更有效率。"
 
 #: ../../../src/usage/distributed.rst:176
 msgid ""
 "This is the purpose of :func:`mlx.nn.average_gradients`. The final code "
 "looks almost identical to the example above:"
 msgstr ""
+"這正是 :func:`mlx.nn.average_gradients` 的目的。最終程式碼與上例幾乎相同："
 
 #: ../../../src/usage/distributed.rst:179
 msgid ""
@@ -289,7 +308,7 @@ msgstr ""
 
 #: ../../../src/usage/distributed.rst:197
 msgid "Getting Started with MPI"
-msgstr ""
+msgstr "開始使用 MPI"
 
 #: ../../../src/usage/distributed.rst:199
 msgid ""
@@ -305,7 +324,7 @@ msgstr ""
 msgid ""
 "The simplest possible usage is the following which, assuming the minimal "
 "example in the beginning of this page, should result in:"
-msgstr ""
+msgstr "最簡單的用法如下，假設使用本頁開頭的最小範例，輸出應為："
 
 #: ../../../src/usage/distributed.rst:209
 msgid ""
@@ -321,10 +340,13 @@ msgid ""
 "other and compute the sum which is printed. Launching with ``mlx.launch -n "
 "4 ...`` would print 4 etc."
 msgstr ""
+"以上會在同一台（本地）機器上啟動兩個行程，並可看到兩個標準輸出。行程會互相傳"
+"送全 1 陣列並計算總和後印出。若使用 ``mlx.launch -n 4 ...`` 則會印出 4，依此"
+"類推。"
 
 #: ../../../src/usage/distributed.rst:221
 msgid "Installing MPI"
-msgstr ""
+msgstr "安裝 MPI"
 
 #: ../../../src/usage/distributed.rst:223
 msgid ""
@@ -332,6 +354,8 @@ msgid ""
 "or compiled from source. Most of our testing is done using ``openmpi`` "
 "installed with the Anaconda package manager as follows:"
 msgstr ""
+"MPI 可透過 Homebrew、pip、Anaconda 軟體包管理器安裝，或從來源碼編譯。我們大多"
+"數測試使用 Anaconda 軟體包管理器安裝的 ``openmpi``："
 
 #: ../../../src/usage/distributed.rst:227
 msgid "$ conda install conda-forge::openmpi"
@@ -347,6 +371,10 @@ msgid ""
 "``MPI_LIBNAME`` environment variable. This is automatically taken care of by "
 "``mlx.launch`` as well."
 msgstr ""
+"透過 Homebrew 或 pip 安裝時，需要指定 ``libmpi.dyld`` 的位置，讓 MLX 能在執行"
+"時找到並載入它。這可透過將 ``DYLD_LIBRARY_PATH`` 環境變數傳給 ``mpirun`` 來達"
+"成，而 ``mlx.launch`` 會自動完成。某些環境使用非標準的程式庫檔名，可用 "
+"``MPI_LIBNAME`` 環境變數指定，``mlx.launch`` 同樣會自動處理。"
 
 #: ../../../src/usage/distributed.rst:238
 msgid ""
@@ -358,7 +386,7 @@ msgstr ""
 
 #: ../../../src/usage/distributed.rst:245
 msgid "Setting up Remote Hosts"
-msgstr ""
+msgstr "設定遠端主機"
 
 #: ../../../src/usage/distributed.rst:247
 msgid ""
@@ -366,38 +394,45 @@ msgid ""
 "over the network if the remote hosts can be accessed via ssh. A good "
 "checklist to debug connectivity issues is the following:"
 msgstr ""
+"若可透過 ssh 連線到遠端主機，MPI 便可自動連線並建立網路通訊。以下是排查連線問"
+"題的檢查列表："
 
 #: ../../../src/usage/distributed.rst:251
 msgid ""
 "``ssh hostname`` works from all machines to all machines without asking for "
 "password or host confirmation"
-msgstr ""
+msgstr "所有機器之間執行 ``ssh hostname`` 不需密碼或主機確認"
 
 #: ../../../src/usage/distributed.rst:253
 msgid "``mpirun`` is accessible on all machines."
-msgstr ""
+msgstr "所有機器皆可存取 ``mpirun``。"
 
 #: ../../../src/usage/distributed.rst:254
 msgid ""
 "Ensure that the ``hostname`` used by MPI is the one that you have configured "
 "in the ``.ssh/config`` files on all machines."
 msgstr ""
+"請確保 MPI 使用的 ``hostname`` 與所有機器 ``.ssh/config`` 中設定的一致。"
 
 #: ../../../src/usage/distributed.rst:258
 msgid "Tuning MPI All Reduce"
-msgstr ""
+msgstr "調校 MPI All Reduce"
 
 #: ../../../src/usage/distributed.rst:262
 msgid ""
 "For faster all reduce consider using the ring backend either with "
 "Thunderbolt connections or over Ethernet."
 msgstr ""
+"若要更快的 all-reduce，可考慮使用 ring 後端（透過 Thunderbolt 連線或乙太網"
+"路）。"
 
 #: ../../../src/usage/distributed.rst:265
 msgid ""
 "Configure MPI to use N tcp connections between each host to improve "
 "bandwidth by passing ``--mca btl_tcp_links N``."
 msgstr ""
+"透過 ``--mca btl_tcp_links N`` 設定 MPI 在每個主機間使用 N 條 TCP 連線，以提"
+"升頻寬。"
 
 #: ../../../src/usage/distributed.rst:268
 msgid ""
@@ -405,10 +440,12 @@ msgid ""
 "btl_tcp_if_include <iface>`` where ``<iface>`` should be the interface you "
 "want to use."
 msgstr ""
+"透過 ``--mca btl_tcp_if_include <iface>`` 強制 MPI 使用效能最佳的網路介面，其"
+"中 ``<iface>`` 為你想使用的介面。"
 
 #: ../../../src/usage/distributed.rst:273
 msgid "Getting Started with Ring"
-msgstr ""
+msgstr "Ring 入門"
 
 #: ../../../src/usage/distributed.rst:275
 msgid ""
@@ -423,7 +460,7 @@ msgstr ""
 
 #: ../../../src/usage/distributed.rst:283
 msgid "Defining a Ring"
-msgstr ""
+msgstr "定義 Ring"
 
 #: ../../../src/usage/distributed.rst:285
 msgid ""
@@ -432,12 +469,17 @@ msgid ""
 "one defines a hostname to ssh into to run commands on this node and one or "
 "more IPs that this node will listen to for connections."
 msgstr ""
+"定義並使用 ring 最簡單的方法，是透過 JSON hostfile 與 ``mlx.launch`` :doc:`輔"
+"助腳本 <launching_distributed>`。對每個節點，需定義可 ssh 登入的主機名稱以及"
+"一個或多個供其監聽連線的 IP。"
 
 #: ../../../src/usage/distributed.rst:290
 msgid ""
 "For example the hostfile below defines a 4 node ring. ``hostname1`` will be "
 "rank 0, ``hostname2`` rank 1 etc."
 msgstr ""
+"例如，以下 hostfile 定義了 4 節點的 ring。``hostname1`` 為 rank 0，"
+"``hostname2`` 為 rank 1，以此類推。"
 
 #: ../../../src/usage/distributed.rst:293
 msgid ""
@@ -456,6 +498,9 @@ msgid ""
 "provided IPs. Specifically, ``hostname1`` will connect to ``123.123.123.2`` "
 "and accept a connection from ``123.123.123.4`` and so on and so forth."
 msgstr ""
+"執行 ``mlx.launch --hostfile ring-4.json my_script.py`` 會 ssh 進入每個節點，"
+"並執行腳本、在提供的 IP 上監聽連線。具體來說，``hostname1`` 會連線到 "
+"``123.123.123.2`` 並接受來自 ``123.123.123.4`` 的連線，以此類推。"
 
 #: ../../../src/usage/distributed.rst:308
 msgid "Thunderbolt Ring"
@@ -469,6 +514,9 @@ msgid ""
 "tedious process. To simplify this, we provide the utility ``mlx."
 "distributed_config``."
 msgstr ""
+"即使在乙太網路上，ring 後端也可能優於 MPI，但其主要目的在於使用 Thunderbolt "
+"ring 來取得更高頻寬通訊。此類 Thunderbolt ring 可以手動設定，但流程相對繁瑣。"
+"為了簡化，我們提供 ``mlx.distributed_config`` 工具。"
 
 #: ../../../src/usage/distributed.rst:315
 msgid ""
@@ -476,6 +524,8 @@ msgid ""
 "ssh via Ethernet or Wi-Fi. Subsequently, connect them via thunderbolt cables "
 "and then call the utility as follows:"
 msgstr ""
+"要使用 ``mlx.distributed_config``，你的電腦需能透過乙太網路或 Wi-Fi 以 ssh 連"
+"線。接著用 Thunderbolt 線纜連接它們，並如下呼叫工具："
 
 #: ../../../src/usage/distributed.rst:319
 msgid "mlx.distributed_config --verbose --hosts host1,host2,host3,host4"
@@ -489,6 +539,9 @@ msgid ""
 "available on the nodes then ``--auto-setup`` can be used to configure them "
 "automatically."
 msgstr ""
+"預設情況下，腳本會嘗試偵測 Thunderbolt ring，並提供設定各節點的命令，以及可"
+"供 ``mlx.launch`` 使用的 ``hostfile.json``。若各節點可無密碼 ``sudo``，可使"
+"用 ``--auto-setup`` 自動完成設定。"
 
 #: ../../../src/usage/distributed.rst:328
 msgid ""
@@ -507,17 +560,19 @@ msgstr ""
 #: ../../../src/usage/distributed.rst:337
 msgid ""
 "If you want to go through the process manually, the steps are as follows:"
-msgstr ""
+msgstr "如果想手動完成，步驟如下："
 
 #: ../../../src/usage/distributed.rst:339
 msgid "Disable the thunderbolt bridge interface"
-msgstr ""
+msgstr "停用 Thunderbolt bridge 介面"
 
 #: ../../../src/usage/distributed.rst:340
 msgid ""
 "For the cable connecting rank ``i`` to rank ``i + 1`` find the interfaces "
 "corresponding to that cable in nodes ``i`` and ``i + 1``."
 msgstr ""
+"針對連接 rank ``i`` 與 rank ``i + 1`` 的線纜，在節點 ``i`` 與 ``i + 1`` 上找"
+"出對應的介面。"
 
 #: ../../../src/usage/distributed.rst:342
 msgid ""
@@ -527,3 +582,6 @@ msgid ""
 "and ``192.168.0.2`` respectively to the two nodes. For more details you can "
 "see the commands prepared by the utility script."
 msgstr ""
+"為對應介面建立一個專用子網路以連接兩個節點。例如該線纜在節點 ``i`` 對應 "
+"``en2``，且在節點 ``i + 1`` 也對應 ``en2``，則可分別配置 IP ``192.168.0.1`` "
+"與 ``192.168.0.2``。更多細節可參考工具腳本準備的命令。"

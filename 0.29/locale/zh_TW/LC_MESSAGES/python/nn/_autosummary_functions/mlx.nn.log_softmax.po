@@ -24,9 +24,9 @@ msgstr ""
 #: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/activations.py:docstring
 #: of mlx.nn.layers.activations.log_softmax:1
 msgid "Applies the Log Softmax function."
-msgstr ""
+msgstr "套用對數 softmax 函式。"
 
 #: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/activations.py:docstring
 #: of mlx.nn.layers.activations.log_softmax:3
 msgid "Applies :math:`x + \\log \\sum_i e^{x_i}` element wise."
-msgstr ""
+msgstr "逐元素套用 :math:`x + \\log \\sum_i e^{x_i}`。"
