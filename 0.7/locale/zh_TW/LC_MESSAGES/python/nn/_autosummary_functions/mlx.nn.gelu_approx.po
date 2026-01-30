@@ -24,12 +24,12 @@ msgstr ""
 #: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/__init__.py:docstring
 #: of mlx.nn.gelu_approx:1
 msgid "An approximation to Gaussian Error Linear Unit."
-msgstr ""
+msgstr "高斯誤差線性單元的近似版本。"
 
 #: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/__init__.py:docstring
 #: of mlx.nn.gelu_approx:3
 msgid "See :func:`gelu` for the exact computation."
-msgstr ""
+msgstr "精確計算請參見 :func:`gelu`。"
 
 #: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/__init__.py:docstring
 #: of mlx.nn.gelu_approx:5

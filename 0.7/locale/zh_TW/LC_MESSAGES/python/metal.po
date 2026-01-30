@@ -27,7 +27,7 @@ msgstr ""
 
 #: ../../../src/python/metal.rst:14:<autosummary>:1
 msgid "Check if the Metal back-end is available."
-msgstr ""
+msgstr "檢查 Metal 後端是否可用。"
 
 #: ../../../src/python/metal.rst:14:<autosummary>:1
 msgid ":py:obj:`get_active_memory <mlx.core.metal.get_active_memory>`\\ \\(\\)"

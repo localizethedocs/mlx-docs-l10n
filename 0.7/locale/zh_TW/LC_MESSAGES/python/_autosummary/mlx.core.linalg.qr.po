@@ -24,7 +24,7 @@ msgstr ""
 #: ../../../docstring of
 #: mlx.core.linalg.pybind11_detail_function_record_v1_system_libstdcpp_gxx_abi_1xxx_use_cxx11_abi_1.qr:1
 msgid "The QR factorization of the input matrix."
-msgstr ""
+msgstr "輸入矩陣的 QR 分解。"
 
 #: ../../../docstring of
 #: mlx.core.linalg.pybind11_detail_function_record_v1_system_libstdcpp_gxx_abi_1xxx_use_cxx11_abi_1.qr:3

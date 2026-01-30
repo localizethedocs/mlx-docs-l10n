@@ -24,7 +24,7 @@ msgstr ""
 #: ../../../docstring of
 #: mlx.core.pybind11_detail_function_record_v1_system_libstdcpp_gxx_abi_1xxx_use_cxx11_abi_1.compile:1
 msgid "Returns a compiled function which produces the same output as ``fun``."
-msgstr ""
+msgstr "回傳一個編譯後的函式，其輸出與 ``fun`` 相同。"
 
 #: ../../../src/python/_autosummary/mlx.core.compile.rst:0
 msgid "Parameters"

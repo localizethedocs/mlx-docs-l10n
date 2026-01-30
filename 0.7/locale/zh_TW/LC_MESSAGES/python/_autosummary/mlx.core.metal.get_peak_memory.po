@@ -24,7 +24,7 @@ msgstr ""
 #: ../../../docstring of
 #: mlx.core.metal.pybind11_detail_function_record_v1_system_libstdcpp_gxx_abi_1xxx_use_cxx11_abi_1.get_peak_memory:1
 msgid "Get the peak amount of used memory in bytes."
-msgstr ""
+msgstr "取得使用記憶體的峰值位元組數。"
 
 #: ../../../docstring of
 #: mlx.core.metal.pybind11_detail_function_record_v1_system_libstdcpp_gxx_abi_1xxx_use_cxx11_abi_1.get_peak_memory:3
