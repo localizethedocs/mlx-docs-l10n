@@ -25,7 +25,7 @@ msgstr ""
 msgid ""
 "Initialize the communication backend and create the global communication "
 "group."
-msgstr ""
+msgstr "初始化通訊後端並建立全域通訊群組。"
 
 #: ../../../src/python/_autosummary/mlx.core.distributed.init.rst:0
 msgid "Parameters"

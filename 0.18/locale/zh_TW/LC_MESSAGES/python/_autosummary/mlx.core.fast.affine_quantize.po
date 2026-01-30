@@ -40,7 +40,7 @@ msgstr ""
 
 #: ../../../src/python/_autosummary/mlx.core.fast.affine_quantize.rst:0
 msgid "Parameters"
-msgstr ""
+msgstr "參數"
 
 #: ../../../docstring of mlx.core.fast.affine_quantize:12
 msgid "Matrix to be quantize"
@@ -66,7 +66,7 @@ msgstr ""
 
 #: ../../../src/python/_autosummary/mlx.core.fast.affine_quantize.rst:0
 msgid "Returns"
-msgstr ""
+msgstr "回傳"
 
 #: ../../../docstring of mlx.core.fast.affine_quantize:25
 msgid "The quantized version of ``w``"
@@ -74,4 +74,4 @@ msgstr ""
 
 #: ../../../src/python/_autosummary/mlx.core.fast.affine_quantize.rst:0
 msgid "Return type"
-msgstr ""
+msgstr "回傳型別"

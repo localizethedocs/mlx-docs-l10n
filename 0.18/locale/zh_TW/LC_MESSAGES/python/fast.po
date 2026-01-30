@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../../src/python/fast.rst:4
 msgid "Fast"
-msgstr ""
+msgstr "快速"
 
 #: ../../../src/python/fast.rst:16:<autosummary>:1
 msgid ""
@@ -29,7 +29,7 @@ msgstr ""
 
 #: ../../../src/python/fast.rst:16:<autosummary>:1
 msgid "Root Mean Square normalization (RMS norm)."
-msgstr ""
+msgstr "均方根正規化（RMS norm）。"
 
 #: ../../../src/python/fast.rst:16:<autosummary>:1
 msgid ""
@@ -39,7 +39,7 @@ msgstr ""
 
 #: ../../../src/python/fast.rst:16:<autosummary>:1
 msgid "Layer normalization."
-msgstr ""
+msgstr "層正規化。"
 
 #: ../../../src/python/fast.rst:16:<autosummary>:1
 msgid ""
@@ -49,7 +49,7 @@ msgstr ""
 
 #: ../../../src/python/fast.rst:16:<autosummary>:1
 msgid "Apply rotary positional encoding to the input."
-msgstr ""
+msgstr "對輸入套用旋轉位置編碼。"
 
 #: ../../../src/python/fast.rst:16:<autosummary>:1
 msgid ""
@@ -61,7 +61,7 @@ msgstr ""
 msgid ""
 "A fast implementation of multi-head attention: ``O = softmax(Q @ K.T, "
 "dim=-1) @ V``."
-msgstr ""
+msgstr "多頭注意力的快速實作：``O = softmax(Q @ K.T, dim=-1) @ V``。"
 
 #: ../../../src/python/fast.rst:16:<autosummary>:1
 msgid ""
@@ -83,4 +83,4 @@ msgstr ""
 
 #: ../../../src/python/fast.rst:16:<autosummary>:1
 msgid "A jit-compiled custom Metal kernel defined from a source string."
-msgstr ""
+msgstr "由來源字串定義的 JIT 編譯自訂 Metal 核心。"
