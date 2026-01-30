@@ -45,7 +45,7 @@ msgstr ""
 
 #: ../../../src/usage/distributed.rst:19
 msgid "A full featured and mature distributed communications library."
-msgstr "功能完整且成熟的分散式通訊函式庫。"
+msgstr "功能完整且成熟的分散式通訊程式庫。"
 
 #: ../../../src/usage/distributed.rst:20
 msgid ":ref:`RING <ring_section>`"
@@ -347,7 +347,7 @@ msgid ""
 "`recv` with arbitrary sender and receiver are not supported in the ring "
 "backend."
 msgstr ""
-"Ring 後端不依賴任何第三方函式庫，因此永遠可用。它使用 TCP socket，因此節點必"
+"Ring 後端不依賴任何第三方程式庫，因此永遠可用。它使用 TCP socket，因此節點必"
 "須能透過網路互相連線。顧名思義，節點以環狀相連，這表示 rank 1 只能與 rank 0 "
 "和 rank 2 通訊，rank 2 只能與 rank 1 和 rank 3 通訊，以此類推。因此 ring 後端"
 "不支援任意 sender 與 receiver 的 :func:`send` 與 :func:`recv`。"
@@ -435,7 +435,7 @@ msgid ""
 "available on the nodes then ``--auto-setup`` can be used to configure them "
 "automatically."
 msgstr ""
-"預設情況下，腳本會嘗試偵測 Thunderbolt ring，並提供設定各節點的指令，以及可"
+"預設情況下，腳本會嘗試偵測 Thunderbolt ring，並提供設定各節點的命令，以及可"
 "供 ``mlx.launch`` 使用的 ``hostfile.json``。若各節點可無密碼 ``sudo``，可使"
 "用 ``--auto-setup`` 自動完成設定。"
 
@@ -466,7 +466,7 @@ msgid ""
 msgstr ""
 "為對應介面建立一個專用子網路以連接兩個節點。例如該線纜在節點 ``i`` 對應 "
 "``en2``，且在節點 ``i + 1`` 也對應 ``en2``，則可分別配置 IP ``192.168.0.1`` "
-"與 ``192.168.0.2``。更多細節可參考工具腳本準備的指令。"
+"與 ``192.168.0.2``。更多細節可參考工具腳本準備的命令。"
 
 #: ../../../src/usage/distributed.rst:276
 msgid "Getting Started with JACCL"
@@ -674,7 +674,7 @@ msgstr "檢查是否為有效的 mesh"
 msgid ""
 "provide the commands to configure each node (or run them if sudo is "
 "available)"
-msgstr "提供設定各節點的指令（或在有 sudo 時直接執行）"
+msgstr "提供設定各節點的命令（或在有 sudo 時直接執行）"
 
 #: ../../../src/usage/distributed.rst:384
 msgid "generate the hostfile to be used with ``mlx.launch``"
@@ -761,7 +761,7 @@ msgid ""
 "communication library that supports both multi-gpu and multi-node setups."
 msgstr ""
 "MLX 在 CUDA 環境中可與 `NCCL <https://developer.nvidia.com/nccl>`_ 通訊。"
-"NCCL 是高效能的集合通訊函式庫，支援多 GPU 與多節點設定。"
+"NCCL 是高效能的集合通訊程式庫，支援多 GPU 與多節點設定。"
 
 #: ../../../src/usage/distributed.rst:437
 msgid ""
@@ -818,7 +818,7 @@ msgstr ""
 "Message_Passing_Interface>`_，MLX 便可與其通訊。使用 MPI 的分散式 MLX 程式可"
 "如預期透過 ``mpirun`` 啟動。不過在以下範例中，我們使用 ``mlx.launch --"
 "backend mpi``，它會處理一些細節，例如為 ``mpirun`` 可執行檔與 ``libmpi."
-"dyld`` 共享函式庫設定絕對路徑。"
+"dyld`` 共享程式庫設定絕對路徑。"
 
 #: ../../../src/usage/distributed.rst:472
 msgid ""
@@ -854,8 +854,8 @@ msgid ""
 "or compiled from source. Most of our testing is done using ``openmpi`` "
 "installed with the Anaconda package manager as follows:"
 msgstr ""
-"MPI 可透過 Homebrew、pip、Anaconda 套件管理器安裝，或從原始碼編譯。我們大多數"
-"測試使用 Anaconda 套件管理器安裝的 ``openmpi``："
+"MPI 可透過 Homebrew、pip、Anaconda 軟體包管理器安裝，或從來源碼編譯。我們大多"
+"數測試使用 Anaconda 軟體包管理器安裝的 ``openmpi``："
 
 #: ../../../src/usage/distributed.rst:493
 msgid "$ conda install conda-forge::openmpi"
@@ -873,7 +873,7 @@ msgid ""
 msgstr ""
 "透過 Homebrew 或 pip 安裝時，需要指定 ``libmpi.dyld`` 的位置，讓 MLX 能在執行"
 "時找到並載入它。這可透過將 ``DYLD_LIBRARY_PATH`` 環境變數傳給 ``mpirun`` 來達"
-"成，而 ``mlx.launch`` 會自動完成。某些環境使用非標準的函式庫檔名，可用 "
+"成，而 ``mlx.launch`` 會自動完成。某些環境使用非標準的程式庫檔名，可用 "
 "``MPI_LIBNAME`` 環境變數指定，``mlx.launch`` 同樣會自動處理。"
 
 #: ../../../src/usage/distributed.rst:504

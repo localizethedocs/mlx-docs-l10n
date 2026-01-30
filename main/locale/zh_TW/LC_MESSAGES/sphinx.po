@@ -3063,7 +3063,7 @@ msgstr ""
 
 #: domains/std/__init__.py:175
 msgid "Type"
-msgstr ""
+msgstr "型別"
 
 #: domains/std/__init__.py:185
 msgid "Default"

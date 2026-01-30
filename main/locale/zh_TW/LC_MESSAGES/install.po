@@ -61,7 +61,7 @@ msgstr ""
 
 #: ../../../src/install.rst:28
 msgid "MLX has a CUDA backend which you can install with:"
-msgstr "MLX 提供 CUDA 後端，可使用以下指令安裝："
+msgstr "MLX 提供 CUDA 後端，可使用以下命令安裝："
 
 #: ../../../src/install.rst:30
 msgid "pip install mlx[cuda12]"
@@ -71,7 +71,7 @@ msgstr ""
 msgid ""
 "To install the CUDA package from PyPi your system must meet the following "
 "requirements:"
-msgstr "要從 PyPI 安裝 CUDA 套件，你的系統必須符合下列需求："
+msgstr "要從 PyPI 安裝 CUDA 軟體包，你的系統必須符合下列需求："
 
 #: ../../../src/install.rst:38
 msgid "Nvidia architecture >= SM 7.5"
@@ -98,8 +98,8 @@ msgid ""
 "For CUDA 13 use ``pip install mlx[cuda13]``. The CUDA 13 package requires an "
 "Nvidia driver >= 580 or an appropriate CUDA compatibility package."
 msgstr ""
-"CUDA 13 請使用 ``pip install mlx[cuda13]``。CUDA 13 套件需要 Nvidia 驅動>= "
-"580 或適當的 CUDA 相容性套件。"
+"CUDA 13 請使用 ``pip install mlx[cuda13]``。CUDA 13 軟體包需要 Nvidia 驅動>= "
+"580 或適當的 CUDA 相容性軟體包。"
 
 #: ../../../src/install.rst:48
 msgid "CPU-only (Linux)"
@@ -117,7 +117,7 @@ msgstr ""
 msgid ""
 "To install the CPU-only package from PyPi your system must meet the "
 "following requirements:"
-msgstr "要從 PyPI 安裝僅 CPU 套件，你的系統必須符合下列需求："
+msgstr "要從 PyPI 安裝僅 CPU 軟體包，你的系統必須符合下列需求："
 
 #: ../../../src/install.rst:64 ../../../src/install.rst:288
 msgid "Troubleshooting"
@@ -131,7 +131,7 @@ msgstr "*我的 OS 與 Python 版本符合需求，但 pip 仍找不到相符的
 
 #: ../../../src/install.rst:69
 msgid "Probably you are using a non-native Python. The output of"
-msgstr "你可能使用了非原生的 Python。以下指令的輸出："
+msgstr "你可能使用了非原生的 Python。以下命令的輸出："
 
 #: ../../../src/install.rst:71
 msgid "python -c \"import platform; print(platform.processor())\""
@@ -174,7 +174,7 @@ msgid ""
 "<build shell>` below."
 msgstr ""
 "請確保你的 shell 環境是原生 ``arm``，不是透過 Rosetta 的 ``x86``。若 ``uname "
-"-p`` 輸出為 ``x86``，請參考下方的 :ref:`疑難排解 <build shell>`。"
+"-p`` 輸出為 ``x86``，請參考下方的\\ :ref:`疑難排解 <build shell>`。"
 
 #: ../../../src/install.rst:95
 msgid "Python API"
@@ -185,8 +185,8 @@ msgid ""
 "To build and install the MLX python library from source, first, clone MLX "
 "from `its GitHub repo <https://github.com/ml-explore/mlx>`_:"
 msgstr ""
-"要從原始碼建置與安裝 MLX Python 函式庫，先從 `其 GitHub 專案 <https://github."
-"com/ml-explore/mlx>`_ 複製："
+"要從來源碼建置與安裝 MLX Python 程式庫，先從\\ `其 GitHub 專案 <https://"
+"github.com/ml-explore/mlx>`_\\ 複製："
 
 #: ../../../src/install.rst:102 ../../../src/install.rst:142
 msgid "git clone git@github.com:ml-explore/mlx.git mlx && cd mlx"
@@ -204,7 +204,7 @@ msgstr ""
 msgid ""
 "For developing, install the package with development dependencies, and use "
 "an editable install:"
-msgstr "進行開發時，請安裝含開發相依性的套件，並使用可編輯安裝："
+msgstr "進行開發時，請安裝含開發相依性的軟體包，並使用可編輯安裝："
 
 #: ../../../src/install.rst:115
 msgid "pip install -e \".[dev]\""
@@ -213,7 +213,7 @@ msgstr ""
 #: ../../../src/install.rst:119
 msgid ""
 "Once the development dependencies are installed, you can build faster with:"
-msgstr "安裝開發相依性後，可用以下指令加速建置："
+msgstr "安裝開發相依性後，可用以下命令加速建置："
 
 #: ../../../src/install.rst:121
 msgid "python setup.py build_ext --inplace"
@@ -221,7 +221,7 @@ msgstr ""
 
 #: ../../../src/install.rst:125
 msgid "Run the tests with:"
-msgstr "使用以下指令執行測試："
+msgstr "使用以下命令執行測試："
 
 #: ../../../src/install.rst:127
 msgid "python -m unittest discover python/tests"
@@ -233,7 +233,7 @@ msgstr ""
 
 #: ../../../src/install.rst:136
 msgid "Currently, MLX must be built and installed from source."
-msgstr "目前 MLX 必須從原始碼建置與安裝。"
+msgstr "目前 MLX 必須從來源碼建置與安裝。"
 
 #: ../../../src/install.rst:138
 msgid ""
@@ -241,7 +241,7 @@ msgid ""
 "start by cloning MLX from `its GitHub repo <https://github.com/ml-explore/"
 "mlx>`_:"
 msgstr ""
-"與 Python 函式庫相同，要建置並安裝 MLX C++ 函式庫，先從 `其 GitHub 專案 "
+"與 Python 程式庫相同，要建置並安裝 MLX C++ 程式庫，先從 `其 GitHub 專案 "
 "<https://github.com/ml-explore/mlx>`_ 複製："
 
 #: ../../../src/install.rst:146
@@ -256,7 +256,7 @@ msgstr ""
 
 #: ../../../src/install.rst:153
 msgid "Run tests with:"
-msgstr "使用以下指令執行測試："
+msgstr "使用以下命令執行測試："
 
 #: ../../../src/install.rst:155
 msgid "make test"
@@ -264,7 +264,7 @@ msgstr ""
 
 #: ../../../src/install.rst:159
 msgid "Install with:"
-msgstr "使用以下指令安裝："
+msgstr "使用以下命令安裝："
 
 #: ../../../src/install.rst:161
 msgid "make install"
@@ -279,7 +279,7 @@ msgid ""
 msgstr ""
 "請注意，建置出的 ``mlx.metallib`` 檔案應與靜態連結到 ``libmlx.a`` 的可執行檔"
 "位於同一目錄；或是在建置時定義前處理器常數 ``METAL_PATH``，並指向已建置的 "
-"metal 函式庫路徑。"
+"metal 程式庫路徑。"
 
 #: ../../../src/install.rst:170
 msgid "Build Options"
@@ -362,7 +362,7 @@ msgstr "export DEVELOPER_DIR=\"/path/to/Xcode.app/Contents/Developer/\""
 msgid ""
 "Further, you can use the following command to find out which macOS SDK will "
 "be used"
-msgstr "此外，你可以用以下指令查看將使用的 macOS SDK："
+msgstr "此外，你可以用以下命令查看將使用的 macOS SDK："
 
 #: ../../../src/install.rst:210
 msgid "xcrun -sdk macosx --show-sdk-version"
@@ -417,10 +417,10 @@ msgid ""
 "depending on the application. Once a kernel is compiled, it will be cached "
 "by the system. The Metal kernel cache persists across reboots."
 msgstr ""
-"``MLX_METAL_JIT`` 旗標可縮小包含預先建置 GPU 核心的 MLX Metal 函式庫大小。它"
-"會在特定機器上首次使用核心時進行即時編譯，從而大幅減少 Metal 函式庫大小。請注"
-"意，即時編譯會產生冷啟動成本，視應用程式而定可能從數百毫秒到數秒不等。核心一"
-"旦編譯完成，會被系統快取，且 Metal 核心快取會在重開機後保留。"
+"``MLX_METAL_JIT`` 旗標可縮小包含預先建置 GPU 內核的 MLX Metal 程式庫大小。它"
+"會在特定機器上首次使用內核時進行即時編譯，從而大幅減少 Metal 程式庫大小。請注"
+"意，即時編譯會產生冷啟動成本，視應用程式而定可能從數百毫秒到數秒不等。內核一"
+"旦編譯完成，會被系統快取，且 Metal 內核快取會在重開機後保留。"
 
 #: ../../../src/install.rst:244
 msgid "Linux"
@@ -431,7 +431,7 @@ msgid ""
 "To build from source on Linux (CPU only), install the BLAS and LAPACK "
 "headers. For example on Ubuntu, run the following:"
 msgstr ""
-"在 Linux 上從原始碼建置（僅 CPU）時，請安裝 BLAS 與 LAPACK 標頭。以 Ubuntu 為"
+"在 Linux 上從來源碼建置（僅 CPU）時，請安裝 BLAS 與 LAPACK 標頭。以 Ubuntu 為"
 "例，可執行："
 
 #: ../../../src/install.rst:249
@@ -453,7 +453,7 @@ msgid ""
 "To build from source on Linux with CUDA, install the BLAS and LAPACK headers "
 "and the CUDA toolkit. For example on Ubuntu, run the following:"
 msgstr ""
-"在 Linux 上以 CUDA 從原始碼建置時，請安裝 BLAS 與 LAPACK 標頭以及 CUDA "
+"在 Linux 上以 CUDA 從來源碼建置時，請安裝 BLAS 與 LAPACK 標頭以及 CUDA "
 "Toolkit。以 Ubuntu 為例，可執行："
 
 #: ../../../src/install.rst:263
@@ -481,7 +481,7 @@ msgstr ""
 
 #: ../../../src/install.rst:279
 msgid "To build the C++ package run:"
-msgstr "要建置 C++ 套件，請執行："
+msgstr "要建置 C++ 軟體包，請執行："
 
 #: ../../../src/install.rst:281
 msgid ""
@@ -546,7 +546,7 @@ msgstr ""
 
 #: ../../../src/install.rst:324
 msgid "Verify the terminal is now running natively the following command:"
-msgstr "用以下指令確認終端機已原生執行："
+msgstr "用以下命令確認終端機已原生執行："
 
 #: ../../../src/install.rst:326
 msgid ""

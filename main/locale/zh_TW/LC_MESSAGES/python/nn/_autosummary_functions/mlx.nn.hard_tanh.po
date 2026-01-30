@@ -24,7 +24,7 @@ msgstr ""
 #: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/activations.py:docstring
 #: of mlx.nn.layers.activations.hard_tanh:1
 msgid "Applies the HardTanh function."
-msgstr ""
+msgstr "套用 HardTanh 函式。"
 
 #: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/activations.py:docstring
 #: of mlx.nn.layers.activations.hard_tanh:3
@@ -32,3 +32,5 @@ msgid ""
 "Applies :math:`\\max(\\min(x, \\mathrm{max\\_val}), \\mathrm{min\\_val})` "
 "element-wise."
 msgstr ""
+"逐元素套用 :math:`\\max(\\min(x, \\mathrm{max\\_val}), "
+"\\mathrm{min\\_val})`。"

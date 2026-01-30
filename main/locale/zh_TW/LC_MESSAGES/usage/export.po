@@ -379,7 +379,7 @@ msgid ""
 "<mlx_in_cpp>` to setup a simple C++ project that uses MLX as a library."
 msgstr ""
 "在 C++ 中匯入與執行函式，基本上與在 Python 中匯入與執行相同。首先依照 :ref:`"
-"指示 <mlx_in_cpp>` 建立一個使用 MLX 作為函式庫的簡單 C++ 專案。"
+"指示 <mlx_in_cpp>` 建立一個使用 MLX 作為程式庫的簡單 C++ 專案。"
 
 #: ../../../src/usage/export.rst:254
 msgid "Next, export a simple function from Python:"

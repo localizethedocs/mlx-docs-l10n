@@ -71,7 +71,7 @@ msgstr ""
 
 #: ../../../src/python/nn/layers.rst:70:<autosummary>:1
 msgid "Applies the Continuously Differentiable Exponential Linear Unit."
-msgstr ""
+msgstr "套用連續可微的指數線性單元（CELU）。"
 
 #: ../../../src/python/nn/layers.rst:70:<autosummary>:1
 msgid ""
@@ -180,7 +180,7 @@ msgstr ""
 
 #: ../../../src/python/nn/layers.rst:70:<autosummary>:1
 msgid "Applies the Exponential Linear Unit."
-msgstr ""
+msgstr "套用指數線性單元（ELU）。"
 
 #: ../../../src/python/nn/layers.rst:70:<autosummary>:1
 msgid ":py:obj:`GELU <mlx.nn.GELU>`\\ \\(\\[approx\\]\\)"
@@ -240,7 +240,7 @@ msgstr ""
 
 #: ../../../src/python/nn/layers.rst:70:<autosummary>:1
 msgid "Applies the hardswish function, element-wise."
-msgstr ""
+msgstr "逐元素套用 hardswish 函式。"
 
 #: ../../../src/python/nn/layers.rst:70:<autosummary>:1
 msgid ""

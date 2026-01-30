@@ -27,6 +27,8 @@ msgid ""
 "is loaded at runtime; if MPI is available then distributed communication is "
 "also made available."
 msgstr ""
+"MLX 提供使用 MPI 的分散式通訊軟體包。MPI 程式庫會在執行時載入；若 MPI 可用，"
+"則分散式通訊也可用。"
 
 #: ../../../src/python/distributed.rst:22:<autosummary>:1
 msgid ":py:obj:`Group <mlx.core.distributed.Group>`\\"
@@ -37,6 +39,7 @@ msgid ""
 "An :class:`mlx.core.distributed.Group` represents a group of independent mlx "
 "processes that can communicate."
 msgstr ""
+":class:`mlx.core.distributed.Group` 代表一組可互相通訊的獨立 mlx 程序。"
 
 #: ../../../src/python/distributed.rst:22:<autosummary>:1
 msgid ""
@@ -46,7 +49,7 @@ msgstr ""
 
 #: ../../../src/python/distributed.rst:22:<autosummary>:1
 msgid "Check if a communication backend is available."
-msgstr ""
+msgstr "檢查通訊後端是否可用。"
 
 #: ../../../src/python/distributed.rst:22:<autosummary>:1
 msgid ""
@@ -57,7 +60,7 @@ msgstr ""
 msgid ""
 "Initialize the communication backend and create the global communication "
 "group."
-msgstr ""
+msgstr "初始化通訊後端並建立全域通訊群組。"
 
 #: ../../../src/python/distributed.rst:22:<autosummary>:1
 msgid ""
@@ -67,7 +70,7 @@ msgstr ""
 
 #: ../../../src/python/distributed.rst:22:<autosummary>:1
 msgid "All reduce sum."
-msgstr ""
+msgstr "全體歸約求和。"
 
 #: ../../../src/python/distributed.rst:22:<autosummary>:1
 msgid ""
@@ -77,7 +80,7 @@ msgstr ""
 
 #: ../../../src/python/distributed.rst:22:<autosummary>:1
 msgid "Gather arrays from all processes."
-msgstr ""
+msgstr "從所有程序收集陣列。"
 
 #: ../../../src/python/distributed.rst:22:<autosummary>:1
 msgid ""
@@ -89,7 +92,7 @@ msgstr ""
 msgid ""
 "Send an array from the current process to the process that has rank ``dst`` "
 "in the group."
-msgstr ""
+msgstr "將陣列從目前程序傳送至群組中排名為 ``dst`` 的程序。"
 
 #: ../../../src/python/distributed.rst:22:<autosummary>:1
 msgid ""
@@ -102,6 +105,7 @@ msgid ""
 "Recv an array with shape ``shape`` and dtype ``dtype`` from process with "
 "rank ``src``."
 msgstr ""
+"從排名為 ``src`` 的程序接收形狀為 ``shape`` 且 dtype 為 ``dtype`` 的陣列。"
 
 #: ../../../src/python/distributed.rst:22:<autosummary>:1
 msgid ""
@@ -112,4 +116,4 @@ msgstr ""
 #: ../../../src/python/distributed.rst:22:<autosummary>:1
 msgid ""
 "Recv an array with shape and type like ``x`` from process with rank ``src``."
-msgstr ""
+msgstr "從排名為 ``src`` 的程序接收形狀與型別如 ``x`` 的陣列。"

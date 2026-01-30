@@ -28,8 +28,8 @@ msgid ""
 "multiple nodes or with many processes in a single node. These utilities are "
 "aptly named"
 msgstr ""
-"MLX Python 套件提供兩個工具，協助你設定 Mac 以進行分散式計算，並在多個節點或"
-"單一節點的多個行程上啟動分散式程式。這兩個工具分別是"
+"MLX Python 軟體包提供兩個工具，協助你設定 Mac 以進行分散式計算，並在多個節點"
+"或單一節點的多個行程上啟動分散式程式。這兩個工具分別是"
 
 #: ../../../src/usage/launching_distributed.rst:14
 #: ../../../src/usage/launching_distributed.rst:109
@@ -91,7 +91,7 @@ msgid ""
 "After following :ref:`the steps to enable RDMA <jaccl_section>` you can run "
 "the following command to configure the nodes and create the hostfile."
 msgstr ""
-"依照 :ref:`啟用 RDMA 的步驟 <jaccl_section>` 完成後，你可以執行以下指令來設定"
+"依照 :ref:`啟用 RDMA 的步驟 <jaccl_section>` 完成後，你可以執行以下命令來設定"
 "節點並建立 hostfile。"
 
 #: ../../../src/usage/launching_distributed.rst:43
@@ -116,7 +116,7 @@ msgid ""
 "Extract the thunderbolt connectivity. Namely run commands on each node to "
 "calculate which node is connected to which other node."
 msgstr ""
-"取得 Thunderbolt 連線拓撲，也就是在每個節點上執行指令以計算節點之間的連線關"
+"取得 Thunderbolt 連線拓撲，也就是在每個節點上執行命令以計算節點之間的連線關"
 "係。"
 
 #: ../../../src/usage/launching_distributed.rst:54
@@ -158,7 +158,7 @@ msgid ""
 "run on each node."
 msgstr ""
 "``--auto-setup`` 參數需要每個節點具備無密碼 sudo。若不可用，設定腳本會列印需"
-"要在各節點執行的指令。"
+"要在各節點執行的命令。"
 
 #: ../../../src/usage/launching_distributed.rst:71
 msgid "Ring over thunderbolt"
