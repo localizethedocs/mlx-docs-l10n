@@ -23,7 +23,7 @@ msgstr ""
 
 #: ../../../docstring of mlx.core.arange:1
 msgid "Overloaded function."
-msgstr ""
+msgstr "多載函式。"
 
 #: ../../../docstring of mlx.core.arange:3
 msgid ""
@@ -34,17 +34,17 @@ msgstr ""
 
 #: ../../../docstring of mlx.core.arange:5
 msgid "Generates ranges of numbers."
-msgstr ""
+msgstr "產生數值範圍。"
 
 #: ../../../docstring of mlx.core.arange:7
 msgid ""
 "Generate numbers in the half-open interval ``[start, stop)`` in increments "
 "of ``step``."
-msgstr ""
+msgstr "以 ``step`` 為增量，在半開區間 ``[start, stop)`` 產生數值。"
 
 #: ../../../docstring of mlx.core.arange:10
 msgid "Args:"
-msgstr ""
+msgstr "引數："
 
 #: ../../../docstring of mlx.core.arange:11
 msgid ""
@@ -54,18 +54,22 @@ msgid ""
 "the output. If unspecified will default to ``float32`` if any of ``start``, "
 "``stop``, or ``step`` are ``float``. Otherwise will default to ``int32``."
 msgstr ""
+"start（float 或 int，可選）：起始值，預設為 ``0``。stop（float 或 int）：終止"
+"值。step（float 或 int，可選）：增量，預設為 ``1``。dtype（Dtype，可選）：指"
+"定輸出資料型別。若未指定，當 ``start``、``stop`` 或 ``step`` 任一為 "
+"``float`` 時預設為 ``float32``，否則預設為 ``int32``。"
 
 #: ../../../docstring of mlx.core.arange:16
 msgid "Returns:"
-msgstr ""
+msgstr "回傳："
 
 #: ../../../docstring of mlx.core.arange:17
 msgid "array: The range of values."
-msgstr ""
+msgstr "array：數值範圍。"
 
 #: ../../../docstring of mlx.core.arange:19
 msgid "Note:"
-msgstr ""
+msgstr "注意："
 
 #: ../../../docstring of mlx.core.arange:20
 msgid ""
@@ -74,6 +78,9 @@ msgid ""
 "results for example if `start + step` is a fractional value and the `dtype` "
 "is integral."
 msgstr ""
+"遵循 Numpy 慣例，用於產生數值的實際增量為 ``dtype(start + step) - "
+"dtype(start)``。這可能造成非預期結果，例如 `start + step` 為小數但 `dtype` 為"
+"整數型別時。"
 
 #: ../../../docstring of mlx.core.arange:26
 msgid ""

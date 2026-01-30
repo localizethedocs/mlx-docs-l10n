@@ -36,7 +36,7 @@ msgstr ""
 #: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/activations.py:docstring
 #: of mlx.nn.layers.activations.GELU:6
 msgid "where :math:`\\Phi(x)` is the Gaussian CDF."
-msgstr ""
+msgstr "其中 :math:`\\Phi(x)` 為高斯 CDF。"
 
 #: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/activations.py:docstring
 #: of mlx.nn.layers.activations.GELU:8
