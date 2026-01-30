@@ -26,6 +26,7 @@ msgid ""
 "Recv an array with shape ``shape`` and dtype ``dtype`` from process with "
 "rank ``src``."
 msgstr ""
+"從排名為 ``src`` 的程序接收形狀為 ``shape`` 且 dtype 為 ``dtype`` 的陣列。"
 
 #: ../../../src/python/_autosummary/mlx.core.distributed.recv.rst:0
 msgid "Parameters"

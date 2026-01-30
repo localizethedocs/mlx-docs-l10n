@@ -19,11 +19,11 @@ msgstr ""
 
 #: ../../../src/usage/using_streams.rst:4
 msgid "Using Streams"
-msgstr ""
+msgstr "使用串流"
 
 #: ../../../src/usage/using_streams.rst:9
 msgid "Specifying the :obj:`Stream`"
-msgstr ""
+msgstr "指定 :obj:`Stream`"
 
 #: ../../../src/usage/using_streams.rst:11
 msgid ""
@@ -35,3 +35,8 @@ msgid ""
 "``stream=my_device``) in which case the operation is run on the default "
 "stream of the provided device ``mx.default_stream(my_device)``."
 msgstr ""
+"所有運算（包含隨機數產生）都可接受選用的關鍵字參數 ``stream``。``stream`` 參"
+"數指定運算應在何種 :obj:`Stream` 上執行。若未指定，運算會在預設裝置的預設串流"
+"上執行：``mx.default_stream(mx.default_device())``。``stream`` 也可以是一個 :"
+"obj:`Device`（例如 ``stream=my_device``），此時運算會在所提供裝置的預設串流 "
+"``mx.default_stream(my_device)`` 上執行。"

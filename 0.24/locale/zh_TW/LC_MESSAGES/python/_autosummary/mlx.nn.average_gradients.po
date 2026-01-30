@@ -25,7 +25,7 @@ msgstr ""
 #: of mlx.nn.utils.average_gradients:1
 msgid ""
 "Average the gradients across the distributed processes in the passed group."
-msgstr ""
+msgstr "對傳入群組中的分散式程序進行梯度平均。"
 
 #: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/utils.py:docstring
 #: of mlx.nn.utils.average_gradients:3
