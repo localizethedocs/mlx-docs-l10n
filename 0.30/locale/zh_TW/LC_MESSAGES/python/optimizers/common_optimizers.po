@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../../src/python/optimizers/common_optimizers.rst:4
 msgid "Common Optimizers"
-msgstr ""
+msgstr "常用最佳化器"
 
 #: ../../../src/python/optimizers/common_optimizers.rst:22:<autosummary>:1
 msgid ""
@@ -29,7 +29,7 @@ msgstr ""
 
 #: ../../../src/python/optimizers/common_optimizers.rst:22:<autosummary>:1
 msgid "The stochastic gradient descent optimizer."
-msgstr ""
+msgstr "隨機梯度下降最佳化器。"
 
 #: ../../../src/python/optimizers/common_optimizers.rst:22:<autosummary>:1
 msgid ""
@@ -39,7 +39,7 @@ msgstr ""
 
 #: ../../../src/python/optimizers/common_optimizers.rst:22:<autosummary>:1
 msgid "The RMSprop optimizer [1]."
-msgstr ""
+msgstr "RMSprop 最佳化器 [1]。"
 
 #: ../../../src/python/optimizers/common_optimizers.rst:22:<autosummary>:1
 msgid ""
@@ -49,7 +49,7 @@ msgstr ""
 
 #: ../../../src/python/optimizers/common_optimizers.rst:22:<autosummary>:1
 msgid "The Adagrad optimizer [1]."
-msgstr ""
+msgstr "Adagrad 最佳化器 [1]。"
 
 #: ../../../src/python/optimizers/common_optimizers.rst:22:<autosummary>:1
 msgid ""
@@ -59,7 +59,7 @@ msgstr ""
 
 #: ../../../src/python/optimizers/common_optimizers.rst:22:<autosummary>:1
 msgid "The Adafactor optimizer."
-msgstr ""
+msgstr "Adafactor 最佳化器。"
 
 #: ../../../src/python/optimizers/common_optimizers.rst:22:<autosummary>:1
 msgid ""
@@ -69,7 +69,7 @@ msgstr ""
 
 #: ../../../src/python/optimizers/common_optimizers.rst:22:<autosummary>:1
 msgid "The AdaDelta optimizer with a learning rate [1]."
-msgstr ""
+msgstr "帶有學習率的 AdaDelta 最佳化器 [1]。"
 
 #: ../../../src/python/optimizers/common_optimizers.rst:22:<autosummary>:1
 msgid ""
@@ -79,7 +79,7 @@ msgstr ""
 
 #: ../../../src/python/optimizers/common_optimizers.rst:22:<autosummary>:1
 msgid "The Adam optimizer [1]."
-msgstr ""
+msgstr "Adam 最佳化器 [1]。"
 
 #: ../../../src/python/optimizers/common_optimizers.rst:22:<autosummary>:1
 msgid ""
@@ -89,7 +89,7 @@ msgstr ""
 
 #: ../../../src/python/optimizers/common_optimizers.rst:22:<autosummary>:1
 msgid "The AdamW optimizer [1]."
-msgstr ""
+msgstr "AdamW 最佳化器 [1]。"
 
 #: ../../../src/python/optimizers/common_optimizers.rst:22:<autosummary>:1
 msgid ""
@@ -99,7 +99,7 @@ msgstr ""
 
 #: ../../../src/python/optimizers/common_optimizers.rst:22:<autosummary>:1
 msgid "The Adamax optimizer, a variant of Adam based on the infinity norm [1]."
-msgstr ""
+msgstr "Adamax 最佳化器，是基於無窮範數的 Adam 變體 [1]。"
 
 #: ../../../src/python/optimizers/common_optimizers.rst:22:<autosummary>:1
 msgid ""
@@ -109,7 +109,7 @@ msgstr ""
 
 #: ../../../src/python/optimizers/common_optimizers.rst:22:<autosummary>:1
 msgid "The Lion optimizer [1]."
-msgstr ""
+msgstr "Lion 最佳化器 [1]。"
 
 #: ../../../src/python/optimizers/common_optimizers.rst:22:<autosummary>:1
 msgid ""
@@ -122,6 +122,8 @@ msgid ""
 "Wraps a list of optimizers with corresponding weight predicates/filters to "
 "make it easy to use different optimizers for different weights."
 msgstr ""
+"將一組最佳化器與對應的權重判斷/過濾器包裝起來，方便對不同權重使用不同的最佳化"
+"器。"
 
 #: ../../../src/python/optimizers/common_optimizers.rst:22:<autosummary>:1
 msgid ""
@@ -131,4 +133,4 @@ msgstr ""
 
 #: ../../../src/python/optimizers/common_optimizers.rst:22:<autosummary>:1
 msgid "The Muon optimizer."
-msgstr ""
+msgstr "Muon 最佳化器。"

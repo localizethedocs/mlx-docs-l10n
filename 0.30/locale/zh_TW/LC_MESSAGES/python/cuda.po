@@ -27,4 +27,4 @@ msgstr ""
 
 #: ../../../src/python/cuda.rst:9:<autosummary>:1
 msgid "Check if the CUDA back-end is available."
-msgstr ""
+msgstr "檢查 CUDA 後端是否可用。"

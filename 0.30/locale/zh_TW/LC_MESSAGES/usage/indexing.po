@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../../src/usage/indexing.rst:4
 msgid "Indexing Arrays"
-msgstr ""
+msgstr "陣列索引"
 
 #: ../../../src/usage/indexing.rst:8
 msgid ""
@@ -27,12 +27,15 @@ msgid ""
 "NumPy :obj:`numpy.ndarray`. See the `NumPy documentation <https://numpy.org/"
 "doc/stable/user/basics.indexing.html>`_ for more details on how that works."
 msgstr ""
+"大多數情況下，MLX :obj:`array` 的索引方式與 NumPy :obj:`numpy.ndarray` 相同。"
+"更多細節請參考 `NumPy 文件 <https://numpy.org/doc/stable/user/basics."
+"indexing.html>`_。"
 
 #: ../../../src/usage/indexing.rst:13
 msgid ""
 "For example, you can use regular integers and slices (:obj:`slice`) to index "
 "arrays:"
-msgstr ""
+msgstr "例如，你可以使用一般整數與切片（:obj:`slice`）來索引陣列："
 
 #: ../../../src/usage/indexing.rst:15
 msgid ""
@@ -49,7 +52,7 @@ msgstr ""
 msgid ""
 "For multi-dimensional arrays, the ``...`` or :obj:`Ellipsis` syntax works as "
 "in NumPy:"
-msgstr ""
+msgstr "對多維陣列而言，``...`` 或 :obj:`Ellipsis` 的語法與 NumPy 相同："
 
 #: ../../../src/usage/indexing.rst:27
 msgid ""
@@ -65,7 +68,7 @@ msgstr ""
 
 #: ../../../src/usage/indexing.rst:38
 msgid "You can index with ``None`` to create a new axis:"
-msgstr ""
+msgstr "你可以用 ``None`` 來建立新軸："
 
 #: ../../../src/usage/indexing.rst:40
 msgid ""
@@ -78,7 +81,7 @@ msgstr ""
 
 #: ../../../src/usage/indexing.rst:49
 msgid "You can also use an :obj:`array` to index another :obj:`array`:"
-msgstr ""
+msgstr "你也可以用一個 :obj:`array` 來索引另一個 :obj:`array`："
 
 #: ../../../src/usage/indexing.rst:51
 msgid ""
@@ -93,32 +96,34 @@ msgid ""
 "Mixing and matching integers, :obj:`slice`, ``...``, and :obj:`array` "
 "indices works just as in NumPy."
 msgstr ""
+"整數、:obj:`slice`、``...`` 與 :obj:`array` 的索引可混合使用，與 NumPy 相同。"
 
 #: ../../../src/usage/indexing.rst:61
 msgid ""
 "Other functions which may be useful for indexing arrays are :func:`take` "
 "and :func:`take_along_axis`."
 msgstr ""
+"其他可能有助於索引陣列的函式還有 :func:`take` 與 :func:`take_along_axis`。"
 
 #: ../../../src/usage/indexing.rst:65
 msgid "Differences from NumPy"
-msgstr ""
+msgstr "與 NumPy 的差異"
 
 #: ../../../src/usage/indexing.rst:69
 msgid "MLX indexing is different from NumPy indexing in two important ways:"
-msgstr ""
+msgstr "MLX 的索引與 NumPy 有兩個重要差異："
 
 #: ../../../src/usage/indexing.rst:71
 msgid ""
 "Indexing does not perform bounds checking. Indexing out of bounds is "
 "undefined behavior."
-msgstr ""
+msgstr "索引不會進行邊界檢查。超出範圍的索引屬於未定義行為。"
 
 #: ../../../src/usage/indexing.rst:73
 msgid ""
 "Boolean mask based indexing is supported for assignment only (see :ref:"
 "`boolean-mask-assignment`)."
-msgstr ""
+msgstr "布林遮罩索引僅支援賦值（參見 :ref:`boolean-mask-assignment`）。"
 
 #: ../../../src/usage/indexing.rst:76
 msgid ""
@@ -126,6 +131,8 @@ msgid ""
 "propagate from the GPU. Performing bounds checking for array indices before "
 "launching the kernel would be extremely inefficient."
 msgstr ""
+"之所以不做邊界檢查，是因為例外無法從 GPU 傳回。在啟動核心前先對陣列索引進行邊"
+"界檢查會非常低效。"
 
 #: ../../../src/usage/indexing.rst:80
 msgid ""
@@ -135,14 +142,17 @@ msgid ""
 "which MLX does not yet support include :func:`numpy.nonzero` and the single "
 "input version of :func:`numpy.where`."
 msgstr ""
+"以布林遮罩做索引可能會在未來被 MLX 支援。一般而言，MLX 對輸出*形狀*依賴輸入*"
+"資料*的運算支援有限。MLX 尚未支援的其他例子包含 :func:`numpy.nonzero` 與 :"
+"func:`numpy.where` 的單輸入版本。"
 
 #: ../../../src/usage/indexing.rst:87
 msgid "In Place Updates"
-msgstr ""
+msgstr "就地更新"
 
 #: ../../../src/usage/indexing.rst:89
 msgid "In place updates to indexed arrays are possible in MLX. For example:"
-msgstr ""
+msgstr "MLX 支援對索引陣列進行就地更新。例如："
 
 #: ../../../src/usage/indexing.rst:91
 msgid ""
@@ -156,7 +166,7 @@ msgstr ""
 msgid ""
 "Just as in NumPy, in place updates will be reflected in all references to "
 "the same array:"
-msgstr ""
+msgstr "與 NumPy 相同，就地更新會反映在同一陣列的所有參照中："
 
 #: ../../../src/usage/indexing.rst:101
 msgid ""
@@ -174,6 +184,7 @@ msgid ""
 "Note that unlike NumPy, slicing an array creates a copy, not a view. So "
 "mutating it does not mutate the original array:"
 msgstr ""
+"注意，與 NumPy 不同，切片會建立副本而非檢視，因此修改它不會改變原陣列："
 
 #: ../../../src/usage/indexing.rst:114
 msgid ""
@@ -188,7 +199,7 @@ msgstr ""
 
 #: ../../../src/usage/indexing.rst:124
 msgid "Also unlike NumPy, updates to the same location are nondeterministic:"
-msgstr ""
+msgstr "與 NumPy 不同，對同一位置的更新是非決定性的："
 
 #: ../../../src/usage/indexing.rst:126
 msgid ""
@@ -198,13 +209,13 @@ msgstr ""
 
 #: ../../../src/usage/indexing.rst:131
 msgid "The first element of ``a`` could be ``4`` or ``5``."
-msgstr ""
+msgstr "``a`` 的第一個元素可能是 ``4`` 或 ``5``。"
 
 #: ../../../src/usage/indexing.rst:133
 msgid ""
 "Transformations of functions which use in-place updates are allowed and work "
 "as expected. For example:"
-msgstr ""
+msgstr "允許對使用就地更新的函式進行轉換，且可如預期運作。例如："
 
 #: ../../../src/usage/indexing.rst:136
 msgid ""
@@ -220,11 +231,11 @@ msgstr ""
 msgid ""
 "In the above ``dfdx`` will have the correct gradient, namely zeros at "
 "``idx`` and ones elsewhere."
-msgstr ""
+msgstr "上述 ``dfdx`` 會得到正確的梯度，也就是在 ``idx`` 為 0，其餘位置為 1。"
 
 #: ../../../src/usage/indexing.rst:151
 msgid "Boolean Mask Assignment"
-msgstr ""
+msgstr "布林遮罩賦值"
 
 #: ../../../src/usage/indexing.rst:153
 msgid ""
@@ -232,6 +243,9 @@ msgid ""
 "class:`bool_` MLX :class:`array` or a NumPy ``ndarray`` with ``dtype=bool``. "
 "Other index types are routed through the standard scatter code."
 msgstr ""
+"MLX 支援使用 NumPy 語法的布林索引。遮罩必須是 :class:`bool_` 的 MLX :class:"
+"`array` 或 ``dtype=bool`` 的 NumPy ``ndarray``。其他索引類型會走標準的 "
+"scatter 程式碼路徑。"
 
 #: ../../../src/usage/indexing.rst:157
 msgid ""
@@ -249,6 +263,8 @@ msgid ""
 "scalar assignments, ``updates`` must provide at least as many elements as "
 "there are ``True`` entries in ``mask``."
 msgstr ""
+"標量賦值會廣播到 ``mask`` 中所有 ``True`` 的位置。對於非標量賦值，"
+"``updates`` 必須至少提供與 ``mask`` 中 ``True`` 數量相同的元素。"
 
 #: ../../../src/usage/indexing.rst:170
 msgid ""
@@ -263,17 +279,19 @@ msgstr ""
 
 #: ../../../src/usage/indexing.rst:180
 msgid "Boolean masks follow NumPy semantics:"
-msgstr ""
+msgstr "布林遮罩遵循 NumPy 語意："
 
 #: ../../../src/usage/indexing.rst:182
 msgid ""
 "The mask shape must match the shape of the axes it indexes exactly. The only "
 "exception is a scalar boolean mask, which broadcasts to the full array."
 msgstr ""
+"遮罩的形狀必須與其索引的軸形狀完全一致。唯一的例外是標量布林遮罩，可廣播到整"
+"個陣列。"
 
 #: ../../../src/usage/indexing.rst:184
 msgid "Any axes not covered by the mask are taken in full."
-msgstr ""
+msgstr "未被遮罩覆蓋的軸會完整保留。"
 
 #: ../../../src/usage/indexing.rst:186
 msgid ""
@@ -289,3 +307,6 @@ msgid ""
 "Shapes such as ``(1, 10, 10)`` or ``(10, 10, 1)`` do not match the indexed "
 "axes and therefore raise errors."
 msgstr ""
+"形狀為 ``(10, 10)`` 的遮罩套用到前兩個軸，因此 ``a[mask]`` 會選出 ``mask[i, "
+"j]`` 為 ``True`` 的一維切片 ``a[i, j, :]``。像 ``(1, 10, 10)`` 或 ``(10, 10, "
+"1)`` 的形狀與被索引的軸不匹配，因此會拋出錯誤。"
