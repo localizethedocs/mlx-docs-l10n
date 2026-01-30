@@ -24,14 +24,14 @@ msgstr ""
 #: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/base.py:docstring
 #: of mlx.nn.layers.base.Module:1
 msgid "Base class for building neural networks with MLX."
-msgstr ""
+msgstr "使用 MLX 建構神經網路的基底類別。"
 
 #: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/base.py:docstring
 #: of mlx.nn.layers.base.Module:3
 msgid ""
 "All the layers provided in :mod:`mlx.nn.layers` subclass this class and your "
 "models should do the same."
-msgstr ""
+msgstr ":mod:`mlx.nn.layers` 中提供的所有層都繼承此類別，你的模型也應如此。"
 
 #: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/base.py:docstring
 #: of mlx.nn.layers.base.Module:6
@@ -41,6 +41,9 @@ msgid ""
 "``Module`` then allows recursively extracting all the :class:`mlx.core."
 "array` instances using :meth:`mlx.nn.Module.parameters`."
 msgstr ""
+"``Module`` 可以在任意巢狀的 Python list 或 dict 中包含其他 ``Module`` 實例"
+"或 :class:`mlx.core.array` 實例。之後可使用 :meth:`mlx.nn.Module.parameters` "
+"遞迴擷取所有 :class:`mlx.core.array` 實例。"
 
 #: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/base.py:docstring
 #: of mlx.nn.layers.base.Module:11
@@ -51,6 +54,9 @@ msgid ""
 "arrays in a module are trainable unless they are added in the \"frozen\" set "
 "by calling :meth:`freeze`."
 msgstr ""
+"此外，``Module`` 有可訓練與不可訓練（稱為「凍結」）參數的概念。使用 :func:"
+"`mlx.nn.value_and_grad` 時，回傳的梯度僅針對可訓練參數。模組中的所有陣列預設"
+"為可訓練，除非透過 :meth:`freeze` 加入「凍結」集合。"
 
 #: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/base.py:docstring
 #: of mlx.nn.layers.base.Module:17
@@ -85,7 +91,7 @@ msgstr ""
 
 #: ../../../src/python/nn/module.rst:9
 msgid "Attributes"
-msgstr ""
+msgstr "屬性"
 
 #: ../../../src/python/nn/module.rst:15:<autosummary>:1
 msgid ":py:obj:`Module.training <mlx.nn.Module.training>`\\"
@@ -93,7 +99,7 @@ msgstr ""
 
 #: ../../../src/python/nn/module.rst:15:<autosummary>:1
 msgid "Boolean indicating if the model is in training mode."
-msgstr ""
+msgstr "布林值，表示模型是否處於訓練模式。"
 
 #: ../../../src/python/nn/module.rst:15:<autosummary>:1
 msgid ":py:obj:`Module.state <mlx.nn.Module.state>`\\"
@@ -101,7 +107,7 @@ msgstr ""
 
 #: ../../../src/python/nn/module.rst:15:<autosummary>:1
 msgid "The module's state dictionary"
-msgstr ""
+msgstr "模組的狀態字典"
 
 #: ../../../src/python/nn/module.rst:17
 msgid "Methods"
@@ -117,7 +123,7 @@ msgstr ""
 msgid ""
 "Map all the parameters using the provided ``map_fn`` and immediately update "
 "the module with the mapped parameters."
-msgstr ""
+msgstr "使用提供的 ``map_fn`` 映射所有參數，並立即用映射後的參數更新模組。"
 
 #: ../../../src/python/nn/module.rst:37:<autosummary>:1
 msgid ""
@@ -129,7 +135,7 @@ msgstr ""
 msgid ""
 "Apply a function to all the modules in this instance (including this "
 "instance)."
-msgstr ""
+msgstr "對此實例中的所有模組（包含此實例）套用函式。"
 
 #: ../../../src/python/nn/module.rst:37:<autosummary>:1
 msgid ":py:obj:`Module.children <mlx.nn.Module.children>`\\ \\(\\)"
@@ -137,7 +143,7 @@ msgstr ""
 
 #: ../../../src/python/nn/module.rst:37:<autosummary>:1
 msgid "Return the direct descendants of this Module instance."
-msgstr ""
+msgstr "回傳此 Module 實例的直接子孫模組。"
 
 #: ../../../src/python/nn/module.rst:37:<autosummary>:1
 msgid ":py:obj:`Module.eval <mlx.nn.Module.eval>`\\ \\(\\)"
@@ -145,7 +151,7 @@ msgstr ""
 
 #: ../../../src/python/nn/module.rst:37:<autosummary>:1
 msgid "Set the model to evaluation mode."
-msgstr ""
+msgstr "將模型設為評估模式。"
 
 #: ../../../src/python/nn/module.rst:37:<autosummary>:1
 msgid ""
@@ -158,6 +164,8 @@ msgid ""
 "Recursively filter the contents of the module using ``filter_fn``, namely "
 "only select keys and values where ``filter_fn`` returns true."
 msgstr ""
+"使用 ``filter_fn`` 遞迴篩選模組內容，只保留 ``filter_fn`` 回傳 true 的鍵和"
+"值。"
 
 #: ../../../src/python/nn/module.rst:37:<autosummary>:1
 msgid ""
@@ -167,7 +175,7 @@ msgstr ""
 
 #: ../../../src/python/nn/module.rst:37:<autosummary>:1
 msgid "Freeze the Module's parameters or some of them."
-msgstr ""
+msgstr "凍結 Module 的參數或其中一部分。"
 
 #: ../../../src/python/nn/module.rst:37:<autosummary>:1
 msgid ":py:obj:`Module.leaf_modules <mlx.nn.Module.leaf_modules>`\\ \\(\\)"
@@ -175,7 +183,7 @@ msgstr ""
 
 #: ../../../src/python/nn/module.rst:37:<autosummary>:1
 msgid "Return the submodules that do not contain other modules."
-msgstr ""
+msgstr "回傳不包含其他模組的子模組。"
 
 #: ../../../src/python/nn/module.rst:37:<autosummary>:1
 msgid ""
@@ -187,7 +195,7 @@ msgstr ""
 msgid ""
 "Update the model's weights from a ``.npz``, a ``.safetensors`` file, or a "
 "list."
-msgstr ""
+msgstr "從 ``.npz`` 或 ``.safetensors`` 檔案，或清單更新模型權重。"
 
 #: ../../../src/python/nn/module.rst:37:<autosummary>:1
 msgid ":py:obj:`Module.modules <mlx.nn.Module.modules>`\\ \\(\\)"
@@ -195,7 +203,7 @@ msgstr ""
 
 #: ../../../src/python/nn/module.rst:37:<autosummary>:1
 msgid "Return a list with all the modules in this instance."
-msgstr ""
+msgstr "回傳此實例中所有模組的清單。"
 
 #: ../../../src/python/nn/module.rst:37:<autosummary>:1
 msgid ":py:obj:`Module.named_modules <mlx.nn.Module.named_modules>`\\ \\(\\)"
@@ -205,7 +213,7 @@ msgstr ""
 msgid ""
 "Return a list with all the modules in this instance and their name with dot "
 "notation."
-msgstr ""
+msgstr "回傳此實例中所有模組及其點記法名稱的清單。"
 
 #: ../../../src/python/nn/module.rst:37:<autosummary>:1
 msgid ":py:obj:`Module.parameters <mlx.nn.Module.parameters>`\\ \\(\\)"
@@ -216,6 +224,7 @@ msgid ""
 "Recursively return all the :class:`mlx.core.array` members of this Module as "
 "a dict of dicts and lists."
 msgstr ""
+"以字典與清單的巢狀結構遞迴回傳此 Module 的所有 :class:`mlx.core.array` 成員。"
 
 #: ../../../src/python/nn/module.rst:37:<autosummary>:1
 msgid ":py:obj:`Module.save_weights <mlx.nn.Module.save_weights>`\\ \\(file\\)"
@@ -223,7 +232,7 @@ msgstr ""
 
 #: ../../../src/python/nn/module.rst:37:<autosummary>:1
 msgid "Save the model's weights to a file."
-msgstr ""
+msgstr "將模型權重儲存到檔案。"
 
 #: ../../../src/python/nn/module.rst:37:<autosummary>:1
 msgid ":py:obj:`Module.train <mlx.nn.Module.train>`\\ \\(\\[mode\\]\\)"
@@ -231,7 +240,7 @@ msgstr ""
 
 #: ../../../src/python/nn/module.rst:37:<autosummary>:1
 msgid "Set the model in or out of training mode."
-msgstr ""
+msgstr "設定模型為訓練或非訓練模式。"
 
 #: ../../../src/python/nn/module.rst:37:<autosummary>:1
 msgid ""
@@ -244,6 +253,8 @@ msgid ""
 "Recursively return all the non frozen :class:`mlx.core.array` members of "
 "this Module as a dict of dicts and lists."
 msgstr ""
+"以字典與清單的巢狀結構遞迴回傳此 Module 所有未凍結的 :class:`mlx.core.array` "
+"成員。"
 
 #: ../../../src/python/nn/module.rst:37:<autosummary>:1
 msgid ""
@@ -253,7 +264,7 @@ msgstr ""
 
 #: ../../../src/python/nn/module.rst:37:<autosummary>:1
 msgid "Unfreeze the Module's parameters or some of them."
-msgstr ""
+msgstr "解除凍結 Module 的參數或其中一部分。"
 
 #: ../../../src/python/nn/module.rst:37:<autosummary>:1
 msgid ":py:obj:`Module.update <mlx.nn.Module.update>`\\ \\(parameters\\)"
@@ -263,7 +274,7 @@ msgstr ""
 msgid ""
 "Replace the parameters of this Module with the provided ones in the dict of "
 "dicts and lists."
-msgstr ""
+msgstr "將此 Module 的參數替換為提供的巢狀字典與清單中的參數。"
 
 #: ../../../src/python/nn/module.rst:37:<autosummary>:1
 msgid ""
@@ -275,4 +286,4 @@ msgstr ""
 msgid ""
 "Replace the child modules of this :class:`Module` instance with the provided "
 "ones in the dict of dicts and lists."
-msgstr ""
+msgstr "以巢狀字典與清單中的提供值替換此 :class:`Module` 實例的子模組。"

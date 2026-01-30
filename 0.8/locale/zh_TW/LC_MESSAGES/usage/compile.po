@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../../src/usage/compile.rst:4
 msgid "Compilation"
-msgstr ""
+msgstr "編譯"
 
 #: ../../../src/usage/compile.rst:8
 msgid ""
@@ -28,6 +28,9 @@ msgid ""
 "work and fusing certain operations. In many cases this can lead to big "
 "improvements in run-time and memory use."
 msgstr ""
+"MLX 提供 :func:`compile` 函式變換，用於編譯計算圖。函式編譯會透過合併共用工作"
+"與融合某些運算來得到更小的圖。在許多情況下，這能大幅改善執行時間與記憶體使用"
+"量。"
 
 #: ../../../src/usage/compile.rst:13
 msgid ""
@@ -35,14 +38,16 @@ msgid ""
 "cases that are good to be aware of for more complex graphs and advanced "
 "usage."
 msgstr ""
+"開始使用 :func:`compile` 很簡單，但對於更複雜的圖與進階用法，有一些邊界情況值"
+"得注意。"
 
 #: ../../../src/usage/compile.rst:17
 msgid "Basics of Compile"
-msgstr ""
+msgstr "Compile 的基礎"
 
 #: ../../../src/usage/compile.rst:19
 msgid "Let's start with a simple example:"
-msgstr ""
+msgstr "先從一個簡單範例開始："
 
 #: ../../../src/usage/compile.rst:21
 msgid ""
@@ -67,7 +72,7 @@ msgstr ""
 msgid ""
 "The output of both the regular function and the compiled function is the "
 "same up to numerical precision."
-msgstr ""
+msgstr "一般函式與編譯後函式的輸出在數值精度上是一致的。"
 
 #: ../../../src/usage/compile.rst:42
 msgid ""
@@ -77,6 +82,9 @@ msgid ""
 "function multiple times will not initiate a new compilation. This means you "
 "should typically compile functions that you plan to use more than once."
 msgstr ""
+"第一次呼叫已編譯的函式時，MLX 會建構計算圖、最佳化，並產生與編譯程式碼。這可"
+"能相對較慢。不過 MLX 會快取已編譯的函式，因此多次呼叫不會再次觸發編譯。這表示"
+"你通常應該只編譯會重複使用的函式。"
 
 #: ../../../src/usage/compile.rst:48
 msgid ""
@@ -102,19 +110,19 @@ msgstr ""
 msgid ""
 "There are some important cases to be aware of that can cause a function to "
 "be recompiled:"
-msgstr ""
+msgstr "有幾個重要情況會導致函式被重新編譯："
 
 #: ../../../src/usage/compile.rst:70
 msgid "Changing the shape or number of dimensions"
-msgstr ""
+msgstr "變更形狀或維度數量"
 
 #: ../../../src/usage/compile.rst:71
 msgid "Changing the type of any of the inputs"
-msgstr ""
+msgstr "變更任何輸入的型別"
 
 #: ../../../src/usage/compile.rst:72
 msgid "Changing the number of inputs to the function"
-msgstr ""
+msgstr "變更函式輸入的數量"
 
 #: ../../../src/usage/compile.rst:74
 msgid ""
@@ -123,6 +131,8 @@ msgid ""
 "stack will be rerun (for example when changing the types). In general you "
 "should avoid compiling functions too frequently."
 msgstr ""
+"在某些情況下只會重新執行部分編譯流程（例如變更形狀），而在其他情況下會重新執"
+"行完整編譯流程（例如變更型別）。一般而言，應避免太頻繁地編譯函式。"
 
 #: ../../../src/usage/compile.rst:79
 msgid ""
@@ -130,6 +140,7 @@ msgid ""
 "destroyed frequently. This can happen, for example, when compiling an "
 "anonymous function in a loop:"
 msgstr ""
+"另一種需要留意的寫法是編譯會頻繁建立與銷毀的函式。例如在迴圈中編譯匿名函式："
 
 #: ../../../src/usage/compile.rst:83
 msgid ""
@@ -141,7 +152,7 @@ msgstr ""
 
 #: ../../../src/usage/compile.rst:91
 msgid "Example Speedup"
-msgstr ""
+msgstr "加速示例"
 
 #: ../../../src/usage/compile.rst:93
 msgid ""
@@ -149,6 +160,8 @@ msgid ""
 "with Transformer-based models. The implementation involves several unary and "
 "binary element-wise operations:"
 msgstr ""
+" :func:`mlx.nn.gelu` 是常用於 Transformer 模型的非線性激活函式。實作包含多個"
+"一元與二元逐元素運算："
 
 #: ../../../src/usage/compile.rst:97
 msgid ""
@@ -163,6 +176,9 @@ msgid ""
 "all of the operations in the ``gelu`` are fusible into a single kernel with :"
 "func:`compile`. This can speedup both cases considerably."
 msgstr ""
+"若使用小陣列，這個函式會受限於開銷；若使用大陣列，則會受限於記憶體頻寬。不過 "
+"``gelu`` 中所有運算都可透過 :func:`compile` 融合為單一核心，能在兩種情況下都"
+"大幅加速。"
 
 #: ../../../src/usage/compile.rst:107
 msgid ""
@@ -170,6 +186,8 @@ msgid ""
 "function. We'll use the following timing helper which does a warm up and "
 "handles synchronization:"
 msgstr ""
+"讓我們比較一般函式與編譯後函式的執行時間。我們會使用以下計時輔助函式，包含暖"
+"身並處理同步："
 
 #: ../../../src/usage/compile.rst:111
 msgid ""
@@ -190,7 +208,7 @@ msgstr ""
 
 #: ../../../src/usage/compile.rst:128
 msgid "Now make an array, and benchmark both functions:"
-msgstr ""
+msgstr "現在建立一個陣列並對兩個函式進行基準測試："
 
 #: ../../../src/usage/compile.rst:130
 msgid ""
@@ -204,6 +222,7 @@ msgid ""
 "On an M1 Max the times are 15.5 and 3.1 milliseconds. The compiled ``gelu`` "
 "is five times faster."
 msgstr ""
+"在 M1 Max 上，時間分別為 15.5 與 3.1 毫秒，編譯後的 ``gelu`` 快了五倍。"
 
 #: ../../../src/usage/compile.rst:141
 msgid ""
@@ -214,7 +233,7 @@ msgstr ""
 
 #: ../../../src/usage/compile.rst:147
 msgid "Debugging"
-msgstr ""
+msgstr "除錯"
 
 #: ../../../src/usage/compile.rst:149
 msgid ""
@@ -222,6 +241,8 @@ msgid ""
 "inputs. This means you can't evaluate arrays (for example to print their "
 "contents) inside compiled functions."
 msgstr ""
+"編譯函式第一次被呼叫時會以占位輸入進行追蹤。這表示你無法在編譯函式內評估陣列"
+"（例如列印其內容）。"
 
 #: ../../../src/usage/compile.rst:153
 msgid ""
@@ -241,6 +262,9 @@ msgid ""
 "``MLX_DISABLE_COMPILE`` flag. For example the following is okay even though "
 "``fun`` is compiled:"
 msgstr ""
+"為了除錯，檢視陣列很有幫助。一種作法是用 :func:`disable_compile` 或 "
+"``MLX_DISABLE_COMPILE`` 旗標全域停用編譯。例如以下即使 ``fun`` 已編譯也沒問"
+"題："
 
 #: ../../../src/usage/compile.rst:168
 msgid ""
@@ -256,13 +280,13 @@ msgstr ""
 
 #: ../../../src/usage/compile.rst:181
 msgid "Pure Functions"
-msgstr ""
+msgstr "純函式"
 
 #: ../../../src/usage/compile.rst:183
 msgid ""
 "Compiled functions are intended to be *pure*; that is they should not have "
 "side effects. For example:"
-msgstr ""
+msgstr "編譯函式預期是*純函式*，也就是不應有副作用。例如："
 
 #: ../../../src/usage/compile.rst:186
 msgid ""
@@ -285,12 +309,14 @@ msgid ""
 "array. The placeholder does not have any data; it is only used to build the "
 "computation graph. Printing such an array results in a crash."
 msgstr ""
+"在第一次呼叫 ``fun`` 之後，``state`` 清單會包含一個占位陣列。這個占位陣列沒有"
+"任何資料，只用來建構計算圖。列印這種陣列會造成崩潰。"
 
 #: ../../../src/usage/compile.rst:204
 msgid ""
 "You have two options to deal with this. The first option is to simply return "
 "``state`` as an output:"
-msgstr ""
+msgstr "你有兩個做法可處理此問題。第一個是直接把 ``state`` 當作輸出回傳："
 
 #: ../../../src/usage/compile.rst:207
 msgid ""
@@ -312,6 +338,7 @@ msgid ""
 "In some cases returning updated state can be pretty inconvenient. Hence, :"
 "func:`compile` has a parameter to capture implicit outputs:"
 msgstr ""
+"有時回傳更新後的狀態很不方便。因此 :func:`compile` 提供參數來捕捉隱式輸出："
 
 #: ../../../src/usage/compile.rst:224
 msgid ""
@@ -337,12 +364,14 @@ msgid ""
 "update to a container of arrays, as is commonly done when training the "
 "parameters of a :class:`mlx.nn.Module`."
 msgstr ""
+"當你編譯的函式會更新一個陣列容器時（例如訓練 :class:`mlx.nn.Module` 的參數時"
+"常見），這尤其有用。"
 
 #: ../../../src/usage/compile.rst:245
 msgid ""
 "Compiled functions will also treat any inputs not in the parameter list as "
 "constants. For example:"
-msgstr ""
+msgstr "編譯函式也會把不在參數列表中的任何輸入視為常數。例如："
 
 #: ../../../src/usage/compile.rst:248
 msgid ""
@@ -392,7 +421,7 @@ msgstr ""
 
 #: ../../../src/usage/compile.rst:291
 msgid "Compiling Training Graphs"
-msgstr ""
+msgstr "編譯訓練圖"
 
 #: ../../../src/usage/compile.rst:293
 msgid ""
@@ -401,10 +430,13 @@ msgid ""
 "an :obj:`mlx.optimizers.Optimizer` with state. We will show how to compile "
 "the full forward, backward, and update with :func:`compile`."
 msgstr ""
+"本節將以一個常見設定的簡單範例說明如何使用 :func:`compile`：使用 :obj:`mlx."
+"nn.Module` 訓練模型，並搭配具有狀態的 :obj:`mlx.optimizers.Optimizer`。我們會"
+"示範如何用 :func:`compile` 編譯完整的前向、反向與更新。"
 
 #: ../../../src/usage/compile.rst:298
 msgid "To start, here is the simple example without any compilation:"
-msgstr ""
+msgstr "首先，以下是不使用任何編譯的簡單範例："
 
 #: ../../../src/usage/compile.rst:300
 msgid ""
@@ -443,6 +475,8 @@ msgid ""
 "the appropriate input and output captures. Here's the same example but "
 "compiled:"
 msgstr ""
+"要編譯更新，我們可以把所有步驟包成一個函式，並用適當的輸入與輸出捕捉進行編"
+"譯。以下是相同範例的編譯版本："
 
 #: ../../../src/usage/compile.rst:333
 msgid ""
@@ -492,16 +526,21 @@ msgid ""
 "captured by :func:`compile`, i.e. ``state = [model.state, optimizer.state, "
 "mx.random.state]``."
 msgstr ""
+"如果你使用會進行隨機取樣的模組（例如 :func:`mlx.nn.Dropout`），請確保也把 "
+"``mx.random.state`` 納入 :func:`compile` 捕捉的 ``state``，即 ``state = "
+"[model.state, optimizer.state, mx.random.state]``。"
 
 #: ../../../src/usage/compile.rst:384
 msgid ""
 "For more examples of compiling full training graphs checkout the  `MLX "
 "Examples <https://github.com/ml-explore/mlx-examples>`_ GitHub repo."
 msgstr ""
+"更多完整訓練圖編譯範例請參考 `MLX Examples <https://github.com/ml-explore/"
+"mlx-examples>`_ GitHub 專案。"
 
 #: ../../../src/usage/compile.rst:388
 msgid "Transformations with Compile"
-msgstr ""
+msgstr "與 Compile 搭配的變換"
 
 #: ../../../src/usage/compile.rst:390
 msgid ""
@@ -510,10 +549,12 @@ msgid ""
 "on this, see the documentation on :ref:`function transforms "
 "<function_transforms>`."
 msgstr ""
+"在 MLX 中，函式變換可以組合使用。你可以把任何函式變換套用到其他函式變換的輸"
+"出。詳情請參考 :ref:`function transforms <function_transforms>` 的文件。"
 
 #: ../../../src/usage/compile.rst:395
 msgid "Compiling transformed functions works just as expected:"
-msgstr ""
+msgstr "編譯變換後的函式會如預期般運作："
 
 #: ../../../src/usage/compile.rst:397
 msgid ""
@@ -534,6 +575,8 @@ msgid ""
 "function will not by default be compiled. To compile the transformed "
 "function simply pass it through :func:`compile`."
 msgstr ""
+"為了盡可能多地編譯，對已編譯函式的變換，預設不會再被編譯。若要編譯變換後的函"
+"式，只需再通過 :func:`compile`。"
 
 #: ../../../src/usage/compile.rst:415
 msgid ""
@@ -541,6 +584,8 @@ msgid ""
 "good practice is to compile the outer most function to give :func:`compile` "
 "the most opportunity to optimize the computation graph:"
 msgstr ""
+"你也可以編譯會呼叫已編譯函式的函式。最佳做法是編譯最外層函式，讓 :func:"
+"`compile` 有最多機會最佳化計算圖："
 
 #: ../../../src/usage/compile.rst:419
 msgid ""

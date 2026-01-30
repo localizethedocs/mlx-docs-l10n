@@ -23,24 +23,24 @@ msgstr ""
 
 #: ../../../docstring of mlx.core.arccos:1
 msgid "Element-wise inverse cosine."
-msgstr ""
+msgstr "逐元素反餘弦。"
 
 #: ../../../src/python/_autosummary/mlx.core.arccos.rst:0
 msgid "Parameters"
-msgstr ""
+msgstr "參數"
 
 #: ../../../docstring of mlx.core.arccos:3
 msgid "Input array."
-msgstr ""
+msgstr "輸入陣列。"
 
 #: ../../../src/python/_autosummary/mlx.core.arccos.rst:0
 msgid "Returns"
-msgstr ""
+msgstr "回傳"
 
 #: ../../../docstring of mlx.core.arccos:6
 msgid "The inverse cosine of ``a``."
-msgstr ""
+msgstr "``a`` 的反餘弦。"
 
 #: ../../../src/python/_autosummary/mlx.core.arccos.rst:0
 msgid "Return type"
-msgstr ""
+msgstr "回傳型別"

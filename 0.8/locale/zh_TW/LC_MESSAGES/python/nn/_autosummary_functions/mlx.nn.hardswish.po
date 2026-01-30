@@ -24,7 +24,7 @@ msgstr ""
 #: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/__init__.py:docstring
 #: of mlx.nn.hardswish:1
 msgid "Applies the hardswish function, element-wise."
-msgstr ""
+msgstr "逐元素套用 hardswish 函式。"
 
 #: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/__init__.py:docstring
 #: of mlx.nn.hardswish:3
