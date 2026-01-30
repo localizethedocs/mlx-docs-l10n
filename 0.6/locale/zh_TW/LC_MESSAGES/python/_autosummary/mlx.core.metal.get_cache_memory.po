@@ -24,7 +24,7 @@ msgstr ""
 #: ../../../docstring of
 #: mlx.core.metal.pybind11_detail_function_record_v1_system_libstdcpp_gxx_abi_1xxx_use_cxx11_abi_1.get_cache_memory:1
 msgid "Get the cache size in bytes."
-msgstr ""
+msgstr "取得快取大小（位元組）。"
 
 #: ../../../docstring of
 #: mlx.core.metal.pybind11_detail_function_record_v1_system_libstdcpp_gxx_abi_1xxx_use_cxx11_abi_1.get_cache_memory:3

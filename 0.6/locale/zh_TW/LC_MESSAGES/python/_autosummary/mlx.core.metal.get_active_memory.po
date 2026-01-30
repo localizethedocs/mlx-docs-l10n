@@ -24,7 +24,7 @@ msgstr ""
 #: ../../../docstring of
 #: mlx.core.metal.pybind11_detail_function_record_v1_system_libstdcpp_gxx_abi_1xxx_use_cxx11_abi_1.get_active_memory:1
 msgid "Get the actively used memory in bytes."
-msgstr ""
+msgstr "取得目前使用中的記憶體位元組數。"
 
 #: ../../../docstring of
 #: mlx.core.metal.pybind11_detail_function_record_v1_system_libstdcpp_gxx_abi_1xxx_use_cxx11_abi_1.get_active_memory:3

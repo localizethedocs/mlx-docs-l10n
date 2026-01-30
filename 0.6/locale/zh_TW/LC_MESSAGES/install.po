@@ -29,7 +29,7 @@ msgstr "Python 安裝"
 msgid ""
 "MLX is available on PyPI. All you have to do to use MLX with your own Apple "
 "silicon computer is"
-msgstr ""
+msgstr "MLX 可在 PyPI 取得。要在自己的 Apple 晶片電腦上使用 MLX，只需："
 
 #: ../../../src/install.rst:10
 msgid "pip install mlx"
@@ -41,7 +41,7 @@ msgstr ""
 
 #: ../../../src/install.rst:16
 msgid "Using an M series chip (Apple silicon)"
-msgstr ""
+msgstr "使用 M 系列晶片（Apple silicon）"
 
 #: ../../../src/install.rst:17
 msgid "Using a native Python >= 3.8"
@@ -67,17 +67,17 @@ msgstr ""
 
 #: ../../../src/install.rst:33 ../../../src/install.rst:181
 msgid "Troubleshooting"
-msgstr ""
+msgstr "疑難排解"
 
 #: ../../../src/install.rst:35
 msgid ""
 "*My OS and Python versions are in the required range but pip still does not "
 "find a matching distribution.*"
-msgstr ""
+msgstr "*我的 OS 與 Python 版本符合需求，但 pip 仍找不到相符的發行版。*"
 
 #: ../../../src/install.rst:38
 msgid "Probably you are using a non-native Python. The output of"
-msgstr ""
+msgstr "你可能使用了非原生的 Python。以下命令的輸出："
 
 #: ../../../src/install.rst:40
 msgid "python -c \"import platform; print(platform.processor())\""
@@ -89,6 +89,9 @@ msgid ""
 "you are using a non-native Python. Switch your Python to a native Python. A "
 "good way to do this is with `Conda <https://stackoverflow.com/q/65415996>`_."
 msgstr ""
+"應該是 ``arm``。若顯示為 ``i386``（且你使用 M 系列機器），代表你在使用非原生"
+"的 Python。請切換到原生 Python。可使用 `Conda <https://stackoverflow.com/"
+"q/65415996>`_ 來達成。"
 
 #: ../../../src/install.rst:50
 msgid "Build from source"
@@ -96,11 +99,11 @@ msgstr "從來源碼建置"
 
 #: ../../../src/install.rst:53
 msgid "Build Requirements"
-msgstr ""
+msgstr "建置需求"
 
 #: ../../../src/install.rst:55
 msgid "A C++ compiler with C++17 support (e.g. Clang >= 5.0)"
-msgstr ""
+msgstr "支援 C++17 的 C++ 編譯器（例如 Clang >= 5.0）"
 
 #: ../../../src/install.rst:56
 msgid "`cmake <https://cmake.org/>`_ -- version 3.24 or later, and ``make``"
@@ -108,7 +111,7 @@ msgstr ""
 
 #: ../../../src/install.rst:57
 msgid "Xcode >= 15.0 and macOS SDK >= 14.0"
-msgstr ""
+msgstr "Xcode >= 15.0 與 macOS SDK >= 14.0"
 
 #: ../../../src/install.rst:60
 msgid ""
@@ -116,6 +119,8 @@ msgid ""
 "the output of ``uname -p`` is ``x86``, see the :ref:`troubleshooting section "
 "<build shell>` below."
 msgstr ""
+"請確保你的 shell 環境是原生 ``arm``，不是透過 Rosetta 的 ``x86``。若 ``uname "
+"-p`` 輸出為 ``x86``，請參考下方的\\ :ref:`疑難排解 <build shell>`。"
 
 #: ../../../src/install.rst:64
 msgid "Python API"
@@ -126,6 +131,8 @@ msgid ""
 "To build and install the MLX python library from source, first, clone MLX "
 "from `its GitHub repo <https://github.com/ml-explore/mlx>`_:"
 msgstr ""
+"要從來源碼建置與安裝 MLX Python 程式庫，先從\\ `其 GitHub 專案 <https://"
+"github.com/ml-explore/mlx>`_\\ 複製："
 
 #: ../../../src/install.rst:69 ../../../src/install.rst:117
 msgid "git clone git@github.com:ml-explore/mlx.git mlx && cd mlx"
@@ -189,7 +196,7 @@ msgstr ""
 
 #: ../../../src/install.rst:111
 msgid "Currently, MLX must be built and installed from source."
-msgstr ""
+msgstr "目前 MLX 必須從來源碼建置與安裝。"
 
 #: ../../../src/install.rst:113
 msgid ""
@@ -197,10 +204,12 @@ msgid ""
 "start by cloning MLX from `its GitHub repo <https://github.com/ml-explore/"
 "mlx>`_:"
 msgstr ""
+"與 Python 程式庫相同，要建置並安裝 MLX C++ 程式庫，先從 `其 GitHub 專案 "
+"<https://github.com/ml-explore/mlx>`_ 複製："
 
 #: ../../../src/install.rst:121
 msgid "Create a build directory and run CMake and make:"
-msgstr ""
+msgstr "建立建置目錄並執行 CMake 與 make："
 
 #: ../../../src/install.rst:123
 msgid ""
@@ -210,7 +219,7 @@ msgstr ""
 
 #: ../../../src/install.rst:128
 msgid "Run tests with:"
-msgstr ""
+msgstr "使用以下命令執行測試："
 
 #: ../../../src/install.rst:130
 msgid "make test"
@@ -218,7 +227,7 @@ msgstr ""
 
 #: ../../../src/install.rst:134
 msgid "Install with:"
-msgstr ""
+msgstr "使用以下命令安裝："
 
 #: ../../../src/install.rst:136
 msgid "make install"
@@ -231,6 +240,9 @@ msgid ""
 "preprocessor constant ``METAL_PATH`` should be defined at build time and it "
 "should point to the path to the built metal library."
 msgstr ""
+"請注意，建置出的 ``mlx.metallib`` 檔案應與靜態連結到 ``libmlx.a`` 的可執行檔"
+"位於同一目錄；或是在建置時定義前處理器常數 ``METAL_PATH``，並指向已建置的 "
+"metal 程式庫路徑。"
 
 #: ../../../src/install.rst:145
 msgid "Build Options"
@@ -242,7 +254,7 @@ msgstr "選項"
 
 #: ../../../src/install.rst:150
 msgid "Default"
-msgstr ""
+msgstr "預設"
 
 #: ../../../src/install.rst:151
 msgid "MLX_BUILD_TESTS"
@@ -279,6 +291,8 @@ msgid ""
 "while building, you can do so by adding the following environment variable "
 "before building"
 msgstr ""
+"如果你安裝了多個 Xcode，且希望在建置時使用特定版本，可以在建置前加入以下環境"
+"變數："
 
 #: ../../../src/install.rst:169
 msgid "export DEVELOPER_DIR=\"/path/to/Xcode.app/Contents/Developer/\""
@@ -288,7 +302,7 @@ msgstr "export DEVELOPER_DIR=\"/path/to/Xcode.app/Contents/Developer/\""
 msgid ""
 "Further, you can use the following command to find out which macOS SDK will "
 "be used"
-msgstr ""
+msgstr "此外，你可以用以下命令查看將使用的 macOS SDK："
 
 #: ../../../src/install.rst:176
 msgid "xcrun -sdk macosx --show-sdk-version"
@@ -296,11 +310,11 @@ msgstr "xcrun -sdk macosx --show-sdk-version"
 
 #: ../../../src/install.rst:185
 msgid "Metal not found"
-msgstr ""
+msgstr "找不到 Metal"
 
 #: ../../../src/install.rst:187
 msgid "You see the following error when you try to build:"
-msgstr ""
+msgstr "在嘗試建置時出現以下錯誤："
 
 #: ../../../src/install.rst:189
 msgid ""
@@ -309,7 +323,7 @@ msgstr ""
 
 #: ../../../src/install.rst:193
 msgid "To fix this, first make sure you have Xcode installed:"
-msgstr ""
+msgstr "要修復此問題，請先確認已安裝 Xcode："
 
 #: ../../../src/install.rst:195
 msgid "xcode-select --install"
@@ -317,7 +331,7 @@ msgstr ""
 
 #: ../../../src/install.rst:199
 msgid "Then set the active developer directory:"
-msgstr ""
+msgstr "接著設定作用中的開發者目錄："
 
 #: ../../../src/install.rst:201
 msgid "sudo xcode-select --switch /Applications/Xcode.app/Contents/Developer"
@@ -340,10 +354,13 @@ msgid ""
 "Uncheck “Open using Rosetta”, close the “Get Info” window, and restart your "
 "terminal."
 msgstr ""
+"要修復此問題，請在 Finder 中找到應用程式（iTerm 在 ``/Applications``，"
+"Terminal 在 ``/Applications/Utilities``），點右鍵並選擇「取得資訊」。取消勾選"
+"「使用 Rosetta 開啟」，關閉「取得資訊」視窗並重新啟動終端機。"
 
 #: ../../../src/install.rst:218
 msgid "Verify the terminal is now running natively the following command:"
-msgstr ""
+msgstr "用以下命令確認終端機已原生執行："
 
 #: ../../../src/install.rst:220
 msgid ""
@@ -353,7 +370,7 @@ msgstr ""
 
 #: ../../../src/install.rst:225
 msgid "Also check that cmake is using the correct architecture:"
-msgstr ""
+msgstr "也請確認 cmake 使用正確的架構："
 
 #: ../../../src/install.rst:227
 msgid ""

@@ -24,7 +24,7 @@ msgstr ""
 #: ../../../docstring of
 #: mlx.core.metal.pybind11_detail_function_record_v1_system_libstdcpp_gxx_abi_1xxx_use_cxx11_abi_1.set_memory_limit:1
 msgid "Set the memory limit."
-msgstr ""
+msgstr "設定記憶體上限。"
 
 #: ../../../docstring of
 #: mlx.core.metal.pybind11_detail_function_record_v1_system_libstdcpp_gxx_abi_1xxx_use_cxx11_abi_1.set_memory_limit:3
@@ -44,7 +44,7 @@ msgstr ""
 
 #: ../../../src/python/_autosummary/mlx.core.metal.set_memory_limit.rst:0
 msgid "Parameters"
-msgstr ""
+msgstr "參數"
 
 #: ../../../docstring of
 #: mlx.core.metal.pybind11_detail_function_record_v1_system_libstdcpp_gxx_abi_1xxx_use_cxx11_abi_1.set_memory_limit:11
@@ -59,7 +59,7 @@ msgstr ""
 
 #: ../../../src/python/_autosummary/mlx.core.metal.set_memory_limit.rst:0
 msgid "Returns"
-msgstr ""
+msgstr "回傳"
 
 #: ../../../docstring of
 #: mlx.core.metal.pybind11_detail_function_record_v1_system_libstdcpp_gxx_abi_1xxx_use_cxx11_abi_1.set_memory_limit:17
@@ -68,4 +68,4 @@ msgstr ""
 
 #: ../../../src/python/_autosummary/mlx.core.metal.set_memory_limit.rst:0
 msgid "Return type"
-msgstr ""
+msgstr "回傳型別"

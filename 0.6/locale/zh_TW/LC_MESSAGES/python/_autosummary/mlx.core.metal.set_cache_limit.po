@@ -24,7 +24,7 @@ msgstr ""
 #: ../../../docstring of
 #: mlx.core.metal.pybind11_detail_function_record_v1_system_libstdcpp_gxx_abi_1xxx_use_cxx11_abi_1.set_cache_limit:1
 msgid "Set the free cache limit."
-msgstr ""
+msgstr "設定可釋放快取上限。"
 
 #: ../../../docstring of
 #: mlx.core.metal.pybind11_detail_function_record_v1_system_libstdcpp_gxx_abi_1xxx_use_cxx11_abi_1.set_cache_limit:3
@@ -42,7 +42,7 @@ msgstr ""
 
 #: ../../../src/python/_autosummary/mlx.core.metal.set_cache_limit.rst:0
 msgid "Parameters"
-msgstr ""
+msgstr "參數"
 
 #: ../../../docstring of
 #: mlx.core.metal.pybind11_detail_function_record_v1_system_libstdcpp_gxx_abi_1xxx_use_cxx11_abi_1.set_cache_limit:10
@@ -51,7 +51,7 @@ msgstr ""
 
 #: ../../../src/python/_autosummary/mlx.core.metal.set_cache_limit.rst:0
 msgid "Returns"
-msgstr ""
+msgstr "回傳"
 
 #: ../../../docstring of
 #: mlx.core.metal.pybind11_detail_function_record_v1_system_libstdcpp_gxx_abi_1xxx_use_cxx11_abi_1.set_cache_limit:13
@@ -60,4 +60,4 @@ msgstr ""
 
 #: ../../../src/python/_autosummary/mlx.core.metal.set_cache_limit.rst:0
 msgid "Return type"
-msgstr ""
+msgstr "回傳型別"

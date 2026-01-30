@@ -24,4 +24,4 @@ msgstr ""
 #: ../../../docstring of
 #: mlx.core.pybind11_detail_function_record_v1_system_libstdcpp_gxx_abi_1xxx_use_cxx11_abi_1.exp:1
 msgid "See :func:`exp`."
-msgstr ""
+msgstr "請參見 :func:`exp`。"

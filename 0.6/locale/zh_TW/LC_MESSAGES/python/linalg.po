@@ -29,7 +29,7 @@ msgstr ""
 
 #: ../../../src/python/linalg.rst:12:<autosummary>:1
 msgid "Matrix or vector norm."
-msgstr ""
+msgstr "矩陣或向量範數。"
 
 #: ../../../src/python/linalg.rst:12:<autosummary>:1
 msgid ":py:obj:`qr <mlx.core.linalg.qr>`\\ \\(a\\, \\*\\[\\, stream\\]\\)"

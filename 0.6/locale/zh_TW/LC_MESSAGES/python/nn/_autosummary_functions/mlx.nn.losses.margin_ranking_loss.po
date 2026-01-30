@@ -27,6 +27,8 @@ msgid ""
 "Calculate the margin ranking loss that loss given inputs :math:`x_1`, :math:"
 "`x_2` and a label :math:`y` (containing 1 or -1)."
 msgstr ""
+"給定輸入 :math:`x_1`、:math:`x_2` 與標籤 :math:`y`（包含 1 或 -1），計算 "
+"margin ranking 損失。"
 
 #: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/losses.py:docstring
 #: of mlx.nn.losses.margin_ranking_loss:4

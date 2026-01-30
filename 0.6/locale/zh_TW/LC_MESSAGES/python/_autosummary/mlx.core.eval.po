@@ -24,7 +24,7 @@ msgstr ""
 #: ../../../docstring of
 #: mlx.core.pybind11_detail_function_record_v1_system_libstdcpp_gxx_abi_1xxx_use_cxx11_abi_1.eval:1
 msgid "Evaluate an :class:`array` or tree of :class:`array`."
-msgstr ""
+msgstr "對 :class:`array` 或由 :class:`array` 組成的樹狀結構進行求值。"
 
 #: ../../../src/python/_autosummary/mlx.core.eval.rst:0
 msgid "Parameters"

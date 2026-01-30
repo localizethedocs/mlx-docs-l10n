@@ -24,7 +24,7 @@ msgstr ""
 #: ../../../docstring of
 #: mlx.core.fft.pybind11_detail_function_record_v1_system_libstdcpp_gxx_abi_1xxx_use_cxx11_abi_1.ifftn:1
 msgid "n-dimensional inverse discrete Fourier Transform."
-msgstr ""
+msgstr "$n$ 維離散傅立葉反轉換。"
 
 #: ../../../src/python/_autosummary/mlx.core.fft.ifftn.rst:0
 msgid "Parameters"
