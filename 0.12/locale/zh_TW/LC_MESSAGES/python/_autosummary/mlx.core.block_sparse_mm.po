@@ -54,12 +54,12 @@ msgstr ""
 
 #: ../../../src/python/_autosummary/mlx.core.block_sparse_mm.rst:0
 msgid "Parameters"
-msgstr ""
+msgstr "參數"
 
 #: ../../../docstring of mlx.core.block_sparse_mm:14
 #: mlx.core.block_sparse_mm:16
 msgid "Input array."
-msgstr ""
+msgstr "輸入陣列。"
 
 #: ../../../docstring of mlx.core.block_sparse_mm:18
 msgid "Integer indices for ``a`` (default: ``None``)"
