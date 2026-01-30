@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../../src/usage/indexing.rst:4
 msgid "Indexing Arrays"
-msgstr ""
+msgstr "陣列索引"
 
 #: ../../../src/usage/indexing.rst:8
 msgid ""
@@ -27,12 +27,15 @@ msgid ""
 "NumPy :obj:`numpy.ndarray`. See the `NumPy documentation <https://numpy.org/"
 "doc/stable/user/basics.indexing.html>`_ for more details on how that works."
 msgstr ""
+"大多數情況下，MLX :obj:`array` 的索引方式與 NumPy :obj:`numpy.ndarray` 相同。"
+"更多細節請參考 `NumPy 文件 <https://numpy.org/doc/stable/user/basics."
+"indexing.html>`_。"
 
 #: ../../../src/usage/indexing.rst:13
 msgid ""
 "For example, you can use regular integers and slices (:obj:`slice`) to index "
 "arrays:"
-msgstr ""
+msgstr "例如，你可以使用一般整數與切片（:obj:`slice`）來索引陣列："
 
 #: ../../../src/usage/indexing.rst:15
 msgid ""
@@ -49,7 +52,7 @@ msgstr ""
 msgid ""
 "For multi-dimensional arrays, the ``...`` or :obj:`Ellipsis` syntax works as "
 "in NumPy:"
-msgstr ""
+msgstr "對多維陣列而言，``...`` 或 :obj:`Ellipsis` 的語法與 NumPy 相同："
 
 #: ../../../src/usage/indexing.rst:27
 msgid ""
@@ -65,7 +68,7 @@ msgstr ""
 
 #: ../../../src/usage/indexing.rst:38
 msgid "You can index with ``None`` to create a new axis:"
-msgstr ""
+msgstr "你可以用 ``None`` 來建立新軸："
 
 #: ../../../src/usage/indexing.rst:40
 msgid ""
@@ -78,7 +81,7 @@ msgstr ""
 
 #: ../../../src/usage/indexing.rst:49
 msgid "You can also use an :obj:`array` to index another :obj:`array`:"
-msgstr ""
+msgstr "你也可以用一個 :obj:`array` 來索引另一個 :obj:`array`："
 
 #: ../../../src/usage/indexing.rst:51
 msgid ""
@@ -93,26 +96,28 @@ msgid ""
 "Mixing and matching integers, :obj:`slice`, ``...``, and :obj:`array` "
 "indices works just as in NumPy."
 msgstr ""
+"整數、:obj:`slice`、``...`` 與 :obj:`array` 的索引可混合使用，與 NumPy 相同。"
 
 #: ../../../src/usage/indexing.rst:61
 msgid ""
 "Other functions which may be useful for indexing arrays are :func:`take` "
 "and :func:`take_along_axis`."
 msgstr ""
+"其他可能有助於索引陣列的函式還有 :func:`take` 與 :func:`take_along_axis`。"
 
 #: ../../../src/usage/indexing.rst:65
 msgid "Differences from NumPy"
-msgstr ""
+msgstr "與 NumPy 的差異"
 
 #: ../../../src/usage/indexing.rst:69
 msgid "MLX indexing is different from NumPy indexing in two important ways:"
-msgstr ""
+msgstr "MLX 的索引與 NumPy 有兩個重要差異："
 
 #: ../../../src/usage/indexing.rst:71
 msgid ""
 "Indexing does not perform bounds checking. Indexing out of bounds is "
 "undefined behavior."
-msgstr ""
+msgstr "索引不會進行邊界檢查。超出範圍的索引屬於未定義行為。"
 
 #: ../../../src/usage/indexing.rst:73
 msgid "Boolean mask based indexing is not yet supported."
@@ -124,6 +129,8 @@ msgid ""
 "propagate from the GPU. Performing bounds checking for array indices before "
 "launching the kernel would be extremely inefficient."
 msgstr ""
+"之所以不做邊界檢查，是因為例外無法從 GPU 傳回。在啟動核心前先對陣列索引進行邊"
+"界檢查會非常低效。"
 
 #: ../../../src/usage/indexing.rst:79
 msgid ""
@@ -136,11 +143,11 @@ msgstr ""
 
 #: ../../../src/usage/indexing.rst:86
 msgid "In Place Updates"
-msgstr ""
+msgstr "就地更新"
 
 #: ../../../src/usage/indexing.rst:88
 msgid "In place updates to indexed arrays are possible in MLX. For example:"
-msgstr ""
+msgstr "MLX 支援對索引陣列進行就地更新。例如："
 
 #: ../../../src/usage/indexing.rst:90
 msgid ""
@@ -154,7 +161,7 @@ msgstr ""
 msgid ""
 "Just as in NumPy, in place updates will be reflected in all references to "
 "the same array:"
-msgstr ""
+msgstr "與 NumPy 相同，就地更新會反映在同一陣列的所有參照中："
 
 #: ../../../src/usage/indexing.rst:100
 msgid ""
@@ -171,7 +178,7 @@ msgstr ""
 msgid ""
 "Transformations of functions which use in-place updates are allowed and work "
 "as expected. For example:"
-msgstr ""
+msgstr "允許對使用就地更新的函式進行轉換，且可如預期運作。例如："
 
 #: ../../../src/usage/indexing.rst:113
 msgid ""
@@ -187,4 +194,4 @@ msgstr ""
 msgid ""
 "In the above ``dfdx`` will have the correct gradient, namely zeros at "
 "``idx`` and ones elsewhere."
-msgstr ""
+msgstr "上述 ``dfdx`` 會得到正確的梯度，也就是在 ``idx`` 為 0，其餘位置為 1。"

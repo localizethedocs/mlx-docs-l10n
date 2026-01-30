@@ -25,7 +25,7 @@ msgstr ""
 msgid ""
 "A fast implementation of multi-head attention: ``O = softmax(Q @ K.T, "
 "dim=-1) @ V``."
-msgstr ""
+msgstr "多頭注意力的快速實作：``O = softmax(Q @ K.T, dim=-1) @ V``。"
 
 #: ../../../docstring of mlx.core.fast.scaled_dot_product_attention:3
 msgid "Supports:"

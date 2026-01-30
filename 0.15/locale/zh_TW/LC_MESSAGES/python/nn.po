@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../../src/python/nn.rst:6
 msgid "Neural Networks"
-msgstr ""
+msgstr "神經網路"
 
 #: ../../../src/python/nn.rst:8
 msgid ""
@@ -29,6 +29,9 @@ msgid ""
 "operations as well as handle all the parameter state and initialization "
 "manually and explicitly."
 msgstr ""
+"在 MLX 中撰寫任意複雜的神經網路，只需使用 :class:`mlx.core.array` 與 :meth:"
+"`mlx.core.value_and_grad` 即可。然而，這需要使用者一再撰寫相同的簡單神經網路"
+"操作，並且手動且明確地處理所有參數狀態與初始化。"
 
 #: ../../../src/python/nn.rst:13
 msgid ""
@@ -36,10 +39,12 @@ msgid ""
 "of composing neural network layers, initializing their parameters, freezing "
 "them for finetuning and more."
 msgstr ""
+":mod:`mlx.nn` 模組提供直覺的方式來組合神經網路層、初始化其參數、在微調時凍結"
+"參數等，從而解決此問題。"
 
 #: ../../../src/python/nn.rst:18
 msgid "Quick Start with Neural Networks"
-msgstr ""
+msgstr "神經網路快速開始"
 
 #: ../../../src/python/nn.rst:20
 msgid ""
@@ -91,7 +96,7 @@ msgstr ""
 
 #: ../../../src/python/nn.rst:70
 msgid "The Module Class"
-msgstr ""
+msgstr "Module 類別"
 
 #: ../../../src/python/nn.rst:72
 msgid ""
@@ -101,10 +106,13 @@ msgid ""
 "recursively **access** and **update** its parameters and those of its "
 "submodules."
 msgstr ""
+"任何神經網路程式庫的主力都是 :class:`Module` 類別。在 MLX 中，:class:"
+"`Module` 類別是 :class:`mlx.core.array` 或 :class:`Module` 實例的容器。它的主"
+"要功能是提供遞迴 **存取** 與 **更新** 其參數及其子模組參數的方法。"
 
 #: ../../../src/python/nn.rst:79
 msgid "Parameters"
-msgstr ""
+msgstr "參數"
 
 #: ../../../src/python/nn.rst:81
 msgid ""
@@ -112,12 +120,15 @@ msgid ""
 "(its name should not start with ``_``). It can be arbitrarily nested in "
 "other :class:`Module` instances or lists and dictionaries."
 msgstr ""
+"模組的參數是任何型別為 :class:`mlx.core.array` 的公開成員（名稱不應以 ``_`` "
+"開頭）。它可以任意地巢狀在其他 :class:`Module` 實例或清單與字典中。"
 
 #: ../../../src/python/nn.rst:85
 msgid ""
 ":meth:`Module.parameters` can be used to extract a nested dictionary with "
 "all the parameters of a module and its submodules."
 msgstr ""
+"可使用 :meth:`Module.parameters` 提取包含模組及其子模組所有參數的巢狀字典。"
 
 #: ../../../src/python/nn.rst:88
 msgid ""
@@ -125,10 +136,12 @@ msgid ""
 "meth:`Module.freeze` method for more details. :meth:`mlx.nn.value_and_grad` "
 "the gradients returned will be with respect to these trainable parameters."
 msgstr ""
+":class:`Module` 也可以追蹤「凍結」的參數。詳情請見 :meth:`Module.freeze` 方"
+"法。:meth:`mlx.nn.value_and_grad` 回傳的梯度會以這些可訓練參數為對象。"
 
 #: ../../../src/python/nn.rst:94
 msgid "Updating the Parameters"
-msgstr ""
+msgstr "更新參數"
 
 #: ../../../src/python/nn.rst:96
 msgid ""
@@ -136,16 +149,20 @@ msgid ""
 "most times we need to update large subsets of a module's parameters. This "
 "action is performed by :meth:`Module.update`."
 msgstr ""
+"MLX 模組允許存取與更新個別參數。然而，多數時候需要更新模組參數的大型子集合。"
+"此動作由 :meth:`Module.update` 進行。"
 
 #: ../../../src/python/nn.rst:102
 msgid "Inspecting Modules"
-msgstr ""
+msgstr "檢視模組"
 
 #: ../../../src/python/nn.rst:104
 msgid ""
 "The simplest way to see the model architecture is to print it. Following "
 "along with the above example, you can print the ``MLP`` with:"
 msgstr ""
+"最簡單的檢視模型架構方式是直接列印。延續上方範例，你可以用以下方式列印 "
+"``MLP``："
 
 #: ../../../src/python/nn.rst:107
 msgid "print(mlp)"
@@ -153,7 +170,7 @@ msgstr ""
 
 #: ../../../src/python/nn.rst:111
 msgid "This will display:"
-msgstr ""
+msgstr "輸出會是："
 
 #: ../../../src/python/nn.rst:113
 msgid ""
@@ -170,6 +187,8 @@ msgid ""
 "use :func:`mlx.utils.tree_map` on the parameters. For example, to see the "
 "shapes of all the parameters in a :class:`Module` do:"
 msgstr ""
+"若要取得 :class:`Module` 中陣列的更詳細資訊，可以在參數上使用 :func:`mlx."
+"utils.tree_map`。例如，查看 :class:`Module` 中所有參數的形狀可使用："
 
 #: ../../../src/python/nn.rst:125
 msgid ""
@@ -181,7 +200,7 @@ msgstr ""
 msgid ""
 "As another example, you can count the number of parameters in a :class:"
 "`Module` with:"
-msgstr ""
+msgstr "另一個例子，你可以用以下方式計算 :class:`Module` 的參數數量："
 
 #: ../../../src/python/nn.rst:133
 msgid ""
@@ -191,7 +210,7 @@ msgstr ""
 
 #: ../../../src/python/nn.rst:140
 msgid "Value and Grad"
-msgstr ""
+msgstr "Value 與 Grad"
 
 #: ../../../src/python/nn.rst:142
 msgid ""
@@ -201,10 +220,13 @@ msgid ""
 "the parameters should be passed as an argument to the function being "
 "transformed."
 msgstr ""
+"使用 :class:`Module` 並不妨礙使用 MLX 的高階函式變換（:meth:`mlx.core."
+"value_and_grad`、:meth:`mlx.core.grad` 等）。然而，這些函式變換假設函式是純函"
+"式，也就是應將參數作為被變換函式的引數傳入。"
 
 #: ../../../src/python/nn.rst:147
 msgid "There is an easy pattern to achieve that with MLX modules"
-msgstr ""
+msgstr "使用 MLX 模組有個簡單的模式可以做到這點"
 
 #: ../../../src/python/nn.rst:149
 msgid ""
@@ -224,16 +246,20 @@ msgid ""
 "only computes the gradients with respect to the trainable parameters of the "
 "model."
 msgstr ""
+"然而，:meth:`mlx.nn.value_and_grad` 正好提供了這個模式，且只會計算模型可訓練"
+"參數的梯度。"
 
 #: ../../../src/python/nn.rst:162
 msgid "In detail:"
-msgstr ""
+msgstr "詳細來說："
 
 #: ../../../src/python/nn.rst:164
 msgid ""
 "it wraps the passed function with a function that calls :meth:`Module."
 "update` to make sure the model is using the provided parameters."
 msgstr ""
+"它會用一個函式包裹傳入的函式，該函式會呼叫 :meth:`Module.update`，確保模型使"
+"用所提供的參數。"
 
 #: ../../../src/python/nn.rst:166
 msgid ""
@@ -241,6 +267,8 @@ msgid ""
 "function that also computes the gradients with respect to the passed "
 "parameters."
 msgstr ""
+"它會呼叫 :meth:`mlx.core.value_and_grad`，將函式轉換為同時計算對傳入參數的梯"
+"度的函式。"
 
 #: ../../../src/python/nn.rst:168
 msgid ""
@@ -248,6 +276,8 @@ msgid ""
 "parameters as the first argument to the function returned by :meth:`mlx.core."
 "value_and_grad`"
 msgstr ""
+"它會再以一個函式包裹回傳的函式，將可訓練參數作為第一個引數傳給 :meth:`mlx."
+"core.value_and_grad` 回傳的函式。"
 
 #: ../../../src/python/nn.rst:177:<autosummary>:1
 msgid ":py:obj:`value_and_grad <mlx.nn.value_and_grad>`\\ \\(model\\, fn\\)"
@@ -258,6 +288,8 @@ msgid ""
 "Transform the passed function ``fn`` to a function that computes the "
 "gradients of ``fn`` wrt the model's trainable parameters and also its value."
 msgstr ""
+"將傳入的函式 ``fn`` 轉換為同時計算 ``fn`` 對模型可訓練參數的梯度與其值的函"
+"式。"
 
 #: ../../../src/python/nn.rst:177:<autosummary>:1
 msgid ""
@@ -267,4 +299,4 @@ msgstr ""
 
 #: ../../../src/python/nn.rst:177:<autosummary>:1
 msgid "Quantize the sub-modules of a module according to a predicate."
-msgstr ""
+msgstr "依據判斷式對模組的子模組進行量化。"
