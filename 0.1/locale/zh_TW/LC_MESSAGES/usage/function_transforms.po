@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../../src/usage/function_transforms.rst:4
 msgid "Function Transforms"
-msgstr ""
+msgstr "函式轉換"
 
 #: ../../../src/usage/function_transforms.rst:8
 msgid ""
@@ -31,7 +31,7 @@ msgstr ""
 
 #: ../../../src/usage/function_transforms.rst:12
 msgid "Here is a simple example:"
-msgstr ""
+msgstr "以下是一個簡單範例："
 
 #: ../../../src/usage/function_transforms.rst:14
 msgid ""
@@ -48,6 +48,8 @@ msgid ""
 "this case it is the gradient of the sine function which is exactly the "
 "cosine function. To get the second derivative you can do:"
 msgstr ""
+":func:`grad` 作用於 :func:`sin` 的輸出本身就是另一個函式。在此情況下，它是正"
+"弦函式的梯度，也就是餘弦函式。若要取得二階導數，可以這樣做："
 
 #: ../../../src/usage/function_transforms.rst:27
 msgid ""
@@ -63,6 +65,8 @@ msgid ""
 "Using :func:`grad` on the output of :func:`grad` is always ok. You keep "
 "getting higher order derivatives."
 msgstr ""
+"對 :func:`grad` 的輸出再使用 :func:`grad` 一直都是可行的，會持續得到更高階導"
+"數。"
 
 #: ../../../src/usage/function_transforms.rst:38
 msgid ""
@@ -75,13 +79,13 @@ msgstr ""
 
 #: ../../../src/usage/function_transforms.rst:45
 msgid "Automatic Differentiation"
-msgstr ""
+msgstr "自動微分"
 
 #: ../../../src/usage/function_transforms.rst:49
 msgid ""
 "Automatic differentiation in MLX works on functions rather than on implicit "
 "graphs."
-msgstr ""
+msgstr "MLX 的自動微分是針對函式運作，而非隱式計算圖。"
 
 #: ../../../src/usage/function_transforms.rst:54
 msgid ""
@@ -89,6 +93,8 @@ msgid ""
 "``backward``, ``zero_grad``, and ``detach``, or properties like "
 "``requires_grad``."
 msgstr ""
+"如果你是從 PyTorch 轉到 MLX，就不再需要像 ``backward``、``zero_grad``、"
+"``detach`` 這類函式，或是 ``requires_grad`` 這類屬性。"
 
 #: ../../../src/usage/function_transforms.rst:58
 msgid ""
@@ -97,6 +103,9 @@ msgid ""
 "function to compute gradients of more complex functions. By default these "
 "functions compute the gradient with respect to the first argument:"
 msgstr ""
+"最基本的例子就是像上面那樣對標量值函式取梯度。你可以使用 :func:`grad` 與 :"
+"func:`value_and_grad` 來計算更複雜函式的梯度。預設情況下，這些函式會對第一個"
+"引數計算梯度："
 
 #: ../../../src/usage/function_transforms.rst:63
 msgid ""
@@ -126,6 +135,8 @@ msgid ""
 "``grad_fn``, but this can result in a lot of redundant work. Instead, you "
 "should use :func:`value_and_grad`. Continuing the above example:"
 msgstr ""
+"取得損失與梯度的一種方式是先呼叫 ``loss_fn`` 再呼叫 ``grad_fn``，但這可能造成"
+"大量重複計算。相反地，你應該使用 :func:`value_and_grad`。沿用上例："
 
 #: ../../../src/usage/function_transforms.rst:90
 msgid ""
@@ -146,12 +157,14 @@ msgid ""
 "containers of arrays (specifically any of :obj:`list`, :obj:`tuple`, or :obj:"
 "`dict`)."
 msgstr ""
+"你也可以對任意巢狀的 Python 容器中的陣列取梯度（具體來說是 :obj:`list`、:obj:"
+"`tuple` 或 :obj:`dict`）。"
 
 #: ../../../src/usage/function_transforms.rst:107
 msgid ""
 "Suppose we wanted a weight and a bias parameter in the above example. A nice "
 "way to do that is the following:"
-msgstr ""
+msgstr "假設在上例中我們想加入權重與偏置參數，一種不錯的寫法如下："
 
 #: ../../../src/usage/function_transforms.rst:110
 msgid ""
@@ -177,17 +190,19 @@ msgstr ""
 #: ../../../src/usage/function_transforms.rst:130
 msgid ""
 "Notice the tree structure of the parameters is preserved in the gradients."
-msgstr ""
+msgstr "請注意參數的樹狀結構會在梯度中被保留。"
 
 #: ../../../src/usage/function_transforms.rst:132
 msgid ""
 "In some cases you may want to stop gradients from propagating through a part "
 "of the function. You can use the :func:`stop_gradient` for that."
 msgstr ""
+"在某些情況下，你可能希望梯度不要穿過函式的某一部分，此時可以使用 :func:"
+"`stop_gradient`。"
 
 #: ../../../src/usage/function_transforms.rst:137
 msgid "Automatic Vectorization"
-msgstr ""
+msgstr "自動向量化"
 
 #: ../../../src/usage/function_transforms.rst:141
 msgid ""
@@ -196,6 +211,8 @@ msgid ""
 "`vmap` can be quite powerful for more complex functions which are difficult "
 "to optimize by hand."
 msgstr ""
+"使用 :func:`vmap` 來自動向量化複雜函式。為了清楚起見，這裡會用一個基本且刻意"
+"簡化的例子，但對於難以手動最佳化的複雜函式，:func:`vmap` 其實非常強大。"
 
 #: ../../../src/usage/function_transforms.rst:148
 msgid ""
@@ -204,11 +221,14 @@ msgid ""
 "<https://github.com/ml-explore/mlx/issues>`_ and include your function. We "
 "will prioritize including it."
 msgstr ""
+"有些運算尚未支援 :func:`vmap`。若你遇到像 ``ValueError: Primitive's vmap not "
+"implemented.`` 這樣的錯誤，請在 `issue <https://github.com/ml-explore/mlx/"
+"issues>`_ 中回報並附上你的函式，我們會優先納入支援。"
 
 #: ../../../src/usage/function_transforms.rst:153
 msgid ""
 "A naive way to add the elements from two sets of vectors is with a loop:"
-msgstr ""
+msgstr "將兩組向量逐一相加的一種樸素作法是用迴圈："
 
 #: ../../../src/usage/function_transforms.rst:155
 msgid ""
@@ -222,7 +242,7 @@ msgstr ""
 #: ../../../src/usage/function_transforms.rst:163
 msgid ""
 "Instead you can use :func:`vmap` to automatically vectorize the addition:"
-msgstr ""
+msgstr "相對地，你可以使用 :func:`vmap` 自動向量化相加："
 
 #: ../../../src/usage/function_transforms.rst:165
 msgid ""
@@ -237,10 +257,12 @@ msgid ""
 "corresponding input to vectorize over. Similarly, use ``out_axes`` to "
 "specify where the vectorized axes should be in the outputs."
 msgstr ""
+"``in_axes`` 參數可用來指定要對應輸入的哪些維度進行向量化。同樣地，使用 "
+"``out_axes`` 來指定輸出中向量化軸的位置。"
 
 #: ../../../src/usage/function_transforms.rst:175
 msgid "Let's time these two different versions:"
-msgstr ""
+msgstr "讓我們測量這兩種版本的耗時："
 
 #: ../../../src/usage/function_transforms.rst:177
 msgid ""
@@ -262,3 +284,5 @@ msgid ""
 "do ``xs + ys.T``, but for more complex functions :func:`vmap` can be quite "
 "handy."
 msgstr ""
+"當然，這個運算相當刻意。更好的方式是直接做 ``xs + ys.T``，但對更複雜的函式來"
+"說，:func:`vmap` 仍然非常實用。"

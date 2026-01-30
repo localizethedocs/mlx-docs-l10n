@@ -32,7 +32,7 @@ msgstr ""
 
 #: ../../../src/python/_autosummary/mlx.core.Stream.rst:23
 msgid "Attributes"
-msgstr ""
+msgstr "屬性"
 
 #: ../../../src/python/_autosummary/mlx.core.Stream.rst:26:<autosummary>:1
 msgid ":py:obj:`device <mlx.core.Stream.device>`\\"

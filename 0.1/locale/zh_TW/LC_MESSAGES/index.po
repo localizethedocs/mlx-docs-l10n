@@ -23,7 +23,7 @@ msgstr "安裝"
 
 #: ../../../src/index.rst:34
 msgid "Usage"
-msgstr ""
+msgstr "使用方式"
 
 #: ../../../src/index.rst:47
 msgid "Examples"
@@ -59,6 +59,8 @@ msgid ""
 "The Python API closely follows NumPy with a few exceptions. MLX also has a "
 "fully featured C++ API which closely follows the Python API."
 msgstr ""
+"Python API 幾乎完全遵循 NumPy，只有少數例外。MLX 也提供功能完整的 C++ API，同"
+"樣緊密遵循 Python API。"
 
 #: ../../../src/index.rst:10
 msgid "The main differences between MLX and NumPy are:"
@@ -70,18 +72,20 @@ msgid ""
 "transformations for automatic differentiation, automatic vectorization, and "
 "computation graph optimization."
 msgstr ""
+"**可組合的函式轉換**：MLX 提供可組合的函式轉換，用於自動微分、自動向量化，以"
+"及計算圖最佳化。"
 
 #: ../../../src/index.rst:15
 msgid ""
 "**Lazy computation**: Computations in MLX are lazy. Arrays are only "
 "materialized when needed."
-msgstr ""
+msgstr "**惰性計算**：MLX 中的計算採惰性方式，陣列只在需要時才會實體化。"
 
 #: ../../../src/index.rst:17
 msgid ""
 "**Multi-device**: Operations can run on any of the supported devices (CPU, "
 "GPU, ...)"
-msgstr ""
+msgstr "**多裝置**：運算可以在任何支援的裝置（CPU、GPU 等）上執行。"
 
 #: ../../../src/index.rst:20
 msgid ""
@@ -92,3 +96,8 @@ msgid ""
 "MLX arrays can be performed on any of the supported device types without "
 "performing data copies. Currently supported device types are the CPU and GPU."
 msgstr ""
+"MLX 的設計靈感來自 `PyTorch <https://pytorch.org/>`_、`Jax <https://github."
+"com/google/jax>`_ 與 `ArrayFire <https://arrayfire.org/>`_ 等框架。與這些框架"
+"相比，MLX 的一項重要差異是*統一記憶體模型*。MLX 的陣列位於共享記憶體中，對 "
+"MLX 陣列的運算可以在任何支援的裝置類型上執行，而無需進行資料複製。目前支援的"
+"裝置類型為 CPU 與 GPU。"

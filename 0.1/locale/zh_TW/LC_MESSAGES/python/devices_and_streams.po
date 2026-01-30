@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../../src/python/devices_and_streams.rst:4
 msgid "Devices and Streams"
-msgstr ""
+msgstr "裝置與串流"
 
 #: ../../../src/python/devices_and_streams.rst:17:<autosummary>:1
 msgid ":py:obj:`Device <mlx.core.Device>`\\"
