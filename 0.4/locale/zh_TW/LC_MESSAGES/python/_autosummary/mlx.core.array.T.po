@@ -23,4 +23,4 @@ msgstr ""
 
 #: ../../../docstring of mlx.core.array.T:1
 msgid "Equivalent to calling ``self.transpose()`` with no arguments."
-msgstr ""
+msgstr "等同於呼叫 ``self.transpose()`` 且不帶參數。"

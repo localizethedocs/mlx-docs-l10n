@@ -89,7 +89,7 @@ msgstr ""
 #: ../../../docstring of
 #: mlx.core.linalg.pybind11_detail_function_record_v1_system_libstdcpp_gxx_abi_1xxx_use_cxx11_abi_1.norm:29
 msgid "Notes"
-msgstr ""
+msgstr "備註"
 
 #: ../../../docstring of
 #: mlx.core.linalg.pybind11_detail_function_record_v1_system_libstdcpp_gxx_abi_1xxx_use_cxx11_abi_1.norm:30

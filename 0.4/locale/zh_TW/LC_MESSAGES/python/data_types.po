@@ -19,29 +19,31 @@ msgstr ""
 
 #: ../../../src/python/data_types.rst:6
 msgid "Data Types"
-msgstr ""
+msgstr "資料型別"
 
 #: ../../../src/python/data_types.rst:10
 msgid ""
 "The default floating point type is ``float32`` and the default integer type "
 "is ``int32``. The table below shows supported values for :obj:`Dtype`."
 msgstr ""
+"預設浮點數型別為 ``float32``，預設整數型別為 ``int32``。下表列出 :obj:"
+"`Dtype` 支援的值。"
 
 #: ../../../src/python/data_types.rst:13
 msgid "Supported Data Types"
-msgstr ""
+msgstr "支援的資料型別"
 
 #: ../../../src/python/data_types.rst:17
 msgid "Type"
-msgstr ""
+msgstr "型別"
 
 #: ../../../src/python/data_types.rst:18
 msgid "Bytes"
-msgstr ""
+msgstr "位元組"
 
 #: ../../../src/python/data_types.rst:19
 msgid "Description"
-msgstr ""
+msgstr "描述"
 
 #: ../../../src/python/data_types.rst:20
 msgid "``bool_``"
@@ -54,7 +56,7 @@ msgstr ""
 
 #: ../../../src/python/data_types.rst:22
 msgid "Boolean (``True``, ``False``) data type"
-msgstr ""
+msgstr "布林（``True``、``False``）資料型別"
 
 #: ../../../src/python/data_types.rst:23
 msgid "``uint8``"
@@ -62,7 +64,7 @@ msgstr ""
 
 #: ../../../src/python/data_types.rst:25
 msgid "8-bit unsigned integer"
-msgstr ""
+msgstr "8 位元無號整數"
 
 #: ../../../src/python/data_types.rst:26
 msgid "``uint16``"
@@ -75,7 +77,7 @@ msgstr ""
 
 #: ../../../src/python/data_types.rst:28
 msgid "16-bit unsigned integer"
-msgstr ""
+msgstr "16 位元無號整數"
 
 #: ../../../src/python/data_types.rst:29
 msgid "``uint32``"
@@ -88,7 +90,7 @@ msgstr ""
 
 #: ../../../src/python/data_types.rst:31
 msgid "32-bit unsigned integer"
-msgstr ""
+msgstr "32 位元無號整數"
 
 #: ../../../src/python/data_types.rst:32
 msgid "``uint64``"
@@ -100,7 +102,7 @@ msgstr ""
 
 #: ../../../src/python/data_types.rst:34
 msgid "64-bit unsigned integer"
-msgstr ""
+msgstr "64 位元無號整數"
 
 #: ../../../src/python/data_types.rst:35
 msgid "``int8``"
@@ -108,7 +110,7 @@ msgstr ""
 
 #: ../../../src/python/data_types.rst:37
 msgid "8-bit signed integer"
-msgstr ""
+msgstr "8 位元有號整數"
 
 #: ../../../src/python/data_types.rst:38
 msgid "``int16``"
@@ -116,7 +118,7 @@ msgstr ""
 
 #: ../../../src/python/data_types.rst:40
 msgid "16-bit signed integer"
-msgstr ""
+msgstr "16 位元有號整數"
 
 #: ../../../src/python/data_types.rst:41
 msgid "``int32``"
@@ -124,7 +126,7 @@ msgstr ""
 
 #: ../../../src/python/data_types.rst:43
 msgid "32-bit signed integer"
-msgstr ""
+msgstr "32 位元有號整數"
 
 #: ../../../src/python/data_types.rst:44
 msgid "``int64``"
@@ -132,7 +134,7 @@ msgstr ""
 
 #: ../../../src/python/data_types.rst:46
 msgid "64-bit signed integer"
-msgstr ""
+msgstr "64 位元有號整數"
 
 #: ../../../src/python/data_types.rst:47
 msgid "``float16``"
@@ -151,4 +153,4 @@ msgstr ""
 
 #: ../../../src/python/data_types.rst:52
 msgid "32-bit float"
-msgstr ""
+msgstr "32 位元浮點數"

@@ -24,7 +24,7 @@ msgstr ""
 #: ../../../docstring of
 #: mlx.core.pybind11_detail_function_record_v1_system_libstdcpp_gxx_abi_1xxx_use_cxx11_abi_1.set_default_stream:1
 msgid "Set the default stream."
-msgstr ""
+msgstr "設定預設串流。"
 
 #: ../../../docstring of
 #: mlx.core.pybind11_detail_function_record_v1_system_libstdcpp_gxx_abi_1xxx_use_cxx11_abi_1.set_default_stream:3

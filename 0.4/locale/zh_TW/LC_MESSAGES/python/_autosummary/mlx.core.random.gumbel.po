@@ -24,7 +24,7 @@ msgstr ""
 #: ../../../docstring of
 #: mlx.core.random.pybind11_detail_function_record_v1_system_libstdcpp_gxx_abi_1xxx_use_cxx11_abi_1.gumbel:1
 msgid "Sample from the standard Gumbel distribution."
-msgstr ""
+msgstr "從標準 Gumbel 分佈取樣。"
 
 #: ../../../docstring of
 #: mlx.core.random.pybind11_detail_function_record_v1_system_libstdcpp_gxx_abi_1xxx_use_cxx11_abi_1.gumbel:3
