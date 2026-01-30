@@ -24,7 +24,7 @@ msgstr ""
 #: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/__init__.py:docstring
 #: of mlx.nn.hard_tanh:1
 msgid "Applies the HardTanh function."
-msgstr ""
+msgstr "套用 HardTanh 函式。"
 
 #: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/__init__.py:docstring
 #: of mlx.nn.hard_tanh:3

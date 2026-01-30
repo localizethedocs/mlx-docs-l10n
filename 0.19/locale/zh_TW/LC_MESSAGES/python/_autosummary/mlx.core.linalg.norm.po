@@ -78,7 +78,7 @@ msgstr ""
 
 #: ../../../docstring of mlx.core.linalg.norm:29
 msgid "Notes"
-msgstr ""
+msgstr "備註"
 
 #: ../../../docstring of mlx.core.linalg.norm:30
 msgid ""
