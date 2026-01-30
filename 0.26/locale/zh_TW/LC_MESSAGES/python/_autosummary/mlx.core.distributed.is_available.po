@@ -23,4 +23,4 @@ msgstr ""
 
 #: ../../../docstring of mlx.core.distributed.is_available:1
 msgid "Check if a communication backend is available."
-msgstr ""
+msgstr "檢查通訊後端是否可用。"
