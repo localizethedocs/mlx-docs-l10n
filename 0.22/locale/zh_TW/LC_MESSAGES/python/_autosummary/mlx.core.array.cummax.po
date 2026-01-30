@@ -23,4 +23,4 @@ msgstr ""
 
 #: ../../../docstring of mlx.core.array.cummax:1
 msgid "See :func:`cummax`."
-msgstr ""
+msgstr "請參見 :func:`cummax`。"

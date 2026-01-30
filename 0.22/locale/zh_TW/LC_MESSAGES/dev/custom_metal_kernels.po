@@ -19,20 +19,20 @@ msgstr ""
 
 #: ../../../src/dev/custom_metal_kernels.rst:4
 msgid "Custom Metal Kernels"
-msgstr ""
+msgstr "自訂 Metal 內核"
 
 #: ../../../src/dev/custom_metal_kernels.rst:6
 msgid ""
 "MLX supports writing custom Metal kernels through the Python and C++ APIs."
-msgstr ""
+msgstr "MLX 支援透過 Python 與 C++ API 撰寫自訂 Metal 內核。"
 
 #: ../../../src/dev/custom_metal_kernels.rst:9
 msgid "Simple Example"
-msgstr ""
+msgstr "簡單範例"
 
 #: ../../../src/dev/custom_metal_kernels.rst:11
 msgid "Let's write a custom kernel that computes ``exp`` elementwise:"
-msgstr ""
+msgstr "讓我們撰寫一個自訂內核，逐元素計算 ``exp``："
 
 #: ../../../src/dev/custom_metal_kernels.rst:13
 msgid ""
@@ -71,11 +71,11 @@ msgstr ""
 
 #: ../../../src/dev/custom_metal_kernels.rst:45
 msgid "The full function signature will be generated using:"
-msgstr ""
+msgstr "完整的函式簽名會根據以下內容自動產生："
 
 #: ../../../src/dev/custom_metal_kernels.rst:47
 msgid "The shapes/dtypes of ``inputs``"
-msgstr ""
+msgstr "``inputs`` 的形狀/資料型別"
 
 #: ../../../src/dev/custom_metal_kernels.rst:48
 msgid ""
@@ -84,20 +84,26 @@ msgid ""
 "signature. ``inp_shape``, ``inp_strides`` and ``inp_ndim`` are also added "
 "for convenience if they are present in ``source``."
 msgstr ""
+"在上述例子中，``a`` 是型別為 ``mx.float16`` 的 ``mx.array``，並以鍵 ``inp`` "
+"傳入，因此我們會在簽名中加入 ``const device float16_t* inp``。若 ``source`` "
+"中出現 ``inp_shape``、``inp_strides`` 與 ``inp_ndim``，也會為了方便而一併加"
+"入。"
 
 #: ../../../src/dev/custom_metal_kernels.rst:52
 msgid "The list of ``output_dtypes``"
-msgstr ""
+msgstr "``output_dtypes`` 的列表"
 
 #: ../../../src/dev/custom_metal_kernels.rst:53
 msgid ""
 "In the above, ``out`` is an ``mx.array`` of type ``mx.float16`` so we add "
 "``device float16_t* out``."
 msgstr ""
+"在上述例子中，``out`` 是型別為 ``mx.float16`` 的 ``mx.array``，因此會加入 "
+"``device float16_t* out``。"
 
 #: ../../../src/dev/custom_metal_kernels.rst:55
 msgid "Template parameters passed using ``template``"
-msgstr ""
+msgstr "透過 ``template`` 傳入的範本參數"
 
 #: ../../../src/dev/custom_metal_kernels.rst:56
 msgid ""
@@ -106,11 +112,14 @@ msgid ""
 "``custom_kernel_myexp_float<float>``. Template parameters can be ``mx.core."
 "Dtype``, ``int`` or ``bool``."
 msgstr ""
+"在上述例子中，``template=[(\"T\", mx.float32)]`` 會為函式加入 ``template "
+"<typename T>``，並以 ``custom_kernel_myexp_float<float>`` 實例化此範本。範本"
+"參數可以是 ``mx.core.Dtype``、``int`` 或 ``bool``。"
 
 #: ../../../src/dev/custom_metal_kernels.rst:59
 msgid ""
 "Metal attributes used in ``source`` such as ``[[thread_position_in_grid]]``"
-msgstr ""
+msgstr "``source`` 中使用的 Metal 屬性，例如 ``[[thread_position_in_grid]]``"
 
 #: ../../../src/dev/custom_metal_kernels.rst:60
 msgid ""
@@ -118,12 +127,15 @@ msgid ""
 "Table 5.8 of the `Metal Shading Language Specification <https://developer."
 "apple.com/metal/Metal-Shading-Language-Specification.pdf>`_ are supported."
 msgstr ""
+"這些會被加入為函式參數。支援 `Metal Shading Language Specification <https://"
+"developer.apple.com/metal/Metal-Shading-Language-Specification.pdf>`_ 表 5.8 "
+"中定義的所有屬性。"
 
 #: ../../../src/dev/custom_metal_kernels.rst:63
 msgid ""
 "Putting this all together, the generated function signature for ``myexp`` is "
 "as follows:"
-msgstr ""
+msgstr "綜合以上內容，``myexp`` 產生的函式簽名如下："
 
 #: ../../../src/dev/custom_metal_kernels.rst:65
 msgid ""
@@ -161,7 +173,7 @@ msgstr ""
 
 #: ../../../src/dev/custom_metal_kernels.rst:88
 msgid "Using Shape/Strides"
-msgstr ""
+msgstr "使用形狀/步幅"
 
 #: ../../../src/dev/custom_metal_kernels.rst:90
 msgid ""
@@ -185,6 +197,8 @@ msgid ""
 "Let's convert ``myexp`` above to support arbitrarily strided arrays without "
 "relying on a copy from ``ensure_row_contiguous``:"
 msgstr ""
+"讓我們把上面的 ``myexp`` 改成支援任意步幅的陣列，而不依賴 "
+"``ensure_row_contiguous`` 的複製："
 
 #: ../../../src/dev/custom_metal_kernels.rst:101
 msgid ""
@@ -225,17 +239,17 @@ msgstr ""
 
 #: ../../../src/dev/custom_metal_kernels.rst:137
 msgid "Complex Example"
-msgstr ""
+msgstr "複雜範例"
 
 #: ../../../src/dev/custom_metal_kernels.rst:139
 msgid ""
 "Let's implement a more complex example: ``grid_sample`` in ``\"bilinear\"`` "
 "mode."
-msgstr ""
+msgstr "讓我們實作更複雜的例子：``\"bilinear\"`` 模式的 ``grid_sample``。"
 
 #: ../../../src/dev/custom_metal_kernels.rst:141
 msgid "We'll start with the following MLX implementation using standard ops:"
-msgstr ""
+msgstr "我們從使用標準運算的 MLX 實作開始："
 
 #: ../../../src/dev/custom_metal_kernels.rst:143
 msgid ""
@@ -294,7 +308,7 @@ msgstr ""
 
 #: ../../../src/dev/custom_metal_kernels.rst:189
 msgid "First we'll implement the forward pass as a fused kernel:"
-msgstr ""
+msgstr "首先我們將正向傳播實作為融合內核："
 
 #: ../../../src/dev/custom_metal_kernels.rst:191
 msgid ""
@@ -382,7 +396,7 @@ msgstr ""
 
 #: ../../../src/dev/custom_metal_kernels.rst:270
 msgid "For a reasonably sized input such as:"
-msgstr ""
+msgstr "對於像是以下合理大小的輸入："
 
 #: ../../../src/dev/custom_metal_kernels.rst:272
 msgid ""
@@ -392,7 +406,7 @@ msgstr ""
 
 #: ../../../src/dev/custom_metal_kernels.rst:277
 msgid "On an M1 Max, we see a big performance improvement:"
-msgstr ""
+msgstr "在 M1 Max 上，我們看到顯著的效能提升："
 
 #: ../../../src/dev/custom_metal_kernels.rst:279
 msgid "``55.7ms -> 6.7ms => 8x speed up``"
@@ -423,6 +437,7 @@ msgid ""
 "Initialize all of the kernel's outputs to this value before it runs. This "
 "allows us to update only part of the output arrays with the kernel."
 msgstr ""
+"在內核執行前，將所有輸出初始化為此值。這讓我們可以只更新輸出陣列的一部分。"
 
 #: ../../../src/dev/custom_metal_kernels.rst:293
 msgid "``atomic_outputs=True``"
@@ -436,10 +451,14 @@ msgid ""
 "section 6.15 of the `Metal Shading Language Specification <https://developer."
 "apple.com/metal/Metal-Shading-Language-Specification.pdf>`_ for more details."
 msgstr ""
+"在函式簽名中將所有內核輸出指定為 ``atomic``。這表示我們可以使用 Metal 的 "
+"``atomic`` 功能，從多個執行緒群組同時更新 ``x_grad`` 和 ``grid_grad`` 陣列。"
+"詳情請參見 `Metal Shading Language Specification <https://developer.apple."
+"com/metal/Metal-Shading-Language-Specification.pdf>`_ 第 6.15 節。"
 
 #: ../../../src/dev/custom_metal_kernels.rst:298
 msgid "We can then implement the backwards pass as follows:"
-msgstr ""
+msgstr "接著我們可以如下實作反向傳播："
 
 #: ../../../src/dev/custom_metal_kernels.rst:300
 msgid ""
@@ -584,7 +603,7 @@ msgstr ""
 
 #: ../../../src/dev/custom_metal_kernels.rst:425
 msgid "There's an even larger speed up for the vjp:"
-msgstr ""
+msgstr "vjp 的加速幅度更大："
 
 #: ../../../src/dev/custom_metal_kernels.rst:427
 msgid "``676.4ms -> 16.7ms => 40x speed up``"

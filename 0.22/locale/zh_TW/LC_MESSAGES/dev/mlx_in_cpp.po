@@ -19,21 +19,23 @@ msgstr ""
 
 #: ../../../src/dev/mlx_in_cpp.rst:4
 msgid "Using MLX in C++"
-msgstr ""
+msgstr "在 C++ 中使用 MLX"
 
 #: ../../../src/dev/mlx_in_cpp.rst:6
 msgid "You can use MLX in a C++ project with CMake."
-msgstr ""
+msgstr "你可以在 C++ 專案中透過 CMake 使用 MLX。"
 
 #: ../../../src/dev/mlx_in_cpp.rst:10
 msgid ""
 "This guide is based one the following `example using MLX in C++ <https://"
 "github.com/ml-explore/mlx/tree/main/examples/cmake_project>`_"
 msgstr ""
+"本指南基於以下 `在 C++ 中使用 MLX 的範例 <https://github.com/ml-explore/mlx/"
+"tree/main/examples/cmake_project>`_。"
 
 #: ../../../src/dev/mlx_in_cpp.rst:13
 msgid "First install MLX:"
-msgstr ""
+msgstr "首先安裝 MLX："
 
 #: ../../../src/dev/mlx_in_cpp.rst:15
 msgid "pip install -U mlx"
@@ -45,10 +47,12 @@ msgid ""
 "library. For more information see the :ref:`documentation on installing MLX "
 "<build_and_install>`."
 msgstr ""
+"你也可以從來源碼安裝 MLX Python 軟體包，或只安裝 C++ 程式庫。更多資訊請見 :"
+"ref:`安裝 MLX 的文件 <build_and_install>`。"
 
 #: ../../../src/dev/mlx_in_cpp.rst:23
 msgid "Next make an example program in ``example.cpp``:"
-msgstr ""
+msgstr "接著在 ``example.cpp`` 建立範例程式："
 
 #: ../../../src/dev/mlx_in_cpp.rst:25
 msgid ""
@@ -68,7 +72,7 @@ msgstr ""
 
 #: ../../../src/dev/mlx_in_cpp.rst:40
 msgid "The next step is to setup a CMake file in ``CMakeLists.txt``:"
-msgstr ""
+msgstr "下一步是在 ``CMakeLists.txt`` 中設定 CMake 檔案："
 
 #: ../../../src/dev/mlx_in_cpp.rst:42
 msgid ""
@@ -84,12 +88,12 @@ msgstr ""
 msgid ""
 "Depending on how you installed MLX, you may need to tell CMake where to find "
 "it."
-msgstr ""
+msgstr "依你安裝 MLX 的方式，可能需要告訴 CMake MLX 的位置。"
 
 #: ../../../src/dev/mlx_in_cpp.rst:55
 msgid ""
 "If you installed MLX with Python, then add the following to the CMake file:"
-msgstr ""
+msgstr "如果你透過 Python 安裝 MLX，請把以下內容加入 CMake 檔案："
 
 #: ../../../src/dev/mlx_in_cpp.rst:57
 msgid ""
@@ -109,6 +113,8 @@ msgid ""
 "able to find it. If you installed it to a non-standard location or CMake "
 "can't find MLX then set ``MLX_ROOT`` to the location where MLX is installed:"
 msgstr ""
+"如果你把 MLX C++ 軟體包安裝到系統路徑，CMake 應該能找到它。若安裝在非標準位"
+"置，或 CMake 找不到 MLX，請把 ``MLX_ROOT`` 設為 MLX 的安裝位置："
 
 #: ../../../src/dev/mlx_in_cpp.rst:72
 msgid "set(MLX_ROOT \"/path/to/mlx/\")"
@@ -116,7 +122,7 @@ msgstr ""
 
 #: ../../../src/dev/mlx_in_cpp.rst:76
 msgid "Next, instruct CMake to find MLX:"
-msgstr ""
+msgstr "接著指示 CMake 尋找 MLX："
 
 #: ../../../src/dev/mlx_in_cpp.rst:78
 msgid "find_package(MLX CONFIG REQUIRED)"
@@ -124,7 +130,7 @@ msgstr ""
 
 #: ../../../src/dev/mlx_in_cpp.rst:82
 msgid "Finally, add the ``example.cpp`` program as an executable and link MLX."
-msgstr ""
+msgstr "最後把 ``example.cpp`` 程式加為可執行檔並連結 MLX。"
 
 #: ../../../src/dev/mlx_in_cpp.rst:84
 msgid ""
@@ -134,7 +140,7 @@ msgstr ""
 
 #: ../../../src/dev/mlx_in_cpp.rst:89
 msgid "You can build the example with:"
-msgstr ""
+msgstr "你可以用以下命令建置範例："
 
 #: ../../../src/dev/mlx_in_cpp.rst:91
 msgid ""
@@ -144,7 +150,7 @@ msgstr ""
 
 #: ../../../src/dev/mlx_in_cpp.rst:96
 msgid "And run it with:"
-msgstr ""
+msgstr "並用以下命令執行："
 
 #: ../../../src/dev/mlx_in_cpp.rst:98
 msgid "./build/example"
@@ -153,19 +159,19 @@ msgstr ""
 #: ../../../src/dev/mlx_in_cpp.rst:102
 msgid ""
 "Note ``find_package(MLX CONFIG REQUIRED)`` sets the following variables:"
-msgstr ""
+msgstr "注意 ``find_package(MLX CONFIG REQUIRED)`` 會設定以下變數："
 
 #: ../../../src/dev/mlx_in_cpp.rst:104
 msgid "Package Variables"
-msgstr ""
+msgstr "軟體包變數"
 
 #: ../../../src/dev/mlx_in_cpp.rst:108
 msgid "Variable"
-msgstr ""
+msgstr "變數"
 
 #: ../../../src/dev/mlx_in_cpp.rst:109
 msgid "Description"
-msgstr ""
+msgstr "說明"
 
 #: ../../../src/dev/mlx_in_cpp.rst:110
 msgid "MLX_FOUND"
@@ -173,7 +179,7 @@ msgstr ""
 
 #: ../../../src/dev/mlx_in_cpp.rst:111
 msgid "``True`` if MLX is found"
-msgstr ""
+msgstr "若找到 MLX 則為 ``True``"
 
 #: ../../../src/dev/mlx_in_cpp.rst:112
 msgid "MLX_INCLUDE_DIRS"
@@ -181,7 +187,7 @@ msgstr ""
 
 #: ../../../src/dev/mlx_in_cpp.rst:113
 msgid "Include directory"
-msgstr ""
+msgstr "包含目錄"
 
 #: ../../../src/dev/mlx_in_cpp.rst:114
 msgid "MLX_LIBRARIES"
@@ -189,7 +195,7 @@ msgstr ""
 
 #: ../../../src/dev/mlx_in_cpp.rst:115
 msgid "Libraries to link against"
-msgstr ""
+msgstr "連結用程式庫"
 
 #: ../../../src/dev/mlx_in_cpp.rst:116
 msgid "MLX_CXX_FLAGS"
@@ -197,7 +203,7 @@ msgstr ""
 
 #: ../../../src/dev/mlx_in_cpp.rst:117
 msgid "Additional compiler flags"
-msgstr ""
+msgstr "額外編譯器旗標"
 
 #: ../../../src/dev/mlx_in_cpp.rst:118
 msgid "MLX_BUILD_ACCELERATE"
@@ -205,7 +211,7 @@ msgstr ""
 
 #: ../../../src/dev/mlx_in_cpp.rst:119
 msgid "``True`` if MLX was built with Accelerate"
-msgstr ""
+msgstr "若 MLX 以 Accelerate 建置則為 ``True``"
 
 #: ../../../src/dev/mlx_in_cpp.rst:120
 msgid "MLX_BUILD_METAL"
@@ -213,4 +219,4 @@ msgstr ""
 
 #: ../../../src/dev/mlx_in_cpp.rst:121
 msgid "``True`` if MLX was built with Metal"
-msgstr ""
+msgstr "若 MLX 以 Metal 建置則為 ``True``"
