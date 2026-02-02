@@ -37,9 +37,9 @@
     "branch" : "main",
     "commit" : 
     {
-      "date" : "2026-01-10 15:32:54 -0800",
-      "hash" : "43341e8d533000090a94fdddb7f39c91a1240307",
-      "title" : "Swizzle scales (#2979)"
+      "date" : "2026-01-25 16:40:57 -0800",
+      "hash" : "5bd99dd5ec43d42c6e4bef48d16d891c567aad8a",
+      "title" : "Fix flaky macOS test (#3063)"
     }
   },
   "type" : "branch",
