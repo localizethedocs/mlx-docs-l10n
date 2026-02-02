@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MLX main\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-01-12 08:24+0000\n"
+"POT-Creation-Date: 2026-01-26 08:24+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -156,8 +156,8 @@ msgid "Build Requirements"
 msgstr "建置需求"
 
 #: ../../../src/install.rst:86
-msgid "A C++ compiler with C++17 support (e.g. Clang >= 5.0)"
-msgstr "支援 C++17 的 C++ 編譯器（例如 Clang >= 5.0）"
+msgid "A C++ compiler with C++20 support (e.g. Clang >= 15.0)"
+msgstr ""
 
 #: ../../../src/install.rst:87
 msgid "`cmake <https://cmake.org/>`_ -- version 3.25 or later, and ``make``"
@@ -574,3 +574,6 @@ msgstr ""
 "若看到 ``\"x86_64\"``，請嘗試重新安裝 ``cmake``。若看到 ``\"arm64\"``，但建置"
 "時出現「Building for x86_64 on macOS is not supported.」錯誤，請用 ``rm -rf "
 "build/`` 清除建置快取後再試一次。"
+
+#~ msgid "A C++ compiler with C++17 support (e.g. Clang >= 5.0)"
+#~ msgstr "支援 C++17 的 C++ 編譯器（例如 Clang >= 5.0）"
