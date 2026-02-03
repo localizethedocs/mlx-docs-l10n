@@ -9,12 +9,12 @@ Number     of fuzzy       msgid entries : 0
 Number     of total       msgid entries : 6654
 Percentage of translated  msgid entries : 0%
 [zh_TW]
-Number     of completed   po    files   : 0
-Number     of progressing po    files   : 90
-Number     of unstarted   po    files   : 425
+Number     of completed   po    files   : 3
+Number     of progressing po    files   : 247
+Number     of unstarted   po    files   : 265
 Number     of total       po    files   : 515
 Percentage of completed   po    files   : 0%
-Number     of translated  msgid entries : 143
+Number     of translated  msgid entries : 1284
 Number     of fuzzy       msgid entries : 0
 Number     of total       msgid entries : 6654
-Percentage of translated  msgid entries : 2%
+Percentage of translated  msgid entries : 19%
