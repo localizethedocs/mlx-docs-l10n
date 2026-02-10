@@ -103,7 +103,7 @@ msgstr "建置需求"
 
 #: ../../../src/install.rst:55
 msgid "A C++ compiler with C++17 support (e.g. Clang >= 5.0)"
-msgstr "支援 C++17 的 C++ 編譯器（例如 Clang >= 5.0）"
+msgstr ""
 
 #: ../../../src/install.rst:56
 msgid "`cmake <https://cmake.org/>`_ -- version 3.24 or later, and ``make``"
