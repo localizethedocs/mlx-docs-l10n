@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MLX 0.30\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-01-27 09:28+0000\n"
+"POT-Creation-Date: 2026-02-10 10:09+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -201,117 +201,23 @@ msgid ""
 "first!"
 msgstr ""
 
-#: ../../../src/usage/distributed.rst:123
-msgid "Training Example"
+#: ../../../src/usage/distributed.rst:121
+msgid "Distributed Program Examples"
 msgstr ""
 
-#: ../../../src/usage/distributed.rst:125
-msgid ""
-"In this section we will adapt an MLX training loop to support data parallel "
-"distributed training. Namely, we will average the gradients across a set of "
-"hosts before applying them to the model."
+#: ../../../src/usage/distributed.rst:123
+msgid ":ref:`Data Parallelism <data_parallelism>`"
+msgstr ""
+
+#: ../../../src/usage/distributed.rst:124
+msgid ":ref:`Tensor Parallelism <tensor_parallelism>`"
 msgstr ""
 
 #: ../../../src/usage/distributed.rst:129
-msgid ""
-"Our training loop looks like the following code snippet if we omit the "
-"model, dataset and optimizer initialization."
-msgstr ""
-
-#: ../../../src/usage/distributed.rst:132
-msgid ""
-"model = ...\n"
-"optimizer = ...\n"
-"dataset = ...\n"
-"\n"
-"def step(model, x, y):\n"
-"    loss, grads = loss_grad_fn(model, x, y)\n"
-"    optimizer.update(model, grads)\n"
-"    return loss\n"
-"\n"
-"for x, y in dataset:\n"
-"    loss = step(model, x, y)\n"
-"    mx.eval(loss, model.parameters())"
-msgstr ""
-
-#: ../../../src/usage/distributed.rst:147
-msgid ""
-"All we have to do to average the gradients across machines is perform an :"
-"func:`all_sum` and divide by the size of the :class:`Group`. Namely we have "
-"to :func:`mlx.utils.tree_map` the gradients with following function."
-msgstr ""
-
-#: ../../../src/usage/distributed.rst:151
-msgid ""
-"def all_avg(x):\n"
-"    return mx.distributed.all_sum(x) / mx.distributed.init().size()"
-msgstr ""
-
-#: ../../../src/usage/distributed.rst:156
-msgid ""
-"Putting everything together our training loop step looks as follows with "
-"everything else remaining the same."
-msgstr ""
-
-#: ../../../src/usage/distributed.rst:159
-msgid ""
-"from mlx.utils import tree_map\n"
-"\n"
-"def all_reduce_grads(grads):\n"
-"    N = mx.distributed.init().size()\n"
-"    if N == 1:\n"
-"        return grads\n"
-"    return tree_map(\n"
-"        lambda x: mx.distributed.all_sum(x) / N,\n"
-"        grads\n"
-"    )\n"
-"\n"
-"def step(model, x, y):\n"
-"    loss, grads = loss_grad_fn(model, x, y)\n"
-"    grads = all_reduce_grads(grads)  # <--- This line was added\n"
-"    optimizer.update(model, grads)\n"
-"    return loss"
-msgstr ""
-
-#: ../../../src/usage/distributed.rst:179
-msgid "Utilizing ``nn.average_gradients``"
-msgstr ""
-
-#: ../../../src/usage/distributed.rst:181
-msgid ""
-"Although the code example above works correctly; it performs one "
-"communication per gradient. It is significantly more efficient to aggregate "
-"several gradients together and perform fewer communication steps."
-msgstr ""
-
-#: ../../../src/usage/distributed.rst:185
-msgid ""
-"This is the purpose of :func:`mlx.nn.average_gradients`. The final code "
-"looks almost identical to the example above:"
-msgstr ""
-
-#: ../../../src/usage/distributed.rst:188
-msgid ""
-"model = ...\n"
-"optimizer = ...\n"
-"dataset = ...\n"
-"\n"
-"def step(model, x, y):\n"
-"    loss, grads = loss_grad_fn(model, x, y)\n"
-"    grads = mx.nn.average_gradients(grads)  # <---- This line was added\n"
-"    optimizer.update(model, grads)\n"
-"    return loss\n"
-"\n"
-"for x, y in dataset:\n"
-"    loss = step(model, x, y)\n"
-"    mx.eval(loss, model.parameters())"
-msgstr ""
-
-#: ../../../src/usage/distributed.rst:207
 msgid "Getting Started with Ring"
 msgstr ""
 
-#: ../../../src/usage/distributed.rst:209
+#: ../../../src/usage/distributed.rst:131
 msgid ""
 "The ring backend does not depend on any third party library so it is always "
 "available. It uses TCP sockets so the nodes need to be reachable via a "
@@ -322,11 +228,11 @@ msgid ""
 "backend."
 msgstr ""
 
-#: ../../../src/usage/distributed.rst:217
+#: ../../../src/usage/distributed.rst:139
 msgid "Defining a Ring"
 msgstr ""
 
-#: ../../../src/usage/distributed.rst:219
+#: ../../../src/usage/distributed.rst:141
 msgid ""
 "The easiest way to define and use a ring is via a JSON hostfile and the "
 "``mlx.launch`` :doc:`helper script <launching_distributed>`. For each node "
@@ -334,13 +240,13 @@ msgid ""
 "more IPs that this node will listen to for connections."
 msgstr ""
 
-#: ../../../src/usage/distributed.rst:224
+#: ../../../src/usage/distributed.rst:146
 msgid ""
 "For example the hostfile below defines a 4 node ring. ``hostname1`` will be "
 "rank 0, ``hostname2`` rank 1 etc."
 msgstr ""
 
-#: ../../../src/usage/distributed.rst:227
+#: ../../../src/usage/distributed.rst:149
 msgid ""
 "[\n"
 "    {\"ssh\": \"hostname1\", \"ips\": [\"123.123.123.1\"]},\n"
@@ -350,7 +256,7 @@ msgid ""
 "]"
 msgstr ""
 
-#: ../../../src/usage/distributed.rst:236
+#: ../../../src/usage/distributed.rst:158
 msgid ""
 "Running ``mlx.launch --hostfile ring-4.json my_script.py`` will ssh into "
 "each node, run the script which will listen for connections in each of the "
@@ -358,11 +264,11 @@ msgid ""
 "and accept a connection from ``123.123.123.4`` and so on and so forth."
 msgstr ""
 
-#: ../../../src/usage/distributed.rst:242
+#: ../../../src/usage/distributed.rst:164
 msgid "Thunderbolt Ring"
 msgstr ""
 
-#: ../../../src/usage/distributed.rst:244
+#: ../../../src/usage/distributed.rst:166
 msgid ""
 "Although the ring backend can have benefits over MPI even for Ethernet, its "
 "main purpose is to use Thunderbolt rings for higher bandwidth communication. "
@@ -371,20 +277,20 @@ msgid ""
 "distributed_config``."
 msgstr ""
 
-#: ../../../src/usage/distributed.rst:249
+#: ../../../src/usage/distributed.rst:171
 msgid ""
 "To use ``mlx.distributed_config`` your computers need to be accessible by "
 "ssh via Ethernet or Wi-Fi. Subsequently, connect them via thunderbolt cables "
 "and then call the utility as follows:"
 msgstr ""
 
-#: ../../../src/usage/distributed.rst:253
+#: ../../../src/usage/distributed.rst:175
 msgid ""
 "mlx.distributed_config --verbose --hosts host1,host2,host3,host4 --backend "
 "ring"
 msgstr ""
 
-#: ../../../src/usage/distributed.rst:257
+#: ../../../src/usage/distributed.rst:179
 msgid ""
 "By default the script will attempt to discover the thunderbolt ring and "
 "provide you with the commands to configure each node as well as the "
@@ -393,22 +299,22 @@ msgid ""
 "automatically."
 msgstr ""
 
-#: ../../../src/usage/distributed.rst:262
+#: ../../../src/usage/distributed.rst:184
 msgid ""
 "If you want to go through the process manually, the steps are as follows:"
 msgstr ""
 
-#: ../../../src/usage/distributed.rst:264
+#: ../../../src/usage/distributed.rst:186
 msgid "Disable the thunderbolt bridge interface"
 msgstr ""
 
-#: ../../../src/usage/distributed.rst:265
+#: ../../../src/usage/distributed.rst:187
 msgid ""
 "For the cable connecting rank ``i`` to rank ``i + 1`` find the interfaces "
 "corresponding to that cable in nodes ``i`` and ``i + 1``."
 msgstr ""
 
-#: ../../../src/usage/distributed.rst:267
+#: ../../../src/usage/distributed.rst:189
 msgid ""
 "Set up a unique subnetwork connecting the two nodes for the corresponding "
 "interfaces. For instance if the cable corresponds to ``en2`` on node ``i`` "
@@ -417,11 +323,11 @@ msgid ""
 "see the commands prepared by the utility script."
 msgstr ""
 
-#: ../../../src/usage/distributed.rst:276
+#: ../../../src/usage/distributed.rst:198
 msgid "Getting Started with JACCL"
 msgstr ""
 
-#: ../../../src/usage/distributed.rst:278
+#: ../../../src/usage/distributed.rst:200
 msgid ""
 "Starting from macOS 26.2, RDMA over thunderbolt is available and enables low-"
 "latency communication between Macs with thunderbolt 5. MLX provides the "
@@ -429,7 +335,7 @@ msgid ""
 "an order of magnitude lower than the ring backend."
 msgstr ""
 
-#: ../../../src/usage/distributed.rst:285
+#: ../../../src/usage/distributed.rst:207
 msgid ""
 "The name JACCL (pronounced Jackal) stands for *Jack and Angelos' Collective "
 "Communication Library* and it is an obvious pun to Nvidia's NCCL but also "
@@ -437,42 +343,42 @@ msgid ""
 "at Apple."
 msgstr ""
 
-#: ../../../src/usage/distributed.rst:291
+#: ../../../src/usage/distributed.rst:213
 msgid "Enabling RDMA"
 msgstr ""
 
-#: ../../../src/usage/distributed.rst:293
+#: ../../../src/usage/distributed.rst:215
 msgid ""
 "Until the feature matures, enabling RDMA over thunderbolt is slightly more "
 "involved and **cannot** be done remotely even with sudo. In fact, it has to "
 "be done in macOS recovery:"
 msgstr ""
 
-#: ../../../src/usage/distributed.rst:297
+#: ../../../src/usage/distributed.rst:219
 msgid ""
 "`Start your computer in recovery <https://support.apple.com/en-us/102518>`_."
 msgstr ""
 
-#: ../../../src/usage/distributed.rst:298
+#: ../../../src/usage/distributed.rst:220
 msgid "Open the Terminal by going to Utilities -> Terminal."
 msgstr ""
 
-#: ../../../src/usage/distributed.rst:299
+#: ../../../src/usage/distributed.rst:221
 msgid "Run ``rdma_ctl enable``."
 msgstr ""
 
-#: ../../../src/usage/distributed.rst:300
+#: ../../../src/usage/distributed.rst:222
 msgid "Reboot."
 msgstr ""
 
-#: ../../../src/usage/distributed.rst:302
+#: ../../../src/usage/distributed.rst:224
 msgid ""
 "To verify that you have successfully enabled Thunderbolt RDMA you can run "
 "``ibv_devices`` which should produce something like the following for an M3 "
 "Ultra."
 msgstr ""
 
-#: ../../../src/usage/distributed.rst:305
+#: ../../../src/usage/distributed.rst:227
 msgid ""
 "~ % ibv_devices\n"
 "device                 node GUID\n"
@@ -485,11 +391,11 @@ msgid ""
 "rdma_en7            8596a9d9edbaac05"
 msgstr ""
 
-#: ../../../src/usage/distributed.rst:318
+#: ../../../src/usage/distributed.rst:240
 msgid "Defining a Mesh"
 msgstr ""
 
-#: ../../../src/usage/distributed.rst:320
+#: ../../../src/usage/distributed.rst:242
 msgid ""
 "The JACCL backend supports only fully connected topologies. Namely, there "
 "needs to be a thunderbolt cable connecting all pairs of Macs directly. For "
@@ -498,7 +404,7 @@ msgid ""
 "one on the right M3 Ultra 1 is not connected to M3 Ultra 2."
 msgstr ""
 
-#: ../../../src/usage/distributed.rst:326
+#: ../../../src/usage/distributed.rst:248
 msgid ""
 "<div style=\"display: flex; text-align: center; align-items: end; font-size: "
 "80%;\">\n"
@@ -515,30 +421,30 @@ msgid ""
 "</div>"
 msgstr ""
 
-#: ../../../src/usage/distributed.rst:339
+#: ../../../src/usage/distributed.rst:261
 msgid ""
 "Similar to the ring backend, the easiest way to use JACCL with MLX is to "
 "write a JSON hostfile that will be used by ``mlx.launch``. The hostfile "
 "needs to contain"
 msgstr ""
 
-#: ../../../src/usage/distributed.rst:342
+#: ../../../src/usage/distributed.rst:264
 msgid "Hostnames to use for launching scripts via ssh"
 msgstr ""
 
-#: ../../../src/usage/distributed.rst:343
+#: ../../../src/usage/distributed.rst:265
 msgid "An IP for rank 0 that is reachable by all nodes"
 msgstr ""
 
-#: ../../../src/usage/distributed.rst:344
+#: ../../../src/usage/distributed.rst:266
 msgid "A list of rdma devices that connect each node to each other node"
 msgstr ""
 
-#: ../../../src/usage/distributed.rst:346
+#: ../../../src/usage/distributed.rst:268
 msgid "The following JSON defines the valid 4-node mesh from the image above."
 msgstr ""
 
-#: ../../../src/usage/distributed.rst:348
+#: ../../../src/usage/distributed.rst:270
 msgid ""
 "[\n"
 "    {\n"
@@ -564,71 +470,71 @@ msgid ""
 "]"
 msgstr ""
 
-#: ../../../src/usage/distributed.rst:373
+#: ../../../src/usage/distributed.rst:295
 msgid ""
 "Even though TCP/IP is not used when communicating with Thunderbolt RDMA, "
 "disabling the thunderbolt bridge is still required as well as setting up "
 "isolated local networks for each thunderbolt connection."
 msgstr ""
 
-#: ../../../src/usage/distributed.rst:377
+#: ../../../src/usage/distributed.rst:299
 msgid ""
 "All of the above can be done instead via ``mlx.distributed_config``. This "
 "helper script will"
 msgstr ""
 
-#: ../../../src/usage/distributed.rst:380
+#: ../../../src/usage/distributed.rst:302
 msgid "ssh into each node"
 msgstr ""
 
-#: ../../../src/usage/distributed.rst:381
+#: ../../../src/usage/distributed.rst:303
 msgid "extract the thunderbolt connectivity"
 msgstr ""
 
-#: ../../../src/usage/distributed.rst:382
+#: ../../../src/usage/distributed.rst:304
 msgid "check for a valid mesh"
 msgstr ""
 
-#: ../../../src/usage/distributed.rst:383
+#: ../../../src/usage/distributed.rst:305
 msgid ""
 "provide the commands to configure each node (or run them if sudo is "
 "available)"
 msgstr ""
 
-#: ../../../src/usage/distributed.rst:384
+#: ../../../src/usage/distributed.rst:306
 msgid "generate the hostfile to be used with ``mlx.launch``"
 msgstr ""
 
-#: ../../../src/usage/distributed.rst:387
+#: ../../../src/usage/distributed.rst:309
 msgid "Putting It All Together"
 msgstr ""
 
-#: ../../../src/usage/distributed.rst:389
+#: ../../../src/usage/distributed.rst:311
 msgid ""
 "For example launching a distributed MLX script that uses JACCL is fairly "
 "simple if the nodes are reachable via ssh and have password-less sudo."
 msgstr ""
 
-#: ../../../src/usage/distributed.rst:392
+#: ../../../src/usage/distributed.rst:314
 msgid ""
 "First, connect all the thunderbolt cables. Then we can verify the "
 "connections by using the ``mlx.distributed_config`` script to visualize them."
 msgstr ""
 
-#: ../../../src/usage/distributed.rst:395
+#: ../../../src/usage/distributed.rst:317
 msgid ""
 "mlx.distributed_config --verbose \\\n"
 "     --hosts m3-ultra-1,m3-ultra-2,m3-ultra-3,m3-ultra-4 \\\n"
 "     --over thunderbolt --dot | dot -Tpng | open -f -a Preview"
 msgstr ""
 
-#: ../../../src/usage/distributed.rst:401
+#: ../../../src/usage/distributed.rst:323
 msgid ""
 "After making sure that everything looks right we can auto-configure the "
 "nodes and save the hostfile to ``m3-ultra-jaccl.json`` by running:"
 msgstr ""
 
-#: ../../../src/usage/distributed.rst:404
+#: ../../../src/usage/distributed.rst:326
 msgid ""
 "mlx.distributed_config --verbose \\\n"
 "     --hosts m3-ultra-1,m3-ultra-2,m3-ultra-3,m3-ultra-4 \\\n"
@@ -636,13 +542,13 @@ msgid ""
 "     --auto-setup --output m3-ultra-jaccl.json"
 msgstr ""
 
-#: ../../../src/usage/distributed.rst:411
+#: ../../../src/usage/distributed.rst:333
 msgid ""
 "And now we are ready to run a distributed MLX script such as distributed "
 "inference of a gigantic model using MLX LM."
 msgstr ""
 
-#: ../../../src/usage/distributed.rst:414
+#: ../../../src/usage/distributed.rst:336
 msgid ""
 "mlx.launch --verbose --backend jaccl --hostfile m3-ultra-jaccl.json \\\n"
 "     --env MLX_METAL_FAST_SYNCH=1 -- \\  # <--- important\n"
@@ -650,7 +556,7 @@ msgid ""
 "R1-0528-4bit"
 msgstr ""
 
-#: ../../../src/usage/distributed.rst:422
+#: ../../../src/usage/distributed.rst:344
 msgid ""
 "Defining the environment variable ``MLX_METAL_FAST_SYNCH=1`` enables a "
 "different, faster way of synchronizing between the GPU and the CPU. It is "
@@ -659,24 +565,24 @@ msgid ""
 "low-latency communication since the communication is done by the CPU."
 msgstr ""
 
-#: ../../../src/usage/distributed.rst:431
+#: ../../../src/usage/distributed.rst:353
 msgid "Getting Started with NCCL"
 msgstr ""
 
-#: ../../../src/usage/distributed.rst:433
+#: ../../../src/usage/distributed.rst:355
 msgid ""
 "MLX on CUDA environments ships with the ability to talk to `NCCL <https://"
 "developer.nvidia.com/nccl>`_ which is a high-performance collective "
 "communication library that supports both multi-gpu and multi-node setups."
 msgstr ""
 
-#: ../../../src/usage/distributed.rst:437
+#: ../../../src/usage/distributed.rst:359
 msgid ""
 "For CUDA environments, NCCL is the default backend for ``mlx.launch`` and "
 "all it takes to run a distributed job is"
 msgstr ""
 
-#: ../../../src/usage/distributed.rst:440
+#: ../../../src/usage/distributed.rst:362
 msgid ""
 "mlx.launch -n 8 test.py\n"
 "\n"
@@ -684,17 +590,17 @@ msgid ""
 "mlx.launch -n 8 python -m mlx_lm chat --model my-model"
 msgstr ""
 
-#: ../../../src/usage/distributed.rst:447
+#: ../../../src/usage/distributed.rst:369
 msgid ""
 "You can also use ``mlx.launch`` to ssh to a remote node and launch a script "
 "with the same ease"
 msgstr ""
 
-#: ../../../src/usage/distributed.rst:450
+#: ../../../src/usage/distributed.rst:372
 msgid "mlx.launch --hosts my-cuda-node -n 8 test.py"
 msgstr ""
 
-#: ../../../src/usage/distributed.rst:454
+#: ../../../src/usage/distributed.rst:376
 msgid ""
 "In many cases you may not want to use ``mlx.launch`` with the NCCL backend "
 "because the cluster scheduler will be the one launching the processes. You "
@@ -703,11 +609,11 @@ msgid ""
 "correctly."
 msgstr ""
 
-#: ../../../src/usage/distributed.rst:462
+#: ../../../src/usage/distributed.rst:384
 msgid "Getting Started with MPI"
 msgstr ""
 
-#: ../../../src/usage/distributed.rst:464
+#: ../../../src/usage/distributed.rst:386
 msgid ""
 "MLX already comes with the ability to \"talk\" to `MPI <https://en.wikipedia."
 "org/wiki/Message_Passing_Interface>`_ if it is installed on the machine. "
@@ -718,20 +624,20 @@ msgid ""
 "library."
 msgstr ""
 
-#: ../../../src/usage/distributed.rst:472
+#: ../../../src/usage/distributed.rst:394
 msgid ""
 "The simplest possible usage is the following which, assuming the minimal "
 "example in the beginning of this page, should result in:"
 msgstr ""
 
-#: ../../../src/usage/distributed.rst:475
+#: ../../../src/usage/distributed.rst:397
 msgid ""
 "$ mlx.launch --backend mpi -n 2 test.py\n"
 "1 array([2, 2, 2, ..., 2, 2, 2], dtype=float32)\n"
 "0 array([2, 2, 2, ..., 2, 2, 2], dtype=float32)"
 msgstr ""
 
-#: ../../../src/usage/distributed.rst:481
+#: ../../../src/usage/distributed.rst:403
 msgid ""
 "The above launches two processes on the same (local) machine and we can see "
 "both standard output streams. The processes send the array of 1s to each "
@@ -739,22 +645,22 @@ msgid ""
 "4 ...`` would print 4 etc."
 msgstr ""
 
-#: ../../../src/usage/distributed.rst:487
+#: ../../../src/usage/distributed.rst:409
 msgid "Installing MPI"
 msgstr ""
 
-#: ../../../src/usage/distributed.rst:489
+#: ../../../src/usage/distributed.rst:411
 msgid ""
 "MPI can be installed with Homebrew, pip, using the Anaconda package manager, "
 "or compiled from source. Most of our testing is done using ``openmpi`` "
 "installed with the Anaconda package manager as follows:"
 msgstr ""
 
-#: ../../../src/usage/distributed.rst:493
+#: ../../../src/usage/distributed.rst:415
 msgid "$ conda install conda-forge::openmpi"
 msgstr ""
 
-#: ../../../src/usage/distributed.rst:497
+#: ../../../src/usage/distributed.rst:419
 msgid ""
 "Installing with Homebrew or pip requires specifying the location of ``libmpi."
 "dyld`` so that MLX can find it and load it at runtime. This can simply be "
@@ -765,7 +671,7 @@ msgid ""
 "``mlx.launch`` as well."
 msgstr ""
 
-#: ../../../src/usage/distributed.rst:504
+#: ../../../src/usage/distributed.rst:426
 msgid ""
 "$ mpirun -np 2 -x DYLD_LIBRARY_PATH=/opt/homebrew/lib/ -x "
 "MPI_LIBNAME=libmpi.40.dylib python test.py\n"
@@ -773,61 +679,61 @@ msgid ""
 "$ mlx.launch -n 2 test.py"
 msgstr ""
 
-#: ../../../src/usage/distributed.rst:511
+#: ../../../src/usage/distributed.rst:433
 msgid "Setting up Remote Hosts"
 msgstr ""
 
-#: ../../../src/usage/distributed.rst:513
+#: ../../../src/usage/distributed.rst:435
 msgid ""
 "MPI can automatically connect to remote hosts and set up the communication "
 "over the network if the remote hosts can be accessed via ssh. A good "
 "checklist to debug connectivity issues is the following:"
 msgstr ""
 
-#: ../../../src/usage/distributed.rst:517
+#: ../../../src/usage/distributed.rst:439
 msgid ""
 "``ssh hostname`` works from all machines to all machines without asking for "
 "password or host confirmation"
 msgstr ""
 
-#: ../../../src/usage/distributed.rst:519
+#: ../../../src/usage/distributed.rst:441
 msgid "``mpirun`` is accessible on all machines."
 msgstr ""
 
-#: ../../../src/usage/distributed.rst:520
+#: ../../../src/usage/distributed.rst:442
 msgid ""
 "Ensure that the ``hostname`` used by MPI is the one that you have configured "
 "in the ``.ssh/config`` files on all machines."
 msgstr ""
 
-#: ../../../src/usage/distributed.rst:524
+#: ../../../src/usage/distributed.rst:446
 msgid "Tuning MPI All Reduce"
 msgstr ""
 
-#: ../../../src/usage/distributed.rst:528
+#: ../../../src/usage/distributed.rst:450
 msgid ""
 "For faster all reduce consider using the ring backend either with "
 "Thunderbolt connections or over Ethernet."
 msgstr ""
 
-#: ../../../src/usage/distributed.rst:531
+#: ../../../src/usage/distributed.rst:453
 msgid ""
 "Configure MPI to use N tcp connections between each host to improve "
 "bandwidth by passing ``--mca btl_tcp_links N``."
 msgstr ""
 
-#: ../../../src/usage/distributed.rst:534
+#: ../../../src/usage/distributed.rst:456
 msgid ""
 "Force MPI to use the most performant network interface by setting ``--mca "
 "btl_tcp_if_include <iface>`` where ``<iface>`` should be the interface you "
 "want to use."
 msgstr ""
 
-#: ../../../src/usage/distributed.rst:541
+#: ../../../src/usage/distributed.rst:463
 msgid "Distributed Without ``mlx.launch``"
 msgstr ""
 
-#: ../../../src/usage/distributed.rst:543
+#: ../../../src/usage/distributed.rst:465
 msgid ""
 "None of the implementations of the distributed backends require launching "
 "with ``mlx.launch``. The script simply connects to each host. Starts a "
@@ -836,7 +742,7 @@ msgid ""
 "<launching_distributed>` for more details."
 msgstr ""
 
-#: ../../../src/usage/distributed.rst:549
+#: ../../../src/usage/distributed.rst:471
 msgid ""
 "For many use-cases this will be the easiest way to perform distributed "
 "computations in MLX. However, there may be reasons that you cannot or should "
@@ -845,29 +751,29 @@ msgid ""
 "scheduling the job."
 msgstr ""
 
-#: ../../../src/usage/distributed.rst:555
+#: ../../../src/usage/distributed.rst:477
 msgid "Below we list the environment variables required to use each backend."
 msgstr ""
 
-#: ../../../src/usage/distributed.rst:558
+#: ../../../src/usage/distributed.rst:480
 msgid "Ring"
 msgstr ""
 
-#: ../../../src/usage/distributed.rst:560
-#: ../../../src/usage/distributed.rst:581
-#: ../../../src/usage/distributed.rst:604
+#: ../../../src/usage/distributed.rst:482
+#: ../../../src/usage/distributed.rst:503
+#: ../../../src/usage/distributed.rst:526
 msgid ""
 "**MLX_RANK** should contain a single 0-based integer that defines the rank "
 "of the process."
 msgstr ""
 
-#: ../../../src/usage/distributed.rst:563
+#: ../../../src/usage/distributed.rst:485
 msgid ""
 "**MLX_HOSTFILE** should contain the path to a json file that contains IPs "
 "and ports for each rank to listen to, something like the following:"
 msgstr ""
 
-#: ../../../src/usage/distributed.rst:566
+#: ../../../src/usage/distributed.rst:488
 msgid ""
 "[\n"
 "  [\"123.123.1.1:5000\", \"123.123.1.2:5000\"],\n"
@@ -877,31 +783,31 @@ msgid ""
 "]"
 msgstr ""
 
-#: ../../../src/usage/distributed.rst:575
+#: ../../../src/usage/distributed.rst:497
 msgid ""
 "**MLX_RING_VERBOSE** is optional and if set to 1 it enables some more "
 "logging from the distributed backend."
 msgstr ""
 
-#: ../../../src/usage/distributed.rst:579
+#: ../../../src/usage/distributed.rst:501
 msgid "JACCL"
 msgstr ""
 
-#: ../../../src/usage/distributed.rst:584
+#: ../../../src/usage/distributed.rst:506
 msgid ""
 "**MLX_JACCL_COORDINATOR** should contain the IP and port that rank 0 can "
 "listen to all the other ranks connect to in order to establish the RDMA "
 "connections."
 msgstr ""
 
-#: ../../../src/usage/distributed.rst:587
+#: ../../../src/usage/distributed.rst:509
 msgid ""
-"**MLX_JACCL_DEVICES** should contain the path to a json file that contains "
-"the ibverbs device names that connect each node to each other node, "
-"something like the following:"
+"**MLX_IBV_DEVICES** should contain the path to a json file that contains the "
+"ibverbs device names that connect each node to each other node, something "
+"like the following:"
 msgstr ""
 
-#: ../../../src/usage/distributed.rst:591
+#: ../../../src/usage/distributed.rst:513
 msgid ""
 "[\n"
 "   [null, \"rdma_en5\", \"rdma_en4\", \"rdma_en3\"],\n"
@@ -911,60 +817,60 @@ msgid ""
 "]"
 msgstr ""
 
-#: ../../../src/usage/distributed.rst:602
+#: ../../../src/usage/distributed.rst:524
 msgid "NCCL"
 msgstr ""
 
-#: ../../../src/usage/distributed.rst:607
+#: ../../../src/usage/distributed.rst:529
 msgid ""
 "**MLX_WORLD_SIZE** should contain the total number of processes that will be "
 "launched."
 msgstr ""
 
-#: ../../../src/usage/distributed.rst:610
+#: ../../../src/usage/distributed.rst:532
 msgid ""
 "**NCCL_HOST_IP** and **NCCL_PORT** should contain the IP and port that all "
 "hosts can connect to to establish the NCCL communication."
 msgstr ""
 
-#: ../../../src/usage/distributed.rst:613
+#: ../../../src/usage/distributed.rst:535
 msgid ""
 "**CUDA_VISIBLE_DEVICES** should contain the local index of the gpu that "
 "corresponds to this process."
 msgstr ""
 
-#: ../../../src/usage/distributed.rst:616
+#: ../../../src/usage/distributed.rst:538
 msgid ""
 "Of course any `other environment variable <https://docs.nvidia.com/"
 "deeplearning/nccl/user-guide/docs/env.html>`_ that is used by NCCL can be "
 "set."
 msgstr ""
 
-#: ../../../src/usage/distributed.rst:623
+#: ../../../src/usage/distributed.rst:545
 msgid "Tips and Tricks"
 msgstr ""
 
-#: ../../../src/usage/distributed.rst:625
+#: ../../../src/usage/distributed.rst:547
 msgid ""
 "This is a small collection of tips to help you utilize better the "
 "distributed communication capabilities of MLX."
 msgstr ""
 
-#: ../../../src/usage/distributed.rst:628
+#: ../../../src/usage/distributed.rst:550
 msgid "*Test locally first.*"
 msgstr ""
 
-#: ../../../src/usage/distributed.rst:630
+#: ../../../src/usage/distributed.rst:552
 msgid ""
 "You can use the pattern ``mlx.launch -n2 -- my_script.py`` to run a small "
 "scale test on a single node first."
 msgstr ""
 
-#: ../../../src/usage/distributed.rst:633
+#: ../../../src/usage/distributed.rst:555
 msgid "*Batch your communication.*"
 msgstr ""
 
-#: ../../../src/usage/distributed.rst:635
+#: ../../../src/usage/distributed.rst:557
 msgid ""
 "As described in the :ref:`training example <training_example>`, performing a "
 "lot of small communications can hurt performance. Copy the approach of :func:"
@@ -972,22 +878,22 @@ msgid ""
 "large one."
 msgstr ""
 
-#: ../../../src/usage/distributed.rst:640
+#: ../../../src/usage/distributed.rst:562
 msgid "*Visualize the connectivity.*"
 msgstr ""
 
-#: ../../../src/usage/distributed.rst:642
+#: ../../../src/usage/distributed.rst:564
 msgid ""
 "Use ``mlx.distributed_config --hosts h1,h2,h3 --over thunderbolt --dot`` to "
 "visualize the connnections and make sure that the cables are connected "
 "correctly. See the :ref:`JACCL section <jaccl_section>` for examples."
 msgstr ""
 
-#: ../../../src/usage/distributed.rst:646
+#: ../../../src/usage/distributed.rst:568
 msgid "*Use the debugger.*"
 msgstr ""
 
-#: ../../../src/usage/distributed.rst:648
+#: ../../../src/usage/distributed.rst:570
 msgid ""
 "``mlx.launch`` is meant for interactive use. It broadcasts stdin to all "
 "processes and gathers stdout from all processes. This makes using ``pdb`` a "
