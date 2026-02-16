@@ -37,9 +37,9 @@
     "branch" : "main",
     "commit" : 
     {
-      "date" : "2026-01-25 16:40:57 -0800",
-      "hash" : "5bd99dd5ec43d42c6e4bef48d16d891c567aad8a",
-      "title" : "Fix flaky macOS test (#3063)"
+      "date" : "2026-02-15 18:33:13 -0800",
+      "hash" : "e226af720e154c5fa90ee0938ab3d92f24b2df48",
+      "title" : "Propagate quantization mode in quantized layers (#3133)"
     }
   },
   "type" : "branch",
