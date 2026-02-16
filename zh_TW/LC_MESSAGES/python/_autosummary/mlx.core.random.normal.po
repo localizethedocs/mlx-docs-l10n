@@ -1,0 +1,70 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023, Apple
+# This file is distributed under the same license as the MLX package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: MLX main\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-12-22 08:23+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../src/python/_autosummary/mlx.core.random.normal.rst:2
+msgid "mlx.core.random.normal"
+msgstr ""
+
+#: ../../../docstring of mlx.core.random.normal:1
+msgid "Generate normally distributed random numbers."
+msgstr ""
+
+#: ../../../docstring of mlx.core.random.normal:3
+msgid ""
+"If ``loc`` and ``scale`` are not provided the \"standard\" normal "
+"distribution is used. That means $x \\sim \\mathcal{N}(0, 1)$ for real "
+"numbers and $\\text{Re}(x),\\text{Im}(x) \\sim \\mathcal{N}(0, \\frac{1}"
+"{2})$ for complex numbers."
+msgstr ""
+
+#: ../../../src/python/_autosummary/mlx.core.random.normal.rst:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../docstring of mlx.core.random.normal:8
+msgid "Shape of the output. Default: ``()``."
+msgstr ""
+
+#: ../../../docstring of mlx.core.random.normal:10
+msgid "Type of the output. Default: ``float32``."
+msgstr ""
+
+#: ../../../docstring of mlx.core.random.normal:12
+msgid "Mean of the distribution. Default: ``None``."
+msgstr ""
+
+#: ../../../docstring of mlx.core.random.normal:15
+msgid "Standard deviation of the distribution. Default: ``None``."
+msgstr ""
+
+#: ../../../docstring of mlx.core.random.normal:18
+msgid "A PRNG key. Default: ``None``."
+msgstr ""
+
+#: ../../../src/python/_autosummary/mlx.core.random.normal.rst:0
+msgid "Returns"
+msgstr ""
+
+#: ../../../docstring of mlx.core.random.normal:21
+msgid "The output array of random values."
+msgstr ""
+
+#: ../../../src/python/_autosummary/mlx.core.random.normal.rst:0
+msgid "Return type"
+msgstr ""

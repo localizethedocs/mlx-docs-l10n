@@ -1,0 +1,1138 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023, Apple
+# This file is distributed under the same license as the MLX package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: MLX main\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-12-22 08:23+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../src/usage/distributed.rst:4
+msgid "Distributed Communication"
+msgstr "分散式通訊"
+
+#: ../../../src/usage/distributed.rst:8
+msgid ""
+"MLX supports distributed communication operations that allow the "
+"computational cost of training or inference to be shared across many "
+"physical machines. At the moment we support several different communication "
+"backends introduced below."
+msgstr ""
+"MLX 支援分散式通訊操作，讓訓練或推論的計算成本能在多台實體機器之間分攤。目前"
+"支援數種通訊後端，於下方介紹。"
+
+#: ../../../src/usage/distributed.rst:16
+msgid "Backend"
+msgstr "後端"
+
+#: ../../../src/usage/distributed.rst:17
+msgid "Description"
+msgstr "描述"
+
+#: ../../../src/usage/distributed.rst:18
+msgid ":ref:`MPI <mpi_section>`"
+msgstr ""
+
+#: ../../../src/usage/distributed.rst:19
+msgid "A full featured and mature distributed communications library."
+msgstr "功能完整且成熟的分散式通訊程式庫。"
+
+#: ../../../src/usage/distributed.rst:20
+msgid ":ref:`RING <ring_section>`"
+msgstr ""
+
+#: ../../../src/usage/distributed.rst:21
+msgid ""
+"Ring all reduce and all gather over TCP sockets. Always available and "
+"usually faster than MPI."
+msgstr ""
+"在 TCP Socket 上進行 Ring all-reduce 與 all-gather。永遠可用，且通常比 MPI "
+"快。"
+
+#: ../../../src/usage/distributed.rst:23
+msgid ":ref:`JACCL <jaccl_section>`"
+msgstr ""
+
+#: ../../../src/usage/distributed.rst:24
+msgid ""
+"Low latency communication with RDMA over thunderbolt. Necessary for things "
+"like tensor parallelism."
+msgstr "透過 Thunderbolt 的 RDMA 低延遲通訊。對張量並行等需求是必要的。"
+
+#: ../../../src/usage/distributed.rst:26
+msgid ":ref:`NCCL <nccl_section>`"
+msgstr ""
+
+#: ../../../src/usage/distributed.rst:27
+msgid "The backend of choice for CUDA environments."
+msgstr "CUDA 環境的首選後端。"
+
+#: ../../../src/usage/distributed.rst:30
+msgid ""
+"The list of all currently supported operations and their documentation can "
+"be seen in the :ref:`API docs<distributed>`."
+msgstr "目前支援的所有操作及其文件，請參見 :ref:`API 文件<distributed>`。"
+
+#: ../../../src/usage/distributed.rst:34
+msgid "Getting Started"
+msgstr "開始使用"
+
+#: ../../../src/usage/distributed.rst:36
+msgid "A distributed program in MLX is as simple as:"
+msgstr "在 MLX 中，分散式程式可簡單寫成："
+
+#: ../../../src/usage/distributed.rst:38
+msgid ""
+"import mlx.core as mx\n"
+"\n"
+"world = mx.distributed.init()\n"
+"x = mx.distributed.all_sum(mx.ones(10))\n"
+"print(world.rank(), x)"
+msgstr ""
+
+#: ../../../src/usage/distributed.rst:46
+msgid ""
+"The program above sums the array ``mx.ones(10)`` across all distributed "
+"processes. However, when this script is run with ``python`` only one process "
+"is launched and no distributed communication takes place. Namely, all "
+"operations in ``mx.distributed`` are noops when the distributed group has a "
+"size of one. This property allows us to avoid code that checks if we are in "
+"a distributed setting similar to the one below:"
+msgstr ""
+"上述程式會在所有分散式行程之間對 ``mx.ones(10)`` 進行求和。然而用 ``python`` "
+"執行此腳本時只會啟動一個行程，因此不會進行分散式通訊。也就是說，當分散式群組"
+"大小為 1 時，``mx.distributed`` 中的所有操作都是空操作。這個特性讓我們可以避"
+"免寫出需要檢查是否在分散式環境下的程式碼，例如："
+
+#: ../../../src/usage/distributed.rst:53
+msgid ""
+"import mlx.core as mx\n"
+"\n"
+"x = ...\n"
+"world = mx.distributed.init()\n"
+"# No need for the check we can simply do x = mx.distributed.all_sum(x)\n"
+"if world.size() > 1:\n"
+"    x = mx.distributed.all_sum(x)"
+msgstr ""
+
+#: ../../../src/usage/distributed.rst:64
+msgid "Running Distributed Programs"
+msgstr "執行分散式程式"
+
+#: ../../../src/usage/distributed.rst:66
+msgid ""
+"MLX provides ``mlx.launch`` a helper script to launch distributed programs. "
+"Continuing with our initial example we can run it on localhost with 4 "
+"processes using"
+msgstr ""
+"MLX 提供 ``mlx.launch`` 這個輔助腳本用來啟動分散式程式。延續前面的範例，我們"
+"可以在本機以 4 個行程執行："
+
+#: ../../../src/usage/distributed.rst:69
+msgid ""
+"$ mlx.launch -n 4 my_script.py\n"
+"3 array([4, 4, 4, ..., 4, 4, 4], dtype=float32)\n"
+"2 array([4, 4, 4, ..., 4, 4, 4], dtype=float32)\n"
+"1 array([4, 4, 4, ..., 4, 4, 4], dtype=float32)\n"
+"0 array([4, 4, 4, ..., 4, 4, 4], dtype=float32)"
+msgstr ""
+
+#: ../../../src/usage/distributed.rst:77
+msgid ""
+"We can also run it on some remote hosts by providing their IPs (provided "
+"that the script exists on all hosts and they are reachable by ssh)"
+msgstr ""
+"我們也可以提供遠端主機的 IP 來執行（前提是腳本在所有主機上都存在，且可透過 "
+"ssh 連線）。"
+
+#: ../../../src/usage/distributed.rst:80
+msgid ""
+"$ mlx.launch --hosts ip1,ip2,ip3,ip4 my_script.py\n"
+"3 array([4, 4, 4, ..., 4, 4, 4], dtype=float32)\n"
+"2 array([4, 4, 4, ..., 4, 4, 4], dtype=float32)\n"
+"1 array([4, 4, 4, ..., 4, 4, 4], dtype=float32)\n"
+"0 array([4, 4, 4, ..., 4, 4, 4], dtype=float32)"
+msgstr ""
+
+#: ../../../src/usage/distributed.rst:88
+msgid ""
+"Consult the dedicated :doc:`usage guide<launching_distributed>` for more "
+"information on using ``mlx.launch``."
+msgstr ""
+"更多關於 ``mlx.launch`` 的使用方式，請參考專門的 :doc:`使用指南"
+"<launching_distributed>`。"
+
+#: ../../../src/usage/distributed.rst:92
+msgid "Selecting Backend"
+msgstr "選擇後端"
+
+#: ../../../src/usage/distributed.rst:94
+msgid ""
+"You can select the backend you want to use when calling :func:`init` by "
+"passing one of ``{'any', 'ring', 'jaccl', 'mpi', 'nccl'}``. When passing "
+"``any``, MLX will try all available backends. If they all fail then a "
+"singleton group is created."
+msgstr ""
+"呼叫 :func:`init` 時可以透過 ``{'any', 'ring', 'jaccl', 'mpi', 'nccl'}`` 指定"
+"要使用的後端。當傳入 ``any`` 時，MLX 會嘗試所有可用後端；若全部失敗，則會建立"
+"單一成員群組。"
+
+#: ../../../src/usage/distributed.rst:99
+msgid ""
+"After a distributed backend is successfully initialized :func:`init` will "
+"return **the same backend** if called without arguments or with backend set "
+"to ``any``."
+msgstr ""
+"分散式後端成功初始化後，再次呼叫 :func:`init`（不帶參數或設定為 ``any``）會回"
+"傳**相同的後端**。"
+
+#: ../../../src/usage/distributed.rst:103
+msgid ""
+"The following examples aim to clarify the backend initialization logic in "
+"MLX:"
+msgstr "以下範例用來說明 MLX 中後端初始化的邏輯："
+
+#: ../../../src/usage/distributed.rst:105
+msgid ""
+"# Case 1: Initialize MPI regardless if it was possible to initialize the "
+"ring backend\n"
+"world = mx.distributed.init(backend=\"mpi\")\n"
+"world2 = mx.distributed.init()  # subsequent calls return the MPI backend!\n"
+"\n"
+"# Case 2: Initialize any backend\n"
+"world = mx.distributed.init(backend=\"any\")  # equivalent to no arguments\n"
+"world2 = mx.distributed.init()  # same as above\n"
+"\n"
+"# Case 3: Initialize both backends at the same time\n"
+"world_mpi = mx.distributed.init(backend=\"mpi\")\n"
+"world_ring = mx.distributed.init(backend=\"ring\")\n"
+"world_any = mx.distributed.init()  # same as MPI because it was initialized "
+"first!"
+msgstr ""
+
+#: ../../../src/usage/distributed.rst:123
+msgid "Training Example"
+msgstr "訓練範例"
+
+#: ../../../src/usage/distributed.rst:125
+msgid ""
+"In this section we will adapt an MLX training loop to support data parallel "
+"distributed training. Namely, we will average the gradients across a set of "
+"hosts before applying them to the model."
+msgstr ""
+"本節將把 MLX 的訓練迴圈改為支援資料平行的分散式訓練。也就是在將梯度套用到模型"
+"前，先在多台主機間對梯度取平均。"
+
+#: ../../../src/usage/distributed.rst:129
+msgid ""
+"Our training loop looks like the following code snippet if we omit the "
+"model, dataset and optimizer initialization."
+msgstr "若省略模型、資料集與最佳化器的初始化，我們的訓練迴圈如下："
+
+#: ../../../src/usage/distributed.rst:132
+msgid ""
+"model = ...\n"
+"optimizer = ...\n"
+"dataset = ...\n"
+"\n"
+"def step(model, x, y):\n"
+"    loss, grads = loss_grad_fn(model, x, y)\n"
+"    optimizer.update(model, grads)\n"
+"    return loss\n"
+"\n"
+"for x, y in dataset:\n"
+"    loss = step(model, x, y)\n"
+"    mx.eval(loss, model.parameters())"
+msgstr ""
+
+#: ../../../src/usage/distributed.rst:147
+msgid ""
+"All we have to do to average the gradients across machines is perform an :"
+"func:`all_sum` and divide by the size of the :class:`Group`. Namely we have "
+"to :func:`mlx.utils.tree_map` the gradients with following function."
+msgstr ""
+"要在多台機器間對梯度取平均，只需執行 :func:`all_sum` 並除以 :class:`Group` 的"
+"大小。也就是用下列函式對梯度做 :func:`mlx.utils.tree_map`："
+
+#: ../../../src/usage/distributed.rst:151
+msgid ""
+"def all_avg(x):\n"
+"    return mx.distributed.all_sum(x) / mx.distributed.init().size()"
+msgstr ""
+
+#: ../../../src/usage/distributed.rst:156
+msgid ""
+"Putting everything together our training loop step looks as follows with "
+"everything else remaining the same."
+msgstr "把所有內容整合後，在其他部分不變的情況下，訓練步驟如下："
+
+#: ../../../src/usage/distributed.rst:159
+msgid ""
+"from mlx.utils import tree_map\n"
+"\n"
+"def all_reduce_grads(grads):\n"
+"    N = mx.distributed.init().size()\n"
+"    if N == 1:\n"
+"        return grads\n"
+"    return tree_map(\n"
+"        lambda x: mx.distributed.all_sum(x) / N,\n"
+"        grads\n"
+"    )\n"
+"\n"
+"def step(model, x, y):\n"
+"    loss, grads = loss_grad_fn(model, x, y)\n"
+"    grads = all_reduce_grads(grads)  # <--- This line was added\n"
+"    optimizer.update(model, grads)\n"
+"    return loss"
+msgstr ""
+
+#: ../../../src/usage/distributed.rst:179
+msgid "Utilizing ``nn.average_gradients``"
+msgstr "使用 ``nn.average_gradients``"
+
+#: ../../../src/usage/distributed.rst:181
+msgid ""
+"Although the code example above works correctly; it performs one "
+"communication per gradient. It is significantly more efficient to aggregate "
+"several gradients together and perform fewer communication steps."
+msgstr ""
+"雖然上面的程式碼可以正確運作，但每個梯度都會進行一次通訊。將多個梯度聚合後再"
+"通訊，會更有效率。"
+
+#: ../../../src/usage/distributed.rst:185
+msgid ""
+"This is the purpose of :func:`mlx.nn.average_gradients`. The final code "
+"looks almost identical to the example above:"
+msgstr ""
+"這正是 :func:`mlx.nn.average_gradients` 的目的。最終程式碼與上例幾乎相同："
+
+#: ../../../src/usage/distributed.rst:188
+msgid ""
+"model = ...\n"
+"optimizer = ...\n"
+"dataset = ...\n"
+"\n"
+"def step(model, x, y):\n"
+"    loss, grads = loss_grad_fn(model, x, y)\n"
+"    grads = mx.nn.average_gradients(grads)  # <---- This line was added\n"
+"    optimizer.update(model, grads)\n"
+"    return loss\n"
+"\n"
+"for x, y in dataset:\n"
+"    loss = step(model, x, y)\n"
+"    mx.eval(loss, model.parameters())"
+msgstr ""
+
+#: ../../../src/usage/distributed.rst:207
+msgid "Getting Started with Ring"
+msgstr "Ring 入門"
+
+#: ../../../src/usage/distributed.rst:209
+msgid ""
+"The ring backend does not depend on any third party library so it is always "
+"available. It uses TCP sockets so the nodes need to be reachable via a "
+"network. As the name suggests the nodes are connected in a ring which means "
+"that rank 1 can only communicate with rank 0 and rank 2, rank 2 only with "
+"rank 1 and rank 3 and so on and so forth. As a result :func:`send` and :func:"
+"`recv` with arbitrary sender and receiver are not supported in the ring "
+"backend."
+msgstr ""
+"Ring 後端不依賴任何第三方程式庫，因此永遠可用。它使用 TCP socket，因此節點必"
+"須能透過網路互相連線。顧名思義，節點以環狀相連，這表示 rank 1 只能與 rank 0 "
+"和 rank 2 通訊，rank 2 只能與 rank 1 和 rank 3 通訊，以此類推。因此 ring 後端"
+"不支援任意 sender 與 receiver 的 :func:`send` 與 :func:`recv`。"
+
+#: ../../../src/usage/distributed.rst:217
+msgid "Defining a Ring"
+msgstr "定義 Ring"
+
+#: ../../../src/usage/distributed.rst:219
+msgid ""
+"The easiest way to define and use a ring is via a JSON hostfile and the "
+"``mlx.launch`` :doc:`helper script <launching_distributed>`. For each node "
+"one defines a hostname to ssh into to run commands on this node and one or "
+"more IPs that this node will listen to for connections."
+msgstr ""
+"定義並使用 ring 最簡單的方法，是透過 JSON hostfile 與 ``mlx.launch`` :doc:`輔"
+"助腳本 <launching_distributed>`。對每個節點，需定義可 ssh 登入的主機名稱以及"
+"一個或多個供其監聽連線的 IP。"
+
+#: ../../../src/usage/distributed.rst:224
+msgid ""
+"For example the hostfile below defines a 4 node ring. ``hostname1`` will be "
+"rank 0, ``hostname2`` rank 1 etc."
+msgstr ""
+"例如，以下 hostfile 定義了 4 節點的 ring。``hostname1`` 為 rank 0，"
+"``hostname2`` 為 rank 1，以此類推。"
+
+#: ../../../src/usage/distributed.rst:227
+msgid ""
+"[\n"
+"    {\"ssh\": \"hostname1\", \"ips\": [\"123.123.123.1\"]},\n"
+"    {\"ssh\": \"hostname2\", \"ips\": [\"123.123.123.2\"]},\n"
+"    {\"ssh\": \"hostname3\", \"ips\": [\"123.123.123.3\"]},\n"
+"    {\"ssh\": \"hostname4\", \"ips\": [\"123.123.123.4\"]}\n"
+"]"
+msgstr ""
+
+#: ../../../src/usage/distributed.rst:236
+msgid ""
+"Running ``mlx.launch --hostfile ring-4.json my_script.py`` will ssh into "
+"each node, run the script which will listen for connections in each of the "
+"provided IPs. Specifically, ``hostname1`` will connect to ``123.123.123.2`` "
+"and accept a connection from ``123.123.123.4`` and so on and so forth."
+msgstr ""
+"執行 ``mlx.launch --hostfile ring-4.json my_script.py`` 會 ssh 進入每個節點，"
+"並執行腳本、在提供的 IP 上監聽連線。具體來說，``hostname1`` 會連線到 "
+"``123.123.123.2`` 並接受來自 ``123.123.123.4`` 的連線，以此類推。"
+
+#: ../../../src/usage/distributed.rst:242
+msgid "Thunderbolt Ring"
+msgstr ""
+
+#: ../../../src/usage/distributed.rst:244
+msgid ""
+"Although the ring backend can have benefits over MPI even for Ethernet, its "
+"main purpose is to use Thunderbolt rings for higher bandwidth communication. "
+"Setting up such thunderbolt rings can be done manually, but is a relatively "
+"tedious process. To simplify this, we provide the utility ``mlx."
+"distributed_config``."
+msgstr ""
+"即使在乙太網路上，ring 後端也可能優於 MPI，但其主要目的在於使用 Thunderbolt "
+"ring 來取得更高頻寬通訊。此類 Thunderbolt ring 可以手動設定，但流程相對繁瑣。"
+"為了簡化，我們提供 ``mlx.distributed_config`` 工具。"
+
+#: ../../../src/usage/distributed.rst:249
+msgid ""
+"To use ``mlx.distributed_config`` your computers need to be accessible by "
+"ssh via Ethernet or Wi-Fi. Subsequently, connect them via thunderbolt cables "
+"and then call the utility as follows:"
+msgstr ""
+"要使用 ``mlx.distributed_config``，你的電腦需能透過乙太網路或 Wi-Fi 以 ssh 連"
+"線。接著用 Thunderbolt 線纜連接它們，並如下呼叫工具："
+
+#: ../../../src/usage/distributed.rst:253
+msgid ""
+"mlx.distributed_config --verbose --hosts host1,host2,host3,host4 --backend "
+"ring"
+msgstr ""
+
+#: ../../../src/usage/distributed.rst:257
+msgid ""
+"By default the script will attempt to discover the thunderbolt ring and "
+"provide you with the commands to configure each node as well as the "
+"``hostfile.json`` to use with ``mlx.launch``. If password-less ``sudo`` is "
+"available on the nodes then ``--auto-setup`` can be used to configure them "
+"automatically."
+msgstr ""
+"預設情況下，腳本會嘗試偵測 Thunderbolt ring，並提供設定各節點的命令，以及可"
+"供 ``mlx.launch`` 使用的 ``hostfile.json``。若各節點可無密碼 ``sudo``，可使"
+"用 ``--auto-setup`` 自動完成設定。"
+
+#: ../../../src/usage/distributed.rst:262
+msgid ""
+"If you want to go through the process manually, the steps are as follows:"
+msgstr "如果想手動完成，步驟如下："
+
+#: ../../../src/usage/distributed.rst:264
+msgid "Disable the thunderbolt bridge interface"
+msgstr "停用 Thunderbolt bridge 介面"
+
+#: ../../../src/usage/distributed.rst:265
+msgid ""
+"For the cable connecting rank ``i`` to rank ``i + 1`` find the interfaces "
+"corresponding to that cable in nodes ``i`` and ``i + 1``."
+msgstr ""
+"針對連接 rank ``i`` 與 rank ``i + 1`` 的線纜，在節點 ``i`` 與 ``i + 1`` 上找"
+"出對應的介面。"
+
+#: ../../../src/usage/distributed.rst:267
+msgid ""
+"Set up a unique subnetwork connecting the two nodes for the corresponding "
+"interfaces. For instance if the cable corresponds to ``en2`` on node ``i`` "
+"and ``en2`` also on node ``i + 1`` then we may assign IPs ``192.168.0.1`` "
+"and ``192.168.0.2`` respectively to the two nodes. For more details you can "
+"see the commands prepared by the utility script."
+msgstr ""
+"為對應介面建立一個專用子網路以連接兩個節點。例如該線纜在節點 ``i`` 對應 "
+"``en2``，且在節點 ``i + 1`` 也對應 ``en2``，則可分別配置 IP ``192.168.0.1`` "
+"與 ``192.168.0.2``。更多細節可參考工具腳本準備的命令。"
+
+#: ../../../src/usage/distributed.rst:276
+msgid "Getting Started with JACCL"
+msgstr "JACCL 入門"
+
+#: ../../../src/usage/distributed.rst:278
+msgid ""
+"Starting from macOS 26.2, RDMA over thunderbolt is available and enables low-"
+"latency communication between Macs with thunderbolt 5. MLX provides the "
+"JACCL backend that uses this functionality to achieve communication latency "
+"an order of magnitude lower than the ring backend."
+msgstr ""
+"自 macOS 26.2 起，Thunderbolt RDMA 可用，讓搭載 Thunderbolt 5 的 Mac 之間能進"
+"行低延遲通訊。MLX 提供 JACCL 後端以利用此功能，其通訊延遲可比 ring 後端低一個"
+"數量級。"
+
+#: ../../../src/usage/distributed.rst:285
+msgid ""
+"The name JACCL (pronounced Jackal) stands for *Jack and Angelos' Collective "
+"Communication Library* and it is an obvious pun to Nvidia's NCCL but also "
+"tribute to *Jack Beasley* who led the development of RDMA over Thunderbolt "
+"at Apple."
+msgstr ""
+"JACCL（發音 Jackal）代表 *Jack and Angelos' Collective Communication "
+"Library*。這不僅是對 Nvidia NCCL 的雙關，也致敬在 Apple 主導 Thunderbolt "
+"RDMA 開發的 *Jack Beasley*。"
+
+#: ../../../src/usage/distributed.rst:291
+msgid "Enabling RDMA"
+msgstr "啟用 RDMA"
+
+#: ../../../src/usage/distributed.rst:293
+msgid ""
+"Until the feature matures, enabling RDMA over thunderbolt is slightly more "
+"involved and **cannot** be done remotely even with sudo. In fact, it has to "
+"be done in macOS recovery:"
+msgstr ""
+"在功能尚未成熟前，啟用 Thunderbolt RDMA 稍嫌繁瑣，且即使有 sudo 也**無法**遠"
+"端操作。實際上必須在 macOS 復原模式中完成："
+
+#: ../../../src/usage/distributed.rst:297
+msgid ""
+"`Start your computer in recovery <https://support.apple.com/en-us/102518>`_."
+msgstr "`在復原模式啟動電腦 <https://support.apple.com/en-us/102518>`_。"
+
+#: ../../../src/usage/distributed.rst:298
+msgid "Open the Terminal by going to Utilities -> Terminal."
+msgstr "在「工具程式 -> 終端機」開啟 Terminal。"
+
+#: ../../../src/usage/distributed.rst:299
+msgid "Run ``rdma_ctl enable``."
+msgstr "執行 ``rdma_ctl enable``。"
+
+#: ../../../src/usage/distributed.rst:300
+msgid "Reboot."
+msgstr "重新開機。"
+
+#: ../../../src/usage/distributed.rst:302
+msgid ""
+"To verify that you have successfully enabled Thunderbolt RDMA you can run "
+"``ibv_devices`` which should produce something like the following for an M3 "
+"Ultra."
+msgstr ""
+"要確認 Thunderbolt RDMA 已成功啟用，可執行 ``ibv_devices``，在 M3 Ultra 上應"
+"會輸出類似以下內容。"
+
+#: ../../../src/usage/distributed.rst:305
+msgid ""
+"~ % ibv_devices\n"
+"device                 node GUID\n"
+"------              ----------------\n"
+"rdma_en2            8096a9d9edbaac05\n"
+"rdma_en3            8196a9d9edbaac05\n"
+"rdma_en5            8396a9d9edbaac05\n"
+"rdma_en4            8296a9d9edbaac05\n"
+"rdma_en6            8496a9d9edbaac05\n"
+"rdma_en7            8596a9d9edbaac05"
+msgstr ""
+
+#: ../../../src/usage/distributed.rst:318
+msgid "Defining a Mesh"
+msgstr "定義 Mesh"
+
+#: ../../../src/usage/distributed.rst:320
+msgid ""
+"The JACCL backend supports only fully connected topologies. Namely, there "
+"needs to be a thunderbolt cable connecting all pairs of Macs directly. For "
+"example, in the following topology visualizations, the left one is valid "
+"because there is a connection from any node to any other node, while for the "
+"one on the right M3 Ultra 1 is not connected to M3 Ultra 2."
+msgstr ""
+"JACCL 後端僅支援全連接拓撲，也就是每對 Mac 之間都需有 Thunderbolt 線纜直接連"
+"接。例如下列拓撲示意中，左圖有效，因為任一節點都能連到任一其他節點；右圖則無"
+"效，因為 M3 Ultra 1 沒有連到 M3 Ultra 2。"
+
+#: ../../../src/usage/distributed.rst:326
+msgid ""
+"<div style=\"display: flex; text-align: center; align-items: end; font-size: "
+"80%;\">\n"
+"  <div>\n"
+"    <img src=\"../_static/distributed/m3-ultra-mesh.png\" alt=\"M3 Ultra "
+"thunderbolt mesh\" style=\"width: 55%\">\n"
+"    <p>Fully connected mesh of four M3 Ultra.</p>\n"
+"  </div>\n"
+"  <div>\n"
+"    <img src=\"../_static/distributed/m3-ultra-mesh-broken.png\" alt=\"M3 "
+"Ultra broken thunderbolt mesh\" style=\"width: 55%\">\n"
+"    <p>Not a valid mesh (M3 Ultra 1 is not connected to M3 Ultra 2).</p>\n"
+"  </div>\n"
+"</div>"
+msgstr ""
+"<div style=\"display: flex; text-align: center; align-items: end; font-size: "
+"80%;\">\n"
+"  <div>\n"
+"    <img src=\"../_static/distributed/m3-ultra-mesh.png\" alt=\"M3 Ultra "
+"thunderbolt mesh\" style=\"width: 55%\">\n"
+"    <p>四台 M3 Ultra 的全連接網狀拓撲。</p>\n"
+"  </div>\n"
+"  <div>\n"
+"    <img src=\"../_static/distributed/m3-ultra-mesh-broken.png\" alt=\"M3 "
+"Ultra broken thunderbolt mesh\" style=\"width: 55%\">\n"
+"    <p>不是有效的網狀拓撲（M3 Ultra 1 未連到 M3 Ultra 2）。</p>\n"
+"  </div>\n"
+"</div>"
+
+#: ../../../src/usage/distributed.rst:339
+msgid ""
+"Similar to the ring backend, the easiest way to use JACCL with MLX is to "
+"write a JSON hostfile that will be used by ``mlx.launch``. The hostfile "
+"needs to contain"
+msgstr ""
+"與 ring 後端類似，使用 JACCL 的最簡單方式是撰寫供 ``mlx.launch`` 使用的 JSON "
+"hostfile。該 hostfile 必須包含："
+
+#: ../../../src/usage/distributed.rst:342
+msgid "Hostnames to use for launching scripts via ssh"
+msgstr "用於透過 ssh 啟動腳本的主機名稱"
+
+#: ../../../src/usage/distributed.rst:343
+msgid "An IP for rank 0 that is reachable by all nodes"
+msgstr "所有節點皆可連到的 rank 0 IP"
+
+#: ../../../src/usage/distributed.rst:344
+msgid "A list of rdma devices that connect each node to each other node"
+msgstr "連接各節點彼此的 rdma 裝置列表"
+
+#: ../../../src/usage/distributed.rst:346
+msgid "The following JSON defines the valid 4-node mesh from the image above."
+msgstr "以下 JSON 定義了上圖的有效 4 節點網狀拓撲。"
+
+#: ../../../src/usage/distributed.rst:348
+msgid ""
+"[\n"
+"    {\n"
+"        \"ssh\": \"m3-ultra-1\",\n"
+"        \"ips\": [\"123.123.123.1\"],\n"
+"        \"rdma\": [null, \"rdma_en5\", \"rdma_en4\", \"rdma_en3\"]\n"
+"    },\n"
+"    {\n"
+"        \"ssh\": \"m3-ultra-2\",\n"
+"        \"ips\": [],\n"
+"        \"rdma\": [\"rdma_en5\", null, \"rdma_en3\", \"rdma_en4\"]\n"
+"    },\n"
+"    {\n"
+"        \"ssh\": \"m3-ultra-3\",\n"
+"        \"ips\": [],\n"
+"        \"rdma\": [\"rdma_en4\", \"rdma_en3\", null, \"rdma_en5\"]\n"
+"    },\n"
+"    {\n"
+"        \"ssh\": \"m3-ultra-4\",\n"
+"        \"ips\": [],\n"
+"        \"rdma\": [\"rdma_en3\", \"rdma_en4\", \"rdma_en5\", null]\n"
+"    }\n"
+"]"
+msgstr ""
+
+#: ../../../src/usage/distributed.rst:373
+msgid ""
+"Even though TCP/IP is not used when communicating with Thunderbolt RDMA, "
+"disabling the thunderbolt bridge is still required as well as setting up "
+"isolated local networks for each thunderbolt connection."
+msgstr ""
+"即使 Thunderbolt RDMA 通訊不使用 TCP/IP，仍需停用 Thunderbolt bridge，並為每"
+"條 Thunderbolt 連線建立隔離的本地網路。"
+
+#: ../../../src/usage/distributed.rst:377
+msgid ""
+"All of the above can be done instead via ``mlx.distributed_config``. This "
+"helper script will"
+msgstr "上述所有步驟也可改由 ``mlx.distributed_config`` 完成。此輔助腳本會："
+
+#: ../../../src/usage/distributed.rst:380
+msgid "ssh into each node"
+msgstr "ssh 進入每個節點"
+
+#: ../../../src/usage/distributed.rst:381
+msgid "extract the thunderbolt connectivity"
+msgstr "取得 Thunderbolt 連線拓撲"
+
+#: ../../../src/usage/distributed.rst:382
+msgid "check for a valid mesh"
+msgstr "檢查是否為有效的 mesh"
+
+#: ../../../src/usage/distributed.rst:383
+msgid ""
+"provide the commands to configure each node (or run them if sudo is "
+"available)"
+msgstr "提供設定各節點的命令（或在有 sudo 時直接執行）"
+
+#: ../../../src/usage/distributed.rst:384
+msgid "generate the hostfile to be used with ``mlx.launch``"
+msgstr "產生供 ``mlx.launch`` 使用的 hostfile"
+
+#: ../../../src/usage/distributed.rst:387
+msgid "Putting It All Together"
+msgstr "全部整合"
+
+#: ../../../src/usage/distributed.rst:389
+msgid ""
+"For example launching a distributed MLX script that uses JACCL is fairly "
+"simple if the nodes are reachable via ssh and have password-less sudo."
+msgstr ""
+"例如，若節點可透過 ssh 連線且具備無密碼 sudo，啟動使用 JACCL 的分散式 MLX 腳"
+"本相當簡單。"
+
+#: ../../../src/usage/distributed.rst:392
+msgid ""
+"First, connect all the thunderbolt cables. Then we can verify the "
+"connections by using the ``mlx.distributed_config`` script to visualize them."
+msgstr ""
+"首先連接所有 Thunderbolt 線纜。接著使用 ``mlx.distributed_config`` 腳本將連線"
+"視覺化以進行確認。"
+
+#: ../../../src/usage/distributed.rst:395
+msgid ""
+"mlx.distributed_config --verbose \\\n"
+"     --hosts m3-ultra-1,m3-ultra-2,m3-ultra-3,m3-ultra-4 \\\n"
+"     --over thunderbolt --dot | dot -Tpng | open -f -a Preview"
+msgstr ""
+
+#: ../../../src/usage/distributed.rst:401
+msgid ""
+"After making sure that everything looks right we can auto-configure the "
+"nodes and save the hostfile to ``m3-ultra-jaccl.json`` by running:"
+msgstr ""
+"確認一切正確後，可自動設定各節點並將 hostfile 儲存為 ``m3-ultra-jaccl."
+"json``，執行："
+
+#: ../../../src/usage/distributed.rst:404
+msgid ""
+"mlx.distributed_config --verbose \\\n"
+"     --hosts m3-ultra-1,m3-ultra-2,m3-ultra-3,m3-ultra-4 \\\n"
+"     --over thunderbolt --backend jaccl \\\n"
+"     --auto-setup --output m3-ultra-jaccl.json"
+msgstr ""
+
+#: ../../../src/usage/distributed.rst:411
+msgid ""
+"And now we are ready to run a distributed MLX script such as distributed "
+"inference of a gigantic model using MLX LM."
+msgstr ""
+"接著就可以執行分散式 MLX 腳本，例如使用 MLX LM 進行巨型模型的分散式推論。"
+
+#: ../../../src/usage/distributed.rst:414
+msgid ""
+"mlx.launch --verbose --backend jaccl --hostfile m3-ultra-jaccl.json \\\n"
+"     --env MLX_METAL_FAST_SYNCH=1 -- \\  # <--- important\n"
+"     /path/to/remote/python -m mlx_lm chat --model mlx-community/DeepSeek-"
+"R1-0528-4bit"
+msgstr ""
+
+#: ../../../src/usage/distributed.rst:422
+msgid ""
+"Defining the environment variable ``MLX_METAL_FAST_SYNCH=1`` enables a "
+"different, faster way of synchronizing between the GPU and the CPU. It is "
+"not specific to the JACCL backend and can be used in all cases where the CPU "
+"and GPU need to collaborate for some computation and is pretty critical for "
+"low-latency communication since the communication is done by the CPU."
+msgstr ""
+"設定環境變數 ``MLX_METAL_FAST_SYNCH=1`` 會啟用 GPU 與 CPU 之間更快的同步方"
+"式。這並非 JACCL 專用，凡是 CPU 與 GPU 需要協同計算的情況都可使用，且因通訊"
+"由 CPU 執行，對低延遲通訊而言相當關鍵。"
+
+#: ../../../src/usage/distributed.rst:431
+msgid "Getting Started with NCCL"
+msgstr "開始使用 NCCL"
+
+#: ../../../src/usage/distributed.rst:433
+msgid ""
+"MLX on CUDA environments ships with the ability to talk to `NCCL <https://"
+"developer.nvidia.com/nccl>`_ which is a high-performance collective "
+"communication library that supports both multi-gpu and multi-node setups."
+msgstr ""
+"MLX 在 CUDA 環境中可與 `NCCL <https://developer.nvidia.com/nccl>`_ 通訊。"
+"NCCL 是高效能的集合通訊程式庫，支援多 GPU 與多節點設定。"
+
+#: ../../../src/usage/distributed.rst:437
+msgid ""
+"For CUDA environments, NCCL is the default backend for ``mlx.launch`` and "
+"all it takes to run a distributed job is"
+msgstr ""
+"在 CUDA 環境中，NCCL 是 ``mlx.launch`` 的預設後端，要啟動分散式工作只需："
+
+#: ../../../src/usage/distributed.rst:440
+msgid ""
+"mlx.launch -n 8 test.py\n"
+"\n"
+"# perfect for interactive scripts\n"
+"mlx.launch -n 8 python -m mlx_lm chat --model my-model"
+msgstr ""
+
+#: ../../../src/usage/distributed.rst:447
+msgid ""
+"You can also use ``mlx.launch`` to ssh to a remote node and launch a script "
+"with the same ease"
+msgstr "你也可以用 ``mlx.launch`` 透過 ssh 連到遠端節點並同樣輕鬆地啟動腳本"
+
+#: ../../../src/usage/distributed.rst:450
+msgid "mlx.launch --hosts my-cuda-node -n 8 test.py"
+msgstr ""
+
+#: ../../../src/usage/distributed.rst:454
+msgid ""
+"In many cases you may not want to use ``mlx.launch`` with the NCCL backend "
+"because the cluster scheduler will be the one launching the processes. You "
+"can :ref:`see which environment variables need to be defined "
+"<no_mlx_launch>` in order for the MLX NCCL backend to be initialized "
+"correctly."
+msgstr ""
+"在許多情況下你可能不會想用 ``mlx.launch`` 搭配 NCCL 後端，因為叢集排程器會負"
+"責啟動行程。你可以 :ref:`查看需要設定的環境變數 <no_mlx_launch>`，以便正確初"
+"始化 MLX 的 NCCL 後端。"
+
+#: ../../../src/usage/distributed.rst:462
+msgid "Getting Started with MPI"
+msgstr "開始使用 MPI"
+
+#: ../../../src/usage/distributed.rst:464
+msgid ""
+"MLX already comes with the ability to \"talk\" to `MPI <https://en.wikipedia."
+"org/wiki/Message_Passing_Interface>`_ if it is installed on the machine. "
+"Launching distributed MLX programs that use MPI can be done with ``mpirun`` "
+"as expected. However, in the following examples we will be using ``mlx."
+"launch --backend mpi`` which takes care of some nuisances such as setting "
+"absolute paths for the ``mpirun`` executable and the ``libmpi.dyld`` shared "
+"library."
+msgstr ""
+"若機器上已安裝 `MPI <https://en.wikipedia.org/wiki/"
+"Message_Passing_Interface>`_，MLX 便可與其通訊。使用 MPI 的分散式 MLX 程式可"
+"如預期透過 ``mpirun`` 啟動。不過在以下範例中，我們使用 ``mlx.launch --"
+"backend mpi``，它會處理一些細節，例如為 ``mpirun`` 可執行檔與 ``libmpi."
+"dyld`` 共享程式庫設定絕對路徑。"
+
+#: ../../../src/usage/distributed.rst:472
+msgid ""
+"The simplest possible usage is the following which, assuming the minimal "
+"example in the beginning of this page, should result in:"
+msgstr "最簡單的用法如下，假設使用本頁開頭的最小範例，輸出應為："
+
+#: ../../../src/usage/distributed.rst:475
+msgid ""
+"$ mlx.launch --backend mpi -n 2 test.py\n"
+"1 array([2, 2, 2, ..., 2, 2, 2], dtype=float32)\n"
+"0 array([2, 2, 2, ..., 2, 2, 2], dtype=float32)"
+msgstr ""
+
+#: ../../../src/usage/distributed.rst:481
+msgid ""
+"The above launches two processes on the same (local) machine and we can see "
+"both standard output streams. The processes send the array of 1s to each "
+"other and compute the sum which is printed. Launching with ``mlx.launch -n "
+"4 ...`` would print 4 etc."
+msgstr ""
+"以上會在同一台（本地）機器上啟動兩個行程，並可看到兩個標準輸出。行程會互相傳"
+"送全 1 陣列並計算總和後印出。若使用 ``mlx.launch -n 4 ...`` 則會印出 4，依此"
+"類推。"
+
+#: ../../../src/usage/distributed.rst:487
+msgid "Installing MPI"
+msgstr "安裝 MPI"
+
+#: ../../../src/usage/distributed.rst:489
+msgid ""
+"MPI can be installed with Homebrew, pip, using the Anaconda package manager, "
+"or compiled from source. Most of our testing is done using ``openmpi`` "
+"installed with the Anaconda package manager as follows:"
+msgstr ""
+"MPI 可透過 Homebrew、pip、Anaconda 軟體包管理器安裝，或從來源碼編譯。我們大多"
+"數測試使用 Anaconda 軟體包管理器安裝的 ``openmpi``："
+
+#: ../../../src/usage/distributed.rst:493
+msgid "$ conda install conda-forge::openmpi"
+msgstr ""
+
+#: ../../../src/usage/distributed.rst:497
+msgid ""
+"Installing with Homebrew or pip requires specifying the location of ``libmpi."
+"dyld`` so that MLX can find it and load it at runtime. This can simply be "
+"achieved by passing the ``DYLD_LIBRARY_PATH`` environment variable to "
+"``mpirun`` and it is done automatically by ``mlx.launch``. Some environments "
+"use a non-standard library filename that can be specified using the "
+"``MPI_LIBNAME`` environment variable. This is automatically taken care of by "
+"``mlx.launch`` as well."
+msgstr ""
+"透過 Homebrew 或 pip 安裝時，需要指定 ``libmpi.dyld`` 的位置，讓 MLX 能在執行"
+"時找到並載入它。這可透過將 ``DYLD_LIBRARY_PATH`` 環境變數傳給 ``mpirun`` 來達"
+"成，而 ``mlx.launch`` 會自動完成。某些環境使用非標準的程式庫檔名，可用 "
+"``MPI_LIBNAME`` 環境變數指定，``mlx.launch`` 同樣會自動處理。"
+
+#: ../../../src/usage/distributed.rst:504
+msgid ""
+"$ mpirun -np 2 -x DYLD_LIBRARY_PATH=/opt/homebrew/lib/ -x "
+"MPI_LIBNAME=libmpi.40.dylib python test.py\n"
+"$ # or simply\n"
+"$ mlx.launch -n 2 test.py"
+msgstr ""
+
+#: ../../../src/usage/distributed.rst:511
+msgid "Setting up Remote Hosts"
+msgstr "設定遠端主機"
+
+#: ../../../src/usage/distributed.rst:513
+msgid ""
+"MPI can automatically connect to remote hosts and set up the communication "
+"over the network if the remote hosts can be accessed via ssh. A good "
+"checklist to debug connectivity issues is the following:"
+msgstr ""
+"若可透過 ssh 連線到遠端主機，MPI 便可自動連線並建立網路通訊。以下是排查連線問"
+"題的檢查列表："
+
+#: ../../../src/usage/distributed.rst:517
+msgid ""
+"``ssh hostname`` works from all machines to all machines without asking for "
+"password or host confirmation"
+msgstr "所有機器之間執行 ``ssh hostname`` 不需密碼或主機確認"
+
+#: ../../../src/usage/distributed.rst:519
+msgid "``mpirun`` is accessible on all machines."
+msgstr "所有機器皆可存取 ``mpirun``。"
+
+#: ../../../src/usage/distributed.rst:520
+msgid ""
+"Ensure that the ``hostname`` used by MPI is the one that you have configured "
+"in the ``.ssh/config`` files on all machines."
+msgstr ""
+"請確保 MPI 使用的 ``hostname`` 與所有機器 ``.ssh/config`` 中設定的一致。"
+
+#: ../../../src/usage/distributed.rst:524
+msgid "Tuning MPI All Reduce"
+msgstr "調校 MPI All Reduce"
+
+#: ../../../src/usage/distributed.rst:528
+msgid ""
+"For faster all reduce consider using the ring backend either with "
+"Thunderbolt connections or over Ethernet."
+msgstr ""
+"若要更快的 all-reduce，可考慮使用 ring 後端（透過 Thunderbolt 連線或乙太網"
+"路）。"
+
+#: ../../../src/usage/distributed.rst:531
+msgid ""
+"Configure MPI to use N tcp connections between each host to improve "
+"bandwidth by passing ``--mca btl_tcp_links N``."
+msgstr ""
+"透過 ``--mca btl_tcp_links N`` 設定 MPI 在每個主機間使用 N 條 TCP 連線，以提"
+"升頻寬。"
+
+#: ../../../src/usage/distributed.rst:534
+msgid ""
+"Force MPI to use the most performant network interface by setting ``--mca "
+"btl_tcp_if_include <iface>`` where ``<iface>`` should be the interface you "
+"want to use."
+msgstr ""
+"透過 ``--mca btl_tcp_if_include <iface>`` 強制 MPI 使用效能最佳的網路介面，其"
+"中 ``<iface>`` 為你想使用的介面。"
+
+#: ../../../src/usage/distributed.rst:541
+msgid "Distributed Without ``mlx.launch``"
+msgstr "不使用 ``mlx.launch`` 的分散式"
+
+#: ../../../src/usage/distributed.rst:543
+msgid ""
+"None of the implementations of the distributed backends require launching "
+"with ``mlx.launch``. The script simply connects to each host. Starts a "
+"process per rank and sets up the necessary environment variables before "
+"delegating to your MLX script. See the :doc:`dedicated documentation page "
+"<launching_distributed>` for more details."
+msgstr ""
+"分散式後端的實作並不強制使用 ``mlx.launch``。該腳本只是連線到各主機、為每個 "
+"rank 啟動一個行程，並在移交給你的 MLX 腳本前設定必要的環境變數。詳情請參考 :"
+"doc:`專門文件頁 <launching_distributed>`。"
+
+#: ../../../src/usage/distributed.rst:549
+msgid ""
+"For many use-cases this will be the easiest way to perform distributed "
+"computations in MLX. However, there may be reasons that you cannot or should "
+"not use ``mlx.launch``. A common such case is the use of a scheduler that "
+"starts all the processes for you on machines undetermined at the time of "
+"scheduling the job."
+msgstr ""
+"在許多使用情境下，這會是最簡單的 MLX 分散式計算方式。然而，有時你可能無法或不"
+"應使用 ``mlx.launch``。常見例子是使用排程器，在排程時尚未確定的機器上為你啟動"
+"所有行程。"
+
+#: ../../../src/usage/distributed.rst:555
+msgid "Below we list the environment variables required to use each backend."
+msgstr "以下列出各後端所需的環境變數。"
+
+#: ../../../src/usage/distributed.rst:558
+msgid "Ring"
+msgstr ""
+
+#: ../../../src/usage/distributed.rst:560
+#: ../../../src/usage/distributed.rst:581
+#: ../../../src/usage/distributed.rst:604
+msgid ""
+"**MLX_RANK** should contain a single 0-based integer that defines the rank "
+"of the process."
+msgstr "**MLX_RANK** 應包含一個以 0 為起始的整數，用於定義行程的 rank。"
+
+#: ../../../src/usage/distributed.rst:563
+msgid ""
+"**MLX_HOSTFILE** should contain the path to a json file that contains IPs "
+"and ports for each rank to listen to, something like the following:"
+msgstr ""
+"**MLX_HOSTFILE** 應包含一個 json 檔路徑，其中列出各 rank 要監聽的 IP 與連接"
+"埠，例如："
+
+#: ../../../src/usage/distributed.rst:566
+msgid ""
+"[\n"
+"  [\"123.123.1.1:5000\", \"123.123.1.2:5000\"],\n"
+"  [\"123.123.2.1:5000\", \"123.123.2.2:5000\"],\n"
+"  [\"123.123.3.1:5000\", \"123.123.3.2:5000\"],\n"
+"  [\"123.123.4.1:5000\", \"123.123.4.2:5000\"]\n"
+"]"
+msgstr ""
+
+#: ../../../src/usage/distributed.rst:575
+msgid ""
+"**MLX_RING_VERBOSE** is optional and if set to 1 it enables some more "
+"logging from the distributed backend."
+msgstr "**MLX_RING_VERBOSE** 為選用，設為 1 時會啟用更多分散式後端的日誌輸出。"
+
+#: ../../../src/usage/distributed.rst:579
+msgid "JACCL"
+msgstr ""
+
+#: ../../../src/usage/distributed.rst:584
+msgid ""
+"**MLX_JACCL_COORDINATOR** should contain the IP and port that rank 0 can "
+"listen to all the other ranks connect to in order to establish the RDMA "
+"connections."
+msgstr ""
+"**MLX_JACCL_COORDINATOR** 應包含 rank 0 監聽的 IP 與埠號，供其他 rank 連線建"
+"立 RDMA 連線。"
+
+#: ../../../src/usage/distributed.rst:587
+msgid ""
+"**MLX_IBV_DEVICES** should contain the path to a json file that contains the "
+"ibverbs device names that connect each node to each other node, something "
+"like the following:"
+msgstr ""
+"**MLX_IBV_DEVICES** 應包含一個 json 檔路徑，其中列出連接各節點彼此的 ibverbs "
+"裝置名稱，例如："
+
+#: ../../../src/usage/distributed.rst:591
+msgid ""
+"[\n"
+"   [null, \"rdma_en5\", \"rdma_en4\", \"rdma_en3\"],\n"
+"   [\"rdma_en5\", null, \"rdma_en3\", \"rdma_en4\"],\n"
+"   [\"rdma_en4\", \"rdma_en3\", null, \"rdma_en5\"],\n"
+"   [\"rdma_en3\", \"rdma_en4\", \"rdma_en5\", null]\n"
+"]"
+msgstr ""
+
+#: ../../../src/usage/distributed.rst:602
+msgid "NCCL"
+msgstr ""
+
+#: ../../../src/usage/distributed.rst:607
+msgid ""
+"**MLX_WORLD_SIZE** should contain the total number of processes that will be "
+"launched."
+msgstr "**MLX_WORLD_SIZE** 應包含將啟動的行程總數。"
+
+#: ../../../src/usage/distributed.rst:610
+msgid ""
+"**NCCL_HOST_IP** and **NCCL_PORT** should contain the IP and port that all "
+"hosts can connect to to establish the NCCL communication."
+msgstr ""
+"**NCCL_HOST_IP** 與 **NCCL_PORT** 應包含所有主機可連線以建立 NCCL 通訊的 IP "
+"與埠號。"
+
+#: ../../../src/usage/distributed.rst:613
+msgid ""
+"**CUDA_VISIBLE_DEVICES** should contain the local index of the gpu that "
+"corresponds to this process."
+msgstr "**CUDA_VISIBLE_DEVICES** 應包含對應此行程的 GPU 本地索引。"
+
+#: ../../../src/usage/distributed.rst:616
+msgid ""
+"Of course any `other environment variable <https://docs.nvidia.com/"
+"deeplearning/nccl/user-guide/docs/env.html>`_ that is used by NCCL can be "
+"set."
+msgstr ""
+"當然，NCCL 使用的 `其他環境變數 <https://docs.nvidia.com/deeplearning/nccl/"
+"user-guide/docs/env.html>`_ 也可設定。"
+
+#: ../../../src/usage/distributed.rst:623
+msgid "Tips and Tricks"
+msgstr "技巧與提示"
+
+#: ../../../src/usage/distributed.rst:625
+msgid ""
+"This is a small collection of tips to help you utilize better the "
+"distributed communication capabilities of MLX."
+msgstr "這裡提供一些小技巧，協助你更好地運用 MLX 的分散式通訊能力。"
+
+#: ../../../src/usage/distributed.rst:628
+msgid "*Test locally first.*"
+msgstr "*先在本機測試。*"
+
+#: ../../../src/usage/distributed.rst:630
+msgid ""
+"You can use the pattern ``mlx.launch -n2 -- my_script.py`` to run a small "
+"scale test on a single node first."
+msgstr ""
+"你可以用 ``mlx.launch -n2 -- my_script.py`` 的模式先在單一節點做小規模測試。"
+
+#: ../../../src/usage/distributed.rst:633
+msgid "*Batch your communication.*"
+msgstr "*批次化通訊。*"
+
+#: ../../../src/usage/distributed.rst:635
+msgid ""
+"As described in the :ref:`training example <training_example>`, performing a "
+"lot of small communications can hurt performance. Copy the approach of :func:"
+"`mlx.nn.average_gradients` to gather many small communications in a single "
+"large one."
+msgstr ""
+"如 :ref:`訓練範例 <training_example>` 所述，進行大量小型通訊會影響效能。可參"
+"照 :func:`mlx.nn.average_gradients` 的做法，把多次小通訊聚合成一次大型通訊。"
+
+#: ../../../src/usage/distributed.rst:640
+msgid "*Visualize the connectivity.*"
+msgstr "*視覺化連線。*"
+
+#: ../../../src/usage/distributed.rst:642
+msgid ""
+"Use ``mlx.distributed_config --hosts h1,h2,h3 --over thunderbolt --dot`` to "
+"visualize the connnections and make sure that the cables are connected "
+"correctly. See the :ref:`JACCL section <jaccl_section>` for examples."
+msgstr ""
+"使用 ``mlx.distributed_config --hosts h1,h2,h3 --over thunderbolt --dot`` 來"
+"視覺化連線，確認線纜正確連接。範例請參考 :ref:`JACCL 章節 <jaccl_section>`。"
+
+#: ../../../src/usage/distributed.rst:646
+msgid "*Use the debugger.*"
+msgstr "*使用除錯器。*"
+
+#: ../../../src/usage/distributed.rst:648
+msgid ""
+"``mlx.launch`` is meant for interactive use. It broadcasts stdin to all "
+"processes and gathers stdout from all processes. This makes using ``pdb`` a "
+"breeze."
+msgstr ""
+"``mlx.launch`` 用於互動式操作。它會將 stdin 廣播到所有行程並收集各行程的 "
+"stdout，讓使用 ``pdb`` 變得很容易。"
