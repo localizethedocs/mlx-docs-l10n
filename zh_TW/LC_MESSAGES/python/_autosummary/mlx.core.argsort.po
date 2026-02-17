@@ -1,0 +1,58 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023, MLX Contributors
+# This file is distributed under the same license as the MLX package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: MLX 0.3\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-12-08 12:56+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../src/python/_autosummary/mlx.core.argsort.rst:2
+msgid "mlx.core.argsort"
+msgstr ""
+
+#: ../../../docstring of
+#: mlx.core.pybind11_detail_function_record_v1_system_libstdcpp_gxx_abi_1xxx_use_cxx11_abi_1.argsort:1
+msgid "Returns the indices that sort the array."
+msgstr "回傳可排序陣列的索引。"
+
+#: ../../../src/python/_autosummary/mlx.core.argsort.rst:0
+msgid "Parameters"
+msgstr "參數"
+
+#: ../../../docstring of
+#: mlx.core.pybind11_detail_function_record_v1_system_libstdcpp_gxx_abi_1xxx_use_cxx11_abi_1.argsort:3
+msgid "Input array."
+msgstr "輸入陣列。"
+
+#: ../../../docstring of
+#: mlx.core.pybind11_detail_function_record_v1_system_libstdcpp_gxx_abi_1xxx_use_cxx11_abi_1.argsort:5
+msgid ""
+"Optional axis to sort over. If ``None``, this sorts over the flattened "
+"array. If unspecified, it defaults to -1 (sorting over the last axis)."
+msgstr ""
+"可選的排序軸。若為 ``None``，則對展平後的陣列排序。若未指定，預設為 -1（對最"
+"後一軸排序）。"
+
+#: ../../../src/python/_autosummary/mlx.core.argsort.rst:0
+msgid "Returns"
+msgstr "回傳"
+
+#: ../../../docstring of
+#: mlx.core.pybind11_detail_function_record_v1_system_libstdcpp_gxx_abi_1xxx_use_cxx11_abi_1.argsort:10
+msgid "The ``uint32`` array containing indices that sort the input."
+msgstr "包含可排序輸入的索引之 ``uint32`` 陣列。"
+
+#: ../../../src/python/_autosummary/mlx.core.argsort.rst:0
+msgid "Return type"
+msgstr "回傳型別"
