@@ -1,0 +1,100 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023, MLX Contributors
+# This file is distributed under the same license as the MLX package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: MLX 0.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-12-08 12:58+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../src/python/nn/_autosummary/mlx.nn.BatchNorm.rst:2
+msgid "mlx.nn.BatchNorm"
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/normalization.py:docstring
+#: of mlx.nn.layers.normalization.BatchNorm:1
+msgid "Applies Batch Normalization over a 2D or 3D input."
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/normalization.py:docstring
+#: of mlx.nn.layers.normalization.BatchNorm:3
+msgid "Computes"
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/normalization.py:docstring
+#: of mlx.nn.layers.normalization.BatchNorm:5
+msgid "y = \\frac{x - E[x]}{\\sqrt{Var[x]} + \\epsilon} \\gamma + \\beta,"
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/normalization.py:docstring
+#: of mlx.nn.layers.normalization.BatchNorm:9
+msgid ""
+"where :math:`\\gamma` and :math:`\\beta` are learned per feature dimension "
+"parameters initialized at 1 and 0 respectively."
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/normalization.py:docstring
+#: of mlx.nn.layers.normalization.BatchNorm:12
+msgid ""
+"The input shape is specified as ``NC`` or ``NLC``, where ``N`` is the batch, "
+"``C`` is the number of features or channels, and ``L`` is the sequence "
+"length. The output has the same shape as the input. For four-dimensional "
+"arrays, the shape is ``NHWC``, where ``H`` and ``W`` are the height and "
+"width respectively."
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/normalization.py:docstring
+#: of mlx.nn.layers.normalization.BatchNorm:18
+msgid ""
+"For more information on Batch Normalization, see the original paper `Batch "
+"Normalization: Accelerating Deep Network Training by Reducing Internal "
+"Covariate Shift <https://arxiv.org/abs/1502.03167>`_."
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/normalization.py:docstring
+#: of mlx.nn.layers.normalization.BatchNorm:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/normalization.py:docstring
+#: of mlx.nn.layers.normalization.BatchNorm:22
+msgid "The feature dimension to normalize over."
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/normalization.py:docstring
+#: of mlx.nn.layers.normalization.BatchNorm:24
+msgid "A small additive constant for numerical stability. Default: ``1e-5``."
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/normalization.py:docstring
+#: of mlx.nn.layers.normalization.BatchNorm:27
+msgid ""
+"The momentum for updating the running mean and variance. Default: ``0.1``."
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/normalization.py:docstring
+#: of mlx.nn.layers.normalization.BatchNorm:30
+msgid ""
+"If ``True``, apply a learned affine transformation after the normalization. "
+"Default: ``True``."
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/normalization.py:docstring
+#: of mlx.nn.layers.normalization.BatchNorm:33
+msgid "If ``True``, track the running mean and variance. Default: ``True``."
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/normalization.py:docstring
+#: of mlx.nn.layers.normalization.BatchNorm:38
+msgid "Examples"
+msgstr "範例"

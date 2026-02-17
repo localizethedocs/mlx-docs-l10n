@@ -1,0 +1,64 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023, MLX Contributors
+# This file is distributed under the same license as the MLX package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: MLX 0.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-12-08 12:58+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../src/python/_autosummary/mlx.core.pad.rst:2
+msgid "mlx.core.pad"
+msgstr ""
+
+#: ../../../docstring of
+#: mlx.core.pybind11_detail_function_record_v1_system_libstdcpp_gxx_abi_1xxx_use_cxx11_abi_1.pad:1
+msgid "Pad an array with a constant value"
+msgstr ""
+
+#: ../../../src/python/_autosummary/mlx.core.pad.rst:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../docstring of
+#: mlx.core.pybind11_detail_function_record_v1_system_libstdcpp_gxx_abi_1xxx_use_cxx11_abi_1.pad:3
+msgid "Input array."
+msgstr ""
+
+#: ../../../docstring of
+#: mlx.core.pybind11_detail_function_record_v1_system_libstdcpp_gxx_abi_1xxx_use_cxx11_abi_1.pad:5
+msgid ""
+"Number of padded values to add to the edges of each axis:``((before_1, "
+"after_1), (before_2, after_2), ..., (before_N, after_N))``. If a single pair "
+"of integers is passed then ``(before_i, after_i)`` are all the same. If a "
+"single integer or tuple with a single integer is passed then all axes are "
+"extended by the same number on each side."
+msgstr ""
+
+#: ../../../docstring of
+#: mlx.core.pybind11_detail_function_record_v1_system_libstdcpp_gxx_abi_1xxx_use_cxx11_abi_1.pad:12
+msgid "Optional constant value to pad the edges of the array with."
+msgstr ""
+
+#: ../../../src/python/_autosummary/mlx.core.pad.rst:0
+msgid "Returns"
+msgstr ""
+
+#: ../../../docstring of
+#: mlx.core.pybind11_detail_function_record_v1_system_libstdcpp_gxx_abi_1xxx_use_cxx11_abi_1.pad:16
+msgid "The padded array."
+msgstr ""
+
+#: ../../../src/python/_autosummary/mlx.core.pad.rst:0
+msgid "Return type"
+msgstr ""

@@ -1,0 +1,81 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023, MLX Contributors
+# This file is distributed under the same license as the MLX package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: MLX 0.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-12-08 12:58+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../src/python/_autosummary/mlx.core.matmul.rst:2
+msgid "mlx.core.matmul"
+msgstr ""
+
+#: ../../../docstring of
+#: mlx.core.pybind11_detail_function_record_v1_system_libstdcpp_gxx_abi_1xxx_use_cxx11_abi_1.matmul:1
+msgid "Matrix multiplication."
+msgstr ""
+
+#: ../../../docstring of
+#: mlx.core.pybind11_detail_function_record_v1_system_libstdcpp_gxx_abi_1xxx_use_cxx11_abi_1.matmul:3
+msgid ""
+"Perform the (possibly batched) matrix multiplication of two arrays. This "
+"function supports broadcasting for arrays with more than two dimensions."
+msgstr ""
+
+#: ../../../docstring of
+#: mlx.core.pybind11_detail_function_record_v1_system_libstdcpp_gxx_abi_1xxx_use_cxx11_abi_1.matmul:6
+msgid ""
+"If the first array is 1-D then a 1 is prepended to its shape to make it a "
+"matrix. Similarly if the second array is 1-D then a 1 is appended to its "
+"shape to make it a matrix. In either case the singleton dimension is removed "
+"from the result."
+msgstr ""
+
+#: ../../../docstring of
+#: mlx.core.pybind11_detail_function_record_v1_system_libstdcpp_gxx_abi_1xxx_use_cxx11_abi_1.matmul:10
+msgid ""
+"A batched matrix multiplication is performed if the arrays have more than 2 "
+"dimensions.  The matrix dimensions for the matrix product are the last two "
+"dimensions of each input."
+msgstr ""
+
+#: ../../../docstring of
+#: mlx.core.pybind11_detail_function_record_v1_system_libstdcpp_gxx_abi_1xxx_use_cxx11_abi_1.matmul:13
+msgid ""
+"All but the last two dimensions of each input are broadcast with one another "
+"using standard numpy-style broadcasting semantics."
+msgstr ""
+
+#: ../../../src/python/_autosummary/mlx.core.matmul.rst:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../docstring of
+#: mlx.core.pybind11_detail_function_record_v1_system_libstdcpp_gxx_abi_1xxx_use_cxx11_abi_1.matmul:16
+#: mlx.core.pybind11_detail_function_record_v1_system_libstdcpp_gxx_abi_1xxx_use_cxx11_abi_1.matmul:18
+msgid "Input array or scalar."
+msgstr ""
+
+#: ../../../src/python/_autosummary/mlx.core.matmul.rst:0
+msgid "Returns"
+msgstr ""
+
+#: ../../../docstring of
+#: mlx.core.pybind11_detail_function_record_v1_system_libstdcpp_gxx_abi_1xxx_use_cxx11_abi_1.matmul:21
+msgid "The matrix product of ``a`` and ``b``."
+msgstr ""
+
+#: ../../../src/python/_autosummary/mlx.core.matmul.rst:0
+msgid "Return type"
+msgstr ""

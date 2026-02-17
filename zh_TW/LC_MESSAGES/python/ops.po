@@ -1,0 +1,1086 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023, MLX Contributors
+# This file is distributed under the same license as the MLX package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: MLX 0.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-12-08 12:58+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../src/python/ops.rst:4
+msgid "Operations"
+msgstr "運算"
+
+#: ../../../src/python/ops.rst:125:<autosummary>:1
+msgid ":py:obj:`abs <mlx.core.abs>`\\ \\(a\\, \\/\\, \\*\\[\\, stream\\]\\)"
+msgstr ""
+
+#: ../../../src/python/ops.rst:125:<autosummary>:1
+msgid "Element-wise absolute value."
+msgstr "逐元素絕對值。"
+
+#: ../../../src/python/ops.rst:125:<autosummary>:1
+msgid ":py:obj:`add <mlx.core.add>`\\ \\(a\\, b\\[\\, stream\\]\\)"
+msgstr ""
+
+#: ../../../src/python/ops.rst:125:<autosummary>:1
+msgid "Element-wise addition."
+msgstr ""
+
+#: ../../../src/python/ops.rst:125:<autosummary>:1
+msgid ""
+":py:obj:`all <mlx.core.all>`\\ \\(a\\, \\/\\[\\, axis\\, keepdims\\, "
+"stream\\]\\)"
+msgstr ""
+
+#: ../../../src/python/ops.rst:125:<autosummary>:1
+msgid "An `and` reduction over the given axes."
+msgstr ""
+
+#: ../../../src/python/ops.rst:125:<autosummary>:1
+msgid ""
+":py:obj:`allclose <mlx.core.allclose>`\\ \\(a\\, b\\, \\/\\[\\, rtol\\, "
+"atol\\, stream\\]\\)"
+msgstr ""
+
+#: ../../../src/python/ops.rst:125:<autosummary>:1
+msgid "Approximate comparison of two arrays."
+msgstr "兩個陣列的近似比較。"
+
+#: ../../../src/python/ops.rst:125:<autosummary>:1
+msgid ""
+":py:obj:`any <mlx.core.any>`\\ \\(a\\, \\/\\[\\, axis\\, keepdims\\, "
+"stream\\]\\)"
+msgstr ""
+
+#: ../../../src/python/ops.rst:125:<autosummary>:1
+msgid "An `or` reduction over the given axes."
+msgstr "在指定軸上進行 `or` 歸約。"
+
+#: ../../../src/python/ops.rst:125:<autosummary>:1
+msgid ""
+":py:obj:`arange <mlx.core.arange>`\\ \\(start\\, stop\\, step\\[\\, dtype\\, "
+"stream\\]\\)"
+msgstr ""
+
+#: ../../../src/python/ops.rst:125:<autosummary>:1
+msgid "Generates ranges of numbers."
+msgstr ""
+
+#: ../../../src/python/ops.rst:125:<autosummary>:1
+msgid ""
+":py:obj:`arccos <mlx.core.arccos>`\\ \\(a\\, \\/\\, \\*\\[\\, stream\\]\\)"
+msgstr ""
+
+#: ../../../src/python/ops.rst:125:<autosummary>:1
+msgid "Element-wise inverse cosine."
+msgstr "逐元素反餘弦。"
+
+#: ../../../src/python/ops.rst:125:<autosummary>:1
+msgid ""
+":py:obj:`arccosh <mlx.core.arccosh>`\\ \\(a\\, \\/\\, \\*\\[\\, stream\\]\\)"
+msgstr ""
+
+#: ../../../src/python/ops.rst:125:<autosummary>:1
+msgid "Element-wise inverse hyperbolic cosine."
+msgstr ""
+
+#: ../../../src/python/ops.rst:125:<autosummary>:1
+msgid ""
+":py:obj:`arcsin <mlx.core.arcsin>`\\ \\(a\\, \\/\\, \\*\\[\\, stream\\]\\)"
+msgstr ""
+
+#: ../../../src/python/ops.rst:125:<autosummary>:1
+msgid "Element-wise inverse sine."
+msgstr ""
+
+#: ../../../src/python/ops.rst:125:<autosummary>:1
+msgid ""
+":py:obj:`arcsinh <mlx.core.arcsinh>`\\ \\(a\\, \\/\\, \\*\\[\\, stream\\]\\)"
+msgstr ""
+
+#: ../../../src/python/ops.rst:125:<autosummary>:1
+msgid "Element-wise inverse hyperbolic sine."
+msgstr ""
+
+#: ../../../src/python/ops.rst:125:<autosummary>:1
+msgid ""
+":py:obj:`arctan <mlx.core.arctan>`\\ \\(a\\, \\/\\, \\*\\[\\, stream\\]\\)"
+msgstr ""
+
+#: ../../../src/python/ops.rst:125:<autosummary>:1
+msgid "Element-wise inverse tangent."
+msgstr "逐元素反正切。"
+
+#: ../../../src/python/ops.rst:125:<autosummary>:1
+msgid ""
+":py:obj:`arctanh <mlx.core.arctanh>`\\ \\(a\\, \\/\\, \\*\\[\\, stream\\]\\)"
+msgstr ""
+
+#: ../../../src/python/ops.rst:125:<autosummary>:1
+msgid "Element-wise inverse hyperbolic tangent."
+msgstr ""
+
+#: ../../../src/python/ops.rst:125:<autosummary>:1
+msgid ""
+":py:obj:`argmax <mlx.core.argmax>`\\ \\(a\\, \\/\\[\\, axis\\, keepdims\\, "
+"stream\\]\\)"
+msgstr ""
+
+#: ../../../src/python/ops.rst:125:<autosummary>:1
+msgid "Indices of the maximum values along the axis."
+msgstr "沿指定軸的最大值索引。"
+
+#: ../../../src/python/ops.rst:125:<autosummary>:1
+msgid ""
+":py:obj:`argmin <mlx.core.argmin>`\\ \\(a\\, \\/\\[\\, axis\\, keepdims\\, "
+"stream\\]\\)"
+msgstr ""
+
+#: ../../../src/python/ops.rst:125:<autosummary>:1
+msgid "Indices of the minimum values along the axis."
+msgstr "沿指定軸的最小值索引。"
+
+#: ../../../src/python/ops.rst:125:<autosummary>:1
+msgid ""
+":py:obj:`argpartition <mlx.core.argpartition>`\\ \\(a\\, \\/\\, kth\\[\\, "
+"axis\\, stream\\]\\)"
+msgstr ""
+
+#: ../../../src/python/ops.rst:125:<autosummary>:1
+msgid "Returns the indices that partition the array."
+msgstr ""
+
+#: ../../../src/python/ops.rst:125:<autosummary>:1
+msgid ""
+":py:obj:`argsort <mlx.core.argsort>`\\ \\(a\\, \\/\\[\\, axis\\, stream\\]\\)"
+msgstr ""
+
+#: ../../../src/python/ops.rst:125:<autosummary>:1
+msgid "Returns the indices that sort the array."
+msgstr "回傳可排序陣列的索引。"
+
+#: ../../../src/python/ops.rst:125:<autosummary>:1
+msgid ""
+":py:obj:`array_equal <mlx.core.array_equal>`\\ \\(a\\, b\\[\\, "
+"equal\\_nan\\, stream\\]\\)"
+msgstr ""
+
+#: ../../../src/python/ops.rst:125:<autosummary>:1
+msgid "Array equality check."
+msgstr "陣列相等性檢查。"
+
+#: ../../../src/python/ops.rst:125:<autosummary>:1
+msgid ""
+":py:obj:`broadcast_to <mlx.core.broadcast_to>`\\ \\(a\\, \\/\\, shape\\, "
+"\\*\\[\\, stream\\]\\)"
+msgstr ""
+
+#: ../../../src/python/ops.rst:125:<autosummary>:1
+msgid "Broadcast an array to the given shape."
+msgstr ""
+
+#: ../../../src/python/ops.rst:125:<autosummary>:1
+msgid ":py:obj:`ceil <mlx.core.ceil>`\\ \\(a\\, \\/\\, \\*\\[\\, stream\\]\\)"
+msgstr ""
+
+#: ../../../src/python/ops.rst:125:<autosummary>:1
+msgid "Element-wise ceil."
+msgstr ""
+
+#: ../../../src/python/ops.rst:125:<autosummary>:1
+msgid ""
+":py:obj:`clip <mlx.core.clip>`\\ \\(a\\, \\/\\, a\\_min\\, a\\_max\\, "
+"\\*\\[\\, stream\\]\\)"
+msgstr ""
+
+#: ../../../src/python/ops.rst:125:<autosummary>:1
+msgid "Clip the values of the array between the given minimum and maximum."
+msgstr ""
+
+#: ../../../src/python/ops.rst:125:<autosummary>:1
+msgid ""
+":py:obj:`concatenate <mlx.core.concatenate>`\\ \\(arrays\\[\\, axis\\, "
+"stream\\]\\)"
+msgstr ""
+
+#: ../../../src/python/ops.rst:125:<autosummary>:1
+msgid "Concatenate the arrays along the given axis."
+msgstr ""
+
+#: ../../../src/python/ops.rst:125:<autosummary>:1
+msgid ""
+":py:obj:`convolve <mlx.core.convolve>`\\ \\(a\\, v\\, \\/\\[\\, mode\\, "
+"stream\\]\\)"
+msgstr ""
+
+#: ../../../src/python/ops.rst:125:<autosummary>:1
+msgid "The discrete convolution of 1D arrays."
+msgstr ""
+
+#: ../../../src/python/ops.rst:125:<autosummary>:1
+msgid ""
+":py:obj:`conv1d <mlx.core.conv1d>`\\ \\(input\\, weight\\, \\/\\[\\, "
+"stride\\, padding\\, ...\\]\\)"
+msgstr ""
+
+#: ../../../src/python/ops.rst:125:<autosummary>:1
+msgid "1D convolution over an input with several channels"
+msgstr ""
+
+#: ../../../src/python/ops.rst:125:<autosummary>:1
+msgid ""
+":py:obj:`conv2d <mlx.core.conv2d>`\\ \\(input\\, weight\\, \\/\\[\\, "
+"stride\\, padding\\, ...\\]\\)"
+msgstr ""
+
+#: ../../../src/python/ops.rst:125:<autosummary>:1
+msgid "2D convolution over an input with several channels"
+msgstr ""
+
+#: ../../../src/python/ops.rst:125:<autosummary>:1
+msgid ":py:obj:`cos <mlx.core.cos>`\\ \\(a\\, \\/\\, \\*\\[\\, stream\\]\\)"
+msgstr ""
+
+#: ../../../src/python/ops.rst:125:<autosummary>:1
+msgid "Element-wise cosine."
+msgstr ""
+
+#: ../../../src/python/ops.rst:125:<autosummary>:1
+msgid ":py:obj:`cosh <mlx.core.cosh>`\\ \\(a\\, \\/\\, \\*\\[\\, stream\\]\\)"
+msgstr ""
+
+#: ../../../src/python/ops.rst:125:<autosummary>:1
+msgid "Element-wise hyperbolic cosine."
+msgstr ""
+
+#: ../../../src/python/ops.rst:125:<autosummary>:1
+msgid ""
+":py:obj:`dequantize <mlx.core.dequantize>`\\ \\(w\\, \\/\\, scales\\, "
+"biases\\[\\, ...\\]\\)"
+msgstr ""
+
+#: ../../../src/python/ops.rst:125:<autosummary>:1
+msgid ""
+"Dequantize the matrix ``w`` using the provided ``scales`` and ``biases`` and "
+"the ``group_size`` and ``bits`` configuration."
+msgstr ""
+
+#: ../../../src/python/ops.rst:125:<autosummary>:1
+msgid ":py:obj:`divide <mlx.core.divide>`\\ \\(a\\, b\\[\\, stream\\]\\)"
+msgstr ""
+
+#: ../../../src/python/ops.rst:125:<autosummary>:1
+msgid "Element-wise division."
+msgstr ""
+
+#: ../../../src/python/ops.rst:125:<autosummary>:1
+msgid ":py:obj:`divmod <mlx.core.divmod>`\\ \\(a\\, b\\[\\, stream\\]\\)"
+msgstr ""
+
+#: ../../../src/python/ops.rst:125:<autosummary>:1
+msgid "Element-wise quotient and remainder."
+msgstr ""
+
+#: ../../../src/python/ops.rst:125:<autosummary>:1
+msgid ":py:obj:`equal <mlx.core.equal>`\\ \\(a\\, b\\[\\, stream\\]\\)"
+msgstr ""
+
+#: ../../../src/python/ops.rst:125:<autosummary>:1
+msgid "Element-wise equality."
+msgstr ""
+
+#: ../../../src/python/ops.rst:125:<autosummary>:1
+msgid ":py:obj:`erf <mlx.core.erf>`\\ \\(a\\, \\/\\, \\*\\[\\, stream\\]\\)"
+msgstr ""
+
+#: ../../../src/python/ops.rst:125:<autosummary>:1
+msgid "Element-wise error function."
+msgstr ""
+
+#: ../../../src/python/ops.rst:125:<autosummary>:1
+msgid ""
+":py:obj:`erfinv <mlx.core.erfinv>`\\ \\(a\\, \\/\\, \\*\\[\\, stream\\]\\)"
+msgstr ""
+
+#: ../../../src/python/ops.rst:125:<autosummary>:1
+msgid "Element-wise inverse of :func:`erf`."
+msgstr ""
+
+#: ../../../src/python/ops.rst:125:<autosummary>:1
+msgid ":py:obj:`exp <mlx.core.exp>`\\ \\(a\\, \\/\\, \\*\\[\\, stream\\]\\)"
+msgstr ""
+
+#: ../../../src/python/ops.rst:125:<autosummary>:1
+msgid "Element-wise exponential."
+msgstr ""
+
+#: ../../../src/python/ops.rst:125:<autosummary>:1
+msgid ""
+":py:obj:`expand_dims <mlx.core.expand_dims>`\\ \\(a\\, \\/\\, axis\\, "
+"\\*\\[\\, stream\\]\\)"
+msgstr ""
+
+#: ../../../src/python/ops.rst:125:<autosummary>:1
+msgid "Add a size one dimension at the given axis."
+msgstr ""
+
+#: ../../../src/python/ops.rst:125:<autosummary>:1
+msgid ""
+":py:obj:`eye <mlx.core.eye>`\\ \\(n\\[\\, m\\, k\\, dtype\\, stream\\]\\)"
+msgstr ""
+
+#: ../../../src/python/ops.rst:125:<autosummary>:1
+msgid "Create an identity matrix or a general diagonal matrix."
+msgstr ""
+
+#: ../../../src/python/ops.rst:125:<autosummary>:1
+msgid ""
+":py:obj:`flatten <mlx.core.flatten>`\\ \\(a\\, \\/\\[\\, start\\_axis\\, "
+"end\\_axis\\, stream\\]\\)"
+msgstr ""
+
+#: ../../../src/python/ops.rst:125:<autosummary>:1
+msgid "Flatten an array."
+msgstr ""
+
+#: ../../../src/python/ops.rst:125:<autosummary>:1
+msgid ""
+":py:obj:`floor <mlx.core.floor>`\\ \\(a\\, \\/\\, \\*\\[\\, stream\\]\\)"
+msgstr ""
+
+#: ../../../src/python/ops.rst:125:<autosummary>:1
+msgid "Element-wise floor."
+msgstr ""
+
+#: ../../../src/python/ops.rst:125:<autosummary>:1
+msgid ""
+":py:obj:`floor_divide <mlx.core.floor_divide>`\\ \\(a\\, b\\[\\, stream\\]\\)"
+msgstr ""
+
+#: ../../../src/python/ops.rst:125:<autosummary>:1
+msgid "Element-wise integer division."
+msgstr ""
+
+#: ../../../src/python/ops.rst:125:<autosummary>:1
+msgid ""
+":py:obj:`full <mlx.core.full>`\\ \\(shape\\, vals\\[\\, dtype\\, stream\\]\\)"
+msgstr ""
+
+#: ../../../src/python/ops.rst:125:<autosummary>:1
+msgid "Construct an array with the given value."
+msgstr ""
+
+#: ../../../src/python/ops.rst:125:<autosummary>:1
+msgid ":py:obj:`greater <mlx.core.greater>`\\ \\(a\\, b\\[\\, stream\\]\\)"
+msgstr ""
+
+#: ../../../src/python/ops.rst:125:<autosummary>:1
+msgid "Element-wise greater than."
+msgstr ""
+
+#: ../../../src/python/ops.rst:125:<autosummary>:1
+msgid ""
+":py:obj:`greater_equal <mlx.core.greater_equal>`\\ \\(a\\, b\\[\\, "
+"stream\\]\\)"
+msgstr ""
+
+#: ../../../src/python/ops.rst:125:<autosummary>:1
+msgid "Element-wise greater or equal."
+msgstr ""
+
+#: ../../../src/python/ops.rst:125:<autosummary>:1
+msgid ""
+":py:obj:`identity <mlx.core.identity>`\\ \\(n\\[\\, dtype\\, stream\\]\\)"
+msgstr ""
+
+#: ../../../src/python/ops.rst:125:<autosummary>:1
+msgid "Create a square identity matrix."
+msgstr ""
+
+#: ../../../src/python/ops.rst:125:<autosummary>:1
+msgid ""
+":py:obj:`inner <mlx.core.inner>`\\ \\(a\\, b\\, \\/\\, \\*\\[\\, stream\\]\\)"
+msgstr ""
+
+#: ../../../src/python/ops.rst:125:<autosummary>:1
+msgid ""
+"Ordinary inner product of vectors for 1-D arrays, in higher dimensions a sum "
+"product over the last axes."
+msgstr ""
+
+#: ../../../src/python/ops.rst:125:<autosummary>:1
+msgid ":py:obj:`isnan <mlx.core.isnan>`\\ \\(a\\[\\, stream\\]\\)"
+msgstr ""
+
+#: ../../../src/python/ops.rst:125:<autosummary>:1
+msgid "Return a boolean array indicating which elements are NaN."
+msgstr ""
+
+#: ../../../src/python/ops.rst:125:<autosummary>:1
+msgid ":py:obj:`isposinf <mlx.core.isposinf>`\\ \\(a\\[\\, stream\\]\\)"
+msgstr ""
+
+#: ../../../src/python/ops.rst:125:<autosummary>:1
+msgid "Return a boolean array indicating which elements are positive infinity."
+msgstr ""
+
+#: ../../../src/python/ops.rst:125:<autosummary>:1
+msgid ":py:obj:`isneginf <mlx.core.isneginf>`\\ \\(a\\[\\, stream\\]\\)"
+msgstr ""
+
+#: ../../../src/python/ops.rst:125:<autosummary>:1
+msgid "Return a boolean array indicating which elements are negative infinity."
+msgstr ""
+
+#: ../../../src/python/ops.rst:125:<autosummary>:1
+msgid ":py:obj:`isinf <mlx.core.isinf>`\\ \\(a\\[\\, stream\\]\\)"
+msgstr ""
+
+#: ../../../src/python/ops.rst:125:<autosummary>:1
+msgid "Return a boolean array indicating which elements are +/- inifnity."
+msgstr ""
+
+#: ../../../src/python/ops.rst:125:<autosummary>:1
+msgid ":py:obj:`less <mlx.core.less>`\\ \\(a\\, b\\[\\, stream\\]\\)"
+msgstr ""
+
+#: ../../../src/python/ops.rst:125:<autosummary>:1
+msgid "Element-wise less than."
+msgstr ""
+
+#: ../../../src/python/ops.rst:125:<autosummary>:1
+msgid ""
+":py:obj:`less_equal <mlx.core.less_equal>`\\ \\(a\\, b\\[\\, stream\\]\\)"
+msgstr ""
+
+#: ../../../src/python/ops.rst:125:<autosummary>:1
+msgid "Element-wise less than or equal."
+msgstr ""
+
+#: ../../../src/python/ops.rst:125:<autosummary>:1
+msgid ""
+":py:obj:`linspace <mlx.core.linspace>`\\ \\(start\\, stop\\[\\, num\\, "
+"dtype\\, stream\\]\\)"
+msgstr ""
+
+#: ../../../src/python/ops.rst:125:<autosummary>:1
+msgid "Generate ``num`` evenly spaced numbers over interval ``[start, stop]``."
+msgstr ""
+
+#: ../../../src/python/ops.rst:125:<autosummary>:1
+msgid ""
+":py:obj:`load <mlx.core.load>`\\ \\(file\\, \\/\\[\\, format\\, "
+"return\\_metadata\\, stream\\]\\)"
+msgstr ""
+
+#: ../../../src/python/ops.rst:125:<autosummary>:1
+msgid "Load array(s) from a binary file."
+msgstr ""
+
+#: ../../../src/python/ops.rst:125:<autosummary>:1
+msgid ":py:obj:`log <mlx.core.log>`\\ \\(a\\, \\/\\, \\*\\[\\, stream\\]\\)"
+msgstr ""
+
+#: ../../../src/python/ops.rst:125:<autosummary>:1
+msgid "Element-wise natural logarithm."
+msgstr ""
+
+#: ../../../src/python/ops.rst:125:<autosummary>:1
+msgid ":py:obj:`log2 <mlx.core.log2>`\\ \\(a\\, \\/\\, \\*\\[\\, stream\\]\\)"
+msgstr ""
+
+#: ../../../src/python/ops.rst:125:<autosummary>:1
+msgid "Element-wise base-2 logarithm."
+msgstr ""
+
+#: ../../../src/python/ops.rst:125:<autosummary>:1
+msgid ""
+":py:obj:`log10 <mlx.core.log10>`\\ \\(a\\, \\/\\, \\*\\[\\, stream\\]\\)"
+msgstr ""
+
+#: ../../../src/python/ops.rst:125:<autosummary>:1
+msgid "Element-wise base-10 logarithm."
+msgstr ""
+
+#: ../../../src/python/ops.rst:125:<autosummary>:1
+msgid ""
+":py:obj:`log1p <mlx.core.log1p>`\\ \\(a\\, \\/\\, \\*\\[\\, stream\\]\\)"
+msgstr ""
+
+#: ../../../src/python/ops.rst:125:<autosummary>:1
+msgid "Element-wise natural log of one plus the array."
+msgstr ""
+
+#: ../../../src/python/ops.rst:125:<autosummary>:1
+msgid ""
+":py:obj:`logaddexp <mlx.core.logaddexp>`\\ \\(a\\, b\\, \\/\\, \\*\\[\\, "
+"stream\\]\\)"
+msgstr ""
+
+#: ../../../src/python/ops.rst:125:<autosummary>:1
+msgid "Element-wise log-add-exp."
+msgstr ""
+
+#: ../../../src/python/ops.rst:125:<autosummary>:1
+msgid ""
+":py:obj:`logical_not <mlx.core.logical_not>`\\ \\(a\\, \\/\\, \\*\\[\\, "
+"stream\\]\\)"
+msgstr ""
+
+#: ../../../src/python/ops.rst:125:<autosummary>:1
+msgid "Element-wise logical not."
+msgstr ""
+
+#: ../../../src/python/ops.rst:125:<autosummary>:1
+msgid ""
+":py:obj:`logical_and <mlx.core.logical_and>`\\ \\(a\\, b\\, \\/\\, \\*\\[\\, "
+"stream\\]\\)"
+msgstr ""
+
+#: ../../../src/python/ops.rst:125:<autosummary>:1
+msgid "Element-wise logical and."
+msgstr ""
+
+#: ../../../src/python/ops.rst:125:<autosummary>:1
+msgid ""
+":py:obj:`logical_or <mlx.core.logical_or>`\\ \\(a\\, b\\, \\/\\, \\*\\[\\, "
+"stream\\]\\)"
+msgstr ""
+
+#: ../../../src/python/ops.rst:125:<autosummary>:1
+msgid "Element-wise logical or."
+msgstr ""
+
+#: ../../../src/python/ops.rst:125:<autosummary>:1
+msgid ""
+":py:obj:`logsumexp <mlx.core.logsumexp>`\\ \\(a\\, \\/\\[\\, axis\\, "
+"keepdims\\, stream\\]\\)"
+msgstr ""
+
+#: ../../../src/python/ops.rst:125:<autosummary>:1
+msgid "A `log-sum-exp` reduction over the given axes."
+msgstr ""
+
+#: ../../../src/python/ops.rst:125:<autosummary>:1
+msgid ""
+":py:obj:`matmul <mlx.core.matmul>`\\ \\(a\\, b\\, \\/\\, \\*\\[\\, "
+"stream\\]\\)"
+msgstr ""
+
+#: ../../../src/python/ops.rst:125:<autosummary>:1
+msgid "Matrix multiplication."
+msgstr ""
+
+#: ../../../src/python/ops.rst:125:<autosummary>:1
+msgid ""
+":py:obj:`max <mlx.core.max>`\\ \\(a\\, \\/\\[\\, axis\\, keepdims\\, "
+"stream\\]\\)"
+msgstr ""
+
+#: ../../../src/python/ops.rst:125:<autosummary>:1
+msgid "An `max` reduction over the given axes."
+msgstr ""
+
+#: ../../../src/python/ops.rst:125:<autosummary>:1
+msgid ""
+":py:obj:`maximum <mlx.core.maximum>`\\ \\(a\\, b\\, \\/\\, \\*\\[\\, "
+"stream\\]\\)"
+msgstr ""
+
+#: ../../../src/python/ops.rst:125:<autosummary>:1
+msgid "Element-wise maximum."
+msgstr ""
+
+#: ../../../src/python/ops.rst:125:<autosummary>:1
+msgid ""
+":py:obj:`mean <mlx.core.mean>`\\ \\(a\\, \\/\\[\\, axis\\, keepdims\\, "
+"stream\\]\\)"
+msgstr ""
+
+#: ../../../src/python/ops.rst:125:<autosummary>:1
+msgid "Compute the mean(s) over the given axes."
+msgstr ""
+
+#: ../../../src/python/ops.rst:125:<autosummary>:1
+msgid ""
+":py:obj:`min <mlx.core.min>`\\ \\(a\\, \\/\\[\\, axis\\, keepdims\\, "
+"stream\\]\\)"
+msgstr ""
+
+#: ../../../src/python/ops.rst:125:<autosummary>:1
+msgid "An `min` reduction over the given axes."
+msgstr ""
+
+#: ../../../src/python/ops.rst:125:<autosummary>:1
+msgid ""
+":py:obj:`minimum <mlx.core.minimum>`\\ \\(a\\, b\\, \\/\\, \\*\\[\\, "
+"stream\\]\\)"
+msgstr ""
+
+#: ../../../src/python/ops.rst:125:<autosummary>:1
+msgid "Element-wise minimum."
+msgstr ""
+
+#: ../../../src/python/ops.rst:125:<autosummary>:1
+msgid ""
+":py:obj:`moveaxis <mlx.core.moveaxis>`\\ \\(a\\, \\/\\, source\\, "
+"destination\\, \\*\\[\\, stream\\]\\)"
+msgstr ""
+
+#: ../../../src/python/ops.rst:125:<autosummary>:1
+msgid "Move an axis to a new position."
+msgstr ""
+
+#: ../../../src/python/ops.rst:125:<autosummary>:1
+msgid ":py:obj:`multiply <mlx.core.multiply>`\\ \\(a\\, b\\[\\, stream\\]\\)"
+msgstr ""
+
+#: ../../../src/python/ops.rst:125:<autosummary>:1
+msgid "Element-wise multiplication."
+msgstr ""
+
+#: ../../../src/python/ops.rst:125:<autosummary>:1
+msgid ""
+":py:obj:`negative <mlx.core.negative>`\\ \\(a\\, \\/\\, \\*\\[\\, "
+"stream\\]\\)"
+msgstr ""
+
+#: ../../../src/python/ops.rst:125:<autosummary>:1
+msgid "Element-wise negation."
+msgstr ""
+
+#: ../../../src/python/ops.rst:125:<autosummary>:1
+msgid ":py:obj:`ones <mlx.core.ones>`\\ \\(shape\\[\\, dtype\\, stream\\]\\)"
+msgstr ""
+
+#: ../../../src/python/ops.rst:125:<autosummary>:1
+msgid "Construct an array of ones."
+msgstr ""
+
+#: ../../../src/python/ops.rst:125:<autosummary>:1
+msgid ""
+":py:obj:`ones_like <mlx.core.ones_like>`\\ \\(a\\, \\/\\, \\*\\[\\, "
+"stream\\]\\)"
+msgstr ""
+
+#: ../../../src/python/ops.rst:125:<autosummary>:1
+msgid "An array of ones like the input."
+msgstr ""
+
+#: ../../../src/python/ops.rst:125:<autosummary>:1
+msgid ""
+":py:obj:`outer <mlx.core.outer>`\\ \\(a\\, b\\, \\/\\, \\*\\[\\, stream\\]\\)"
+msgstr ""
+
+#: ../../../src/python/ops.rst:125:<autosummary>:1
+msgid ""
+"Compute the outer product of two 1-D arrays, if the array's passed are not 1-"
+"D a flatten op will be run beforehand."
+msgstr ""
+
+#: ../../../src/python/ops.rst:125:<autosummary>:1
+msgid ""
+":py:obj:`partition <mlx.core.partition>`\\ \\(a\\, \\/\\, kth\\[\\, axis\\, "
+"stream\\]\\)"
+msgstr ""
+
+#: ../../../src/python/ops.rst:125:<autosummary>:1
+msgid ""
+"Returns a partitioned copy of the array such that the smaller ``kth`` "
+"elements are first."
+msgstr ""
+
+#: ../../../src/python/ops.rst:125:<autosummary>:1
+msgid ""
+":py:obj:`pad <mlx.core.pad>`\\ \\(a\\, pad\\_with\\[\\, constant\\_values\\, "
+"stream\\]\\)"
+msgstr ""
+
+#: ../../../src/python/ops.rst:125:<autosummary>:1
+msgid "Pad an array with a constant value"
+msgstr ""
+
+#: ../../../src/python/ops.rst:125:<autosummary>:1
+msgid ""
+":py:obj:`prod <mlx.core.prod>`\\ \\(a\\, \\/\\[\\, axis\\, keepdims\\, "
+"stream\\]\\)"
+msgstr ""
+
+#: ../../../src/python/ops.rst:125:<autosummary>:1
+msgid "An product reduction over the given axes."
+msgstr ""
+
+#: ../../../src/python/ops.rst:125:<autosummary>:1
+msgid ""
+":py:obj:`quantize <mlx.core.quantize>`\\ \\(w\\, \\/\\[\\, group\\_size\\, "
+"bits\\, stream\\]\\)"
+msgstr ""
+
+#: ../../../src/python/ops.rst:125:<autosummary>:1
+msgid "Quantize the matrix ``w`` using ``bits`` bits per element."
+msgstr ""
+
+#: ../../../src/python/ops.rst:125:<autosummary>:1
+msgid ""
+":py:obj:`quantized_matmul <mlx.core.quantized_matmul>`\\ \\(x\\, w\\, \\/\\, "
+"scales\\, biases\\[\\, ...\\]\\)"
+msgstr ""
+
+#: ../../../src/python/ops.rst:125:<autosummary>:1
+msgid "Perform the matrix multiplication with the quantized matrix ``w``."
+msgstr ""
+
+#: ../../../src/python/ops.rst:125:<autosummary>:1
+msgid ""
+":py:obj:`reciprocal <mlx.core.reciprocal>`\\ \\(a\\, \\/\\, \\*\\[\\, "
+"stream\\]\\)"
+msgstr ""
+
+#: ../../../src/python/ops.rst:125:<autosummary>:1
+msgid "Element-wise reciprocal."
+msgstr ""
+
+#: ../../../src/python/ops.rst:125:<autosummary>:1
+msgid ""
+":py:obj:`repeat <mlx.core.repeat>`\\ \\(array\\, repeats\\[\\, axis\\, "
+"stream\\]\\)"
+msgstr ""
+
+#: ../../../src/python/ops.rst:125:<autosummary>:1
+msgid "Repeat an array along a specified axis."
+msgstr ""
+
+#: ../../../src/python/ops.rst:125:<autosummary>:1
+msgid ""
+":py:obj:`reshape <mlx.core.reshape>`\\ \\(a\\, \\/\\, shape\\, \\*\\[\\, "
+"stream\\]\\)"
+msgstr ""
+
+#: ../../../src/python/ops.rst:125:<autosummary>:1
+msgid "Reshape an array while preserving the size."
+msgstr ""
+
+#: ../../../src/python/ops.rst:125:<autosummary>:1
+msgid ""
+":py:obj:`round <mlx.core.round>`\\ \\(a\\, \\/\\[\\, decimals\\, stream\\]\\)"
+msgstr ""
+
+#: ../../../src/python/ops.rst:125:<autosummary>:1
+msgid "Round to the given number of decimals."
+msgstr ""
+
+#: ../../../src/python/ops.rst:125:<autosummary>:1
+msgid ""
+":py:obj:`rsqrt <mlx.core.rsqrt>`\\ \\(a\\, \\/\\, \\*\\[\\, stream\\]\\)"
+msgstr ""
+
+#: ../../../src/python/ops.rst:125:<autosummary>:1
+msgid "Element-wise reciprocal and square root."
+msgstr ""
+
+#: ../../../src/python/ops.rst:125:<autosummary>:1
+msgid ":py:obj:`save <mlx.core.save>`\\ \\(file\\, arr\\)"
+msgstr ""
+
+#: ../../../src/python/ops.rst:125:<autosummary>:1
+msgid "Save the array to a binary file in ``.npy`` format."
+msgstr ""
+
+#: ../../../src/python/ops.rst:125:<autosummary>:1
+msgid ""
+":py:obj:`savez <mlx.core.savez>`\\ \\(file\\, \\*args\\, \\*\\*kwargs\\)"
+msgstr ""
+
+#: ../../../src/python/ops.rst:125:<autosummary>:1
+msgid "Save several arrays to a binary file in uncompressed ``.npz`` format."
+msgstr ""
+
+#: ../../../src/python/ops.rst:125:<autosummary>:1
+msgid ""
+":py:obj:`savez_compressed <mlx.core.savez_compressed>`\\ \\(file\\, "
+"\\*args\\, \\*\\*kwargs\\)"
+msgstr ""
+
+#: ../../../src/python/ops.rst:125:<autosummary>:1
+msgid "Save several arrays to a binary file in compressed ``.npz`` format."
+msgstr ""
+
+#: ../../../src/python/ops.rst:125:<autosummary>:1
+msgid ""
+":py:obj:`save_gguf <mlx.core.save_gguf>`\\ \\(file\\, arrays\\, metadata\\)"
+msgstr ""
+
+#: ../../../src/python/ops.rst:125:<autosummary>:1
+msgid "Save array(s) to a binary file in ``.gguf`` format."
+msgstr ""
+
+#: ../../../src/python/ops.rst:125:<autosummary>:1
+msgid ""
+":py:obj:`save_safetensors <mlx.core.save_safetensors>`\\ \\(file\\, arrays\\)"
+msgstr ""
+
+#: ../../../src/python/ops.rst:125:<autosummary>:1
+msgid "Save array(s) to a binary file in ``.safetensors`` format."
+msgstr ""
+
+#: ../../../src/python/ops.rst:125:<autosummary>:1
+msgid ""
+":py:obj:`sigmoid <mlx.core.sigmoid>`\\ \\(a\\, \\/\\, \\*\\[\\, stream\\]\\)"
+msgstr ""
+
+#: ../../../src/python/ops.rst:125:<autosummary>:1
+msgid "Element-wise logistic sigmoid."
+msgstr ""
+
+#: ../../../src/python/ops.rst:125:<autosummary>:1
+msgid ":py:obj:`sign <mlx.core.sign>`\\ \\(a\\, \\/\\, \\*\\[\\, stream\\]\\)"
+msgstr ""
+
+#: ../../../src/python/ops.rst:125:<autosummary>:1
+msgid "Element-wise sign."
+msgstr ""
+
+#: ../../../src/python/ops.rst:125:<autosummary>:1
+msgid ":py:obj:`sin <mlx.core.sin>`\\ \\(a\\, \\/\\, \\*\\[\\, stream\\]\\)"
+msgstr ""
+
+#: ../../../src/python/ops.rst:125:<autosummary>:1
+msgid "Element-wise sine."
+msgstr ""
+
+#: ../../../src/python/ops.rst:125:<autosummary>:1
+msgid ":py:obj:`sinh <mlx.core.sinh>`\\ \\(a\\, \\/\\, \\*\\[\\, stream\\]\\)"
+msgstr ""
+
+#: ../../../src/python/ops.rst:125:<autosummary>:1
+msgid "Element-wise hyperbolic sine."
+msgstr ""
+
+#: ../../../src/python/ops.rst:125:<autosummary>:1
+msgid ""
+":py:obj:`softmax <mlx.core.softmax>`\\ \\(a\\, \\/\\[\\, axis\\, stream\\]\\)"
+msgstr ""
+
+#: ../../../src/python/ops.rst:125:<autosummary>:1
+msgid "Perform the softmax along the given axis."
+msgstr ""
+
+#: ../../../src/python/ops.rst:125:<autosummary>:1
+msgid ":py:obj:`sort <mlx.core.sort>`\\ \\(a\\, \\/\\[\\, axis\\, stream\\]\\)"
+msgstr ""
+
+#: ../../../src/python/ops.rst:125:<autosummary>:1
+msgid "Returns a sorted copy of the array."
+msgstr ""
+
+#: ../../../src/python/ops.rst:125:<autosummary>:1
+msgid ""
+":py:obj:`split <mlx.core.split>`\\ \\(a\\, \\/\\, "
+"indices\\_or\\_sections\\[\\, axis\\, stream\\]\\)"
+msgstr ""
+
+#: ../../../src/python/ops.rst:125:<autosummary>:1
+msgid "Split an array along a given axis."
+msgstr ""
+
+#: ../../../src/python/ops.rst:125:<autosummary>:1
+msgid ":py:obj:`sqrt <mlx.core.sqrt>`\\ \\(a\\, \\/\\, \\*\\[\\, stream\\]\\)"
+msgstr ""
+
+#: ../../../src/python/ops.rst:125:<autosummary>:1
+msgid "Element-wise square root."
+msgstr ""
+
+#: ../../../src/python/ops.rst:125:<autosummary>:1
+msgid ""
+":py:obj:`square <mlx.core.square>`\\ \\(a\\, \\/\\, \\*\\[\\, stream\\]\\)"
+msgstr ""
+
+#: ../../../src/python/ops.rst:125:<autosummary>:1
+msgid "Element-wise square."
+msgstr ""
+
+#: ../../../src/python/ops.rst:125:<autosummary>:1
+msgid ""
+":py:obj:`squeeze <mlx.core.squeeze>`\\ \\(a\\, \\/\\[\\, axis\\, stream\\]\\)"
+msgstr ""
+
+#: ../../../src/python/ops.rst:125:<autosummary>:1
+msgid "Remove length one axes from an array."
+msgstr ""
+
+#: ../../../src/python/ops.rst:125:<autosummary>:1
+msgid ":py:obj:`stack <mlx.core.stack>`\\ \\(arrays\\[\\, axis\\, stream\\]\\)"
+msgstr ""
+
+#: ../../../src/python/ops.rst:125:<autosummary>:1
+msgid "Stacks the arrays along a new axis."
+msgstr ""
+
+#: ../../../src/python/ops.rst:125:<autosummary>:1
+msgid ""
+":py:obj:`stop_gradient <mlx.core.stop_gradient>`\\ \\(a\\, \\/\\, \\*\\[\\, "
+"stream\\]\\)"
+msgstr ""
+
+#: ../../../src/python/ops.rst:125:<autosummary>:1
+msgid "Stop gradients from being computed."
+msgstr ""
+
+#: ../../../src/python/ops.rst:125:<autosummary>:1
+msgid ":py:obj:`subtract <mlx.core.subtract>`\\ \\(a\\, b\\[\\, stream\\]\\)"
+msgstr ""
+
+#: ../../../src/python/ops.rst:125:<autosummary>:1
+msgid "Element-wise subtraction."
+msgstr ""
+
+#: ../../../src/python/ops.rst:125:<autosummary>:1
+msgid ""
+":py:obj:`sum <mlx.core.sum>`\\ \\(a\\, \\/\\[\\, axis\\, keepdims\\, "
+"stream\\]\\)"
+msgstr ""
+
+#: ../../../src/python/ops.rst:125:<autosummary>:1
+msgid "Sum reduce the array over the given axes."
+msgstr ""
+
+#: ../../../src/python/ops.rst:125:<autosummary>:1
+msgid ""
+":py:obj:`swapaxes <mlx.core.swapaxes>`\\ \\(a\\, \\/\\, axis1\\, axis2\\, "
+"\\*\\[\\, stream\\]\\)"
+msgstr ""
+
+#: ../../../src/python/ops.rst:125:<autosummary>:1
+msgid "Swap two axes of an array."
+msgstr ""
+
+#: ../../../src/python/ops.rst:125:<autosummary>:1
+msgid ""
+":py:obj:`take <mlx.core.take>`\\ \\(a\\, \\/\\, indices\\[\\, axis\\, "
+"stream\\]\\)"
+msgstr ""
+
+#: ../../../src/python/ops.rst:125:<autosummary>:1
+msgid "Take elements along an axis."
+msgstr ""
+
+#: ../../../src/python/ops.rst:125:<autosummary>:1
+msgid ""
+":py:obj:`take_along_axis <mlx.core.take_along_axis>`\\ \\(a\\, \\/\\, "
+"indices\\[\\, axis\\, stream\\]\\)"
+msgstr ""
+
+#: ../../../src/python/ops.rst:125:<autosummary>:1
+msgid "Take values along an axis at the specified indices."
+msgstr ""
+
+#: ../../../src/python/ops.rst:125:<autosummary>:1
+msgid ":py:obj:`tan <mlx.core.tan>`\\ \\(a\\, \\/\\, \\*\\[\\, stream\\]\\)"
+msgstr ""
+
+#: ../../../src/python/ops.rst:125:<autosummary>:1
+msgid "Element-wise tangent."
+msgstr ""
+
+#: ../../../src/python/ops.rst:125:<autosummary>:1
+msgid ":py:obj:`tanh <mlx.core.tanh>`\\ \\(a\\, \\/\\, \\*\\[\\, stream\\]\\)"
+msgstr ""
+
+#: ../../../src/python/ops.rst:125:<autosummary>:1
+msgid "Element-wise hyperbolic tangent."
+msgstr ""
+
+#: ../../../src/python/ops.rst:125:<autosummary>:1
+msgid ""
+":py:obj:`tensordot <mlx.core.tensordot>`\\ \\(a\\, b\\, \\/\\[\\, axes\\, "
+"stream\\]\\)"
+msgstr ""
+
+#: ../../../src/python/ops.rst:125:<autosummary>:1
+msgid "Compute the tensor dot product along the specified axes."
+msgstr ""
+
+#: ../../../src/python/ops.rst:125:<autosummary>:1
+msgid ""
+":py:obj:`transpose <mlx.core.transpose>`\\ \\(a\\, \\/\\[\\, axes\\, "
+"stream\\]\\)"
+msgstr ""
+
+#: ../../../src/python/ops.rst:125:<autosummary>:1
+msgid "Transpose the dimensions of the array."
+msgstr ""
+
+#: ../../../src/python/ops.rst:125:<autosummary>:1
+msgid ""
+":py:obj:`tri <mlx.core.tri>`\\ \\(n\\, m\\, k\\[\\, dtype\\, stream\\]\\)"
+msgstr ""
+
+#: ../../../src/python/ops.rst:125:<autosummary>:1
+msgid "An array with ones at and below the given diagonal and zeros elsewhere."
+msgstr ""
+
+#: ../../../src/python/ops.rst:125:<autosummary>:1
+msgid ":py:obj:`tril <mlx.core.tril>`\\ \\(x\\, k\\, \\*\\[\\, stream\\]\\)"
+msgstr ""
+
+#: ../../../src/python/ops.rst:125:<autosummary>:1
+msgid "Zeros the array above the given diagonal."
+msgstr ""
+
+#: ../../../src/python/ops.rst:125:<autosummary>:1
+msgid ":py:obj:`triu <mlx.core.triu>`\\ \\(x\\, k\\, \\*\\[\\, stream\\]\\)"
+msgstr ""
+
+#: ../../../src/python/ops.rst:125:<autosummary>:1
+msgid "Zeros the array below the given diagonal."
+msgstr ""
+
+#: ../../../src/python/ops.rst:125:<autosummary>:1
+msgid ""
+":py:obj:`var <mlx.core.var>`\\ \\(a\\, \\/\\[\\, axis\\, keepdims\\, ddof\\, "
+"stream\\]\\)"
+msgstr ""
+
+#: ../../../src/python/ops.rst:125:<autosummary>:1
+msgid "Compute the variance(s) over the given axes."
+msgstr ""
+
+#: ../../../src/python/ops.rst:125:<autosummary>:1
+msgid ""
+":py:obj:`where <mlx.core.where>`\\ \\(condition\\, x\\, y\\, \\/\\, "
+"\\*\\[\\, stream\\]\\)"
+msgstr ""
+
+#: ../../../src/python/ops.rst:125:<autosummary>:1
+msgid "Select from ``x`` or ``y`` according to ``condition``."
+msgstr ""
+
+#: ../../../src/python/ops.rst:125:<autosummary>:1
+msgid ":py:obj:`zeros <mlx.core.zeros>`\\ \\(shape\\[\\, dtype\\, stream\\]\\)"
+msgstr ""
+
+#: ../../../src/python/ops.rst:125:<autosummary>:1
+msgid "Construct an array of zeros."
+msgstr ""
+
+#: ../../../src/python/ops.rst:125:<autosummary>:1
+msgid ""
+":py:obj:`zeros_like <mlx.core.zeros_like>`\\ \\(a\\, \\/\\, \\*\\[\\, "
+"stream\\]\\)"
+msgstr ""
+
+#: ../../../src/python/ops.rst:125:<autosummary>:1
+msgid "An array of zeros like the input."
+msgstr ""
