@@ -1,0 +1,206 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023, MLX Contributors
+# This file is distributed under the same license as the MLX package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: MLX 0.13\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-12-08 12:16+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../src/python/data_types.rst:4
+msgid "Data Types"
+msgstr "資料型別"
+
+#: ../../../src/python/data_types.rst:8
+msgid ""
+"The default floating point type is ``float32`` and the default integer type "
+"is ``int32``. The table below shows supported values for :obj:`Dtype`."
+msgstr ""
+"預設浮點數型別為 ``float32``，預設整數型別為 ``int32``。下表列出 :obj:"
+"`Dtype` 支援的值。"
+
+#: ../../../src/python/data_types.rst:11
+msgid "Supported Data Types"
+msgstr "支援的資料型別"
+
+#: ../../../src/python/data_types.rst:15
+msgid "Type"
+msgstr "型別"
+
+#: ../../../src/python/data_types.rst:16
+msgid "Bytes"
+msgstr "位元組"
+
+#: ../../../src/python/data_types.rst:17
+msgid "Description"
+msgstr "描述"
+
+#: ../../../src/python/data_types.rst:18
+msgid "``bool_``"
+msgstr ""
+
+#: ../../../src/python/data_types.rst:19 ../../../src/python/data_types.rst:22
+#: ../../../src/python/data_types.rst:34
+msgid "1"
+msgstr ""
+
+#: ../../../src/python/data_types.rst:20
+msgid "Boolean (``True``, ``False``) data type"
+msgstr "布林（``True``、``False``）資料型別"
+
+#: ../../../src/python/data_types.rst:21
+msgid "``uint8``"
+msgstr ""
+
+#: ../../../src/python/data_types.rst:23
+msgid "8-bit unsigned integer"
+msgstr "8 位元無號整數"
+
+#: ../../../src/python/data_types.rst:24
+msgid "``uint16``"
+msgstr ""
+
+#: ../../../src/python/data_types.rst:25 ../../../src/python/data_types.rst:37
+#: ../../../src/python/data_types.rst:46 ../../../src/python/data_types.rst:49
+msgid "2"
+msgstr ""
+
+#: ../../../src/python/data_types.rst:26
+msgid "16-bit unsigned integer"
+msgstr "16 位元無號整數"
+
+#: ../../../src/python/data_types.rst:27
+msgid "``uint32``"
+msgstr ""
+
+#: ../../../src/python/data_types.rst:28 ../../../src/python/data_types.rst:40
+#: ../../../src/python/data_types.rst:52
+msgid "4"
+msgstr ""
+
+#: ../../../src/python/data_types.rst:29
+msgid "32-bit unsigned integer"
+msgstr "32 位元無號整數"
+
+#: ../../../src/python/data_types.rst:30
+msgid "``uint64``"
+msgstr ""
+
+#: ../../../src/python/data_types.rst:31 ../../../src/python/data_types.rst:43
+#: ../../../src/python/data_types.rst:55
+msgid "8"
+msgstr ""
+
+#: ../../../src/python/data_types.rst:32
+msgid "64-bit unsigned integer"
+msgstr "64 位元無號整數"
+
+#: ../../../src/python/data_types.rst:33
+msgid "``int8``"
+msgstr ""
+
+#: ../../../src/python/data_types.rst:35
+msgid "8-bit signed integer"
+msgstr "8 位元有號整數"
+
+#: ../../../src/python/data_types.rst:36
+msgid "``int16``"
+msgstr ""
+
+#: ../../../src/python/data_types.rst:38
+msgid "16-bit signed integer"
+msgstr "16 位元有號整數"
+
+#: ../../../src/python/data_types.rst:39
+msgid "``int32``"
+msgstr ""
+
+#: ../../../src/python/data_types.rst:41
+msgid "32-bit signed integer"
+msgstr "32 位元有號整數"
+
+#: ../../../src/python/data_types.rst:42
+msgid "``int64``"
+msgstr ""
+
+#: ../../../src/python/data_types.rst:44
+msgid "64-bit signed integer"
+msgstr "64 位元有號整數"
+
+#: ../../../src/python/data_types.rst:45
+msgid "``bfloat16``"
+msgstr ""
+
+#: ../../../src/python/data_types.rst:47
+msgid "16-bit brain float (e8, m7)"
+msgstr "16 位元 brain float（e8, m7）"
+
+#: ../../../src/python/data_types.rst:48
+msgid "``float16``"
+msgstr ""
+
+#: ../../../src/python/data_types.rst:50
+msgid "16-bit IEEE float (e5, m10)"
+msgstr "16 位元 IEEE 浮點數（e5, m10）"
+
+#: ../../../src/python/data_types.rst:51
+msgid "``float32``"
+msgstr ""
+
+#: ../../../src/python/data_types.rst:53
+msgid "32-bit float"
+msgstr "32 位元浮點數"
+
+#: ../../../src/python/data_types.rst:54
+msgid "``complex64``"
+msgstr ""
+
+#: ../../../src/python/data_types.rst:56
+msgid "64-bit complex float"
+msgstr "64 位元複數浮點數"
+
+#: ../../../src/python/data_types.rst:59
+msgid ""
+"Data type are aranged in a hierarchy. See the :obj:`DtypeCategory` object "
+"documentation for more information. Use :func:`issubdtype` to determine if "
+"one ``dtype`` (or category) is a subtype of another category."
+msgstr ""
+"資料型別以階層排列。請參見 :obj:`DtypeCategory` 物件文件以取得更多資訊。使"
+"用 :func:`issubdtype` 判斷某個 ``dtype``（或類別）是否為另一類別的子型別。"
+
+#: ../../../src/python/data_types.rst:68:<autosummary>:1
+msgid ":py:obj:`Dtype <mlx.core.Dtype>`\\"
+msgstr ""
+
+#: ../../../src/python/data_types.rst:68:<autosummary>:1
+msgid "An object to hold the type of a :class:`array`."
+msgstr "用於保存 :class:`array` 型別的物件。"
+
+#: ../../../src/python/data_types.rst:68:<autosummary>:1
+msgid ":py:obj:`DtypeCategory <mlx.core.DtypeCategory>`\\"
+msgstr ""
+
+#: ../../../src/python/data_types.rst:68:<autosummary>:1
+msgid "Type to hold categories of :class:`dtypes <Dtype>`."
+msgstr "用於保存 :class:`dtypes <Dtype>` 類別的型別。"
+
+#: ../../../src/python/data_types.rst:68:<autosummary>:1
+msgid ""
+":py:obj:`issubdtype <mlx.core.issubdtype>`\\ \\(\\-\\> bool  \\-\\> bool  \\-"
+"\\> bool\\)"
+msgstr ""
+
+#: ../../../src/python/data_types.rst:68:<autosummary>:1
+msgid ""
+"Check if a :obj:`Dtype` or :obj:`DtypeCategory` is a subtype of another."
+msgstr "檢查 :obj:`Dtype` 或 :obj:`DtypeCategory` 是否為另一者的子型別。"
