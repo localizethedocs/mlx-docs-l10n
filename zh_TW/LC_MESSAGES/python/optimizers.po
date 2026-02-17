@@ -1,0 +1,165 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023, MLX Contributors
+# This file is distributed under the same license as the MLX package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: MLX 0.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-12-08 12:56+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../src/python/optimizers.rst:4
+msgid "Optimizers"
+msgstr "最佳化器"
+
+#: ../../../src/python/optimizers.rst:6
+msgid ""
+"The optimizers in MLX can be used both with :mod:`mlx.nn` but also with "
+"pure :mod:`mlx.core` functions. A typical example involves calling :meth:"
+"`Optimizer.update` to update a model's parameters based on the loss "
+"gradients and subsequently calling :func:`mlx.core.eval` to evaluate both "
+"the model's parameters and the **optimizer state**."
+msgstr ""
+"MLX 的最佳化器既可與 :mod:`mlx.nn` 搭配使用，也可用於純 :mod:`mlx.core` 函"
+"式。典型作法是呼叫 :meth:`Optimizer.update` 依據損失梯度更新模型參數，接著呼"
+"叫 :func:`mlx.core.eval` 同時計算模型參數與 **最佳化器狀態**。"
+
+#: ../../../src/python/optimizers.rst:12
+msgid ""
+"# Create a model\n"
+"model = MLP(num_layers, train_images.shape[-1], hidden_dim, num_classes)\n"
+"mx.eval(model.parameters())\n"
+"\n"
+"# Create the gradient function and the optimizer\n"
+"loss_and_grad_fn = nn.value_and_grad(model, loss_fn)\n"
+"optimizer = optim.SGD(learning_rate=learning_rate)\n"
+"\n"
+"for e in range(num_epochs):\n"
+"    for X, y in batch_iterate(batch_size, train_images, train_labels):\n"
+"        loss, grads = loss_and_grad_fn(model, X, y)\n"
+"\n"
+"        # Update the model with the gradients. So far no computation has "
+"happened.\n"
+"        optimizer.update(model, grads)\n"
+"\n"
+"        # Compute the new parameters but also the optimizer state.\n"
+"        mx.eval(model.parameters(), optimizer.state)"
+msgstr ""
+
+#: ../../../src/python/optimizers.rst:48:<autosummary>:1
+msgid ":py:obj:`OptimizerState <mlx.optimizers.OptimizerState>`\\"
+msgstr ""
+
+#: ../../../src/python/optimizers.rst:48:<autosummary>:1
+msgid ""
+"The optimizer state implements a recursively defined :class:`collections."
+"defaultdict`, namely a missing key in an optimizer state is an :class:"
+"`OptimizerState`."
+msgstr ""
+
+#: ../../../src/python/optimizers.rst:48:<autosummary>:1
+msgid ":py:obj:`Optimizer <mlx.optimizers.Optimizer>`\\ \\(\\)"
+msgstr ""
+
+#: ../../../src/python/optimizers.rst:48:<autosummary>:1
+msgid "The base class for all optimizers."
+msgstr ""
+
+#: ../../../src/python/optimizers.rst:48:<autosummary>:1
+msgid ""
+":py:obj:`SGD <mlx.optimizers.SGD>`\\ \\(learning\\_rate\\[\\, momentum\\, "
+"weight\\_decay\\, ...\\]\\)"
+msgstr ""
+
+#: ../../../src/python/optimizers.rst:48:<autosummary>:1
+msgid "The stochastic gradient descent optimizer."
+msgstr ""
+
+#: ../../../src/python/optimizers.rst:48:<autosummary>:1
+msgid ""
+":py:obj:`RMSprop <mlx.optimizers.RMSprop>`\\ \\(learning\\_rate\\[\\, "
+"alpha\\, eps\\]\\)"
+msgstr ""
+
+#: ../../../src/python/optimizers.rst:48:<autosummary>:1
+msgid "The RMSprop optimizer [1]."
+msgstr ""
+
+#: ../../../src/python/optimizers.rst:48:<autosummary>:1
+msgid ""
+":py:obj:`Adagrad <mlx.optimizers.Adagrad>`\\ \\(learning\\_rate\\[\\, "
+"eps\\]\\)"
+msgstr ""
+
+#: ../../../src/python/optimizers.rst:48:<autosummary>:1
+msgid "The Adagrad optimizer [1]."
+msgstr ""
+
+#: ../../../src/python/optimizers.rst:48:<autosummary>:1
+msgid ""
+":py:obj:`Adafactor <mlx.optimizers.Adafactor>`\\ \\(\\[learning\\_rate\\, "
+"eps\\, ...\\]\\)"
+msgstr ""
+
+#: ../../../src/python/optimizers.rst:48:<autosummary>:1
+msgid "The Adafactor optimizer."
+msgstr ""
+
+#: ../../../src/python/optimizers.rst:48:<autosummary>:1
+msgid ""
+":py:obj:`AdaDelta <mlx.optimizers.AdaDelta>`\\ \\(learning\\_rate\\[\\, "
+"rho\\, eps\\]\\)"
+msgstr ""
+
+#: ../../../src/python/optimizers.rst:48:<autosummary>:1
+msgid "The AdaDelta optimizer with a learning rate [1]."
+msgstr ""
+
+#: ../../../src/python/optimizers.rst:48:<autosummary>:1
+msgid ""
+":py:obj:`Adam <mlx.optimizers.Adam>`\\ \\(learning\\_rate\\[\\, betas\\, "
+"eps\\]\\)"
+msgstr ""
+
+#: ../../../src/python/optimizers.rst:48:<autosummary>:1
+msgid "The Adam optimizer [1]."
+msgstr ""
+
+#: ../../../src/python/optimizers.rst:48:<autosummary>:1
+msgid ""
+":py:obj:`AdamW <mlx.optimizers.AdamW>`\\ \\(learning\\_rate\\[\\, betas\\, "
+"eps\\, weight\\_decay\\]\\)"
+msgstr ""
+
+#: ../../../src/python/optimizers.rst:48:<autosummary>:1
+msgid "The AdamW optimizer [1]."
+msgstr ""
+
+#: ../../../src/python/optimizers.rst:48:<autosummary>:1
+msgid ""
+":py:obj:`Adamax <mlx.optimizers.Adamax>`\\ \\(learning\\_rate\\[\\, betas\\, "
+"eps\\]\\)"
+msgstr ""
+
+#: ../../../src/python/optimizers.rst:48:<autosummary>:1
+msgid "The Adamax optimizer, a variant of Adam based on the infinity norm [1]."
+msgstr ""
+
+#: ../../../src/python/optimizers.rst:48:<autosummary>:1
+msgid ""
+":py:obj:`Lion <mlx.optimizers.Lion>`\\ \\(learning\\_rate\\[\\, betas\\, "
+"weight\\_decay\\]\\)"
+msgstr ""
+
+#: ../../../src/python/optimizers.rst:48:<autosummary>:1
+msgid "The Lion optimizer [1]."
+msgstr ""
