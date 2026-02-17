@@ -1,0 +1,105 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023, Apple
+# This file is distributed under the same license as the MLX package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: MLX 0.30\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-02-10 10:09+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../src/python/nn/_autosummary/mlx.nn.QuantizedShardedToAllLinear.rst:2
+msgid "mlx.nn.QuantizedShardedToAllLinear"
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/distributed.py:docstring
+#: of mlx.nn.layers.distributed.QuantizedShardedToAllLinear:1
+msgid ""
+"Each member of the group applies part of the affine transformation using the "
+"quantized matrix and then aggregates the results."
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/distributed.py:docstring
+#: of mlx.nn.layers.distributed.QuantizedShardedToAllLinear:4
+msgid "All nodes will have the same exact result after this layer."
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/distributed.py:docstring
+#: of mlx.nn.layers.distributed.QuantizedShardedToAllLinear:6
+msgid ""
+"It is the quantized equivalent of :class:`mlx.nn.ShardedToAllLinear`. "
+"Similar to :class:`mlx.nn.QuantizedLinear` its parameters are frozen and "
+"will not be included in any gradient computation."
+msgstr ""
+
+#: ../../../src/python/nn/_autosummary/mlx.nn.QuantizedShardedToAllLinear.rst:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/distributed.py:docstring
+#: of mlx.nn.layers.distributed.QuantizedShardedToAllLinear:10
+msgid "The dimensionality of the input features."
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/distributed.py:docstring
+#: of mlx.nn.layers.distributed.QuantizedShardedToAllLinear:12
+msgid "The dimensionality of the output features."
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/distributed.py:docstring
+#: of mlx.nn.layers.distributed.QuantizedShardedToAllLinear:14
+msgid ""
+"If set to ``False`` then the layer will not use a bias. Default: ``True``."
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/distributed.py:docstring
+#: of mlx.nn.layers.distributed.QuantizedShardedToAllLinear:17
+msgid ""
+"The group size to use for the quantized weight. See :func:`~mlx.core."
+"quantize`. Default: ``64``."
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/distributed.py:docstring
+#: of mlx.nn.layers.distributed.QuantizedShardedToAllLinear:20
+msgid ""
+"The bit width to use for the quantized weight. See :func:`~mlx.core."
+"quantize`. Default: ``4``."
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/distributed.py:docstring
+#: of mlx.nn.layers.distributed.QuantizedShardedToAllLinear:23
+msgid ""
+"The sharding will happen across this group. If not set then the global group "
+"is used. Default is ``None``."
+msgstr ""
+
+#: ../../../src/python/nn/_autosummary/mlx.nn.QuantizedShardedToAllLinear.rst:12
+msgid "Methods"
+msgstr ""
+
+#: ../../../src/python/nn/_autosummary/mlx.nn.QuantizedShardedToAllLinear.rst:16:<autosummary>:1
+msgid ""
+":py:obj:`from_quantized_linear <mlx.nn.QuantizedShardedToAllLinear."
+"from_quantized_linear>`\\ \\(quantized\\_linear\\_layer\\, \\*\\)"
+msgstr ""
+
+#: ../../../src/python/nn/_autosummary/mlx.nn.QuantizedShardedToAllLinear.rst:16:<autosummary>:1
+msgid ""
+":py:obj:`unfreeze <mlx.nn.QuantizedShardedToAllLinear.unfreeze>`\\ "
+"\\(\\*args\\, \\*\\*kwargs\\)"
+msgstr ""
+
+#: ../../../src/python/nn/_autosummary/mlx.nn.QuantizedShardedToAllLinear.rst:16:<autosummary>:1
+msgid ""
+"Wrap unfreeze so that we unfreeze any layers we might contain but our "
+"parameters will remain frozen."
+msgstr ""

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MLX 0.30\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-12-23 09:21+0000\n"
+"POT-Creation-Date: 2026-02-10 10:09+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -110,10 +110,12 @@ msgid ""
 "``\"causal\"``. If the mask is an array it can be a boolean or additive "
 "mask. The mask can have at most 4 dimensions and must be broadcast-"
 "compatible with the shape ``[B, N, T_q, T_kv]``. If an additive mask is "
-"given its type must promote to the promoted type of ``q``, ``k``, and ``v``."
+"given its type must promote to the promoted type of ``q``, ``k``, and ``v``. "
+"The ``\"causal\"`` mask uses lower-right alignment where the last query "
+"aligns with the last key."
 msgstr ""
 
-#: ../../../docstring of mlx.core.fast.scaled_dot_product_attention:41
+#: ../../../docstring of mlx.core.fast.scaled_dot_product_attention:43
 msgid "An optional array of attention sinks. Default: ``None``."
 msgstr ""
 
@@ -121,7 +123,7 @@ msgstr ""
 msgid "Returns"
 msgstr ""
 
-#: ../../../docstring of mlx.core.fast.scaled_dot_product_attention:45
+#: ../../../docstring of mlx.core.fast.scaled_dot_product_attention:47
 msgid "The output array."
 msgstr ""
 
@@ -129,11 +131,11 @@ msgstr ""
 msgid "Return type"
 msgstr ""
 
-#: ../../../docstring of mlx.core.fast.scaled_dot_product_attention:49
+#: ../../../docstring of mlx.core.fast.scaled_dot_product_attention:51
 msgid "Example"
 msgstr ""
 
-#: ../../../docstring of mlx.core.fast.scaled_dot_product_attention:50
+#: ../../../docstring of mlx.core.fast.scaled_dot_product_attention:52
 msgid ""
 "B = 2\n"
 "N_q = N_kv = 32\n"
