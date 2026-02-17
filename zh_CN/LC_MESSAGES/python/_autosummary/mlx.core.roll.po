@@ -1,0 +1,57 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023, Apple
+# This file is distributed under the same license as the MLX package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: MLX 0.28\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-12-08 12:32+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../src/python/_autosummary/mlx.core.roll.rst:2
+msgid "mlx.core.roll"
+msgstr ""
+
+#: ../../../docstring of mlx.core.roll:1
+msgid "Roll array elements along a given axis."
+msgstr ""
+
+#: ../../../docstring of mlx.core.roll:3
+msgid ""
+"Elements that are rolled beyond the end of the array are introduced at the "
+"beggining and vice-versa."
+msgstr ""
+
+#: ../../../docstring of mlx.core.roll:6
+msgid ""
+"If the axis is not provided the array is flattened, rolled and then the "
+"shape is restored."
+msgstr ""
+
+#: ../../../src/python/_autosummary/mlx.core.roll.rst:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../docstring of mlx.core.roll:9
+msgid "Input array"
+msgstr ""
+
+#: ../../../docstring of mlx.core.roll:11
+msgid ""
+"The number of places by which elements are shifted. If positive the array is "
+"rolled to the right, if negative it is rolled to the left. If an int is "
+"provided but the axis is a tuple then the same value is used for all axes."
+msgstr ""
+
+#: ../../../docstring of mlx.core.roll:16
+msgid "The axis or axes along which to roll the elements."
+msgstr ""
