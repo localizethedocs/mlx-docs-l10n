@@ -1,0 +1,68 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023, MLX Contributors
+# This file is distributed under the same license as the MLX package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: MLX 0.14\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-12-08 12:13+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../src/python/nn/_autosummary/mlx.nn.Dropout2d.rst:2
+msgid "mlx.nn.Dropout2d"
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/dropout.py:docstring
+#: of mlx.nn.layers.dropout.Dropout2d:1
+msgid "Apply 2D channel-wise dropout during training."
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/dropout.py:docstring
+#: of mlx.nn.layers.dropout.Dropout2d:3
+msgid ""
+"Randomly zero out entire channels independently with probability :math:`p`. "
+"This layer expects the channels to be last, i.e. the input shape should be "
+"``NWHC`` or ``WHC`` where:``N`` is the batch dimension,``H`` is the input "
+"image height,``W`` is the input image width, and``C`` is the number of input "
+"channels"
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/dropout.py:docstring
+#: of mlx.nn.layers.dropout.Dropout2d:9
+msgid ""
+"The remaining channels are scaled by :math:`\\frac{1}{1-p}` to maintain the "
+"expected value of each element. Unlike traditional dropout, which zeros "
+"individual entries, this layer zeros entire channels. This is beneficial for "
+"early convolution layers where adjacent pixels are correlated. In such case, "
+"traditional dropout may not effectively regularize activations. For more "
+"details, see [1]."
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/dropout.py:docstring
+#: of mlx.nn.layers.dropout.Dropout2d:16
+msgid ""
+"[1]: Thompson, J., Goroshin, R., Jain, A., LeCun, Y. and Bregler C., 2015. "
+"Efficient Object Localization Using Convolutional Networks. CVPR 2015."
+msgstr ""
+
+#: ../../../src/python/nn/_autosummary/mlx.nn.Dropout2d.rst:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/dropout.py:docstring
+#: of mlx.nn.layers.dropout.Dropout2d:19
+msgid "Probability of zeroing a channel during training."
+msgstr ""
+
+#: ../../../src/python/nn/_autosummary/mlx.nn.Dropout2d.rst:12
+msgid "Methods"
+msgstr ""
