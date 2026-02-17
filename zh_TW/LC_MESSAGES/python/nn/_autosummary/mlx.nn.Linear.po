@@ -1,0 +1,86 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023, Apple
+# This file is distributed under the same license as the MLX package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: MLX 0.30\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-12-23 09:21+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../src/python/nn/_autosummary/mlx.nn.Linear.rst:2
+msgid "mlx.nn.Linear"
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/linear.py:docstring
+#: of mlx.nn.layers.linear.Linear:1
+msgid "Applies an affine transformation to the input."
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/linear.py:docstring
+#: of mlx.nn.layers.linear.Linear:3
+msgid "Concretely:"
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/linear.py:docstring
+#: of mlx.nn.layers.linear.Linear:5
+msgid "y = x W^\\top + b"
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/linear.py:docstring
+#: of mlx.nn.layers.linear.Linear:9
+msgid ""
+"where: where :math:`W` has shape ``[output_dims, input_dims]`` and :math:`b` "
+"has shape ``[output_dims]``."
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/linear.py:docstring
+#: of mlx.nn.layers.linear.Linear:12
+msgid ""
+"The values are initialized from the uniform distribution :math:`\\mathcal{U}"
+"(-{k}, {k})`, where :math:`k = \\frac{1}{\\sqrt{D_i}}` and :math:`D_i` is "
+"equal to ``input_dims``."
+msgstr ""
+
+#: ../../../src/python/nn/_autosummary/mlx.nn.Linear.rst:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/linear.py:docstring
+#: of mlx.nn.layers.linear.Linear:15
+msgid "The dimensionality of the input features"
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/linear.py:docstring
+#: of mlx.nn.layers.linear.Linear:17
+msgid "The dimensionality of the output features"
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/linear.py:docstring
+#: of mlx.nn.layers.linear.Linear:19
+msgid ""
+"If set to ``False`` then the layer will not use a bias. Default is ``True``."
+msgstr ""
+
+#: ../../../src/python/nn/_autosummary/mlx.nn.Linear.rst:12
+msgid "Methods"
+msgstr "方法"
+
+#: ../../../src/python/nn/_autosummary/mlx.nn.Linear.rst:15:<autosummary>:1
+msgid ""
+":py:obj:`to_quantized <mlx.nn.Linear.to_quantized>`\\ \\(\\[group\\_size\\, "
+"bits\\, mode\\]\\)"
+msgstr ""
+
+#: ../../../src/python/nn/_autosummary/mlx.nn.Linear.rst:15:<autosummary>:1
+msgid "Return a :obj:`QuantizedLinear` layer that approximates this layer."
+msgstr ""

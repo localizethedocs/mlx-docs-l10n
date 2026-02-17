@@ -1,0 +1,55 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023, Apple
+# This file is distributed under the same license as the MLX package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: MLX 0.30\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-12-23 09:21+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../src/python/_autosummary/mlx.core.distributed.is_available.rst:2
+msgid "mlx.core.distributed.is\\_available"
+msgstr ""
+
+#: ../../../docstring of mlx.core.distributed.is_available:1
+msgid "Check if a communication backend is available."
+msgstr ""
+
+#: ../../../docstring of mlx.core.distributed.is_available:3
+msgid ""
+"Note, this function returns whether MLX has the capability of instantiating "
+"that distributed backend not whether it is possible to create a "
+"communication group. For that purpose one should use ``init(strict=True)``."
+msgstr ""
+
+#: ../../../src/python/_autosummary/mlx.core.distributed.is_available.rst:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../docstring of mlx.core.distributed.is_available:8
+msgid ""
+"The name of the backend to check for availability. It takes the same values "
+"as :func:`init()`. Default: ``\"any\"``."
+msgstr ""
+
+#: ../../../src/python/_autosummary/mlx.core.distributed.is_available.rst:0
+msgid "Returns"
+msgstr ""
+
+#: ../../../docstring of mlx.core.distributed.is_available:12
+msgid "Whether the distributed backend is available."
+msgstr ""
+
+#: ../../../src/python/_autosummary/mlx.core.distributed.is_available.rst:0
+msgid "Return type"
+msgstr ""

@@ -1,0 +1,241 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023, Apple
+# This file is distributed under the same license as the MLX package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: MLX 0.30\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-12-23 09:21+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../src/python/_autosummary/mlx.core.linalg.norm.rst:2
+msgid "mlx.core.linalg.norm"
+msgstr ""
+
+#: ../../../docstring of mlx.core.linalg.norm:1
+msgid "Matrix or vector norm."
+msgstr ""
+
+#: ../../../docstring of mlx.core.linalg.norm:3
+msgid ""
+"This function computes vector or  matrix norms depending on the value of the "
+"``ord`` and ``axis`` parameters."
+msgstr ""
+
+#: ../../../docstring of mlx.core.linalg.norm:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../docstring of mlx.core.linalg.norm:6
+msgid ""
+"Input array.  If ``axis`` is ``None``, ``a`` must be 1-D or 2-D, unless "
+"``ord`` is ``None``. If both ``axis`` and ``ord`` are ``None``, the 2-norm "
+"of ``a.flatten`` will be returned."
+msgstr ""
+
+#: ../../../docstring of mlx.core.linalg.norm:10
+msgid ""
+"Order of the norm (see table under ``Notes``). If ``None``, the 2-norm (or "
+"Frobenius norm for matrices) will be computed along the given ``axis``.  "
+"Default: ``None``."
+msgstr ""
+
+#: ../../../docstring of mlx.core.linalg.norm:14
+msgid ""
+"If ``axis`` is an integer, it specifies the axis of ``a`` along which to "
+"compute the vector norms.  If ``axis`` is a 2-tuple, it specifies the axes "
+"that hold 2-D matrices, and the matrix norms of these matrices are computed. "
+"If `axis` is ``None`` then either a vector norm (when ``a`` is 1-D) or a "
+"matrix norm (when ``a`` is 2-D) is returned. Default: ``None``."
+msgstr ""
+
+#: ../../../docstring of mlx.core.linalg.norm:21
+msgid ""
+"If ``True``, the axes which are normed over are left in the result as "
+"dimensions with size one. Default ``False``."
+msgstr ""
+
+#: ../../../docstring of mlx.core.linalg.norm:0
+msgid "Returns"
+msgstr ""
+
+#: ../../../docstring of mlx.core.linalg.norm:25
+msgid "The output containing the norm(s)."
+msgstr ""
+
+#: ../../../docstring of mlx.core.linalg.norm:0
+msgid "Return type"
+msgstr ""
+
+#: ../../../docstring of mlx.core.linalg.norm:29
+msgid "Notes"
+msgstr ""
+
+#: ../../../docstring of mlx.core.linalg.norm:30
+msgid ""
+"For values of ``ord < 1``, the result is, strictly speaking, not a "
+"mathematical norm, but it may still be useful for various numerical purposes."
+msgstr ""
+
+#: ../../../docstring of mlx.core.linalg.norm:34
+msgid "The following norms can be calculated:"
+msgstr ""
+
+#: ../../../docstring of mlx.core.linalg.norm:37
+msgid "ord"
+msgstr ""
+
+#: ../../../docstring of mlx.core.linalg.norm:37
+msgid "norm for matrices"
+msgstr ""
+
+#: ../../../docstring of mlx.core.linalg.norm:37
+msgid "norm for vectors"
+msgstr ""
+
+#: ../../../docstring of mlx.core.linalg.norm:39
+msgid "None"
+msgstr ""
+
+#: ../../../docstring of mlx.core.linalg.norm:39 mlx.core.linalg.norm:40
+msgid "Frobenius norm"
+msgstr ""
+
+#: ../../../docstring of mlx.core.linalg.norm:39
+msgid "2-norm"
+msgstr ""
+
+#: ../../../docstring of mlx.core.linalg.norm:40
+msgid "'fro'"
+msgstr ""
+
+#: ../../../docstring of mlx.core.linalg.norm:40 mlx.core.linalg.norm:41
+#: mlx.core.linalg.norm:44 mlx.core.linalg.norm:49
+msgid "--"
+msgstr ""
+
+#: ../../../docstring of mlx.core.linalg.norm:41
+msgid "'nuc'"
+msgstr ""
+
+#: ../../../docstring of mlx.core.linalg.norm:41
+msgid "nuclear norm"
+msgstr ""
+
+#: ../../../docstring of mlx.core.linalg.norm:42
+msgid "inf"
+msgstr ""
+
+#: ../../../docstring of mlx.core.linalg.norm:42
+msgid "max(sum(abs(x), axis=1))"
+msgstr ""
+
+#: ../../../docstring of mlx.core.linalg.norm:42
+msgid "max(abs(x))"
+msgstr ""
+
+#: ../../../docstring of mlx.core.linalg.norm:43
+msgid "-inf"
+msgstr ""
+
+#: ../../../docstring of mlx.core.linalg.norm:43
+msgid "min(sum(abs(x), axis=1))"
+msgstr ""
+
+#: ../../../docstring of mlx.core.linalg.norm:43
+msgid "min(abs(x))"
+msgstr ""
+
+#: ../../../docstring of mlx.core.linalg.norm:44
+msgid "0"
+msgstr ""
+
+#: ../../../docstring of mlx.core.linalg.norm:44
+msgid "sum(x != 0)"
+msgstr ""
+
+#: ../../../docstring of mlx.core.linalg.norm:45
+msgid "1"
+msgstr ""
+
+#: ../../../docstring of mlx.core.linalg.norm:45
+msgid "max(sum(abs(x), axis=0))"
+msgstr ""
+
+#: ../../../docstring of mlx.core.linalg.norm:45 mlx.core.linalg.norm:46
+#: mlx.core.linalg.norm:47 mlx.core.linalg.norm:48
+msgid "as below"
+msgstr ""
+
+#: ../../../docstring of mlx.core.linalg.norm:46
+msgid "-1"
+msgstr ""
+
+#: ../../../docstring of mlx.core.linalg.norm:46
+msgid "min(sum(abs(x), axis=0))"
+msgstr ""
+
+#: ../../../docstring of mlx.core.linalg.norm:47
+msgid "2"
+msgstr ""
+
+#: ../../../docstring of mlx.core.linalg.norm:47
+msgid "2-norm (largest sing. value)"
+msgstr ""
+
+#: ../../../docstring of mlx.core.linalg.norm:48
+msgid "-2"
+msgstr ""
+
+#: ../../../docstring of mlx.core.linalg.norm:48
+msgid "smallest singular value"
+msgstr ""
+
+#: ../../../docstring of mlx.core.linalg.norm:49
+msgid "other"
+msgstr ""
+
+#: ../../../docstring of mlx.core.linalg.norm:49
+msgid "sum(abs(x)**ord)**(1./ord)"
+msgstr ""
+
+#: ../../../docstring of mlx.core.linalg.norm:52
+msgid "The Frobenius norm is given by [1]_:"
+msgstr ""
+
+#: ../../../docstring of mlx.core.linalg.norm:54
+msgid ":math:`||A||_F = [\\sum_{i,j} abs(a_{i,j})^2]^{1/2}`"
+msgstr ""
+
+#: ../../../docstring of mlx.core.linalg.norm:56
+msgid "The nuclear norm is the sum of the singular values."
+msgstr ""
+
+#: ../../../docstring of mlx.core.linalg.norm:58
+msgid ""
+"Both the Frobenius and nuclear norm orders are only defined for matrices and "
+"raise a ``ValueError`` when ``a.ndim != 2``."
+msgstr ""
+
+#: ../../../docstring of mlx.core.linalg.norm:62
+msgid "References"
+msgstr ""
+
+#: ../../../docstring of mlx.core.linalg.norm:63
+msgid ""
+"G. H. Golub and C. F. Van Loan, *Matrix Computations*, Baltimore, MD, Johns "
+"Hopkins University Press, 1985, pg. 15"
+msgstr ""
+
+#: ../../../docstring of mlx.core.linalg.norm:67
+msgid "Examples"
+msgstr ""

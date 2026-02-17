@@ -1,0 +1,175 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023, Apple
+# This file is distributed under the same license as the MLX package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: MLX 0.30\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-12-23 09:21+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../src/usage/saving_and_loading.rst:4
+msgid "Saving and Loading Arrays"
+msgstr ""
+
+#: ../../../src/usage/saving_and_loading.rst:8
+msgid "MLX supports multiple array serialization formats."
+msgstr ""
+
+#: ../../../src/usage/saving_and_loading.rst:10
+msgid "Serialization Formats"
+msgstr ""
+
+#: ../../../src/usage/saving_and_loading.rst:14
+msgid "Format"
+msgstr ""
+
+#: ../../../src/usage/saving_and_loading.rst:15
+msgid "Extension"
+msgstr ""
+
+#: ../../../src/usage/saving_and_loading.rst:16
+msgid "Function"
+msgstr ""
+
+#: ../../../src/usage/saving_and_loading.rst:17
+msgid "Notes"
+msgstr ""
+
+#: ../../../src/usage/saving_and_loading.rst:18
+msgid "NumPy"
+msgstr ""
+
+#: ../../../src/usage/saving_and_loading.rst:19
+msgid "``.npy``"
+msgstr ""
+
+#: ../../../src/usage/saving_and_loading.rst:20
+msgid ":func:`save`"
+msgstr ""
+
+#: ../../../src/usage/saving_and_loading.rst:21
+msgid "Single arrays only"
+msgstr ""
+
+#: ../../../src/usage/saving_and_loading.rst:22
+msgid "NumPy archive"
+msgstr ""
+
+#: ../../../src/usage/saving_and_loading.rst:23
+msgid "``.npz``"
+msgstr ""
+
+#: ../../../src/usage/saving_and_loading.rst:24
+msgid ":func:`savez` and :func:`savez_compressed`"
+msgstr ""
+
+#: ../../../src/usage/saving_and_loading.rst:25
+#: ../../../src/usage/saving_and_loading.rst:29
+#: ../../../src/usage/saving_and_loading.rst:33
+msgid "Multiple arrays"
+msgstr ""
+
+#: ../../../src/usage/saving_and_loading.rst:26
+msgid "Safetensors"
+msgstr ""
+
+#: ../../../src/usage/saving_and_loading.rst:27
+msgid "``.safetensors``"
+msgstr ""
+
+#: ../../../src/usage/saving_and_loading.rst:28
+msgid ":func:`save_safetensors`"
+msgstr ""
+
+#: ../../../src/usage/saving_and_loading.rst:30
+msgid "GGUF"
+msgstr ""
+
+#: ../../../src/usage/saving_and_loading.rst:31
+msgid "``.gguf``"
+msgstr ""
+
+#: ../../../src/usage/saving_and_loading.rst:32
+msgid ":func:`save_gguf`"
+msgstr ""
+
+#: ../../../src/usage/saving_and_loading.rst:35
+msgid ""
+"The :func:`load` function will load any of the supported serialization "
+"formats. It determines the format from the extensions. The output of :func:"
+"`load` depends on the format."
+msgstr ""
+
+#: ../../../src/usage/saving_and_loading.rst:39
+msgid "Here's an example of saving a single array to a file:"
+msgstr ""
+
+#: ../../../src/usage/saving_and_loading.rst:41
+msgid ""
+">>> a = mx.array([1.0])\n"
+">>> mx.save(\"array\", a)"
+msgstr ""
+
+#: ../../../src/usage/saving_and_loading.rst:46
+msgid ""
+"The array ``a`` will be saved in the file ``array.npy`` (notice the "
+"extension is automatically added). Including the extension is optional; if "
+"it is missing it will be added. You can load the array with:"
+msgstr ""
+
+#: ../../../src/usage/saving_and_loading.rst:50
+msgid ""
+">>> mx.load(\"array.npy\")\n"
+"array([1], dtype=float32)"
+msgstr ""
+
+#: ../../../src/usage/saving_and_loading.rst:55
+msgid "Here's an example of saving several arrays to a single file:"
+msgstr ""
+
+#: ../../../src/usage/saving_and_loading.rst:57
+msgid ""
+">>> a = mx.array([1.0])\n"
+">>> b = mx.array([2.0])\n"
+">>> mx.savez(\"arrays\", a, b=b)"
+msgstr ""
+
+#: ../../../src/usage/saving_and_loading.rst:63
+msgid ""
+"For compatibility with :func:`numpy.savez` the MLX :func:`savez` takes "
+"arrays as arguments. If the keywords are missing, then default names will be "
+"provided. This can be loaded with:"
+msgstr ""
+
+#: ../../../src/usage/saving_and_loading.rst:67
+msgid ""
+">>> mx.load(\"arrays.npz\")\n"
+"{'b': array([2], dtype=float32), 'arr_0': array([1], dtype=float32)}"
+msgstr ""
+
+#: ../../../src/usage/saving_and_loading.rst:72
+msgid "In this case :func:`load` returns a dictionary of names to arrays."
+msgstr ""
+
+#: ../../../src/usage/saving_and_loading.rst:74
+msgid ""
+"The functions :func:`save_safetensors` and :func:`save_gguf` are similar to :"
+"func:`savez`, but they take as input a :obj:`dict` of string names to arrays:"
+msgstr ""
+
+#: ../../../src/usage/saving_and_loading.rst:77
+msgid ""
+">>> a = mx.array([1.0])\n"
+">>> b = mx.array([2.0])\n"
+">>> mx.save_safetensors(\"arrays\", {\"a\": a, \"b\": b})"
+msgstr ""

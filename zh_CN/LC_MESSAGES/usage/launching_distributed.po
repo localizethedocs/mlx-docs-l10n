@@ -1,0 +1,410 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023, Apple
+# This file is distributed under the same license as the MLX package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: MLX 0.30\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-12-23 09:21+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../src/usage/launching_distributed.rst:6
+msgid "Launching Distributed Programs"
+msgstr ""
+
+#: ../../../src/usage/launching_distributed.rst:10
+msgid ""
+"The MLX python package provides two utilities to help you configure your "
+"Macs for distributed computation and also launch distributed programs on "
+"multiple nodes or with many processes in a single node. These utilities are "
+"aptly named"
+msgstr ""
+
+#: ../../../src/usage/launching_distributed.rst:14
+#: ../../../src/usage/launching_distributed.rst:109
+msgid "``mlx.launch``"
+msgstr ""
+
+#: ../../../src/usage/launching_distributed.rst:15
+#: ../../../src/usage/launching_distributed.rst:21
+msgid "``mlx.distributed_config``"
+msgstr ""
+
+#: ../../../src/usage/launching_distributed.rst:17
+msgid ""
+"See the :doc:`distributed docs <distributed>` for an introduction and "
+"getting-started guides to the various backends."
+msgstr ""
+
+#: ../../../src/usage/launching_distributed.rst:23
+msgid ""
+"Unless you are launching distributed jobs locally for development or multi-"
+"gpu CUDA environments, then you have several Macs that you need to configure "
+"for distributed communication with MLX."
+msgstr ""
+
+#: ../../../src/usage/launching_distributed.rst:27
+msgid ""
+"``mlx.distributed_config`` aims to automate the process of configuring the "
+"network interfaces (especially for communication over thunderbolt) and also "
+"creating the hostfile to be used with ``mlx.launch``."
+msgstr ""
+
+#: ../../../src/usage/launching_distributed.rst:31
+msgid "We will analyse 3 cases of using ``mlx.distributed_config``"
+msgstr ""
+
+#: ../../../src/usage/launching_distributed.rst:33
+msgid "RDMA over thunderbolt using JACCL"
+msgstr ""
+
+#: ../../../src/usage/launching_distributed.rst:34
+msgid "TCP/IP over thunderbolt using the ring backend"
+msgstr ""
+
+#: ../../../src/usage/launching_distributed.rst:35
+msgid "TCP/IP over ethernet using the ring backend"
+msgstr ""
+
+#: ../../../src/usage/launching_distributed.rst:38
+msgid "JACCL"
+msgstr ""
+
+#: ../../../src/usage/launching_distributed.rst:40
+msgid ""
+"After following :ref:`the steps to enable RDMA <jaccl_section>` you can run "
+"the following command to configure the nodes and create the hostfile."
+msgstr ""
+
+#: ../../../src/usage/launching_distributed.rst:43
+msgid ""
+"mlx.distributed_config --verbose --backend jaccl \\\n"
+"     --hosts m3-ultra-1,m3-ultra-2,m3-ultra-3,m3-ultra-4 --over thunderbolt "
+"\\\n"
+"     --auto-setup --output m3-ultra-jaccl.json"
+msgstr ""
+
+#: ../../../src/usage/launching_distributed.rst:49
+msgid ""
+"Let's walk through the steps that the script takes to configure the nodes."
+msgstr ""
+
+#: ../../../src/usage/launching_distributed.rst:51
+msgid "ssh to all nodes to verify that they are reachable"
+msgstr ""
+
+#: ../../../src/usage/launching_distributed.rst:52
+msgid ""
+"Extract the thunderbolt connectivity. Namely run commands on each node to "
+"calculate which node is connected to which other node."
+msgstr ""
+
+#: ../../../src/usage/launching_distributed.rst:54
+msgid "Verify that we have a valid fully connected mesh"
+msgstr ""
+
+#: ../../../src/usage/launching_distributed.rst:55
+msgid "Check that RDMA is enabled"
+msgstr ""
+
+#: ../../../src/usage/launching_distributed.rst:56
+msgid "Extract the ethernet IP from interface en0"
+msgstr ""
+
+#: ../../../src/usage/launching_distributed.rst:57
+msgid ""
+"Disable the thunderbolt bridge and set up peer to peer networks for each "
+"thunderbolt cable"
+msgstr ""
+
+#: ../../../src/usage/launching_distributed.rst:59
+msgid "Write the hostfile"
+msgstr ""
+
+#: ../../../src/usage/launching_distributed.rst:61
+msgid ""
+"Knowing the above steps allows you to manually configure the nodes but also "
+"debug any configuration issue. For instance changing the Ethernet IP to a "
+"different interface directly in the config is possible (as long as it is "
+"reachable from all nodes)."
+msgstr ""
+
+#: ../../../src/usage/launching_distributed.rst:66
+msgid ""
+"The ``--auto-setup`` argument requires password-less sudo on each node. If "
+"it isn't available then the configuration script will print commands to be "
+"run on each node."
+msgstr ""
+
+#: ../../../src/usage/launching_distributed.rst:71
+msgid "Ring over thunderbolt"
+msgstr ""
+
+#: ../../../src/usage/launching_distributed.rst:73
+msgid ""
+"Setting up a ring backend over thunderbolt only requires changing the ``--"
+"backend`` from ``jaccl`` to ``ring``."
+msgstr ""
+
+#: ../../../src/usage/launching_distributed.rst:76
+msgid ""
+"The steps are very similar with the main difference being that instead of "
+"verifying that the nodes are fully connected, the script attempts to "
+"identify a ring topology (or multiple rings)."
+msgstr ""
+
+#: ../../../src/usage/launching_distributed.rst:81
+msgid "Ring over Ethernet"
+msgstr ""
+
+#: ../../../src/usage/launching_distributed.rst:83
+msgid ""
+"Configuring the ring backend over ethernet doesn't require setting up "
+"network interface and as such it simply extracts the ``en0`` IP from each "
+"node and writes the hostfile."
+msgstr ""
+
+#: ../../../src/usage/launching_distributed.rst:88
+msgid "Debugging cable connections"
+msgstr ""
+
+#: ../../../src/usage/launching_distributed.rst:90
+msgid ""
+"``mlx.distributed_config`` can help you debug the connectivity of your nodes "
+"over thunderbolt by exporting a graph of the connections."
+msgstr ""
+
+#: ../../../src/usage/launching_distributed.rst:93
+msgid "Running"
+msgstr ""
+
+#: ../../../src/usage/launching_distributed.rst:95
+msgid ""
+"mlx.distributed_config --verbose \\\n"
+"     --hosts host1,host2,host3,host4 \\\n"
+"     --over thunderbolt --dot"
+msgstr ""
+
+#: ../../../src/usage/launching_distributed.rst:101
+msgid ""
+"will export a `GraphViz <https://graphviz.org>`_ representation of the "
+"connections between the nodes which makes it very easy to figure out which "
+"cable is not connected correctly."
+msgstr ""
+
+#: ../../../src/usage/launching_distributed.rst:105
+msgid "See :ref:`the JACCL section <jaccl_section>` for an example."
+msgstr ""
+
+#: ../../../src/usage/launching_distributed.rst:111
+msgid "The minimal usage example of ``mlx.launch`` is simply"
+msgstr ""
+
+#: ../../../src/usage/launching_distributed.rst:113
+msgid "mlx.launch --hosts ip1,ip2 my_script.py"
+msgstr ""
+
+#: ../../../src/usage/launching_distributed.rst:117
+msgid "or for testing on localhost"
+msgstr ""
+
+#: ../../../src/usage/launching_distributed.rst:119
+msgid "mlx.launch -n 2 my_script.py"
+msgstr ""
+
+#: ../../../src/usage/launching_distributed.rst:123
+msgid ""
+"The ``mlx.launch`` command connects to the provided host and launches the "
+"input script on each host. It monitors each of the launched processes and "
+"terminates the rest if one of them fails unexpectedly or if ``mlx.launch`` "
+"is terminated. It also takes care of forwarding the output of each remote "
+"process to stdout and stderr respectively."
+msgstr ""
+
+#: ../../../src/usage/launching_distributed.rst:129
+msgid ""
+"Importantly, it also broadcasts stdin to each process which enables "
+"interactive programs to work in distributed mode as well as debugging using "
+"the interactive debugger."
+msgstr ""
+
+#: ../../../src/usage/launching_distributed.rst:134
+msgid "Providing Hosts"
+msgstr ""
+
+#: ../../../src/usage/launching_distributed.rst:136
+msgid ""
+"Hosts can be provided as command line arguments, like above, but the way "
+"that allows to fully define a list of hosts is via a JSON hostfile. The "
+"hostfile has a very simple schema. It is simply a list of objects that "
+"define each host via a hostname to ssh to and a list of IPs to utilize for "
+"the communication."
+msgstr ""
+
+#: ../../../src/usage/launching_distributed.rst:141
+msgid ""
+"[\n"
+"    {\"ssh\": \"hostname1\", \"ips\": [\"123.123.1.1\", \"123.123.2.1\"]},\n"
+"    {\"ssh\": \"hostname2\", \"ips\": [\"123.123.1.2\", \"123.123.2.2\"]}\n"
+"]"
+msgstr ""
+
+#: ../../../src/usage/launching_distributed.rst:148
+msgid ""
+"You can use ``mlx.distributed_config --over ethernet`` to create a hostfile "
+"with IPs corresponding to the ``en0`` interface."
+msgstr ""
+
+#: ../../../src/usage/launching_distributed.rst:152
+msgid "Setting up Remote Hosts"
+msgstr ""
+
+#: ../../../src/usage/launching_distributed.rst:154
+msgid ""
+"In order to be able to launch the script on each host we need to be able to "
+"connect via ssh. Moreover the input script and python binary need to be on "
+"each host and on the same path. A good checklist to debug errors is the "
+"following:"
+msgstr ""
+
+#: ../../../src/usage/launching_distributed.rst:158
+msgid "``ssh hostname`` works without asking for password or host confirmation"
+msgstr ""
+
+#: ../../../src/usage/launching_distributed.rst:159
+msgid ""
+"the python binary is available on all hosts at the same path. You can use "
+"``mlx.launch --print-python`` to see what that path is."
+msgstr ""
+
+#: ../../../src/usage/launching_distributed.rst:161
+msgid "the script you want to run is available on all hosts at the same path"
+msgstr ""
+
+#: ../../../src/usage/launching_distributed.rst:163
+msgid ""
+"If you are launching from a node with a completely different setup than the "
+"nodes that the program will run on, you can specify ``--no-verify-script`` "
+"so that ``mlx.launch`` does not attempt to verify that the executable and "
+"script exist locally before launching the distributed job."
+msgstr ""
+
+#: ../../../src/usage/launching_distributed.rst:171
+msgid "Ring Specifics"
+msgstr ""
+
+#: ../../../src/usage/launching_distributed.rst:173
+msgid ""
+"The :ref:`ring <ring_section>` backend, which is also the default backend, "
+"can be explicitly selected with the argument ``--backend ring``. The ring "
+"backend has some specific requirements and arguments that are different to "
+"other backends:"
+msgstr ""
+
+#: ../../../src/usage/launching_distributed.rst:178
+msgid ""
+"The argument ``--hosts`` only accepts IPs and not hostnames. If we need to "
+"ssh to a hostname that does not correspond to the IP we want to bind to we "
+"have to provide a hostfile."
+msgstr ""
+
+#: ../../../src/usage/launching_distributed.rst:181
+msgid ""
+"``--starting-port`` defines the port to bind to on the remote hosts. "
+"Specifically rank 0 for the first IP will use this port and each subsequent "
+"IP or rank will add 1 to this port."
+msgstr ""
+
+#: ../../../src/usage/launching_distributed.rst:184
+msgid ""
+"``--connections-per-ip`` allows us to increase the number of connections "
+"between neighboring nodes. This corresponds to ``--mca btl_tcp_links 2`` for "
+"``mpirun``."
+msgstr ""
+
+#: ../../../src/usage/launching_distributed.rst:191
+msgid "JACCL Specifics"
+msgstr ""
+
+#: ../../../src/usage/launching_distributed.rst:193
+msgid ""
+"The :ref:`JACCL <jaccl_section>` backend can be selected with the argument "
+"``--backend jaccl``. A hostfile is necessary to launch with this backend "
+"because it needs to contain the RDMA devices connecting each node to each "
+"other node."
+msgstr ""
+
+#: ../../../src/usage/launching_distributed.rst:199
+msgid "NCCL Specifics"
+msgstr ""
+
+#: ../../../src/usage/launching_distributed.rst:201
+msgid ""
+"The :ref:`NCCL <nccl_section>` backend is the default backend for CUDA "
+"environments. When launching from a Mac to a Linux machine with CUDA then "
+"the backend should be selected using ``--backend nccl``."
+msgstr ""
+
+#: ../../../src/usage/launching_distributed.rst:205
+msgid ""
+"The ``--repeat-hosts, -n`` argument should be used to launch multi-node and "
+"multi-gpu jobs. For instance"
+msgstr ""
+
+#: ../../../src/usage/launching_distributed.rst:208
+msgid ""
+"mlx.launch --backend nccl --hosts linux-1,linux-2 -n 8 --no-verify-script "
+"-- ./my-job.sh"
+msgstr ""
+
+#: ../../../src/usage/launching_distributed.rst:212
+msgid ""
+"will attempt to launch 16 processes, 8 on each node that will all run ``my-"
+"job.sh``."
+msgstr ""
+
+#: ../../../src/usage/launching_distributed.rst:218
+msgid "MPI Specifics"
+msgstr ""
+
+#: ../../../src/usage/launching_distributed.rst:220
+msgid ""
+"One can use MPI by passing ``--backend mpi`` to ``mlx.launch``. In that "
+"case, ``mlx.launch`` is a thin wrapper over ``mpirun``. Moreover,"
+msgstr ""
+
+#: ../../../src/usage/launching_distributed.rst:223
+msgid "The IPs in the hostfile are ignored"
+msgstr ""
+
+#: ../../../src/usage/launching_distributed.rst:224
+msgid ""
+"The ssh connectivity requirement is stronger as every node needs to be able "
+"to connect to every other node"
+msgstr ""
+
+#: ../../../src/usage/launching_distributed.rst:226
+msgid "``mpirun`` needs to be available on every node at the same path"
+msgstr ""
+
+#: ../../../src/usage/launching_distributed.rst:228
+msgid ""
+"Finally, one can pass arguments to ``mpirun`` using ``--mpi-arg``. For "
+"instance to choose a specific interface for the byte-transfer-layer of MPI "
+"we can call ``mlx.launch`` as follows:"
+msgstr ""
+
+#: ../../../src/usage/launching_distributed.rst:232
+msgid ""
+"mlx.launch --backend mpi --mpi-arg '--mca btl_tcp_if_include en0' --hostfile "
+"hosts.json my_script.py"
+msgstr ""

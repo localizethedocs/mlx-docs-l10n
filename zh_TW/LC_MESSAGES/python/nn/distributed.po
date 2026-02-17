@@ -1,0 +1,108 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023, Apple
+# This file is distributed under the same license as the MLX package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: MLX 0.30\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-02-10 10:09+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../src/python/nn/distributed.rst:4
+msgid "Distributed"
+msgstr ""
+
+#: ../../../src/python/nn/distributed.rst:7
+msgid "Helper Routines"
+msgstr ""
+
+#: ../../../src/python/nn/distributed.rst:9
+msgid ""
+"The :code:`mlx.nn.layers.distributed` package contains helpful routines to "
+"create sharded layers from existing :class:`Modules <mlx.nn.Module>`."
+msgstr ""
+
+#: ../../../src/python/nn/distributed.rst:18:<autosummary>:1
+msgid ""
+":py:obj:`shard_linear <mlx.nn.layers.distributed.shard_linear>`\\ "
+"\\(module\\, sharding\\, \\*\\[\\, ...\\]\\)"
+msgstr ""
+
+#: ../../../src/python/nn/distributed.rst:18:<autosummary>:1
+msgid ""
+"Create a new linear layer that has its parameters sharded and also performs "
+"distributed communication either in the forward or backward pass."
+msgstr ""
+
+#: ../../../src/python/nn/distributed.rst:18:<autosummary>:1
+msgid ""
+":py:obj:`shard_inplace <mlx.nn.layers.distributed.shard_inplace>`\\ "
+"\\(module\\, sharding\\, \\*\\[\\, ...\\]\\)"
+msgstr ""
+
+#: ../../../src/python/nn/distributed.rst:18:<autosummary>:1
+msgid ""
+"Shard a module in-place by updating its parameter dictionary with the "
+"sharded parameter dictionary."
+msgstr ""
+
+#: ../../../src/python/nn/distributed.rst:20
+msgid "Layers"
+msgstr ""
+
+#: ../../../src/python/nn/distributed.rst:30:<autosummary>:1
+msgid ""
+":py:obj:`AllToShardedLinear <mlx.nn.AllToShardedLinear>`\\ "
+"\\(input\\_dims\\, output\\_dims\\)"
+msgstr ""
+
+#: ../../../src/python/nn/distributed.rst:30:<autosummary>:1
+msgid ""
+"Each member of the group applies part of the affine transformation such that "
+"the result is sharded across the group."
+msgstr ""
+
+#: ../../../src/python/nn/distributed.rst:30:<autosummary>:1
+msgid ""
+":py:obj:`ShardedToAllLinear <mlx.nn.ShardedToAllLinear>`\\ "
+"\\(input\\_dims\\, output\\_dims\\)"
+msgstr ""
+
+#: ../../../src/python/nn/distributed.rst:30:<autosummary>:1
+msgid ""
+"Each member of the group applies part of the affine transformation and then "
+"aggregates the results."
+msgstr ""
+
+#: ../../../src/python/nn/distributed.rst:30:<autosummary>:1
+msgid ""
+":py:obj:`QuantizedAllToShardedLinear <mlx.nn.QuantizedAllToShardedLinear>`\\ "
+"\\(input\\_dims\\, ...\\)"
+msgstr ""
+
+#: ../../../src/python/nn/distributed.rst:30:<autosummary>:1
+msgid ""
+"Each member of the group applies part of the affine transformation with a "
+"quantized matrix such that the result is sharded across the group."
+msgstr ""
+
+#: ../../../src/python/nn/distributed.rst:30:<autosummary>:1
+msgid ""
+":py:obj:`QuantizedShardedToAllLinear <mlx.nn.QuantizedShardedToAllLinear>`\\ "
+"\\(input\\_dims\\, ...\\)"
+msgstr ""
+
+#: ../../../src/python/nn/distributed.rst:30:<autosummary>:1
+msgid ""
+"Each member of the group applies part of the affine transformation using the "
+"quantized matrix and then aggregates the results."
+msgstr ""
