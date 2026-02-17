@@ -1,0 +1,80 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023, MLX Contributors
+# This file is distributed under the same license as the MLX package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: MLX 0.9\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-12-08 13:00+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../src/python/_autosummary/mlx.core.allclose.rst:2
+msgid "mlx.core.allclose"
+msgstr ""
+
+#: ../../../docstring of mlx.core.allclose:1
+msgid "Approximate comparison of two arrays."
+msgstr "兩個陣列的近似比較。"
+
+#: ../../../docstring of mlx.core.allclose:3
+msgid ""
+"Infinite values are considered equal if they have the same sign, NaN values "
+"are not equal unless ``equal_nan`` is ``True``."
+msgstr ""
+"無限值若符號相同則視為相等；NaN 值除非 ``equal_nan`` 為 ``True``，否則視為不"
+"相等。"
+
+#: ../../../docstring of mlx.core.allclose:5
+msgid "The arrays are considered equal if:"
+msgstr "在以下情況視為陣列相等："
+
+#: ../../../docstring of mlx.core.allclose:7
+msgid "all(abs(a - b) <= (atol + rtol * abs(b)))"
+msgstr ""
+
+#: ../../../docstring of mlx.core.allclose:11
+msgid ""
+"Note unlike :func:`array_equal`, this function supports numpy-style "
+"broadcasting."
+msgstr "注意：不同於 :func:`array_equal`，此函式支援 numpy 風格廣播。"
+
+#: ../../../src/python/_autosummary/mlx.core.allclose.rst:0
+msgid "Parameters"
+msgstr "參數"
+
+#: ../../../docstring of mlx.core.allclose:14 mlx.core.allclose:16
+msgid "Input array."
+msgstr "輸入陣列。"
+
+#: ../../../docstring of mlx.core.allclose:18
+msgid "Relative tolerance."
+msgstr "相對容差。"
+
+#: ../../../docstring of mlx.core.allclose:20
+msgid "Absolute tolerance."
+msgstr "絕對容差。"
+
+#: ../../../docstring of mlx.core.allclose:22
+msgid "If ``True``, NaNs are considered equal. Defaults to ``False``."
+msgstr "若為 ``True``，NaN 會視為相等。預設為 ``False``。"
+
+#: ../../../src/python/_autosummary/mlx.core.allclose.rst:0
+msgid "Returns"
+msgstr "回傳"
+
+#: ../../../docstring of mlx.core.allclose:26
+msgid "The boolean output scalar indicating if the arrays are close."
+msgstr "布林輸出純量，表示陣列是否相近。"
+
+#: ../../../src/python/_autosummary/mlx.core.allclose.rst:0
+msgid "Return type"
+msgstr "回傳型別"
