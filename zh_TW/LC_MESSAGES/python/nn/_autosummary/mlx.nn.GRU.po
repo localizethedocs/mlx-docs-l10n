@@ -1,0 +1,95 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023, MLX Contributors
+# This file is distributed under the same license as the MLX package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: MLX 0.19\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-12-08 12:31+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../src/python/nn/_autosummary/mlx.nn.GRU.rst:2
+msgid "mlx.nn.GRU"
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/recurrent.py:docstring
+#: of mlx.nn.layers.recurrent.GRU:1
+msgid "A gated recurrent unit (GRU) RNN layer."
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/recurrent.py:docstring
+#: of mlx.nn.layers.recurrent.GRU:3
+msgid "The input has shape ``NLD`` or ``LD`` where:"
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/recurrent.py:docstring
+#: of mlx.nn.layers.recurrent.GRU:5
+msgid "``N`` is the optional batch dimension"
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/recurrent.py:docstring
+#: of mlx.nn.layers.recurrent.GRU:6
+msgid "``L`` is the sequence length"
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/recurrent.py:docstring
+#: of mlx.nn.layers.recurrent.GRU:7
+msgid "``D`` is the input's feature dimension"
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/recurrent.py:docstring
+#: of mlx.nn.layers.recurrent.GRU:9
+msgid "Concretely, for each element of the sequence, this layer computes:"
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/recurrent.py:docstring
+#: of mlx.nn.layers.recurrent.GRU:11
+msgid ""
+"\\begin{aligned}\n"
+"r_t &= \\sigma (W_{xr}x_t + W_{hr}h_t + b_{r}) \\\\\n"
+"z_t &= \\sigma (W_{xz}x_t + W_{hz}h_t + b_{z}) \\\\\n"
+"n_t &= \\text{tanh}(W_{xn}x_t + b_{n} + r_t \\odot (W_{hn}h_t + b_{hn})) \\"
+"\\\n"
+"h_{t + 1} &= (1 - z_t) \\odot n_t + z_t \\odot h_t\n"
+"\\end{aligned}"
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/recurrent.py:docstring
+#: of mlx.nn.layers.recurrent.GRU:20
+msgid ""
+"The hidden state :math:`h` has shape ``NH`` or ``H`` depending on whether "
+"the input is batched or not. Returns the hidden state at each time step of "
+"shape ``NLH`` or ``LH``."
+msgstr ""
+
+#: ../../../src/python/nn/_autosummary/mlx.nn.GRU.rst:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/recurrent.py:docstring
+#: of mlx.nn.layers.recurrent.GRU:24
+msgid "Dimension of the input, ``D``."
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/recurrent.py:docstring
+#: of mlx.nn.layers.recurrent.GRU:26
+msgid "Dimension of the hidden state, ``H``."
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/recurrent.py:docstring
+#: of mlx.nn.layers.recurrent.GRU:28
+msgid "Whether to use biases or not. Default: ``True``."
+msgstr ""
+
+#: ../../../src/python/nn/_autosummary/mlx.nn.GRU.rst:12
+msgid "Methods"
+msgstr "方法"

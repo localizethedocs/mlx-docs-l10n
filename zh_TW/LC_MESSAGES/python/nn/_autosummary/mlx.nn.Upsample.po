@@ -1,0 +1,96 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023, MLX Contributors
+# This file is distributed under the same license as the MLX package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: MLX 0.19\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-12-08 12:31+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../src/python/nn/_autosummary/mlx.nn.Upsample.rst:2
+msgid "mlx.nn.Upsample"
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/upsample.py:docstring
+#: of mlx.nn.layers.upsample.Upsample:1
+msgid "Upsample the input signal spatially."
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/upsample.py:docstring
+#: of mlx.nn.layers.upsample.Upsample:3
+msgid ""
+"The spatial dimensions are by convention dimensions ``1`` to ``x.ndim - 2``. "
+"The first is the batch dimension and the last is the feature dimension."
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/upsample.py:docstring
+#: of mlx.nn.layers.upsample.Upsample:7
+msgid ""
+"For example, an audio signal would be 3D with 1 spatial dimension, an image "
+"4D with 2 and so on and so forth."
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/upsample.py:docstring
+#: of mlx.nn.layers.upsample.Upsample:10
+msgid ""
+"There are three upsampling algorithms implemented nearest neighbor "
+"upsampling, linear interpolation, and cubic interpolation. All can be "
+"applied to any number of spatial dimensions. The linear interpolation will "
+"be bilinear, trilinear etc when applied to more than one spatial dimension. "
+"And cubic interpolation will be bicubic when there are 2 spatial dimensions."
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/upsample.py:docstring
+#: of mlx.nn.layers.upsample.Upsample:17
+msgid ""
+"When using one of the linear or cubic interpolation modes the "
+"``align_corners`` argument changes how the corners are treated in the input "
+"image. If ``align_corners=True`` then the top and left edge of the input and "
+"output will be matching as will the bottom right edge."
+msgstr ""
+
+#: ../../../src/python/nn/_autosummary/mlx.nn.Upsample.rst:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/upsample.py:docstring
+#: of mlx.nn.layers.upsample.Upsample:22
+msgid ""
+"The multiplier for the spatial size. If a ``float`` is provided, it is the "
+"multiplier for all spatial dimensions. Otherwise, the number of scale "
+"factors provided must match the number of spatial dimensions."
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/upsample.py:docstring
+#: of mlx.nn.layers.upsample.Upsample:27
+msgid ""
+"The upsampling algorithm, either ``\"nearest\"``, ``\"linear\"`` or "
+"``\"cubic\"``. Default: ``\"nearest\"``."
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/upsample.py:docstring
+#: of mlx.nn.layers.upsample.Upsample:30
+msgid ""
+"Changes the way the corners are treated during ``\"linear\"`` and "
+"``\"cubic\"`` upsampling.  See the note above and the examples below for "
+"more details.  Default: ``False``."
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/upsample.py:docstring
+#: of mlx.nn.layers.upsample.Upsample:36
+msgid "Examples"
+msgstr "範例"
+
+#: ../../../src/python/nn/_autosummary/mlx.nn.Upsample.rst:12
+msgid "Methods"
+msgstr "方法"
