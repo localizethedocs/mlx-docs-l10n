@@ -1,0 +1,99 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023, MLX Contributors
+# This file is distributed under the same license as the MLX package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: MLX 0.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-12-08 12:20+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../src/python/nn/_autosummary/mlx.nn.LSTM.rst:2
+msgid "mlx.nn.LSTM"
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/recurrent.py:docstring
+#: of mlx.nn.layers.recurrent.LSTM:1
+msgid "An LSTM recurrent layer."
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/recurrent.py:docstring
+#: of mlx.nn.layers.recurrent.LSTM:3
+msgid "The input has shape ``NLD`` or ``LD`` where:"
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/recurrent.py:docstring
+#: of mlx.nn.layers.recurrent.LSTM:5
+msgid "``N`` is the optional batch dimension"
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/recurrent.py:docstring
+#: of mlx.nn.layers.recurrent.LSTM:6
+msgid "``L`` is the sequence length"
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/recurrent.py:docstring
+#: of mlx.nn.layers.recurrent.LSTM:7
+msgid "``D`` is the input's feature dimension"
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/recurrent.py:docstring
+#: of mlx.nn.layers.recurrent.LSTM:9
+msgid "Concretely, for each element of the sequence, this layer computes:"
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/recurrent.py:docstring
+#: of mlx.nn.layers.recurrent.LSTM:11
+msgid ""
+"\\begin{align*}\n"
+"i_t &= \\sigma (W_{xi}x_t + W_{hi}h_t + b_{i}) \\\\\n"
+"f_t &= \\sigma (W_{xf}x_t + W_{hf}h_t + b_{f}) \\\\\n"
+"g_t &= \\text{tanh} (W_{xg}x_t + W_{hg}h_t + b_{g}) \\\\\n"
+"o_t &= \\sigma (W_{xo}x_t + W_{ho}h_t + b_{o}) \\\\\n"
+"c_{t + 1} &= f_t \\odot c_t + i_t \\odot g_t \\\\\n"
+"h_{t + 1} &= o_t \\text{tanh}(c_{t + 1})\n"
+"\\end{align*}\n"
+"\n"
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/recurrent.py:docstring
+#: of mlx.nn.layers.recurrent.LSTM:21
+msgid ""
+"The hidden state :math:`h` and cell state :math:`c` have shape ``NH`` or "
+"``H``, depending on whether the input is batched or not."
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/recurrent.py:docstring
+#: of mlx.nn.layers.recurrent.LSTM:24
+msgid ""
+"The layer returns two arrays, the hidden state and the cell state at each "
+"time step, both of shape ``NLH`` or ``LH``."
+msgstr ""
+
+#: ../../../src/python/nn/_autosummary/mlx.nn.LSTM.rst:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/recurrent.py:docstring
+#: of mlx.nn.layers.recurrent.LSTM:27
+msgid "Dimension of the input, ``D``."
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/recurrent.py:docstring
+#: of mlx.nn.layers.recurrent.LSTM:29
+msgid "Dimension of the hidden state, ``H``."
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/recurrent.py:docstring
+#: of mlx.nn.layers.recurrent.LSTM:31
+msgid "Whether to use biases or not. Default: ``True``."
+msgstr ""
