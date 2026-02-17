@@ -1,0 +1,168 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023, MLX Contributors
+# This file is distributed under the same license as the MLX package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: MLX 0.25\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-12-08 12:39+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../src/python/linalg.rst:4
+msgid "Linear Algebra"
+msgstr "線性代數"
+
+#: ../../../src/python/linalg.rst:25:<autosummary>:1
+msgid ":py:obj:`inv <mlx.core.linalg.inv>`\\ \\(a\\, \\*\\[\\, stream\\]\\)"
+msgstr ""
+
+#: ../../../src/python/linalg.rst:25:<autosummary>:1
+msgid "Compute the inverse of a square matrix."
+msgstr "計算方陣的反矩陣。"
+
+#: ../../../src/python/linalg.rst:25:<autosummary>:1
+msgid ""
+":py:obj:`tri_inv <mlx.core.linalg.tri_inv>`\\ \\(a\\[\\, upper\\, "
+"stream\\]\\)"
+msgstr ""
+
+#: ../../../src/python/linalg.rst:25:<autosummary>:1
+msgid "Compute the inverse of a triangular square matrix."
+msgstr "計算三角方陣的反矩陣。"
+
+#: ../../../src/python/linalg.rst:25:<autosummary>:1
+msgid ""
+":py:obj:`norm <mlx.core.linalg.norm>`\\ \\(a\\, \\/\\[\\, ord\\, axis\\, "
+"keepdims\\, stream\\]\\)"
+msgstr ""
+
+#: ../../../src/python/linalg.rst:25:<autosummary>:1
+msgid "Matrix or vector norm."
+msgstr "矩陣或向量範數。"
+
+#: ../../../src/python/linalg.rst:25:<autosummary>:1
+msgid ""
+":py:obj:`cholesky <mlx.core.linalg.cholesky>`\\ \\(a\\[\\, upper\\, "
+"stream\\]\\)"
+msgstr ""
+
+#: ../../../src/python/linalg.rst:25:<autosummary>:1
+msgid ""
+"Compute the Cholesky decomposition of a real symmetric positive semi-"
+"definite matrix."
+msgstr "計算實對稱半正定矩陣的 Cholesky 分解。"
+
+#: ../../../src/python/linalg.rst:25:<autosummary>:1
+msgid ""
+":py:obj:`cholesky_inv <mlx.core.linalg.cholesky_inv>`\\ \\(L\\[\\, upper\\, "
+"stream\\]\\)"
+msgstr ""
+
+#: ../../../src/python/linalg.rst:25:<autosummary>:1
+msgid ""
+"Compute the inverse of a real symmetric positive semi-definite matrix using "
+"it's Cholesky decomposition."
+msgstr "使用 Cholesky 分解計算實對稱半正定矩陣的反矩陣。"
+
+#: ../../../src/python/linalg.rst:25:<autosummary>:1
+msgid ""
+":py:obj:`cross <mlx.core.linalg.cross>`\\ \\(a\\, b\\[\\, axis\\, "
+"stream\\]\\)"
+msgstr ""
+
+#: ../../../src/python/linalg.rst:25:<autosummary>:1
+msgid "Compute the cross product of two arrays along a specified axis."
+msgstr "沿指定軸計算兩個陣列的叉積。"
+
+#: ../../../src/python/linalg.rst:25:<autosummary>:1
+msgid ":py:obj:`qr <mlx.core.linalg.qr>`\\ \\(a\\, \\*\\[\\, stream\\]\\)"
+msgstr ""
+
+#: ../../../src/python/linalg.rst:25:<autosummary>:1
+msgid "The QR factorization of the input matrix."
+msgstr "輸入矩陣的 QR 分解。"
+
+#: ../../../src/python/linalg.rst:25:<autosummary>:1
+msgid ""
+":py:obj:`svd <mlx.core.linalg.svd>`\\ \\(a\\[\\, compute\\_uv\\, stream\\]\\)"
+msgstr ""
+
+#: ../../../src/python/linalg.rst:25:<autosummary>:1
+msgid "The Singular Value Decomposition (SVD) of the input matrix."
+msgstr "輸入矩陣的奇異值分解（SVD）。"
+
+#: ../../../src/python/linalg.rst:25:<autosummary>:1
+msgid ""
+":py:obj:`eigvalsh <mlx.core.linalg.eigvalsh>`\\ \\(a\\[\\, UPLO\\, "
+"stream\\]\\)"
+msgstr ""
+
+#: ../../../src/python/linalg.rst:25:<autosummary>:1
+msgid ""
+"Compute the eigenvalues of a complex Hermitian or real symmetric matrix."
+msgstr "計算複數 Hermitian 或實對稱矩陣的特徵值。"
+
+#: ../../../src/python/linalg.rst:25:<autosummary>:1
+msgid ":py:obj:`eigh <mlx.core.linalg.eigh>`\\ \\(a\\[\\, UPLO\\, stream\\]\\)"
+msgstr ""
+
+#: ../../../src/python/linalg.rst:25:<autosummary>:1
+msgid ""
+"Compute the eigenvalues and eigenvectors of a complex Hermitian or real "
+"symmetric matrix."
+msgstr "計算複數 Hermitian 或實對稱矩陣的特徵值與特徵向量。"
+
+#: ../../../src/python/linalg.rst:25:<autosummary>:1
+msgid ":py:obj:`lu <mlx.core.linalg.lu>`\\ \\(a\\, \\*\\[\\, stream\\]\\)"
+msgstr ""
+
+#: ../../../src/python/linalg.rst:25:<autosummary>:1
+msgid "Compute the LU factorization of the given matrix ``A``."
+msgstr "計算給定矩陣 ``A`` 的 LU 分解。"
+
+#: ../../../src/python/linalg.rst:25:<autosummary>:1
+msgid ""
+":py:obj:`lu_factor <mlx.core.linalg.lu_factor>`\\ \\(a\\, \\*\\[\\, "
+"stream\\]\\)"
+msgstr ""
+
+#: ../../../src/python/linalg.rst:25:<autosummary>:1
+msgid "Computes a compact representation of the LU factorization."
+msgstr "計算 LU 分解的緊湊表示。"
+
+#: ../../../src/python/linalg.rst:25:<autosummary>:1
+msgid ":py:obj:`pinv <mlx.core.linalg.pinv>`\\ \\(a\\, \\*\\[\\, stream\\]\\)"
+msgstr ""
+
+#: ../../../src/python/linalg.rst:25:<autosummary>:1
+msgid "Compute the (Moore-Penrose) pseudo-inverse of a matrix."
+msgstr "計算矩陣的（Moore-Penrose）廣義逆。"
+
+#: ../../../src/python/linalg.rst:25:<autosummary>:1
+msgid ""
+":py:obj:`solve <mlx.core.linalg.solve>`\\ \\(a\\, b\\, \\*\\[\\, stream\\]\\)"
+msgstr ""
+
+#: ../../../src/python/linalg.rst:25:<autosummary>:1
+msgid "Compute the solution to a system of linear equations ``AX = B``."
+msgstr "計算線性方程組 ``AX = B`` 的解。"
+
+#: ../../../src/python/linalg.rst:25:<autosummary>:1
+msgid ""
+":py:obj:`solve_triangular <mlx.core.linalg.solve_triangular>`\\ \\(a\\, b\\, "
+"\\*\\[\\, upper\\, stream\\]\\)"
+msgstr ""
+
+#: ../../../src/python/linalg.rst:25:<autosummary>:1
+msgid ""
+"Computes the solution of a triangular system of linear equations ``AX = B``."
+msgstr "計算三角線性方程組 ``AX = B`` 的解。"

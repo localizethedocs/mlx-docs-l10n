@@ -1,0 +1,94 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023, MLX Contributors
+# This file is distributed under the same license as the MLX package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: MLX 0.25\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-12-08 12:39+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../src/python/optimizers/_autosummary/mlx.optimizers.RMSprop.rst:2
+msgid "mlx.optimizers.RMSprop"
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/optimizers/optimizers.py:docstring
+#: of mlx.optimizers.optimizers.RMSprop:1
+msgid "The RMSprop optimizer [1]."
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/optimizers/optimizers.py:docstring
+#: of mlx.optimizers.optimizers.RMSprop:3
+msgid ""
+"[1]: Tieleman, T. and Hinton, G. 2012. Lecture 6.5-rmsprop, coursera: Neural "
+"networks for machine learning"
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/optimizers/optimizers.py:docstring
+#: of mlx.optimizers.optimizers.RMSprop:5
+msgid ""
+"v_{t+1} &= \\alpha v_t + (1 - \\alpha) g_t^2 \\\\\n"
+"w_{t+1} &= w_t - \\lambda \\frac{g_t}{\\sqrt{v_{t+1}} + \\epsilon}"
+msgstr ""
+
+#: ../../../src/python/optimizers/_autosummary/mlx.optimizers.RMSprop.rst:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/optimizers/optimizers.py:docstring
+#: of mlx.optimizers.optimizers.RMSprop:10
+msgid "The learning rate :math:`\\lambda`."
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/optimizers/optimizers.py:docstring
+#: of mlx.optimizers.optimizers.RMSprop:12
+msgid "The smoothing constant :math:`\\alpha`. Default: ``0.99``"
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/optimizers/optimizers.py:docstring
+#: of mlx.optimizers.optimizers.RMSprop:15
+msgid ""
+"The term :math:`\\epsilon` added to the denominator to improve numerical "
+"stability. Default: ``1e-8``"
+msgstr ""
+
+#: ../../../src/python/optimizers/_autosummary/mlx.optimizers.RMSprop.rst:12
+msgid "Methods"
+msgstr "方法"
+
+#: ../../../src/python/optimizers/_autosummary/mlx.optimizers.RMSprop.rst:17:<autosummary>:1
+msgid ""
+":py:obj:`__init__ <mlx.optimizers.RMSprop.__init__>`\\ "
+"\\(learning\\_rate\\[\\, alpha\\, eps\\]\\)"
+msgstr ""
+
+#: ../../../src/python/optimizers/_autosummary/mlx.optimizers.RMSprop.rst:17:<autosummary>:1
+msgid ""
+":py:obj:`apply_single <mlx.optimizers.RMSprop.apply_single>`\\ "
+"\\(gradient\\, parameter\\, state\\)"
+msgstr ""
+
+#: ../../../src/python/optimizers/_autosummary/mlx.optimizers.RMSprop.rst:17:<autosummary>:1
+msgid ""
+"Performs the RMSprop parameter update and stores :math:`v` in the optimizer "
+"state."
+msgstr ""
+
+#: ../../../src/python/optimizers/_autosummary/mlx.optimizers.RMSprop.rst:17:<autosummary>:1
+msgid ""
+":py:obj:`init_single <mlx.optimizers.RMSprop.init_single>`\\ \\(parameter\\, "
+"state\\)"
+msgstr ""
+
+#: ../../../src/python/optimizers/_autosummary/mlx.optimizers.RMSprop.rst:17:<autosummary>:1
+msgid "Initialize optimizer state"
+msgstr ""

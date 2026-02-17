@@ -1,0 +1,117 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023, MLX Contributors
+# This file is distributed under the same license as the MLX package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: MLX 0.25\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-12-08 12:39+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../src/python/distributed.rst:6
+msgid "Distributed Communication"
+msgstr "分散式通訊"
+
+#: ../../../src/python/distributed.rst:8
+msgid ""
+"MLX provides a distributed communication package using MPI. The MPI library "
+"is loaded at runtime; if MPI is available then distributed communication is "
+"also made available."
+msgstr ""
+"MLX 提供使用 MPI 的分散式通訊軟體包。MPI 程式庫會在執行時載入；若 MPI 可用，"
+"則分散式通訊也可用。"
+
+#: ../../../src/python/distributed.rst:22:<autosummary>:1
+msgid ":py:obj:`Group <mlx.core.distributed.Group>`\\"
+msgstr ""
+
+#: ../../../src/python/distributed.rst:22:<autosummary>:1
+msgid ""
+"An :class:`mlx.core.distributed.Group` represents a group of independent mlx "
+"processes that can communicate."
+msgstr ""
+":class:`mlx.core.distributed.Group` 代表一組可互相通訊的獨立 mlx 程序。"
+
+#: ../../../src/python/distributed.rst:22:<autosummary>:1
+msgid ":py:obj:`is_available <mlx.core.distributed.is_available>`\\ \\(\\)"
+msgstr ""
+
+#: ../../../src/python/distributed.rst:22:<autosummary>:1
+msgid "Check if a communication backend is available."
+msgstr "檢查通訊後端是否可用。"
+
+#: ../../../src/python/distributed.rst:22:<autosummary>:1
+msgid ""
+":py:obj:`init <mlx.core.distributed.init>`\\ \\(\\[strict\\, backend\\]\\)"
+msgstr ""
+
+#: ../../../src/python/distributed.rst:22:<autosummary>:1
+msgid ""
+"Initialize the communication backend and create the global communication "
+"group."
+msgstr "初始化通訊後端並建立全域通訊群組。"
+
+#: ../../../src/python/distributed.rst:22:<autosummary>:1
+msgid ""
+":py:obj:`all_sum <mlx.core.distributed.all_sum>`\\ \\(x\\, \\*\\[\\, "
+"group\\, stream\\]\\)"
+msgstr ""
+
+#: ../../../src/python/distributed.rst:22:<autosummary>:1
+msgid "All reduce sum."
+msgstr "全體歸約求和。"
+
+#: ../../../src/python/distributed.rst:22:<autosummary>:1
+msgid ""
+":py:obj:`all_gather <mlx.core.distributed.all_gather>`\\ \\(x\\, \\*\\[\\, "
+"group\\, stream\\]\\)"
+msgstr ""
+
+#: ../../../src/python/distributed.rst:22:<autosummary>:1
+msgid "Gather arrays from all processes."
+msgstr "從所有程序收集陣列。"
+
+#: ../../../src/python/distributed.rst:22:<autosummary>:1
+msgid ""
+":py:obj:`send <mlx.core.distributed.send>`\\ \\(x\\, dst\\, \\*\\[\\, "
+"group\\, stream\\]\\)"
+msgstr ""
+
+#: ../../../src/python/distributed.rst:22:<autosummary>:1
+msgid ""
+"Send an array from the current process to the process that has rank ``dst`` "
+"in the group."
+msgstr "將陣列從目前程序傳送至群組中排名為 ``dst`` 的程序。"
+
+#: ../../../src/python/distributed.rst:22:<autosummary>:1
+msgid ""
+":py:obj:`recv <mlx.core.distributed.recv>`\\ \\(shape\\, dtype\\, src\\, "
+"\\*\\[\\, group\\, stream\\]\\)"
+msgstr ""
+
+#: ../../../src/python/distributed.rst:22:<autosummary>:1
+msgid ""
+"Recv an array with shape ``shape`` and dtype ``dtype`` from process with "
+"rank ``src``."
+msgstr ""
+"從排名為 ``src`` 的程序接收形狀為 ``shape`` 且 dtype 為 ``dtype`` 的陣列。"
+
+#: ../../../src/python/distributed.rst:22:<autosummary>:1
+msgid ""
+":py:obj:`recv_like <mlx.core.distributed.recv_like>`\\ \\(x\\, src\\, "
+"\\*\\[\\, group\\, stream\\]\\)"
+msgstr ""
+
+#: ../../../src/python/distributed.rst:22:<autosummary>:1
+msgid ""
+"Recv an array with shape and type like ``x`` from process with rank ``src``."
+msgstr "從排名為 ``src`` 的程序接收形狀與型別如 ``x`` 的陣列。"
