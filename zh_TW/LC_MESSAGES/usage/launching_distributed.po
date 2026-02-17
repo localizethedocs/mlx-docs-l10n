@@ -1,0 +1,203 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023, MLX Contributors
+# This file is distributed under the same license as the MLX package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: MLX 0.24\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-12-08 12:20+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../src/usage/launching_distributed.rst:6
+msgid "Launching Distributed Programs"
+msgstr "啟動分散式程式"
+
+#: ../../../src/usage/launching_distributed.rst:10
+msgid ""
+"Installing the MLX python package provides a helper script ``mlx.launch`` "
+"that can be used to run python scripts distributed on several nodes. It "
+"allows launching using either the MPI backend or the ring backend. See the :"
+"doc:`distributed docs <distributed>` for the different backends."
+msgstr ""
+
+#: ../../../src/usage/launching_distributed.rst:16
+msgid "Usage"
+msgstr ""
+
+#: ../../../src/usage/launching_distributed.rst:18
+msgid "The minimal usage example of ``mlx.launch`` is simply"
+msgstr "``mlx.launch`` 的最小使用範例如下"
+
+#: ../../../src/usage/launching_distributed.rst:20
+msgid "mlx.launch --hosts ip1,ip2 my_script.py"
+msgstr ""
+
+#: ../../../src/usage/launching_distributed.rst:24
+msgid "or for testing on localhost"
+msgstr "或用於在 localhost 測試"
+
+#: ../../../src/usage/launching_distributed.rst:26
+msgid "mlx.launch -n 2 my_script.py"
+msgstr ""
+
+#: ../../../src/usage/launching_distributed.rst:30
+msgid ""
+"The ``mlx.launch`` command connects to the provided host and launches the "
+"input script on each host. It monitors each of the launched processes and "
+"terminates the rest if one of them fails unexpectedly or if ``mlx.launch`` "
+"is terminated. It also takes care of forwarding the output of each remote "
+"process to stdout and stderr respectively."
+msgstr ""
+"``mlx.launch`` 會連線到指定的主機並在每台主機上啟動輸入腳本。它會監控每個已啟"
+"動的行程，若其中一個意外失敗或 ``mlx.launch`` 被終止，則會結束其餘行程。它也"
+"會負責將每個遠端行程的輸出分別轉送到 stdout 與 stderr。"
+
+#: ../../../src/usage/launching_distributed.rst:37
+msgid "Providing Hosts"
+msgstr "提供主機"
+
+#: ../../../src/usage/launching_distributed.rst:39
+msgid ""
+"Hosts can be provided as command line arguments, like above, but the way "
+"that allows to fully define a list of hosts is via a JSON hostfile. The "
+"hostfile has a very simple schema. It is simply a list of objects that "
+"define each host via a hostname to ssh to and a list of IPs to utilize for "
+"the communication."
+msgstr ""
+"主機可以像上面一樣以命令列參數提供，但要完整定義主機清單，建議使用 JSON "
+"hostfile。hostfile 的格式很簡單，就是一個物件列表，每個物件定義一個可用於 "
+"ssh 的主機名稱，以及用於通訊的一組 IP。"
+
+#: ../../../src/usage/launching_distributed.rst:44
+msgid ""
+"[\n"
+"    {\"ssh\": \"hostname1\", \"ips\": [\"123.123.1.1\", \"123.123.2.1\"]},\n"
+"    {\"ssh\": \"hostname2\", \"ips\": [\"123.123.1.2\", \"123.123.2.2\"]}\n"
+"]"
+msgstr ""
+
+#: ../../../src/usage/launching_distributed.rst:51
+msgid ""
+"You can use ``mlx.distributed_config --over ethernet`` to create a hostfile "
+"with IPs corresponding to the ``en0`` interface."
+msgstr ""
+"你可以使用 ``mlx.distributed_config --over ethernet`` 建立以 ``en0`` 介面 IP "
+"為內容的 hostfile。"
+
+#: ../../../src/usage/launching_distributed.rst:55
+msgid "Setting up Remote Hosts"
+msgstr "設定遠端主機"
+
+#: ../../../src/usage/launching_distributed.rst:57
+msgid ""
+"In order to be able to launch the script on each host we need to be able to "
+"connect via ssh. Moreover the input script and python binary need to be on "
+"each host and on the same path. A good checklist to debug errors is the "
+"following:"
+msgstr ""
+"為了能在每個主機上啟動腳本，我們必須能透過 ssh 連線。此外，輸入腳本與 Python "
+"可執行檔必須在每個主機上，且路徑相同。以下是除錯時的檢查清單："
+
+#: ../../../src/usage/launching_distributed.rst:61
+msgid "``ssh hostname`` works without asking for password or host confirmation"
+msgstr "``ssh hostname`` 不會要求密碼或主機確認"
+
+#: ../../../src/usage/launching_distributed.rst:62
+msgid ""
+"the python binary is available on all hosts at the same path. You can use "
+"``mlx.launch --print-python`` to see what that path is."
+msgstr ""
+"Python 可執行檔在所有主機上的路徑相同。你可以用 ``mlx.launch --print-"
+"python`` 查看該路徑。"
+
+#: ../../../src/usage/launching_distributed.rst:64
+msgid "the script you want to run is available on all hosts at the same path"
+msgstr "要執行的腳本在所有主機上的路徑相同"
+
+#: ../../../src/usage/launching_distributed.rst:69
+msgid "MPI Specifics"
+msgstr "MPI 的注意事項"
+
+#: ../../../src/usage/launching_distributed.rst:71
+msgid ""
+"One can use MPI by passing ``--backend mpi`` to ``mlx.launch``. In that "
+"case, ``mlx.launch`` is a thin wrapper over ``mpirun``. Moreover,"
+msgstr ""
+"可透過對 ``mlx.launch`` 傳入 ``--backend mpi`` 來使用 MPI。在此情況下，``mlx."
+"launch`` 只是 ``mpirun`` 的薄包裝。此外："
+
+#: ../../../src/usage/launching_distributed.rst:74
+msgid "The IPs in the hostfile are ignored"
+msgstr "hostfile 中的 IP 會被忽略"
+
+#: ../../../src/usage/launching_distributed.rst:75
+msgid ""
+"The ssh connectivity requirement is stronger as every node needs to be able "
+"to connect to every other node"
+msgstr "ssh 連線要求更嚴格，因為每個節點都必須能連到所有其他節點"
+
+#: ../../../src/usage/launching_distributed.rst:77
+msgid "``mpirun`` needs to be available on every node at the same path"
+msgstr "``mpirun`` 必須在每個節點上以相同路徑存在"
+
+#: ../../../src/usage/launching_distributed.rst:79
+msgid ""
+"Finally, one can pass arguments to ``mpirun`` using ``--mpi-arg``. For "
+"instance to choose a specific interface for the byte-transfer-layer of MPI "
+"we can call ``mlx.launch`` as follows:"
+msgstr ""
+"最後，你可以使用 ``--mpi-arg`` 將參數傳給 ``mpirun``。例如，若要為 MPI 的 "
+"byte-transfer-layer 選擇特定介面，可以如下呼叫 ``mlx.launch``："
+
+#: ../../../src/usage/launching_distributed.rst:83
+msgid ""
+"mlx.launch --backend mpi --mpi-arg '--mca btl_tcp_if_include en0' --hostfile "
+"hosts.json my_script.py"
+msgstr ""
+
+#: ../../../src/usage/launching_distributed.rst:91
+msgid "Ring Specifics"
+msgstr "Ring 的注意事項"
+
+#: ../../../src/usage/launching_distributed.rst:93
+msgid ""
+"The ring backend, which is also the default backend, can be explicitly "
+"selected with the argument ``--backend ring``. The ring backend has some "
+"specific requirements and arguments that are different to MPI:"
+msgstr ""
+
+#: ../../../src/usage/launching_distributed.rst:97
+msgid ""
+"The argument ``--hosts`` only accepts IPs and not hostnames. If we need to "
+"ssh to a hostname that does not correspond to the IP we want to bind to we "
+"have to provide a hostfile."
+msgstr ""
+"``--hosts`` 參數只接受 IP，不接受主機名稱。若需要 ssh 到的主機名稱不對應你要"
+"綁定的 IP，就必須提供 hostfile。"
+
+#: ../../../src/usage/launching_distributed.rst:100
+msgid ""
+"``--starting-port`` defines the port to bind to on the remote hosts. "
+"Specifically rank 0 for the first IP will use this port and each subsequent "
+"IP or rank will add 1 to this port."
+msgstr ""
+"``--starting-port`` 定義在遠端主機上要綁定的連接埠。第一個 IP 的 rank 0 會使"
+"用此連接埠，後續每個 IP 或 rank 會在此基礎上加 1。"
+
+#: ../../../src/usage/launching_distributed.rst:103
+msgid ""
+"``--connections-per-ip`` allows us to increase the number of connections "
+"between neighboring nodes. This corresponds to ``--mca btl_tcp_links 2`` for "
+"``mpirun``."
+msgstr ""
+"``--connections-per-ip`` 可增加相鄰節點之間的連線數量。這相當於 ``mpirun`` "
+"的 ``--mca btl_tcp_links 2``。"
