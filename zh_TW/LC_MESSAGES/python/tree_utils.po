@@ -1,0 +1,68 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023, MLX Contributors
+# This file is distributed under the same license as the MLX package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: MLX 0.8\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-12-08 12:57+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../src/python/tree_utils.rst:4
+msgid "Tree Utils"
+msgstr "樹狀工具"
+
+#: ../../../src/python/tree_utils.rst:6
+msgid ""
+"In MLX we consider a python tree to be an arbitrarily nested collection of "
+"dictionaries, lists and tuples without cycles. Functions in this module that "
+"return python trees will be using the default python ``dict``, ``list`` and "
+"``tuple`` but they can usually process objects that inherit from any of "
+"these."
+msgstr ""
+"在 MLX 中，我們將 Python 樹狀結構視為由字典、列表與元組任意巢狀組成、且沒有循"
+"環的集合。本模組中回傳 Python 樹狀結構的函式會使用預設的 ``dict``、``list`` "
+"與 ``tuple``，但通常也能處理繼承自這些型別的物件。"
+
+#: ../../../src/python/tree_utils.rst:12
+msgid "Dictionaries should have keys that are valid python identifiers."
+msgstr "字典的鍵應是有效的 Python 識別字。"
+
+#: ../../../src/python/tree_utils.rst:21:<autosummary>:1
+msgid ""
+":py:obj:`tree_flatten <mlx.utils.tree_flatten>`\\ \\(tree\\[\\, prefix\\, "
+"is\\_leaf\\]\\)"
+msgstr ""
+
+#: ../../../src/python/tree_utils.rst:21:<autosummary>:1
+msgid "Flattens a python tree to a list of key, value tuples."
+msgstr ""
+
+#: ../../../src/python/tree_utils.rst:21:<autosummary>:1
+msgid ":py:obj:`tree_unflatten <mlx.utils.tree_unflatten>`\\ \\(tree\\)"
+msgstr ""
+
+#: ../../../src/python/tree_utils.rst:21:<autosummary>:1
+msgid "Recreate a python tree from its flat representation."
+msgstr ""
+
+#: ../../../src/python/tree_utils.rst:21:<autosummary>:1
+msgid ""
+":py:obj:`tree_map <mlx.utils.tree_map>`\\ \\(fn\\, tree\\, \\*rest\\[\\, "
+"is\\_leaf\\]\\)"
+msgstr ""
+
+#: ../../../src/python/tree_utils.rst:21:<autosummary>:1
+msgid ""
+"Applies ``fn`` to the leaves of the python tree ``tree`` and returns a new "
+"collection with the results."
+msgstr ""
