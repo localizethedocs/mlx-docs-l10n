@@ -1,0 +1,62 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023, MLX Contributors
+# This file is distributed under the same license as the MLX package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: MLX 0.21\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-12-08 12:17+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../src/python/_autosummary/mlx.core.random.laplace.rst:2
+msgid "mlx.core.random.laplace"
+msgstr ""
+
+#: ../../../docstring of mlx.core.random.laplace:1
+msgid "Sample numbers from a Laplace distribution."
+msgstr "從拉普拉斯分佈取樣。"
+
+#: ../../../src/python/_autosummary/mlx.core.random.laplace.rst:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../docstring of mlx.core.random.laplace:3
+msgid "Shape of the output. Default: ``()``."
+msgstr ""
+
+#: ../../../docstring of mlx.core.random.laplace:5
+msgid "Type of the output. Default: ``float32``."
+msgstr ""
+
+#: ../../../docstring of mlx.core.random.laplace:7
+msgid "Mean of the distribution. Default: ``0.0``."
+msgstr ""
+
+#: ../../../docstring of mlx.core.random.laplace:9
+msgid "The scale \"b\" of the Laplace distribution. Default:``1.0``."
+msgstr ""
+
+#: ../../../docstring of mlx.core.random.laplace:12
+msgid "A PRNG key. Default: ``None``."
+msgstr ""
+
+#: ../../../src/python/_autosummary/mlx.core.random.laplace.rst:0
+msgid "Returns"
+msgstr ""
+
+#: ../../../docstring of mlx.core.random.laplace:15
+msgid "The output array of random values."
+msgstr ""
+
+#: ../../../src/python/_autosummary/mlx.core.random.laplace.rst:0
+msgid "Return type"
+msgstr ""
