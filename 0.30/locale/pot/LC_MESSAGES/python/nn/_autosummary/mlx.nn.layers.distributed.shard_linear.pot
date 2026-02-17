@@ -1,0 +1,63 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023, Apple
+# This file is distributed under the same license as the MLX package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: MLX 0.30\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-02-10 10:09+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../src/python/nn/_autosummary/mlx.nn.layers.distributed.shard_linear.rst:2
+msgid "mlx.nn.layers.distributed.shard\\_linear"
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/distributed.py:docstring
+#: of mlx.nn.layers.distributed.shard_linear:1
+msgid ""
+"Create a new linear layer that has its parameters sharded and also performs "
+"distributed communication either in the forward or backward pass."
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/distributed.py:docstring
+#: of mlx.nn.layers.distributed.shard_linear:6
+msgid ""
+"Contrary to ``shard_inplace``, the original layer is not changed but a new "
+"layer is returned."
+msgstr ""
+
+#: ../../../src/python/nn/_autosummary/mlx.nn.layers.distributed.shard_linear.rst:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/distributed.py:docstring
+#: of mlx.nn.layers.distributed.shard_linear:9
+msgid "The linear layer to be sharded."
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/distributed.py:docstring
+#: of mlx.nn.layers.distributed.shard_linear:11
+msgid ""
+"One of \"all-to-sharded\" and \"sharded-to-all\" that defines the type of "
+"sharding to perform."
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/distributed.py:docstring
+#: of mlx.nn.layers.distributed.shard_linear:14
+msgid "The segments to use. Default: ``1``."
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/distributed.py:docstring
+#: of mlx.nn.layers.distributed.shard_linear:16
+msgid ""
+"The distributed group to shard across. If not set, the global group will be "
+"used. Default: ``None``."
+msgstr ""

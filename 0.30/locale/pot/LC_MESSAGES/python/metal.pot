@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MLX 0.30\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-12-23 09:21+0000\n"
+"POT-Creation-Date: 2026-02-10 10:09+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -31,10 +31,6 @@ msgstr ""
 
 #: ../../../src/python/metal.rst:12:<autosummary>:1
 msgid ":py:obj:`device_info <mlx.core.metal.device_info>`\\ \\(\\)"
-msgstr ""
-
-#: ../../../src/python/metal.rst:12:<autosummary>:1
-msgid "Get information about the GPU device and system settings."
 msgstr ""
 
 #: ../../../src/python/metal.rst:12:<autosummary>:1
