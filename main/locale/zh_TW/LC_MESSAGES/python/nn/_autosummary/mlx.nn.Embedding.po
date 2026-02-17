@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MLX main\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-12-22 08:23+0000\n"
+"POT-Creation-Date: 2026-02-16 08:39+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -65,7 +65,7 @@ msgstr ""
 #: ../../../src/python/nn/_autosummary/mlx.nn.Embedding.rst:16:<autosummary>:1
 msgid ""
 ":py:obj:`to_quantized <mlx.nn.Embedding.to_quantized>`\\ "
-"\\(\\[group\\_size\\, bits\\, mode\\]\\)"
+"\\(\\[group\\_size\\, bits\\, mode\\, ...\\]\\)"
 msgstr ""
 
 #: ../../../src/python/nn/_autosummary/mlx.nn.Embedding.rst:16:<autosummary>:1
