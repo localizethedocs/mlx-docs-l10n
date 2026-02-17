@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MLX main\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-01-12 08:24+0000\n"
+"POT-Creation-Date: 2026-02-16 08:39+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -29,46 +29,76 @@ msgstr ""
 #: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/quantized.py:docstring
 #: of mlx.nn.layers.quantized.quantize:3
 msgid ""
-"By default all layers that define a ``to_quantized(group_size, bits)`` "
-"method will be quantized. Both :obj:`Linear` and :obj:`Embedding` layers "
-"will be quantized. Note also, the module is updated in-place."
-msgstr ""
-
-#: ../../../src/python/_autosummary/mlx.nn.quantize.rst:0
-msgid "Parameters"
-msgstr ""
-
-#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/quantized.py:docstring
-#: of mlx.nn.layers.quantized.quantize:7
-msgid "The model whose leaf modules may be quantized."
+"By default all layers that define a ``to_quantized()`` method will be "
+"quantized. Both :obj:`Linear` and :obj:`Embedding` layers will be quantized. "
+"The module is updated in-place."
 msgstr ""
 
 #: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/quantized.py:docstring
 #: of mlx.nn.layers.quantized.quantize:9
+msgid ""
+"``quantize_input=True`` is only supported for ``\"nvfp4\"`` and "
+"``\"mxfp8\"`` modes and :obj:`Linear` layers."
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/quantized.py:docstring
+#: of mlx.nn.layers.quantized.quantize:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/quantized.py:docstring
+#: of mlx.nn.layers.quantized.quantize:12
+msgid "The model whose leaf modules may be quantized."
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/quantized.py:docstring
+#: of mlx.nn.layers.quantized.quantize:14
 msgid ""
 "The quantization group size (see :func:`mlx.core.quantize`). Default: "
 "``None``."
 msgstr ""
 
 #: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/quantized.py:docstring
-#: of mlx.nn.layers.quantized.quantize:12
+#: of mlx.nn.layers.quantized.quantize:17
 msgid ""
 "The number of bits per parameter (see :func:`mlx.core.quantize`). Default: "
 "``None``."
 msgstr ""
 
 #: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/quantized.py:docstring
-#: of mlx.nn.layers.quantized.quantize:15
+#: of mlx.nn.layers.quantized.quantize:20
 msgid ""
 "The quantization method to use (see :func:`mlx.core.quantize`). Default: "
 "``\"affine\"``."
 msgstr ""
 
 #: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/quantized.py:docstring
-#: of mlx.nn.layers.quantized.quantize:18
+#: of mlx.nn.layers.quantized.quantize:23
+msgid "Whether to quantize activations. Default: ``False``."
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/quantized.py:docstring
+#: of mlx.nn.layers.quantized.quantize:25
 msgid ""
 "A callable which receives the :obj:`Module` path and :obj:`Module` itself "
-"and returns ``True`` or a dict of params for `to_quantized` if it should be "
-"quantized and ``False`` otherwise. If ``None``, then all layers that define "
-"a ``to_quantized(group_size, bits)`` method are quantized. Default: ``None``."
+"and returns ``True`` or a dict of params for ``to_quantized`` if it should "
+"be quantized and ``False`` otherwise. If ``None``, then all layers that "
+"define a ``to_quantized()`` method are quantized. Default: ``None``."
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/quantized.py:docstring
+#: of mlx.nn.layers.quantized.quantize:33
+msgid "Example"
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/quantized.py:docstring
+#: of mlx.nn.layers.quantized.quantize:34
+msgid ""
+"Weight only quantization for all layers that define a ``to_quantized()`` "
+"method:"
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/quantized.py:docstring
+#: of mlx.nn.layers.quantized.quantize:39
+msgid "Weight and input quantization for all linear layers:"
 msgstr ""
