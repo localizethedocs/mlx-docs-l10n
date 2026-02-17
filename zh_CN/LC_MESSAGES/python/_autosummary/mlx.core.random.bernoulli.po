@@ -1,0 +1,61 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023, MLX Contributors
+# This file is distributed under the same license as the MLX package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: MLX 0.16\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-12-08 13:00+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../src/python/_autosummary/mlx.core.random.bernoulli.rst:2
+msgid "mlx.core.random.bernoulli"
+msgstr ""
+
+#: ../../../docstring of mlx.core.random.bernoulli:1
+msgid "Generate Bernoulli random values."
+msgstr ""
+
+#: ../../../docstring of mlx.core.random.bernoulli:3
+msgid ""
+"The values are sampled from the bernoulli distribution with parameter ``p``. "
+"The parameter ``p`` can be a :obj:`float` or :obj:`array` and must be "
+"broadcastable to ``shape``."
+msgstr ""
+
+#: ../../../src/python/_autosummary/mlx.core.random.bernoulli.rst:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../docstring of mlx.core.random.bernoulli:7
+msgid "Parameter of the Bernoulli distribution. Default: ``0.5``."
+msgstr ""
+
+#: ../../../docstring of mlx.core.random.bernoulli:10
+msgid "Shape of the output. Default: ``p.shape``."
+msgstr ""
+
+#: ../../../docstring of mlx.core.random.bernoulli:13
+msgid "A PRNG key. Default: ``None``."
+msgstr ""
+
+#: ../../../src/python/_autosummary/mlx.core.random.bernoulli.rst:0
+msgid "Returns"
+msgstr ""
+
+#: ../../../docstring of mlx.core.random.bernoulli:16
+msgid "The array of random integers."
+msgstr ""
+
+#: ../../../src/python/_autosummary/mlx.core.random.bernoulli.rst:0
+msgid "Return type"
+msgstr ""

@@ -1,0 +1,66 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023, MLX Contributors
+# This file is distributed under the same license as the MLX package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: MLX 0.16\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-12-08 13:00+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../src/python/_autosummary/mlx.nn.quantize.rst:2
+msgid "mlx.nn.quantize"
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/quantized.py:docstring
+#: of mlx.nn.layers.quantized.quantize:1
+msgid "Quantize the sub-modules of a module according to a predicate."
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/quantized.py:docstring
+#: of mlx.nn.layers.quantized.quantize:3
+msgid ""
+"By default all layers that define a ``to_quantized(group_size, bits)`` "
+"method will be quantized. Both :obj:`Linear` and :obj:`Embedding` layers "
+"will be quantized. Note also, the module is updated in-place."
+msgstr ""
+
+#: ../../../src/python/_autosummary/mlx.nn.quantize.rst:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/quantized.py:docstring
+#: of mlx.nn.layers.quantized.quantize:7
+msgid "The model whose leaf modules may be quantized."
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/quantized.py:docstring
+#: of mlx.nn.layers.quantized.quantize:9
+msgid ""
+"The quantization group size (see :func:`mlx.core.quantize`). Default: ``64``."
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/quantized.py:docstring
+#: of mlx.nn.layers.quantized.quantize:12
+msgid ""
+"The number of bits per parameter (see :func:`mlx.core.quantize`). Default: "
+"``4``."
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/quantized.py:docstring
+#: of mlx.nn.layers.quantized.quantize:15
+msgid ""
+"A callable which receives the :obj:`Module` path and :obj:`Module` itself "
+"and returns ``True`` if it should be quantized and ``False`` otherwise. If "
+"``None``, then all layers that define a ``to_quantized(group_size, bits)`` "
+"method are quantized. Default: ``None``."
+msgstr ""
