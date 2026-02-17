@@ -1,0 +1,67 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023, MLX Contributors
+# This file is distributed under the same license as the MLX package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: MLX 0.6\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-12-08 12:13+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../src/python/nn/_autosummary_functions/mlx.nn.losses.hinge_loss.rst:2
+msgid "mlx.nn.losses.hinge\\_loss"
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/losses.py:docstring
+#: of mlx.nn.losses.hinge_loss:1
+msgid "Computes the hinge loss between inputs and targets."
+msgstr "計算輸入與目標之間的 hinge 損失。"
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/losses.py:docstring
+#: of mlx.nn.losses.hinge_loss:3
+msgid ""
+"\\text{hinge}(y, y_{\\text{pred}}) = \\max(0, 1 - y \\cdot y_{\\text{pred}})"
+msgstr ""
+
+#: ../../../src/python/nn/_autosummary_functions/mlx.nn.losses.hinge_loss.rst:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/losses.py:docstring
+#: of mlx.nn.losses.hinge_loss:8
+msgid "The predicted values."
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/losses.py:docstring
+#: of mlx.nn.losses.hinge_loss:10
+msgid "The target values. They should be -1 or 1."
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/losses.py:docstring
+#: of mlx.nn.losses.hinge_loss:12
+msgid ""
+"Specifies the reduction to apply to the output: ``'none'`` | ``'mean'`` | "
+"``'sum'``. Default: ``'none'``."
+msgstr ""
+
+#: ../../../src/python/nn/_autosummary_functions/mlx.nn.losses.hinge_loss.rst:0
+msgid "Returns"
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/losses.py:docstring
+#: of mlx.nn.losses.hinge_loss:16
+msgid "The computed hinge loss."
+msgstr ""
+
+#: ../../../src/python/nn/_autosummary_functions/mlx.nn.losses.hinge_loss.rst:0
+msgid "Return type"
+msgstr ""
