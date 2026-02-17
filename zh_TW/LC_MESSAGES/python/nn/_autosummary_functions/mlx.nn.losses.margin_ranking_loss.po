@@ -1,0 +1,104 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023, MLX Contributors
+# This file is distributed under the same license as the MLX package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: MLX 0.22\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-12-08 12:45+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../src/python/nn/_autosummary_functions/mlx.nn.losses.margin_ranking_loss.rst:2
+msgid "mlx.nn.losses.margin\\_ranking\\_loss"
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/losses.py:docstring
+#: of mlx.nn.losses.margin_ranking_loss:1
+msgid ""
+"Calculate the margin ranking loss that loss given inputs :math:`x_1`, :math:"
+"`x_2` and a label :math:`y` (containing 1 or -1)."
+msgstr ""
+"給定輸入 :math:`x_1`、:math:`x_2` 與標籤 :math:`y`（包含 1 或 -1），計算 "
+"margin ranking 損失。"
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/losses.py:docstring
+#: of mlx.nn.losses.margin_ranking_loss:4
+msgid "The loss is given by:"
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/losses.py:docstring
+#: of mlx.nn.losses.margin_ranking_loss:6
+msgid ""
+"\\text{loss} = \\max (0, -y * (x_1 - x_2) + \\text{margin})\n"
+"\n"
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/losses.py:docstring
+#: of mlx.nn.losses.margin_ranking_loss:9
+msgid ""
+"Where :math:`y` represents ``targets``, :math:`x_1` represents ``inputs1`` "
+"and :math:`x_2` represents ``inputs2``."
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/losses.py:docstring
+#: of mlx.nn.losses.margin_ranking_loss:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/losses.py:docstring
+#: of mlx.nn.losses.margin_ranking_loss:12
+msgid "Scores for the first input."
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/losses.py:docstring
+#: of mlx.nn.losses.margin_ranking_loss:14
+msgid "Scores for the second input."
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/losses.py:docstring
+#: of mlx.nn.losses.margin_ranking_loss:16
+msgid ""
+"Labels indicating whether samples in ``inputs1`` should be ranked higher "
+"than samples in ``inputs2``. Values should be 1 or -1."
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/losses.py:docstring
+#: of mlx.nn.losses.margin_ranking_loss:19
+msgid "The margin by which the scores should be separated. Default: ``0.0``."
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/losses.py:docstring
+#: of mlx.nn.losses.margin_ranking_loss:22
+msgid ""
+"Specifies the reduction to apply to the output: ``'none'`` | ``'mean'`` | "
+"``'sum'``. Default: ``'none'``."
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/losses.py:docstring
+#: of mlx.nn.losses.margin_ranking_loss:0
+msgid "Returns"
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/losses.py:docstring
+#: of mlx.nn.losses.margin_ranking_loss:26
+msgid "The computed margin ranking loss."
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/losses.py:docstring
+#: of mlx.nn.losses.margin_ranking_loss:0
+msgid "Return type"
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/losses.py:docstring
+#: of mlx.nn.losses.margin_ranking_loss:30
+msgid "Examples"
+msgstr "範例"
