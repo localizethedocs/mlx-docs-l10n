@@ -1,0 +1,145 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023, Apple
+# This file is distributed under the same license as the MLX package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: MLX 0.26\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-12-08 12:22+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../src/python/_autosummary/mlx.core.fast.scaled_dot_product_attention.rst:2
+msgid "mlx.core.fast.scaled\\_dot\\_product\\_attention"
+msgstr ""
+
+#: ../../../docstring of mlx.core.fast.scaled_dot_product_attention:1
+msgid ""
+"A fast implementation of multi-head attention: ``O = softmax(Q @ K.T, "
+"dim=-1) @ V``."
+msgstr ""
+
+#: ../../../docstring of mlx.core.fast.scaled_dot_product_attention:3
+msgid "Supports:"
+msgstr ""
+
+#: ../../../docstring of mlx.core.fast.scaled_dot_product_attention:5
+msgid "`Multi-Head Attention <https://arxiv.org/abs/1706.03762>`_"
+msgstr ""
+
+#: ../../../docstring of mlx.core.fast.scaled_dot_product_attention:6
+msgid "`Grouped Query Attention <https://arxiv.org/abs/2305.13245>`_"
+msgstr ""
+
+#: ../../../docstring of mlx.core.fast.scaled_dot_product_attention:7
+msgid "`Multi-Query Attention <https://arxiv.org/abs/1911.02150>`_"
+msgstr ""
+
+#: ../../../docstring of mlx.core.fast.scaled_dot_product_attention:11
+msgid ""
+"The softmax operation is performed in ``float32`` regardless of the input "
+"precision."
+msgstr ""
+
+#: ../../../docstring of mlx.core.fast.scaled_dot_product_attention:13
+msgid ""
+"For Grouped Query Attention and Multi-Query Attention, the ``k`` and ``v`` "
+"inputs should not be pre-tiled to match ``q``."
+msgstr ""
+
+#: ../../../docstring of mlx.core.fast.scaled_dot_product_attention:16
+msgid "In the following the dimensions are given by:"
+msgstr ""
+
+#: ../../../docstring of mlx.core.fast.scaled_dot_product_attention:18
+msgid "``B``: The batch size."
+msgstr ""
+
+#: ../../../docstring of mlx.core.fast.scaled_dot_product_attention:19
+msgid "``N_q``: The number of query heads."
+msgstr ""
+
+#: ../../../docstring of mlx.core.fast.scaled_dot_product_attention:20
+msgid "``N_kv``: The number of key and value heads."
+msgstr ""
+
+#: ../../../docstring of mlx.core.fast.scaled_dot_product_attention:21
+msgid "``T_q``: The number of queries per example."
+msgstr ""
+
+#: ../../../docstring of mlx.core.fast.scaled_dot_product_attention:22
+msgid "``T_kv``: The number of keys and values per example."
+msgstr ""
+
+#: ../../../docstring of mlx.core.fast.scaled_dot_product_attention:23
+msgid "``D``: The per-head dimension."
+msgstr ""
+
+#: ../../../src/python/_autosummary/mlx.core.fast.scaled_dot_product_attention.rst:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../docstring of mlx.core.fast.scaled_dot_product_attention:25
+msgid "Queries with shape ``[B, N_q, T_q, D]``."
+msgstr ""
+
+#: ../../../docstring of mlx.core.fast.scaled_dot_product_attention:27
+msgid "Keys with shape ``[B, N_kv, T_kv, D]``."
+msgstr ""
+
+#: ../../../docstring of mlx.core.fast.scaled_dot_product_attention:29
+msgid "Values with shape ``[B, N_kv, T_kv, D]``."
+msgstr ""
+
+#: ../../../docstring of mlx.core.fast.scaled_dot_product_attention:31
+msgid "Scale for queries (typically ``1.0 / sqrt(q.shape(-1)``)"
+msgstr ""
+
+#: ../../../docstring of mlx.core.fast.scaled_dot_product_attention:33
+msgid ""
+"The mask to apply to the query-key scores. The mask can be an array or a "
+"string indicating the mask type. The only supported string type is "
+"``\"causal\"``. If the mask is an array it can be a boolean or additive "
+"mask. The mask can have at most 4 dimensions and must be broadcast-"
+"compatible with the shape ``[B, N, T_q, T_kv]``. If an additive mask is "
+"given its type must promote to the promoted type of ``q``, ``k``, and ``v``."
+msgstr ""
+
+#: ../../../src/python/_autosummary/mlx.core.fast.scaled_dot_product_attention.rst:0
+msgid "Returns"
+msgstr ""
+
+#: ../../../docstring of mlx.core.fast.scaled_dot_product_attention:42
+msgid "The output array."
+msgstr ""
+
+#: ../../../src/python/_autosummary/mlx.core.fast.scaled_dot_product_attention.rst:0
+msgid "Return type"
+msgstr ""
+
+#: ../../../docstring of mlx.core.fast.scaled_dot_product_attention:46
+msgid "Example"
+msgstr ""
+
+#: ../../../docstring of mlx.core.fast.scaled_dot_product_attention:47
+msgid ""
+"B = 2\n"
+"N_q = N_kv = 32\n"
+"T_q = T_kv = 1000\n"
+"D = 128\n"
+"\n"
+"q = mx.random.normal(shape=(B, N_q, T_q, D))\n"
+"k = mx.random.normal(shape=(B, N_kv, T_kv, D))\n"
+"v = mx.random.normal(shape=(B, N_kv, T_kv, D))\n"
+"scale = D ** -0.5\n"
+"out = mx.fast.scaled_dot_product_attention(q, k, v, scale=scale, "
+"mask=\"causal\")"
+msgstr ""
