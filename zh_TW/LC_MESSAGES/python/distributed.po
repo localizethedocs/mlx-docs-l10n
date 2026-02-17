@@ -1,0 +1,80 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023, MLX Contributors
+# This file is distributed under the same license as the MLX package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: MLX 0.15\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-12-08 12:49+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../src/python/distributed.rst:6
+msgid "Distributed Communication"
+msgstr "分散式通訊"
+
+#: ../../../src/python/distributed.rst:8
+msgid ""
+"MLX provides a distributed communication package using MPI. The MPI library "
+"is loaded at runtime; if MPI is available then distributed communication is "
+"also made available."
+msgstr ""
+"MLX 提供使用 MPI 的分散式通訊軟體包。MPI 程式庫會在執行時載入；若 MPI 可用，"
+"則分散式通訊也可用。"
+
+#: ../../../src/python/distributed.rst:19:<autosummary>:1
+msgid ":py:obj:`Group <mlx.core.distributed.Group>`\\"
+msgstr ""
+
+#: ../../../src/python/distributed.rst:19:<autosummary>:1
+msgid ""
+"An :class:`mlx.core.distributed.Group` represents a group of independent mlx "
+"processes that can communicate."
+msgstr ""
+":class:`mlx.core.distributed.Group` 代表一組可互相通訊的獨立 mlx 程序。"
+
+#: ../../../src/python/distributed.rst:19:<autosummary>:1
+msgid ":py:obj:`is_available <mlx.core.distributed.is_available>`\\ \\(\\)"
+msgstr ""
+
+#: ../../../src/python/distributed.rst:19:<autosummary>:1
+msgid "Check if a communication backend is available."
+msgstr "檢查通訊後端是否可用。"
+
+#: ../../../src/python/distributed.rst:19:<autosummary>:1
+msgid ":py:obj:`init <mlx.core.distributed.init>`\\ \\(\\[strict\\]\\)"
+msgstr ""
+
+#: ../../../src/python/distributed.rst:19:<autosummary>:1
+msgid ""
+"Initialize the communication backend and create the global communication "
+"group."
+msgstr "初始化通訊後端並建立全域通訊群組。"
+
+#: ../../../src/python/distributed.rst:19:<autosummary>:1
+msgid ""
+":py:obj:`all_sum <mlx.core.distributed.all_sum>`\\ \\(x\\, \\*\\[\\, "
+"group\\]\\)"
+msgstr ""
+
+#: ../../../src/python/distributed.rst:19:<autosummary>:1
+msgid "All reduce sum."
+msgstr "全體歸約求和。"
+
+#: ../../../src/python/distributed.rst:19:<autosummary>:1
+msgid ""
+":py:obj:`all_gather <mlx.core.distributed.all_gather>`\\ \\(x\\, \\*\\[\\, "
+"group\\]\\)"
+msgstr ""
+
+#: ../../../src/python/distributed.rst:19:<autosummary>:1
+msgid "Gather arrays from all processes."
+msgstr "從所有程序收集陣列。"
