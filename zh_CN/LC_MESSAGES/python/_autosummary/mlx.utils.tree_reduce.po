@@ -1,0 +1,84 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023, MLX Contributors
+# This file is distributed under the same license as the MLX package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: MLX 0.17\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-12-08 12:57+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../src/python/_autosummary/mlx.utils.tree_reduce.rst:2
+msgid "mlx.utils.tree\\_reduce"
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/utils.py:docstring
+#: of mlx.utils.tree_reduce:1
+msgid "Applies a reduction to the leaves of a Python tree."
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/utils.py:docstring
+#: of mlx.utils.tree_reduce:3
+msgid ""
+"This function reduces Python trees into an accumulated result by applying "
+"the provided function ``fn`` to the leaves of the tree."
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/utils.py:docstring
+#: of mlx.utils.tree_reduce:7
+msgid "Example"
+msgstr ""
+
+#: ../../../src/python/_autosummary/mlx.utils.tree_reduce.rst:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/utils.py:docstring
+#: of mlx.utils.tree_reduce:13
+msgid ""
+"The reducer function that takes two arguments (accumulator, current value) "
+"and returns the updated accumulator."
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/utils.py:docstring
+#: of mlx.utils.tree_reduce:16
+msgid ""
+"The Python tree to reduce. It can be any nested combination of lists, "
+"tuples, or dictionaries."
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/utils.py:docstring
+#: of mlx.utils.tree_reduce:19
+msgid ""
+"The initial value to start the reduction. If not provided, the first leaf "
+"value is used."
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/utils.py:docstring
+#: of mlx.utils.tree_reduce:22
+msgid ""
+"A function to determine if an object is a leaf, returning ``True`` for leaf "
+"nodes and ``False`` otherwise."
+msgstr ""
+
+#: ../../../src/python/_autosummary/mlx.utils.tree_reduce.rst:0
+msgid "Returns"
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/utils.py:docstring
+#: of mlx.utils.tree_reduce:26
+msgid "The accumulated value."
+msgstr ""
+
+#: ../../../src/python/_autosummary/mlx.utils.tree_reduce.rst:0
+msgid "Return type"
+msgstr ""
