@@ -46,7 +46,7 @@ msgstr ""
 
 #: ../../../src/python/nn/_autosummary/mlx.nn.layers.distributed.shard_inplace.rst:0
 msgid "Parameters"
-msgstr ""
+msgstr "參數"
 
 #: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/distributed.py:docstring
 #: of mlx.nn.layers.distributed.shard_inplace:13

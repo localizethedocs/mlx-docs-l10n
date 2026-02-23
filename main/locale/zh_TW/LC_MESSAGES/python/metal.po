@@ -48,6 +48,3 @@ msgstr ""
 #: ../../../src/python/metal.rst:12:<autosummary>:1
 msgid "Stop a Metal capture."
 msgstr "停止 Metal 捕獲。"
-
-#~ msgid "Get information about the GPU device and system settings."
-#~ msgstr "取得 GPU 裝置與系統設定資訊。"

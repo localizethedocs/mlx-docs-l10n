@@ -29,7 +29,7 @@ msgstr ""
 
 #: ../../../src/examples/data_parallelism.rst:12
 msgid "Training Example"
-msgstr ""
+msgstr "訓練範例"
 
 #: ../../../src/examples/data_parallelism.rst:14
 msgid ""
@@ -37,6 +37,8 @@ msgid ""
 "distributed training. Namely, we will average the gradients across a set of "
 "hosts before applying them to the model."
 msgstr ""
+"本節將把 MLX 的訓練迴圈改為支援資料平行的分散式訓練。也就是在將梯度套用到模型"
+"前，先在多台主機間對梯度取平均。"
 
 #: ../../../src/examples/data_parallelism.rst:18
 msgid ""
@@ -66,6 +68,8 @@ msgid ""
 "func:`all_sum` and divide by the size of the :class:`Group`. Namely we have "
 "to :func:`mlx.utils.tree_map` the gradients with following function."
 msgstr ""
+"要在多台機器間對梯度取平均，只需執行 :func:`all_sum` 並除以 :class:`Group` 的"
+"大小。也就是用下列函式對梯度做 :func:`mlx.utils.tree_map`："
 
 #: ../../../src/examples/data_parallelism.rst:40
 msgid ""
@@ -77,7 +81,7 @@ msgstr ""
 msgid ""
 "Putting everything together our training loop step looks as follows with "
 "everything else remaining the same."
-msgstr ""
+msgstr "把所有內容整合後，在其他部分不變的情況下，訓練步驟如下："
 
 #: ../../../src/examples/data_parallelism.rst:48
 msgid ""
@@ -109,12 +113,15 @@ msgid ""
 "communication per gradient. It is significantly more efficient to aggregate "
 "several gradients together and perform fewer communication steps."
 msgstr ""
+"雖然上面的程式碼可以正確運作，但每個梯度都會進行一次通訊。將多個梯度聚合後再"
+"通訊，會更有效率。"
 
 #: ../../../src/examples/data_parallelism.rst:74
 msgid ""
 "This is the purpose of :func:`mlx.nn.average_gradients`. The final code "
 "looks almost identical to the example above:"
 msgstr ""
+"這正是 :func:`mlx.nn.average_gradients` 的目的。最終程式碼與上例幾乎相同："
 
 #: ../../../src/examples/data_parallelism.rst:77
 msgid ""
