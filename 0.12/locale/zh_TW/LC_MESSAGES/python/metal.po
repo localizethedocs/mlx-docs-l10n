@@ -35,7 +35,7 @@ msgstr ""
 
 #: ../../../src/python/metal.rst:18:<autosummary>:1
 msgid "Get information about the GPU device and system settings."
-msgstr "取得 GPU 裝置與系統設定資訊。"
+msgstr ""
 
 #: ../../../src/python/metal.rst:18:<autosummary>:1
 msgid ":py:obj:`get_active_memory <mlx.core.metal.get_active_memory>`\\ \\(\\)"
