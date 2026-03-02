@@ -1,0 +1,78 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023, Apple
+# This file is distributed under the same license as the MLX package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: MLX main\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-02-16 08:39+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../src/python/nn/_autosummary/mlx.nn.ShardedToAllLinear.rst:2
+msgid "mlx.nn.ShardedToAllLinear"
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/distributed.py:docstring
+#: of mlx.nn.layers.distributed.ShardedToAllLinear:1
+msgid ""
+"Each member of the group applies part of the affine transformation and then "
+"aggregates the results."
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/distributed.py:docstring
+#: of mlx.nn.layers.distributed.ShardedToAllLinear:4
+msgid "All nodes will have the same exact result after this layer."
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/distributed.py:docstring
+#: of mlx.nn.layers.distributed.ShardedToAllLinear:6
+msgid ""
+":class:`ShardedToAllLinear` provides a classmethod :meth:`from_linear` to "
+"convert linear layers to sharded :obj:`ShardedToAllLinear` layers."
+msgstr ""
+
+#: ../../../src/python/nn/_autosummary/mlx.nn.ShardedToAllLinear.rst:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/distributed.py:docstring
+#: of mlx.nn.layers.distributed.ShardedToAllLinear:9
+msgid "The dimensionality of the input features"
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/distributed.py:docstring
+#: of mlx.nn.layers.distributed.ShardedToAllLinear:11
+msgid "The dimensionality of the output features"
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/distributed.py:docstring
+#: of mlx.nn.layers.distributed.ShardedToAllLinear:13
+msgid ""
+"If set to ``False`` the the layer will not use a bias. Default is ``True``."
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/distributed.py:docstring
+#: of mlx.nn.layers.distributed.ShardedToAllLinear:16
+msgid ""
+"The sharding will happen across this group. If not set then the global group "
+"is used. Default is ``None``."
+msgstr ""
+
+#: ../../../src/python/nn/_autosummary/mlx.nn.ShardedToAllLinear.rst:12
+msgid "Methods"
+msgstr ""
+
+#: ../../../src/python/nn/_autosummary/mlx.nn.ShardedToAllLinear.rst:15:<autosummary>:1
+msgid ""
+":py:obj:`from_linear <mlx.nn.ShardedToAllLinear.from_linear>`\\ "
+"\\(linear\\_layer\\, \\*\\[\\, segments\\, group\\]\\)"
+msgstr ""
