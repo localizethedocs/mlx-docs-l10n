@@ -1,0 +1,249 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023, MLX Contributors
+# This file is distributed under the same license as the MLX package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: MLX 0.17\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-12-08 12:57+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../src/usage/lazy_evaluation.rst:4
+msgid "Lazy Evaluation"
+msgstr "惰性求值"
+
+#: ../../../src/usage/lazy_evaluation.rst:9
+msgid "Why Lazy Evaluation"
+msgstr "為什麼採用惰性求值"
+
+#: ../../../src/usage/lazy_evaluation.rst:11
+msgid ""
+"When you perform operations in MLX, no computation actually happens. Instead "
+"a compute graph is recorded. The actual computation only happens if an :func:"
+"`eval` is performed."
+msgstr ""
+"在 MLX 中執行運算時，實際上不會進行計算，而是記錄計算圖。只有在執行 :func:"
+"`eval` 時才會進行真正的計算。"
+
+#: ../../../src/usage/lazy_evaluation.rst:15
+msgid ""
+"MLX uses lazy evaluation because it has some nice features, some of which we "
+"describe below."
+msgstr "MLX 採用惰性求值，因為它有一些不錯的特性，下面會說明其中幾項。"
+
+#: ../../../src/usage/lazy_evaluation.rst:19
+msgid "Transforming Compute Graphs"
+msgstr "轉換計算圖"
+
+#: ../../../src/usage/lazy_evaluation.rst:21
+msgid ""
+"Lazy evaluation lets us record a compute graph without actually doing any "
+"computations. This is useful for function transformations like :func:`grad` "
+"and :func:`vmap` and graph optimizations."
+msgstr ""
+"惰性求值讓我們可以在不實際計算的情況下記錄計算圖。這對 :func:`grad`、:func:"
+"`vmap` 等函式轉換以及圖最佳化很有幫助。"
+
+#: ../../../src/usage/lazy_evaluation.rst:25
+msgid ""
+"Currently, MLX does not compile and rerun compute graphs. They are all "
+"generated dynamically. However, lazy evaluation makes it much easier to "
+"integrate compilation for future performance enhancements."
+msgstr ""
+"目前 MLX 不會編譯並重新執行計算圖，計算圖都是動態產生的。不過，惰性求值讓未來"
+"要整合編譯以提升效能變得容易許多。"
+
+#: ../../../src/usage/lazy_evaluation.rst:30
+msgid "Only Compute What You Use"
+msgstr "只計算你會使用的部分"
+
+#: ../../../src/usage/lazy_evaluation.rst:32
+msgid ""
+"In MLX you do not need to worry as much about computing outputs that are "
+"never used. For example:"
+msgstr "在 MLX 中，你不必太擔心計算從未被使用的輸出。例如："
+
+#: ../../../src/usage/lazy_evaluation.rst:35
+msgid ""
+"def fun(x):\n"
+"    a = fun1(x)\n"
+"    b = expensive_fun(a)\n"
+"    return a, b\n"
+"\n"
+"y, _ = fun(x)"
+msgstr ""
+
+#: ../../../src/usage/lazy_evaluation.rst:44
+msgid ""
+"Here, we never actually compute the output of ``expensive_fun``. Use this "
+"pattern with care though, as the graph of ``expensive_fun`` is still built, "
+"and that has some cost associated to it."
+msgstr ""
+"在這裡，我們其實不會計算 ``expensive_fun`` 的輸出。不過這種用法仍需小心，因"
+"為 ``expensive_fun`` 的圖仍會被建立，而這會有一定的成本。"
+
+#: ../../../src/usage/lazy_evaluation.rst:48
+msgid ""
+"Similarly, lazy evaluation can be beneficial for saving memory while keeping "
+"code simple. Say you have a very large model ``Model`` derived from :obj:"
+"`mlx.nn.Module`. You can instantiate this model with ``model = Model()``. "
+"Typically, this will initialize all of the weights as ``float32``, but the "
+"initialization does not actually compute anything until you perform an :func:"
+"`eval`. If you update the model with ``float16`` weights, your maximum "
+"consumed memory will be half that required if eager computation was used "
+"instead."
+msgstr ""
+"同樣地，惰性求值也能在保持程式簡潔的同時節省記憶體。假設你有一個非常大的模型 "
+"``Model``，它繼承自 :obj:`mlx.nn.Module`。你可以用 ``model = Model()`` 來建立"
+"模型。通常這會以 ``float32`` 初始化所有權重，但在執行 :func:`eval` 前，初始化"
+"實際上不會做任何計算。若你改以 ``float16`` 權重更新模型，最大記憶體用量會是使"
+"用即時運算時的一半。"
+
+#: ../../../src/usage/lazy_evaluation.rst:57
+msgid "This pattern is simple to do in MLX thanks to lazy computation:"
+msgstr "由於惰性計算，這種模式在 MLX 中很容易做到："
+
+#: ../../../src/usage/lazy_evaluation.rst:59
+msgid ""
+"model = Model() # no memory used yet\n"
+"model.load_weights(\"weights_fp16.safetensors\")"
+msgstr ""
+
+#: ../../../src/usage/lazy_evaluation.rst:65
+msgid "When to Evaluate"
+msgstr "何時該求值"
+
+#: ../../../src/usage/lazy_evaluation.rst:67
+msgid ""
+"A common question is when to use :func:`eval`. The trade-off is between "
+"letting graphs get too large and not batching enough useful work."
+msgstr ""
+"常見的問題是何時該使用 :func:`eval`。這在「讓圖變得過大」與「無法批次化足夠的"
+"有用工作」之間需要取捨。"
+
+#: ../../../src/usage/lazy_evaluation.rst:70
+msgid "For example:"
+msgstr "例如："
+
+#: ../../../src/usage/lazy_evaluation.rst:72
+msgid ""
+"for _ in range(100):\n"
+"     a = a + b\n"
+"     mx.eval(a)\n"
+"     b = b * 2\n"
+"     mx.eval(b)"
+msgstr ""
+
+#: ../../../src/usage/lazy_evaluation.rst:80
+msgid ""
+"This is a bad idea because there is some fixed overhead with each graph "
+"evaluation. On the other hand, there is some slight overhead which grows "
+"with the compute graph size, so extremely large graphs (while "
+"computationally correct) can be costly."
+msgstr ""
+"這不是好主意，因為每次評估計算圖都有固定的開銷。另一方面，也有些開銷會隨著計"
+"算圖大小而成長，因此過大的計算圖（雖然計算上正確）可能會很昂貴。"
+
+#: ../../../src/usage/lazy_evaluation.rst:85
+msgid ""
+"Luckily, a wide range of compute graph sizes work pretty well with MLX: "
+"anything from a few tens of operations to many thousands of operations per "
+"evaluation should be okay."
+msgstr ""
+"幸運的是，MLX 對計算圖大小的容忍範圍很廣：每次評估從幾十個運算到數千個運算通"
+"常都沒問題。"
+
+#: ../../../src/usage/lazy_evaluation.rst:89
+msgid ""
+"Most numerical computations have an iterative outer loop (e.g. the iteration "
+"in stochastic gradient descent). A natural and usually efficient place to "
+"use :func:`eval` is at each iteration of this outer loop."
+msgstr ""
+"多數數值計算都有一個反覆的外層迴圈（例如隨機梯度下降的迭代）。通常在這個外層"
+"迴圈的每次迭代使用 :func:`eval` 是自然且有效率的作法。"
+
+#: ../../../src/usage/lazy_evaluation.rst:93
+msgid "Here is a concrete example:"
+msgstr "以下是具體範例："
+
+#: ../../../src/usage/lazy_evaluation.rst:95
+msgid ""
+"for batch in dataset:\n"
+"\n"
+"    # Nothing has been evaluated yet\n"
+"    loss, grad = value_and_grad_fn(model, batch)\n"
+"\n"
+"    # Still nothing has been evaluated\n"
+"    optimizer.update(model, grad)\n"
+"\n"
+"    # Evaluate the loss and the new parameters which will\n"
+"    # run the full gradient computation and optimizer update\n"
+"    mx.eval(loss, model.parameters())"
+msgstr ""
+
+#: ../../../src/usage/lazy_evaluation.rst:110
+msgid ""
+"An important behavior to be aware of is when the graph will be implicitly "
+"evaluated. Anytime you ``print`` an array, convert it to an :obj:`numpy."
+"ndarray`, or otherwise access it's memory via :obj:`memoryview`, the graph "
+"will be evaluated. Saving arrays via :func:`save` (or any other MLX saving "
+"functions) will also evaluate the array."
+msgstr ""
+
+#: ../../../src/usage/lazy_evaluation.rst:117
+msgid ""
+"Calling :func:`array.item` on a scalar array will also evaluate it. In the "
+"example above, printing the loss (``print(loss)``) or adding the loss scalar "
+"to a list (``losses.append(loss.item())``) would cause a graph evaluation. "
+"If these lines are before ``mx.eval(loss, model.parameters())`` then this "
+"will be a partial evaluation, computing only the forward pass."
+msgstr ""
+"對純量陣列呼叫 :func:`array.item` 也會觸發求值。在上面的例子中，列印 loss"
+"（``print(loss)``）或將 loss 純量加入清單（``losses.append(loss.item())``）都"
+"會造成計算圖被求值。如果這些語句在 ``mx.eval(loss, model.parameters())`` 之"
+"前，則只會進行部分求值，僅計算前向傳播。"
+
+#: ../../../src/usage/lazy_evaluation.rst:123
+msgid ""
+"Also, calling :func:`eval` on an array or set of arrays multiple times is "
+"perfectly fine. This is effectively a no-op."
+msgstr ""
+"另外，多次對同一個陣列或一組陣列呼叫 :func:`eval` 完全沒有問題，實際上等同於"
+"不做任何事。"
+
+#: ../../../src/usage/lazy_evaluation.rst:128
+msgid "Using scalar arrays for control-flow will cause an evaluation."
+msgstr "以純量陣列作為流程控制條件會觸發求值。"
+
+#: ../../../src/usage/lazy_evaluation.rst:130
+msgid "Here is an example:"
+msgstr "以下為範例："
+
+#: ../../../src/usage/lazy_evaluation.rst:132
+msgid ""
+"def fun(x):\n"
+"    h, y = first_layer(x)\n"
+"    if y > 0:  # An evaluation is done here!\n"
+"        z  = second_layer_a(h)\n"
+"    else:\n"
+"        z  = second_layer_b(h)\n"
+"    return z"
+msgstr ""
+
+#: ../../../src/usage/lazy_evaluation.rst:142
+msgid ""
+"Using arrays for control flow should be done with care. The above example "
+"works and can even be used with gradient transformations. However, this can "
+"be very inefficient if evaluations are done too frequently."
+msgstr ""
+"使用陣列作為流程控制需要謹慎。上面的例子可以運作，甚至可搭配梯度轉換使用。然"
+"而，若求值過於頻繁，效率會非常差。"
