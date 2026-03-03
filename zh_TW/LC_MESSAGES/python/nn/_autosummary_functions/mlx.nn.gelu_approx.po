@@ -1,0 +1,48 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023, MLX Contributors
+# This file is distributed under the same license as the MLX package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: MLX 0.25\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-12-08 12:39+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../src/python/nn/_autosummary_functions/mlx.nn.gelu_approx.rst:2
+msgid "mlx.nn.gelu\\_approx"
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/__init__.py:docstring
+#: of mlx.nn.gelu_approx:1
+msgid "An approximation to Gaussian Error Linear Unit."
+msgstr "高斯誤差線性單元的近似版本。"
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/__init__.py:docstring
+#: of mlx.nn.gelu_approx:3
+msgid "See :func:`gelu` for the exact computation."
+msgstr "精確計算請參見 :func:`gelu`。"
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/__init__.py:docstring
+#: of mlx.nn.gelu_approx:5
+msgid ""
+"This function approximates ``gelu`` with a maximum absolute error :math:`< "
+"0.0005` in the range :math:`[-6, 6]` using the following"
+msgstr ""
+"此函式在 :math:`[-6, 6]` 範圍內，以最大絕對誤差 :math:`< 0.0005` 近似 "
+"``gelu``，使用以下公式"
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/__init__.py:docstring
+#: of mlx.nn.gelu_approx:8
+msgid ""
+"x = 0.5 * x * \\left(1 + \\text{Tanh}\\left((\\sqrt{2 / \\pi} * \\left(x + "
+"0.044715 * x^3\\right)\\right)\\right)"
+msgstr ""
