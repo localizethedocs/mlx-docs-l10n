@@ -1,0 +1,579 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023, Apple
+# This file is distributed under the same license as the MLX package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: MLX 0.27\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-12-08 12:54+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../src/install.rst:4
+msgid "Build and Install"
+msgstr "建置與安裝"
+
+#: ../../../src/install.rst:7
+msgid "Python Installation"
+msgstr "Python 安裝"
+
+#: ../../../src/install.rst:9
+msgid ""
+"MLX is available on PyPI. All you have to do to use MLX with your own Apple "
+"silicon computer is"
+msgstr "MLX 可在 PyPI 取得。要在自己的 Apple 晶片電腦上使用 MLX，只需："
+
+#: ../../../src/install.rst:12
+msgid "pip install mlx"
+msgstr ""
+
+#: ../../../src/install.rst:16
+msgid "To install from PyPI your system must meet the following requirements:"
+msgstr "要從 PyPI 安裝，你的系統必須符合下列需求："
+
+#: ../../../src/install.rst:18
+msgid "Using an M series chip (Apple silicon)"
+msgstr "使用 M 系列晶片（Apple silicon）"
+
+#: ../../../src/install.rst:19
+msgid "Using a native Python >= 3.9"
+msgstr ""
+
+#: ../../../src/install.rst:20
+msgid "macOS >= 13.5"
+msgstr ""
+
+#: ../../../src/install.rst:23
+msgid ""
+"MLX is only available on devices running macOS >= 13.5 It is highly "
+"recommended to use macOS 14 (Sonoma)"
+msgstr ""
+
+#: ../../../src/install.rst:27 ../../../src/install.rst:263
+msgid "CUDA"
+msgstr ""
+
+#: ../../../src/install.rst:29
+msgid "MLX has a CUDA backend which you can install with:"
+msgstr "MLX 提供 CUDA 後端，可使用以下命令安裝："
+
+#: ../../../src/install.rst:31
+msgid "pip install \"mlx[cuda]\""
+msgstr ""
+
+#: ../../../src/install.rst:35
+msgid ""
+"To install the CUDA package from PyPi your system must meet the following "
+"requirements:"
+msgstr "要從 PyPI 安裝 CUDA 軟體包，你的系統必須符合下列需求："
+
+#: ../../../src/install.rst:38
+msgid "Nvidia architecture >= SM 7.0 (Volta)"
+msgstr ""
+
+#: ../../../src/install.rst:39
+msgid "Nvidia driver >= 550.54.14"
+msgstr "Nvidia 驅動程式 >= 550.54.14"
+
+#: ../../../src/install.rst:40
+msgid "CUDA toolkit >= 12.0"
+msgstr "CUDA Toolkit >= 12.0"
+
+#: ../../../src/install.rst:41 ../../../src/install.rst:57
+msgid "Linux distribution with glibc >= 2.35"
+msgstr "glibc >= 2.35 的 Linux 發行版"
+
+#: ../../../src/install.rst:42 ../../../src/install.rst:58
+msgid "Python >= 3.9"
+msgstr ""
+
+#: ../../../src/install.rst:46
+msgid "CPU-only (Linux)"
+msgstr "僅 CPU（Linux）"
+
+#: ../../../src/install.rst:48
+msgid "For a CPU-only version of MLX that runs on Linux use:"
+msgstr "在 Linux 上使用僅 CPU 版本的 MLX："
+
+#: ../../../src/install.rst:50
+msgid "pip install \"mlx[cpu]\""
+msgstr ""
+
+#: ../../../src/install.rst:54
+msgid ""
+"To install the CPU-only package from PyPi your system must meet the "
+"following requirements:"
+msgstr "要從 PyPI 安裝僅 CPU 軟體包，你的系統必須符合下列需求："
+
+#: ../../../src/install.rst:62 ../../../src/install.rst:293
+msgid "Troubleshooting"
+msgstr "疑難排解"
+
+#: ../../../src/install.rst:64
+msgid ""
+"*My OS and Python versions are in the required range but pip still does not "
+"find a matching distribution.*"
+msgstr "*我的 OS 與 Python 版本符合需求，但 pip 仍找不到相符的發行版。*"
+
+#: ../../../src/install.rst:67
+msgid "Probably you are using a non-native Python. The output of"
+msgstr "你可能使用了非原生的 Python。以下命令的輸出："
+
+#: ../../../src/install.rst:69
+msgid "python -c \"import platform; print(platform.processor())\""
+msgstr ""
+
+#: ../../../src/install.rst:73
+msgid ""
+"should be ``arm``. If it is ``i386`` (and you have M series machine) then "
+"you are using a non-native Python. Switch your Python to a native Python. A "
+"good way to do this is with `Conda <https://stackoverflow.com/q/65415996>`_."
+msgstr ""
+"應該是 ``arm``。若顯示為 ``i386``（且你使用 M 系列機器），代表你在使用非原生"
+"的 Python。請切換到原生 Python。可使用 `Conda <https://stackoverflow.com/"
+"q/65415996>`_ 來達成。"
+
+#: ../../../src/install.rst:79
+msgid "Build from source"
+msgstr "從來源碼建置"
+
+#: ../../../src/install.rst:82
+msgid "Build Requirements"
+msgstr "建置需求"
+
+#: ../../../src/install.rst:84
+msgid "A C++ compiler with C++17 support (e.g. Clang >= 5.0)"
+msgstr ""
+
+#: ../../../src/install.rst:85
+msgid "`cmake <https://cmake.org/>`_ -- version 3.25 or later, and ``make``"
+msgstr "`cmake <https://cmake.org/>`_ 版本 3.25 以上，以及 ``make``"
+
+#: ../../../src/install.rst:86
+msgid "Xcode >= 15.0 and macOS SDK >= 14.0"
+msgstr "Xcode >= 15.0 與 macOS SDK >= 14.0"
+
+#: ../../../src/install.rst:89
+msgid ""
+"Ensure your shell environment is native ``arm``, not ``x86`` via Rosetta. If "
+"the output of ``uname -p`` is ``x86``, see the :ref:`troubleshooting section "
+"<build shell>` below."
+msgstr ""
+"請確保你的 shell 環境是原生 ``arm``，不是透過 Rosetta 的 ``x86``。若 ``uname "
+"-p`` 輸出為 ``x86``，請參考下方的\\ :ref:`疑難排解 <build shell>`。"
+
+#: ../../../src/install.rst:93
+msgid "Python API"
+msgstr ""
+
+#: ../../../src/install.rst:97
+msgid ""
+"To build and install the MLX python library from source, first, clone MLX "
+"from `its GitHub repo <https://github.com/ml-explore/mlx>`_:"
+msgstr ""
+"要從來源碼建置與安裝 MLX Python 程式庫，先從\\ `其 GitHub 專案 <https://"
+"github.com/ml-explore/mlx>`_\\ 複製："
+
+#: ../../../src/install.rst:100 ../../../src/install.rst:147
+msgid "git clone git@github.com:ml-explore/mlx.git mlx && cd mlx"
+msgstr ""
+
+#: ../../../src/install.rst:104
+msgid "Then simply build and install MLX using pip:"
+msgstr "接著使用 pip 建置並安裝 MLX："
+
+#: ../../../src/install.rst:106
+msgid "pip install ."
+msgstr ""
+
+#: ../../../src/install.rst:110
+msgid ""
+"For developing, install the package with development dependencies, and use "
+"an editable install:"
+msgstr "進行開發時，請安裝含開發相依性的軟體包，並使用可編輯安裝："
+
+#: ../../../src/install.rst:113
+msgid "pip install -e \".[dev]\""
+msgstr ""
+
+#: ../../../src/install.rst:117
+msgid ""
+"Once the development dependencies are installed, you can build faster with:"
+msgstr "安裝開發相依性後，可用以下命令加速建置："
+
+#: ../../../src/install.rst:119
+msgid "python setup.py build_ext --inplace"
+msgstr ""
+
+#: ../../../src/install.rst:123
+msgid "Run the tests with:"
+msgstr "使用以下命令執行測試："
+
+#: ../../../src/install.rst:125
+msgid "python -m unittest discover python/tests"
+msgstr ""
+
+#: ../../../src/install.rst:129
+msgid ""
+"Optional: Install stubs to enable auto completions and type checking from "
+"your IDE:"
+msgstr ""
+
+#: ../../../src/install.rst:132
+msgid "python setup.py generate_stubs"
+msgstr ""
+
+#: ../../../src/install.rst:137
+msgid "C++ API"
+msgstr ""
+
+#: ../../../src/install.rst:141
+msgid "Currently, MLX must be built and installed from source."
+msgstr "目前 MLX 必須從來源碼建置與安裝。"
+
+#: ../../../src/install.rst:143
+msgid ""
+"Similarly to the python library, to build and install the MLX C++ library "
+"start by cloning MLX from `its GitHub repo <https://github.com/ml-explore/"
+"mlx>`_:"
+msgstr ""
+"與 Python 程式庫相同，要建置並安裝 MLX C++ 程式庫，先從 `其 GitHub 專案 "
+"<https://github.com/ml-explore/mlx>`_ 複製："
+
+#: ../../../src/install.rst:151
+msgid "Create a build directory and run CMake and make:"
+msgstr "建立建置目錄並執行 CMake 與 make："
+
+#: ../../../src/install.rst:153
+msgid ""
+"mkdir -p build && cd build\n"
+"cmake .. && make -j"
+msgstr ""
+
+#: ../../../src/install.rst:158
+msgid "Run tests with:"
+msgstr "使用以下命令執行測試："
+
+#: ../../../src/install.rst:160
+msgid "make test"
+msgstr ""
+
+#: ../../../src/install.rst:164
+msgid "Install with:"
+msgstr "使用以下命令安裝："
+
+#: ../../../src/install.rst:166
+msgid "make install"
+msgstr ""
+
+#: ../../../src/install.rst:170
+msgid ""
+"Note that the built ``mlx.metallib`` file should be either at the same "
+"directory as the executable statically linked to ``libmlx.a`` or the "
+"preprocessor constant ``METAL_PATH`` should be defined at build time and it "
+"should point to the path to the built metal library."
+msgstr ""
+"請注意，建置出的 ``mlx.metallib`` 檔案應與靜態連結到 ``libmlx.a`` 的可執行檔"
+"位於同一目錄；或是在建置時定義前處理器常數 ``METAL_PATH``，並指向已建置的 "
+"metal 程式庫路徑。"
+
+#: ../../../src/install.rst:175
+msgid "Build Options"
+msgstr "建置選項"
+
+#: ../../../src/install.rst:179
+msgid "Option"
+msgstr "選項"
+
+#: ../../../src/install.rst:180
+msgid "Default"
+msgstr "預設"
+
+#: ../../../src/install.rst:181
+msgid "MLX_BUILD_TESTS"
+msgstr "MLX_BUILD_TESTS"
+
+#: ../../../src/install.rst:182 ../../../src/install.rst:188
+#: ../../../src/install.rst:190 ../../../src/install.rst:196
+#: ../../../src/install.rst:198
+msgid "ON"
+msgstr "ON"
+
+#: ../../../src/install.rst:183
+msgid "MLX_BUILD_EXAMPLES"
+msgstr "MLX_BUILD_EXAMPLES"
+
+#: ../../../src/install.rst:184 ../../../src/install.rst:186
+#: ../../../src/install.rst:192 ../../../src/install.rst:194
+#: ../../../src/install.rst:200
+msgid "OFF"
+msgstr "OFF"
+
+#: ../../../src/install.rst:185
+msgid "MLX_BUILD_BENCHMARKS"
+msgstr "MLX_BUILD_BENCHMARKS"
+
+#: ../../../src/install.rst:187
+msgid "MLX_BUILD_METAL"
+msgstr "MLX_BUILD_METAL"
+
+#: ../../../src/install.rst:189
+msgid "MLX_BUILD_CPU"
+msgstr "MLX_BUILD_CPU"
+
+#: ../../../src/install.rst:191
+msgid "MLX_BUILD_PYTHON_BINDINGS"
+msgstr "MLX_BUILD_PYTHON_BINDINGS"
+
+#: ../../../src/install.rst:193
+msgid "MLX_METAL_DEBUG"
+msgstr "MLX_METAL_DEBUG"
+
+#: ../../../src/install.rst:195
+msgid "MLX_BUILD_SAFETENSORS"
+msgstr "MLX_BUILD_SAFETENSORS"
+
+#: ../../../src/install.rst:197
+msgid "MLX_BUILD_GGUF"
+msgstr "MLX_BUILD_GGUF"
+
+#: ../../../src/install.rst:199
+msgid "MLX_METAL_JIT"
+msgstr "MLX_METAL_JIT"
+
+#: ../../../src/install.rst:204
+msgid ""
+"If you have multiple Xcode installations and wish to use a specific one "
+"while building, you can do so by adding the following environment variable "
+"before building"
+msgstr ""
+"如果你安裝了多個 Xcode，且希望在建置時使用特定版本，可以在建置前加入以下環境"
+"變數："
+
+#: ../../../src/install.rst:208
+msgid "export DEVELOPER_DIR=\"/path/to/Xcode.app/Contents/Developer/\""
+msgstr "export DEVELOPER_DIR=\"/path/to/Xcode.app/Contents/Developer/\""
+
+#: ../../../src/install.rst:212
+msgid ""
+"Further, you can use the following command to find out which macOS SDK will "
+"be used"
+msgstr "此外，你可以用以下命令查看將使用的 macOS SDK："
+
+#: ../../../src/install.rst:215
+msgid "xcrun -sdk macosx --show-sdk-version"
+msgstr "xcrun -sdk macosx --show-sdk-version"
+
+#: ../../../src/install.rst:221
+msgid "Binary Size Minimization"
+msgstr "二進位大小最小化"
+
+#: ../../../src/install.rst:223
+msgid ""
+"To produce a smaller binary use the CMake flags "
+"``CMAKE_BUILD_TYPE=MinSizeRel`` and ``BUILD_SHARED_LIBS=ON``."
+msgstr ""
+"要產生較小的二進位檔，請使用 CMake 旗標 ``CMAKE_BUILD_TYPE=MinSizeRel`` 與 "
+"``BUILD_SHARED_LIBS=ON``。"
+
+#: ../../../src/install.rst:226
+msgid ""
+"The MLX CMake build has several additional options to make smaller binaries. "
+"For example, if you don't need the CPU backend or support for safetensors "
+"and GGUF, you can do:"
+msgstr ""
+"MLX 的 CMake 建置還有多個選項可縮小二進位大小。例如若不需要 CPU 後端或 "
+"safetensors 與 GGUF 支援，可使用："
+
+#: ../../../src/install.rst:230
+msgid ""
+"cmake .. \\\n"
+"  -DCMAKE_BUILD_TYPE=MinSizeRel \\\n"
+"  -DBUILD_SHARED_LIBS=ON \\\n"
+"  -DMLX_BUILD_CPU=OFF \\\n"
+"  -DMLX_BUILD_SAFETENSORS=OFF \\\n"
+"  -DMLX_BUILD_GGUF=OFF \\\n"
+"  -DMLX_METAL_JIT=ON"
+msgstr ""
+"cmake .. \\\n"
+"  -DCMAKE_BUILD_TYPE=MinSizeRel \\\n"
+"  -DBUILD_SHARED_LIBS=ON \\\n"
+"  -DMLX_BUILD_CPU=OFF \\\n"
+"  -DMLX_BUILD_SAFETENSORS=OFF \\\n"
+"  -DMLX_BUILD_GGUF=OFF \\\n"
+"  -DMLX_METAL_JIT=ON"
+
+#: ../../../src/install.rst:240
+msgid ""
+"THE ``MLX_METAL_JIT`` flag minimizes the size of the MLX Metal library which "
+"contains pre-built GPU kernels. This substantially reduces the size of the "
+"Metal library by run-time compiling kernels the first time they are used in "
+"MLX on a given machine. Note run-time compilation incurs a cold-start cost "
+"which can be anwywhere from a few hundred millisecond to a few seconds "
+"depending on the application. Once a kernel is compiled, it will be cached "
+"by the system. The Metal kernel cache persists across reboots."
+msgstr ""
+"``MLX_METAL_JIT`` 旗標可縮小包含預先建置 GPU 內核的 MLX Metal 程式庫大小。它"
+"會在特定機器上首次使用內核時進行即時編譯，從而大幅減少 Metal 程式庫大小。請注"
+"意，即時編譯會產生冷啟動成本，視應用程式而定可能從數百毫秒到數秒不等。內核一"
+"旦編譯完成，會被系統快取，且 Metal 內核快取會在重開機後保留。"
+
+#: ../../../src/install.rst:249
+msgid "Linux"
+msgstr ""
+
+#: ../../../src/install.rst:251
+msgid ""
+"To build from source on Linux (CPU only), install the BLAS and LAPACK "
+"headers. For example on Ubuntu, run the following:"
+msgstr ""
+"在 Linux 上從來源碼建置（僅 CPU）時，請安裝 BLAS 與 LAPACK 標頭。以 Ubuntu 為"
+"例，可執行："
+
+#: ../../../src/install.rst:254
+msgid ""
+"apt-get update -y\n"
+"apt-get install libblas-dev liblapack-dev liblapacke-dev -y"
+msgstr ""
+
+#: ../../../src/install.rst:259
+msgid ""
+"From here follow the instructions to install either the :ref:`Python <python "
+"install>` or :ref:`C++ <cpp install>` APIs."
+msgstr ""
+"接著依照指示安裝 :ref:`Python <python install>` 或 :ref:`C++ <cpp install>` "
+"API。"
+
+#: ../../../src/install.rst:265
+msgid ""
+"To build from source on Linux with CUDA, install the BLAS and LAPACK headers "
+"and the CUDA toolkit. For example on Ubuntu, run the following:"
+msgstr ""
+"在 Linux 上以 CUDA 從來源碼建置時，請安裝 BLAS 與 LAPACK 標頭以及 CUDA "
+"Toolkit。以 Ubuntu 為例，可執行："
+
+#: ../../../src/install.rst:268
+msgid ""
+"wget https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2204/"
+"x86_64/cuda-keyring_1.1-1_all.deb\n"
+"dpkg -i cuda-keyring_1.1-1_all.deb\n"
+"apt-get update -y\n"
+"apt-get -y install cuda-toolkit-12-9\n"
+"apt-get install libblas-dev liblapack-dev liblapacke-dev -y"
+msgstr ""
+
+#: ../../../src/install.rst:277
+msgid ""
+"When building either the Python or C++ APIs make sure to pass the cmake flag "
+"``MLX_BUILD_CUDA=ON``. For example, to build the Python API run:"
+msgstr ""
+"建置 Python 或 C++ API 時，請務必加入 cmake 旗標 ``MLX_BUILD_CUDA=ON``。例如"
+"要建置 Python API，請執行："
+
+#: ../../../src/install.rst:280
+msgid "CMAKE_ARGS=\"-DMLX_BUILD_CUDA=ON\" pip install -e \".[dev]\""
+msgstr ""
+
+#: ../../../src/install.rst:284
+msgid "To build the C++ package run:"
+msgstr "要建置 C++ 軟體包，請執行："
+
+#: ../../../src/install.rst:286
+msgid ""
+"mkdir -p build && cd build\n"
+"cmake .. -DMLX_BUILD_CUDA=ON && make -j"
+msgstr ""
+"mkdir -p build && cd build\n"
+"cmake .. -DMLX_BUILD_CUDA=ON && make -jmkdir -p build && cd build\n"
+"cmake .. -DMLX_BUILD_CUDA=ON && make -j"
+
+#: ../../../src/install.rst:296
+msgid "Metal not found"
+msgstr "找不到 Metal"
+
+#: ../../../src/install.rst:298
+msgid "You see the following error when you try to build:"
+msgstr "在嘗試建置時出現以下錯誤："
+
+#: ../../../src/install.rst:300
+msgid ""
+"error: unable to find utility \"metal\", not a developer tool or in PATH"
+msgstr ""
+
+#: ../../../src/install.rst:304
+msgid "To fix this, first make sure you have Xcode installed:"
+msgstr "要修復此問題，請先確認已安裝 Xcode："
+
+#: ../../../src/install.rst:306
+msgid "xcode-select --install"
+msgstr ""
+
+#: ../../../src/install.rst:310
+msgid "Then set the active developer directory:"
+msgstr "接著設定作用中的開發者目錄："
+
+#: ../../../src/install.rst:312
+msgid "sudo xcode-select --switch /Applications/Xcode.app/Contents/Developer"
+msgstr ""
+
+#: ../../../src/install.rst:317
+msgid "x86 Shell"
+msgstr ""
+
+#: ../../../src/install.rst:321
+msgid ""
+"If the output of ``uname -p``  is ``x86`` then your shell is running as x86 "
+"via Rosetta instead of natively."
+msgstr ""
+"若 ``uname -p`` 的輸出為 ``x86``，代表你的 shell 透過 Rosetta 以 x86 模式執"
+"行，而非原生模式。"
+
+#: ../../../src/install.rst:324
+msgid ""
+"To fix this, find the application in Finder (``/Applications`` for iTerm, ``/"
+"Applications/Utilities`` for Terminal), right-click, and click “Get Info”. "
+"Uncheck “Open using Rosetta”, close the “Get Info” window, and restart your "
+"terminal."
+msgstr ""
+"要修復此問題，請在 Finder 中找到應用程式（iTerm 在 ``/Applications``，"
+"Terminal 在 ``/Applications/Utilities``），點右鍵並選擇「取得資訊」。取消勾選"
+"「使用 Rosetta 開啟」，關閉「取得資訊」視窗並重新啟動終端機。"
+
+#: ../../../src/install.rst:329
+msgid "Verify the terminal is now running natively the following command:"
+msgstr "用以下命令確認終端機已原生執行："
+
+#: ../../../src/install.rst:331
+msgid ""
+"$ uname -p\n"
+"arm"
+msgstr ""
+
+#: ../../../src/install.rst:336
+msgid "Also check that cmake is using the correct architecture:"
+msgstr "也請確認 cmake 使用正確的架構："
+
+#: ../../../src/install.rst:338
+msgid ""
+"$ cmake --system-information | grep CMAKE_HOST_SYSTEM_PROCESSOR\n"
+"CMAKE_HOST_SYSTEM_PROCESSOR \"arm64\""
+msgstr ""
+
+#: ../../../src/install.rst:343
+msgid ""
+"If you see ``\"x86_64\"``, try re-installing ``cmake``. If you see "
+"``\"arm64\"`` but the build errors out with \"Building for x86_64 on macOS "
+"is not supported.\" wipe your build cache with ``rm -rf build/`` and try "
+"again."
+msgstr ""
+"若看到 ``\"x86_64\"``，請嘗試重新安裝 ``cmake``。若看到 ``\"arm64\"``，但建置"
+"時出現「Building for x86_64 on macOS is not supported.」錯誤，請用 ``rm -rf "
+"build/`` 清除建置快取後再試一次。"
