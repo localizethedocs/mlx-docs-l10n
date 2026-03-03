@@ -1,0 +1,546 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023, Apple
+# This file is distributed under the same license as the MLX package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: MLX 0.28\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-12-08 12:32+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../src/python/nn/layers.rst:6
+msgid "Layers"
+msgstr ""
+
+#: ../../../src/python/nn/layers.rst:69:<autosummary>:1
+msgid ":py:obj:`ALiBi <mlx.nn.ALiBi>`\\ \\(\\)"
+msgstr ""
+
+#: ../../../src/python/nn/layers.rst:69:<autosummary>:1
+msgid ""
+":py:obj:`AvgPool1d <mlx.nn.AvgPool1d>`\\ \\(kernel\\_size\\[\\, stride\\, "
+"padding\\]\\)"
+msgstr ""
+
+#: ../../../src/python/nn/layers.rst:69:<autosummary>:1
+msgid "Applies 1-dimensional average pooling."
+msgstr ""
+
+#: ../../../src/python/nn/layers.rst:69:<autosummary>:1
+msgid ""
+":py:obj:`AvgPool2d <mlx.nn.AvgPool2d>`\\ \\(kernel\\_size\\[\\, stride\\, "
+"padding\\]\\)"
+msgstr ""
+
+#: ../../../src/python/nn/layers.rst:69:<autosummary>:1
+msgid "Applies 2-dimensional average pooling."
+msgstr ""
+
+#: ../../../src/python/nn/layers.rst:69:<autosummary>:1
+msgid ""
+":py:obj:`AvgPool3d <mlx.nn.AvgPool3d>`\\ \\(kernel\\_size\\[\\, stride\\, "
+"padding\\]\\)"
+msgstr ""
+
+#: ../../../src/python/nn/layers.rst:69:<autosummary>:1
+msgid "Applies 3-dimensional average pooling."
+msgstr ""
+
+#: ../../../src/python/nn/layers.rst:69:<autosummary>:1
+msgid ""
+":py:obj:`BatchNorm <mlx.nn.BatchNorm>`\\ \\(num\\_features\\[\\, eps\\, "
+"momentum\\, ...\\]\\)"
+msgstr ""
+
+#: ../../../src/python/nn/layers.rst:69:<autosummary>:1
+msgid "Applies Batch Normalization over a 2D or 3D input."
+msgstr ""
+
+#: ../../../src/python/nn/layers.rst:69:<autosummary>:1
+msgid ":py:obj:`CELU <mlx.nn.CELU>`\\ \\(\\[alpha\\]\\)"
+msgstr ""
+
+#: ../../../src/python/nn/layers.rst:69:<autosummary>:1
+msgid "Applies the Continuously Differentiable Exponential Linear Unit."
+msgstr ""
+
+#: ../../../src/python/nn/layers.rst:69:<autosummary>:1
+msgid ""
+":py:obj:`Conv1d <mlx.nn.Conv1d>`\\ \\(in\\_channels\\, out\\_channels\\, "
+"kernel\\_size\\)"
+msgstr ""
+
+#: ../../../src/python/nn/layers.rst:69:<autosummary>:1
+msgid ""
+"Applies a 1-dimensional convolution over the multi-channel input sequence."
+msgstr ""
+
+#: ../../../src/python/nn/layers.rst:69:<autosummary>:1
+msgid ""
+":py:obj:`Conv2d <mlx.nn.Conv2d>`\\ \\(in\\_channels\\, out\\_channels\\, "
+"kernel\\_size\\)"
+msgstr ""
+
+#: ../../../src/python/nn/layers.rst:69:<autosummary>:1
+msgid "Applies a 2-dimensional convolution over the multi-channel input image."
+msgstr ""
+
+#: ../../../src/python/nn/layers.rst:69:<autosummary>:1
+msgid ""
+":py:obj:`Conv3d <mlx.nn.Conv3d>`\\ \\(in\\_channels\\, out\\_channels\\, "
+"kernel\\_size\\)"
+msgstr ""
+
+#: ../../../src/python/nn/layers.rst:69:<autosummary>:1
+msgid "Applies a 3-dimensional convolution over the multi-channel input image."
+msgstr ""
+
+#: ../../../src/python/nn/layers.rst:69:<autosummary>:1
+msgid ""
+":py:obj:`ConvTranspose1d <mlx.nn.ConvTranspose1d>`\\ \\(in\\_channels\\, "
+"out\\_channels\\, ...\\)"
+msgstr ""
+
+#: ../../../src/python/nn/layers.rst:69:<autosummary>:1
+msgid ""
+"Applies a 1-dimensional transposed convolution over the multi-channel input "
+"sequence."
+msgstr ""
+
+#: ../../../src/python/nn/layers.rst:69:<autosummary>:1
+msgid ""
+":py:obj:`ConvTranspose2d <mlx.nn.ConvTranspose2d>`\\ \\(in\\_channels\\, "
+"out\\_channels\\, ...\\)"
+msgstr ""
+
+#: ../../../src/python/nn/layers.rst:69:<autosummary>:1
+msgid ""
+"Applies a 2-dimensional transposed convolution over the multi-channel input "
+"image."
+msgstr ""
+
+#: ../../../src/python/nn/layers.rst:69:<autosummary>:1
+msgid ""
+":py:obj:`ConvTranspose3d <mlx.nn.ConvTranspose3d>`\\ \\(in\\_channels\\, "
+"out\\_channels\\, ...\\)"
+msgstr ""
+
+#: ../../../src/python/nn/layers.rst:69:<autosummary>:1
+msgid ""
+"Applies a 3-dimensional transposed convolution over the multi-channel input "
+"image."
+msgstr ""
+
+#: ../../../src/python/nn/layers.rst:69:<autosummary>:1
+msgid ":py:obj:`Dropout <mlx.nn.Dropout>`\\ \\(\\[p\\]\\)"
+msgstr ""
+
+#: ../../../src/python/nn/layers.rst:69:<autosummary>:1
+msgid "Randomly zero a portion of the elements during training."
+msgstr ""
+
+#: ../../../src/python/nn/layers.rst:69:<autosummary>:1
+msgid ":py:obj:`Dropout2d <mlx.nn.Dropout2d>`\\ \\(\\[p\\]\\)"
+msgstr ""
+
+#: ../../../src/python/nn/layers.rst:69:<autosummary>:1
+msgid "Apply 2D channel-wise dropout during training."
+msgstr ""
+
+#: ../../../src/python/nn/layers.rst:69:<autosummary>:1
+msgid ":py:obj:`Dropout3d <mlx.nn.Dropout3d>`\\ \\(\\[p\\]\\)"
+msgstr ""
+
+#: ../../../src/python/nn/layers.rst:69:<autosummary>:1
+msgid "Apply 3D channel-wise dropout during training."
+msgstr ""
+
+#: ../../../src/python/nn/layers.rst:69:<autosummary>:1
+msgid ":py:obj:`Embedding <mlx.nn.Embedding>`\\ \\(num\\_embeddings\\, dims\\)"
+msgstr ""
+
+#: ../../../src/python/nn/layers.rst:69:<autosummary>:1
+msgid ""
+"Implements a simple lookup table that maps each input integer to a high-"
+"dimensional vector."
+msgstr ""
+
+#: ../../../src/python/nn/layers.rst:69:<autosummary>:1
+msgid ":py:obj:`ELU <mlx.nn.ELU>`\\ \\(\\[alpha\\]\\)"
+msgstr ""
+
+#: ../../../src/python/nn/layers.rst:69:<autosummary>:1
+msgid "Applies the Exponential Linear Unit."
+msgstr ""
+
+#: ../../../src/python/nn/layers.rst:69:<autosummary>:1
+msgid ":py:obj:`GELU <mlx.nn.GELU>`\\ \\(\\[approx\\]\\)"
+msgstr ""
+
+#: ../../../src/python/nn/layers.rst:69:<autosummary>:1
+msgid "Applies the Gaussian Error Linear Units."
+msgstr ""
+
+#: ../../../src/python/nn/layers.rst:69:<autosummary>:1
+msgid ":py:obj:`GLU <mlx.nn.GLU>`\\ \\(\\[axis\\]\\)"
+msgstr ""
+
+#: ../../../src/python/nn/layers.rst:69:<autosummary>:1
+msgid "Applies the gated linear unit function."
+msgstr ""
+
+#: ../../../src/python/nn/layers.rst:69:<autosummary>:1
+msgid ""
+":py:obj:`GroupNorm <mlx.nn.GroupNorm>`\\ \\(num\\_groups\\, dims\\[\\, "
+"eps\\, affine\\, ...\\]\\)"
+msgstr ""
+
+#: ../../../src/python/nn/layers.rst:69:<autosummary>:1
+msgid "Applies Group Normalization [1] to the inputs."
+msgstr ""
+
+#: ../../../src/python/nn/layers.rst:69:<autosummary>:1
+msgid ""
+":py:obj:`GRU <mlx.nn.GRU>`\\ \\(input\\_size\\, hidden\\_size\\[\\, "
+"bias\\]\\)"
+msgstr ""
+
+#: ../../../src/python/nn/layers.rst:69:<autosummary>:1
+msgid "A gated recurrent unit (GRU) RNN layer."
+msgstr ""
+
+#: ../../../src/python/nn/layers.rst:69:<autosummary>:1
+msgid ":py:obj:`HardShrink <mlx.nn.HardShrink>`\\ \\(\\)"
+msgstr ""
+
+#: ../../../src/python/nn/layers.rst:69:<autosummary>:1
+msgid "Applies the HardShrink function."
+msgstr ""
+
+#: ../../../src/python/nn/layers.rst:69:<autosummary>:1
+msgid ":py:obj:`HardTanh <mlx.nn.HardTanh>`\\ \\(\\)"
+msgstr ""
+
+#: ../../../src/python/nn/layers.rst:69:<autosummary>:1
+msgid "Applies the HardTanh function."
+msgstr ""
+
+#: ../../../src/python/nn/layers.rst:69:<autosummary>:1
+msgid ":py:obj:`Hardswish <mlx.nn.Hardswish>`\\ \\(\\)"
+msgstr ""
+
+#: ../../../src/python/nn/layers.rst:69:<autosummary>:1
+msgid "Applies the hardswish function, element-wise."
+msgstr ""
+
+#: ../../../src/python/nn/layers.rst:69:<autosummary>:1
+msgid ""
+":py:obj:`InstanceNorm <mlx.nn.InstanceNorm>`\\ \\(dims\\[\\, eps\\, "
+"affine\\]\\)"
+msgstr ""
+
+#: ../../../src/python/nn/layers.rst:69:<autosummary>:1
+msgid "Applies instance normalization [1] on the inputs."
+msgstr ""
+
+#: ../../../src/python/nn/layers.rst:69:<autosummary>:1
+msgid ""
+":py:obj:`LayerNorm <mlx.nn.LayerNorm>`\\ \\(dims\\[\\, eps\\, affine\\, "
+"bias\\]\\)"
+msgstr ""
+
+#: ../../../src/python/nn/layers.rst:69:<autosummary>:1
+msgid "Applies layer normalization [1] on the inputs."
+msgstr ""
+
+#: ../../../src/python/nn/layers.rst:69:<autosummary>:1
+msgid ":py:obj:`LeakyReLU <mlx.nn.LeakyReLU>`\\ \\(\\[negative\\_slope\\]\\)"
+msgstr ""
+
+#: ../../../src/python/nn/layers.rst:69:<autosummary>:1
+msgid "Applies the Leaky Rectified Linear Unit."
+msgstr ""
+
+#: ../../../src/python/nn/layers.rst:69:<autosummary>:1
+msgid ""
+":py:obj:`Linear <mlx.nn.Linear>`\\ \\(input\\_dims\\, output\\_dims\\[\\, "
+"bias\\]\\)"
+msgstr ""
+
+#: ../../../src/python/nn/layers.rst:69:<autosummary>:1
+msgid "Applies an affine transformation to the input."
+msgstr ""
+
+#: ../../../src/python/nn/layers.rst:69:<autosummary>:1
+msgid ":py:obj:`LogSigmoid <mlx.nn.LogSigmoid>`\\ \\(\\)"
+msgstr ""
+
+#: ../../../src/python/nn/layers.rst:69:<autosummary>:1
+msgid "Applies the Log Sigmoid function."
+msgstr ""
+
+#: ../../../src/python/nn/layers.rst:69:<autosummary>:1
+msgid ":py:obj:`LogSoftmax <mlx.nn.LogSoftmax>`\\ \\(\\)"
+msgstr ""
+
+#: ../../../src/python/nn/layers.rst:69:<autosummary>:1
+msgid "Applies the Log Softmax function."
+msgstr ""
+
+#: ../../../src/python/nn/layers.rst:69:<autosummary>:1
+msgid ""
+":py:obj:`LSTM <mlx.nn.LSTM>`\\ \\(input\\_size\\, hidden\\_size\\[\\, "
+"bias\\]\\)"
+msgstr ""
+
+#: ../../../src/python/nn/layers.rst:69:<autosummary>:1
+msgid "An LSTM recurrent layer."
+msgstr ""
+
+#: ../../../src/python/nn/layers.rst:69:<autosummary>:1
+msgid ""
+":py:obj:`MaxPool1d <mlx.nn.MaxPool1d>`\\ \\(kernel\\_size\\[\\, stride\\, "
+"padding\\]\\)"
+msgstr ""
+
+#: ../../../src/python/nn/layers.rst:69:<autosummary>:1
+msgid "Applies 1-dimensional max pooling."
+msgstr ""
+
+#: ../../../src/python/nn/layers.rst:69:<autosummary>:1
+msgid ""
+":py:obj:`MaxPool2d <mlx.nn.MaxPool2d>`\\ \\(kernel\\_size\\[\\, stride\\, "
+"padding\\]\\)"
+msgstr ""
+
+#: ../../../src/python/nn/layers.rst:69:<autosummary>:1
+msgid "Applies 2-dimensional max pooling."
+msgstr ""
+
+#: ../../../src/python/nn/layers.rst:69:<autosummary>:1
+msgid ""
+":py:obj:`MaxPool3d <mlx.nn.MaxPool3d>`\\ \\(kernel\\_size\\[\\, stride\\, "
+"padding\\]\\)"
+msgstr ""
+
+#: ../../../src/python/nn/layers.rst:69:<autosummary>:1
+msgid "Applies 3-dimensional max pooling."
+msgstr ""
+
+#: ../../../src/python/nn/layers.rst:69:<autosummary>:1
+msgid ":py:obj:`Mish <mlx.nn.Mish>`\\ \\(\\)"
+msgstr ""
+
+#: ../../../src/python/nn/layers.rst:69:<autosummary>:1
+msgid "Applies the Mish function, element-wise."
+msgstr ""
+
+#: ../../../src/python/nn/layers.rst:69:<autosummary>:1
+msgid ""
+":py:obj:`MultiHeadAttention <mlx.nn.MultiHeadAttention>`\\ \\(dims\\, "
+"num\\_heads\\[\\, ...\\]\\)"
+msgstr ""
+
+#: ../../../src/python/nn/layers.rst:69:<autosummary>:1
+msgid "Implements the scaled dot product attention with multiple heads."
+msgstr ""
+
+#: ../../../src/python/nn/layers.rst:69:<autosummary>:1
+msgid ":py:obj:`PReLU <mlx.nn.PReLU>`\\ \\(\\[num\\_parameters\\, init\\]\\)"
+msgstr ""
+
+#: ../../../src/python/nn/layers.rst:69:<autosummary>:1
+msgid "Applies the element-wise parametric ReLU."
+msgstr ""
+
+#: ../../../src/python/nn/layers.rst:69:<autosummary>:1
+msgid ""
+":py:obj:`QuantizedEmbedding <mlx.nn.QuantizedEmbedding>`\\ "
+"\\(num\\_embeddings\\, dims\\[\\, ...\\]\\)"
+msgstr ""
+
+#: ../../../src/python/nn/layers.rst:69:<autosummary>:1
+msgid "The same as :obj:`Embedding` but with a  quantized weight matrix."
+msgstr ""
+
+#: ../../../src/python/nn/layers.rst:69:<autosummary>:1
+msgid ""
+":py:obj:`QuantizedLinear <mlx.nn.QuantizedLinear>`\\ \\(input\\_dims\\, "
+"output\\_dims\\[\\, ...\\]\\)"
+msgstr ""
+
+#: ../../../src/python/nn/layers.rst:69:<autosummary>:1
+msgid ""
+"Applies an affine transformation to the input using a quantized weight "
+"matrix."
+msgstr ""
+
+#: ../../../src/python/nn/layers.rst:69:<autosummary>:1
+msgid ":py:obj:`RMSNorm <mlx.nn.RMSNorm>`\\ \\(dims\\[\\, eps\\]\\)"
+msgstr ""
+
+#: ../../../src/python/nn/layers.rst:69:<autosummary>:1
+msgid "Applies Root Mean Square normalization [1] to the inputs."
+msgstr ""
+
+#: ../../../src/python/nn/layers.rst:69:<autosummary>:1
+msgid ":py:obj:`ReLU <mlx.nn.ReLU>`\\ \\(\\)"
+msgstr ""
+
+#: ../../../src/python/nn/layers.rst:69:<autosummary>:1
+msgid "Applies the Rectified Linear Unit."
+msgstr ""
+
+#: ../../../src/python/nn/layers.rst:69:<autosummary>:1
+msgid ":py:obj:`ReLU6 <mlx.nn.ReLU6>`\\ \\(\\)"
+msgstr ""
+
+#: ../../../src/python/nn/layers.rst:69:<autosummary>:1
+msgid "Applies the Rectified Linear Unit 6."
+msgstr ""
+
+#: ../../../src/python/nn/layers.rst:69:<autosummary>:1
+msgid ""
+":py:obj:`RNN <mlx.nn.RNN>`\\ \\(input\\_size\\, hidden\\_size\\[\\, "
+"bias\\, ...\\]\\)"
+msgstr ""
+
+#: ../../../src/python/nn/layers.rst:69:<autosummary>:1
+msgid "An Elman recurrent layer."
+msgstr ""
+
+#: ../../../src/python/nn/layers.rst:69:<autosummary>:1
+msgid ""
+":py:obj:`RoPE <mlx.nn.RoPE>`\\ \\(dims\\[\\, traditional\\, base\\, "
+"scale\\]\\)"
+msgstr ""
+
+#: ../../../src/python/nn/layers.rst:69:<autosummary>:1
+msgid "Implements the rotary positional encoding."
+msgstr ""
+
+#: ../../../src/python/nn/layers.rst:69:<autosummary>:1
+msgid ":py:obj:`SELU <mlx.nn.SELU>`\\ \\(\\)"
+msgstr ""
+
+#: ../../../src/python/nn/layers.rst:69:<autosummary>:1
+msgid "Applies the Scaled Exponential Linear Unit."
+msgstr ""
+
+#: ../../../src/python/nn/layers.rst:69:<autosummary>:1
+msgid ":py:obj:`Sequential <mlx.nn.Sequential>`\\ \\(\\*modules\\)"
+msgstr ""
+
+#: ../../../src/python/nn/layers.rst:69:<autosummary>:1
+msgid "A layer that calls the passed callables in order."
+msgstr ""
+
+#: ../../../src/python/nn/layers.rst:69:<autosummary>:1
+msgid ":py:obj:`Sigmoid <mlx.nn.Sigmoid>`\\ \\(\\)"
+msgstr ""
+
+#: ../../../src/python/nn/layers.rst:69:<autosummary>:1
+msgid "Applies the sigmoid function, element-wise."
+msgstr ""
+
+#: ../../../src/python/nn/layers.rst:69:<autosummary>:1
+msgid ":py:obj:`SiLU <mlx.nn.SiLU>`\\ \\(\\)"
+msgstr ""
+
+#: ../../../src/python/nn/layers.rst:69:<autosummary>:1
+msgid "Applies the Sigmoid Linear Unit."
+msgstr ""
+
+#: ../../../src/python/nn/layers.rst:69:<autosummary>:1
+msgid ""
+":py:obj:`SinusoidalPositionalEncoding <mlx.nn."
+"SinusoidalPositionalEncoding>`\\ \\(dims\\[\\, ...\\]\\)"
+msgstr ""
+
+#: ../../../src/python/nn/layers.rst:69:<autosummary>:1
+msgid "Implements sinusoidal positional encoding."
+msgstr ""
+
+#: ../../../src/python/nn/layers.rst:69:<autosummary>:1
+msgid ":py:obj:`Softmin <mlx.nn.Softmin>`\\ \\(\\)"
+msgstr ""
+
+#: ../../../src/python/nn/layers.rst:69:<autosummary>:1
+msgid "Applies the Softmin function."
+msgstr ""
+
+#: ../../../src/python/nn/layers.rst:69:<autosummary>:1
+msgid ":py:obj:`Softshrink <mlx.nn.Softshrink>`\\ \\(\\[lambd\\]\\)"
+msgstr ""
+
+#: ../../../src/python/nn/layers.rst:69:<autosummary>:1
+msgid "Applies the Softshrink function."
+msgstr ""
+
+#: ../../../src/python/nn/layers.rst:69:<autosummary>:1
+msgid ":py:obj:`Softsign <mlx.nn.Softsign>`\\ \\(\\)"
+msgstr ""
+
+#: ../../../src/python/nn/layers.rst:69:<autosummary>:1
+msgid "Applies the Softsign function."
+msgstr ""
+
+#: ../../../src/python/nn/layers.rst:69:<autosummary>:1
+msgid ":py:obj:`Softmax <mlx.nn.Softmax>`\\ \\(\\)"
+msgstr ""
+
+#: ../../../src/python/nn/layers.rst:69:<autosummary>:1
+msgid "Applies the Softmax function."
+msgstr ""
+
+#: ../../../src/python/nn/layers.rst:69:<autosummary>:1
+msgid ":py:obj:`Softplus <mlx.nn.Softplus>`\\ \\(\\)"
+msgstr ""
+
+#: ../../../src/python/nn/layers.rst:69:<autosummary>:1
+msgid "Applies the Softplus function."
+msgstr ""
+
+#: ../../../src/python/nn/layers.rst:69:<autosummary>:1
+msgid ":py:obj:`Step <mlx.nn.Step>`\\ \\(\\[threshold\\]\\)"
+msgstr ""
+
+#: ../../../src/python/nn/layers.rst:69:<autosummary>:1
+msgid "Applies the Step Activation Function."
+msgstr ""
+
+#: ../../../src/python/nn/layers.rst:69:<autosummary>:1
+msgid ":py:obj:`Tanh <mlx.nn.Tanh>`\\ \\(\\)"
+msgstr ""
+
+#: ../../../src/python/nn/layers.rst:69:<autosummary>:1
+msgid "Applies the hyperbolic tangent function."
+msgstr ""
+
+#: ../../../src/python/nn/layers.rst:69:<autosummary>:1
+msgid ""
+":py:obj:`Transformer <mlx.nn.Transformer>`\\ \\(dims\\, num\\_heads\\, ...\\)"
+msgstr ""
+
+#: ../../../src/python/nn/layers.rst:69:<autosummary>:1
+msgid "Implements a standard Transformer model."
+msgstr ""
+
+#: ../../../src/python/nn/layers.rst:69:<autosummary>:1
+msgid ""
+":py:obj:`Upsample <mlx.nn.Upsample>`\\ \\(scale\\_factor\\[\\, mode\\, "
+"align\\_corners\\]\\)"
+msgstr ""
+
+#: ../../../src/python/nn/layers.rst:69:<autosummary>:1
+msgid "Upsample the input signal spatially."
+msgstr ""
