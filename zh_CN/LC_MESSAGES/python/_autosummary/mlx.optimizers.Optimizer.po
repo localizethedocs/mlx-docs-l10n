@@ -1,0 +1,85 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023, MLX Contributors
+# This file is distributed under the same license as the MLX package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: MLX 0.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-12-08 12:56+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../src/python/_autosummary/mlx.optimizers.Optimizer.rst:2
+msgid "mlx.optimizers.Optimizer"
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/optimizers.py:docstring
+#: of mlx.optimizers.Optimizer:1
+msgid ""
+"The base class for all optimizers. It allows us to implement an optimizer on "
+"a per-parameter basis and apply it to a parameter tree."
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/optimizers.py:docstring
+#: of mlx.optimizers.Optimizer:6
+msgid "It holds the optimizer's state dictionary."
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/optimizers.py:docstring
+#: of mlx.optimizers.Optimizer:0
+msgid "type"
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/optimizers.py:docstring
+#: of mlx.optimizers.Optimizer:8
+msgid "OptimizerState"
+msgstr ""
+
+#: ../../../src/python/_autosummary/mlx.optimizers.Optimizer.rst:12
+msgid "Methods"
+msgstr ""
+
+#: ../../../src/python/_autosummary/mlx.optimizers.Optimizer.rst:18:<autosummary>:1
+msgid ":py:obj:`__init__ <mlx.optimizers.Optimizer.__init__>`\\ \\(\\)"
+msgstr ""
+
+#: ../../../src/python/_autosummary/mlx.optimizers.Optimizer.rst:18:<autosummary>:1
+msgid ""
+":py:obj:`apply_gradients <mlx.optimizers.Optimizer.apply_gradients>`\\ "
+"\\(gradients\\, model\\)"
+msgstr ""
+
+#: ../../../src/python/_autosummary/mlx.optimizers.Optimizer.rst:18:<autosummary>:1
+msgid ""
+"Apply the gradients to the parameters and return the updated parameters."
+msgstr ""
+
+#: ../../../src/python/_autosummary/mlx.optimizers.Optimizer.rst:18:<autosummary>:1
+msgid ""
+":py:obj:`apply_single <mlx.optimizers.Optimizer.apply_single>`\\ "
+"\\(gradient\\, parameter\\, state\\)"
+msgstr ""
+
+#: ../../../src/python/_autosummary/mlx.optimizers.Optimizer.rst:18:<autosummary>:1
+msgid ""
+"To be extended by the children classes to implement each optimizer's update."
+msgstr ""
+
+#: ../../../src/python/_autosummary/mlx.optimizers.Optimizer.rst:18:<autosummary>:1
+msgid ""
+":py:obj:`update <mlx.optimizers.Optimizer.update>`\\ \\(model\\, gradients\\)"
+msgstr ""
+
+#: ../../../src/python/_autosummary/mlx.optimizers.Optimizer.rst:18:<autosummary>:1
+msgid ""
+"Apply the gradients to the parameters of the model and update the model with "
+"the new parameters."
+msgstr ""

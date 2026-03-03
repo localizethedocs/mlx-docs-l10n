@@ -1,0 +1,52 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023, MLX Contributors
+# This file is distributed under the same license as the MLX package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: MLX 0.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-12-08 12:56+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../src/python/devices_and_streams.rst:4
+msgid "Devices and Streams"
+msgstr ""
+
+#: ../../../src/python/devices_and_streams.rst:17:<autosummary>:1
+msgid ":py:obj:`Device <mlx.core.Device>`\\"
+msgstr ""
+
+#: ../../../src/python/devices_and_streams.rst:17:<autosummary>:1
+msgid ":py:obj:`default_device <mlx.core.default_device>`\\ \\(\\)"
+msgstr ""
+
+#: ../../../src/python/devices_and_streams.rst:17:<autosummary>:1
+msgid ""
+":py:obj:`set_default_device <mlx.core.set_default_device>`\\ \\(device\\)"
+msgstr ""
+
+#: ../../../src/python/devices_and_streams.rst:17:<autosummary>:1
+msgid ":py:obj:`Stream <mlx.core.Stream>`\\"
+msgstr ""
+
+#: ../../../src/python/devices_and_streams.rst:17:<autosummary>:1
+msgid ":py:obj:`default_stream <mlx.core.default_stream>`\\ \\(device\\)"
+msgstr ""
+
+#: ../../../src/python/devices_and_streams.rst:17:<autosummary>:1
+msgid ":py:obj:`new_stream <mlx.core.new_stream>`\\ \\(device\\)"
+msgstr ""
+
+#: ../../../src/python/devices_and_streams.rst:17:<autosummary>:1
+msgid ""
+":py:obj:`set_default_stream <mlx.core.set_default_stream>`\\ \\(stream\\)"
+msgstr ""
