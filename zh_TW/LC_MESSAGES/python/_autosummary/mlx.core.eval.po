@@ -1,0 +1,37 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023, MLX Contributors
+# This file is distributed under the same license as the MLX package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: MLX 0.20\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-12-08 12:56+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../src/python/_autosummary/mlx.core.eval.rst:2
+msgid "mlx.core.eval"
+msgstr ""
+
+#: ../../../docstring of mlx.core.eval:1
+msgid "Evaluate an :class:`array` or tree of :class:`array`."
+msgstr "對 :class:`array` 或由 :class:`array` 組成的樹狀結構進行求值。"
+
+#: ../../../src/python/_autosummary/mlx.core.eval.rst:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../docstring of mlx.core.eval:3
+msgid ""
+"Each argument can be a single array or a tree of arrays. If a tree is given "
+"the nodes can be a Python :class:`list`, :class:`tuple` or :class:`dict`. "
+"Leaves which are not arrays are ignored."
+msgstr ""

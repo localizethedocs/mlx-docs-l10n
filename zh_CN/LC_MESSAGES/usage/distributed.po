@@ -1,0 +1,263 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023, MLX Contributors
+# This file is distributed under the same license as the MLX package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: MLX 0.20\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-12-08 12:56+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../src/usage/distributed.rst:4
+msgid "Distributed Communication"
+msgstr ""
+
+#: ../../../src/usage/distributed.rst:8
+msgid ""
+"MLX utilizes `MPI <https://en.wikipedia.org/wiki/"
+"Message_Passing_Interface>`_ to provide distributed communication operations "
+"that allow the computational cost of training or inference to be shared "
+"across many physical machines. You can see a list of the supported "
+"operations in the :ref:`API docs<distributed>`."
+msgstr ""
+
+#: ../../../src/usage/distributed.rst:14
+msgid ""
+"A lot of operations may not be supported or not as fast as they should be. "
+"We are adding more and tuning the ones we have as we are figuring out the "
+"best way to do distributed computing on Macs using MLX."
+msgstr ""
+
+#: ../../../src/usage/distributed.rst:19
+msgid "Getting Started"
+msgstr ""
+
+#: ../../../src/usage/distributed.rst:21
+msgid ""
+"MLX already comes with the ability to \"talk\" to MPI if it is installed on "
+"the machine. The minimal distributed program in MLX is as simple as:"
+msgstr ""
+
+#: ../../../src/usage/distributed.rst:24
+msgid ""
+"import mlx.core as mx\n"
+"\n"
+"world = mx.distributed.init()\n"
+"x = mx.distributed.all_sum(mx.ones(10))\n"
+"print(world.rank(), x)"
+msgstr ""
+
+#: ../../../src/usage/distributed.rst:32
+msgid ""
+"The program above sums the array ``mx.ones(10)`` across all distributed "
+"processes. If simply run with ``python``, however, only one process is "
+"launched and no distributed communication takes place."
+msgstr ""
+
+#: ../../../src/usage/distributed.rst:36
+msgid ""
+"To launch the program in distributed mode we need to use ``mpirun`` or "
+"``mpiexec`` depending on the MPI installation. The simplest possible way is "
+"the following:"
+msgstr ""
+
+#: ../../../src/usage/distributed.rst:40
+msgid ""
+"$ mpirun -np 2 python test.py\n"
+"1 array([2, 2, 2, ..., 2, 2, 2], dtype=float32)\n"
+"0 array([2, 2, 2, ..., 2, 2, 2], dtype=float32)"
+msgstr ""
+
+#: ../../../src/usage/distributed.rst:46
+msgid ""
+"The above launches two processes on the same (local) machine and we can see "
+"both standard output streams. The processes send the array of 1s to each "
+"other and compute the sum which is printed. Launching with ``mpirun -np 4 ..."
+"`` would print 4 etc."
+msgstr ""
+
+#: ../../../src/usage/distributed.rst:52
+msgid "Installing MPI"
+msgstr ""
+
+#: ../../../src/usage/distributed.rst:54
+msgid ""
+"MPI can be installed with Homebrew, using the Anaconda package manager or "
+"compiled from source. Most of our testing is done using ``openmpi`` "
+"installed with the Anaconda package manager as follows:"
+msgstr ""
+
+#: ../../../src/usage/distributed.rst:58
+msgid "$ conda install openmpi"
+msgstr ""
+
+#: ../../../src/usage/distributed.rst:62
+msgid ""
+"Installing with Homebrew may require specifying the location of ``libmpi."
+"dyld`` so that MLX can find it and load it at runtime. This can simply be "
+"achieved by passing the ``DYLD_LIBRARY_PATH`` environment variable to "
+"``mpirun``."
+msgstr ""
+
+#: ../../../src/usage/distributed.rst:66
+msgid "$ mpirun -np 2 -x DYLD_LIBRARY_PATH=/opt/homebrew/lib/ python test.py"
+msgstr ""
+
+#: ../../../src/usage/distributed.rst:71
+msgid "Setting up Remote Hosts"
+msgstr ""
+
+#: ../../../src/usage/distributed.rst:73
+msgid ""
+"MPI can automatically connect to remote hosts and set up the communication "
+"over the network if the remote hosts can be accessed via ssh. A good "
+"checklist to debug connectivity issues is the following:"
+msgstr ""
+
+#: ../../../src/usage/distributed.rst:77
+msgid ""
+"``ssh hostname`` works from all machines to all machines without asking for "
+"password or host confirmation"
+msgstr ""
+
+#: ../../../src/usage/distributed.rst:79
+msgid ""
+"``mpirun`` is accessible on all machines. You can call ``mpirun`` using its "
+"full path to force all machines to use a specific path."
+msgstr ""
+
+#: ../../../src/usage/distributed.rst:81
+msgid ""
+"Ensure that the ``hostname`` used by MPI is the one that you have configured "
+"in the ``.ssh/config`` files on all machines."
+msgstr ""
+
+#: ../../../src/usage/distributed.rst:85
+msgid ""
+"For an example hostname ``foo.bar.com`` MPI can use only ``foo`` as the "
+"hostname passed to ssh if the current hostname matches ``*.bar.com``."
+msgstr ""
+
+#: ../../../src/usage/distributed.rst:88
+msgid ""
+"An easy way to pass the host names to MPI is using a host file. A host file "
+"looks like the following, where ``host1`` and ``host2`` should be the fully "
+"qualified domain names or IPs for these hosts."
+msgstr ""
+
+#: ../../../src/usage/distributed.rst:92
+msgid ""
+"host1 slots=1\n"
+"host2 slots=1"
+msgstr ""
+
+#: ../../../src/usage/distributed.rst:97
+msgid ""
+"When using MLX, it is very likely that you want to use 1 slot per host, ie "
+"one process per host.  The hostfile also needs to contain the current host "
+"if you want to run on the local host. Passing the host file to ``mpirun`` is "
+"simply done using the ``--hostfile`` command line argument."
+msgstr ""
+
+#: ../../../src/usage/distributed.rst:103
+msgid "Training Example"
+msgstr ""
+
+#: ../../../src/usage/distributed.rst:105
+msgid ""
+"In this section we will adapt an MLX training loop to support data parallel "
+"distributed training. Namely, we will average the gradients across a set of "
+"hosts before applying them to the model."
+msgstr ""
+
+#: ../../../src/usage/distributed.rst:109
+msgid ""
+"Our training loop looks like the following code snippet if we omit the "
+"model, dataset and optimizer initialization."
+msgstr ""
+
+#: ../../../src/usage/distributed.rst:112
+msgid ""
+"model = ...\n"
+"optimizer = ...\n"
+"dataset = ...\n"
+"\n"
+"def step(model, x, y):\n"
+"    loss, grads = loss_grad_fn(model, x, y)\n"
+"    optimizer.update(model, grads)\n"
+"    return loss\n"
+"\n"
+"for x, y in dataset:\n"
+"    loss = step(model, x, y)\n"
+"    mx.eval(loss, model.parameters())"
+msgstr ""
+
+#: ../../../src/usage/distributed.rst:127
+msgid ""
+"All we have to do to average the gradients across machines is perform an :"
+"func:`all_sum` and divide by the size of the :class:`Group`. Namely we have "
+"to :func:`mlx.utils.tree_map` the gradients with following function."
+msgstr ""
+
+#: ../../../src/usage/distributed.rst:131
+msgid ""
+"def all_avg(x):\n"
+"    return mx.distributed.all_sum(x) / mx.distributed.init().size()"
+msgstr ""
+
+#: ../../../src/usage/distributed.rst:136
+msgid ""
+"Putting everything together our training loop step looks as follows with "
+"everything else remaining the same."
+msgstr ""
+
+#: ../../../src/usage/distributed.rst:139
+msgid ""
+"from mlx.utils import tree_map\n"
+"\n"
+"def all_reduce_grads(grads):\n"
+"    N = mx.distributed.init()\n"
+"    if N == 1:\n"
+"        return grads\n"
+"    return tree_map(\n"
+"            lambda x: mx.distributed.all_sum(x) / N,\n"
+"            grads)\n"
+"\n"
+"def step(model, x, y):\n"
+"    loss, grads = loss_grad_fn(model, x, y)\n"
+"    grads = all_reduce_grads(grads)  # <--- This line was added\n"
+"    optimizer.update(model, grads)\n"
+"    return loss"
+msgstr ""
+
+#: ../../../src/usage/distributed.rst:158
+msgid "Tuning All Reduce"
+msgstr ""
+
+#: ../../../src/usage/distributed.rst:160
+msgid ""
+"We are working on improving the performance of all reduce on MLX but for now "
+"the two main things one can do to extract the most out of distributed "
+"training with MLX are:"
+msgstr ""
+
+#: ../../../src/usage/distributed.rst:163
+msgid ""
+"Perform a few large reductions instead of many small ones to improve "
+"bandwidth and latency"
+msgstr ""
+
+#: ../../../src/usage/distributed.rst:165
+msgid ""
+"Pass ``--mca btl_tcp_links 4`` to ``mpirun`` to configure it to use 4 tcp "
+"connections between each host to improve bandwidth"
+msgstr ""

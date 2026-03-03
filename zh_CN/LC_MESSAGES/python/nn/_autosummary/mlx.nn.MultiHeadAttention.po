@@ -1,0 +1,107 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023, MLX Contributors
+# This file is distributed under the same license as the MLX package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: MLX 0.20\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-12-08 12:56+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../src/python/nn/_autosummary/mlx.nn.MultiHeadAttention.rst:2
+msgid "mlx.nn.MultiHeadAttention"
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/transformer.py:docstring
+#: of mlx.nn.layers.transformer.MultiHeadAttention:1
+msgid "Implements the scaled dot product attention with multiple heads."
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/transformer.py:docstring
+#: of mlx.nn.layers.transformer.MultiHeadAttention:3
+msgid ""
+"Given inputs for queries, keys and values the ``MultiHeadAttention`` "
+"produces new values by aggregating information from the input values "
+"according to the similarities of the input queries and keys."
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/transformer.py:docstring
+#: of mlx.nn.layers.transformer.MultiHeadAttention:7
+msgid ""
+"All inputs as well as the output are linearly projected without biases by "
+"default."
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/transformer.py:docstring
+#: of mlx.nn.layers.transformer.MultiHeadAttention:10
+msgid ""
+"``MultiHeadAttention`` also takes an optional additive attention mask that "
+"should be broadcastable with ``(batch, num_heads, # queries, # keys)``. The "
+"mask should have ``-inf`` or very large negative numbers at the positions "
+"that should *not* be attended to."
+msgstr ""
+
+#: ../../../src/python/nn/_autosummary/mlx.nn.MultiHeadAttention.rst:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/transformer.py:docstring
+#: of mlx.nn.layers.transformer.MultiHeadAttention:15
+msgid ""
+"The model dimensions. This is also the default value for the queries, keys, "
+"values, and the output."
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/transformer.py:docstring
+#: of mlx.nn.layers.transformer.MultiHeadAttention:18
+msgid "The number of attention heads to use."
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/transformer.py:docstring
+#: of mlx.nn.layers.transformer.MultiHeadAttention:20
+msgid "The input dimensions of the queries. Default: ``dims``."
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/transformer.py:docstring
+#: of mlx.nn.layers.transformer.MultiHeadAttention:23
+msgid "The input dimensions of the keys. Default: ``dims``."
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/transformer.py:docstring
+#: of mlx.nn.layers.transformer.MultiHeadAttention:26
+msgid "The input dimensions of the values. Default: ``key_input_dims``."
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/transformer.py:docstring
+#: of mlx.nn.layers.transformer.MultiHeadAttention:29
+msgid "The dimensions of the values after the projection. Default: ``dims``."
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/transformer.py:docstring
+#: of mlx.nn.layers.transformer.MultiHeadAttention:32
+msgid "The dimensions the new values will be projected to. Default: ``dims``."
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/transformer.py:docstring
+#: of mlx.nn.layers.transformer.MultiHeadAttention:35
+msgid "Whether or not to use a bias in the projections. Default: ``False``."
+msgstr ""
+
+#: ../../../src/python/nn/_autosummary/mlx.nn.MultiHeadAttention.rst:12
+msgid "Methods"
+msgstr ""
+
+#: ../../../src/python/nn/_autosummary/mlx.nn.MultiHeadAttention.rst:15:<autosummary>:1
+msgid ""
+":py:obj:`create_additive_causal_mask <mlx.nn.MultiHeadAttention."
+"create_additive_causal_mask>`\\ \\(N\\[\\, dtype\\]\\)"
+msgstr ""

@@ -1,0 +1,46 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023, MLX Contributors
+# This file is distributed under the same license as the MLX package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: MLX 0.20\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-12-08 12:56+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../src/python/nn/_autosummary_functions/mlx.nn.gelu.rst:2
+msgid "mlx.nn.gelu"
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/__init__.py:docstring
+#: of mlx.nn.gelu:1
+msgid "Applies the Gaussian Error Linear Units function."
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/__init__.py:docstring
+#: of mlx.nn.gelu:3
+msgid ""
+"\\textrm{GELU}(x) = x * \\Phi(x)\n"
+"\n"
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/__init__.py:docstring
+#: of mlx.nn.gelu:6
+msgid "where :math:`\\Phi(x)` is the Gaussian CDF."
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/__init__.py:docstring
+#: of mlx.nn.gelu:8
+msgid ""
+"See also :func:`gelu_approx` and :func:`gelu_fast_approx` for faster "
+"approximations."
+msgstr ""
