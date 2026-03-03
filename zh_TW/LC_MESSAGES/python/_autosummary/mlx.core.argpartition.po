@@ -1,0 +1,70 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023, MLX Contributors
+# This file is distributed under the same license as the MLX package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: MLX 0.13\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-12-08 12:16+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../src/python/_autosummary/mlx.core.argpartition.rst:2
+msgid "mlx.core.argpartition"
+msgstr ""
+
+#: ../../../docstring of mlx.core.argpartition:1
+msgid "Returns the indices that partition the array."
+msgstr "回傳可分割陣列的索引。"
+
+#: ../../../docstring of mlx.core.argpartition:3
+msgid ""
+"The ordering of the elements within a partition in given by the indices is "
+"undefined."
+msgstr "分割內元素的順序由索引給定，但其順序未定義。"
+
+#: ../../../src/python/_autosummary/mlx.core.argpartition.rst:0
+msgid "Parameters"
+msgstr "參數"
+
+#: ../../../docstring of mlx.core.argpartition:6
+msgid "Input array."
+msgstr "輸入陣列。"
+
+#: ../../../docstring of mlx.core.argpartition:8
+msgid ""
+"Element index at the ``kth`` position in the output will give the sorted "
+"position. All indices before the ``kth`` position will be of elements less "
+"or equal to the element at the ``kth`` index and all indices after will be "
+"of elements greater or equal to the element at the ``kth`` index."
+msgstr ""
+"輸出中 ``kth`` 位置的元素索引會給出排序位置。``kth`` 之前的所有索引對應的元素"
+"皆小於或等於 ``kth`` 位置的元素，而 ``kth`` 之後的所有索引對應的元素皆大於或"
+"等於 ``kth`` 位置的元素。"
+
+#: ../../../docstring of mlx.core.argpartition:14
+msgid ""
+"Optional axis to partition over. If ``None``, this partitions over the "
+"flattened array. If unspecified, it defaults to ``-1``."
+msgstr ""
+"可選的分割軸。若為 ``None``，則對展平後的陣列分割。若未指定，預設為 ``-1``。"
+
+#: ../../../src/python/_autosummary/mlx.core.argpartition.rst:0
+msgid "Returns"
+msgstr "回傳"
+
+#: ../../../docstring of mlx.core.argpartition:19
+msgid "The `uint32`` array containing indices that partition the input."
+msgstr ""
+
+#: ../../../src/python/_autosummary/mlx.core.argpartition.rst:0
+msgid "Return type"
+msgstr "回傳型別"
