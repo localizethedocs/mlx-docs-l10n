@@ -1,0 +1,102 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023, Apple
+# This file is distributed under the same license as the MLX package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: MLX 0.26\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-12-08 12:22+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../src/python/nn/_autosummary/mlx.nn.Conv3d.rst:2
+msgid "mlx.nn.Conv3d"
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/convolution.py:docstring
+#: of mlx.nn.layers.convolution.Conv3d:1
+msgid "Applies a 3-dimensional convolution over the multi-channel input image."
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/convolution.py:docstring
+#: of mlx.nn.layers.convolution.Conv3d:3
+msgid ""
+"The channels are expected to be last i.e. the input shape should be "
+"``NDHWC`` where:"
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/convolution.py:docstring
+#: of mlx.nn.layers.convolution.Conv3d:5
+msgid "``N`` is the batch dimension"
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/convolution.py:docstring
+#: of mlx.nn.layers.convolution.Conv3d:6
+msgid "``D`` is the input image depth"
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/convolution.py:docstring
+#: of mlx.nn.layers.convolution.Conv3d:7
+msgid "``H`` is the input image height"
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/convolution.py:docstring
+#: of mlx.nn.layers.convolution.Conv3d:8
+msgid "``W`` is the input image width"
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/convolution.py:docstring
+#: of mlx.nn.layers.convolution.Conv3d:9
+msgid "``C`` is the number of input channels"
+msgstr ""
+
+#: ../../../src/python/nn/_autosummary/mlx.nn.Conv3d.rst:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/convolution.py:docstring
+#: of mlx.nn.layers.convolution.Conv3d:11
+msgid "The number of input channels."
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/convolution.py:docstring
+#: of mlx.nn.layers.convolution.Conv3d:13
+msgid "The number of output channels."
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/convolution.py:docstring
+#: of mlx.nn.layers.convolution.Conv3d:15
+msgid "The size of the convolution filters."
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/convolution.py:docstring
+#: of mlx.nn.layers.convolution.Conv3d:17
+msgid "The size of the stride when applying the filter. Default: ``1``."
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/convolution.py:docstring
+#: of mlx.nn.layers.convolution.Conv3d:20
+msgid "The dilation of the convolution."
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/convolution.py:docstring
+#: of mlx.nn.layers.convolution.Conv3d:22
+msgid "How many positions to 0-pad the input with. Default: ``0``."
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/convolution.py:docstring
+#: of mlx.nn.layers.convolution.Conv3d:25
+msgid "If ``True`` add a learnable bias to the output. Default: ``True``"
+msgstr ""
+
+#: ../../../src/python/nn/_autosummary/mlx.nn.Conv3d.rst:12
+msgid "Methods"
+msgstr "方法"

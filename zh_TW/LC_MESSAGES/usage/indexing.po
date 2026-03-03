@@ -1,0 +1,214 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023, Apple
+# This file is distributed under the same license as the MLX package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: MLX 0.26\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-12-08 12:22+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../src/usage/indexing.rst:4
+msgid "Indexing Arrays"
+msgstr "陣列索引"
+
+#: ../../../src/usage/indexing.rst:8
+msgid ""
+"For the most part, indexing an MLX :obj:`array` works the same as indexing a "
+"NumPy :obj:`numpy.ndarray`. See the `NumPy documentation <https://numpy.org/"
+"doc/stable/user/basics.indexing.html>`_ for more details on how that works."
+msgstr ""
+"大多數情況下，MLX :obj:`array` 的索引方式與 NumPy :obj:`numpy.ndarray` 相同。"
+"更多細節請參考 `NumPy 文件 <https://numpy.org/doc/stable/user/basics."
+"indexing.html>`_。"
+
+#: ../../../src/usage/indexing.rst:13
+msgid ""
+"For example, you can use regular integers and slices (:obj:`slice`) to index "
+"arrays:"
+msgstr "例如，你可以使用一般整數與切片（:obj:`slice`）來索引陣列："
+
+#: ../../../src/usage/indexing.rst:15
+msgid ""
+">>> arr = mx.arange(10)\n"
+">>> arr[3]\n"
+"array(3, dtype=int32)\n"
+">>> arr[-2]  # negative indexing works\n"
+"array(8, dtype=int32)\n"
+">>> arr[2:8:2] # start, stop, stride\n"
+"array([2, 4, 6], dtype=int32)"
+msgstr ""
+
+#: ../../../src/usage/indexing.rst:25
+msgid ""
+"For multi-dimensional arrays, the ``...`` or :obj:`Ellipsis` syntax works as "
+"in NumPy:"
+msgstr "對多維陣列而言，``...`` 或 :obj:`Ellipsis` 的語法與 NumPy 相同："
+
+#: ../../../src/usage/indexing.rst:27
+msgid ""
+">>> arr = mx.arange(8).reshape(2, 2, 2)\n"
+">>> arr[:, :, 0]\n"
+"array(3, dtype=int32)\n"
+"array([[0, 2],\n"
+"       [4, 6]], dtype=int32\n"
+">>> arr[..., 0]\n"
+"array([[0, 2],\n"
+"       [4, 6]], dtype=int32"
+msgstr ""
+
+#: ../../../src/usage/indexing.rst:38
+msgid "You can index with ``None`` to create a new axis:"
+msgstr "你可以用 ``None`` 來建立新軸："
+
+#: ../../../src/usage/indexing.rst:40
+msgid ""
+">>> arr = mx.arange(8)\n"
+">>> arr.shape\n"
+"[8]\n"
+">>> arr[None].shape\n"
+"[1, 8]"
+msgstr ""
+
+#: ../../../src/usage/indexing.rst:49
+msgid "You can also use an :obj:`array` to index another :obj:`array`:"
+msgstr "你也可以用一個 :obj:`array` 來索引另一個 :obj:`array`："
+
+#: ../../../src/usage/indexing.rst:51
+msgid ""
+">>> arr = mx.arange(10)\n"
+">>> idx = mx.array([5, 7])\n"
+">>> arr[idx]\n"
+"array([5, 7], dtype=int32)"
+msgstr ""
+
+#: ../../../src/usage/indexing.rst:58
+msgid ""
+"Mixing and matching integers, :obj:`slice`, ``...``, and :obj:`array` "
+"indices works just as in NumPy."
+msgstr ""
+"整數、:obj:`slice`、``...`` 與 :obj:`array` 的索引可混合使用，與 NumPy 相同。"
+
+#: ../../../src/usage/indexing.rst:61
+msgid ""
+"Other functions which may be useful for indexing arrays are :func:`take` "
+"and :func:`take_along_axis`."
+msgstr ""
+"其他可能有助於索引陣列的函式還有 :func:`take` 與 :func:`take_along_axis`。"
+
+#: ../../../src/usage/indexing.rst:65
+msgid "Differences from NumPy"
+msgstr "與 NumPy 的差異"
+
+#: ../../../src/usage/indexing.rst:69
+msgid "MLX indexing is different from NumPy indexing in two important ways:"
+msgstr "MLX 的索引與 NumPy 有兩個重要差異："
+
+#: ../../../src/usage/indexing.rst:71
+msgid ""
+"Indexing does not perform bounds checking. Indexing out of bounds is "
+"undefined behavior."
+msgstr "索引不會進行邊界檢查。超出範圍的索引屬於未定義行為。"
+
+#: ../../../src/usage/indexing.rst:73
+msgid "Boolean mask based indexing is not yet supported."
+msgstr ""
+
+#: ../../../src/usage/indexing.rst:75
+msgid ""
+"The reason for the lack of bounds checking is that exceptions cannot "
+"propagate from the GPU. Performing bounds checking for array indices before "
+"launching the kernel would be extremely inefficient."
+msgstr ""
+"之所以不做邊界檢查，是因為例外無法從 GPU 傳回。在啟動核心前先對陣列索引進行邊"
+"界檢查會非常低效。"
+
+#: ../../../src/usage/indexing.rst:79
+msgid ""
+"Indexing with boolean masks is something that MLX may support in the future. "
+"In general, MLX has limited support for operations for which output *shapes* "
+"are dependent on input *data*. Other examples of these types of operations "
+"which MLX does not yet support include :func:`numpy.nonzero` and the single "
+"input version of :func:`numpy.where`."
+msgstr ""
+"以布林遮罩做索引可能會在未來被 MLX 支援。一般而言，MLX 對輸出*形狀*依賴輸入*"
+"資料*的運算支援有限。MLX 尚未支援的其他例子包含 :func:`numpy.nonzero` 與 :"
+"func:`numpy.where` 的單輸入版本。"
+
+#: ../../../src/usage/indexing.rst:86
+msgid "In Place Updates"
+msgstr "就地更新"
+
+#: ../../../src/usage/indexing.rst:88
+msgid "In place updates to indexed arrays are possible in MLX. For example:"
+msgstr "MLX 支援對索引陣列進行就地更新。例如："
+
+#: ../../../src/usage/indexing.rst:90
+msgid ""
+">>> a = mx.array([1, 2, 3])\n"
+">>> a[2] = 0\n"
+">>> a\n"
+"array([1, 2, 0], dtype=int32)"
+msgstr ""
+
+#: ../../../src/usage/indexing.rst:97
+msgid ""
+"Just as in NumPy, in place updates will be reflected in all references to "
+"the same array:"
+msgstr "與 NumPy 相同，就地更新會反映在同一陣列的所有參照中："
+
+#: ../../../src/usage/indexing.rst:100
+msgid ""
+">>> a = mx.array([1, 2, 3])\n"
+">>> b = a\n"
+">>> b[2] = 0\n"
+">>> b\n"
+"array([1, 2, 0], dtype=int32)\n"
+">>> a\n"
+"array([1, 2, 0], dtype=int32)"
+msgstr ""
+
+#: ../../../src/usage/indexing.rst:111
+msgid "Note, unlike NumPy, updates to the same location are nondeterministic:"
+msgstr ""
+
+#: ../../../src/usage/indexing.rst:113
+msgid ""
+">>> a = mx.array([1, 2, 3])\n"
+">>> a[[0, 0]] = mx.array([4, 5])"
+msgstr ""
+
+#: ../../../src/usage/indexing.rst:118
+msgid "The first element of ``a`` could be ``4`` or ``5``."
+msgstr "``a`` 的第一個元素可能是 ``4`` 或 ``5``。"
+
+#: ../../../src/usage/indexing.rst:120
+msgid ""
+"Transformations of functions which use in-place updates are allowed and work "
+"as expected. For example:"
+msgstr "允許對使用就地更新的函式進行轉換，且可如預期運作。例如："
+
+#: ../../../src/usage/indexing.rst:123
+msgid ""
+"def fun(x, idx):\n"
+"    x[idx] = 2.0\n"
+"    return x.sum()\n"
+"\n"
+"dfdx = mx.grad(fun)(mx.array([1.0, 2.0, 3.0]), mx.array([1]))\n"
+"print(dfdx)  # Prints: array([1, 0, 1], dtype=float32)"
+msgstr ""
+
+#: ../../../src/usage/indexing.rst:132
+msgid ""
+"In the above ``dfdx`` will have the correct gradient, namely zeros at "
+"``idx`` and ones elsewhere."
+msgstr "上述 ``dfdx`` 會得到正確的梯度，也就是在 ``idx`` 為 0，其餘位置為 1。"
