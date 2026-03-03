@@ -1,0 +1,53 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023, Apple
+# This file is distributed under the same license as the MLX package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: MLX 0.30\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-02-10 10:09+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../src/python/_autosummary/mlx.core.device_info.rst:2
+msgid "mlx.core.device\\_info"
+msgstr ""
+
+#: ../../../docstring of mlx.core.device_info:1
+msgid "Get information about a device."
+msgstr ""
+
+#: ../../../docstring of mlx.core.device_info:3
+msgid ""
+"Returns a dictionary with device properties. Available keys depend on the "
+"backend and device type. Common keys include ``device_name``, "
+"``architecture``, and ``total_memory`` (or ``memory_size``)."
+msgstr ""
+
+#: ../../../src/python/_autosummary/mlx.core.device_info.rst:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../docstring of mlx.core.device_info:7
+msgid "The device to query (defaults to the default device)."
+msgstr ""
+
+#: ../../../src/python/_autosummary/mlx.core.device_info.rst:0
+msgid "Returns"
+msgstr ""
+
+#: ../../../docstring of mlx.core.device_info:10
+msgid "Device information."
+msgstr ""
+
+#: ../../../src/python/_autosummary/mlx.core.device_info.rst:0
+msgid "Return type"
+msgstr ""

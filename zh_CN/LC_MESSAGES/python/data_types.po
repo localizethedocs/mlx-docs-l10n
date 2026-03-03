@@ -1,0 +1,222 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023, Apple
+# This file is distributed under the same license as the MLX package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: MLX 0.30\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-01-27 09:28+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../src/python/data_types.rst:4
+msgid "Data Types"
+msgstr ""
+
+#: ../../../src/python/data_types.rst:8
+msgid ""
+"The default floating point type is ``float32`` and the default integer type "
+"is ``int32``. The table below shows supported values for :obj:`Dtype`."
+msgstr ""
+
+#: ../../../src/python/data_types.rst:11
+msgid "Supported Data Types"
+msgstr ""
+
+#: ../../../src/python/data_types.rst:15
+msgid "Type"
+msgstr ""
+
+#: ../../../src/python/data_types.rst:16
+msgid "Bytes"
+msgstr ""
+
+#: ../../../src/python/data_types.rst:17
+msgid "Description"
+msgstr ""
+
+#: ../../../src/python/data_types.rst:18
+msgid "``bool_``"
+msgstr ""
+
+#: ../../../src/python/data_types.rst:19 ../../../src/python/data_types.rst:22
+#: ../../../src/python/data_types.rst:34
+msgid "1"
+msgstr ""
+
+#: ../../../src/python/data_types.rst:20
+msgid "Boolean (``True``, ``False``) data type"
+msgstr ""
+
+#: ../../../src/python/data_types.rst:21
+msgid "``uint8``"
+msgstr ""
+
+#: ../../../src/python/data_types.rst:23
+msgid "8-bit unsigned integer"
+msgstr ""
+
+#: ../../../src/python/data_types.rst:24
+msgid "``uint16``"
+msgstr ""
+
+#: ../../../src/python/data_types.rst:25 ../../../src/python/data_types.rst:37
+#: ../../../src/python/data_types.rst:46 ../../../src/python/data_types.rst:49
+msgid "2"
+msgstr ""
+
+#: ../../../src/python/data_types.rst:26
+msgid "16-bit unsigned integer"
+msgstr ""
+
+#: ../../../src/python/data_types.rst:27
+msgid "``uint32``"
+msgstr ""
+
+#: ../../../src/python/data_types.rst:28 ../../../src/python/data_types.rst:40
+#: ../../../src/python/data_types.rst:52
+msgid "4"
+msgstr ""
+
+#: ../../../src/python/data_types.rst:29
+msgid "32-bit unsigned integer"
+msgstr ""
+
+#: ../../../src/python/data_types.rst:30
+msgid "``uint64``"
+msgstr ""
+
+#: ../../../src/python/data_types.rst:31 ../../../src/python/data_types.rst:43
+#: ../../../src/python/data_types.rst:55 ../../../src/python/data_types.rst:58
+msgid "8"
+msgstr ""
+
+#: ../../../src/python/data_types.rst:32
+msgid "64-bit unsigned integer"
+msgstr ""
+
+#: ../../../src/python/data_types.rst:33
+msgid "``int8``"
+msgstr ""
+
+#: ../../../src/python/data_types.rst:35
+msgid "8-bit signed integer"
+msgstr ""
+
+#: ../../../src/python/data_types.rst:36
+msgid "``int16``"
+msgstr ""
+
+#: ../../../src/python/data_types.rst:38
+msgid "16-bit signed integer"
+msgstr ""
+
+#: ../../../src/python/data_types.rst:39
+msgid "``int32``"
+msgstr ""
+
+#: ../../../src/python/data_types.rst:41
+msgid "32-bit signed integer"
+msgstr ""
+
+#: ../../../src/python/data_types.rst:42
+msgid "``int64``"
+msgstr ""
+
+#: ../../../src/python/data_types.rst:44
+msgid "64-bit signed integer"
+msgstr ""
+
+#: ../../../src/python/data_types.rst:45
+msgid "``bfloat16``"
+msgstr ""
+
+#: ../../../src/python/data_types.rst:47
+msgid "16-bit brain float (e8, m7)"
+msgstr ""
+
+#: ../../../src/python/data_types.rst:48
+msgid "``float16``"
+msgstr ""
+
+#: ../../../src/python/data_types.rst:50
+msgid "16-bit IEEE float (e5, m10)"
+msgstr ""
+
+#: ../../../src/python/data_types.rst:51
+msgid "``float32``"
+msgstr ""
+
+#: ../../../src/python/data_types.rst:53
+msgid "32-bit float"
+msgstr ""
+
+#: ../../../src/python/data_types.rst:54
+msgid "``float64``"
+msgstr ""
+
+#: ../../../src/python/data_types.rst:56
+msgid "64-bit double"
+msgstr ""
+
+#: ../../../src/python/data_types.rst:57
+msgid "``complex64``"
+msgstr ""
+
+#: ../../../src/python/data_types.rst:59
+msgid "64-bit complex float"
+msgstr ""
+
+#: ../../../src/python/data_types.rst:64
+msgid ""
+"Arrays with type ``float64`` only work with CPU operations. Using "
+"``float64`` arrays on the GPU will result in an exception."
+msgstr ""
+
+#: ../../../src/python/data_types.rst:68
+msgid ""
+"Data type are aranged in a hierarchy. See the :obj:`DtypeCategory` object "
+"documentation for more information. Use :func:`issubdtype` to determine if "
+"one ``dtype`` (or category) is a subtype of another category."
+msgstr ""
+
+#: ../../../src/python/data_types.rst:78:<autosummary>:1
+msgid ":py:obj:`Dtype <mlx.core.Dtype>`\\"
+msgstr ""
+
+#: ../../../src/python/data_types.rst:78:<autosummary>:1
+msgid "An object to hold the type of a :class:`array`."
+msgstr ""
+
+#: ../../../src/python/data_types.rst:78:<autosummary>:1
+msgid ":py:obj:`DtypeCategory <mlx.core.DtypeCategory>`\\ \\(\\*values\\)"
+msgstr ""
+
+#: ../../../src/python/data_types.rst:78:<autosummary>:1
+msgid "Type to hold categories of :class:`dtypes <Dtype>`."
+msgstr ""
+
+#: ../../../src/python/data_types.rst:78:<autosummary>:1
+msgid ":py:obj:`issubdtype <mlx.core.issubdtype>`\\ \\(arg1\\, arg2\\)"
+msgstr ""
+
+#: ../../../src/python/data_types.rst:78:<autosummary>:1
+msgid ""
+"Check if a :obj:`Dtype` or :obj:`DtypeCategory` is a subtype of another."
+msgstr ""
+
+#: ../../../src/python/data_types.rst:78:<autosummary>:1
+msgid ":py:obj:`finfo <mlx.core.finfo>`\\ \\(\\*args\\, \\*\\*kwargs\\)"
+msgstr ""
+
+#: ../../../src/python/data_types.rst:78:<autosummary>:1
+msgid "Get information on floating-point types."
+msgstr ""
