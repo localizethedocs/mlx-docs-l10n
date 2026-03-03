@@ -1,0 +1,1301 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023, MLX Contributors
+# This file is distributed under the same license as the MLX package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: MLX 0.4\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-12-08 12:56+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../src/dev/extensions.rst:2
+msgid "Developer Documentation"
+msgstr ""
+
+#: ../../../src/dev/extensions.rst:4
+msgid ""
+"MLX provides a open and flexible backend to which users may add operations "
+"and specialized implementations without much hassle. While the library "
+"supplies efficient operations that can be used and composed for any number "
+"of applications, there may arise cases where new functionalities or highly "
+"optimized implementations are needed. For such cases, you may design and "
+"implement your own operations that link to and build on top of :mod:`mlx."
+"core`. We will introduce the inner-workings of MLX and go over a simple "
+"example to learn the steps involved in adding new operations to MLX with "
+"your own CPU and GPU implementations."
+msgstr ""
+
+#: ../../../src/dev/extensions.rst:15
+msgid "Introducing the Example"
+msgstr "範例介紹"
+
+#: ../../../src/dev/extensions.rst:17
+msgid ""
+"Let's say that you would like an operation that takes in two arrays, ``x`` "
+"and ``y``, scales them both by some coefficients ``alpha`` and ``beta`` "
+"respectively, and then adds them together to get the result ``z = alpha * x "
+"+ beta * y``. Well, you can very easily do that by just writing out a "
+"function as follows:"
+msgstr ""
+
+#: ../../../src/dev/extensions.rst:23
+msgid ""
+"import mlx.core as mx\n"
+"\n"
+"def simple_axpby(x: mx.array, y: mx.array, alpha: float, beta: float) -> mx."
+"array:\n"
+"    return alpha * x + beta * y"
+msgstr ""
+
+#: ../../../src/dev/extensions.rst:30
+msgid ""
+"This function performs that operation while leaving the implementations and "
+"differentiation to MLX."
+msgstr ""
+
+#: ../../../src/dev/extensions.rst:33
+msgid ""
+"However, you work with vector math libraries often and realize that the "
+"``axpby`` routine defines the same operation ``Y = (alpha * X) + (beta * "
+"Y)``. You would really like the part of your applications that does this "
+"operation on the CPU to be very fast - so you decide that you want it to "
+"rely on the ``axpby`` routine provided by the Accelerate_ framework. "
+"Continuing to impose our assumptions on to you, let's also assume that you "
+"want to learn how to add your own implementation for the gradients of your "
+"new operation while going over the ins-and-outs of the MLX framework."
+msgstr ""
+
+#: ../../../src/dev/extensions.rst:42
+msgid ""
+"Well, what a coincidence! You are in the right place. Over the course of "
+"this example, we will learn:"
+msgstr ""
+
+#: ../../../src/dev/extensions.rst:45
+msgid ""
+"The structure of the MLX library from the frontend API to the backend "
+"implementations."
+msgstr ""
+
+#: ../../../src/dev/extensions.rst:46
+msgid ""
+"How to implement your own CPU backend that redirects to Accelerate_ when "
+"appropriate (and a fallback if needed)."
+msgstr ""
+
+#: ../../../src/dev/extensions.rst:47
+msgid "How to implement your own GPU implementation using metal."
+msgstr ""
+
+#: ../../../src/dev/extensions.rst:48
+msgid "How to add your own ``vjp`` and ``jvp``."
+msgstr ""
+
+#: ../../../src/dev/extensions.rst:49
+msgid ""
+"How to build your implementations, link them to MLX, and bind them to python."
+msgstr ""
+
+#: ../../../src/dev/extensions.rst:52
+msgid "Operations and Primitives"
+msgstr "運算與原語"
+
+#: ../../../src/dev/extensions.rst:54
+msgid ""
+"In one sentence, operations in MLX build the computation graph, and "
+"primitives provide the rules for evaluation and transformations of said "
+"graph. Let's start by discussing operations in more detail."
+msgstr ""
+
+#: ../../../src/dev/extensions.rst:59
+msgid "Operations"
+msgstr "運算"
+
+#: ../../../src/dev/extensions.rst:61
+msgid ""
+"Operations are the frontend functions that operate on arrays. They are "
+"defined in the C++ API (:ref:`cpp_ops`) and then we provide bindings to "
+"these operations in the Python API (:ref:`ops`)."
+msgstr ""
+
+#: ../../../src/dev/extensions.rst:65
+msgid ""
+"We would like an operation, :meth:`axpby` that takes in two arrays ``x`` and "
+"``y``, and two scalars, ``alpha`` and ``beta``. This is how we would define "
+"it in the C++ API:"
+msgstr ""
+
+#: ../../../src/dev/extensions.rst:69
+msgid ""
+"/**\n"
+"*  Scale and sum two vectors element-wise\n"
+"*  z = alpha * x + beta * y\n"
+"*\n"
+"*  Follow numpy style broadcasting between x and y\n"
+"*  Inputs are upcasted to floats if needed\n"
+"**/\n"
+"array axpby(\n"
+"    const array& x, // Input array x\n"
+"    const array& y, // Input array y\n"
+"    const float alpha, // Scaling factor for x\n"
+"    const float beta, // Scaling factor for y\n"
+"    StreamOrDevice s = {} // Stream on which to schedule the operation\n"
+");"
+msgstr ""
+
+#: ../../../src/dev/extensions.rst:87
+msgid ""
+"This operation itself can call other operations within it if needed. So, the "
+"simplest way to go about implementing this operation would be do so in terms "
+"of existing operations."
+msgstr ""
+
+#: ../../../src/dev/extensions.rst:91
+msgid ""
+"array axpby(\n"
+"    const array& x, // Input array x\n"
+"    const array& y, // Input array y\n"
+"    const float alpha, // Scaling factor for x\n"
+"    const float beta, // Scaling factor for y\n"
+"    StreamOrDevice s /* = {} */ // Stream on which to schedule the "
+"operation\n"
+") {\n"
+"    // Scale x and y on the provided stream\n"
+"    auto ax = multiply(array(alpha), x, s);\n"
+"    auto by = multiply(array(beta), y, s);\n"
+"\n"
+"    // Add and return\n"
+"    return add(ax, by, s);\n"
+"}"
+msgstr ""
+
+#: ../../../src/dev/extensions.rst:108
+msgid ""
+"However, as we discussed earlier, this is not our goal. The operations "
+"themselves do not contain the implementations that act on the data, nor do "
+"they contain the rules of transformations. Rather, they are an easy to use "
+"interface that build on top of the building blocks we call :class:"
+"`Primitive`."
+msgstr ""
+
+#: ../../../src/dev/extensions.rst:114
+msgid "Primitives"
+msgstr "原語"
+
+#: ../../../src/dev/extensions.rst:116
+msgid ""
+"A :class:`Primitive` is part of the computation graph of an :class:`array`. "
+"It defines how to create an output given a set of input :class:`array` . "
+"Further, a :class:`Primitive` is a class that contains rules on how it is "
+"evaluated on the CPU or GPU, and how it acts under transformations such as "
+"``vjp`` and ``jvp``. These words on their own can be a bit abstract, so lets "
+"take a step back and go to our example to give ourselves a more concrete "
+"image."
+msgstr ""
+
+#: ../../../src/dev/extensions.rst:123
+msgid ""
+"class Axpby : public Primitive {\n"
+"  public:\n"
+"    explicit Axpby(Stream stream, float alpha, float beta)\n"
+"        : Primitive(stream), alpha_(alpha), beta_(beta){};\n"
+"\n"
+"    /**\n"
+"    * A primitive must know how to evaluate itself on the CPU/GPU\n"
+"    * for the given inputs and populate the output array.\n"
+"    *\n"
+"    * To avoid unnecessary allocations, the evaluation function\n"
+"    * is responsible for allocating space for the array.\n"
+"    */\n"
+"    void eval_cpu(const std::vector<array>& inputs, array& out) override;\n"
+"    void eval_gpu(const std::vector<array>& inputs, array& out) override;\n"
+"\n"
+"    /** The Jacobian-vector product. */\n"
+"    array jvp(\n"
+"        const std::vector<array>& primals,\n"
+"        const std::vector<array>& tangents,\n"
+"        const std::vector<int>& argnums) override;\n"
+"\n"
+"    /** The vector-Jacobian product. */\n"
+"    std::vector<array> vjp(\n"
+"        const std::vector<array>& primals,\n"
+"        const array& cotan,\n"
+"        const std::vector<int>& argnums) override;\n"
+"\n"
+"    /**\n"
+"    * The primitive must know how to vectorize itself across\n"
+"    * the given axes. The output is a pair containing the array\n"
+"    * representing the vectorized computation and the axis which\n"
+"    * corresponds to the output vectorized dimension.\n"
+"    */\n"
+"    std::pair<array, int> vmap(\n"
+"        const std::vector<array>& inputs,\n"
+"        const std::vector<int>& axes) override;\n"
+"\n"
+"    /** Print the primitive. */\n"
+"    void print(std::ostream& os) override {\n"
+"        os << \"Axpby\";\n"
+"    }\n"
+"\n"
+"    /** Equivalence check **/\n"
+"    bool is_equivalent(const Primitive& other) const override;\n"
+"\n"
+"  private:\n"
+"    float alpha_;\n"
+"    float beta_;\n"
+"\n"
+"    /** Fall back implementation for evaluation on CPU */\n"
+"    void eval(const std::vector<array>& inputs, array& out);\n"
+"};"
+msgstr ""
+
+#: ../../../src/dev/extensions.rst:178
+msgid ""
+"The :class:`Axpby` class derives from the base :class:`Primitive` class and "
+"follows the above demonstrated interface. :class:`Axpby` treats ``alpha`` "
+"and ``beta`` as parameters. It then provides implementations of how the "
+"array ``out`` is produced given ``inputs`` through :meth:`Axpby::eval_cpu` "
+"and :meth:`Axpby::eval_gpu`. Further, it provides rules of transformations "
+"in :meth:`Axpby::jvp`, :meth:`Axpby::vjp`, and :meth:`Axpby::vmap`."
+msgstr ""
+
+#: ../../../src/dev/extensions.rst:186
+msgid "Using the Primitives"
+msgstr ""
+
+#: ../../../src/dev/extensions.rst:188
+msgid ""
+"Operations can use this :class:`Primitive` to add a new :class:`array` to "
+"the computation graph. An :class:`array` can be constructed by providing its "
+"data type, shape, the :class:`Primitive` that computes it, and the :class:"
+"`array` inputs that are passed to the primitive."
+msgstr ""
+"運算可以使用此 :class:`Primitive` 在計算圖中新增一個 :class:`array`。建立:"
+"class:`array` 時可提供其資料型別、形狀、負責計算它的 :class:`Primitive`，以及"
+"傳給該原語的 :class:`array` 輸入。"
+
+#: ../../../src/dev/extensions.rst:193
+msgid ""
+"Let's re-implement our operation now in terms of our :class:`Axpby` "
+"primitive."
+msgstr ""
+
+#: ../../../src/dev/extensions.rst:195
+msgid ""
+"array axpby(\n"
+"    const array& x, // Input array x\n"
+"    const array& y, // Input array y\n"
+"    const float alpha, // Scaling factor for x\n"
+"    const float beta, // Scaling factor for y\n"
+"    StreamOrDevice s /* = {} */ // Stream on which to schedule the "
+"operation\n"
+") {\n"
+"    // Promote dtypes between x and y as needed\n"
+"    auto promoted_dtype = promote_types(x.dtype(), y.dtype());\n"
+"\n"
+"    // Upcast to float32 for non-floating point inputs x and y\n"
+"    auto out_dtype = is_floating_point(promoted_dtype)\n"
+"        ? promoted_dtype\n"
+"        : promote_types(promoted_dtype, float32);\n"
+"\n"
+"    // Cast x and y up to the determined dtype (on the same stream s)\n"
+"    auto x_casted = astype(x, out_dtype, s);\n"
+"    auto y_casted = astype(y, out_dtype, s);\n"
+"\n"
+"    // Broadcast the shapes of x and y (on the same stream s)\n"
+"    auto broadcasted_inputs = broadcast_arrays({x_casted, y_casted}, s);\n"
+"    auto out_shape = broadcasted_inputs[0].shape();\n"
+"\n"
+"    // Construct the array as the output of the Axpby primitive\n"
+"    // with the broadcasted and upcasted arrays as inputs\n"
+"    return array(\n"
+"        /* const std::vector<int>& shape = */ out_shape,\n"
+"        /* Dtype dtype = */ out_dtype,\n"
+"        /* std::unique_ptr<Primitive> primitive = */\n"
+"        std::make_unique<Axpby>(to_stream(s), alpha, beta),\n"
+"        /* const std::vector<array>& inputs = */ broadcasted_inputs);\n"
+"}"
+msgstr ""
+
+#: ../../../src/dev/extensions.rst:231
+msgid "This operation now handles the following:"
+msgstr "此運算現在會處理以下事項："
+
+#: ../../../src/dev/extensions.rst:233
+msgid "Upcast inputs and resolve the output data type."
+msgstr "將輸入升型並決定輸出資料型別。"
+
+#: ../../../src/dev/extensions.rst:234
+msgid "Broadcast the inputs and resolve the output shape."
+msgstr "廣播輸入並決定輸出形狀。"
+
+#: ../../../src/dev/extensions.rst:235
+msgid ""
+"Construct the primitive :class:`Axpby` using the given stream, ``alpha``, "
+"and ``beta``."
+msgstr "使用給定的 stream、``alpha`` 與 ``beta`` 建立 :class:`Axpby` 原語。"
+
+#: ../../../src/dev/extensions.rst:236
+msgid "Construct the output :class:`array` using the primitive and the inputs."
+msgstr "使用原語與輸入建立輸出 :class:`array`。"
+
+#: ../../../src/dev/extensions.rst:239
+msgid "Implementing the Primitive"
+msgstr "實作原語"
+
+#: ../../../src/dev/extensions.rst:241
+msgid ""
+"No computation happens when we call the operation alone. In effect, the "
+"operation only builds the computation graph. When we evaluate the output "
+"array, MLX schedules the execution of the computation graph, and calls :meth:"
+"`Axpby::eval_cpu` or :meth:`Axpby::eval_gpu` depending on the stream/device "
+"specified by the user."
+msgstr ""
+
+#: ../../../src/dev/extensions.rst:248
+msgid ""
+"When :meth:`Primitive::eval_cpu` or :meth:`Primitive::eval_gpu` are called, "
+"no memory has been allocated for the output array. It falls on the "
+"implementation of these functions to allocate memory as needed"
+msgstr ""
+
+#: ../../../src/dev/extensions.rst:253
+msgid "Implementing the CPU Backend"
+msgstr ""
+
+#: ../../../src/dev/extensions.rst:255
+msgid ""
+"Let's start by trying to implement a naive and generic version of :meth:"
+"`Axpby::eval_cpu`. We declared this as a private member function of :class:"
+"`Axpby` earlier called :meth:`Axpby::eval`."
+msgstr ""
+
+#: ../../../src/dev/extensions.rst:259
+msgid ""
+"Our naive method will go over each element of the output array, find the "
+"corresponding input elements of ``x`` and ``y`` and perform the operation "
+"pointwise. This is captured in the templated function :meth:`axpby_impl`."
+msgstr ""
+
+#: ../../../src/dev/extensions.rst:263
+msgid ""
+"template <typename T>\n"
+"void axpby_impl(\n"
+"        const array& x,\n"
+"        const array& y,\n"
+"        array& out,\n"
+"        float alpha_,\n"
+"        float beta_) {\n"
+"    // We only allocate memory when we are ready to fill the output\n"
+"    // malloc_or_wait synchronously allocates available memory\n"
+"    // There may be a wait executed here if the allocation is requested\n"
+"    // under memory-pressured conditions\n"
+"    out.set_data(allocator::malloc_or_wait(out.nbytes()));\n"
+"\n"
+"    // Collect input and output data pointers\n"
+"    const T* x_ptr = x.data<T>();\n"
+"    const T* y_ptr = y.data<T>();\n"
+"    T* out_ptr = out.data<T>();\n"
+"\n"
+"    // Cast alpha and beta to the relevant types\n"
+"    T alpha = static_cast<T>(alpha_);\n"
+"    T beta = static_cast<T>(beta_);\n"
+"\n"
+"    // Do the element-wise operation for each output\n"
+"    for (size_t out_idx = 0; out_idx < out.size(); out_idx++) {\n"
+"        // Map linear indices to offsets in x and y\n"
+"        auto x_offset = elem_to_loc(out_idx, x.shape(), x.strides());\n"
+"        auto y_offset = elem_to_loc(out_idx, y.shape(), y.strides());\n"
+"\n"
+"        // We allocate the output to be contiguous and regularly strided\n"
+"        // (defaults to row major) and hence it doesn't need additional "
+"mapping\n"
+"        out_ptr[out_idx] = alpha * x_ptr[x_offset] + beta * "
+"y_ptr[y_offset];\n"
+"    }\n"
+"}"
+msgstr ""
+
+#: ../../../src/dev/extensions.rst:299
+msgid ""
+"Now, we would like our implementation to be able to do this pointwise "
+"operation for all incoming floating point arrays. Accordingly, we add "
+"dispatches for ``float32``, ``float16``, ``bfloat16`` and ``complex64``. We "
+"throw an error if we encounter an unexpected type."
+msgstr ""
+
+#: ../../../src/dev/extensions.rst:304
+msgid ""
+"/** Fall back implementation for evaluation on CPU */\n"
+"void Axpby::eval(const std::vector<array>& inputs, array& out) {\n"
+"    // Check the inputs (registered in the op while constructing the out "
+"array)\n"
+"    assert(inputs.size() == 2);\n"
+"    auto& x = inputs[0];\n"
+"    auto& y = inputs[1];\n"
+"\n"
+"    // Dispatch to the correct dtype\n"
+"    if (out.dtype() == float32) {\n"
+"        return axpby_impl<float>(x, y, out, alpha_, beta_);\n"
+"    } else if (out.dtype() == float16) {\n"
+"        return axpby_impl<float16_t>(x, y, out, alpha_, beta_);\n"
+"    } else if (out.dtype() == bfloat16) {\n"
+"        return axpby_impl<bfloat16_t>(x, y, out, alpha_, beta_);\n"
+"    } else if (out.dtype() == complex64) {\n"
+"        return axpby_impl<complex64_t>(x, y, out, alpha_, beta_);\n"
+"    } else {\n"
+"        throw std::runtime_error(\n"
+"            \"Axpby is only supported for floating point types.\");\n"
+"    }\n"
+"}"
+msgstr ""
+
+#: ../../../src/dev/extensions.rst:328
+msgid ""
+"We have a fallback implementation! Now, to do what we are really here to do. "
+"Remember we wanted to use the ``axpby`` routine provided by the Accelerate_ "
+"framework? Well, there are 3 complications to keep in mind:"
+msgstr ""
+
+#: ../../../src/dev/extensions.rst:332
+msgid ""
+"Accelerate does not provide implementations of ``axpby`` for half precision "
+"floats. We can only direct to it for ``float32`` types"
+msgstr ""
+
+#: ../../../src/dev/extensions.rst:334
+msgid ""
+"Accelerate assumes the inputs ``x`` and ``y`` are contiguous and all "
+"elements have fixed strides between them. Possibly due to broadcasts and "
+"transposes, we aren't guaranteed that the inputs fit this requirement. We "
+"can only direct to Accelerate if both ``x`` and ``y`` are row contiguous or "
+"column contiguous."
+msgstr ""
+
+#: ../../../src/dev/extensions.rst:339
+msgid ""
+"Accelerate performs the routine ``Y = (alpha * X) + (beta * Y)`` inplace. "
+"MLX expects to write out the answer to a new array. We must copy the "
+"elements of ``y`` into the output array and use that as an input to ``axpby``"
+msgstr ""
+
+#: ../../../src/dev/extensions.rst:343
+msgid ""
+"Let's write out an implementation that uses Accelerate in the right "
+"conditions. It must simply allocate data for the output, copy elements of "
+"``y`` into it, and then call the :meth:`catlas_saxpby` from accelerate."
+msgstr ""
+
+#: ../../../src/dev/extensions.rst:347
+msgid ""
+"template <typename T>\n"
+"void axpby_impl_accelerate(\n"
+"        const array& x,\n"
+"        const array& y,\n"
+"        array& out,\n"
+"        float alpha_,\n"
+"        float beta_) {\n"
+"    // Accelerate library provides catlas_saxpby which does\n"
+"    // Y = (alpha * X) + (beta * Y) in place\n"
+"    // To use it, we first copy the data in y over to the output array\n"
+"\n"
+"    // This specialization requires both x and y be contiguous in the same "
+"mode\n"
+"    // i.e: corresponding linear indices in both point to corresponding "
+"elements\n"
+"    // The data in the output array is allocated to match the strides in y\n"
+"    // such that x, y, and out are contiguous in the same mode and\n"
+"    // no transposition is needed\n"
+"    out.set_data(\n"
+"        allocator::malloc_or_wait(y.data_size() * out.itemsize()),\n"
+"        y.data_size(),\n"
+"        y.strides(),\n"
+"        y.flags());\n"
+"\n"
+"    // We then copy over the elements using the contiguous vector "
+"specialization\n"
+"    copy_inplace(y, out, CopyType::Vector);\n"
+"\n"
+"    // Get x and y pointers for catlas_saxpby\n"
+"    const T* x_ptr = x.data<T>();\n"
+"    T* y_ptr = out.data<T>();\n"
+"\n"
+"    T alpha = static_cast<T>(alpha_);\n"
+"    T beta = static_cast<T>(beta_);\n"
+"\n"
+"    // Call the inplace accelerate operator\n"
+"    catlas_saxpby(\n"
+"        /* N = */ out.size(),\n"
+"        /* ALPHA = */ alpha,\n"
+"        /* X = */ x_ptr,\n"
+"        /* INCX = */ 1,\n"
+"        /* BETA = */ beta,\n"
+"        /* Y = */ y_ptr,\n"
+"        /* INCY = */ 1);\n"
+"}"
+msgstr ""
+
+#: ../../../src/dev/extensions.rst:392
+msgid ""
+"Great! But what about the inputs that do not fit the criteria for "
+"accelerate? Luckily, we can always just direct back to :meth:`Axpby::eval`."
+msgstr ""
+
+#: ../../../src/dev/extensions.rst:395
+msgid "With this in mind, lets finally implement our :meth:`Axpby::eval_cpu`."
+msgstr ""
+
+#: ../../../src/dev/extensions.rst:397
+msgid ""
+"/** Evaluate primitive on CPU using accelerate specializations */\n"
+"void Axpby::eval_cpu(const std::vector<array>& inputs, array& out) {\n"
+"    assert(inputs.size() == 2);\n"
+"    auto& x = inputs[0];\n"
+"    auto& y = inputs[1];\n"
+"\n"
+"    // Accelerate specialization for contiguous single precision float "
+"arrays\n"
+"    if (out.dtype() == float32 &&\n"
+"        ((x.flags().row_contiguous && y.flags().row_contiguous) ||\n"
+"        (x.flags().col_contiguous && y.flags().col_contiguous))) {\n"
+"        axpby_impl_accelerate<float>(x, y, out, alpha_, beta_);\n"
+"        return;\n"
+"    }\n"
+"\n"
+"    // Fall back to common backend if specializations are not available\n"
+"    eval(inputs, out);\n"
+"}"
+msgstr ""
+
+#: ../../../src/dev/extensions.rst:417
+msgid ""
+"We have now hit a milestone! Just this much is enough to run the operation :"
+"meth:`axpby` on a CPU stream!"
+msgstr ""
+
+#: ../../../src/dev/extensions.rst:420
+msgid ""
+"If you do not plan on running the operation on the GPU or using transforms "
+"on computation graphs that contain :class:`Axpby`, you can stop implementing "
+"the primitive here and enjoy the speed-ups you get from the Accelerate "
+"library."
+msgstr ""
+
+#: ../../../src/dev/extensions.rst:425
+msgid "Implementing the GPU Backend"
+msgstr ""
+
+#: ../../../src/dev/extensions.rst:427
+msgid ""
+"Apple silicon devices address their GPUs using the Metal_ shading language, "
+"and all GPU kernels in MLX are written using metal."
+msgstr ""
+
+#: ../../../src/dev/extensions.rst:432
+msgid "Here are some helpful resources if you are new to metal!"
+msgstr ""
+
+#: ../../../src/dev/extensions.rst:434
+msgid "A walkthrough of the metal compute pipeline: `Metal Example`_"
+msgstr "Metal 計算管線導覽：`Metal Example`_"
+
+#: ../../../src/dev/extensions.rst:435
+msgid "Documentation for metal shading language: `Metal Specification`_"
+msgstr "Metal 著色語言文件：`Metal Specification`_"
+
+#: ../../../src/dev/extensions.rst:436
+msgid "Using metal from C++: `Metal-cpp`_"
+msgstr "從 C++ 使用 Metal：`Metal-cpp`_"
+
+#: ../../../src/dev/extensions.rst:438
+msgid ""
+"Let's keep the GPU algorithm simple. We will launch exactly as many threads "
+"as there are elements in the output. Each thread will pick the element it "
+"needs from ``x`` and ``y``, do the pointwise operation, and then update its "
+"assigned element in the output."
+msgstr ""
+
+#: ../../../src/dev/extensions.rst:443
+msgid ""
+"template <typename T>\n"
+"[[kernel]] void axpby_general(\n"
+"        device const T* x [[buffer(0)]],\n"
+"        device const T* y [[buffer(1)]],\n"
+"        device T* out [[buffer(2)]],\n"
+"        constant const float& alpha [[buffer(3)]],\n"
+"        constant const float& beta [[buffer(4)]],\n"
+"        constant const int* shape [[buffer(5)]],\n"
+"        constant const size_t* x_strides [[buffer(6)]],\n"
+"        constant const size_t* y_strides [[buffer(7)]],\n"
+"        constant const int& ndim [[buffer(8)]],\n"
+"        uint index [[thread_position_in_grid]]) {\n"
+"    // Convert linear indices to offsets in array\n"
+"    auto x_offset = elem_to_loc(index, shape, x_strides, ndim);\n"
+"    auto y_offset = elem_to_loc(index, shape, y_strides, ndim);\n"
+"\n"
+"    // Do the operation and update the output\n"
+"    out[index] =\n"
+"        static_cast<T>(alpha) * x[x_offset] + static_cast<T>(beta) * "
+"y[y_offset];\n"
+"}"
+msgstr ""
+
+#: ../../../src/dev/extensions.rst:466
+msgid ""
+"We then need to instantiate this template for all floating point types and "
+"give each instantiation a unique host name so we can identify the right "
+"kernel for each data type."
+msgstr ""
+
+#: ../../../src/dev/extensions.rst:470
+msgid ""
+"#define instantiate_axpby(type_name, type)              \\\n"
+"    template [[host_name(\"axpby_general_\" #type_name)]] \\\n"
+"    [[kernel]] void axpby_general<type>(                \\\n"
+"        device const type* x [[buffer(0)]],             \\\n"
+"        device const type* y [[buffer(1)]],             \\\n"
+"        device type* out [[buffer(2)]],                 \\\n"
+"        constant const float& alpha [[buffer(3)]],      \\\n"
+"        constant const float& beta [[buffer(4)]],       \\\n"
+"        constant const int* shape [[buffer(5)]],        \\\n"
+"        constant const size_t* x_strides [[buffer(6)]], \\\n"
+"        constant const size_t* y_strides [[buffer(7)]], \\\n"
+"        constant const int& ndim [[buffer(8)]],         \\\n"
+"        uint index [[thread_position_in_grid]]);\n"
+"\n"
+"instantiate_axpby(float32, float);\n"
+"instantiate_axpby(float16, half);\n"
+"instantiate_axpby(bfloat16, bfloat16_t);\n"
+"instantiate_axpby(complex64, complex64_t);"
+msgstr ""
+
+#: ../../../src/dev/extensions.rst:491
+msgid ""
+"This kernel will be compiled into a metal library ``mlx_ext.metallib`` as we "
+"will see later in :ref:`Building with CMake`. In the following example, we "
+"assume that the library ``mlx_ext.metallib`` will always be co-located with "
+"the executable/ shared-library calling the :meth:`register_library` "
+"function. The :meth:`register_library` function takes the library's name and "
+"potential path (or in this case, a function that can produce the path of the "
+"metal library) and tries to load that library if it hasn't already been "
+"registered by the relevant static :class:`mlx::core::metal::Device` object. "
+"This is why, it is important to package your C++ library with the metal "
+"library. We will go over this process in more detail later."
+msgstr ""
+
+#: ../../../src/dev/extensions.rst:502
+msgid ""
+"The logic to determine the kernel, set the inputs, resolve the grid "
+"dimensions and dispatch it to the GPU are contained in :meth:`Axpby::"
+"eval_gpu` as shown below."
+msgstr ""
+
+#: ../../../src/dev/extensions.rst:506
+msgid ""
+"/** Evaluate primitive on GPU */\n"
+"void Axpby::eval_gpu(const std::vector<array>& inputs, array& out) {\n"
+"    // Prepare inputs\n"
+"    assert(inputs.size() == 2);\n"
+"    auto& x = inputs[0];\n"
+"    auto& y = inputs[1];\n"
+"\n"
+"    // Each primitive carries the stream it should execute on\n"
+"    // and each stream carries its device identifiers\n"
+"    auto& s = stream();\n"
+"    // We get the needed metal device using the stream\n"
+"    auto& d = metal::device(s.device);\n"
+"\n"
+"    // Allocate output memory\n"
+"    out.set_data(allocator::malloc_or_wait(out.nbytes()));\n"
+"\n"
+"    // Resolve name of kernel (corresponds to axpby.metal)\n"
+"    std::ostringstream kname;\n"
+"    kname << \"axpby_\" << \"general_\" << type_to_name(out);\n"
+"\n"
+"    // Make sure the metal library is available and look for it\n"
+"    // in the same folder as this executable if needed\n"
+"    d.register_library(\"mlx_ext\", metal::get_colocated_mtllib_path);\n"
+"\n"
+"    // Make a kernel from this metal library\n"
+"    auto kernel = d.get_kernel(kname.str(), \"mlx_ext\");\n"
+"\n"
+"    // Prepare to encode kernel\n"
+"    auto compute_encoder = d.get_command_encoder(s.index);\n"
+"    compute_encoder->setComputePipelineState(kernel);\n"
+"\n"
+"    // Kernel parameters are registered with buffer indices corresponding "
+"to\n"
+"    // those in the kernel declaration at axpby.metal\n"
+"    int ndim = out.ndim();\n"
+"    size_t nelem = out.size();\n"
+"\n"
+"    // Encode input arrays to kernel\n"
+"    set_array_buffer(compute_encoder, x, 0);\n"
+"    set_array_buffer(compute_encoder, y, 1);\n"
+"\n"
+"    // Encode output arrays to kernel\n"
+"    set_array_buffer(compute_encoder, out, 2);\n"
+"\n"
+"    // Encode alpha and beta\n"
+"    compute_encoder->setBytes(&alpha_, sizeof(float), 3);\n"
+"    compute_encoder->setBytes(&beta_, sizeof(float), 4);\n"
+"\n"
+"    // Encode shape, strides and ndim\n"
+"    compute_encoder->setBytes(x.shape().data(), ndim * sizeof(int), 5);\n"
+"    compute_encoder->setBytes(x.strides().data(), ndim * sizeof(size_t), "
+"6);\n"
+"    compute_encoder->setBytes(y.strides().data(), ndim * sizeof(size_t), "
+"7);\n"
+"    compute_encoder->setBytes(&ndim, sizeof(int), 8);\n"
+"\n"
+"    // We launch 1 thread for each input and make sure that the number of\n"
+"    // threads in any given threadgroup is not higher than the max allowed\n"
+"    size_t tgp_size = std::min(nelem, kernel-"
+">maxTotalThreadsPerThreadgroup());\n"
+"\n"
+"    // Fix the 3D size of each threadgroup (in terms of threads)\n"
+"    MTL::Size group_dims = MTL::Size(tgp_size, 1, 1);\n"
+"\n"
+"    // Fix the 3D size of the launch grid (in terms of threads)\n"
+"    MTL::Size grid_dims = MTL::Size(nelem, 1, 1);\n"
+"\n"
+"    // Launch the grid with the given number of threads divided among\n"
+"    // the given threadgroups\n"
+"    compute_encoder->dispatchThreads(grid_dims, group_dims);\n"
+"}"
+msgstr ""
+
+#: ../../../src/dev/extensions.rst:576
+msgid ""
+"We can now call the :meth:`axpby` operation on both the CPU and the GPU!"
+msgstr "現在我們可以在 CPU 和 GPU 上呼叫 :meth:`axpby` 運算了！"
+
+#: ../../../src/dev/extensions.rst:578
+msgid ""
+"A few things to note about MLX and metal before moving on. MLX keeps track "
+"of the active ``compute_encoder``. We rely on :meth:`d.get_command_encoder` "
+"to give us the active metal compute command encoder instead of building a "
+"new one and calling :meth:`compute_encoder->end_encoding` at the end. MLX "
+"keeps adding kernels (compute pipelines) to the active command encoder until "
+"some specified limit is hit or the compute encoder needs to be flushed for "
+"synchronization. MLX also handles enqueuing and committing the associated "
+"command buffers as needed. We suggest taking a deeper dive into :class:"
+"`metal::Device` if you would like to study this routine further."
+msgstr ""
+
+#: ../../../src/dev/extensions.rst:589
+msgid "Primitive Transforms"
+msgstr "原語轉換"
+
+#: ../../../src/dev/extensions.rst:591
+msgid ""
+"Now that we have come this far, let's also learn how to add implementations "
+"to transformations in a :class:`Primitive`. These transformations can be "
+"built on top of our operations, including the one we just defined now. Which "
+"then gives us the following :meth:`Axpby::jvp` and :meth:`Axpby::vjp` "
+"implementations."
+msgstr ""
+
+#: ../../../src/dev/extensions.rst:596
+msgid ""
+"/** The Jacobian-vector product. */\n"
+"array Axpby::jvp(\n"
+"        const std::vector<array>& primals,\n"
+"        const std::vector<array>& tangents,\n"
+"        const std::vector<int>& argnums) {\n"
+"    // Forward mode diff that pushes along the tangents\n"
+"    // The jvp transform on the primitive can built with ops\n"
+"    // that are scheduled on the same stream as the primitive\n"
+"\n"
+"    // If argnums = {0}, we only push along x in which case the\n"
+"    // jvp is just the tangent scaled by alpha\n"
+"    // Similarly, if argnums = {1}, the jvp is just the tangent\n"
+"    // scaled by beta\n"
+"    if (argnums.size() > 1) {\n"
+"        auto scale = argnums[0] == 0 ? alpha_ : beta_;\n"
+"        auto scale_arr = array(scale, tangents[0].dtype());\n"
+"        return multiply(scale_arr, tangents[0], stream());\n"
+"    }\n"
+"    // If, argnums = {0, 1}, we take contributions from both\n"
+"    // which gives us jvp = tangent_x * alpha + tangent_y * beta\n"
+"    else {\n"
+"        return axpby(tangents[0], tangents[1], alpha_, beta_, stream());\n"
+"    }\n"
+"}"
+msgstr ""
+
+#: ../../../src/dev/extensions.rst:623
+msgid ""
+"/** The vector-Jacobian product. */\n"
+"std::vector<array> Axpby::vjp(\n"
+"        const std::vector<array>& primals,\n"
+"        const array& cotan,\n"
+"        const std::vector<int>& argnums) {\n"
+"    // Reverse mode diff\n"
+"    std::vector<array> vjps;\n"
+"    for (auto arg : argnums) {\n"
+"        auto scale = arg == 0 ? alpha_ : beta_;\n"
+"        auto scale_arr = array(scale, cotan.dtype());\n"
+"        vjps.push_back(multiply(scale_arr, cotan, stream()));\n"
+"    }\n"
+"    return vjps;\n"
+"}"
+msgstr ""
+
+#: ../../../src/dev/extensions.rst:640
+msgid ""
+"Finally, you need not have a transformation fully defined to start using "
+"your own :class:`Primitive`."
+msgstr ""
+
+#: ../../../src/dev/extensions.rst:643
+msgid ""
+"/** Vectorize primitive along given axis */\n"
+"std::pair<array, int> Axpby::vmap(\n"
+"        const std::vector<array>& inputs,\n"
+"        const std::vector<int>& axes) {\n"
+"    throw std::runtime_error(\"Axpby has no vmap implementation.\");\n"
+"}"
+msgstr ""
+
+#: ../../../src/dev/extensions.rst:653
+msgid "Building and Binding"
+msgstr "建置與綁定"
+
+#: ../../../src/dev/extensions.rst:655
+msgid "Let's look at the overall directory structure first."
+msgstr "先看看整體目錄結構。"
+
+#: ../../../src/dev/extensions.rst:657 ../../../src/dev/extensions.rst:834
+msgid "extensions"
+msgstr ""
+
+#: ../../../src/dev/extensions.rst:658
+msgid "├── axpby"
+msgstr ""
+
+#: ../../../src/dev/extensions.rst:659
+msgid "│   ├── axpby.cpp"
+msgstr ""
+
+#: ../../../src/dev/extensions.rst:660
+msgid "│   ├── axpby.h"
+msgstr ""
+
+#: ../../../src/dev/extensions.rst:661
+msgid "│   └── axpby.metal"
+msgstr ""
+
+#: ../../../src/dev/extensions.rst:662 ../../../src/dev/extensions.rst:835
+msgid "├── mlx_sample_extensions"
+msgstr ""
+
+#: ../../../src/dev/extensions.rst:663
+msgid "│   └── __init__.py"
+msgstr ""
+
+#: ../../../src/dev/extensions.rst:664
+msgid "├── bindings.cpp"
+msgstr ""
+
+#: ../../../src/dev/extensions.rst:665
+msgid "├── CMakeLists.txt"
+msgstr ""
+
+#: ../../../src/dev/extensions.rst:666
+msgid "└── setup.py"
+msgstr ""
+
+#: ../../../src/dev/extensions.rst:668
+msgid "``extensions/axpby/`` defines the C++ extension library"
+msgstr "``extensions/axpby/`` 定義 C++ 擴充程式庫"
+
+#: ../../../src/dev/extensions.rst:669
+msgid ""
+"``extensions/mlx_sample_extensions`` sets out the structure for the "
+"associated python package"
+msgstr ""
+
+#: ../../../src/dev/extensions.rst:671
+msgid "``extensions/bindings.cpp`` provides python bindings for our operation"
+msgstr ""
+
+#: ../../../src/dev/extensions.rst:672
+msgid ""
+"``extensions/CMakeLists.txt`` holds CMake rules to build the library and "
+"python bindings"
+msgstr ""
+
+#: ../../../src/dev/extensions.rst:674
+msgid ""
+"``extensions/setup.py`` holds the ``setuptools`` rules to build and install "
+"the python package"
+msgstr ""
+
+#: ../../../src/dev/extensions.rst:678
+msgid "Binding to Python"
+msgstr "綁定到 Python"
+
+#: ../../../src/dev/extensions.rst:680
+msgid ""
+"We use PyBind11_ to build a Python API for the C++ library. Since bindings "
+"for components such as :class:`mlx.core.array`, :class:`mlx.core.stream`, "
+"etc. are already provided, adding our :meth:`axpby` is simple!"
+msgstr ""
+
+#: ../../../src/dev/extensions.rst:684
+msgid ""
+"PYBIND11_MODULE(mlx_sample_extensions, m) {\n"
+"    m.doc() = \"Sample C++ and metal extensions for MLX\";\n"
+"\n"
+"    m.def(\n"
+"        \"axpby\",\n"
+"        &axpby,\n"
+"        \"x\"_a,\n"
+"        \"y\"_a,\n"
+"        py::pos_only(),\n"
+"        \"alpha\"_a,\n"
+"        \"beta\"_a,\n"
+"        py::kw_only(),\n"
+"        \"stream\"_a = py::none(),\n"
+"        R\"pbdoc(\n"
+"            Scale and sum two vectors element-wise\n"
+"            ``z = alpha * x + beta * y``\n"
+"\n"
+"            Follows numpy style broadcasting between ``x`` and ``y``\n"
+"            Inputs are upcasted to floats if needed\n"
+"\n"
+"            Args:\n"
+"                x (array): Input array.\n"
+"                y (array): Input array.\n"
+"                alpha (float): Scaling factor for ``x``.\n"
+"                beta (float): Scaling factor for ``y``.\n"
+"\n"
+"            Returns:\n"
+"                array: ``alpha * x + beta * y``\n"
+"        )pbdoc\");\n"
+"}"
+msgstr ""
+
+#: ../../../src/dev/extensions.rst:717
+msgid ""
+"Most of the complexity in the above example comes from additional bells and "
+"whistles such as the literal names and doc-strings."
+msgstr "上述範例的大部分複雜度來自額外的裝飾細節，例如字面名稱與文件字串。"
+
+#: ../../../src/dev/extensions.rst:722
+msgid ""
+":mod:`mlx.core` needs to be imported before importing :mod:"
+"`mlx_sample_extensions` as defined by the pybind11 module above to ensure "
+"that the casters for :mod:`mlx.core` components like :class:`mlx.core.array` "
+"are available."
+msgstr ""
+
+#: ../../../src/dev/extensions.rst:730
+msgid "Building with CMake"
+msgstr "使用 CMake 建置"
+
+#: ../../../src/dev/extensions.rst:732
+msgid ""
+"Building the C++ extension library itself is simple, it only requires that "
+"you ``find_package(MLX CONFIG)`` and then link it to your library."
+msgstr ""
+
+#: ../../../src/dev/extensions.rst:735
+msgid ""
+"# Add library\n"
+"add_library(mlx_ext)\n"
+"\n"
+"# Add sources\n"
+"target_sources(\n"
+"    mlx_ext\n"
+"    PUBLIC\n"
+"    ${CMAKE_CURRENT_LIST_DIR}/axpby/axpby.cpp\n"
+")\n"
+"\n"
+"# Add include headers\n"
+"target_include_directories(\n"
+"    mlx_ext PUBLIC ${CMAKE_CURRENT_LIST_DIR}\n"
+")\n"
+"\n"
+"# Link to mlx\n"
+"target_link_libraries(mlx_ext PUBLIC mlx)"
+msgstr ""
+
+#: ../../../src/dev/extensions.rst:755
+msgid ""
+"We also need to build the attached metal library. For convenience, we "
+"provide a :meth:`mlx_build_metallib` function that builds a ``.metallib`` "
+"target given sources, headers, destinations, etc. (defined in ``cmake/"
+"extension.cmake`` and automatically imported with MLX package)."
+msgstr ""
+
+#: ../../../src/dev/extensions.rst:760
+msgid "Here is what that looks like in practice!"
+msgstr ""
+
+#: ../../../src/dev/extensions.rst:762
+msgid ""
+"# Build metallib\n"
+"if(MLX_BUILD_METAL)\n"
+"\n"
+"mlx_build_metallib(\n"
+"    TARGET mlx_ext_metallib\n"
+"    TITLE mlx_ext\n"
+"    SOURCES ${CMAKE_CURRENT_LIST_DIR}/axpby/axpby.metal\n"
+"    INCLUDE_DIRS ${PROJECT_SOURCE_DIR} ${MLX_INCLUDE_DIRS}\n"
+"    OUTPUT_DIRECTORY ${CMAKE_LIBRARY_OUTPUT_DIRECTORY}\n"
+")\n"
+"\n"
+"add_dependencies(\n"
+"    mlx_ext\n"
+"    mlx_ext_metallib\n"
+")\n"
+"\n"
+"endif()"
+msgstr ""
+
+#: ../../../src/dev/extensions.rst:782
+msgid "Finally, we build the Pybind11_ bindings"
+msgstr ""
+
+#: ../../../src/dev/extensions.rst:784
+msgid ""
+"pybind11_add_module(\n"
+"    mlx_sample_extensions\n"
+"    ${CMAKE_CURRENT_LIST_DIR}/bindings.cpp\n"
+")\n"
+"target_link_libraries(mlx_sample_extensions PRIVATE mlx_ext)\n"
+"\n"
+"if(BUILD_SHARED_LIBS)\n"
+"    target_link_options(mlx_sample_extensions PRIVATE -Wl,-rpath,"
+"@loader_path)\n"
+"endif()"
+msgstr ""
+
+#: ../../../src/dev/extensions.rst:797
+msgid "Building with ``setuptools``"
+msgstr "使用 ``setuptools`` 建置"
+
+#: ../../../src/dev/extensions.rst:799
+msgid ""
+"Once we have set out the CMake build rules as described above, we can use "
+"the build utilities defined in :mod:`mlx.extension` for a simple build "
+"process."
+msgstr ""
+
+#: ../../../src/dev/extensions.rst:802
+msgid ""
+"from mlx import extension\n"
+"from setuptools import setup\n"
+"\n"
+"if __name__ == \"__main__\":\n"
+"    setup(\n"
+"        name=\"mlx_sample_extensions\",\n"
+"        version=\"0.0.0\",\n"
+"        description=\"Sample C++ and Metal extensions for MLX primitives."
+"\",\n"
+"        ext_modules=[extension.CMakeExtension(\"mlx_sample_extensions\")],\n"
+"        cmdclass={\"build_ext\": extension.CMakeBuild},\n"
+"        packages = [\"mlx_sample_extensions\"],\n"
+"        package_dir = {\"\": \"mlx_sample_extensions\"},\n"
+"        package_data = {\"mlx_sample_extensions\" : [\"*.so\", \"*.dylib\", "
+"\"*.metallib\"]},\n"
+"        zip_safe=False,\n"
+"        python_requires=\">=3.7\",\n"
+"    )"
+msgstr ""
+
+#: ../../../src/dev/extensions.rst:822
+msgid ""
+"We treat ``extensions/mlx_sample_extensions`` as the package directory even "
+"though it only contains a ``__init__.py`` to ensure the following:"
+msgstr ""
+"我們將 ``extensions/mlx_sample_extensions`` 視為軟體包目錄，即使它只包含 "
+"``__init__.py``，也能確保以下事項："
+
+#: ../../../src/dev/extensions.rst:825
+msgid ""
+":mod:`mlx.core` is always imported before importing  :mod:"
+"`mlx_sample_extensions`"
+msgstr ""
+
+#: ../../../src/dev/extensions.rst:826
+msgid ""
+"The C++ extension library and the metal library are co-located with the "
+"python bindings and copied together if the package is installed"
+msgstr ""
+"C++ 擴充程式庫與 Metal 程式庫會與 Python 綁定放在同一位置，並在安裝軟體包時一"
+"併複製"
+
+#: ../../../src/dev/extensions.rst:829
+msgid ""
+"You can build inplace for development using ``python setup.py build_ext -j8 "
+"--inplace`` (in ``extensions/``)"
+msgstr ""
+
+#: ../../../src/dev/extensions.rst:832
+msgid "This will result in a directory structure as follows:"
+msgstr ""
+
+#: ../../../src/dev/extensions.rst:836
+msgid "│   ├── __init__.py"
+msgstr ""
+
+#: ../../../src/dev/extensions.rst:837
+msgid "│   ├── libmlx_ext.dylib # C++ extension library"
+msgstr "│   ├── libmlx_ext.dylib # C++ 擴充程式庫"
+
+#: ../../../src/dev/extensions.rst:838
+msgid "│   ├── mlx_ext.metallib # Metal library"
+msgstr "│   ├── mlx_ext.metallib # Metal 程式庫"
+
+#: ../../../src/dev/extensions.rst:839
+msgid "│   └── mlx_sample_extensions.cpython-3x-darwin.so # Python Binding"
+msgstr ""
+
+#: ../../../src/dev/extensions.rst:840
+msgid "..."
+msgstr ""
+
+#: ../../../src/dev/extensions.rst:842
+msgid ""
+"When you try to install using the command ``python -m pip install .`` (in "
+"``extensions/``), the package will be installed with the same structure as "
+"``extensions/mlx_sample_extensions`` and the C++ and metal library will be "
+"copied along with the python binding since they are specified as "
+"``package_data``."
+msgstr ""
+
+#: ../../../src/dev/extensions.rst:848
+msgid "Usage"
+msgstr "使用方式"
+
+#: ../../../src/dev/extensions.rst:850
+msgid ""
+"After installing the extension as described above, you should be able to "
+"simply import the python package and play with it as you would any other MLX "
+"operation!"
+msgstr ""
+
+#: ../../../src/dev/extensions.rst:853
+msgid "Let's looks at a simple script and it's results!"
+msgstr ""
+
+#: ../../../src/dev/extensions.rst:855
+msgid ""
+"import mlx.core as mx\n"
+"from mlx_sample_extensions import axpby\n"
+"\n"
+"a = mx.ones((3, 4))\n"
+"b = mx.ones((3, 4))\n"
+"c = axpby(a, b, 4.0, 2.0, stream=mx.cpu)\n"
+"\n"
+"print(f\"c shape: {c.shape}\")\n"
+"print(f\"c dtype: {c.dtype}\")\n"
+"print(f\"c correctness: {mx.all(c == 6.0).item()}\")"
+msgstr ""
+
+#: ../../../src/dev/extensions.rst:868
+msgid "Output:"
+msgstr "輸出："
+
+#: ../../../src/dev/extensions.rst:870
+msgid ""
+"c shape: [3, 4]\n"
+"c dtype: float32\n"
+"c correctness: True"
+msgstr ""
+
+#: ../../../src/dev/extensions.rst:877
+msgid "Results"
+msgstr "結果"
+
+#: ../../../src/dev/extensions.rst:879
+msgid ""
+"Let's run a quick benchmark and see how our new ``axpby`` operation compares "
+"with the naive :meth:`simple_axpby` we defined at first on the CPU."
+msgstr ""
+
+#: ../../../src/dev/extensions.rst:882
+msgid ""
+"import mlx.core as mx\n"
+"from mlx_sample_extensions import axpby\n"
+"import time\n"
+"\n"
+"mx.set_default_device(mx.cpu)\n"
+"\n"
+"def simple_axpby(x: mx.array, y: mx.array, alpha: float, beta: float) -> mx."
+"array:\n"
+"    return alpha * x + beta * y\n"
+"\n"
+"M = 256\n"
+"N = 512\n"
+"\n"
+"x = mx.random.normal((M, N))\n"
+"y = mx.random.normal((M, N))\n"
+"alpha = 4.0\n"
+"beta = 2.0\n"
+"\n"
+"mx.eval((x, y))\n"
+"\n"
+"def bench(f):\n"
+"    # Warm up\n"
+"    for i in range(100):\n"
+"        z = f(x, y, alpha, beta)\n"
+"        mx.eval(z)\n"
+"\n"
+"    # Timed run\n"
+"    s = time.time()\n"
+"    for i in range(5000):\n"
+"        z = f(x, y, alpha, beta)\n"
+"        mx.eval(z)\n"
+"    e = time.time()\n"
+"    return e - s\n"
+"\n"
+"simple_time = bench(simple_axpby)\n"
+"custom_time = bench(axpby)\n"
+"\n"
+"print(f\"Simple axpby: {simple_time:.3f} s | Custom axpby: {custom_time:.3f} "
+"s\")"
+msgstr ""
+
+#: ../../../src/dev/extensions.rst:922
+msgid "Results:"
+msgstr ""
+
+#: ../../../src/dev/extensions.rst:924
+msgid "Simple axpby: 0.114 s | Custom axpby: 0.109 s"
+msgstr ""
+
+#: ../../../src/dev/extensions.rst:928
+msgid "We see some modest improvements right away!"
+msgstr ""
+
+#: ../../../src/dev/extensions.rst:930
+msgid ""
+"This operation is now good to be used to build other operations, in :class:"
+"`mlx.nn.Module` calls, and also as a part of graph transformations like :"
+"meth:`grad`!"
+msgstr ""
+
+#: ../../../src/dev/extensions.rst:935
+msgid "Scripts"
+msgstr "腳本"
+
+#: ../../../src/dev/extensions.rst:937
+msgid "Download the code"
+msgstr "下載程式碼"
+
+#: ../../../src/dev/extensions.rst:939
+msgid "The full example code is available in `mlx <code>`_."
+msgstr ""
