@@ -1,0 +1,292 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023, MLX Contributors
+# This file is distributed under the same license as the MLX package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: MLX 0.5\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-12-08 12:55+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../src/python/nn.rst:6
+msgid "Neural Networks"
+msgstr "神經網路"
+
+#: ../../../src/python/nn.rst:8
+msgid ""
+"Writing arbitrarily complex neural networks in MLX can be done using only :"
+"class:`mlx.core.array` and :meth:`mlx.core.value_and_grad`. However, this "
+"requires the user to write again and again the same simple neural network "
+"operations as well as handle all the parameter state and initialization "
+"manually and explicitly."
+msgstr ""
+"在 MLX 中撰寫任意複雜的神經網路，只需使用 :class:`mlx.core.array` 與 :meth:"
+"`mlx.core.value_and_grad` 即可。然而，這需要使用者一再撰寫相同的簡單神經網路"
+"操作，並且手動且明確地處理所有參數狀態與初始化。"
+
+#: ../../../src/python/nn.rst:13
+msgid ""
+"The module :mod:`mlx.nn` solves this problem by providing an intuitive way "
+"of composing neural network layers, initializing their parameters, freezing "
+"them for finetuning and more."
+msgstr ""
+":mod:`mlx.nn` 模組提供直覺的方式來組合神經網路層、初始化其參數、在微調時凍結"
+"參數等，從而解決此問題。"
+
+#: ../../../src/python/nn.rst:18
+msgid "Quick Start with Neural Networks"
+msgstr "神經網路快速開始"
+
+#: ../../../src/python/nn.rst:20
+msgid ""
+"import mlx.core as mx\n"
+"import mlx.nn as nn\n"
+"\n"
+"class MLP(nn.Module):\n"
+"    def __init__(self, in_dims: int, out_dims: int):\n"
+"        super().__init__()\n"
+"\n"
+"        self.layers = [\n"
+"            nn.Linear(in_dims, 128),\n"
+"            nn.Linear(128, 128),\n"
+"            nn.Linear(128, out_dims),\n"
+"        ]\n"
+"\n"
+"    def __call__(self, x):\n"
+"        for i, l in enumerate(self.layers):\n"
+"            x = mx.maximum(x, 0) if i > 0 else x\n"
+"            x = l(x)\n"
+"        return x\n"
+"\n"
+"# The model is created with all its parameters but nothing is initialized\n"
+"# yet because MLX is lazily evaluated\n"
+"mlp = MLP(2, 10)\n"
+"\n"
+"# We can access its parameters by calling mlp.parameters()\n"
+"params = mlp.parameters()\n"
+"print(params[\"layers\"][0][\"weight\"].shape)\n"
+"\n"
+"# Printing a parameter will cause it to be evaluated and thus initialized\n"
+"print(params[\"layers\"][0])\n"
+"\n"
+"# We can also force evaluate all parameters to initialize the model\n"
+"mx.eval(mlp.parameters())\n"
+"\n"
+"# A simple loss function.\n"
+"# NOTE: It doesn't matter how it uses the mlp model. It currently captures\n"
+"#       it from the local scope. It could be a positional argument or a\n"
+"#       keyword argument.\n"
+"def l2_loss(x, y):\n"
+"    y_hat = mlp(x)\n"
+"    return (y_hat - y).square().mean()\n"
+"\n"
+"# Calling `nn.value_and_grad` instead of `mx.value_and_grad` returns the\n"
+"# gradient with respect to `mlp.trainable_parameters()`\n"
+"loss_and_grad = nn.value_and_grad(mlp, l2_loss)"
+msgstr ""
+
+#: ../../../src/python/nn.rst:70
+msgid "The Module Class"
+msgstr "Module 類別"
+
+#: ../../../src/python/nn.rst:72
+msgid ""
+"The workhorse of any neural network library is the :class:`Module` class. In "
+"MLX the :class:`Module` class is a container of :class:`mlx.core.array` or :"
+"class:`Module` instances. Its main function is to provide a way to "
+"recursively **access** and **update** its parameters and those of its "
+"submodules."
+msgstr ""
+"任何神經網路程式庫的主力都是 :class:`Module` 類別。在 MLX 中，:class:"
+"`Module` 類別是 :class:`mlx.core.array` 或 :class:`Module` 實例的容器。它的主"
+"要功能是提供遞迴 **存取** 與 **更新** 其參數及其子模組參數的方法。"
+
+#: ../../../src/python/nn.rst:79
+msgid "Parameters"
+msgstr "參數"
+
+#: ../../../src/python/nn.rst:81
+msgid ""
+"A parameter of a module is any public member of type :class:`mlx.core.array` "
+"(its name should not start with ``_``). It can be arbitrarily nested in "
+"other :class:`Module` instances or lists and dictionaries."
+msgstr ""
+"模組的參數是任何型別為 :class:`mlx.core.array` 的公開成員（名稱不應以 ``_`` "
+"開頭）。它可以任意地巢狀在其他 :class:`Module` 實例或清單與字典中。"
+
+#: ../../../src/python/nn.rst:85
+msgid ""
+":meth:`Module.parameters` can be used to extract a nested dictionary with "
+"all the parameters of a module and its submodules."
+msgstr ""
+"可使用 :meth:`Module.parameters` 提取包含模組及其子模組所有參數的巢狀字典。"
+
+#: ../../../src/python/nn.rst:88
+msgid ""
+"A :class:`Module` can also keep track of \"frozen\" parameters. See the :"
+"meth:`Module.freeze` method for more details. :meth:`mlx.nn.value_and_grad` "
+"the gradients returned will be with respect to these trainable parameters."
+msgstr ""
+":class:`Module` 也可以追蹤「凍結」的參數。詳情請見 :meth:`Module.freeze` 方"
+"法。:meth:`mlx.nn.value_and_grad` 回傳的梯度會以這些可訓練參數為對象。"
+
+#: ../../../src/python/nn.rst:94
+msgid "Updating the Parameters"
+msgstr "更新參數"
+
+#: ../../../src/python/nn.rst:96
+msgid ""
+"MLX modules allow accessing and updating individual parameters. However, "
+"most times we need to update large subsets of a module's parameters. This "
+"action is performed by :meth:`Module.update`."
+msgstr ""
+"MLX 模組允許存取與更新個別參數。然而，多數時候需要更新模組參數的大型子集合。"
+"此動作由 :meth:`Module.update` 進行。"
+
+#: ../../../src/python/nn.rst:102
+msgid "Inspecting Modules"
+msgstr "檢視模組"
+
+#: ../../../src/python/nn.rst:104
+msgid ""
+"The simplest way to see the model architecture is to print it. Following "
+"along with the above example, you can print the ``MLP`` with:"
+msgstr ""
+"最簡單的檢視模型架構方式是直接列印。延續上方範例，你可以用以下方式列印 "
+"``MLP``："
+
+#: ../../../src/python/nn.rst:107
+msgid "print(mlp)"
+msgstr ""
+
+#: ../../../src/python/nn.rst:111
+msgid "This will display:"
+msgstr "輸出會是："
+
+#: ../../../src/python/nn.rst:113
+msgid ""
+"MLP(\n"
+"  (layers.0): Linear(input_dims=2, output_dims=128, bias=True)\n"
+"  (layers.1): Linear(input_dims=128, output_dims=128, bias=True)\n"
+"  (layers.2): Linear(input_dims=128, output_dims=10, bias=True)\n"
+")"
+msgstr ""
+
+#: ../../../src/python/nn.rst:121
+msgid ""
+"To get more detailed information on the arrays in a :class:`Module` you can "
+"use :func:`mlx.utils.tree_map` on the parameters. For example, to see the "
+"shapes of all the parameters in a :class:`Module` do:"
+msgstr ""
+"若要取得 :class:`Module` 中陣列的更詳細資訊，可以在參數上使用 :func:`mlx."
+"utils.tree_map`。例如，查看 :class:`Module` 中所有參數的形狀可使用："
+
+#: ../../../src/python/nn.rst:125
+msgid ""
+"from mlx.utils import tree_map\n"
+"shapes = tree_map(lambda p: p.shape, mlp.parameters())"
+msgstr ""
+
+#: ../../../src/python/nn.rst:130
+msgid ""
+"As another example, you can count the number of parameters in a :class:"
+"`Module` with:"
+msgstr "另一個例子，你可以用以下方式計算 :class:`Module` 的參數數量："
+
+#: ../../../src/python/nn.rst:133
+msgid ""
+"from mlx.utils import tree_flatten\n"
+"num_params = sum(v.size for _, v in tree_flatten(mlp.parameters()))"
+msgstr ""
+
+#: ../../../src/python/nn.rst:140
+msgid "Value and Grad"
+msgstr "Value 與 Grad"
+
+#: ../../../src/python/nn.rst:142
+msgid ""
+"Using a :class:`Module` does not preclude using MLX's high order function "
+"transformations (:meth:`mlx.core.value_and_grad`, :meth:`mlx.core.grad`, "
+"etc.). However, these function transformations assume pure functions, namely "
+"the parameters should be passed as an argument to the function being "
+"transformed."
+msgstr ""
+"使用 :class:`Module` 並不妨礙使用 MLX 的高階函式變換（:meth:`mlx.core."
+"value_and_grad`、:meth:`mlx.core.grad` 等）。然而，這些函式變換假設函式是純函"
+"式，也就是應將參數作為被變換函式的引數傳入。"
+
+#: ../../../src/python/nn.rst:147
+msgid "There is an easy pattern to achieve that with MLX modules"
+msgstr "使用 MLX 模組有個簡單的模式可以做到這點"
+
+#: ../../../src/python/nn.rst:149
+msgid ""
+"model = ...\n"
+"\n"
+"def f(params, other_inputs):\n"
+"    model.update(params)  # <---- Necessary to make the model use the passed "
+"parameters\n"
+"    return model(other_inputs)\n"
+"\n"
+"f(model.trainable_parameters(), mx.zeros((10,)))"
+msgstr ""
+
+#: ../../../src/python/nn.rst:159
+msgid ""
+"However, :meth:`mlx.nn.value_and_grad` provides precisely this pattern and "
+"only computes the gradients with respect to the trainable parameters of the "
+"model."
+msgstr ""
+"然而，:meth:`mlx.nn.value_and_grad` 正好提供了這個模式，且只會計算模型可訓練"
+"參數的梯度。"
+
+#: ../../../src/python/nn.rst:162
+msgid "In detail:"
+msgstr "詳細來說："
+
+#: ../../../src/python/nn.rst:164
+msgid ""
+"it wraps the passed function with a function that calls :meth:`Module."
+"update` to make sure the model is using the provided parameters."
+msgstr ""
+"它會用一個函式包裹傳入的函式，該函式會呼叫 :meth:`Module.update`，確保模型使"
+"用所提供的參數。"
+
+#: ../../../src/python/nn.rst:166
+msgid ""
+"it calls :meth:`mlx.core.value_and_grad` to transform the function into a "
+"function that also computes the gradients with respect to the passed "
+"parameters."
+msgstr ""
+"它會呼叫 :meth:`mlx.core.value_and_grad`，將函式轉換為同時計算對傳入參數的梯"
+"度的函式。"
+
+#: ../../../src/python/nn.rst:168
+msgid ""
+"it wraps the returned function with a function that passes the trainable "
+"parameters as the first argument to the function returned by :meth:`mlx.core."
+"value_and_grad`"
+msgstr ""
+"它會再以一個函式包裹回傳的函式，將可訓練參數作為第一個引數傳給 :meth:`mlx."
+"core.value_and_grad` 回傳的函式。"
+
+#: ../../../src/python/nn.rst:176:<autosummary>:1
+msgid ":py:obj:`value_and_grad <mlx.nn.value_and_grad>`\\ \\(model\\, fn\\)"
+msgstr ""
+
+#: ../../../src/python/nn.rst:176:<autosummary>:1
+msgid ""
+"Transform the passed function ``fn`` to a function that computes the "
+"gradients of ``fn`` wrt the model's trainable parameters and also its value."
+msgstr ""
+"將傳入的函式 ``fn`` 轉換為同時計算 ``fn`` 對模型可訓練參數的梯度與其值的函"
+"式。"
