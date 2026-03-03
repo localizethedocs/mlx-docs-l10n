@@ -1,0 +1,173 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023, MLX Contributors
+# This file is distributed under the same license as the MLX package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: MLX 0.11\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-12-08 12:58+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../src/python/random.rst:4
+msgid "Random"
+msgstr "隨機"
+
+#: ../../../src/python/random.rst:6
+msgid ""
+"Random sampling functions in MLX use an implicit global PRNG state by "
+"default. However, all function take an optional ``key`` keyword argument for "
+"when more fine-grained control or explicit state management is needed."
+msgstr ""
+"MLX 的隨機取樣函式預設使用隱式的全域 PRNG 狀態。不過，所有函式都提供可選的 "
+"``key`` 關鍵字引數，以便在需要更細緻的控制或明確的狀態管理時使用。"
+
+#: ../../../src/python/random.rst:10
+msgid "For example, you can generate random numbers with:"
+msgstr "例如，你可以用以下方式產生隨機數："
+
+#: ../../../src/python/random.rst:12
+msgid ""
+"for _ in range(3):\n"
+"  print(mx.random.uniform())"
+msgstr ""
+
+#: ../../../src/python/random.rst:17
+msgid ""
+"which will print a sequence of unique pseudo random numbers. Alternatively "
+"you can explicitly set the key:"
+msgstr "這會列印一串不重複的偽隨機數。你也可以明確設定 key："
+
+#: ../../../src/python/random.rst:20
+msgid ""
+"key = mx.random.key(0)\n"
+"for _ in range(3):\n"
+"  print(mx.random.uniform(key=key))"
+msgstr ""
+
+#: ../../../src/python/random.rst:26
+msgid "which will yield the same pseudo random number at each iteration."
+msgstr "這樣每次迭代都會產生相同的偽隨機數。"
+
+#: ../../../src/python/random.rst:28
+msgid ""
+"Following `JAX's PRNG design <https://jax.readthedocs.io/en/latest/jep/263-"
+"prng.html>`_ we use a splittable version of Threefry, which is a counter-"
+"based PRNG."
+msgstr ""
+"我們遵循 `JAX 的 PRNG 設計 <https://jax.readthedocs.io/en/latest/jep/263-"
+"prng.html>`_，採用可分割的 Threefry（以計數器為基礎的 PRNG）。"
+
+#: ../../../src/python/random.rst:46:<autosummary>:1
+msgid ""
+":py:obj:`bernoulli <mlx.core.random.bernoulli>`\\ \\(\\[p\\, shape\\, key\\, "
+"stream\\]\\)"
+msgstr ""
+
+#: ../../../src/python/random.rst:46:<autosummary>:1
+msgid "Generate Bernoulli random values."
+msgstr "產生伯努利隨機值。"
+
+#: ../../../src/python/random.rst:46:<autosummary>:1
+msgid ""
+":py:obj:`categorical <mlx.core.random.categorical>`\\ \\(logits\\[\\, "
+"axis\\, shape\\, ...\\]\\)"
+msgstr ""
+
+#: ../../../src/python/random.rst:46:<autosummary>:1
+msgid "Sample from a categorical distribution."
+msgstr "從類別分佈取樣。"
+
+#: ../../../src/python/random.rst:46:<autosummary>:1
+msgid ""
+":py:obj:`gumbel <mlx.core.random.gumbel>`\\ \\(\\[shape\\, dtype\\, "
+"stream\\, key\\]\\)"
+msgstr ""
+
+#: ../../../src/python/random.rst:46:<autosummary>:1
+msgid "Sample from the standard Gumbel distribution."
+msgstr "從標準 Gumbel 分佈取樣。"
+
+#: ../../../src/python/random.rst:46:<autosummary>:1
+msgid ":py:obj:`key <mlx.core.random.key>`\\ \\(seed\\)"
+msgstr ""
+
+#: ../../../src/python/random.rst:46:<autosummary>:1
+msgid "Get a PRNG key from a seed."
+msgstr "由種子取得 PRNG key。"
+
+#: ../../../src/python/random.rst:46:<autosummary>:1
+msgid ""
+":py:obj:`normal <mlx.core.random.normal>`\\ \\(\\[shape\\, dtype\\, loc\\, "
+"scale\\, key\\, stream\\]\\)"
+msgstr ""
+
+#: ../../../src/python/random.rst:46:<autosummary>:1
+msgid "Generate normally distributed random numbers."
+msgstr "產生常態分佈的隨機數。"
+
+#: ../../../src/python/random.rst:46:<autosummary>:1
+msgid ""
+":py:obj:`multivariate_normal <mlx.core.random.multivariate_normal>`\\ "
+"\\(mean\\, cov\\[\\, shape\\, ...\\]\\)"
+msgstr ""
+
+#: ../../../src/python/random.rst:46:<autosummary>:1
+msgid "Generate jointly-normal random samples given a mean and covariance."
+msgstr "在給定平均與共變異數下產生多變量常態隨機樣本。"
+
+#: ../../../src/python/random.rst:46:<autosummary>:1
+msgid ""
+":py:obj:`randint <mlx.core.random.randint>`\\ \\(low\\, high\\[\\, shape\\, "
+"dtype\\, key\\, stream\\]\\)"
+msgstr ""
+
+#: ../../../src/python/random.rst:46:<autosummary>:1
+msgid "Generate random integers from the given interval."
+msgstr "從指定區間產生隨機整數。"
+
+#: ../../../src/python/random.rst:46:<autosummary>:1
+msgid ":py:obj:`seed <mlx.core.random.seed>`\\ \\(seed\\)"
+msgstr ""
+
+#: ../../../src/python/random.rst:46:<autosummary>:1
+msgid "Seed the global PRNG."
+msgstr "為全域 PRNG 設定種子。"
+
+#: ../../../src/python/random.rst:46:<autosummary>:1
+msgid ""
+":py:obj:`split <mlx.core.random.split>`\\ \\(key\\, num\\, stream\\, "
+"Stream\\, Device\\] \\= None\\)"
+msgstr ""
+
+#: ../../../src/python/random.rst:46:<autosummary>:1
+msgid "Split a PRNG key into sub keys."
+msgstr "將 PRNG key 拆分為子 key。"
+
+#: ../../../src/python/random.rst:46:<autosummary>:1
+msgid ""
+":py:obj:`truncated_normal <mlx.core.random.truncated_normal>`\\ \\(lower\\, "
+"array\\]\\, upper\\, ...\\)"
+msgstr ""
+
+#: ../../../src/python/random.rst:46:<autosummary>:1
+msgid "Generate values from a truncated normal distribution."
+msgstr "從截斷常態分佈產生數值。"
+
+#: ../../../src/python/random.rst:46:<autosummary>:1
+msgid ""
+":py:obj:`uniform <mlx.core.random.uniform>`\\ \\(\\[low\\, high\\, shape\\, "
+"dtype\\, key\\, stream\\]\\)"
+msgstr ""
+
+#: ../../../src/python/random.rst:46:<autosummary>:1
+msgid "Generate uniformly distributed random numbers."
+msgstr "產生均勻分佈的隨機數。"

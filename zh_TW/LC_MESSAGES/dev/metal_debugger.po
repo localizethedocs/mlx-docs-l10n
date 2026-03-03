@@ -1,0 +1,114 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023, MLX Contributors
+# This file is distributed under the same license as the MLX package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: MLX 0.11\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-12-08 12:58+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../src/dev/metal_debugger.rst:2
+msgid "Metal Debugger"
+msgstr "Metal 除錯器"
+
+#: ../../../src/dev/metal_debugger.rst:6
+msgid ""
+"Profiling is a key step for performance optimization. You can build MLX with "
+"the ``MLX_METAL_DEBUG`` option to improve the Metal debugging and "
+"optimization workflow. The ``MLX_METAL_DEBUG`` debug option:"
+msgstr ""
+"效能剖析是效能最佳化的關鍵步驟。你可以在建置 MLX 時使用 ``MLX_METAL_DEBUG`` "
+"選項，以改善 Metal 除錯與最佳化的工作流程。``MLX_METAL_DEBUG`` 除錯選項會："
+
+#: ../../../src/dev/metal_debugger.rst:10
+msgid ""
+"Records source during Metal compilation, for later inspection while "
+"debugging."
+msgstr "在 Metal 編譯期間記錄來源碼，以便稍後除錯時檢視。"
+
+#: ../../../src/dev/metal_debugger.rst:12
+msgid ""
+"Labels Metal objects such as command queues, improving capture readability."
+msgstr "為 Metal 物件（例如命令佇列）加上標籤，提升擷取內容的可讀性。"
+
+#: ../../../src/dev/metal_debugger.rst:14
+msgid ""
+"To build with debugging enabled in Python prepend ``CMAKE_ARGS=\"-"
+"DMLX_METAL_DEBUG=ON\"`` to the build call."
+msgstr ""
+"在 Python 中啟用除錯建置時，請在建置命令前加上 ``CMAKE_ARGS=\"-"
+"DMLX_METAL_DEBUG=ON\"``。"
+
+#: ../../../src/dev/metal_debugger.rst:17
+msgid ""
+"The :func:`metal.start_capture` function initiates a capture of all MLX GPU "
+"work."
+msgstr ":func:`metal.start_capture` 函式會開始擷取所有 MLX GPU 工作。"
+
+#: ../../../src/dev/metal_debugger.rst:22
+msgid ""
+"To capture a GPU trace you must run the application with "
+"``MTL_CAPTURE_ENABLED=1``."
+msgstr "要擷取 GPU 追蹤，必須以 ``MTL_CAPTURE_ENABLED=1`` 執行應用程式。"
+
+#: ../../../src/dev/metal_debugger.rst:25
+msgid ""
+"import mlx.core as mx\n"
+"\n"
+"a = mx.random.uniform(shape=(512, 512))\n"
+"b = mx.random.uniform(shape=(512, 512))\n"
+"mx.eval(a, b)\n"
+"\n"
+"trace_file = \"mlx_trace.gputrace\"\n"
+"\n"
+"if not mx.metal.start_capture(trace_file):\n"
+"  print(\"Make sure to run with MTL_CAPTURE_ENABLED=1 and \"\n"
+"        f\"that the path {trace_file} does not already exist.\")\n"
+"  exit(1)\n"
+"\n"
+"for _ in range(10):\n"
+"  mx.eval(mx.add(a, b))\n"
+"\n"
+"mx.metal.stop_capture()"
+msgstr ""
+
+#: ../../../src/dev/metal_debugger.rst:45
+msgid ""
+"You can open and replay the GPU trace in Xcode. The ``Dependencies`` view "
+"has a great overview of all operations. Checkout the `Metal debugger "
+"documentation`_ for more information."
+msgstr ""
+"你可以在 Xcode 中開啟並重播 GPU 追蹤。``Dependencies`` 檢視提供所有運算的完整"
+"概覽。更多資訊請參考 `Metal debugger documentation`_。"
+
+#: ../../../src/dev/metal_debugger.rst:53
+msgid "Xcode Workflow"
+msgstr "Xcode 工作流程"
+
+#: ../../../src/dev/metal_debugger.rst:55
+msgid ""
+"You can skip saving to a path by running within Xcode. First, generate an "
+"Xcode project using CMake."
+msgstr ""
+"你可以直接在 Xcode 中執行而不必儲存到路徑。首先用 CMake 產生 Xcode 專案。"
+
+#: ../../../src/dev/metal_debugger.rst:58
+msgid ""
+"mkdir build && cd build\n"
+"cmake .. -DMLX_METAL_DEBUG=ON -G Xcode\n"
+"open mlx.xcodeproj"
+msgstr ""
+
+#: ../../../src/dev/metal_debugger.rst:64
+msgid "Select the ``metal_capture`` example schema and run."
+msgstr "選擇 ``metal_capture`` 範例方案並執行。"
