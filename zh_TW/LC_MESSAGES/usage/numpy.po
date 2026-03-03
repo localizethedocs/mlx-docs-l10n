@@ -1,0 +1,206 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023, Apple
+# This file is distributed under the same license as the MLX package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: MLX 0.29\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-12-08 12:54+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../src/usage/numpy.rst:4
+msgid "Conversion to NumPy and Other Frameworks"
+msgstr "轉換成 NumPy 和其他框架"
+
+#: ../../../src/usage/numpy.rst:6
+msgid "MLX array supports conversion between other frameworks with either:"
+msgstr "MLX 陣列支援透過以下方式在其他框架之間進行轉換："
+
+#: ../../../src/usage/numpy.rst:8
+msgid ""
+"The `Python Buffer Protocol <https://docs.python.org/3/c-api/buffer.html>`_."
+msgstr "`Python 緩衝區協定 <https://docs.python.org/3/c-api/buffer.html>`_。"
+
+#: ../../../src/usage/numpy.rst:9
+msgid "`DLPack <https://dmlc.github.io/dlpack/latest/>`_."
+msgstr "`DLPack <https://dmlc.github.io/dlpack/latest/>`_。"
+
+#: ../../../src/usage/numpy.rst:11
+msgid "Let's convert an array to NumPy and back."
+msgstr "讓我們將一個陣列轉換為 NumPy，然後再轉換回來。"
+
+#: ../../../src/usage/numpy.rst:13
+msgid ""
+"import mlx.core as mx\n"
+"import numpy as np\n"
+"\n"
+"a = mx.arange(3)\n"
+"b = np.array(a) # copy of a\n"
+"c = mx.array(b) # copy of b"
+msgstr ""
+
+#: ../../../src/usage/numpy.rst:24
+msgid ""
+"Since NumPy does not support ``bfloat16`` arrays, you will need to convert "
+"to ``float16`` or ``float32`` first: ``np.array(a.astype(mx.float32))``. "
+"Otherwise, you will receive an error like: ``Item size 2 for PEP 3118 buffer "
+"format string does not match the dtype V item size 0.``"
+msgstr ""
+"由於 NumPy 不支援 ``bfloat16`` 陣列，你需要先轉成 ``float16`` 或 "
+"``float32``：``np.array(a.astype(mx.float32))``。否則會出現例如 ``Item size "
+"2 for PEP 3118 buffer format string does not match the dtype V item size 0."
+"`` 的錯誤。"
+
+#: ../../../src/usage/numpy.rst:29
+msgid ""
+"By default, NumPy copies data to a new array. This can be prevented by "
+"creating an array view:"
+msgstr ""
+"預設情況下，NumPy 會把資料複製到新陣列。可以透過建立陣列檢視來避免複製："
+
+#: ../../../src/usage/numpy.rst:32
+msgid ""
+"a = mx.arange(3)\n"
+"a_view = np.array(a, copy=False)\n"
+"print(a_view.flags.owndata) # False\n"
+"a_view[0] = 1\n"
+"print(a[0].item()) # 1"
+msgstr ""
+
+#: ../../../src/usage/numpy.rst:42
+msgid ""
+"NumPy arrays with type ``float64`` will be default converted to MLX arrays "
+"with type ``float32``."
+msgstr "型別為 ``float64`` 的 NumPy 陣列會預設轉換為 ``float32`` 的 MLX 陣列。"
+
+#: ../../../src/usage/numpy.rst:45
+msgid ""
+"A NumPy array view is a normal NumPy array, except that it does not own its "
+"memory. This means writing to the view is reflected in the original array."
+msgstr ""
+"NumPy 陣列檢視本質上仍是一般的 NumPy 陣列，只是它不擁有記憶體。因此對檢視的寫"
+"入會反映到原始陣列。"
+
+#: ../../../src/usage/numpy.rst:48
+msgid ""
+"While this is quite powerful to prevent copying arrays, it should be noted "
+"that external changes to the memory of arrays cannot be reflected in "
+"gradients."
+msgstr ""
+"雖然這能有效避免陣列複製，但要注意，對陣列記憶體的外部修改不會反映在梯度中。"
+
+#: ../../../src/usage/numpy.rst:51
+msgid "Let's demonstrate this in an example:"
+msgstr "讓我們用範例示範："
+
+#: ../../../src/usage/numpy.rst:53
+msgid ""
+"def f(x):\n"
+"    x_view = np.array(x, copy=False)\n"
+"    x_view[:] *= x_view # modify memory without telling mx\n"
+"    return x.sum()\n"
+"\n"
+"x = mx.array([3.0])\n"
+"y, df = mx.value_and_grad(f)(x)\n"
+"print(\"f(x) = x² =\", y.item()) # 9.0\n"
+"print(\"f'(x) = 2x !=\", df.item()) # 1.0"
+msgstr ""
+
+#: ../../../src/usage/numpy.rst:66
+msgid ""
+"The function ``f`` indirectly modifies the array ``x`` through a memory "
+"view. However, this modification is not reflected in the gradient, as seen "
+"in the last line outputting ``1.0``, representing the gradient of the sum "
+"operation alone.  The squaring of ``x`` occurs externally to MLX, meaning "
+"that no gradient is incorporated.  It's important to note that a similar "
+"issue arises during array conversion and copying.  For instance, a function "
+"defined as ``mx.array(np.array(x)**2).sum()`` would also result in an "
+"incorrect gradient, even though no in-place operations on MLX memory are "
+"executed."
+msgstr ""
+"函式 ``f`` 透過記憶體檢視間接修改了陣列 ``x``。然而這個修改不會反映在梯度中，"
+"最後一行輸出 ``1.0`` 即可看出，它只代表求和運算的梯度。``x`` 的平方是在 MLX "
+"外部進行的，因此不會納入梯度。也請注意，類似問題也會在陣列轉換與複製時出現。"
+"例如定義 ``mx.array(np.array(x)**2).sum()`` 的函式也會產生不正確的梯度，即使"
+"沒有對 MLX 記憶體做就地操作。"
+
+#: ../../../src/usage/numpy.rst:76
+msgid "PyTorch"
+msgstr ""
+
+#: ../../../src/usage/numpy.rst:80
+msgid ""
+"PyTorch Support for :obj:`memoryview` is experimental and can break for "
+"multi-dimensional arrays. Casting to NumPy first is advised for now."
+msgstr ""
+"PyTorch 對 :obj:`memoryview` 的支援屬於實驗性，對多維陣列可能失效。建議目前先"
+"轉為 NumPy。"
+
+#: ../../../src/usage/numpy.rst:83
+msgid ""
+"PyTorch supports the buffer protocol, but it requires an explicit :obj:"
+"`memoryview`."
+msgstr "PyTorch 支援緩衝區協定，但需要明確的 :obj:`memoryview`。"
+
+#: ../../../src/usage/numpy.rst:86
+msgid ""
+"import mlx.core as mx\n"
+"import torch\n"
+"\n"
+"a = mx.arange(3)\n"
+"b = torch.tensor(memoryview(a))\n"
+"c = mx.array(b.numpy())"
+msgstr ""
+
+#: ../../../src/usage/numpy.rst:95
+msgid ""
+"Conversion from PyTorch tensors back to arrays must be done via intermediate "
+"NumPy arrays with ``numpy()``."
+msgstr "從 PyTorch 張量轉回陣列必須透過中間的 NumPy 陣列（使用 ``numpy()``）。"
+
+#: ../../../src/usage/numpy.rst:99
+msgid "JAX"
+msgstr ""
+
+#: ../../../src/usage/numpy.rst:100
+msgid "JAX fully supports the buffer protocol."
+msgstr "JAX 完整支援緩衝區協定。"
+
+#: ../../../src/usage/numpy.rst:102
+msgid ""
+"import mlx.core as mx\n"
+"import jax.numpy as jnp\n"
+"\n"
+"a = mx.arange(3)\n"
+"b = jnp.array(a)\n"
+"c = mx.array(b)"
+msgstr ""
+
+#: ../../../src/usage/numpy.rst:112
+msgid "TensorFlow"
+msgstr ""
+
+#: ../../../src/usage/numpy.rst:114
+msgid ""
+"TensorFlow supports the buffer protocol, but it requires an explicit :obj:"
+"`memoryview`."
+msgstr "TensorFlow 支援緩衝區協定，但需要明確的 :obj:`memoryview`。"
+
+#: ../../../src/usage/numpy.rst:117
+msgid ""
+"import mlx.core as mx\n"
+"import tensorflow as tf\n"
+"\n"
+"a = mx.arange(3)\n"
+"b = tf.constant(memoryview(a))\n"
+"c = mx.array(b)"
+msgstr ""
