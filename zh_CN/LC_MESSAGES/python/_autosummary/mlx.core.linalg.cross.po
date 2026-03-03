@@ -1,0 +1,62 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023, MLX Contributors
+# This file is distributed under the same license as the MLX package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: MLX 0.23\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-12-08 15:56+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../src/python/_autosummary/mlx.core.linalg.cross.rst:2
+msgid "mlx.core.linalg.cross"
+msgstr ""
+
+#: ../../../docstring of mlx.core.linalg.cross:1
+msgid "Compute the cross product of two arrays along a specified axis."
+msgstr ""
+
+#: ../../../docstring of mlx.core.linalg.cross:3
+msgid ""
+"The cross product is defined for arrays with size 2 or 3 in the specified "
+"axis. If the size is 2 then the third value is assumed to be zero."
+msgstr ""
+
+#: ../../../src/python/_autosummary/mlx.core.linalg.cross.rst:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../docstring of mlx.core.linalg.cross:7 mlx.core.linalg.cross:9
+msgid "Input array."
+msgstr ""
+
+#: ../../../docstring of mlx.core.linalg.cross:11
+msgid "Axis along which to compute the cross product. Default: ``-1``."
+msgstr ""
+
+#: ../../../docstring of mlx.core.linalg.cross:14
+msgid ""
+"Stream or device. Defaults to ``None`` in which case the default stream of "
+"the default device is used."
+msgstr ""
+
+#: ../../../src/python/_autosummary/mlx.core.linalg.cross.rst:0
+msgid "Returns"
+msgstr ""
+
+#: ../../../docstring of mlx.core.linalg.cross:18
+msgid "The cross product of ``a`` and ``b`` along the specified axis."
+msgstr ""
+
+#: ../../../src/python/_autosummary/mlx.core.linalg.cross.rst:0
+msgid "Return type"
+msgstr ""
