@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MLX main\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-12-22 08:23+0000\n"
+"POT-Creation-Date: 2026-03-02 08:37+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -249,33 +249,45 @@ msgid ""
 "value_and_grad`"
 msgstr ""
 
-#: ../../../src/python/nn.rst:178:<autosummary>:1
+#: ../../../src/python/nn.rst:179:<autosummary>:1
 msgid ":py:obj:`value_and_grad <mlx.nn.value_and_grad>`\\ \\(model\\, fn\\)"
 msgstr ""
 
-#: ../../../src/python/nn.rst:178:<autosummary>:1
+#: ../../../src/python/nn.rst:179:<autosummary>:1
 msgid ""
 "Transform the passed function ``fn`` to a function that computes the "
 "gradients of ``fn`` wrt the model's trainable parameters and also its value."
 msgstr ""
 
-#: ../../../src/python/nn.rst:178:<autosummary>:1
+#: ../../../src/python/nn.rst:179:<autosummary>:1
 msgid ""
 ":py:obj:`quantize <mlx.nn.quantize>`\\ \\(model\\[\\, group\\_size\\, "
 "bits\\, mode\\, ...\\]\\)"
 msgstr ""
 
-#: ../../../src/python/nn.rst:178:<autosummary>:1
+#: ../../../src/python/nn.rst:179:<autosummary>:1
 msgid "Quantize the sub-modules of a module according to a predicate."
 msgstr ""
 
-#: ../../../src/python/nn.rst:178:<autosummary>:1
+#: ../../../src/python/nn.rst:179:<autosummary>:1
 msgid ""
 ":py:obj:`average_gradients <mlx.nn.average_gradients>`\\ \\(gradients\\[\\, "
 "group\\, ...\\]\\)"
 msgstr ""
 
-#: ../../../src/python/nn.rst:178:<autosummary>:1
+#: ../../../src/python/nn.rst:179:<autosummary>:1
 msgid ""
 "Average the gradients across the distributed processes in the passed group."
+msgstr ""
+
+#: ../../../src/python/nn.rst:179:<autosummary>:1
+msgid ""
+":py:obj:`fsdp_apply_gradients <mlx.nn.fsdp_apply_gradients>`\\ "
+"\\(gradients\\, parameters\\, ...\\)"
+msgstr ""
+
+#: ../../../src/python/nn.rst:179:<autosummary>:1
+msgid ""
+"Perform a distributed optimizer step by sharding gradients and optimizer "
+"states across ranks."
 msgstr ""

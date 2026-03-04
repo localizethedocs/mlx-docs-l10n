@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MLX main\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-12-22 08:23+0000\n"
+"POT-Creation-Date: 2026-03-02 08:37+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -214,10 +214,62 @@ msgid ""
 msgstr ""
 
 #: ../../../src/usage/export.rst:159
-msgid "Shapeless Exports"
+msgid "Exporting with a Callback"
 msgstr ""
 
 #: ../../../src/usage/export.rst:161
+msgid ""
+"To inspect the exported graph, you can pass a callback instead of a file "
+"path to :func:`export_function`."
+msgstr ""
+
+#: ../../../src/usage/export.rst:164
+msgid ""
+"def fun(x):\n"
+"  return x.astype(mx.int32)\n"
+"\n"
+"def callback(args):\n"
+"  print(args)\n"
+"\n"
+"mx.export_function(callback, fun, mx.array([1.0, 2.0]))"
+msgstr ""
+
+#: ../../../src/usage/export.rst:174
+msgid ""
+"The argument to the callback (``args``) is a dictionary which includes a "
+"``type`` field. The possible types are:"
+msgstr ""
+
+#: ../../../src/usage/export.rst:177
+msgid "``\"inputs\"``: The ordered positional inputs to the exported function"
+msgstr ""
+
+#: ../../../src/usage/export.rst:178
+msgid ""
+"``\"keyword_inputs\"``: The keyword specified inputs to the exported function"
+msgstr ""
+
+#: ../../../src/usage/export.rst:179
+msgid "``\"outputs\"``: The ordered outputs of the exported function"
+msgstr ""
+
+#: ../../../src/usage/export.rst:180
+msgid "``\"constants\"``: Any graph constants"
+msgstr ""
+
+#: ../../../src/usage/export.rst:181
+msgid "``\"primitives\"``: Inner graph nodes representating the operations"
+msgstr ""
+
+#: ../../../src/usage/export.rst:183
+msgid "Each type has additional fields in the ``args`` dictionary."
+msgstr ""
+
+#: ../../../src/usage/export.rst:187
+msgid "Shapeless Exports"
+msgstr ""
+
+#: ../../../src/usage/export.rst:189
 msgid ""
 "Just like :func:`compile`, functions can also be exported for dynamically "
 "shaped inputs. Pass ``shapeless=True`` to :func:`export_function` or :func:"
@@ -225,7 +277,7 @@ msgid ""
 "shapes:"
 msgstr ""
 
-#: ../../../src/usage/export.rst:165
+#: ../../../src/usage/export.rst:193
 msgid ""
 "mx.export_function(\"fun.mlxfn\", mx.abs, mx.array([0.0]), shapeless=True)\n"
 "imported_abs = mx.import_function(\"fun.mlxfn\")\n"
@@ -237,24 +289,24 @@ msgid ""
 "out, = imported_abs(mx.array([-1.0, -2.0]))"
 msgstr ""
 
-#: ../../../src/usage/export.rst:176
+#: ../../../src/usage/export.rst:204
 msgid ""
 "With ``shapeless=False`` (which is the default), the second call to "
 "``imported_abs`` would raise an exception with a shape mismatch."
 msgstr ""
 
-#: ../../../src/usage/export.rst:179
+#: ../../../src/usage/export.rst:207
 msgid ""
 "Shapeless exporting works the same as shapeless compilation and should be "
 "used carefully. See the :ref:`documentation on shapeless compilation "
 "<shapeless_compile>` for more information."
 msgstr ""
 
-#: ../../../src/usage/export.rst:184
+#: ../../../src/usage/export.rst:212
 msgid "Exporting Multiple Traces"
 msgstr ""
 
-#: ../../../src/usage/export.rst:186
+#: ../../../src/usage/export.rst:214
 msgid ""
 "In some cases, functions build different computation graphs for different "
 "input arguments. A simple way to manage this is to export to a new file with "
@@ -263,14 +315,14 @@ msgid ""
 "constant data (for example the parameters of a :obj:`mlx.nn.Module`)."
 msgstr ""
 
-#: ../../../src/usage/export.rst:192
+#: ../../../src/usage/export.rst:220
 msgid ""
 "The export API in MLX lets you export multiple traces of the same function "
 "to a single file by creating an exporting context manager with :func:"
 "`exporter`:"
 msgstr ""
 
-#: ../../../src/usage/export.rst:195
+#: ../../../src/usage/export.rst:223
 msgid ""
 "def fun(x, y=None):\n"
 "    constant = mx.array(3.0)\n"
@@ -293,23 +345,23 @@ msgid ""
 "print(out)"
 msgstr ""
 
-#: ../../../src/usage/export.rst:217
+#: ../../../src/usage/export.rst:245
 msgid ""
 "In the above example the function constant data, (i.e. ``constant``), is "
 "only saved once."
 msgstr ""
 
-#: ../../../src/usage/export.rst:221
+#: ../../../src/usage/export.rst:249
 msgid "Transformations with Imported Functions"
 msgstr ""
 
-#: ../../../src/usage/export.rst:223
+#: ../../../src/usage/export.rst:251
 msgid ""
 "Function transformations like :func:`grad`, :func:`vmap`, and :func:"
 "`compile` work on imported functions just like regular Python functions:"
 msgstr ""
 
-#: ../../../src/usage/export.rst:226
+#: ../../../src/usage/export.rst:254
 msgid ""
 "def fun(x):\n"
 "    return mx.sin(x)\n"
@@ -330,22 +382,22 @@ msgid ""
 "print(compiled_fun(x)[0])"
 msgstr ""
 
-#: ../../../src/usage/export.rst:248
+#: ../../../src/usage/export.rst:276
 msgid "Importing Functions in C++"
 msgstr ""
 
-#: ../../../src/usage/export.rst:250
+#: ../../../src/usage/export.rst:278
 msgid ""
 "Importing and running functions in C++ is basically the same as importing "
 "and running them in Python. First, follow the :ref:`instructions "
 "<mlx_in_cpp>` to setup a simple C++ project that uses MLX as a library."
 msgstr ""
 
-#: ../../../src/usage/export.rst:254
+#: ../../../src/usage/export.rst:282
 msgid "Next, export a simple function from Python:"
 msgstr ""
 
-#: ../../../src/usage/export.rst:256
+#: ../../../src/usage/export.rst:284
 msgid ""
 "def fun(x, y):\n"
 "    return mx.exp(x + y)\n"
@@ -355,11 +407,11 @@ msgid ""
 "mx.export_function(\"fun.mlxfn\", fun, x, y)"
 msgstr ""
 
-#: ../../../src/usage/export.rst:266
+#: ../../../src/usage/export.rst:294
 msgid "Import and run the function in C++ with only a few lines of code:"
 msgstr ""
 
-#: ../../../src/usage/export.rst:268
+#: ../../../src/usage/export.rst:296
 msgid ""
 "auto fun = mx::import_function(\"fun.mlxfn\");\n"
 "\n"
@@ -370,24 +422,24 @@ msgid ""
 "std::cout << outputs[0] << std::endl;"
 msgstr ""
 
-#: ../../../src/usage/export.rst:278
+#: ../../../src/usage/export.rst:306
 msgid ""
 "Imported functions can be transformed in C++ just like in Python. Use ``std::"
 "vector<mx::array>`` for positional arguments and ``std::map<std::string, mx::"
 "array>`` for keyword arguments when calling imported functions in C++."
 msgstr ""
 
-#: ../../../src/usage/export.rst:283
+#: ../../../src/usage/export.rst:311
 msgid "More Examples"
 msgstr ""
 
-#: ../../../src/usage/export.rst:285
+#: ../../../src/usage/export.rst:313
 msgid ""
 "Here are a few more complete examples exporting more complex functions from "
 "Python and importing and running them in C++:"
 msgstr ""
 
-#: ../../../src/usage/export.rst:288
+#: ../../../src/usage/export.rst:316
 msgid ""
 "`Inference and training a multi-layer perceptron <https://github.com/ml-"
 "explore/mlx/tree/main/examples/export>`_"
