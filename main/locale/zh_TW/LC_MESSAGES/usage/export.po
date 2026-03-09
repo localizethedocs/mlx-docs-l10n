@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MLX main\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-12-22 08:23+0000\n"
+"POT-Creation-Date: 2026-03-09 08:38+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -238,10 +238,62 @@ msgid ""
 msgstr ""
 
 #: ../../../src/usage/export.rst:159
+msgid "Exporting with a Callback"
+msgstr ""
+
+#: ../../../src/usage/export.rst:161
+msgid ""
+"To inspect the exported graph, you can pass a callback instead of a file "
+"path to :func:`export_function`."
+msgstr ""
+
+#: ../../../src/usage/export.rst:164
+msgid ""
+"def fun(x):\n"
+"  return x.astype(mx.int32)\n"
+"\n"
+"def callback(args):\n"
+"  print(args)\n"
+"\n"
+"mx.export_function(callback, fun, mx.array([1.0, 2.0]))"
+msgstr ""
+
+#: ../../../src/usage/export.rst:174
+msgid ""
+"The argument to the callback (``args``) is a dictionary which includes a "
+"``type`` field. The possible types are:"
+msgstr ""
+
+#: ../../../src/usage/export.rst:177
+msgid "``\"inputs\"``: The ordered positional inputs to the exported function"
+msgstr ""
+
+#: ../../../src/usage/export.rst:178
+msgid ""
+"``\"keyword_inputs\"``: The keyword specified inputs to the exported function"
+msgstr ""
+
+#: ../../../src/usage/export.rst:179
+msgid "``\"outputs\"``: The ordered outputs of the exported function"
+msgstr ""
+
+#: ../../../src/usage/export.rst:180
+msgid "``\"constants\"``: Any graph constants"
+msgstr ""
+
+#: ../../../src/usage/export.rst:181
+msgid "``\"primitives\"``: Inner graph nodes representating the operations"
+msgstr ""
+
+#: ../../../src/usage/export.rst:183
+msgid "Each type has additional fields in the ``args`` dictionary."
+msgstr ""
+
+#: ../../../src/usage/export.rst:187
 msgid "Shapeless Exports"
 msgstr "無形狀匯出"
 
-#: ../../../src/usage/export.rst:161
+#: ../../../src/usage/export.rst:189
 msgid ""
 "Just like :func:`compile`, functions can also be exported for dynamically "
 "shaped inputs. Pass ``shapeless=True`` to :func:`export_function` or :func:"
@@ -252,7 +304,7 @@ msgstr ""
 "`export_function` 或 :func:`exporter` 傳入 ``shapeless=True``，即可匯出可用於"
 "可變形狀輸入的函式："
 
-#: ../../../src/usage/export.rst:165
+#: ../../../src/usage/export.rst:193
 msgid ""
 "mx.export_function(\"fun.mlxfn\", mx.abs, mx.array([0.0]), shapeless=True)\n"
 "imported_abs = mx.import_function(\"fun.mlxfn\")\n"
@@ -264,7 +316,7 @@ msgid ""
 "out, = imported_abs(mx.array([-1.0, -2.0]))"
 msgstr ""
 
-#: ../../../src/usage/export.rst:176
+#: ../../../src/usage/export.rst:204
 msgid ""
 "With ``shapeless=False`` (which is the default), the second call to "
 "``imported_abs`` would raise an exception with a shape mismatch."
@@ -272,7 +324,7 @@ msgstr ""
 "若 ``shapeless=False``（預設值），第二次呼叫 ``imported_abs`` 會因形狀不符而"
 "拋出例外。"
 
-#: ../../../src/usage/export.rst:179
+#: ../../../src/usage/export.rst:207
 msgid ""
 "Shapeless exporting works the same as shapeless compilation and should be "
 "used carefully. See the :ref:`documentation on shapeless compilation "
@@ -281,11 +333,11 @@ msgstr ""
 "無形狀匯出的運作方式與無形狀編譯相同，應謹慎使用。詳情請參考 :ref:`無形狀編譯"
 "文件 <shapeless_compile>`。"
 
-#: ../../../src/usage/export.rst:184
+#: ../../../src/usage/export.rst:212
 msgid "Exporting Multiple Traces"
 msgstr "匯出多個追蹤"
 
-#: ../../../src/usage/export.rst:186
+#: ../../../src/usage/export.rst:214
 msgid ""
 "In some cases, functions build different computation graphs for different "
 "input arguments. A simple way to manage this is to export to a new file with "
@@ -297,7 +349,7 @@ msgstr ""
 "對每組輸入匯出到新檔案。這在許多情況下可行，但若匯出函式包含大量重複的常數資"
 "料（例如 :obj:`mlx.nn.Module` 的參數）則可能不夠理想。"
 
-#: ../../../src/usage/export.rst:192
+#: ../../../src/usage/export.rst:220
 msgid ""
 "The export API in MLX lets you export multiple traces of the same function "
 "to a single file by creating an exporting context manager with :func:"
@@ -306,7 +358,7 @@ msgstr ""
 "MLX 的匯出 API 可透過 :func:`exporter` 建立匯出內容管理器，將同一函式的多個追"
 "蹤匯出到單一檔案："
 
-#: ../../../src/usage/export.rst:195
+#: ../../../src/usage/export.rst:223
 msgid ""
 "def fun(x, y=None):\n"
 "    constant = mx.array(3.0)\n"
@@ -329,17 +381,17 @@ msgid ""
 "print(out)"
 msgstr ""
 
-#: ../../../src/usage/export.rst:217
+#: ../../../src/usage/export.rst:245
 msgid ""
 "In the above example the function constant data, (i.e. ``constant``), is "
 "only saved once."
 msgstr "在上述範例中，函式的常數資料（即 ``constant``）只會儲存一次。"
 
-#: ../../../src/usage/export.rst:221
+#: ../../../src/usage/export.rst:249
 msgid "Transformations with Imported Functions"
 msgstr "匯入函式的轉換"
 
-#: ../../../src/usage/export.rst:223
+#: ../../../src/usage/export.rst:251
 msgid ""
 "Function transformations like :func:`grad`, :func:`vmap`, and :func:"
 "`compile` work on imported functions just like regular Python functions:"
@@ -347,7 +399,7 @@ msgstr ""
 "像 :func:`grad`、:func:`vmap` 與 :func:`compile` 等函式轉換，在匯入函式上也能"
 "像一般 Python 函式一樣運作："
 
-#: ../../../src/usage/export.rst:226
+#: ../../../src/usage/export.rst:254
 msgid ""
 "def fun(x):\n"
 "    return mx.sin(x)\n"
@@ -368,11 +420,11 @@ msgid ""
 "print(compiled_fun(x)[0])"
 msgstr ""
 
-#: ../../../src/usage/export.rst:248
+#: ../../../src/usage/export.rst:276
 msgid "Importing Functions in C++"
 msgstr "在 C++ 中匯入函式"
 
-#: ../../../src/usage/export.rst:250
+#: ../../../src/usage/export.rst:278
 msgid ""
 "Importing and running functions in C++ is basically the same as importing "
 "and running them in Python. First, follow the :ref:`instructions "
@@ -381,11 +433,11 @@ msgstr ""
 "在 C++ 中匯入與執行函式，基本上與在 Python 中匯入與執行相同。首先依照 :ref:`"
 "指示 <mlx_in_cpp>` 建立一個使用 MLX 作為程式庫的簡單 C++ 專案。"
 
-#: ../../../src/usage/export.rst:254
+#: ../../../src/usage/export.rst:282
 msgid "Next, export a simple function from Python:"
 msgstr "接著從 Python 匯出一個簡單函式："
 
-#: ../../../src/usage/export.rst:256
+#: ../../../src/usage/export.rst:284
 msgid ""
 "def fun(x, y):\n"
 "    return mx.exp(x + y)\n"
@@ -395,11 +447,11 @@ msgid ""
 "mx.export_function(\"fun.mlxfn\", fun, x, y)"
 msgstr ""
 
-#: ../../../src/usage/export.rst:266
+#: ../../../src/usage/export.rst:294
 msgid "Import and run the function in C++ with only a few lines of code:"
 msgstr "只需幾行程式碼即可在 C++ 中匯入並執行該函式："
 
-#: ../../../src/usage/export.rst:268
+#: ../../../src/usage/export.rst:296
 msgid ""
 "auto fun = mx::import_function(\"fun.mlxfn\");\n"
 "\n"
@@ -410,7 +462,7 @@ msgid ""
 "std::cout << outputs[0] << std::endl;"
 msgstr ""
 
-#: ../../../src/usage/export.rst:278
+#: ../../../src/usage/export.rst:306
 msgid ""
 "Imported functions can be transformed in C++ just like in Python. Use ``std::"
 "vector<mx::array>`` for positional arguments and ``std::map<std::string, mx::"
@@ -420,18 +472,18 @@ msgstr ""
 "參數使用 ``std::vector<mx::array>``，關鍵字參數使用 ``std::map<std::string, "
 "mx::array>``。"
 
-#: ../../../src/usage/export.rst:283
+#: ../../../src/usage/export.rst:311
 msgid "More Examples"
 msgstr "更多範例"
 
-#: ../../../src/usage/export.rst:285
+#: ../../../src/usage/export.rst:313
 msgid ""
 "Here are a few more complete examples exporting more complex functions from "
 "Python and importing and running them in C++:"
 msgstr ""
 "以下是更多完整範例，示範從 Python 匯出較複雜的函式，並在 C++ 中匯入與執行："
 
-#: ../../../src/usage/export.rst:288
+#: ../../../src/usage/export.rst:316
 msgid ""
 "`Inference and training a multi-layer perceptron <https://github.com/ml-"
 "explore/mlx/tree/main/examples/export>`_"

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MLX main\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-12-22 08:23+0000\n"
+"POT-Creation-Date: 2026-03-09 08:38+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -23,8 +23,8 @@ msgstr "匯出函式"
 
 #: ../../../src/python/export.rst:14:<autosummary>:1
 msgid ""
-":py:obj:`export_function <mlx.core.export_function>`\\ \\(arg0\\, fun\\, "
-"\\*args\\[\\, shapeless\\]\\)"
+":py:obj:`export_function <mlx.core.export_function>`\\ "
+"\\(file\\_or\\_callback\\, fun\\, \\*args\\)"
 msgstr ""
 
 #: ../../../src/python/export.rst:14:<autosummary>:1

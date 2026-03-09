@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MLX main\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-01-26 08:24+0000\n"
+"POT-Creation-Date: 2026-03-09 08:38+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -55,7 +55,7 @@ msgstr ""
 msgid "MLX is only available on devices running macOS >= 14.0 and higher."
 msgstr ""
 
-#: ../../../src/install.rst:26 ../../../src/install.rst:258
+#: ../../../src/install.rst:26 ../../../src/install.rst:259
 msgid "CUDA"
 msgstr ""
 
@@ -117,7 +117,7 @@ msgid ""
 "following requirements:"
 msgstr ""
 
-#: ../../../src/install.rst:64 ../../../src/install.rst:288
+#: ../../../src/install.rst:64 ../../../src/install.rst:289
 msgid "Troubleshooting"
 msgstr ""
 
@@ -151,115 +151,119 @@ msgid "Build Requirements"
 msgstr ""
 
 #: ../../../src/install.rst:86
-msgid "A C++ compiler with C++20 support (e.g. Clang >= 15.0)"
+msgid "``libblas-dev``, ``liblapack-dev``, and ``liblapacke-dev`` (Linux)"
 msgstr ""
 
 #: ../../../src/install.rst:87
-msgid "`cmake <https://cmake.org/>`_ -- version 3.25 or later, and ``make``"
+msgid "A C++ compiler with C++20 support (e.g. Clang >= 15.0)"
 msgstr ""
 
 #: ../../../src/install.rst:88
+msgid "`cmake <https://cmake.org/>`_ -- version 3.25 or later, and ``make``"
+msgstr ""
+
+#: ../../../src/install.rst:89
 msgid "Xcode >= 15.0 and macOS SDK >= 14.0"
 msgstr ""
 
-#: ../../../src/install.rst:91
+#: ../../../src/install.rst:92
 msgid ""
 "Ensure your shell environment is native ``arm``, not ``x86`` via Rosetta. If "
 "the output of ``uname -p`` is ``x86``, see the :ref:`troubleshooting section "
 "<build shell>` below."
 msgstr ""
 
-#: ../../../src/install.rst:95
+#: ../../../src/install.rst:96
 msgid "Python API"
 msgstr ""
 
-#: ../../../src/install.rst:99
+#: ../../../src/install.rst:100
 msgid ""
 "To build and install the MLX python library from source, first, clone MLX "
 "from `its GitHub repo <https://github.com/ml-explore/mlx>`_:"
 msgstr ""
 
-#: ../../../src/install.rst:102 ../../../src/install.rst:142
+#: ../../../src/install.rst:103 ../../../src/install.rst:143
 msgid "git clone git@github.com:ml-explore/mlx.git mlx && cd mlx"
 msgstr ""
 
-#: ../../../src/install.rst:106
+#: ../../../src/install.rst:107
 msgid "Then simply build and install MLX using pip:"
 msgstr ""
 
-#: ../../../src/install.rst:108
+#: ../../../src/install.rst:109
 msgid "pip install ."
 msgstr ""
 
-#: ../../../src/install.rst:112
+#: ../../../src/install.rst:113
 msgid ""
 "For developing, install the package with development dependencies, and use "
 "an editable install:"
 msgstr ""
 
-#: ../../../src/install.rst:115
+#: ../../../src/install.rst:116
 msgid "pip install -e \".[dev]\""
 msgstr ""
 
-#: ../../../src/install.rst:119
+#: ../../../src/install.rst:120
 msgid ""
 "Once the development dependencies are installed, you can build faster with:"
 msgstr ""
 
-#: ../../../src/install.rst:121
+#: ../../../src/install.rst:122
 msgid "python setup.py build_ext --inplace"
 msgstr ""
 
-#: ../../../src/install.rst:125
+#: ../../../src/install.rst:126
 msgid "Run the tests with:"
 msgstr ""
 
-#: ../../../src/install.rst:127
+#: ../../../src/install.rst:128
 msgid "python -m unittest discover python/tests"
 msgstr ""
 
-#: ../../../src/install.rst:132
+#: ../../../src/install.rst:133
 msgid "C++ API"
 msgstr ""
 
-#: ../../../src/install.rst:136
+#: ../../../src/install.rst:137
 msgid "Currently, MLX must be built and installed from source."
 msgstr ""
 
-#: ../../../src/install.rst:138
+#: ../../../src/install.rst:139
 msgid ""
 "Similarly to the python library, to build and install the MLX C++ library "
 "start by cloning MLX from `its GitHub repo <https://github.com/ml-explore/"
 "mlx>`_:"
 msgstr ""
 
-#: ../../../src/install.rst:146
+#: ../../../src/install.rst:147
 msgid "Create a build directory and run CMake and make:"
 msgstr ""
 
-#: ../../../src/install.rst:148
+#: ../../../src/install.rst:149
 msgid ""
 "mkdir -p build && cd build\n"
 "cmake .. && make -j"
 msgstr ""
 
-#: ../../../src/install.rst:153
+#: ../../../src/install.rst:154
 msgid "Run tests with:"
 msgstr ""
 
-#: ../../../src/install.rst:155
+#: ../../../src/install.rst:156
 msgid "make test"
 msgstr ""
 
-#: ../../../src/install.rst:159
+#: ../../../src/install.rst:160
 msgid "Install with:"
 msgstr ""
 
-#: ../../../src/install.rst:161
+#: ../../../src/install.rst:162
 msgid "make install"
 msgstr ""
 
-#: ../../../src/install.rst:165
+#: ../../../src/install.rst:166
 msgid ""
 "Note that the built ``mlx.metallib`` file should be either at the same "
 "directory as the executable statically linked to ``libmlx.a`` or the "
@@ -267,109 +271,109 @@ msgid ""
 "should point to the path to the built metal library."
 msgstr ""
 
-#: ../../../src/install.rst:170
+#: ../../../src/install.rst:171
 msgid "Build Options"
 msgstr ""
 
-#: ../../../src/install.rst:174
+#: ../../../src/install.rst:175
 msgid "Option"
 msgstr ""
 
-#: ../../../src/install.rst:175
+#: ../../../src/install.rst:176
 msgid "Default"
 msgstr ""
 
-#: ../../../src/install.rst:176
+#: ../../../src/install.rst:177
 msgid "MLX_BUILD_TESTS"
 msgstr ""
 
-#: ../../../src/install.rst:177 ../../../src/install.rst:183
-#: ../../../src/install.rst:185 ../../../src/install.rst:191
-#: ../../../src/install.rst:193
+#: ../../../src/install.rst:178 ../../../src/install.rst:184
+#: ../../../src/install.rst:186 ../../../src/install.rst:192
+#: ../../../src/install.rst:194
 msgid "ON"
 msgstr ""
 
-#: ../../../src/install.rst:178
+#: ../../../src/install.rst:179
 msgid "MLX_BUILD_EXAMPLES"
 msgstr ""
 
-#: ../../../src/install.rst:179 ../../../src/install.rst:181
-#: ../../../src/install.rst:187 ../../../src/install.rst:189
-#: ../../../src/install.rst:195
+#: ../../../src/install.rst:180 ../../../src/install.rst:182
+#: ../../../src/install.rst:188 ../../../src/install.rst:190
+#: ../../../src/install.rst:196
 msgid "OFF"
 msgstr ""
 
-#: ../../../src/install.rst:180
+#: ../../../src/install.rst:181
 msgid "MLX_BUILD_BENCHMARKS"
 msgstr ""
 
-#: ../../../src/install.rst:182
+#: ../../../src/install.rst:183
 msgid "MLX_BUILD_METAL"
 msgstr ""
 
-#: ../../../src/install.rst:184
+#: ../../../src/install.rst:185
 msgid "MLX_BUILD_CPU"
 msgstr ""
 
-#: ../../../src/install.rst:186
+#: ../../../src/install.rst:187
 msgid "MLX_BUILD_PYTHON_BINDINGS"
 msgstr ""
 
-#: ../../../src/install.rst:188
+#: ../../../src/install.rst:189
 msgid "MLX_METAL_DEBUG"
 msgstr ""
 
-#: ../../../src/install.rst:190
+#: ../../../src/install.rst:191
 msgid "MLX_BUILD_SAFETENSORS"
 msgstr ""
 
-#: ../../../src/install.rst:192
+#: ../../../src/install.rst:193
 msgid "MLX_BUILD_GGUF"
 msgstr ""
 
-#: ../../../src/install.rst:194
+#: ../../../src/install.rst:195
 msgid "MLX_METAL_JIT"
 msgstr ""
 
-#: ../../../src/install.rst:199
+#: ../../../src/install.rst:200
 msgid ""
 "If you have multiple Xcode installations and wish to use a specific one "
 "while building, you can do so by adding the following environment variable "
 "before building"
 msgstr ""
 
-#: ../../../src/install.rst:203
+#: ../../../src/install.rst:204
 msgid "export DEVELOPER_DIR=\"/path/to/Xcode.app/Contents/Developer/\""
 msgstr ""
 
-#: ../../../src/install.rst:207
+#: ../../../src/install.rst:208
 msgid ""
 "Further, you can use the following command to find out which macOS SDK will "
 "be used"
 msgstr ""
 
-#: ../../../src/install.rst:210
+#: ../../../src/install.rst:211
 msgid "xcrun -sdk macosx --show-sdk-version"
 msgstr ""
 
-#: ../../../src/install.rst:216
+#: ../../../src/install.rst:217
 msgid "Binary Size Minimization"
 msgstr ""
 
-#: ../../../src/install.rst:218
+#: ../../../src/install.rst:219
 msgid ""
 "To produce a smaller binary use the CMake flags "
 "``CMAKE_BUILD_TYPE=MinSizeRel`` and ``BUILD_SHARED_LIBS=ON``."
 msgstr ""
 
-#: ../../../src/install.rst:221
+#: ../../../src/install.rst:222
 msgid ""
 "The MLX CMake build has several additional options to make smaller binaries. "
 "For example, if you don't need the CPU backend or support for safetensors "
 "and GGUF, you can do:"
 msgstr ""
 
-#: ../../../src/install.rst:225
+#: ../../../src/install.rst:226
 msgid ""
 "cmake .. \\\n"
 "  -DCMAKE_BUILD_TYPE=MinSizeRel \\\n"
@@ -380,7 +384,7 @@ msgid ""
 "  -DMLX_METAL_JIT=ON"
 msgstr ""
 
-#: ../../../src/install.rst:235
+#: ../../../src/install.rst:236
 msgid ""
 "THE ``MLX_METAL_JIT`` flag minimizes the size of the MLX Metal library which "
 "contains pre-built GPU kernels. This substantially reduces the size of the "
@@ -391,35 +395,35 @@ msgid ""
 "by the system. The Metal kernel cache persists across reboots."
 msgstr ""
 
-#: ../../../src/install.rst:244
+#: ../../../src/install.rst:245
 msgid "Linux"
 msgstr ""
 
-#: ../../../src/install.rst:246
+#: ../../../src/install.rst:247
 msgid ""
 "To build from source on Linux (CPU only), install the BLAS and LAPACK "
 "headers. For example on Ubuntu, run the following:"
 msgstr ""
 
-#: ../../../src/install.rst:249
+#: ../../../src/install.rst:250
 msgid ""
 "apt-get update -y\n"
 "apt-get install libblas-dev liblapack-dev liblapacke-dev -y"
 msgstr ""
 
-#: ../../../src/install.rst:254
+#: ../../../src/install.rst:255
 msgid ""
 "From here follow the instructions to install either the :ref:`Python <python "
 "install>` or :ref:`C++ <cpp install>` APIs."
 msgstr ""
 
-#: ../../../src/install.rst:260
+#: ../../../src/install.rst:261
 msgid ""
 "To build from source on Linux with CUDA, install the BLAS and LAPACK headers "
 "and the CUDA toolkit. For example on Ubuntu, run the following:"
 msgstr ""
 
-#: ../../../src/install.rst:263
+#: ../../../src/install.rst:264
 msgid ""
 "wget https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2204/"
 "x86_64/cuda-keyring_1.1-1_all.deb\n"
@@ -430,66 +434,66 @@ msgid ""
 "cuda-12 -y"
 msgstr ""
 
-#: ../../../src/install.rst:272
+#: ../../../src/install.rst:273
 msgid ""
 "When building either the Python or C++ APIs make sure to pass the cmake flag "
 "``MLX_BUILD_CUDA=ON``. For example, to build the Python API run:"
 msgstr ""
 
-#: ../../../src/install.rst:275
+#: ../../../src/install.rst:276
 msgid "CMAKE_ARGS=\"-DMLX_BUILD_CUDA=ON\" pip install -e \".[dev]\""
 msgstr ""
 
-#: ../../../src/install.rst:279
+#: ../../../src/install.rst:280
 msgid "To build the C++ package run:"
 msgstr ""
 
-#: ../../../src/install.rst:281
+#: ../../../src/install.rst:282
 msgid ""
 "mkdir -p build && cd build\n"
 "cmake .. -DMLX_BUILD_CUDA=ON && make -j"
 msgstr ""
 
-#: ../../../src/install.rst:291
+#: ../../../src/install.rst:292
 msgid "Metal not found"
 msgstr ""
 
-#: ../../../src/install.rst:293
+#: ../../../src/install.rst:294
 msgid "You see the following error when you try to build:"
 msgstr ""
 
-#: ../../../src/install.rst:295
+#: ../../../src/install.rst:296
 msgid ""
 "error: unable to find utility \"metal\", not a developer tool or in PATH"
 msgstr ""
 
-#: ../../../src/install.rst:299
+#: ../../../src/install.rst:300
 msgid "To fix this, first make sure you have Xcode installed:"
 msgstr ""
 
-#: ../../../src/install.rst:301
+#: ../../../src/install.rst:302
 msgid "xcode-select --install"
 msgstr ""
 
-#: ../../../src/install.rst:305
+#: ../../../src/install.rst:306
 msgid "Then set the active developer directory:"
 msgstr ""
 
-#: ../../../src/install.rst:307
+#: ../../../src/install.rst:308
 msgid "sudo xcode-select --switch /Applications/Xcode.app/Contents/Developer"
 msgstr ""
 
-#: ../../../src/install.rst:312
+#: ../../../src/install.rst:313
 msgid "x86 Shell"
 msgstr ""
 
-#: ../../../src/install.rst:316
+#: ../../../src/install.rst:317
 msgid ""
 "If the output of ``uname -p``  is ``x86`` then your shell is running as x86 "
 "via Rosetta instead of natively."
 msgstr ""
 
-#: ../../../src/install.rst:319
+#: ../../../src/install.rst:320
 msgid ""
 "To fix this, find the application in Finder (``/Applications`` for iTerm, ``/"
 "Applications/Utilities`` for Terminal), right-click, and click “Get Info”. "
@@ -497,27 +501,27 @@ msgid ""
 "terminal."
 msgstr ""
 
-#: ../../../src/install.rst:324
+#: ../../../src/install.rst:325
 msgid "Verify the terminal is now running natively the following command:"
 msgstr ""
 
-#: ../../../src/install.rst:326
+#: ../../../src/install.rst:327
 msgid ""
 "$ uname -p\n"
 "arm"
 msgstr ""
 
-#: ../../../src/install.rst:331
+#: ../../../src/install.rst:332
 msgid "Also check that cmake is using the correct architecture:"
 msgstr ""
 
-#: ../../../src/install.rst:333
+#: ../../../src/install.rst:334
 msgid ""
 "$ cmake --system-information | grep CMAKE_HOST_SYSTEM_PROCESSOR\n"
 "CMAKE_HOST_SYSTEM_PROCESSOR \"arm64\""
 msgstr ""
 
-#: ../../../src/install.rst:338
+#: ../../../src/install.rst:339
 msgid ""
 "If you see ``\"x86_64\"``, try re-installing ``cmake``. If you see "
 "``\"arm64\"`` but the build errors out with \"Building for x86_64 on macOS "

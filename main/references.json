@@ -16,9 +16,9 @@
       "branch" : "main",
       "commit" : 
       {
-        "date" : "2026-02-15 18:33:13 -0800",
-        "hash" : "e226af720e154c5fa90ee0938ab3d92f24b2df48",
-        "title" : "Propagate quantization mode in quantized layers (#3133)"
+        "date" : "2026-03-05 09:34:19 +0100",
+        "hash" : "be872ebdefbc769045e1fcde3e34b9e664488e13",
+        "title" : "[CUDA] implement Hadamard transform (#3179)"
       }
     },
     "zh_TW" : 
@@ -26,9 +26,9 @@
       "branch" : "main",
       "commit" : 
       {
-        "date" : "2026-02-15 18:33:13 -0800",
-        "hash" : "e226af720e154c5fa90ee0938ab3d92f24b2df48",
-        "title" : "Propagate quantization mode in quantized layers (#3133)"
+        "date" : "2026-03-05 09:34:19 +0100",
+        "hash" : "be872ebdefbc769045e1fcde3e34b9e664488e13",
+        "title" : "[CUDA] implement Hadamard transform (#3179)"
       }
     }
   },

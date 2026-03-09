@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MLX main\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-12-22 08:23+0000\n"
+"POT-Creation-Date: 2026-03-09 08:38+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -58,12 +58,18 @@ msgstr ""
 
 #: ../../../docstring of mlx.core.dequantize:18
 msgid ""
+"The per-input float32 scale used for ``\"nvfp4\"`` quantization if provided. "
+"Default: ``None``."
+msgstr ""
+
+#: ../../../docstring of mlx.core.dequantize:21
+msgid ""
 "The data type of the dequantized output. If ``None`` the return type is "
 "inferred from the scales and biases when possible and otherwise defaults to "
 "``bfloat16``. Default: ``None``."
 msgstr ""
 
-#: ../../../docstring of mlx.core.dequantize:23
+#: ../../../docstring of mlx.core.dequantize:26
 msgid "The quantization mode. Default: ``\"affine\"``."
 msgstr ""
 
@@ -71,7 +77,7 @@ msgstr ""
 msgid "Returns"
 msgstr ""
 
-#: ../../../docstring of mlx.core.dequantize:26
+#: ../../../docstring of mlx.core.dequantize:29
 msgid "The dequantized version of ``w``"
 msgstr ""
 
@@ -79,23 +85,23 @@ msgstr ""
 msgid "Return type"
 msgstr ""
 
-#: ../../../docstring of mlx.core.dequantize:30
+#: ../../../docstring of mlx.core.dequantize:33
 msgid "Notes"
 msgstr "備註"
 
-#: ../../../docstring of mlx.core.dequantize:31
+#: ../../../docstring of mlx.core.dequantize:34
 msgid ""
 "The currently supported quantization modes are ``\"affine\"``, ``\"mxfp4``, "
 "``\"mxfp8\"``, and ``\"nvfp4\"``."
 msgstr ""
 
-#: ../../../docstring of mlx.core.dequantize:34
+#: ../../../docstring of mlx.core.dequantize:37
 msgid ""
 "For ``affine`` quantization, given the notation in :func:`quantize`, we "
 "compute :math:`w_i` from :math:`\\hat{w_i}` and corresponding :math:`s` and :"
 "math:`\\beta` as follows"
 msgstr ""
 
-#: ../../../docstring of mlx.core.dequantize:38
+#: ../../../docstring of mlx.core.dequantize:41
 msgid "w_i = s \\hat{w_i} + \\beta"
 msgstr ""
