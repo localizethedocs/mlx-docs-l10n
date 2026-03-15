@@ -23,24 +23,24 @@ msgstr ""
 
 #: ../../../docstring of mlx.core.arctan2:1
 msgid "Element-wise inverse tangent of the ratio of two arrays."
-msgstr ""
+msgstr "逐元素取兩陣列比值的反正切。"
 
 #: ../../../src/python/_autosummary/mlx.core.arctan2.rst:0
 msgid "Parameters"
-msgstr ""
+msgstr "參數"
 
 #: ../../../docstring of mlx.core.arctan2:3 mlx.core.arctan2:5
 msgid "Input array."
-msgstr ""
+msgstr "輸入陣列。"
 
 #: ../../../src/python/_autosummary/mlx.core.arctan2.rst:0
 msgid "Returns"
-msgstr ""
+msgstr "回傳"
 
 #: ../../../docstring of mlx.core.arctan2:8
 msgid "The inverse tangent of the ratio of ``a`` and ``b``."
-msgstr ""
+msgstr "``a`` 與 ``b`` 比值的反正切。"
 
 #: ../../../src/python/_autosummary/mlx.core.arctan2.rst:0
 msgid "Return type"
-msgstr ""
+msgstr "回傳型別"

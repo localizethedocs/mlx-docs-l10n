@@ -23,34 +23,34 @@ msgstr ""
 
 #: ../../../docstring of mlx.core.argmin:1
 msgid "Indices of the minimum values along the axis."
-msgstr ""
+msgstr "沿指定軸的最小值索引。"
 
 #: ../../../src/python/_autosummary/mlx.core.argmin.rst:0
 msgid "Parameters"
-msgstr ""
+msgstr "參數"
 
 #: ../../../docstring of mlx.core.argmin:3
 msgid "Input array."
-msgstr ""
+msgstr "輸入陣列。"
 
 #: ../../../docstring of mlx.core.argmin:5
 msgid ""
 "Optional axis to reduce over. If unspecified this defaults to reducing over "
 "the entire array."
-msgstr ""
+msgstr "可選的歸約軸。若未指定，預設對整個陣列歸約。"
 
 #: ../../../docstring of mlx.core.argmin:8
 msgid "Keep reduced axes as singleton dimensions, defaults to `False`."
-msgstr ""
+msgstr "將被歸約的軸保留為單一維度，預設為 `False`。"
 
 #: ../../../src/python/_autosummary/mlx.core.argmin.rst:0
 msgid "Returns"
-msgstr ""
+msgstr "回傳"
 
 #: ../../../docstring of mlx.core.argmin:12
 msgid "The ``uint32`` array with the indices of the minimum values."
-msgstr ""
+msgstr "包含最小值索引的 ``uint32`` 陣列。"
 
 #: ../../../src/python/_autosummary/mlx.core.argmin.rst:0
 msgid "Return type"
-msgstr ""
+msgstr "回傳型別"

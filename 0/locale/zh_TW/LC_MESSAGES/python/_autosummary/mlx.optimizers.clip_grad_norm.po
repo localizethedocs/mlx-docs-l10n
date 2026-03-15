@@ -24,7 +24,7 @@ msgstr ""
 #: ../../../../../../.conda/lib/python3.12/site-packages/mlx/optimizers/optimizers.py:docstring
 #: of mlx.optimizers.optimizers.clip_grad_norm:1
 msgid "Clips the global norm of the gradients."
-msgstr ""
+msgstr "裁剪梯度的全域範數。"
 
 #: ../../../../../../.conda/lib/python3.12/site-packages/mlx/optimizers/optimizers.py:docstring
 #: of mlx.optimizers.optimizers.clip_grad_norm:3

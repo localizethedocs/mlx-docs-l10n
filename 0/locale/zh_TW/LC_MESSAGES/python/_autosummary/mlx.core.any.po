@@ -23,34 +23,34 @@ msgstr ""
 
 #: ../../../docstring of mlx.core.any:1
 msgid "An `or` reduction over the given axes."
-msgstr ""
+msgstr "在指定軸上進行 `or` 歸約。"
 
 #: ../../../src/python/_autosummary/mlx.core.any.rst:0
 msgid "Parameters"
-msgstr ""
+msgstr "參數"
 
 #: ../../../docstring of mlx.core.any:3
 msgid "Input array."
-msgstr ""
+msgstr "輸入陣列。"
 
 #: ../../../docstring of mlx.core.any:5
 msgid ""
 "Optional axis or axes to reduce over. If unspecified this defaults to "
 "reducing over the entire array."
-msgstr ""
+msgstr "可選的歸約軸或多個軸。若未指定，預設對整個陣列歸約。"
 
 #: ../../../docstring of mlx.core.any:9
 msgid "Keep reduced axes as singleton dimensions, defaults to `False`."
-msgstr ""
+msgstr "將被歸約的軸保留為單一維度，預設為 `False`。"
 
 #: ../../../src/python/_autosummary/mlx.core.any.rst:0
 msgid "Returns"
-msgstr ""
+msgstr "回傳"
 
 #: ../../../docstring of mlx.core.any:13
 msgid "The output array with the corresponding axes reduced."
-msgstr ""
+msgstr "對應軸已歸約的輸出陣列。"
 
 #: ../../../src/python/_autosummary/mlx.core.any.rst:0
 msgid "Return type"
-msgstr ""
+msgstr "回傳型別"

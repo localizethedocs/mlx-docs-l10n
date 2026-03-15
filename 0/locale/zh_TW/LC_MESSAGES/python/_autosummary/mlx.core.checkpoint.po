@@ -35,7 +35,7 @@ msgstr ""
 
 #: ../../../src/python/_autosummary/mlx.core.checkpoint.rst:0
 msgid "Parameters"
-msgstr ""
+msgstr "參數"
 
 #: ../../../docstring of mlx.core.checkpoint:7
 msgid "The function to checkpoint."
@@ -43,7 +43,7 @@ msgstr ""
 
 #: ../../../src/python/_autosummary/mlx.core.checkpoint.rst:0
 msgid "Returns"
-msgstr ""
+msgstr "回傳"
 
 #: ../../../docstring of mlx.core.checkpoint:10
 msgid ""

@@ -23,7 +23,7 @@ msgstr ""
 
 #: ../../../docstring of mlx.core.fast.rms_norm:1
 msgid "Root Mean Square normalization (RMS norm)."
-msgstr ""
+msgstr "均方根正規化（RMS norm）。"
 
 #: ../../../docstring of mlx.core.fast.rms_norm:3
 msgid "The normalization is with respect to the last axis of the input ``x``."

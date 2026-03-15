@@ -27,7 +27,7 @@ msgstr ""
 
 #: ../../../src/python/_autosummary/mlx.core.device_count.rst:0
 msgid "Parameters"
-msgstr ""
+msgstr "參數"
 
 #: ../../../docstring of mlx.core.device_count:3
 msgid "The type of device to query (cpu or gpu)."
@@ -35,7 +35,7 @@ msgstr ""
 
 #: ../../../src/python/_autosummary/mlx.core.device_count.rst:0
 msgid "Returns"
-msgstr ""
+msgstr "回傳"
 
 #: ../../../docstring of mlx.core.device_count:6
 msgid "Number of devices."
@@ -43,4 +43,4 @@ msgstr ""
 
 #: ../../../src/python/_autosummary/mlx.core.device_count.rst:0
 msgid "Return type"
-msgstr ""
+msgstr "回傳型別"

@@ -35,4 +35,4 @@ msgstr ""
 
 #: ../../../src/python/nn/_autosummary/mlx.nn.Sigmoid.rst:12
 msgid "Methods"
-msgstr ""
+msgstr "方法"

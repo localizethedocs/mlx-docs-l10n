@@ -24,9 +24,9 @@ msgstr ""
 #: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/activations.py:docstring
 #: of mlx.nn.layers.activations.elu:1
 msgid "Applies the Exponential Linear Unit."
-msgstr ""
+msgstr "套用指數線性單元（ELU）。"
 
 #: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/activations.py:docstring
 #: of mlx.nn.layers.activations.elu:3
 msgid "Simply ``mx.where(x > 0, x, alpha * (mx.exp(x) - 1))``."
-msgstr ""
+msgstr "就是 ``mx.where(x > 0, x, alpha * (mx.exp(x) - 1))``。"

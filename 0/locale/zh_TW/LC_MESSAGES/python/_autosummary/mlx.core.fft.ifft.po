@@ -23,7 +23,7 @@ msgstr ""
 
 #: ../../../docstring of mlx.core.fft.ifft:1
 msgid "One dimensional inverse discrete Fourier Transform."
-msgstr ""
+msgstr "一維離散傅立葉反轉換。"
 
 #: ../../../src/python/_autosummary/mlx.core.fft.ifft.rst:0
 msgid "Parameters"

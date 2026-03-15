@@ -23,24 +23,24 @@ msgstr ""
 
 #: ../../../docstring of mlx.core.arctan:1
 msgid "Element-wise inverse tangent."
-msgstr ""
+msgstr "逐元素反正切。"
 
 #: ../../../src/python/_autosummary/mlx.core.arctan.rst:0
 msgid "Parameters"
-msgstr ""
+msgstr "參數"
 
 #: ../../../docstring of mlx.core.arctan:3
 msgid "Input array."
-msgstr ""
+msgstr "輸入陣列。"
 
 #: ../../../src/python/_autosummary/mlx.core.arctan.rst:0
 msgid "Returns"
-msgstr ""
+msgstr "回傳"
 
 #: ../../../docstring of mlx.core.arctan:6
 msgid "The inverse tangent of ``a``."
-msgstr ""
+msgstr "``a`` 的反正切。"
 
 #: ../../../src/python/_autosummary/mlx.core.arctan.rst:0
 msgid "Return type"
-msgstr ""
+msgstr "回傳型別"

@@ -23,11 +23,11 @@ msgstr ""
 
 #: ../../../docstring of mlx.core.finfo:1
 msgid "Get information on floating-point types."
-msgstr ""
+msgstr "取得浮點數型別資訊。"
 
 #: ../../../src/python/_autosummary/mlx.core.finfo.rst:13
 msgid "Methods"
-msgstr ""
+msgstr "方法"
 
 #: ../../../src/python/_autosummary/mlx.core.finfo.rst:21:<autosummary>:1
 msgid ":py:obj:`__init__ <mlx.core.finfo.__init__>`\\ \\(self\\, arg\\, \\/\\)"

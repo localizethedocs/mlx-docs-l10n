@@ -55,4 +55,4 @@ msgstr ""
 
 #: ../../../docstring of mlx.core.kron:15
 msgid "Examples"
-msgstr ""
+msgstr "範例"

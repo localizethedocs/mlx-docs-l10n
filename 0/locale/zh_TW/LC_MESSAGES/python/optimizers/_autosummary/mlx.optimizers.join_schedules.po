@@ -24,7 +24,7 @@ msgstr ""
 #: ../../../../../../.conda/lib/python3.12/site-packages/mlx/optimizers/schedulers.py:docstring
 #: of mlx.optimizers.schedulers.join_schedules:1
 msgid "Join multiple schedules to create a new schedule."
-msgstr ""
+msgstr "合併多個排程以建立新的排程。"
 
 #: ../../../../../../.conda/lib/python3.12/site-packages/mlx/optimizers/schedulers.py:docstring
 #: of mlx.optimizers.schedulers.join_schedules:0

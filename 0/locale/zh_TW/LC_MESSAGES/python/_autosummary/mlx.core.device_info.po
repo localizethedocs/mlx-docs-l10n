@@ -34,7 +34,7 @@ msgstr ""
 
 #: ../../../src/python/_autosummary/mlx.core.device_info.rst:0
 msgid "Parameters"
-msgstr ""
+msgstr "參數"
 
 #: ../../../docstring of mlx.core.device_info:7
 msgid "The device to query (defaults to the default device)."
@@ -42,7 +42,7 @@ msgstr ""
 
 #: ../../../src/python/_autosummary/mlx.core.device_info.rst:0
 msgid "Returns"
-msgstr ""
+msgstr "回傳"
 
 #: ../../../docstring of mlx.core.device_info:10
 msgid "Device information."
@@ -50,4 +50,4 @@ msgstr ""
 
 #: ../../../src/python/_autosummary/mlx.core.device_info.rst:0
 msgid "Return type"
-msgstr ""
+msgstr "回傳型別"

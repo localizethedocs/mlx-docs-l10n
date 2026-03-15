@@ -23,30 +23,30 @@ msgstr ""
 
 #: ../../../docstring of mlx.core.add:1
 msgid "Element-wise addition."
-msgstr ""
+msgstr "逐元素相加。"
 
 #: ../../../docstring of mlx.core.add:3
 msgid ""
 "Add two arrays with numpy-style broadcasting semantics. Either or both input "
 "arrays can also be scalars."
-msgstr ""
+msgstr "以 numpy 風格廣播語意將兩個陣列相加。任一或兩個輸入也可以是純量。"
 
 #: ../../../src/python/_autosummary/mlx.core.add.rst:0
 msgid "Parameters"
-msgstr ""
+msgstr "參數"
 
 #: ../../../docstring of mlx.core.add:6 mlx.core.add:8
 msgid "Input array or scalar."
-msgstr ""
+msgstr "輸入陣列或純量。"
 
 #: ../../../src/python/_autosummary/mlx.core.add.rst:0
 msgid "Returns"
-msgstr ""
+msgstr "回傳"
 
 #: ../../../docstring of mlx.core.add:11
 msgid "The sum of ``a`` and ``b``."
-msgstr ""
+msgstr "``a`` 與 ``b`` 的和。"
 
 #: ../../../src/python/_autosummary/mlx.core.add.rst:0
 msgid "Return type"
-msgstr ""
+msgstr "回傳型別"

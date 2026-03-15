@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../../src/python/optimizers.rst:6
 msgid "Optimizers"
-msgstr ""
+msgstr "最佳化器"
 
 #: ../../../src/python/optimizers.rst:8
 msgid ""
@@ -29,6 +29,9 @@ msgid ""
 "gradients and subsequently calling :func:`mlx.core.eval` to evaluate both "
 "the model's parameters and the **optimizer state**."
 msgstr ""
+"MLX 的最佳化器既可與 :mod:`mlx.nn` 搭配使用，也可用於純 :mod:`mlx.core` 函"
+"式。典型作法是呼叫 :meth:`Optimizer.update` 依據損失梯度更新模型參數，接著呼"
+"叫 :func:`mlx.core.eval` 同時計算模型參數與 **最佳化器狀態**。"
 
 #: ../../../src/python/optimizers.rst:14
 msgid ""
@@ -54,13 +57,15 @@ msgstr ""
 
 #: ../../../src/python/optimizers.rst:35
 msgid "Saving and Loading"
-msgstr ""
+msgstr "儲存與載入"
 
 #: ../../../src/python/optimizers.rst:37
 msgid ""
 "To serialize an optimizer, save its state. To load an optimizer, load and "
 "set the saved state. Here's a simple example:"
 msgstr ""
+"若要序列化最佳化器，請儲存其狀態。要載入最佳化器，則載入並設定已儲存的狀態。"
+"以下是簡單範例："
 
 #: ../../../src/python/optimizers.rst:40
 msgid ""
@@ -94,6 +99,9 @@ msgid ""
 "parameters are not. A good rule of thumb is if the parameter can be "
 "scheduled then it will be included in the optimizer state."
 msgstr ""
+"注意，並非每個最佳化器的設定參數都會儲存在狀態中。例如對 Adam 而言，學習率會"
+"被儲存，但 ``betas`` 與 ``eps`` 參數不會。經驗法則是：若該參數可被排程，則會"
+"包含在最佳化器狀態中。"
 
 #: ../../../src/python/optimizers.rst:78:<autosummary>:1
 msgid ""
@@ -103,4 +111,4 @@ msgstr ""
 
 #: ../../../src/python/optimizers.rst:78:<autosummary>:1
 msgid "Clips the global norm of the gradients."
-msgstr ""
+msgstr "裁剪梯度的全域範數。"

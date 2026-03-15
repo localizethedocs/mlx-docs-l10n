@@ -83,7 +83,7 @@ msgstr ""
 
 #: ../../../src/python/optimizers/_autosummary/mlx.optimizers.Muon.rst:12
 msgid "Methods"
-msgstr ""
+msgstr "方法"
 
 #: ../../../src/python/optimizers/_autosummary/mlx.optimizers.Muon.rst:17:<autosummary>:1
 msgid ""

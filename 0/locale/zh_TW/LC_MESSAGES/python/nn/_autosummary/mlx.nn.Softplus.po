@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../../src/python/nn/_autosummary/mlx.nn.Softplus.rst:2
 msgid "mlx.nn.Softplus"
-msgstr ""
+msgstr "mlx.nn.Softplus"
 
 #: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/activations.py:docstring
 #: of mlx.nn.layers.activations.Softplus:1
@@ -33,4 +33,4 @@ msgstr ""
 
 #: ../../../src/python/nn/_autosummary/mlx.nn.Softplus.rst:12
 msgid "Methods"
-msgstr ""
+msgstr "方法"

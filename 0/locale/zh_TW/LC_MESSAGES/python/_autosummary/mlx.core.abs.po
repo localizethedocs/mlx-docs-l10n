@@ -23,24 +23,24 @@ msgstr ""
 
 #: ../../../docstring of mlx.core.abs:1
 msgid "Element-wise absolute value."
-msgstr ""
+msgstr "逐元素絕對值。"
 
 #: ../../../src/python/_autosummary/mlx.core.abs.rst:0
 msgid "Parameters"
-msgstr ""
+msgstr "參數"
 
 #: ../../../docstring of mlx.core.abs:3
 msgid "Input array."
-msgstr ""
+msgstr "輸入陣列。"
 
 #: ../../../src/python/_autosummary/mlx.core.abs.rst:0
 msgid "Returns"
-msgstr ""
+msgstr "回傳"
 
 #: ../../../docstring of mlx.core.abs:6
 msgid "The absolute value of ``a``."
-msgstr ""
+msgstr "``a`` 的絕對值。"
 
 #: ../../../src/python/_autosummary/mlx.core.abs.rst:0
 msgid "Return type"
-msgstr ""
+msgstr "回傳型別"

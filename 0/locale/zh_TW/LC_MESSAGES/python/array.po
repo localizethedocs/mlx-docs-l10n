@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../../src/python/array.rst:4
 msgid "Array"
-msgstr ""
+msgstr "陣列"
 
 #: ../../../src/python/array.rst:65:<autosummary>:1
 msgid ":py:obj:`array <mlx.core.array>`\\ \\(\\*args\\, \\*\\*kwargs\\)"
@@ -27,7 +27,7 @@ msgstr ""
 
 #: ../../../src/python/array.rst:65:<autosummary>:1
 msgid "An N-dimensional array object."
-msgstr ""
+msgstr "N 維陣列物件。"
 
 #: ../../../src/python/array.rst:65:<autosummary>:1
 msgid ""
@@ -37,7 +37,7 @@ msgstr ""
 
 #: ../../../src/python/array.rst:65:<autosummary>:1
 msgid "Cast the array to a specified type."
-msgstr ""
+msgstr "將陣列轉型為指定型別。"
 
 #: ../../../src/python/array.rst:65:<autosummary>:1
 msgid ":py:obj:`array.at <mlx.core.array.at>`\\"
@@ -45,7 +45,7 @@ msgstr ""
 
 #: ../../../src/python/array.rst:65:<autosummary>:1
 msgid "Used to apply updates at the given indices."
-msgstr ""
+msgstr "用於在指定索引處套用更新。"
 
 #: ../../../src/python/array.rst:65:<autosummary>:1
 msgid ":py:obj:`array.item <mlx.core.array.item>`\\ \\(self\\)"
@@ -53,7 +53,7 @@ msgstr ""
 
 #: ../../../src/python/array.rst:65:<autosummary>:1
 msgid "Access the value of a scalar array."
-msgstr ""
+msgstr "存取純量陣列的值。"
 
 #: ../../../src/python/array.rst:65:<autosummary>:1
 msgid ":py:obj:`array.tolist <mlx.core.array.tolist>`\\ \\(self\\)"
@@ -61,7 +61,7 @@ msgstr ""
 
 #: ../../../src/python/array.rst:65:<autosummary>:1
 msgid "Convert the array to a Python :class:`list`."
-msgstr ""
+msgstr "將陣列轉為 Python :class:`list`。"
 
 #: ../../../src/python/array.rst:65:<autosummary>:1
 msgid ":py:obj:`array.dtype <mlx.core.array.dtype>`\\"
@@ -69,7 +69,7 @@ msgstr ""
 
 #: ../../../src/python/array.rst:65:<autosummary>:1
 msgid "The array's :class:`Dtype`."
-msgstr ""
+msgstr "陣列的 :class:`Dtype`。"
 
 #: ../../../src/python/array.rst:65:<autosummary>:1
 msgid ":py:obj:`array.itemsize <mlx.core.array.itemsize>`\\"
@@ -77,7 +77,7 @@ msgstr ""
 
 #: ../../../src/python/array.rst:65:<autosummary>:1
 msgid "The size of the array's datatype in bytes."
-msgstr ""
+msgstr "陣列資料型別的位元組大小。"
 
 #: ../../../src/python/array.rst:65:<autosummary>:1
 msgid ":py:obj:`array.nbytes <mlx.core.array.nbytes>`\\"
@@ -85,7 +85,7 @@ msgstr ""
 
 #: ../../../src/python/array.rst:65:<autosummary>:1
 msgid "The number of bytes in the array."
-msgstr ""
+msgstr "陣列的位元組數。"
 
 #: ../../../src/python/array.rst:65:<autosummary>:1
 msgid ":py:obj:`array.ndim <mlx.core.array.ndim>`\\"
@@ -93,7 +93,7 @@ msgstr ""
 
 #: ../../../src/python/array.rst:65:<autosummary>:1
 msgid "The array's dimension."
-msgstr ""
+msgstr "陣列的維度。"
 
 #: ../../../src/python/array.rst:65:<autosummary>:1
 msgid ":py:obj:`array.shape <mlx.core.array.shape>`\\"
@@ -101,7 +101,7 @@ msgstr ""
 
 #: ../../../src/python/array.rst:65:<autosummary>:1
 msgid "The shape of the array as a Python tuple."
-msgstr ""
+msgstr "以 Python tuple 表示的陣列形狀。"
 
 #: ../../../src/python/array.rst:65:<autosummary>:1
 msgid ":py:obj:`array.size <mlx.core.array.size>`\\"
@@ -109,7 +109,7 @@ msgstr ""
 
 #: ../../../src/python/array.rst:65:<autosummary>:1
 msgid "Number of elements in the array."
-msgstr ""
+msgstr "陣列中的元素數量。"
 
 #: ../../../src/python/array.rst:65:<autosummary>:1
 msgid ":py:obj:`array.real <mlx.core.array.real>`\\"
@@ -117,7 +117,7 @@ msgstr ""
 
 #: ../../../src/python/array.rst:65:<autosummary>:1
 msgid "The real part of a complex array."
-msgstr ""
+msgstr "複數陣列的實部。"
 
 #: ../../../src/python/array.rst:65:<autosummary>:1
 msgid ":py:obj:`array.imag <mlx.core.array.imag>`\\"
@@ -125,7 +125,7 @@ msgstr ""
 
 #: ../../../src/python/array.rst:65:<autosummary>:1
 msgid "The imaginary part of a complex array."
-msgstr ""
+msgstr "複數陣列的虛部。"
 
 #: ../../../src/python/array.rst:65:<autosummary>:1
 msgid ""
@@ -134,7 +134,7 @@ msgstr ""
 
 #: ../../../src/python/array.rst:65:<autosummary>:1
 msgid "See :func:`abs`."
-msgstr ""
+msgstr "請參見 :func:`abs`。"
 
 #: ../../../src/python/array.rst:65:<autosummary>:1
 msgid ""
@@ -144,7 +144,7 @@ msgstr ""
 
 #: ../../../src/python/array.rst:65:<autosummary>:1
 msgid "See :func:`all`."
-msgstr ""
+msgstr "請參見 :func:`all`。"
 
 #: ../../../src/python/array.rst:65:<autosummary>:1
 msgid ""
@@ -154,7 +154,7 @@ msgstr ""
 
 #: ../../../src/python/array.rst:65:<autosummary>:1
 msgid "See :func:`any`."
-msgstr ""
+msgstr "請參見 :func:`any`。"
 
 #: ../../../src/python/array.rst:65:<autosummary>:1
 msgid ""
@@ -164,7 +164,7 @@ msgstr ""
 
 #: ../../../src/python/array.rst:65:<autosummary>:1
 msgid "See :func:`argmax`."
-msgstr ""
+msgstr "請參見 :func:`argmax`。"
 
 #: ../../../src/python/array.rst:65:<autosummary>:1
 msgid ""
@@ -174,7 +174,7 @@ msgstr ""
 
 #: ../../../src/python/array.rst:65:<autosummary>:1
 msgid "See :func:`argmin`."
-msgstr ""
+msgstr "請參見 :func:`argmin`。"
 
 #: ../../../src/python/array.rst:65:<autosummary>:1
 msgid ""
@@ -184,7 +184,7 @@ msgstr ""
 
 #: ../../../src/python/array.rst:65:<autosummary>:1
 msgid "See :func:`conj`."
-msgstr ""
+msgstr "請參見 :func:`conj`。"
 
 #: ../../../src/python/array.rst:65:<autosummary>:1
 msgid ""
@@ -193,7 +193,7 @@ msgstr ""
 
 #: ../../../src/python/array.rst:65:<autosummary>:1
 msgid "See :func:`cos`."
-msgstr ""
+msgstr "請參見 :func:`cos`。"
 
 #: ../../../src/python/array.rst:65:<autosummary>:1
 msgid ""
@@ -203,7 +203,7 @@ msgstr ""
 
 #: ../../../src/python/array.rst:65:<autosummary>:1
 msgid "See :func:`cummax`."
-msgstr ""
+msgstr "請參見 :func:`cummax`。"
 
 #: ../../../src/python/array.rst:65:<autosummary>:1
 msgid ""
@@ -213,7 +213,7 @@ msgstr ""
 
 #: ../../../src/python/array.rst:65:<autosummary>:1
 msgid "See :func:`cummin`."
-msgstr ""
+msgstr "請參見 :func:`cummin`。"
 
 #: ../../../src/python/array.rst:65:<autosummary>:1
 msgid ""
@@ -223,7 +223,7 @@ msgstr ""
 
 #: ../../../src/python/array.rst:65:<autosummary>:1
 msgid "See :func:`cumprod`."
-msgstr ""
+msgstr "請參見 :func:`cumprod`。"
 
 #: ../../../src/python/array.rst:65:<autosummary>:1
 msgid ""
@@ -233,7 +233,7 @@ msgstr ""
 
 #: ../../../src/python/array.rst:65:<autosummary>:1
 msgid "See :func:`cumsum`."
-msgstr ""
+msgstr "請參見 :func:`cumsum`。"
 
 #: ../../../src/python/array.rst:65:<autosummary>:1
 msgid ""
@@ -242,7 +242,7 @@ msgstr ""
 
 #: ../../../src/python/array.rst:65:<autosummary>:1
 msgid "Extract a diagonal or construct a diagonal matrix."
-msgstr ""
+msgstr "擷取對角線或建構對角矩陣。"
 
 #: ../../../src/python/array.rst:65:<autosummary>:1
 msgid ""
@@ -252,7 +252,7 @@ msgstr ""
 
 #: ../../../src/python/array.rst:65:<autosummary>:1
 msgid "See :func:`diagonal`."
-msgstr ""
+msgstr "請參見 :func:`diagonal`。"
 
 #: ../../../src/python/array.rst:65:<autosummary>:1
 msgid ""
@@ -261,7 +261,7 @@ msgstr ""
 
 #: ../../../src/python/array.rst:65:<autosummary>:1
 msgid "See :func:`exp`."
-msgstr ""
+msgstr "請參見 :func:`exp`。"
 
 #: ../../../src/python/array.rst:65:<autosummary>:1
 msgid ""
@@ -271,7 +271,7 @@ msgstr ""
 
 #: ../../../src/python/array.rst:65:<autosummary>:1
 msgid "See :func:`flatten`."
-msgstr ""
+msgstr "請參見 :func:`flatten`。"
 
 #: ../../../src/python/array.rst:65:<autosummary>:1
 msgid ""
@@ -280,7 +280,7 @@ msgstr ""
 
 #: ../../../src/python/array.rst:65:<autosummary>:1
 msgid "See :func:`log`."
-msgstr ""
+msgstr "請參見 :func:`log`。"
 
 #: ../../../src/python/array.rst:65:<autosummary>:1
 msgid ""
@@ -290,7 +290,7 @@ msgstr ""
 
 #: ../../../src/python/array.rst:65:<autosummary>:1
 msgid "See :func:`log10`."
-msgstr ""
+msgstr "請參見 :func:`log10`。"
 
 #: ../../../src/python/array.rst:65:<autosummary>:1
 msgid ""
@@ -300,7 +300,7 @@ msgstr ""
 
 #: ../../../src/python/array.rst:65:<autosummary>:1
 msgid "See :func:`log1p`."
-msgstr ""
+msgstr "請參見 :func:`log1p`。"
 
 #: ../../../src/python/array.rst:65:<autosummary>:1
 msgid ""
@@ -310,7 +310,7 @@ msgstr ""
 
 #: ../../../src/python/array.rst:65:<autosummary>:1
 msgid "See :func:`log2`."
-msgstr ""
+msgstr "請參見 :func:`log2`。"
 
 #: ../../../src/python/array.rst:65:<autosummary>:1
 msgid ""
@@ -320,7 +320,7 @@ msgstr ""
 
 #: ../../../src/python/array.rst:65:<autosummary>:1
 msgid "See :func:`logcumsumexp`."
-msgstr ""
+msgstr "請參見 :func:`logcumsumexp`。"
 
 #: ../../../src/python/array.rst:65:<autosummary>:1
 msgid ""
@@ -330,7 +330,7 @@ msgstr ""
 
 #: ../../../src/python/array.rst:65:<autosummary>:1
 msgid "See :func:`logsumexp`."
-msgstr ""
+msgstr "請參見 :func:`logsumexp`。"
 
 #: ../../../src/python/array.rst:65:<autosummary>:1
 msgid ""
@@ -340,7 +340,7 @@ msgstr ""
 
 #: ../../../src/python/array.rst:65:<autosummary>:1
 msgid "See :func:`max`."
-msgstr ""
+msgstr "請參見 :func:`max`。"
 
 #: ../../../src/python/array.rst:65:<autosummary>:1
 msgid ""
@@ -350,7 +350,7 @@ msgstr ""
 
 #: ../../../src/python/array.rst:65:<autosummary>:1
 msgid "See :func:`mean`."
-msgstr ""
+msgstr "請參見 :func:`mean`。"
 
 #: ../../../src/python/array.rst:65:<autosummary>:1
 msgid ""
@@ -360,7 +360,7 @@ msgstr ""
 
 #: ../../../src/python/array.rst:65:<autosummary>:1
 msgid "See :func:`min`."
-msgstr ""
+msgstr "請參見 :func:`min`。"
 
 #: ../../../src/python/array.rst:65:<autosummary>:1
 msgid ""
@@ -370,7 +370,7 @@ msgstr ""
 
 #: ../../../src/python/array.rst:65:<autosummary>:1
 msgid "See :func:`moveaxis`."
-msgstr ""
+msgstr "請參見 :func:`moveaxis`。"
 
 #: ../../../src/python/array.rst:65:<autosummary>:1
 msgid ""
@@ -380,7 +380,7 @@ msgstr ""
 
 #: ../../../src/python/array.rst:65:<autosummary>:1
 msgid "See :func:`prod`."
-msgstr ""
+msgstr "請參見 :func:`prod`。"
 
 #: ../../../src/python/array.rst:65:<autosummary>:1
 msgid ""
@@ -390,7 +390,7 @@ msgstr ""
 
 #: ../../../src/python/array.rst:65:<autosummary>:1
 msgid "See :func:`reciprocal`."
-msgstr ""
+msgstr "請參見 :func:`reciprocal`。"
 
 #: ../../../src/python/array.rst:65:<autosummary>:1
 msgid ""
@@ -402,7 +402,7 @@ msgstr ""
 msgid ""
 "Equivalent to :func:`reshape` but the shape can be passed either as a :obj:"
 "`tuple` or as separate arguments."
-msgstr ""
+msgstr "等同於 :func:`reshape`，但形狀可用 :obj:`tuple` 或分開參數傳入。"
 
 #: ../../../src/python/array.rst:65:<autosummary>:1
 msgid ""
@@ -412,7 +412,7 @@ msgstr ""
 
 #: ../../../src/python/array.rst:65:<autosummary>:1
 msgid "See :func:`round`."
-msgstr ""
+msgstr "請參見 :func:`round`。"
 
 #: ../../../src/python/array.rst:65:<autosummary>:1
 msgid ""
@@ -422,7 +422,7 @@ msgstr ""
 
 #: ../../../src/python/array.rst:65:<autosummary>:1
 msgid "See :func:`rsqrt`."
-msgstr ""
+msgstr "請參見 :func:`rsqrt`。"
 
 #: ../../../src/python/array.rst:65:<autosummary>:1
 msgid ""
@@ -431,7 +431,7 @@ msgstr ""
 
 #: ../../../src/python/array.rst:65:<autosummary>:1
 msgid "See :func:`sin`."
-msgstr ""
+msgstr "請參見 :func:`sin`。"
 
 #: ../../../src/python/array.rst:65:<autosummary>:1
 msgid ""
@@ -441,7 +441,7 @@ msgstr ""
 
 #: ../../../src/python/array.rst:65:<autosummary>:1
 msgid "See :func:`split`."
-msgstr ""
+msgstr "請參見 :func:`split`。"
 
 #: ../../../src/python/array.rst:65:<autosummary>:1
 msgid ""
@@ -451,7 +451,7 @@ msgstr ""
 
 #: ../../../src/python/array.rst:65:<autosummary>:1
 msgid "See :func:`sqrt`."
-msgstr ""
+msgstr "請參見 :func:`sqrt`。"
 
 #: ../../../src/python/array.rst:65:<autosummary>:1
 msgid ""
@@ -461,7 +461,7 @@ msgstr ""
 
 #: ../../../src/python/array.rst:65:<autosummary>:1
 msgid "See :func:`square`."
-msgstr ""
+msgstr "請參見 :func:`square`。"
 
 #: ../../../src/python/array.rst:65:<autosummary>:1
 msgid ""
@@ -471,7 +471,7 @@ msgstr ""
 
 #: ../../../src/python/array.rst:65:<autosummary>:1
 msgid "See :func:`squeeze`."
-msgstr ""
+msgstr "請參見 :func:`squeeze`。"
 
 #: ../../../src/python/array.rst:65:<autosummary>:1
 msgid ""
@@ -481,7 +481,7 @@ msgstr ""
 
 #: ../../../src/python/array.rst:65:<autosummary>:1
 msgid "See :func:`std`."
-msgstr ""
+msgstr "請參見 :func:`std`。"
 
 #: ../../../src/python/array.rst:65:<autosummary>:1
 msgid ""
@@ -491,7 +491,7 @@ msgstr ""
 
 #: ../../../src/python/array.rst:65:<autosummary>:1
 msgid "See :func:`sum`."
-msgstr ""
+msgstr "請參見 :func:`sum`。"
 
 #: ../../../src/python/array.rst:65:<autosummary>:1
 msgid ""
@@ -501,7 +501,7 @@ msgstr ""
 
 #: ../../../src/python/array.rst:65:<autosummary>:1
 msgid "See :func:`swapaxes`."
-msgstr ""
+msgstr "請參見 :func:`swapaxes`。"
 
 #: ../../../src/python/array.rst:65:<autosummary>:1
 msgid ""
@@ -513,7 +513,7 @@ msgstr ""
 msgid ""
 "Equivalent to :func:`transpose` but the axes can be passed either as a tuple "
 "or as separate arguments."
-msgstr ""
+msgstr "等同於 :func:`transpose`，但軸可用 tuple 或分開參數傳入。"
 
 #: ../../../src/python/array.rst:65:<autosummary>:1
 msgid ":py:obj:`array.T <mlx.core.array.T>`\\"
@@ -521,7 +521,7 @@ msgstr ""
 
 #: ../../../src/python/array.rst:65:<autosummary>:1
 msgid "Equivalent to calling ``self.transpose()`` with no arguments."
-msgstr ""
+msgstr "等同於呼叫 ``self.transpose()`` 且不帶參數。"
 
 #: ../../../src/python/array.rst:65:<autosummary>:1
 msgid ""
@@ -531,7 +531,7 @@ msgstr ""
 
 #: ../../../src/python/array.rst:65:<autosummary>:1
 msgid "See :func:`var`."
-msgstr ""
+msgstr "請參見 :func:`var`。"
 
 #: ../../../src/python/array.rst:65:<autosummary>:1
 msgid ""
@@ -541,4 +541,4 @@ msgstr ""
 
 #: ../../../src/python/array.rst:65:<autosummary>:1
 msgid "See :func:`view`."
-msgstr ""
+msgstr "請參見 :func:`view`。"

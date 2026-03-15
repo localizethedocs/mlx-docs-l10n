@@ -24,9 +24,9 @@ msgstr ""
 #: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/activations.py:docstring
 #: of mlx.nn.layers.activations.log_sigmoid:1
 msgid "Applies the Log Sigmoid function."
-msgstr ""
+msgstr "套用對數 sigmoid 函式。"
 
 #: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/activations.py:docstring
 #: of mlx.nn.layers.activations.log_sigmoid:3
 msgid "Applies :math:`\\log(\\sigma(x)) = -\\log(1 + e^{-x})` element wise."
-msgstr ""
+msgstr "逐元素套用 :math:`\\log(\\sigma(x)) = -\\log(1 + e^{-x})`。"

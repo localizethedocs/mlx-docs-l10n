@@ -24,7 +24,7 @@ msgstr ""
 #: ../../../../../../.conda/lib/python3.12/site-packages/mlx/optimizers/optimizers.py:docstring
 #: of mlx.optimizers.optimizers.Adamax:1
 msgid "The Adamax optimizer, a variant of Adam based on the infinity norm [1]."
-msgstr ""
+msgstr "Adamax 最佳化器，是基於無窮範數的 Adam 變體 [1]。"
 
 #: ../../../../../../.conda/lib/python3.12/site-packages/mlx/optimizers/optimizers.py:docstring
 #: of mlx.optimizers.optimizers.Adamax:3
@@ -73,7 +73,7 @@ msgstr ""
 
 #: ../../../src/python/optimizers/_autosummary/mlx.optimizers.Adamax.rst:12
 msgid "Methods"
-msgstr ""
+msgstr "方法"
 
 #: ../../../src/python/optimizers/_autosummary/mlx.optimizers.Adamax.rst:17:<autosummary>:1
 msgid ""

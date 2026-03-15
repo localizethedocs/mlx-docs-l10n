@@ -24,7 +24,7 @@ msgstr ""
 #: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/activations.py:docstring
 #: of mlx.nn.layers.activations.glu:1
 msgid "Applies the gated linear unit function."
-msgstr ""
+msgstr "套用閘控線性單元（GLU）函式。"
 
 #: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/activations.py:docstring
 #: of mlx.nn.layers.activations.glu:3
@@ -32,6 +32,8 @@ msgid ""
 "This function splits the ``axis`` dimension of the input into two halves (:"
 "math:`a` and :math:`b`) and applies :math:`a * \\sigma(b)`."
 msgstr ""
+"此函式會將輸入的 ``axis`` 維度切成兩半（:math:`a` 與 :math:`b`），並套用 :"
+"math:`a * \\sigma(b)`。"
 
 #: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/activations.py:docstring
 #: of mlx.nn.layers.activations.glu:6
@@ -42,9 +44,9 @@ msgstr ""
 
 #: ../../../src/python/nn/_autosummary_functions/mlx.nn.glu.rst:0
 msgid "Parameters"
-msgstr ""
+msgstr "參數"
 
 #: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/activations.py:docstring
 #: of mlx.nn.layers.activations.glu:9
 msgid "The dimension to split along. Default: ``-1``"
-msgstr ""
+msgstr "要沿著切分的維度。預設：``-1``"

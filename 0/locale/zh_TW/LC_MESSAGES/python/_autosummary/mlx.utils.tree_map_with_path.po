@@ -27,6 +27,7 @@ msgid ""
 "Applies ``fn`` to the path and leaves of the Python tree ``tree`` and "
 "returns a new collection with the results."
 msgstr ""
+"將 ``fn`` 套用到 Python 樹 ``tree`` 的路徑與葉節點，並回傳包含結果的新集合。"
 
 #: ../../../../../../.conda/lib/python3.12/site-packages/mlx/utils.py:docstring
 #: of mlx.utils.tree_map_with_path:4

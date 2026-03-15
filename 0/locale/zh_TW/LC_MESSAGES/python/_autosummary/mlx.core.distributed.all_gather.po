@@ -23,7 +23,7 @@ msgstr ""
 
 #: ../../../docstring of mlx.core.distributed.all_gather:1
 msgid "Gather arrays from all processes."
-msgstr ""
+msgstr "從所有程序收集陣列。"
 
 #: ../../../docstring of mlx.core.distributed.all_gather:3
 msgid ""

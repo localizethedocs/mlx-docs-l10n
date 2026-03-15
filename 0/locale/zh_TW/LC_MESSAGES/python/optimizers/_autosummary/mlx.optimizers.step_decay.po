@@ -24,7 +24,7 @@ msgstr ""
 #: ../../../../../../.conda/lib/python3.12/site-packages/mlx/optimizers/schedulers.py:docstring
 #: of mlx.optimizers.schedulers.step_decay:1
 msgid "Make a step decay scheduler."
-msgstr ""
+msgstr "建立階梯衰減排程器。"
 
 #: ../../../../../../.conda/lib/python3.12/site-packages/mlx/optimizers/schedulers.py:docstring
 #: of mlx.optimizers.schedulers.step_decay:0

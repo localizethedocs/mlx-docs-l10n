@@ -23,7 +23,7 @@ msgstr ""
 
 #: ../../../docstring of mlx.core.random.laplace:1
 msgid "Sample numbers from a Laplace distribution."
-msgstr ""
+msgstr "從拉普拉斯分佈取樣。"
 
 #: ../../../src/python/_autosummary/mlx.core.random.laplace.rst:0
 msgid "Parameters"

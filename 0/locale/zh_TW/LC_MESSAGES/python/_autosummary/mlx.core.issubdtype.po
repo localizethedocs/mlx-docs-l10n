@@ -24,7 +24,7 @@ msgstr ""
 #: ../../../docstring of mlx.core.issubdtype:1
 msgid ""
 "Check if a :obj:`Dtype` or :obj:`DtypeCategory` is a subtype of another."
-msgstr ""
+msgstr "檢查 :obj:`Dtype` 或 :obj:`DtypeCategory` 是否為另一者的子型別。"
 
 #: ../../../docstring of mlx.core.issubdtype:0
 msgid "Parameters"

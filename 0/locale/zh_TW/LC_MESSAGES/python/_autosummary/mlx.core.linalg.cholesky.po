@@ -25,7 +25,7 @@ msgstr ""
 msgid ""
 "Compute the Cholesky decomposition of a real symmetric positive semi-"
 "definite matrix."
-msgstr ""
+msgstr "計算實對稱半正定矩陣的 Cholesky 分解。"
 
 #: ../../../docstring of mlx.core.linalg.cholesky:3
 msgid ""

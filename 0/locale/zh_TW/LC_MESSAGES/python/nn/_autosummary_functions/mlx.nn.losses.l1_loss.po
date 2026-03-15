@@ -24,7 +24,7 @@ msgstr ""
 #: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/losses.py:docstring
 #: of mlx.nn.losses.l1_loss:1
 msgid "Computes the L1 loss."
-msgstr ""
+msgstr "計算 L1 損失。"
 
 #: ../../../src/python/nn/_autosummary_functions/mlx.nn.losses.l1_loss.rst:0
 msgid "Parameters"

@@ -106,4 +106,4 @@ msgstr ""
 
 #: ../../../src/python/nn/_autosummary/mlx.nn.ConvTranspose3d.rst:12
 msgid "Methods"
-msgstr ""
+msgstr "方法"

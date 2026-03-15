@@ -24,7 +24,7 @@ msgstr ""
 #: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/losses.py:docstring
 #: of mlx.nn.losses.kl_div_loss:1
 msgid "Computes the Kullback-Leibler divergence loss."
-msgstr ""
+msgstr "計算 Kullback-Leibler 散度損失。"
 
 #: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/losses.py:docstring
 #: of mlx.nn.losses.kl_div_loss:3

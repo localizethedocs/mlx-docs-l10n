@@ -24,7 +24,7 @@ msgstr ""
 #: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/activations.py:docstring
 #: of mlx.nn.layers.activations.gelu:1
 msgid "Applies the Gaussian Error Linear Units function."
-msgstr ""
+msgstr "套用高斯誤差線性單元（GELU）函式。"
 
 #: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/activations.py:docstring
 #: of mlx.nn.layers.activations.gelu:3
@@ -36,11 +36,11 @@ msgstr ""
 #: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/activations.py:docstring
 #: of mlx.nn.layers.activations.gelu:6
 msgid "where :math:`\\Phi(x)` is the Gaussian CDF."
-msgstr ""
+msgstr "其中 :math:`\\Phi(x)` 為高斯 CDF。"
 
 #: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/activations.py:docstring
 #: of mlx.nn.layers.activations.gelu:8
 msgid ""
 "See also :func:`gelu_approx` and :func:`gelu_fast_approx` for faster "
 "approximations."
-msgstr ""
+msgstr "更快的近似版本請參見 :func:`gelu_approx` 與 :func:`gelu_fast_approx`。"

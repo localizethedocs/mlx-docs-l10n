@@ -23,28 +23,28 @@ msgstr ""
 
 #: ../../../docstring of mlx.core.array.astype:1
 msgid "Cast the array to a specified type."
-msgstr ""
+msgstr "將陣列轉型為指定型別。"
 
 #: ../../../src/python/_autosummary/mlx.core.array.astype.rst:0
 msgid "Parameters"
-msgstr ""
+msgstr "參數"
 
 #: ../../../docstring of mlx.core.array.astype:3
 msgid "Type to which the array is cast."
-msgstr ""
+msgstr "陣列要轉型到的型別。"
 
 #: ../../../docstring of mlx.core.array.astype:5
 msgid "Stream (or device) for the operation."
-msgstr ""
+msgstr "此操作的 stream（或 device）。"
 
 #: ../../../src/python/_autosummary/mlx.core.array.astype.rst:0
 msgid "Returns"
-msgstr ""
+msgstr "回傳"
 
 #: ../../../docstring of mlx.core.array.astype:8
 msgid "The array with type ``dtype``."
-msgstr ""
+msgstr "型別為 ``dtype`` 的陣列。"
 
 #: ../../../src/python/_autosummary/mlx.core.array.astype.rst:0
 msgid "Return type"
-msgstr ""
+msgstr "回傳型別"

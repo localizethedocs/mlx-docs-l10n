@@ -24,4 +24,4 @@ msgstr ""
 #: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/base.py:docstring
 #: of mlx.nn.layers.base.Module.children:1
 msgid "Return the direct descendants of this Module instance."
-msgstr ""
+msgstr "回傳此 Module 實例的直接子孫模組。"

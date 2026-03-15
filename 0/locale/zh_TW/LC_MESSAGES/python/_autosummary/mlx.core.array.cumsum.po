@@ -23,4 +23,4 @@ msgstr ""
 
 #: ../../../docstring of mlx.core.array.cumsum:1
 msgid "See :func:`cumsum`."
-msgstr ""
+msgstr "請參見 :func:`cumsum`。"

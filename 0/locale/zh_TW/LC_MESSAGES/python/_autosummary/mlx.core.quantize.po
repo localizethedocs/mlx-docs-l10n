@@ -110,7 +110,7 @@ msgstr ""
 
 #: ../../../docstring of mlx.core.quantize:39
 msgid "Notes"
-msgstr ""
+msgstr "備註"
 
 #: ../../../docstring of mlx.core.quantize:42
 msgid "Quantization modes"

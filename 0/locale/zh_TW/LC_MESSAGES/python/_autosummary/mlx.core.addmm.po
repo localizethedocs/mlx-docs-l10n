@@ -23,34 +23,34 @@ msgstr ""
 
 #: ../../../docstring of mlx.core.addmm:1
 msgid "Matrix multiplication with addition and optional scaling."
-msgstr ""
+msgstr "帶有加法與可選縮放的矩陣乘法。"
 
 #: ../../../docstring of mlx.core.addmm:3
 msgid ""
 "Perform the (possibly batched) matrix multiplication of two arrays and add "
 "to the result with optional scaling factors."
-msgstr ""
+msgstr "執行兩個陣列的（可能為批次的）矩陣乘法，並以可選縮放係數加到結果上。"
 
 #: ../../../src/python/_autosummary/mlx.core.addmm.rst:0
 msgid "Parameters"
-msgstr ""
+msgstr "參數"
 
 #: ../../../docstring of mlx.core.addmm:6 mlx.core.addmm:8 mlx.core.addmm:10
 msgid "Input array or scalar."
-msgstr ""
+msgstr "輸入陣列或純量。"
 
 #: ../../../docstring of mlx.core.addmm:12
 msgid ""
 "Scaling factor for the matrix product of ``a`` and ``b`` (default: ``1``)"
-msgstr ""
+msgstr "``a`` 與 ``b`` 矩陣乘積的縮放係數（預設：``1``）"
 
 #: ../../../docstring of mlx.core.addmm:15
 msgid "Scaling factor for ``c`` (default: ``1``)"
-msgstr ""
+msgstr "``c`` 的縮放係數（預設：``1``）"
 
 #: ../../../src/python/_autosummary/mlx.core.addmm.rst:0
 msgid "Returns"
-msgstr ""
+msgstr "回傳"
 
 #: ../../../docstring of mlx.core.addmm:18
 msgid "``alpha * (a @ b)  + beta * c``"
@@ -58,4 +58,4 @@ msgstr ""
 
 #: ../../../src/python/_autosummary/mlx.core.addmm.rst:0
 msgid "Return type"
-msgstr ""
+msgstr "回傳型別"

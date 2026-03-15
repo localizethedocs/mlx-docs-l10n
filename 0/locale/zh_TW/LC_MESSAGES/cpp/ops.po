@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../../src/cpp/ops.rst:4
 msgid "Operations"
-msgstr ""
+msgstr "運算"
 
 #: ../../../src/cpp/ops.rst:-1
 msgid ""

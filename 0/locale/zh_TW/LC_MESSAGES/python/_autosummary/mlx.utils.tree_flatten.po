@@ -24,7 +24,7 @@ msgstr ""
 #: ../../../../../../.conda/lib/python3.12/site-packages/mlx/utils.py:docstring
 #: of mlx.utils.tree_flatten:1
 msgid "Flattens a Python tree to a list of key, value tuples."
-msgstr ""
+msgstr "將 Python 樹狀結構扁平化為鍵、值元組的列表。"
 
 #: ../../../../../../.conda/lib/python3.12/site-packages/mlx/utils.py:docstring
 #: of mlx.utils.tree_flatten:3

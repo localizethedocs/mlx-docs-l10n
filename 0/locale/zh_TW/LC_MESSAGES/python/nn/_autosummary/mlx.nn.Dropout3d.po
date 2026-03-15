@@ -57,4 +57,4 @@ msgstr ""
 
 #: ../../../src/python/nn/_autosummary/mlx.nn.Dropout3d.rst:12
 msgid "Methods"
-msgstr ""
+msgstr "方法"
