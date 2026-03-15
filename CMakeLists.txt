@@ -190,7 +190,7 @@ get_members_of_json_object(
 # - For "main":
 #   - Set VERSION_TYPE    to "branch"
 #   - Set BRANCH_NAME     to "main"
-# - For "[MAJOR].[MINOR]":
+# - For "[MAJOR]":
 #   - Set VERSION_TYPE    to "tag"
 #   - Set TAG_PATTERN     to "^v([MAJOR])\\.([0-9]+)\\.([0-9]+)$"
 #   - Set TAG_SUFFIX      to ""
@@ -199,11 +199,10 @@ get_members_of_json_object(
 if     (VERSION MATCHES "^(main)$")
     set(VERSION_TYPE    "branch")
     set(BRANCH_NAME     "main")
-elseif (VERSION MATCHES "^([0-9]+)\\.([0-9]+)$")
+elseif (VERSION MATCHES "^([0-9]+)$")
     set(MAJOR           "${CMAKE_MATCH_1}")
-    set(MINOR           "${CMAKE_MATCH_2}")
     set(VERSION_TYPE    "tag")
-    set(TAG_PATTERN     "^v(${MAJOR})\\.(${MINOR})\\.([0-9]+)$")
+    set(TAG_PATTERN     "^v(${MAJOR})\\.([0-9]+)\\.([0-9]+)$")
     set(TAG_SUFFIX      "")
 else()
     message(FATAL_ERROR "Invalid VERSION value. (${VERSION})")
@@ -285,9 +284,9 @@ if     (VERSION MATCHES "^(main)$")
     set(VERSION_OF_OPENBLAS     "")
     set(VERSION_OF_OPENMPI      "")
     set(VERSION_OF_PYTHON       "3.12")
-elseif (VERSION MATCHES "^([0-9]+)\\.([0-9]+)$")
-    if     (VERSION VERSION_LESS_EQUAL    "0.30" AND
-            VERSION VERSION_GREATER_EQUAL "0.0")
+elseif (VERSION MATCHES "^([0-9]+)$")
+    if     (VERSION VERSION_LESS_EQUAL    "0" AND
+            VERSION VERSION_GREATER_EQUAL "0")
         set(VERSION_OF_ZSH          "")
         set(VERSION_OF_GCC          "13")
         set(VERSION_OF_BINUTILS     "")
