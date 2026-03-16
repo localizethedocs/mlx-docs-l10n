@@ -47,7 +47,7 @@ msgstr ""
 #: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/utils.py:docstring
 #: of mlx.nn.utils.fsdp_apply_gradients:0
 msgid "Parameters"
-msgstr ""
+msgstr "參數"
 
 #: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/utils.py:docstring
 #: of mlx.nn.utils.fsdp_apply_gradients:11
@@ -109,7 +109,7 @@ msgstr ""
 #: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/utils.py:docstring
 #: of mlx.nn.utils.fsdp_apply_gradients:0
 msgid "Returns"
-msgstr ""
+msgstr "回傳"
 
 #: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/utils.py:docstring
 #: of mlx.nn.utils.fsdp_apply_gradients:41
@@ -122,4 +122,4 @@ msgstr ""
 #: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/utils.py:docstring
 #: of mlx.nn.utils.fsdp_apply_gradients:46
 msgid "Example"
-msgstr ""
+msgstr "範例"
