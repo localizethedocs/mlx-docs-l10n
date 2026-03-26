@@ -16,9 +16,9 @@
       "branch" : "main",
       "commit" : 
       {
-        "date" : "2026-03-05 09:34:19 +0100",
-        "hash" : "be872ebdefbc769045e1fcde3e34b9e664488e13",
-        "title" : "[CUDA] implement Hadamard transform (#3179)"
+        "date" : "2026-03-20 20:15:48 -0700",
+        "hash" : "38ad257088fb2193ad47e527cf6534a689f30943",
+        "title" : "[Metal][Performance]: Add split-K for quantized matmul (small M) (#3120)"
       }
     },
     "zh_TW" : 
@@ -26,9 +26,9 @@
       "branch" : "main",
       "commit" : 
       {
-        "date" : "2026-03-05 09:34:19 +0100",
-        "hash" : "be872ebdefbc769045e1fcde3e34b9e664488e13",
-        "title" : "[CUDA] implement Hadamard transform (#3179)"
+        "date" : "2026-03-20 20:15:48 -0700",
+        "hash" : "38ad257088fb2193ad47e527cf6534a689f30943",
+        "title" : "[Metal][Performance]: Add split-K for quantized matmul (small M) (#3120)"
       }
     }
   },
