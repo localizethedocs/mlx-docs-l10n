@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MLX main\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-03-09 08:38+0000\n"
+"POT-Creation-Date: 2026-03-23 08:48+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -40,7 +40,7 @@ msgid "To install from PyPI your system must meet the following requirements:"
 msgstr ""
 
 #: ../../../src/install.rst:18
-msgid "Using an M series chip (Apple silicon)"
+msgid "Using `Apple silicon <https://support.apple.com/en-us/116943>`_"
 msgstr ""
 
 #: ../../../src/install.rst:19
