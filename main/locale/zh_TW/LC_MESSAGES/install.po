@@ -578,6 +578,3 @@ msgstr ""
 "若看到 ``\"x86_64\"``，請嘗試重新安裝 ``cmake``。若看到 ``\"arm64\"``，但建置"
 "時出現「Building for x86_64 on macOS is not supported.」錯誤，請用 ``rm -rf "
 "build/`` 清除建置快取後再試一次。"
-
-#~ msgid "Using an M series chip (Apple silicon)"
-#~ msgstr "使用 M 系列晶片（Apple silicon）"
