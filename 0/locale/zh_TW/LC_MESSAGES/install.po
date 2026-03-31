@@ -41,7 +41,7 @@ msgstr "要從 PyPI 安裝，你的系統必須符合下列需求："
 
 #: ../../../src/install.rst:18
 msgid "Using an M series chip (Apple silicon)"
-msgstr "使用 M 系列晶片（Apple silicon）"
+msgstr ""
 
 #: ../../../src/install.rst:19
 msgid "Using a native Python >= 3.10"

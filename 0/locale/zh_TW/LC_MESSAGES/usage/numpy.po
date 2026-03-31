@@ -165,7 +165,7 @@ msgstr ""
 msgid ""
 "Conversion from PyTorch tensors back to arrays must be done via intermediate "
 "NumPy arrays with ``numpy()``."
-msgstr "從 PyTorch 張量轉回陣列必須透過中間的 NumPy 陣列（使用 ``numpy()``）。"
+msgstr ""
 
 #: ../../../src/usage/numpy.rst:99
 msgid "JAX"
