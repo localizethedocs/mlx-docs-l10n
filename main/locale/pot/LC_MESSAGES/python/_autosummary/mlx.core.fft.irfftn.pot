@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MLX main\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-12-22 08:23+0000\n"
+"POT-Creation-Date: 2026-03-30 09:09+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -55,11 +55,17 @@ msgid ""
 "``None``."
 msgstr ""
 
+#: ../../../docstring of mlx.core.fft.irfftn:19
+msgid ""
+"One of ``\"backward\"``, ``\"ortho\"``, or ``\"forward\"``. Default is "
+"``\"backward\"``."
+msgstr ""
+
 #: ../../../src/python/_autosummary/mlx.core.fft.irfftn.rst:0
 msgid "Returns"
 msgstr ""
 
-#: ../../../docstring of mlx.core.fft.irfftn:20
+#: ../../../docstring of mlx.core.fft.irfftn:23
 msgid "The real array containing the inverse of :func:`rfftn`."
 msgstr ""
 
