@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MLX main\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-12-22 08:23+0000\n"
+"POT-Creation-Date: 2026-03-30 09:09+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -44,11 +44,17 @@ msgstr ""
 msgid "Axes along which to perform the FFT. The default is ``[-2, -1]``."
 msgstr ""
 
+#: ../../../docstring of mlx.core.fft.ifft2:13
+msgid ""
+"One of ``\"backward\"``, ``\"ortho\"``, or ``\"forward\"``. Default is "
+"``\"backward\"``."
+msgstr ""
+
 #: ../../../src/python/_autosummary/mlx.core.fft.ifft2.rst:0
 msgid "Returns"
 msgstr ""
 
-#: ../../../docstring of mlx.core.fft.ifft2:14
+#: ../../../docstring of mlx.core.fft.ifft2:17
 msgid "The inverse DFT of the input along the given axes."
 msgstr ""
 
