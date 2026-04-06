@@ -42,7 +42,7 @@ msgstr ""
 
 #: ../../../src/python/_autosummary/mlx.core.savez.rst:0
 msgid "Parameters"
-msgstr ""
+msgstr "參數"
 
 #: ../../../docstring of mlx.core.savez:18
 msgid "Path to file to which the arrays are saved."

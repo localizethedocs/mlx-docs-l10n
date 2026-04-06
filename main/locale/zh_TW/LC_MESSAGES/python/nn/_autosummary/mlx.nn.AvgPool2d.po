@@ -55,7 +55,7 @@ msgstr ""
 
 #: ../../../src/python/nn/_autosummary/mlx.nn.AvgPool2d.rst:0
 msgid "Parameters"
-msgstr ""
+msgstr "參數"
 
 #: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/pooling.py:docstring
 #: of mlx.nn.layers.pooling.AvgPool2d:13

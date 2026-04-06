@@ -39,11 +39,11 @@ msgstr ""
 
 #: ../../../src/python/_autosummary/mlx.core.roll.rst:0
 msgid "Parameters"
-msgstr ""
+msgstr "參數"
 
 #: ../../../docstring of mlx.core.roll:9
 msgid "Input array"
-msgstr ""
+msgstr "輸入陣列"
 
 #: ../../../docstring of mlx.core.roll:11
 msgid ""

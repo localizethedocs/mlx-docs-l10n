@@ -31,7 +31,7 @@ msgstr ""
 
 #: ../../../src/python/_autosummary/mlx.core.fast.metal_kernel.rst:0
 msgid "Parameters"
-msgstr ""
+msgstr "參數"
 
 #: ../../../docstring of mlx.core.fast.metal_kernel:5
 msgid "Name for the kernel."
@@ -71,7 +71,7 @@ msgstr ""
 
 #: ../../../src/python/_autosummary/mlx.core.fast.metal_kernel.rst:0
 msgid "Returns"
-msgstr ""
+msgstr "回傳值"
 
 #: ../../../docstring of mlx.core.fast.metal_kernel:27
 msgid "Callable ``metal_kernel``."
@@ -79,7 +79,7 @@ msgstr ""
 
 #: ../../../docstring of mlx.core.fast.metal_kernel:30
 msgid "Example"
-msgstr ""
+msgstr "範例"
 
 #: ../../../docstring of mlx.core.fast.metal_kernel:31
 msgid ""
@@ -111,3 +111,30 @@ msgid ""
 "b = exp_elementwise(a)\n"
 "assert mx.allclose(b, mx.exp(a))"
 msgstr ""
+"def exp_elementwise(a: mx.array):\n"
+"    source = '''\n"
+"        uint elem = thread_position_in_grid.x;\n"
+"        T tmp = inp[elem];\n"
+"        out[elem] = metal::exp(tmp);\n"
+"    '''\n"
+"\n"
+"    kernel = mx.fast.metal_kernel(\n"
+"        name=\"myexp\",\n"
+"        input_names=[\"inp\"],\n"
+"        output_names=[\"out\"],\n"
+"        source=source\n"
+"    )\n"
+"    outputs = kernel(\n"
+"        inputs=[a],\n"
+"        template=[(\"T\", mx.float32)],\n"
+"        grid=(a.size, 1, 1),\n"
+"        threadgroup=(256, 1, 1),\n"
+"        output_shapes=[a.shape],\n"
+"        output_dtypes=[a.dtype],\n"
+"        verbose=True,\n"
+"    )\n"
+"    return outputs[0]\n"
+"\n"
+"a = mx.random.normal(shape=(4, 16)).astype(mx.float16)\n"
+"b = exp_elementwise(a)\n"
+"assert mx.allclose(b, mx.exp(a))"

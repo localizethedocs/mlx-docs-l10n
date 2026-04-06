@@ -27,7 +27,7 @@ msgstr ""
 
 #: ../../../src/python/_autosummary/mlx.core.stream.rst:0
 msgid "Parameters"
-msgstr ""
+msgstr "參數"
 
 #: ../../../docstring of mlx.core.stream:3
 msgid "The :obj:`Stream` or :obj:`Device` to set as the default."
@@ -35,7 +35,7 @@ msgstr ""
 
 #: ../../../src/python/_autosummary/mlx.core.stream.rst:0
 msgid "Returns"
-msgstr ""
+msgstr "回傳值"
 
 #: ../../../docstring of mlx.core.stream:5
 msgid "A context manager that sets the default device and stream."

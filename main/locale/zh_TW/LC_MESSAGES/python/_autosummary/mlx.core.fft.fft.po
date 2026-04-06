@@ -23,15 +23,15 @@ msgstr ""
 
 #: ../../../docstring of mlx.core.fft.fft:1
 msgid "One dimensional discrete Fourier Transform."
-msgstr ""
+msgstr "一維離散傅立葉變換。"
 
 #: ../../../src/python/_autosummary/mlx.core.fft.fft.rst:0
 msgid "Parameters"
-msgstr ""
+msgstr "參數"
 
 #: ../../../docstring of mlx.core.fft.fft:3
 msgid "The input array."
-msgstr ""
+msgstr "輸入陣列。"
 
 #: ../../../docstring of mlx.core.fft.fft:5
 msgid ""
@@ -52,7 +52,7 @@ msgstr ""
 
 #: ../../../src/python/_autosummary/mlx.core.fft.fft.rst:0
 msgid "Returns"
-msgstr ""
+msgstr "回傳值"
 
 #: ../../../docstring of mlx.core.fft.fft:16
 msgid "The DFT of the input along the given axis."
@@ -60,4 +60,4 @@ msgstr ""
 
 #: ../../../src/python/_autosummary/mlx.core.fft.fft.rst:0
 msgid "Return type"
-msgstr ""
+msgstr "回傳值型別"

@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../../src/python/_autosummary/mlx.core.array.reshape.rst:2
 msgid "mlx.core.array.reshape"
-msgstr ""
+msgstr "mlx.core.array.reshape"
 
 #: ../../../docstring of mlx.core.array.reshape:1
 msgid ""

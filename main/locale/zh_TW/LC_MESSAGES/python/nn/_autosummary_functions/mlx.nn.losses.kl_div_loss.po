@@ -38,7 +38,7 @@ msgstr ""
 
 #: ../../../src/python/nn/_autosummary_functions/mlx.nn.losses.kl_div_loss.rst:0
 msgid "Parameters"
-msgstr ""
+msgstr "參數"
 
 #: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/losses.py:docstring
 #: of mlx.nn.losses.kl_div_loss:9
@@ -64,7 +64,7 @@ msgstr ""
 
 #: ../../../src/python/nn/_autosummary_functions/mlx.nn.losses.kl_div_loss.rst:0
 msgid "Returns"
-msgstr ""
+msgstr "回傳值"
 
 #: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/losses.py:docstring
 #: of mlx.nn.losses.kl_div_loss:19
@@ -73,4 +73,4 @@ msgstr ""
 
 #: ../../../src/python/nn/_autosummary_functions/mlx.nn.losses.kl_div_loss.rst:0
 msgid "Return type"
-msgstr ""
+msgstr "回傳值型別"

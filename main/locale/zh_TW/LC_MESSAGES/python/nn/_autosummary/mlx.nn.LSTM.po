@@ -81,7 +81,7 @@ msgstr ""
 
 #: ../../../src/python/nn/_autosummary/mlx.nn.LSTM.rst:0
 msgid "Parameters"
-msgstr ""
+msgstr "參數"
 
 #: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/recurrent.py:docstring
 #: of mlx.nn.layers.recurrent.LSTM:27

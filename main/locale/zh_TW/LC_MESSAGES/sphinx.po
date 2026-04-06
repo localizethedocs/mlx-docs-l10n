@@ -1895,12 +1895,12 @@ msgstr ""
 #: domains/c/__init__.py:339 domains/cpp/__init__.py:502
 #: domains/javascript.py:287 domains/python/_object.py:221
 msgid "Returns"
-msgstr ""
+msgstr "回傳值"
 
 #: domains/c/__init__.py:345 domains/javascript.py:293
 #: domains/python/_object.py:227
 msgid "Return type"
-msgstr ""
+msgstr "回傳值型別"
 
 #: domains/javascript.py:370
 #, python-format
@@ -2965,7 +2965,7 @@ msgstr ""
 #: domains/c/__init__.py:326 domains/cpp/__init__.py:483
 #: domains/python/_object.py:190 ext/napoleon/docstring.py:974
 msgid "Parameters"
-msgstr ""
+msgstr "參數"
 
 #: domains/python/_object.py:206
 msgid "Variables"
@@ -3625,7 +3625,7 @@ msgstr ""
 
 #: ext/napoleon/docstring.py:895
 msgid "Example"
-msgstr ""
+msgstr "範例"
 
 #: ext/napoleon/docstring.py:896
 msgid "Examples"

@@ -36,7 +36,7 @@ msgstr ""
 
 #: ../../../docstring of mlx.core.linalg.eigh:0
 msgid "Parameters"
-msgstr ""
+msgstr "參數"
 
 #: ../../../docstring of mlx.core.linalg.eigh:8
 msgid "Input array. Must be a real symmetric or complex Hermitian matrix."
@@ -56,7 +56,7 @@ msgstr ""
 
 #: ../../../docstring of mlx.core.linalg.eigh:0
 msgid "Returns"
-msgstr ""
+msgstr "回傳值"
 
 #: ../../../docstring of mlx.core.linalg.eigh:18
 msgid ""
@@ -67,7 +67,7 @@ msgstr ""
 
 #: ../../../docstring of mlx.core.linalg.eigh:0
 msgid "Return type"
-msgstr ""
+msgstr "回傳值型別"
 
 #: ../../../docstring of mlx.core.linalg.eigh:25
 msgid ""
@@ -77,4 +77,4 @@ msgstr ""
 
 #: ../../../docstring of mlx.core.linalg.eigh:29
 msgid "Example"
-msgstr ""
+msgstr "範例"

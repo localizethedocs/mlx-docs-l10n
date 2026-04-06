@@ -34,11 +34,11 @@ msgstr ""
 
 #: ../../../src/python/_autosummary/mlx.core.linalg.tri_inv.rst:0
 msgid "Parameters"
-msgstr ""
+msgstr "參數"
 
 #: ../../../docstring of mlx.core.linalg.tri_inv:7
 msgid "Input array."
-msgstr ""
+msgstr "輸入陣列。"
 
 #: ../../../docstring of mlx.core.linalg.tri_inv:9
 msgid "Whether the array is upper or lower triangular. Defaults to ``False``."
@@ -52,7 +52,7 @@ msgstr ""
 
 #: ../../../src/python/_autosummary/mlx.core.linalg.tri_inv.rst:0
 msgid "Returns"
-msgstr ""
+msgstr "回傳值"
 
 #: ../../../docstring of mlx.core.linalg.tri_inv:15
 msgid "``ainv`` such that ``dot(a, ainv) = dot(ainv, a) = eye(a.shape[0])``"
@@ -60,4 +60,4 @@ msgstr ""
 
 #: ../../../src/python/_autosummary/mlx.core.linalg.tri_inv.rst:0
 msgid "Return type"
-msgstr ""
+msgstr "回傳值型別"

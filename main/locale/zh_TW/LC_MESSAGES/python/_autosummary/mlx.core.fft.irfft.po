@@ -33,11 +33,11 @@ msgstr ""
 
 #: ../../../src/python/_autosummary/mlx.core.fft.irfft.rst:0
 msgid "Parameters"
-msgstr ""
+msgstr "參數"
 
 #: ../../../docstring of mlx.core.fft.irfft:6
 msgid "The input array."
-msgstr ""
+msgstr "輸入陣列。"
 
 #: ../../../docstring of mlx.core.fft.irfft:8
 msgid ""
@@ -58,7 +58,7 @@ msgstr ""
 
 #: ../../../src/python/_autosummary/mlx.core.fft.irfft.rst:0
 msgid "Returns"
-msgstr ""
+msgstr "回傳值"
 
 #: ../../../docstring of mlx.core.fft.irfft:20
 msgid "The real array containing the inverse of :func:`rfft`."
@@ -66,4 +66,4 @@ msgstr ""
 
 #: ../../../src/python/_autosummary/mlx.core.fft.irfft.rst:0
 msgid "Return type"
-msgstr ""
+msgstr "回傳值型別"

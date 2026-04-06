@@ -55,7 +55,7 @@ msgstr ""
 
 #: ../../../src/python/_autosummary/mlx.utils.tree_flatten.rst:0
 msgid "Parameters"
-msgstr ""
+msgstr "參數"
 
 #: ../../../../../../.conda/lib/python3.12/site-packages/mlx/utils.py:docstring
 #: of mlx.utils.tree_flatten:22
@@ -83,7 +83,7 @@ msgstr ""
 
 #: ../../../src/python/_autosummary/mlx.utils.tree_flatten.rst:0
 msgid "Returns"
-msgstr ""
+msgstr "回傳值"
 
 #: ../../../../../../.conda/lib/python3.12/site-packages/mlx/utils.py:docstring
 #: of mlx.utils.tree_flatten:34
@@ -102,4 +102,4 @@ msgstr ""
 
 #: ../../../src/python/_autosummary/mlx.utils.tree_flatten.rst:0
 msgid "Return type"
-msgstr ""
+msgstr "回傳值型別"

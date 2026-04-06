@@ -31,15 +31,15 @@ msgstr ""
 
 #: ../../../src/python/_autosummary/mlx.core.broadcast_arrays.rst:0
 msgid "Parameters"
-msgstr ""
+msgstr "參數"
 
 #: ../../../docstring of mlx.core.broadcast_arrays:5
 msgid "The input arrays."
-msgstr ""
+msgstr "輸入陣列。"
 
 #: ../../../src/python/_autosummary/mlx.core.broadcast_arrays.rst:0
 msgid "Returns"
-msgstr ""
+msgstr "回傳值"
 
 #: ../../../docstring of mlx.core.broadcast_arrays:8
 msgid "The output arrays with the broadcasted shape."
@@ -47,4 +47,4 @@ msgstr ""
 
 #: ../../../src/python/_autosummary/mlx.core.broadcast_arrays.rst:0
 msgid "Return type"
-msgstr ""
+msgstr "回傳值型別"

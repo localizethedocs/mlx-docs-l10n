@@ -30,7 +30,7 @@ msgstr ""
 
 #: ../../../src/python/_autosummary/mlx.core.diag.rst:0
 msgid "Parameters"
-msgstr ""
+msgstr "參數"
 
 #: ../../../docstring of mlx.core.diag:6
 msgid "1-D or 2-D input array."
@@ -42,7 +42,7 @@ msgstr ""
 
 #: ../../../src/python/_autosummary/mlx.core.diag.rst:0
 msgid "Returns"
-msgstr ""
+msgstr "回傳值"
 
 #: ../../../docstring of mlx.core.diag:12
 msgid "The extracted diagonal or the constructed diagonal matrix."
@@ -50,4 +50,4 @@ msgstr ""
 
 #: ../../../src/python/_autosummary/mlx.core.diag.rst:0
 msgid "Return type"
-msgstr ""
+msgstr "回傳值型別"

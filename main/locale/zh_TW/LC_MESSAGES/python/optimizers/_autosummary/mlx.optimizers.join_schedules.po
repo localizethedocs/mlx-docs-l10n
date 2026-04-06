@@ -29,7 +29,7 @@ msgstr "合併多個排程以建立新的排程。"
 #: ../../../../../../.conda/lib/python3.12/site-packages/mlx/optimizers/schedulers.py:docstring
 #: of mlx.optimizers.schedulers.join_schedules:0
 msgid "Parameters"
-msgstr ""
+msgstr "參數"
 
 #: ../../../../../../.conda/lib/python3.12/site-packages/mlx/optimizers/schedulers.py:docstring
 #: of mlx.optimizers.schedulers.join_schedules:3
@@ -48,4 +48,4 @@ msgstr ""
 #: ../../../../../../.conda/lib/python3.12/site-packages/mlx/optimizers/schedulers.py:docstring
 #: of mlx.optimizers.schedulers.join_schedules:12
 msgid "Example"
-msgstr ""
+msgstr "範例"

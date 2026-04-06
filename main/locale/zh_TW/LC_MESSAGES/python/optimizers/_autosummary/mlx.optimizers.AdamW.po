@@ -46,7 +46,7 @@ msgstr ""
 
 #: ../../../src/python/optimizers/_autosummary/mlx.optimizers.AdamW.rst:0
 msgid "Parameters"
-msgstr ""
+msgstr "參數"
 
 #: ../../../../../../.conda/lib/python3.12/site-packages/mlx/optimizers/optimizers.py:docstring
 #: of mlx.optimizers.optimizers.AdamW:13

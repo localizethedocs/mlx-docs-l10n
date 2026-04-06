@@ -37,11 +37,11 @@ msgstr ""
 #: ../../../../../../.conda/lib/python3.12/site-packages/mlx/optimizers/optimizers.py:docstring
 #: of mlx.optimizers.optimizers.clip_grad_norm:8
 msgid "Example"
-msgstr ""
+msgstr "範例"
 
 #: ../../../src/python/_autosummary/mlx.optimizers.clip_grad_norm.rst:0
 msgid "Parameters"
-msgstr ""
+msgstr "參數"
 
 #: ../../../../../../.conda/lib/python3.12/site-packages/mlx/optimizers/optimizers.py:docstring
 #: of mlx.optimizers.optimizers.clip_grad_norm:14
@@ -55,7 +55,7 @@ msgstr ""
 
 #: ../../../src/python/_autosummary/mlx.optimizers.clip_grad_norm.rst:0
 msgid "Returns"
-msgstr ""
+msgstr "回傳值"
 
 #: ../../../../../../.conda/lib/python3.12/site-packages/mlx/optimizers/optimizers.py:docstring
 #: of mlx.optimizers.optimizers.clip_grad_norm:19
@@ -64,4 +64,4 @@ msgstr ""
 
 #: ../../../src/python/_autosummary/mlx.optimizers.clip_grad_norm.rst:0
 msgid "Return type"
-msgstr ""
+msgstr "回傳值型別"

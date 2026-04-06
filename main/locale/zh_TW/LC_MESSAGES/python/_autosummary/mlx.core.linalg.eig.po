@@ -40,11 +40,11 @@ msgstr ""
 
 #: ../../../docstring of mlx.core.linalg.eig:0
 msgid "Parameters"
-msgstr ""
+msgstr "參數"
 
 #: ../../../docstring of mlx.core.linalg.eig:10
 msgid "The input array."
-msgstr ""
+msgstr "輸入陣列。"
 
 #: ../../../docstring of mlx.core.linalg.eig:12
 msgid ""
@@ -54,7 +54,7 @@ msgstr ""
 
 #: ../../../docstring of mlx.core.linalg.eig:0
 msgid "Returns"
-msgstr ""
+msgstr "回傳值"
 
 #: ../../../docstring of mlx.core.linalg.eig:16
 msgid ""
@@ -65,8 +65,8 @@ msgstr ""
 
 #: ../../../docstring of mlx.core.linalg.eig:0
 msgid "Return type"
-msgstr ""
+msgstr "回傳值型別"
 
 #: ../../../docstring of mlx.core.linalg.eig:22
 msgid "Example"
-msgstr ""
+msgstr "範例"

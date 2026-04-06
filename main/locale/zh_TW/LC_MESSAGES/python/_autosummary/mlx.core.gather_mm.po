@@ -60,11 +60,11 @@ msgstr ""
 
 #: ../../../src/python/_autosummary/mlx.core.gather_mm.rst:0
 msgid "Parameters"
-msgstr ""
+msgstr "參數"
 
 #: ../../../docstring of mlx.core.gather_mm:21 mlx.core.gather_mm:23
 msgid "Input array."
-msgstr ""
+msgstr "輸入陣列。"
 
 #: ../../../docstring of mlx.core.gather_mm:25
 msgid "Integer indices for ``a``. Default: ``None``"
@@ -82,12 +82,12 @@ msgstr ""
 
 #: ../../../src/python/_autosummary/mlx.core.gather_mm.rst:0
 msgid "Returns"
-msgstr ""
+msgstr "回傳值"
 
 #: ../../../docstring of mlx.core.gather_mm:33
 msgid "The output array."
-msgstr ""
+msgstr "輸出陣列。"
 
 #: ../../../src/python/_autosummary/mlx.core.gather_mm.rst:0
 msgid "Return type"
-msgstr ""
+msgstr "回傳值型別"

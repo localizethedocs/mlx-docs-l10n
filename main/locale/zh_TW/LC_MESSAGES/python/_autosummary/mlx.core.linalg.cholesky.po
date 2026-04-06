@@ -42,11 +42,11 @@ msgstr ""
 
 #: ../../../src/python/_autosummary/mlx.core.linalg.cholesky.rst:0
 msgid "Parameters"
-msgstr ""
+msgstr "參數"
 
 #: ../../../docstring of mlx.core.linalg.cholesky:9
 msgid "Input array."
-msgstr ""
+msgstr "輸入陣列。"
 
 #: ../../../docstring of mlx.core.linalg.cholesky:11
 msgid ""
@@ -62,7 +62,7 @@ msgstr ""
 
 #: ../../../src/python/_autosummary/mlx.core.linalg.cholesky.rst:0
 msgid "Returns"
-msgstr ""
+msgstr "回傳值"
 
 #: ../../../docstring of mlx.core.linalg.cholesky:18
 msgid ""
@@ -73,4 +73,4 @@ msgstr ""
 
 #: ../../../src/python/_autosummary/mlx.core.linalg.cholesky.rst:0
 msgid "Return type"
-msgstr ""
+msgstr "回傳值型別"

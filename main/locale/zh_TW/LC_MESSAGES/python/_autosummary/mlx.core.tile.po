@@ -28,11 +28,11 @@ msgstr ""
 
 #: ../../../src/python/_autosummary/mlx.core.tile.rst:0
 msgid "Parameters"
-msgstr ""
+msgstr "參數"
 
 #: ../../../docstring of mlx.core.tile:3
 msgid "Input array"
-msgstr ""
+msgstr "輸入陣列"
 
 #: ../../../docstring of mlx.core.tile:5
 msgid "The number of times to repeat ``a`` along each axis."
@@ -40,7 +40,7 @@ msgstr ""
 
 #: ../../../src/python/_autosummary/mlx.core.tile.rst:0
 msgid "Returns"
-msgstr ""
+msgstr "回傳值"
 
 #: ../../../docstring of mlx.core.tile:8
 msgid "The tiled array."
@@ -48,4 +48,4 @@ msgstr ""
 
 #: ../../../src/python/_autosummary/mlx.core.tile.rst:0
 msgid "Return type"
-msgstr ""
+msgstr "回傳值型別"

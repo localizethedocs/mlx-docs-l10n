@@ -44,7 +44,7 @@ msgstr ""
 
 #: ../../../src/python/nn/_autosummary_functions/mlx.nn.losses.log_cosh_loss.rst:0
 msgid "Parameters"
-msgstr ""
+msgstr "參數"
 
 #: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/losses.py:docstring
 #: of mlx.nn.losses.log_cosh_loss:14
@@ -65,7 +65,7 @@ msgstr ""
 
 #: ../../../src/python/nn/_autosummary_functions/mlx.nn.losses.log_cosh_loss.rst:0
 msgid "Returns"
-msgstr ""
+msgstr "回傳值"
 
 #: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/losses.py:docstring
 #: of mlx.nn.losses.log_cosh_loss:22
@@ -74,4 +74,4 @@ msgstr ""
 
 #: ../../../src/python/nn/_autosummary_functions/mlx.nn.losses.log_cosh_loss.rst:0
 msgid "Return type"
-msgstr ""
+msgstr "回傳值型別"

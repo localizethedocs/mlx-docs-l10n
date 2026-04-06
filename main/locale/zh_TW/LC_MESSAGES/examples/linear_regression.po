@@ -19,14 +19,14 @@ msgstr ""
 
 #: ../../../src/examples/linear_regression.rst:4
 msgid "Linear Regression"
-msgstr "線性回歸"
+msgstr "線性迴歸"
 
 #: ../../../src/examples/linear_regression.rst:6
 msgid ""
 "Let's implement a basic linear regression model as a starting point to learn "
 "MLX. First import the core package and setup some problem metadata:"
 msgstr ""
-"讓我們實作一個基本的線性回歸模型，作為學習 MLX 的起點。先匯入核心軟體包並設定"
+"讓我們實作一個基本的線性迴歸模型，作為學習 MLX 的起點。先匯入核心軟體包並設定"
 "一些問題的中繼資料："
 
 #: ../../../src/examples/linear_regression.rst:9
@@ -38,6 +38,12 @@ msgid ""
 "num_iters = 10_000  # iterations of SGD\n"
 "lr = 0.01  # learning rate for SGD"
 msgstr ""
+"import mlx.core as mx\n"
+"\n"
+"num_features = 100\n"
+"num_examples = 1_000\n"
+"num_iters = 10_000  # iterations of SGD\n"
+"lr = 0.01  # learning rate for SGD"
 
 #: ../../../src/examples/linear_regression.rst:19
 msgid "We'll generate a synthetic dataset by:"
@@ -85,6 +91,10 @@ msgid ""
 "\n"
 "grad_fn = mx.grad(loss_fn)"
 msgstr ""
+"def loss_fn(w):\n"
+"    return 0.5 * mx.mean(mx.square(X @ w - y))\n"
+"\n"
+"grad_fn = mx.grad(loss_fn)"
 
 #: ../../../src/examples/linear_regression.rst:48
 msgid ""
@@ -133,7 +143,7 @@ msgid ""
 "github.com/ml-explore/mlx/tree/main/examples/python/logistic_regression."
 "py>`_ examples are available in the MLX GitHub repo."
 msgstr ""
-"完整的 `線性回歸 <https://github.com/ml-explore/mlx/tree/main/examples/"
-"python/linear_regression.py>`_ 與 `邏輯迴歸 <https://github.com/ml-explore/"
-"mlx/tree/main/examples/python/logistic_regression.py>`_ 範例可在 MLX GitHub "
-"專案中取得。"
+"完整的\\ `線性迴歸 <https://github.com/ml-explore/mlx/tree/main/examples/"
+"python/linear_regression.py>`_\\ 與\\ `邏輯迴歸 <https://github.com/ml-"
+"explore/mlx/tree/main/examples/python/logistic_regression.py>`_\\ 範例可在 "
+"MLX GitHub 專案中取得。"

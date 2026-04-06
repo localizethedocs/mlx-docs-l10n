@@ -27,7 +27,7 @@ msgstr "回傳一個計算 ``fun`` 梯度的函式。"
 
 #: ../../../src/python/_autosummary/mlx.core.grad.rst:0
 msgid "Parameters"
-msgstr ""
+msgstr "參數"
 
 #: ../../../docstring of mlx.core.grad:3
 msgid ""
@@ -51,7 +51,7 @@ msgstr ""
 
 #: ../../../src/python/_autosummary/mlx.core.grad.rst:0
 msgid "Returns"
-msgstr ""
+msgstr "回傳值"
 
 #: ../../../docstring of mlx.core.grad:18
 msgid ""
@@ -61,4 +61,4 @@ msgstr ""
 
 #: ../../../src/python/_autosummary/mlx.core.grad.rst:0
 msgid "Return type"
-msgstr ""
+msgstr "回傳值型別"

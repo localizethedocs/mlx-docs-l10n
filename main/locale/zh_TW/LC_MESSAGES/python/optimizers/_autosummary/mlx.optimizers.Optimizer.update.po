@@ -30,7 +30,7 @@ msgstr "將梯度套用到模型參數，並用新參數更新模型。"
 
 #: ../../../src/python/optimizers/_autosummary/mlx.optimizers.Optimizer.update.rst:0
 msgid "Parameters"
-msgstr ""
+msgstr "參數"
 
 #: ../../../../../../.conda/lib/python3.12/site-packages/mlx/optimizers/optimizers.py:docstring
 #: of mlx.optimizers.optimizers.Optimizer.update:4

@@ -53,7 +53,7 @@ msgstr ""
 
 #: ../../../src/python/nn/_autosummary/mlx.nn.Linear.rst:0
 msgid "Parameters"
-msgstr ""
+msgstr "參數"
 
 #: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/linear.py:docstring
 #: of mlx.nn.layers.linear.Linear:15

@@ -27,7 +27,7 @@ msgstr ""
 
 #: ../../../src/python/_autosummary/mlx.core.eye.rst:0
 msgid "Parameters"
-msgstr ""
+msgstr "參數"
 
 #: ../../../docstring of mlx.core.eye:3
 msgid "The number of rows in the output."
@@ -43,7 +43,7 @@ msgstr ""
 
 #: ../../../docstring of mlx.core.eye:9
 msgid "Data type of the output array. Defaults to float32."
-msgstr ""
+msgstr "輸出陣列的資料型別。默認值為 float32。"
 
 #: ../../../docstring of mlx.core.eye:11
 msgid "Stream or device. Defaults to None."
@@ -51,7 +51,7 @@ msgstr ""
 
 #: ../../../src/python/_autosummary/mlx.core.eye.rst:0
 msgid "Returns"
-msgstr ""
+msgstr "回傳值"
 
 #: ../../../docstring of mlx.core.eye:14
 msgid ""
@@ -61,4 +61,4 @@ msgstr ""
 
 #: ../../../src/python/_autosummary/mlx.core.eye.rst:0
 msgid "Return type"
-msgstr ""
+msgstr "回傳值型別"

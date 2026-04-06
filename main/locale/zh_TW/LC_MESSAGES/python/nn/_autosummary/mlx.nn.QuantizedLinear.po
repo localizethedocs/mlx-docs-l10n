@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../../src/python/nn/_autosummary/mlx.nn.QuantizedLinear.rst:2
 msgid "mlx.nn.QuantizedLinear"
-msgstr ""
+msgstr "mlx.nn.QuantizedLinear"
 
 #: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/quantized.py:docstring
 #: of mlx.nn.layers.quantized.QuantizedLinear:1
@@ -45,7 +45,7 @@ msgstr ""
 
 #: ../../../src/python/nn/_autosummary/mlx.nn.QuantizedLinear.rst:0
 msgid "Parameters"
-msgstr ""
+msgstr "參數"
 
 #: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/quantized.py:docstring
 #: of mlx.nn.layers.quantized.QuantizedLinear:10

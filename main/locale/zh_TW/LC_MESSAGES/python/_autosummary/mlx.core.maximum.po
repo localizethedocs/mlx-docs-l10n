@@ -33,7 +33,7 @@ msgstr ""
 
 #: ../../../src/python/_autosummary/mlx.core.maximum.rst:0
 msgid "Parameters"
-msgstr ""
+msgstr "參數"
 
 #: ../../../docstring of mlx.core.maximum:6 mlx.core.maximum:8
 msgid "Input array or scalar."
@@ -41,7 +41,7 @@ msgstr ""
 
 #: ../../../src/python/_autosummary/mlx.core.maximum.rst:0
 msgid "Returns"
-msgstr ""
+msgstr "回傳值"
 
 #: ../../../docstring of mlx.core.maximum:11
 msgid "The max of ``a`` and ``b``."
@@ -49,4 +49,4 @@ msgstr ""
 
 #: ../../../src/python/_autosummary/mlx.core.maximum.rst:0
 msgid "Return type"
-msgstr ""
+msgstr "回傳值型別"

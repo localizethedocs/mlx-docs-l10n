@@ -29,12 +29,12 @@ msgstr ""
 #: ../../../../../../.conda/lib/python3.12/site-packages/mlx/optimizers/schedulers.py:docstring
 #: of mlx.optimizers.schedulers.cosine_decay:0
 msgid "Parameters"
-msgstr ""
+msgstr "參數"
 
 #: ../../../../../../.conda/lib/python3.12/site-packages/mlx/optimizers/schedulers.py:docstring
 #: of mlx.optimizers.schedulers.cosine_decay:3
 msgid "Initial value."
-msgstr ""
+msgstr "初始值。"
 
 #: ../../../../../../.conda/lib/python3.12/site-packages/mlx/optimizers/schedulers.py:docstring
 #: of mlx.optimizers.schedulers.cosine_decay:5
@@ -46,9 +46,9 @@ msgstr ""
 #: ../../../../../../.conda/lib/python3.12/site-packages/mlx/optimizers/schedulers.py:docstring
 #: of mlx.optimizers.schedulers.cosine_decay:8
 msgid "Final value to decay to. Default: ``0``."
-msgstr ""
+msgstr "衰減的最終值。默認值：``0``。"
 
 #: ../../../../../../.conda/lib/python3.12/site-packages/mlx/optimizers/schedulers.py:docstring
 #: of mlx.optimizers.schedulers.cosine_decay:12
 msgid "Example"
-msgstr ""
+msgstr "範例"

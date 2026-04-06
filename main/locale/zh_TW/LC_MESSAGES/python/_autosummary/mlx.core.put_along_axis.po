@@ -27,7 +27,7 @@ msgstr ""
 
 #: ../../../src/python/_autosummary/mlx.core.put_along_axis.rst:0
 msgid "Parameters"
-msgstr ""
+msgstr "參數"
 
 #: ../../../docstring of mlx.core.put_along_axis:3
 msgid "Destination array."
@@ -51,12 +51,12 @@ msgstr ""
 
 #: ../../../src/python/_autosummary/mlx.core.put_along_axis.rst:0
 msgid "Returns"
-msgstr ""
+msgstr "回傳值"
 
 #: ../../../docstring of mlx.core.put_along_axis:16
 msgid "The output array."
-msgstr ""
+msgstr "輸出陣列。"
 
 #: ../../../src/python/_autosummary/mlx.core.put_along_axis.rst:0
 msgid "Return type"
-msgstr ""
+msgstr "回傳值型別"

@@ -29,7 +29,7 @@ msgstr ""
 #: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/init.py:docstring
 #: of mlx.nn.init.constant:0
 msgid "Parameters"
-msgstr ""
+msgstr "參數"
 
 #: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/init.py:docstring
 #: of mlx.nn.init.constant:3
@@ -44,7 +44,7 @@ msgstr ""
 #: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/init.py:docstring
 #: of mlx.nn.init.constant:0
 msgid "Returns"
-msgstr ""
+msgstr "回傳值"
 
 #: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/init.py:docstring
 #: of mlx.nn.init.constant:9
@@ -56,9 +56,9 @@ msgstr ""
 #: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/init.py:docstring
 #: of mlx.nn.init.constant:0
 msgid "Return type"
-msgstr ""
+msgstr "回傳值型別"
 
 #: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/init.py:docstring
 #: of mlx.nn.init.constant:14
 msgid "Example"
-msgstr ""
+msgstr "範例"

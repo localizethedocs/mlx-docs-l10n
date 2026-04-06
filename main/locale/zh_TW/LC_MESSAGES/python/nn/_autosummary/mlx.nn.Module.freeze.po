@@ -36,7 +36,7 @@ msgstr ""
 #: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/base.py:docstring
 #: of mlx.nn.layers.base.Module.freeze:7
 msgid "Example"
-msgstr ""
+msgstr "範例"
 
 #: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/base.py:docstring
 #: of mlx.nn.layers.base.Module.freeze:8
@@ -54,7 +54,7 @@ msgstr ""
 
 #: ../../../src/python/nn/_autosummary/mlx.nn.Module.freeze.rst:0
 msgid "Parameters"
-msgstr ""
+msgstr "參數"
 
 #: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/base.py:docstring
 #: of mlx.nn.layers.base.Module.freeze:16
@@ -79,7 +79,7 @@ msgstr ""
 
 #: ../../../src/python/nn/_autosummary/mlx.nn.Module.freeze.rst:0
 msgid "Returns"
-msgstr ""
+msgstr "回傳值"
 
 #: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/base.py:docstring
 #: of mlx.nn.layers.base.Module.freeze:28

@@ -47,15 +47,15 @@ msgstr "備註"
 
 #: ../../../src/usage/saving_and_loading.rst:18
 msgid "NumPy"
-msgstr ""
+msgstr "NumPy"
 
 #: ../../../src/usage/saving_and_loading.rst:19
 msgid "``.npy``"
-msgstr ""
+msgstr "``.npy``"
 
 #: ../../../src/usage/saving_and_loading.rst:20
 msgid ":func:`save`"
-msgstr ""
+msgstr ":func:`save`"
 
 #: ../../../src/usage/saving_and_loading.rst:21
 msgid "Single arrays only"
@@ -67,7 +67,7 @@ msgstr "NumPy 封存"
 
 #: ../../../src/usage/saving_and_loading.rst:23
 msgid "``.npz``"
-msgstr ""
+msgstr "``.npz``"
 
 #: ../../../src/usage/saving_and_loading.rst:24
 msgid ":func:`savez` and :func:`savez_compressed`"

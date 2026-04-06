@@ -85,7 +85,7 @@ msgstr ""
 
 #: ../../../src/python/_autosummary/mlx.core.fast.scaled_dot_product_attention.rst:0
 msgid "Parameters"
-msgstr ""
+msgstr "參數"
 
 #: ../../../docstring of mlx.core.fast.scaled_dot_product_attention:25
 msgid "Queries with shape ``[B, N_q, T_q, D]``."
@@ -121,19 +121,19 @@ msgstr ""
 
 #: ../../../src/python/_autosummary/mlx.core.fast.scaled_dot_product_attention.rst:0
 msgid "Returns"
-msgstr ""
+msgstr "回傳值"
 
 #: ../../../docstring of mlx.core.fast.scaled_dot_product_attention:47
 msgid "The output array."
-msgstr ""
+msgstr "輸出陣列。"
 
 #: ../../../src/python/_autosummary/mlx.core.fast.scaled_dot_product_attention.rst:0
 msgid "Return type"
-msgstr ""
+msgstr "回傳值型別"
 
 #: ../../../docstring of mlx.core.fast.scaled_dot_product_attention:51
 msgid "Example"
-msgstr ""
+msgstr "範例"
 
 #: ../../../docstring of mlx.core.fast.scaled_dot_product_attention:52
 msgid ""

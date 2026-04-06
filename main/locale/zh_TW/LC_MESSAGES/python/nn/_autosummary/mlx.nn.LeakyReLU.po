@@ -33,7 +33,7 @@ msgstr "就是 ``mx.maximum(negative_slope * x, x)``。"
 
 #: ../../../src/python/nn/_autosummary/mlx.nn.LeakyReLU.rst:0
 msgid "Parameters"
-msgstr ""
+msgstr "參數"
 
 #: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/activations.py:docstring
 #: of mlx.nn.layers.activations.LeakyReLU:5

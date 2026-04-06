@@ -33,7 +33,7 @@ msgstr ""
 
 #: ../../../src/python/_autosummary/mlx.core.random.multivariate_normal.rst:0
 msgid "Parameters"
-msgstr ""
+msgstr "參數"
 
 #: ../../../docstring of mlx.core.random.multivariate_normal:6
 msgid "array of shape ``(..., n)``, the mean of the distribution."
@@ -62,7 +62,7 @@ msgstr ""
 
 #: ../../../src/python/_autosummary/mlx.core.random.multivariate_normal.rst:0
 msgid "Returns"
-msgstr ""
+msgstr "回傳值"
 
 #: ../../../docstring of mlx.core.random.multivariate_normal:23
 msgid "The output array of random values."
@@ -70,4 +70,4 @@ msgstr ""
 
 #: ../../../src/python/_autosummary/mlx.core.random.multivariate_normal.rst:0
 msgid "Return type"
-msgstr ""
+msgstr "回傳值型別"

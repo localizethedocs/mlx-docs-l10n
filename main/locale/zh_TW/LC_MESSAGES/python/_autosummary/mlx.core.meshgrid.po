@@ -27,7 +27,7 @@ msgstr ""
 
 #: ../../../src/python/_autosummary/mlx.core.meshgrid.rst:0
 msgid "Parameters"
-msgstr ""
+msgstr "參數"
 
 #: ../../../docstring of mlx.core.meshgrid:3
 msgid "Input arrays."
@@ -45,15 +45,16 @@ msgid ""
 "Cartesian ('xy') or matrix ('ij') indexing of the output arrays. Defaults to "
 "``'xy'``."
 msgstr ""
+"輸出陣列的笛卡爾座標（'xy'）或矩陣（'ij'）索引方式。默認值為 ``'xy'``。"
 
 #: ../../../src/python/_autosummary/mlx.core.meshgrid.rst:0
 msgid "Returns"
-msgstr ""
+msgstr "回傳值"
 
 #: ../../../docstring of mlx.core.meshgrid:13
 msgid "The output arrays."
-msgstr ""
+msgstr "輸出陣列。"
 
 #: ../../../src/python/_autosummary/mlx.core.meshgrid.rst:0
 msgid "Return type"
-msgstr ""
+msgstr "回傳值型別"

@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../../src/python/_autosummary/mlx.core.quantize.rst:2
 msgid "mlx.core.quantize"
-msgstr ""
+msgstr "mlx.core.quantize"
 
 #: ../../../docstring of mlx.core.quantize:1
 msgid "Quantize the array ``w``."
@@ -46,7 +46,7 @@ msgstr ""
 
 #: ../../../docstring of mlx.core.quantize:0
 msgid "Parameters"
-msgstr ""
+msgstr "參數"
 
 #: ../../../docstring of mlx.core.quantize:15
 msgid "Array to be quantized"
@@ -68,7 +68,7 @@ msgstr ""
 
 #: ../../../docstring of mlx.core.quantize:25
 msgid "The quantization mode. Default: ``\"affine\"``."
-msgstr ""
+msgstr "量化模式。默認值：``\"affine\"``。"
 
 #: ../../../docstring of mlx.core.quantize:27
 msgid ""
@@ -78,7 +78,7 @@ msgstr ""
 
 #: ../../../docstring of mlx.core.quantize:0
 msgid "Returns"
-msgstr ""
+msgstr "回傳值"
 
 #: ../../../docstring of mlx.core.quantize:31
 msgid ""
@@ -106,7 +106,7 @@ msgstr ""
 
 #: ../../../docstring of mlx.core.quantize:0
 msgid "Return type"
-msgstr ""
+msgstr "回傳值型別"
 
 #: ../../../docstring of mlx.core.quantize:39
 msgid "Notes"
@@ -114,7 +114,7 @@ msgstr "備註"
 
 #: ../../../docstring of mlx.core.quantize:42
 msgid "Quantization modes"
-msgstr ""
+msgstr "量化模式"
 
 #: ../../../docstring of mlx.core.quantize:45
 msgid "mode"

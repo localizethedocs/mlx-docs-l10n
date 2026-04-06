@@ -29,7 +29,7 @@ msgstr "初始化通訊後端並建立全域通訊群組。"
 
 #: ../../../docstring of mlx.core.distributed.init:4
 msgid "Example"
-msgstr ""
+msgstr "範例"
 
 #: ../../../docstring of mlx.core.distributed.init:5
 msgid ""
@@ -40,7 +40,7 @@ msgstr ""
 
 #: ../../../src/python/_autosummary/mlx.core.distributed.init.rst:0
 msgid "Parameters"
-msgstr ""
+msgstr "參數"
 
 #: ../../../docstring of mlx.core.distributed.init:11
 msgid ""
@@ -59,7 +59,7 @@ msgstr ""
 
 #: ../../../src/python/_autosummary/mlx.core.distributed.init.rst:0
 msgid "Returns"
-msgstr ""
+msgstr "回傳值"
 
 #: ../../../docstring of mlx.core.distributed.init:22
 msgid "The group representing all the launched processes."
@@ -67,4 +67,4 @@ msgstr ""
 
 #: ../../../src/python/_autosummary/mlx.core.distributed.init.rst:0
 msgid "Return type"
-msgstr ""
+msgstr "回傳值型別"

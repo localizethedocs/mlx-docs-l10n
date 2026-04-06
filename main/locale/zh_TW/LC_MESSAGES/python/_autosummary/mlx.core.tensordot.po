@@ -27,11 +27,11 @@ msgstr ""
 
 #: ../../../src/python/_autosummary/mlx.core.tensordot.rst:0
 msgid "Parameters"
-msgstr ""
+msgstr "參數"
 
 #: ../../../docstring of mlx.core.tensordot:3 mlx.core.tensordot:5
 msgid "Input array"
-msgstr ""
+msgstr "輸入陣列"
 
 #: ../../../docstring of mlx.core.tensordot:7
 msgid ""
@@ -43,7 +43,7 @@ msgstr ""
 
 #: ../../../src/python/_autosummary/mlx.core.tensordot.rst:0
 msgid "Returns"
-msgstr ""
+msgstr "回傳值"
 
 #: ../../../docstring of mlx.core.tensordot:14
 msgid "The tensor dot product."
@@ -51,4 +51,4 @@ msgstr ""
 
 #: ../../../src/python/_autosummary/mlx.core.tensordot.rst:0
 msgid "Return type"
-msgstr ""
+msgstr "回傳值型別"

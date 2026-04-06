@@ -33,7 +33,7 @@ msgstr ""
 
 #: ../../../src/python/_autosummary/mlx.core.distributed.recv_like.rst:0
 msgid "Parameters"
-msgstr ""
+msgstr "參數"
 
 #: ../../../docstring of mlx.core.distributed.recv_like:6
 msgid "An array defining the shape and dtype of the array we are receiving."
@@ -57,7 +57,7 @@ msgstr ""
 
 #: ../../../src/python/_autosummary/mlx.core.distributed.recv_like.rst:0
 msgid "Returns"
-msgstr ""
+msgstr "回傳值"
 
 #: ../../../docstring of mlx.core.distributed.recv_like:19
 msgid "The array that was received from ``src``."
@@ -65,4 +65,4 @@ msgstr ""
 
 #: ../../../src/python/_autosummary/mlx.core.distributed.recv_like.rst:0
 msgid "Return type"
-msgstr ""
+msgstr "回傳值型別"
