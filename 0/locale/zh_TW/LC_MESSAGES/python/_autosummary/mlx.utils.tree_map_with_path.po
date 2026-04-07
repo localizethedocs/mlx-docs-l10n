@@ -39,7 +39,7 @@ msgstr ""
 #: ../../../../../../.conda/lib/python3.12/site-packages/mlx/utils.py:docstring
 #: of mlx.utils.tree_map_with_path:0
 msgid "Parameters"
-msgstr ""
+msgstr "參數"
 
 #: ../../../../../../.conda/lib/python3.12/site-packages/mlx/utils.py:docstring
 #: of mlx.utils.tree_map_with_path:7
@@ -71,7 +71,7 @@ msgstr ""
 #: ../../../../../../.conda/lib/python3.12/site-packages/mlx/utils.py:docstring
 #: of mlx.utils.tree_map_with_path:0
 msgid "Returns"
-msgstr ""
+msgstr "回傳值"
 
 #: ../../../../../../.conda/lib/python3.12/site-packages/mlx/utils.py:docstring
 #: of mlx.utils.tree_map_with_path:19
@@ -81,4 +81,4 @@ msgstr ""
 #: ../../../../../../.conda/lib/python3.12/site-packages/mlx/utils.py:docstring
 #: of mlx.utils.tree_map_with_path:22
 msgid "Example"
-msgstr ""
+msgstr "範例"

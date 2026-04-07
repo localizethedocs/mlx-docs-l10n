@@ -27,7 +27,7 @@ msgstr ""
 
 #: ../../../src/python/_autosummary/mlx.core.metal.start_capture.rst:0
 msgid "Parameters"
-msgstr ""
+msgstr "參數"
 
 #: ../../../docstring of mlx.core.metal.start_capture:3
 msgid ""

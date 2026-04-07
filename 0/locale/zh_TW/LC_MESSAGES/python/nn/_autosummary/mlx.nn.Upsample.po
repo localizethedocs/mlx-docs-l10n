@@ -61,7 +61,7 @@ msgstr ""
 
 #: ../../../src/python/nn/_autosummary/mlx.nn.Upsample.rst:0
 msgid "Parameters"
-msgstr ""
+msgstr "參數"
 
 #: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/upsample.py:docstring
 #: of mlx.nn.layers.upsample.Upsample:22

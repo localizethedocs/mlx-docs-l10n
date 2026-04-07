@@ -27,7 +27,7 @@ msgstr ""
 
 #: ../../../docstring of mlx.core.slice_update:0
 msgid "Parameters"
-msgstr ""
+msgstr "參數"
 
 #: ../../../docstring of mlx.core.slice_update:3
 msgid "The input array to update"
@@ -47,7 +47,7 @@ msgstr ""
 
 #: ../../../docstring of mlx.core.slice_update:0
 msgid "Returns"
-msgstr ""
+msgstr "回傳值"
 
 #: ../../../docstring of mlx.core.slice_update:12
 msgid "The output array with the same shape and type as the input."
@@ -55,8 +55,8 @@ msgstr ""
 
 #: ../../../docstring of mlx.core.slice_update:0
 msgid "Return type"
-msgstr ""
+msgstr "回傳值型別"
 
 #: ../../../docstring of mlx.core.slice_update:16
 msgid "Example"
-msgstr ""
+msgstr "範例"

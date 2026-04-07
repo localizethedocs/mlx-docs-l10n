@@ -36,7 +36,7 @@ msgstr ""
 
 #: ../../../src/python/nn/_autosummary/mlx.nn.Module.train.rst:0
 msgid "Parameters"
-msgstr ""
+msgstr "參數"
 
 #: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/base.py:docstring
 #: of mlx.nn.layers.base.Module.train:7
@@ -47,7 +47,7 @@ msgstr ""
 
 #: ../../../src/python/nn/_autosummary/mlx.nn.Module.train.rst:0
 msgid "Returns"
-msgstr ""
+msgstr "回傳值"
 
 #: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/base.py:docstring
 #: of mlx.nn.layers.base.Module.train:11

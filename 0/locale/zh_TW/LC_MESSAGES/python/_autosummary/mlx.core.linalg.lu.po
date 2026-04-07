@@ -44,11 +44,11 @@ msgstr ""
 
 #: ../../../src/python/_autosummary/mlx.core.linalg.lu.rst:0
 msgid "Parameters"
-msgstr ""
+msgstr "參數"
 
 #: ../../../docstring of mlx.core.linalg.lu:14
 msgid "Input array."
-msgstr ""
+msgstr "輸入陣列。"
 
 #: ../../../docstring of mlx.core.linalg.lu:16
 msgid ""
@@ -58,7 +58,7 @@ msgstr ""
 
 #: ../../../src/python/_autosummary/mlx.core.linalg.lu.rst:0
 msgid "Returns"
-msgstr ""
+msgstr "回傳值"
 
 #: ../../../docstring of mlx.core.linalg.lu:20
 msgid "The ``p``, ``L``, and ``U`` arrays, such that ``A = L[P, :] @ U``"
@@ -66,4 +66,4 @@ msgstr ""
 
 #: ../../../src/python/_autosummary/mlx.core.linalg.lu.rst:0
 msgid "Return type"
-msgstr ""
+msgstr "回傳值型別"

@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../../src/python/_autosummary/mlx.core.arccos.rst:2
 msgid "mlx.core.arccos"
-msgstr ""
+msgstr "mlx.core.arccos"
 
 #: ../../../docstring of mlx.core.arccos:1
 msgid "Element-wise inverse cosine."

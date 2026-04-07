@@ -40,11 +40,11 @@ msgstr ""
 
 #: ../../../src/python/_autosummary/mlx.core.take.rst:0
 msgid "Parameters"
-msgstr ""
+msgstr "參數"
 
 #: ../../../docstring of mlx.core.take:9
 msgid "Input array."
-msgstr ""
+msgstr "輸入陣列。"
 
 #: ../../../docstring of mlx.core.take:11
 msgid "Integer index or input array with integral type."
@@ -58,7 +58,7 @@ msgstr ""
 
 #: ../../../src/python/_autosummary/mlx.core.take.rst:0
 msgid "Returns"
-msgstr ""
+msgstr "回傳值"
 
 #: ../../../docstring of mlx.core.take:17
 msgid "The indexed values of ``a``."
@@ -66,4 +66,4 @@ msgstr ""
 
 #: ../../../src/python/_autosummary/mlx.core.take.rst:0
 msgid "Return type"
-msgstr ""
+msgstr "回傳值型別"

@@ -33,7 +33,7 @@ msgstr ""
 
 #: ../../../src/python/_autosummary/mlx.core.save_gguf.rst:0
 msgid "Parameters"
-msgstr ""
+msgstr "參數"
 
 #: ../../../docstring of mlx.core.save_gguf:7
 msgid "File in which the array is saved."

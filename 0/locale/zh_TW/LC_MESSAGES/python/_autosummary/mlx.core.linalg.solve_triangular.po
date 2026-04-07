@@ -28,12 +28,12 @@ msgstr ""
 
 #: ../../../src/python/_autosummary/mlx.core.linalg.solve_triangular.rst:0
 msgid "Parameters"
-msgstr ""
+msgstr "參數"
 
 #: ../../../docstring of mlx.core.linalg.solve_triangular:3
 #: mlx.core.linalg.solve_triangular:5
 msgid "Input array."
-msgstr ""
+msgstr "輸入陣列。"
 
 #: ../../../docstring of mlx.core.linalg.solve_triangular:7
 msgid "Whether the array is upper or lower triangular. Default: ``False``."
@@ -47,7 +47,7 @@ msgstr ""
 
 #: ../../../src/python/_autosummary/mlx.core.linalg.solve_triangular.rst:0
 msgid "Returns"
-msgstr ""
+msgstr "回傳值"
 
 #: ../../../docstring of mlx.core.linalg.solve_triangular:14
 msgid "The unique solution to the system ``AX = B``."
@@ -55,4 +55,4 @@ msgstr ""
 
 #: ../../../src/python/_autosummary/mlx.core.linalg.solve_triangular.rst:0
 msgid "Return type"
-msgstr ""
+msgstr "回傳值型別"

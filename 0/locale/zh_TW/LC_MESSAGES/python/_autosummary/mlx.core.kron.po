@@ -27,15 +27,15 @@ msgstr ""
 
 #: ../../../docstring of mlx.core.kron:0
 msgid "Parameters"
-msgstr ""
+msgstr "參數"
 
 #: ../../../docstring of mlx.core.kron:3
 msgid "The first input array."
-msgstr ""
+msgstr "第一個輸入陣列。"
 
 #: ../../../docstring of mlx.core.kron:5
 msgid "The second input array."
-msgstr ""
+msgstr "第二個輸入陣列。"
 
 #: ../../../docstring of mlx.core.kron:7
 msgid "Optional stream or device for execution. Default: ``None``."
@@ -43,7 +43,7 @@ msgstr ""
 
 #: ../../../docstring of mlx.core.kron:0
 msgid "Returns"
-msgstr ""
+msgstr "回傳值"
 
 #: ../../../docstring of mlx.core.kron:11
 msgid "The Kronecker product of ``a`` and ``b``."
@@ -51,7 +51,7 @@ msgstr ""
 
 #: ../../../docstring of mlx.core.kron:0
 msgid "Return type"
-msgstr ""
+msgstr "回傳值型別"
 
 #: ../../../docstring of mlx.core.kron:15
 msgid "Examples"

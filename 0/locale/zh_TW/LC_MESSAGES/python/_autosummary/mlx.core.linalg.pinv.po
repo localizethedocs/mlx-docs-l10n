@@ -35,11 +35,11 @@ msgstr ""
 
 #: ../../../src/python/_autosummary/mlx.core.linalg.pinv.rst:0
 msgid "Parameters"
-msgstr ""
+msgstr "參數"
 
 #: ../../../docstring of mlx.core.linalg.pinv:8
 msgid "Input array."
-msgstr ""
+msgstr "輸入陣列。"
 
 #: ../../../docstring of mlx.core.linalg.pinv:10
 msgid ""
@@ -49,7 +49,7 @@ msgstr ""
 
 #: ../../../src/python/_autosummary/mlx.core.linalg.pinv.rst:0
 msgid "Returns"
-msgstr ""
+msgstr "回傳值"
 
 #: ../../../docstring of mlx.core.linalg.pinv:14
 msgid "``aplus`` such that ``a @ aplus @ a = a``"
@@ -57,4 +57,4 @@ msgstr ""
 
 #: ../../../src/python/_autosummary/mlx.core.linalg.pinv.rst:0
 msgid "Return type"
-msgstr ""
+msgstr "回傳值型別"

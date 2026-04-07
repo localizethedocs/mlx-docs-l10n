@@ -51,11 +51,11 @@ msgstr "注意：不同於 :func:`array_equal`，此函式支援 numpy 風格廣
 
 #: ../../../src/python/_autosummary/mlx.core.isclose.rst:0
 msgid "Parameters"
-msgstr ""
+msgstr "參數"
 
 #: ../../../docstring of mlx.core.isclose:15 mlx.core.isclose:17
 msgid "Input array."
-msgstr ""
+msgstr "輸入陣列。"
 
 #: ../../../docstring of mlx.core.isclose:19
 msgid "Relative tolerance."
@@ -71,7 +71,7 @@ msgstr "若為 ``True``，NaN 會視為相等。預設為 ``False``。"
 
 #: ../../../src/python/_autosummary/mlx.core.isclose.rst:0
 msgid "Returns"
-msgstr ""
+msgstr "回傳值"
 
 #: ../../../docstring of mlx.core.isclose:27
 msgid "The boolean output scalar indicating if the arrays are close."
@@ -79,4 +79,4 @@ msgstr "布林輸出純量，表示陣列是否相近。"
 
 #: ../../../src/python/_autosummary/mlx.core.isclose.rst:0
 msgid "Return type"
-msgstr ""
+msgstr "回傳值型別"

@@ -34,7 +34,7 @@ msgstr ""
 
 #: ../../../docstring of mlx.core.export_to_dot:0
 msgid "Parameters"
-msgstr ""
+msgstr "參數"
 
 #: ../../../docstring of mlx.core.export_to_dot:7
 msgid "The file path to export to."
@@ -52,4 +52,4 @@ msgstr ""
 
 #: ../../../docstring of mlx.core.export_to_dot:16
 msgid "Example"
-msgstr ""
+msgstr "範例"

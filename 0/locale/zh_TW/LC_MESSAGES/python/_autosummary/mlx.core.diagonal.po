@@ -41,11 +41,11 @@ msgstr ""
 
 #: ../../../src/python/_autosummary/mlx.core.diagonal.rst:0
 msgid "Parameters"
-msgstr ""
+msgstr "參數"
 
 #: ../../../docstring of mlx.core.diagonal:11
 msgid "Input array"
-msgstr ""
+msgstr "輸入陣列"
 
 #: ../../../docstring of mlx.core.diagonal:13
 msgid ""
@@ -67,7 +67,7 @@ msgstr ""
 
 #: ../../../src/python/_autosummary/mlx.core.diagonal.rst:0
 msgid "Returns"
-msgstr ""
+msgstr "回傳值"
 
 #: ../../../docstring of mlx.core.diagonal:23
 msgid "The diagonals of the array."
@@ -75,4 +75,4 @@ msgstr ""
 
 #: ../../../src/python/_autosummary/mlx.core.diagonal.rst:0
 msgid "Return type"
-msgstr ""
+msgstr "回傳值型別"

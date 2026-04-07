@@ -27,7 +27,7 @@ msgstr ""
 
 #: ../../../src/python/_autosummary/mlx.core.contiguous.rst:0
 msgid "Parameters"
-msgstr ""
+msgstr "參數"
 
 #: ../../../docstring of mlx.core.contiguous:3
 msgid "The input to make contiguous"
@@ -39,7 +39,7 @@ msgstr ""
 
 #: ../../../src/python/_autosummary/mlx.core.contiguous.rst:0
 msgid "Returns"
-msgstr ""
+msgstr "回傳值"
 
 #: ../../../docstring of mlx.core.contiguous:8
 msgid "The row or col contiguous output."
@@ -47,4 +47,4 @@ msgstr ""
 
 #: ../../../src/python/_autosummary/mlx.core.contiguous.rst:0
 msgid "Return type"
-msgstr ""
+msgstr "回傳值型別"

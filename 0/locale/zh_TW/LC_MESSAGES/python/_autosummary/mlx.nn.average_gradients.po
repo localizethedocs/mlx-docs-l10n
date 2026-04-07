@@ -36,7 +36,7 @@ msgstr ""
 
 #: ../../../src/python/_autosummary/mlx.nn.average_gradients.rst:0
 msgid "Parameters"
-msgstr ""
+msgstr "參數"
 
 #: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/utils.py:docstring
 #: of mlx.nn.utils.average_gradients:6

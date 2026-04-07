@@ -34,7 +34,7 @@ msgstr ""
 
 #: ../../../src/python/_autosummary/mlx.core.random.bernoulli.rst:0
 msgid "Parameters"
-msgstr ""
+msgstr "參數"
 
 #: ../../../docstring of mlx.core.random.bernoulli:7
 msgid "Parameter of the Bernoulli distribution. Default: ``0.5``."
@@ -50,7 +50,7 @@ msgstr ""
 
 #: ../../../src/python/_autosummary/mlx.core.random.bernoulli.rst:0
 msgid "Returns"
-msgstr ""
+msgstr "回傳值"
 
 #: ../../../docstring of mlx.core.random.bernoulli:16
 msgid "The array of random integers."
@@ -58,4 +58,4 @@ msgstr ""
 
 #: ../../../src/python/_autosummary/mlx.core.random.bernoulli.rst:0
 msgid "Return type"
-msgstr ""
+msgstr "回傳值型別"

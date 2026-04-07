@@ -33,11 +33,11 @@ msgstr ""
 
 #: ../../../src/python/_autosummary/mlx.core.linalg.cross.rst:0
 msgid "Parameters"
-msgstr ""
+msgstr "參數"
 
 #: ../../../docstring of mlx.core.linalg.cross:7 mlx.core.linalg.cross:9
 msgid "Input array."
-msgstr ""
+msgstr "輸入陣列。"
 
 #: ../../../docstring of mlx.core.linalg.cross:11
 msgid "Axis along which to compute the cross product. Default: ``-1``."
@@ -51,7 +51,7 @@ msgstr ""
 
 #: ../../../src/python/_autosummary/mlx.core.linalg.cross.rst:0
 msgid "Returns"
-msgstr ""
+msgstr "回傳值"
 
 #: ../../../docstring of mlx.core.linalg.cross:18
 msgid "The cross product of ``a`` and ``b`` along the specified axis."
@@ -59,4 +59,4 @@ msgstr ""
 
 #: ../../../src/python/_autosummary/mlx.core.linalg.cross.rst:0
 msgid "Return type"
-msgstr ""
+msgstr "回傳值型別"

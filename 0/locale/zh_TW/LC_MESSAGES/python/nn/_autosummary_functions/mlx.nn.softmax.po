@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../../src/python/nn/_autosummary_functions/mlx.nn.softmax.rst:2
 msgid "mlx.nn.softmax"
-msgstr ""
+msgstr "mlx.nn.softmax"
 
 #: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/activations.py:docstring
 #: of mlx.nn.layers.activations.softmax:1

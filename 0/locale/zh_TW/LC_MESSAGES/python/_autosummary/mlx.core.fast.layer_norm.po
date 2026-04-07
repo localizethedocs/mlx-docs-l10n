@@ -31,11 +31,11 @@ msgstr ""
 
 #: ../../../src/python/_autosummary/mlx.core.fast.layer_norm.rst:0
 msgid "Parameters"
-msgstr ""
+msgstr "參數"
 
 #: ../../../docstring of mlx.core.fast.layer_norm:5
 msgid "Input array."
-msgstr ""
+msgstr "輸入陣列。"
 
 #: ../../../docstring of mlx.core.fast.layer_norm:7
 msgid ""
@@ -57,12 +57,12 @@ msgstr ""
 
 #: ../../../src/python/_autosummary/mlx.core.fast.layer_norm.rst:0
 msgid "Returns"
-msgstr ""
+msgstr "回傳值"
 
 #: ../../../docstring of mlx.core.fast.layer_norm:18
 msgid "The output array."
-msgstr ""
+msgstr "輸出陣列。"
 
 #: ../../../src/python/_autosummary/mlx.core.fast.layer_norm.rst:0
 msgid "Return type"
-msgstr ""
+msgstr "回傳值型別"

@@ -34,7 +34,7 @@ msgstr ""
 
 #: ../../../src/python/nn/_autosummary_functions/mlx.nn.losses.hinge_loss.rst:0
 msgid "Parameters"
-msgstr ""
+msgstr "參數"
 
 #: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/losses.py:docstring
 #: of mlx.nn.losses.hinge_loss:8
@@ -55,7 +55,7 @@ msgstr ""
 
 #: ../../../src/python/nn/_autosummary_functions/mlx.nn.losses.hinge_loss.rst:0
 msgid "Returns"
-msgstr ""
+msgstr "回傳值"
 
 #: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/losses.py:docstring
 #: of mlx.nn.losses.hinge_loss:16
@@ -64,4 +64,4 @@ msgstr ""
 
 #: ../../../src/python/nn/_autosummary_functions/mlx.nn.losses.hinge_loss.rst:0
 msgid "Return type"
-msgstr ""
+msgstr "回傳值型別"

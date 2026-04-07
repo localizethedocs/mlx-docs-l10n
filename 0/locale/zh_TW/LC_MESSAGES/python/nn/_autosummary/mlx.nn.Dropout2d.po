@@ -56,7 +56,7 @@ msgstr ""
 
 #: ../../../src/python/nn/_autosummary/mlx.nn.Dropout2d.rst:0
 msgid "Parameters"
-msgstr ""
+msgstr "參數"
 
 #: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/dropout.py:docstring
 #: of mlx.nn.layers.dropout.Dropout2d:19

@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../../src/python/_autosummary/mlx.core.quantized_matmul.rst:2
 msgid "mlx.core.quantized\\_matmul"
-msgstr ""
+msgstr "mlx.core.quantized\\_matmul"
 
 #: ../../../docstring of mlx.core.quantized_matmul:1
 msgid ""
@@ -31,15 +31,15 @@ msgstr ""
 
 #: ../../../src/python/_autosummary/mlx.core.quantized_matmul.rst:0
 msgid "Parameters"
-msgstr ""
+msgstr "參數"
 
 #: ../../../docstring of mlx.core.quantized_matmul:6
 msgid "Input array"
-msgstr ""
+msgstr "輸入陣列"
 
 #: ../../../docstring of mlx.core.quantized_matmul:8
 msgid "Quantized matrix packed in unsigned integers"
-msgstr ""
+msgstr "以無符號整數打包的量化矩陣"
 
 #: ../../../docstring of mlx.core.quantized_matmul:10
 msgid "The scales to use per ``group_size`` elements of ``w``"
@@ -72,16 +72,16 @@ msgstr ""
 
 #: ../../../docstring of mlx.core.quantized_matmul:27
 msgid "The quantization mode. Default: ``\"affine\"``."
-msgstr ""
+msgstr "量化模式。默認值：``\"affine\"``。"
 
 #: ../../../src/python/_autosummary/mlx.core.quantized_matmul.rst:0
 msgid "Returns"
-msgstr ""
+msgstr "回傳值"
 
 #: ../../../docstring of mlx.core.quantized_matmul:30
 msgid "The result of the multiplication of ``x`` with ``w``."
-msgstr ""
+msgstr "``x`` 與 ``w`` 相乘的結果。"
 
 #: ../../../src/python/_autosummary/mlx.core.quantized_matmul.rst:0
 msgid "Return type"
-msgstr ""
+msgstr "回傳值型別"

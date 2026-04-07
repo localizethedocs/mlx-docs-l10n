@@ -31,7 +31,7 @@ msgstr ""
 
 #: ../../../docstring of mlx.core.async_eval:0
 msgid "Parameters"
-msgstr ""
+msgstr "參數"
 
 #: ../../../docstring of mlx.core.async_eval:7
 msgid ""
@@ -42,4 +42,4 @@ msgstr ""
 
 #: ../../../docstring of mlx.core.async_eval:14
 msgid "Example"
-msgstr ""
+msgstr "範例"

@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../../src/python/_autosummary/mlx.core.einsum.rst:2
 msgid "mlx.core.einsum"
-msgstr ""
+msgstr "mlx.core.einsum"
 
 #: ../../../docstring of mlx.core.einsum:1
 msgid "Perform the Einstein summation convention on the operands."
@@ -27,7 +27,7 @@ msgstr ""
 
 #: ../../../src/python/_autosummary/mlx.core.einsum.rst:0
 msgid "Parameters"
-msgstr ""
+msgstr "參數"
 
 #: ../../../docstring of mlx.core.einsum:3
 msgid "The Einstein summation convention equation."
@@ -35,16 +35,16 @@ msgstr ""
 
 #: ../../../docstring of mlx.core.einsum:5
 msgid "The input arrays."
-msgstr ""
+msgstr "輸入陣列。"
 
 #: ../../../src/python/_autosummary/mlx.core.einsum.rst:0
 msgid "Returns"
-msgstr ""
+msgstr "回傳值"
 
 #: ../../../docstring of mlx.core.einsum:8
 msgid "The output array."
-msgstr ""
+msgstr "輸出陣列。"
 
 #: ../../../src/python/_autosummary/mlx.core.einsum.rst:0
 msgid "Return type"
-msgstr ""
+msgstr "回傳值型別"

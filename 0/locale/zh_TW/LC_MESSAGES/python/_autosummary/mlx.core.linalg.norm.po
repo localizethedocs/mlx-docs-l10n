@@ -33,7 +33,7 @@ msgstr ""
 
 #: ../../../docstring of mlx.core.linalg.norm:0
 msgid "Parameters"
-msgstr ""
+msgstr "參數"
 
 #: ../../../docstring of mlx.core.linalg.norm:6
 msgid ""
@@ -66,7 +66,7 @@ msgstr ""
 
 #: ../../../docstring of mlx.core.linalg.norm:0
 msgid "Returns"
-msgstr ""
+msgstr "回傳值"
 
 #: ../../../docstring of mlx.core.linalg.norm:25
 msgid "The output containing the norm(s)."
@@ -74,7 +74,7 @@ msgstr ""
 
 #: ../../../docstring of mlx.core.linalg.norm:0
 msgid "Return type"
-msgstr ""
+msgstr "回傳值型別"
 
 #: ../../../docstring of mlx.core.linalg.norm:29
 msgid "Notes"

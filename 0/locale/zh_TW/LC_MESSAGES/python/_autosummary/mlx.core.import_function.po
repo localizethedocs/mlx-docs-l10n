@@ -41,7 +41,7 @@ msgstr ""
 
 #: ../../../docstring of mlx.core.import_function:0
 msgid "Parameters"
-msgstr ""
+msgstr "參數"
 
 #: ../../../docstring of mlx.core.import_function:14
 msgid "The file path to import the function from."
@@ -49,7 +49,7 @@ msgstr ""
 
 #: ../../../docstring of mlx.core.import_function:0
 msgid "Returns"
-msgstr ""
+msgstr "回傳值"
 
 #: ../../../docstring of mlx.core.import_function:17
 msgid "The imported function."
@@ -57,8 +57,8 @@ msgstr ""
 
 #: ../../../docstring of mlx.core.import_function:0
 msgid "Return type"
-msgstr ""
+msgstr "回傳值型別"
 
 #: ../../../docstring of mlx.core.import_function:21
 msgid "Example"
-msgstr ""
+msgstr "範例"

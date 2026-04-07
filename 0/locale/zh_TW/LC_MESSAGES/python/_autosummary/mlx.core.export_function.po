@@ -41,7 +41,7 @@ msgstr ""
 
 #: ../../../src/python/_autosummary/mlx.core.export_function.rst:0
 msgid "Parameters"
-msgstr ""
+msgstr "參數"
 
 #: ../../../docstring of mlx.core.export_function:13
 msgid "Either a file path to export the function to or a callback."
@@ -69,7 +69,7 @@ msgstr ""
 
 #: ../../../docstring of mlx.core.export_function:29
 msgid "Example"
-msgstr ""
+msgstr "範例"
 
 #: ../../../docstring of mlx.core.export_function:30
 msgid ""

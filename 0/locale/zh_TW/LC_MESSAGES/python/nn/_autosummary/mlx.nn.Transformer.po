@@ -44,7 +44,7 @@ msgstr ""
 
 #: ../../../src/python/nn/_autosummary/mlx.nn.Transformer.rst:0
 msgid "Parameters"
-msgstr ""
+msgstr "參數"
 
 #: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/transformer.py:docstring
 #: of mlx.nn.layers.transformer.Transformer:11

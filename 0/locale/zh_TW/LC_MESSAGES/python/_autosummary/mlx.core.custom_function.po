@@ -43,7 +43,7 @@ msgstr ""
 
 #: ../../../docstring of mlx.core.custom_function:14
 msgid "Example"
-msgstr ""
+msgstr "範例"
 
 #: ../../../docstring of mlx.core.custom_function:15
 msgid ""

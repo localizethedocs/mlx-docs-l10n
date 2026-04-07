@@ -30,7 +30,7 @@ msgstr ""
 
 #: ../../../src/python/_autosummary/mlx.nn.value_and_grad.rst:0
 msgid "Parameters"
-msgstr ""
+msgstr "參數"
 
 #: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/utils.py:docstring
 #: of mlx.nn.utils.value_and_grad:5
@@ -44,7 +44,7 @@ msgstr ""
 
 #: ../../../src/python/_autosummary/mlx.nn.value_and_grad.rst:0
 msgid "Returns"
-msgstr ""
+msgstr "回傳值"
 
 #: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/utils.py:docstring
 #: of mlx.nn.utils.value_and_grad:11

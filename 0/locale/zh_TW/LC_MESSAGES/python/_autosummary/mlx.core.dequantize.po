@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../../src/python/_autosummary/mlx.core.dequantize.rst:2
 msgid "mlx.core.dequantize"
-msgstr ""
+msgstr "mlx.core.dequantize"
 
 #: ../../../docstring of mlx.core.dequantize:1
 msgid "Dequantize the matrix ``w`` using quantization parameters."
@@ -27,7 +27,7 @@ msgstr ""
 
 #: ../../../src/python/_autosummary/mlx.core.dequantize.rst:0
 msgid "Parameters"
-msgstr ""
+msgstr "參數"
 
 #: ../../../docstring of mlx.core.dequantize:3
 msgid "Matrix to be dequantized"
@@ -71,11 +71,11 @@ msgstr ""
 
 #: ../../../docstring of mlx.core.dequantize:26
 msgid "The quantization mode. Default: ``\"affine\"``."
-msgstr ""
+msgstr "量化模式。默認值：``\"affine\"``。"
 
 #: ../../../src/python/_autosummary/mlx.core.dequantize.rst:0
 msgid "Returns"
-msgstr ""
+msgstr "回傳值"
 
 #: ../../../docstring of mlx.core.dequantize:29
 msgid "The dequantized version of ``w``"
@@ -83,7 +83,7 @@ msgstr ""
 
 #: ../../../src/python/_autosummary/mlx.core.dequantize.rst:0
 msgid "Return type"
-msgstr ""
+msgstr "回傳值型別"
 
 #: ../../../docstring of mlx.core.dequantize:33
 msgid "Notes"
@@ -104,4 +104,4 @@ msgstr ""
 
 #: ../../../docstring of mlx.core.dequantize:41
 msgid "w_i = s \\hat{w_i} + \\beta"
-msgstr ""
+msgstr "w_i = s \\hat{w_i} + \\beta"
