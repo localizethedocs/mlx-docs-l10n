@@ -37,9 +37,9 @@
     "branch" : "main",
     "commit" : 
     {
-      "date" : "2026-03-27 06:57:26 +0900",
-      "hash" : "0ff1115a46c77d7a99c075b2e8376b0cbf91f781",
-      "title" : "[CUDA] Implement BlockMaskedMM (#3299)"
+      "date" : "2026-04-27 08:46:57 +0900",
+      "hash" : "bdb6ff8881e2f7782d87465b27ec88407b5ffd01",
+      "title" : "Keep gguflib input-validation asserts active in release builds (#3436)"
     }
   },
   "type" : "branch",
