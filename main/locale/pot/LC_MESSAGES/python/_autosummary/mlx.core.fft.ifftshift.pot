@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MLX main\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-12-22 08:23+0000\n"
+"POT-Creation-Date: 2026-04-27 10:09+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -37,7 +37,8 @@ msgstr ""
 
 #: ../../../docstring of mlx.core.fft.ifftshift:6
 msgid ""
-"Axes over which to perform the inverse shift. If ``None``, shift all axes."
+"Axis or axes over which to perform the inverse shift. If ``None``, shift all "
+"axes."
 msgstr ""
 
 #: ../../../src/python/_autosummary/mlx.core.fft.ifftshift.rst:0
