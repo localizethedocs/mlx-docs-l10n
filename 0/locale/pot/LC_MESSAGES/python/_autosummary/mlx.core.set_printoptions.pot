@@ -1,0 +1,37 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023, Apple
+# This file is distributed under the same license as the MLX package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: MLX 0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-04-28 10:28+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../src/python/_autosummary/mlx.core.set_printoptions.rst:2
+msgid "mlx.core.set\\_printoptions"
+msgstr ""
+
+#: ../../../docstring of mlx.core.set_printoptions:1
+msgid "Set global printing precision for array formatting."
+msgstr ""
+
+#: ../../../docstring of mlx.core.set_printoptions:4
+msgid "Example"
+msgstr ""
+
+#: ../../../src/python/_autosummary/mlx.core.set_printoptions.rst:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../docstring of mlx.core.set_printoptions:10
+msgid "Number of decimal places."
+msgstr ""
