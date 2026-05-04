@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MLX main\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-12-22 08:23+0000\n"
+"POT-Creation-Date: 2026-05-04 10:10+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -25,15 +25,21 @@ msgstr ""
 msgid "Returns the indices that sort the array."
 msgstr "回傳可排序陣列的索引。"
 
+#: ../../../docstring of mlx.core.argsort:3
+msgid ""
+"The sort is stable, meaning equal elements preserve their relative order. "
+"``NaN`` values are placed at the end."
+msgstr ""
+
 #: ../../../src/python/_autosummary/mlx.core.argsort.rst:0
 msgid "Parameters"
 msgstr "參數"
 
-#: ../../../docstring of mlx.core.argsort:3
+#: ../../../docstring of mlx.core.argsort:6
 msgid "Input array."
 msgstr "輸入陣列。"
 
-#: ../../../docstring of mlx.core.argsort:5
+#: ../../../docstring of mlx.core.argsort:8
 msgid ""
 "Optional axis to sort over. If ``None``, this sorts over the flattened "
 "array. If unspecified, it defaults to -1 (sorting over the last axis)."
@@ -45,7 +51,7 @@ msgstr ""
 msgid "Returns"
 msgstr "回傳"
 
-#: ../../../docstring of mlx.core.argsort:10
+#: ../../../docstring of mlx.core.argsort:13
 msgid "The ``uint32`` array containing indices that sort the input."
 msgstr "包含可排序輸入的索引之 ``uint32`` 陣列。"
 

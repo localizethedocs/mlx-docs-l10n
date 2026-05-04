@@ -17,21 +17,10 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../../src/python/_autosummary/mlx.core.synchronize.rst:2
-msgid "mlx.core.synchronize"
+#: ../../../src/python/_autosummary/mlx.core.new_thread_local_stream.rst:2
+msgid "mlx.core.new\\_thread\\_local\\_stream"
 msgstr ""
 
-#: ../../../docstring of mlx.core.synchronize:1
-msgid "Synchronize with the given stream."
-msgstr ""
-
-#: ../../../src/python/_autosummary/mlx.core.synchronize.rst:0
-msgid "Parameters"
-msgstr ""
-
-#: ../../../docstring of mlx.core.synchronize:3
-msgid ""
-"Stream to synchronize. If device is provided the default stream for that "
-"device is used. If ``None`` then the default stream of the default device is "
-"used. Default: ``None``."
+#: ../../../docstring of mlx.core.new_thread_local_stream:1
+msgid "Make a new stream that will be unique per thread."
 msgstr ""

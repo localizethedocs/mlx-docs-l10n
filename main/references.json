@@ -16,9 +16,9 @@
       "branch" : "main",
       "commit" : 
       {
-        "date" : "2026-03-27 06:57:26 +0900",
-        "hash" : "0ff1115a46c77d7a99c075b2e8376b0cbf91f781",
-        "title" : "[CUDA] Implement BlockMaskedMM (#3299)"
+        "date" : "2026-04-28 09:39:56 -0700",
+        "hash" : "e8ebdebeeb655feaa85a51f6b24ece5b6d5518d1",
+        "title" : "Add barrier to JACCL (#3459)"
       }
     },
     "zh_TW" : 
@@ -26,9 +26,9 @@
       "branch" : "main",
       "commit" : 
       {
-        "date" : "2026-03-27 06:57:26 +0900",
-        "hash" : "0ff1115a46c77d7a99c075b2e8376b0cbf91f781",
-        "title" : "[CUDA] Implement BlockMaskedMM (#3299)"
+        "date" : "2026-04-28 09:39:56 -0700",
+        "hash" : "e8ebdebeeb655feaa85a51f6b24ece5b6d5518d1",
+        "title" : "Add barrier to JACCL (#3459)"
       }
     }
   },
