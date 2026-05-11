@@ -27,7 +27,7 @@ msgstr ""
 
 #: ../../../src/python/_autosummary/mlx.core.fft.fftfreq.rst:0
 msgid "Parameters"
-msgstr ""
+msgstr "參數"
 
 #: ../../../docstring of mlx.core.fft.fftfreq:3
 msgid "Window length."
@@ -39,7 +39,7 @@ msgstr ""
 
 #: ../../../src/python/_autosummary/mlx.core.fft.fftfreq.rst:0
 msgid "Returns"
-msgstr ""
+msgstr "回傳值"
 
 #: ../../../docstring of mlx.core.fft.fftfreq:8
 msgid "The sample frequencies as a one-dimensional array of type ``float32``."
@@ -47,4 +47,4 @@ msgstr ""
 
 #: ../../../src/python/_autosummary/mlx.core.fft.fftfreq.rst:0
 msgid "Return type"
-msgstr ""
+msgstr "回傳值型別"

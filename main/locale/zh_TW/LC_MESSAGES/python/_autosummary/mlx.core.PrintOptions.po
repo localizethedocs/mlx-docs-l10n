@@ -23,7 +23,7 @@ msgstr ""
 
 #: ../../../src/python/_autosummary/mlx.core.PrintOptions.rst:13
 msgid "Methods"
-msgstr ""
+msgstr "方法"
 
 #: ../../../src/python/_autosummary/mlx.core.PrintOptions.rst:21:<autosummary>:1
 msgid ""
@@ -33,7 +33,7 @@ msgstr ""
 
 #: ../../../src/python/_autosummary/mlx.core.PrintOptions.rst:23
 msgid "Attributes"
-msgstr ""
+msgstr "屬性"
 
 #: ../../../src/python/_autosummary/mlx.core.PrintOptions.rst:26:<autosummary>:1
 msgid ":py:obj:`precision <mlx.core.PrintOptions.precision>`\\"
