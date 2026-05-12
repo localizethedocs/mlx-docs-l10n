@@ -652,12 +652,6 @@ msgid ""
 "pipelines) to the active command buffer until some specified limit is hit or "
 "the command buffer needs to be flushed for synchronization."
 msgstr ""
-"在繼續之前，先留意關於 MLX 與 Metal 的幾點：MLX 會追蹤目前的 "
-"``command_buffer`` 與其對應的 ``MTLCommandBuffer``。我們會依賴 :meth:`d."
-"get_command_encoder` 取得目前使用中的 Metal 計算命令編碼器，而不是自行建立新"
-"的編碼器並在最後呼叫 :meth:`compute_encoder->end_encoding`。MLX 會持續將內核"
-"（計算管線）加入目前的命令緩衝區，直到達到指定上限或命令緩衝區需要為同步而清"
-"空。"
 
 #: ../../../src/dev/extensions.rst:458
 msgid "Primitive Transforms"
