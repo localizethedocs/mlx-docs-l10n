@@ -37,9 +37,9 @@
     "branch" : "main",
     "commit" : 
     {
-      "date" : "2026-04-28 09:39:56 -0700",
-      "hash" : "e8ebdebeeb655feaa85a51f6b24ece5b6d5518d1",
-      "title" : "Add barrier to JACCL (#3459)"
+      "date" : "2026-05-11 17:17:46 +0900",
+      "hash" : "99f040eff6ba367917de4f374c769852345fee4f",
+      "title" : "Pass deployment target when linking metallib (#3501)"
     }
   },
   "type" : "branch",

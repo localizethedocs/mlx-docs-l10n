@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MLX main\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-12-22 08:23+0000\n"
+"POT-Creation-Date: 2026-05-11 10:58+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -21,165 +21,184 @@ msgstr ""
 msgid "Linear Algebra"
 msgstr ""
 
-#: ../../../src/python/linalg.rst:27:<autosummary>:1
+#: ../../../src/python/linalg.rst:29:<autosummary>:1
 msgid ":py:obj:`inv <mlx.core.linalg.inv>`\\ \\(a\\, \\*\\[\\, stream\\]\\)"
 msgstr ""
 
-#: ../../../src/python/linalg.rst:27:<autosummary>:1
+#: ../../../src/python/linalg.rst:29:<autosummary>:1
 msgid "Compute the inverse of a square matrix."
 msgstr ""
 
-#: ../../../src/python/linalg.rst:27:<autosummary>:1
+#: ../../../src/python/linalg.rst:29:<autosummary>:1
 msgid ""
 ":py:obj:`tri_inv <mlx.core.linalg.tri_inv>`\\ \\(a\\[\\, upper\\, "
 "stream\\]\\)"
 msgstr ""
 
-#: ../../../src/python/linalg.rst:27:<autosummary>:1
+#: ../../../src/python/linalg.rst:29:<autosummary>:1
 msgid "Compute the inverse of a triangular square matrix."
 msgstr ""
 
-#: ../../../src/python/linalg.rst:27:<autosummary>:1
+#: ../../../src/python/linalg.rst:29:<autosummary>:1
 msgid ""
 ":py:obj:`norm <mlx.core.linalg.norm>`\\ \\(a\\, \\/\\[\\, ord\\, axis\\, "
 "keepdims\\, stream\\]\\)"
 msgstr ""
 
-#: ../../../src/python/linalg.rst:27:<autosummary>:1
+#: ../../../src/python/linalg.rst:29:<autosummary>:1
 msgid "Matrix or vector norm."
 msgstr ""
 
-#: ../../../src/python/linalg.rst:27:<autosummary>:1
+#: ../../../src/python/linalg.rst:29:<autosummary>:1
 msgid ""
 ":py:obj:`cholesky <mlx.core.linalg.cholesky>`\\ \\(a\\[\\, upper\\, "
 "stream\\]\\)"
 msgstr ""
 
-#: ../../../src/python/linalg.rst:27:<autosummary>:1
+#: ../../../src/python/linalg.rst:29:<autosummary>:1
 msgid ""
 "Compute the Cholesky decomposition of a real symmetric positive semi-"
 "definite matrix."
 msgstr ""
 
-#: ../../../src/python/linalg.rst:27:<autosummary>:1
+#: ../../../src/python/linalg.rst:29:<autosummary>:1
 msgid ""
 ":py:obj:`cholesky_inv <mlx.core.linalg.cholesky_inv>`\\ \\(L\\[\\, upper\\, "
 "stream\\]\\)"
 msgstr ""
 
-#: ../../../src/python/linalg.rst:27:<autosummary>:1
+#: ../../../src/python/linalg.rst:29:<autosummary>:1
 msgid ""
 "Compute the inverse of a real symmetric positive semi-definite matrix using "
 "it's Cholesky decomposition."
 msgstr ""
 
-#: ../../../src/python/linalg.rst:27:<autosummary>:1
+#: ../../../src/python/linalg.rst:29:<autosummary>:1
 msgid ""
 ":py:obj:`cross <mlx.core.linalg.cross>`\\ \\(a\\, b\\[\\, axis\\, "
 "stream\\]\\)"
 msgstr ""
 
-#: ../../../src/python/linalg.rst:27:<autosummary>:1
+#: ../../../src/python/linalg.rst:29:<autosummary>:1
 msgid "Compute the cross product of two arrays along a specified axis."
 msgstr ""
 
-#: ../../../src/python/linalg.rst:27:<autosummary>:1
+#: ../../../src/python/linalg.rst:29:<autosummary>:1
+msgid ":py:obj:`det <mlx.core.linalg.det>`\\ \\(a\\, \\*\\[\\, stream\\]\\)"
+msgstr ""
+
+#: ../../../src/python/linalg.rst:29:<autosummary>:1
+msgid "Compute the determinant of a square matrix."
+msgstr ""
+
+#: ../../../src/python/linalg.rst:29:<autosummary>:1
 msgid ":py:obj:`qr <mlx.core.linalg.qr>`\\ \\(a\\, \\*\\[\\, stream\\]\\)"
 msgstr ""
 
-#: ../../../src/python/linalg.rst:27:<autosummary>:1
+#: ../../../src/python/linalg.rst:29:<autosummary>:1
 msgid "The QR factorization of the input matrix."
 msgstr ""
 
-#: ../../../src/python/linalg.rst:27:<autosummary>:1
+#: ../../../src/python/linalg.rst:29:<autosummary>:1
 msgid ""
 ":py:obj:`svd <mlx.core.linalg.svd>`\\ \\(a\\[\\, compute\\_uv\\, stream\\]\\)"
 msgstr ""
 
-#: ../../../src/python/linalg.rst:27:<autosummary>:1
+#: ../../../src/python/linalg.rst:29:<autosummary>:1
 msgid "The Singular Value Decomposition (SVD) of the input matrix."
 msgstr ""
 
-#: ../../../src/python/linalg.rst:27:<autosummary>:1
+#: ../../../src/python/linalg.rst:29:<autosummary>:1
 msgid ""
 ":py:obj:`eigvals <mlx.core.linalg.eigvals>`\\ \\(a\\, \\*\\[\\, stream\\]\\)"
 msgstr ""
 
-#: ../../../src/python/linalg.rst:27:<autosummary>:1
+#: ../../../src/python/linalg.rst:29:<autosummary>:1
 msgid "Compute the eigenvalues of a square matrix."
 msgstr ""
 
-#: ../../../src/python/linalg.rst:27:<autosummary>:1
+#: ../../../src/python/linalg.rst:29:<autosummary>:1
 msgid ":py:obj:`eig <mlx.core.linalg.eig>`\\ \\(a\\, \\*\\[\\, stream\\]\\)"
 msgstr ""
 
-#: ../../../src/python/linalg.rst:27:<autosummary>:1
+#: ../../../src/python/linalg.rst:29:<autosummary>:1
 msgid "Compute the eigenvalues and eigenvectors of a square matrix."
 msgstr ""
 
-#: ../../../src/python/linalg.rst:27:<autosummary>:1
+#: ../../../src/python/linalg.rst:29:<autosummary>:1
 msgid ""
 ":py:obj:`eigvalsh <mlx.core.linalg.eigvalsh>`\\ \\(a\\[\\, UPLO\\, "
 "stream\\]\\)"
 msgstr ""
 
-#: ../../../src/python/linalg.rst:27:<autosummary>:1
+#: ../../../src/python/linalg.rst:29:<autosummary>:1
 msgid ""
 "Compute the eigenvalues of a complex Hermitian or real symmetric matrix."
 msgstr ""
 
-#: ../../../src/python/linalg.rst:27:<autosummary>:1
+#: ../../../src/python/linalg.rst:29:<autosummary>:1
 msgid ":py:obj:`eigh <mlx.core.linalg.eigh>`\\ \\(a\\[\\, UPLO\\, stream\\]\\)"
 msgstr ""
 
-#: ../../../src/python/linalg.rst:27:<autosummary>:1
+#: ../../../src/python/linalg.rst:29:<autosummary>:1
 msgid ""
 "Compute the eigenvalues and eigenvectors of a complex Hermitian or real "
 "symmetric matrix."
 msgstr ""
 
-#: ../../../src/python/linalg.rst:27:<autosummary>:1
+#: ../../../src/python/linalg.rst:29:<autosummary>:1
 msgid ":py:obj:`lu <mlx.core.linalg.lu>`\\ \\(a\\, \\*\\[\\, stream\\]\\)"
 msgstr ""
 
-#: ../../../src/python/linalg.rst:27:<autosummary>:1
+#: ../../../src/python/linalg.rst:29:<autosummary>:1
 msgid "Compute the LU factorization of the given matrix ``A``."
 msgstr ""
 
-#: ../../../src/python/linalg.rst:27:<autosummary>:1
+#: ../../../src/python/linalg.rst:29:<autosummary>:1
 msgid ""
 ":py:obj:`lu_factor <mlx.core.linalg.lu_factor>`\\ \\(a\\, \\*\\[\\, "
 "stream\\]\\)"
 msgstr ""
 
-#: ../../../src/python/linalg.rst:27:<autosummary>:1
+#: ../../../src/python/linalg.rst:29:<autosummary>:1
 msgid "Computes a compact representation of the LU factorization."
 msgstr ""
 
-#: ../../../src/python/linalg.rst:27:<autosummary>:1
+#: ../../../src/python/linalg.rst:29:<autosummary>:1
 msgid ":py:obj:`pinv <mlx.core.linalg.pinv>`\\ \\(a\\, \\*\\[\\, stream\\]\\)"
 msgstr ""
 
-#: ../../../src/python/linalg.rst:27:<autosummary>:1
+#: ../../../src/python/linalg.rst:29:<autosummary>:1
 msgid "Compute the (Moore-Penrose) pseudo-inverse of a matrix."
 msgstr ""
 
-#: ../../../src/python/linalg.rst:27:<autosummary>:1
+#: ../../../src/python/linalg.rst:29:<autosummary>:1
+msgid ""
+":py:obj:`slogdet <mlx.core.linalg.slogdet>`\\ \\(a\\, \\*\\[\\, stream\\]\\)"
+msgstr ""
+
+#: ../../../src/python/linalg.rst:29:<autosummary>:1
+msgid ""
+"Compute the sign and natural log of the absolute value of the determinant of "
+"a square matrix."
+msgstr ""
+
+#: ../../../src/python/linalg.rst:29:<autosummary>:1
 msgid ""
 ":py:obj:`solve <mlx.core.linalg.solve>`\\ \\(a\\, b\\, \\*\\[\\, stream\\]\\)"
 msgstr ""
 
-#: ../../../src/python/linalg.rst:27:<autosummary>:1
+#: ../../../src/python/linalg.rst:29:<autosummary>:1
 msgid "Compute the solution to a system of linear equations ``AX = B``."
 msgstr ""
 
-#: ../../../src/python/linalg.rst:27:<autosummary>:1
+#: ../../../src/python/linalg.rst:29:<autosummary>:1
 msgid ""
 ":py:obj:`solve_triangular <mlx.core.linalg.solve_triangular>`\\ \\(a\\, b\\, "
 "\\*\\[\\, upper\\, stream\\]\\)"
 msgstr ""
 
-#: ../../../src/python/linalg.rst:27:<autosummary>:1
+#: ../../../src/python/linalg.rst:29:<autosummary>:1
 msgid ""
 "Computes the solution of a triangular system of linear equations ``AX = B``."
 msgstr ""
