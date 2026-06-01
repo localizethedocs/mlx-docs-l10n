@@ -1,0 +1,66 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023, Apple
+# This file is distributed under the same license as the MLX package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: MLX main\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-01 13:31+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../src/python/_autosummary/mlx.core.hamming.rst:2
+msgid "mlx.core.hamming"
+msgstr ""
+
+#: ../../../docstring of mlx.core.hamming:1
+msgid "Return the Hamming window."
+msgstr ""
+
+#: ../../../docstring of mlx.core.hamming:3
+msgid "The Hamming window is a taper formed by using a weighted cosine."
+msgstr ""
+
+#: ../../../docstring of mlx.core.hamming:5
+msgid ""
+"w(n) = 0.54 - 0.46 \\cos\\left(\\frac{2\\pi n}{M-1}\\right)\n"
+"\\qquad 0 \\le n \\le M-1\n"
+"\n"
+msgstr ""
+
+#: ../../../src/python/_autosummary/mlx.core.hamming.rst:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../docstring of mlx.core.hamming:9
+msgid "Number of points in the output window."
+msgstr ""
+
+#: ../../../src/python/_autosummary/mlx.core.hamming.rst:0
+msgid "Returns"
+msgstr ""
+
+#: ../../../docstring of mlx.core.hamming:12
+msgid ""
+"The window, with the maximum value normalized to one (the value one        "
+"appears only if the number of samples is odd)."
+msgstr ""
+
+#: ../../../docstring of mlx.core.hamming:14
+msgid "The window, with the maximum value normalized to one (the value one"
+msgstr ""
+
+#: ../../../docstring of mlx.core.hamming:15
+msgid "appears only if the number of samples is odd)."
+msgstr ""
+
+#: ../../../src/python/_autosummary/mlx.core.hamming.rst:0
+msgid "Return type"
+msgstr ""

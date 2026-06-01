@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MLX main\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-03-23 08:48+0000\n"
+"POT-Creation-Date: 2026-06-01 13:31+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -124,37 +124,29 @@ msgstr ""
 msgid "PyTorch"
 msgstr ""
 
+#: ../../../src/usage/numpy.rst:78
+msgid "PyTorch supports DLPack inputs and can import MLX arrays directly."
+msgstr ""
+
 #: ../../../src/usage/numpy.rst:80
-msgid ""
-"PyTorch Support for :obj:`memoryview` is experimental and can break for "
-"multi-dimensional arrays. Casting to NumPy first is advised for now."
-msgstr ""
-
-#: ../../../src/usage/numpy.rst:83
-msgid ""
-"PyTorch supports the buffer protocol, but it requires an explicit :obj:"
-"`memoryview`."
-msgstr ""
-
-#: ../../../src/usage/numpy.rst:86
 msgid ""
 "import mlx.core as mx\n"
 "import torch\n"
 "\n"
 "a = mx.arange(3)\n"
-"b = torch.tensor(memoryview(a))\n"
-"c = mx.array(b)"
+"b = torch.tensor(a)\n"
+"c = mx.array(b.cpu())"
 msgstr ""
 
-#: ../../../src/usage/numpy.rst:96
+#: ../../../src/usage/numpy.rst:90
 msgid "JAX"
 msgstr ""
 
-#: ../../../src/usage/numpy.rst:97
+#: ../../../src/usage/numpy.rst:91
 msgid "JAX fully supports the buffer protocol."
 msgstr ""
 
-#: ../../../src/usage/numpy.rst:99
+#: ../../../src/usage/numpy.rst:93
 msgid ""
 "import mlx.core as mx\n"
 "import jax.numpy as jnp\n"
@@ -164,17 +156,17 @@ msgid ""
 "c = mx.array(b)"
 msgstr ""
 
-#: ../../../src/usage/numpy.rst:109
+#: ../../../src/usage/numpy.rst:103
 msgid "TensorFlow"
 msgstr ""
 
-#: ../../../src/usage/numpy.rst:111
+#: ../../../src/usage/numpy.rst:105
 msgid ""
 "TensorFlow supports the buffer protocol, but it requires an explicit :obj:"
 "`memoryview`."
 msgstr ""
 
-#: ../../../src/usage/numpy.rst:114
+#: ../../../src/usage/numpy.rst:108
 msgid ""
 "import mlx.core as mx\n"
 "import tensorflow as tf\n"
