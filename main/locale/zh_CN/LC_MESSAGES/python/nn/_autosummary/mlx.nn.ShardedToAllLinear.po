@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MLX main\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-03-09 08:38+0000\n"
+"POT-Creation-Date: 2026-06-01 13:31+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -56,8 +56,7 @@ msgstr ""
 
 #: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/distributed.py:docstring
 #: of mlx.nn.layers.distributed.ShardedToAllLinear:13
-msgid ""
-"If set to ``False`` the the layer will not use a bias. Default is ``True``."
+msgid "If set to ``False`` the layer will not use a bias. Default is ``True``."
 msgstr ""
 
 #: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/distributed.py:docstring

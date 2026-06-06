@@ -1,0 +1,82 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023, Apple
+# This file is distributed under the same license as the MLX package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: MLX main\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-01 13:31+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../src/python/nn/_autosummary/mlx.nn.Bilinear.rst:2
+msgid "mlx.nn.Bilinear"
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/linear.py:docstring
+#: of mlx.nn.layers.linear.Bilinear:1
+msgid "Applies a bilinear transformation to the inputs."
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/linear.py:docstring
+#: of mlx.nn.layers.linear.Bilinear:3
+msgid "Concretely:"
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/linear.py:docstring
+#: of mlx.nn.layers.linear.Bilinear:5
+msgid "y_i = x_1^\\top W_i x_2 + b_i"
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/linear.py:docstring
+#: of mlx.nn.layers.linear.Bilinear:9
+msgid ""
+"where: :math:`W` has shape ``[output_dims, input1_dims, input2_dims]``, :"
+"math:`b` has shape ``[output_dims ]``, and :math:`i` indexes the output "
+"dimension."
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/linear.py:docstring
+#: of mlx.nn.layers.linear.Bilinear:13
+msgid ""
+"The values are initialized from the uniform distribution :math:`\\mathcal{U}"
+"(-{k}, {k})`, where :math:`k = \\frac{1}{\\sqrt{D_1}}` and :math:`D_1` is "
+"``input1_dims``."
+msgstr ""
+
+#: ../../../src/python/nn/_autosummary/mlx.nn.Bilinear.rst:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/linear.py:docstring
+#: of mlx.nn.layers.linear.Bilinear:16
+msgid "The dimensionality of the input1 features"
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/linear.py:docstring
+#: of mlx.nn.layers.linear.Bilinear:18
+msgid "The dimensionality of the input2 features"
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/linear.py:docstring
+#: of mlx.nn.layers.linear.Bilinear:20
+msgid "The dimensionality of the output features"
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/linear.py:docstring
+#: of mlx.nn.layers.linear.Bilinear:22
+msgid ""
+"If set to ``False`` then the layer will not use a bias. Default is ``True``."
+msgstr ""
+
+#: ../../../src/python/nn/_autosummary/mlx.nn.Bilinear.rst:12
+msgid "Methods"
+msgstr ""

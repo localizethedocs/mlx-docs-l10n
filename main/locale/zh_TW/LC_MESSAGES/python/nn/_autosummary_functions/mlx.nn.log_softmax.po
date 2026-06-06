@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MLX main\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-12-22 08:23+0000\n"
+"POT-Creation-Date: 2026-06-01 13:31+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -28,5 +28,8 @@ msgstr "套用對數 softmax 函式。"
 
 #: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/activations.py:docstring
 #: of mlx.nn.layers.activations.log_softmax:3
-msgid "Applies :math:`x + \\log \\sum_i e^{x_i}` element wise."
-msgstr "逐元素套用 :math:`x + \\log \\sum_i e^{x_i}`。"
+msgid "Applies :math:`x - \\log \\sum_i e^{x_i}` element wise."
+msgstr ""
+
+#~ msgid "Applies :math:`x + \\log \\sum_i e^{x_i}` element wise."
+#~ msgstr "逐元素套用 :math:`x + \\log \\sum_i e^{x_i}`。"

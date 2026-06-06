@@ -1,0 +1,120 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023, Apple
+# This file is distributed under the same license as the MLX package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: MLX main\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-01 13:31+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../src/python/_autosummary/mlx.core.qqmm.rst:2
+msgid "mlx.core.qqmm"
+msgstr ""
+
+#: ../../../docstring of mlx.core.qqmm:1
+msgid ""
+"Perform a matrix multiplication using a possibly quantized weight matrix "
+"``w`` and a non-quantized input ``x``. The input ``x`` is quantized on the "
+"fly. The weight matrix ``w`` is used as-is if it is already quantized; "
+"otherwise, it is quantized on the fly."
+msgstr ""
+
+#: ../../../docstring of mlx.core.qqmm:6
+msgid ""
+"If ``w`` is quantized, ``scales`` must be provided, and ``group_size``, "
+"``bits``, and ``mode`` must match the parameters that were used to quantize "
+"``w``."
+msgstr ""
+
+#: ../../../docstring of mlx.core.qqmm:11
+msgid "Notes"
+msgstr ""
+
+#: ../../../docstring of mlx.core.qqmm:12
+msgid ""
+"If ``w`` is expected to receive gradients, it must be provided in non-"
+"quantized form."
+msgstr ""
+
+#: ../../../docstring of mlx.core.qqmm:15
+msgid ""
+"If ``x`` and `w`` are not quantized, their data types must be ``float32``, "
+"``float16``, or ``bfloat16``. If ``w`` is quantized, it must be packed in "
+"unsigned integers. ``global_scale_x`` and ``global_scale_w`` are only used "
+"for ``nvfp4`` quantization."
+msgstr ""
+
+#: ../../../src/python/_autosummary/mlx.core.qqmm.rst:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../docstring of mlx.core.qqmm:20
+msgid "Input array."
+msgstr ""
+
+#: ../../../docstring of mlx.core.qqmm:22
+msgid "Weight matrix. If quantized, it is packed in unsigned integers."
+msgstr ""
+
+#: ../../../docstring of mlx.core.qqmm:24
+msgid ""
+"The scales to use per ``group_size`` elements of ``w`` if ``w`` is "
+"quantized. Default: ``None``."
+msgstr ""
+
+#: ../../../docstring of mlx.core.qqmm:27
+msgid ""
+"Number of elements in ``x`` and ``w`` that share a scale. See supported "
+"values and defaults in the :ref:`table of quantization modes <quantize-"
+"modes>`. Default: ``None``."
+msgstr ""
+
+#: ../../../docstring of mlx.core.qqmm:31
+msgid ""
+"Number of bits used to represent each element of ``x`` and ``w``. See "
+"supported values and defaults in the :ref:`table of quantization modes "
+"<quantize-modes>`. Default: ``None``."
+msgstr ""
+
+#: ../../../docstring of mlx.core.qqmm:35
+msgid ""
+"The quantization mode. Default: ``\"nvfp4\"``. Supported modes are ``nvfp4`` "
+"and ``mxfp8``. See the :ref:`table of quantization modes <quantize-modes>` "
+"for details."
+msgstr ""
+
+#: ../../../docstring of mlx.core.qqmm:39
+msgid ""
+"The per-input float32 scale used for x with ``\"nvfp4\"`` quantization. "
+"Default: ``None``."
+msgstr ""
+
+#: ../../../docstring of mlx.core.qqmm:42
+msgid ""
+"The per-input float32 scale used for w with ``\"nvfp4\"`` quantization. "
+"Default: ``None``."
+msgstr ""
+
+#: ../../../src/python/_autosummary/mlx.core.qqmm.rst:0
+msgid "Returns"
+msgstr ""
+
+#: ../../../docstring of mlx.core.qqmm:46
+msgid ""
+"The result of the multiplication of quantized ``x`` with quantized ``w``. "
+"needed)."
+msgstr ""
+
+#: ../../../src/python/_autosummary/mlx.core.qqmm.rst:0
+msgid "Return type"
+msgstr ""

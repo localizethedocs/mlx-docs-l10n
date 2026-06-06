@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MLX main\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-12-22 08:23+0000\n"
+"POT-Creation-Date: 2026-06-01 13:31+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -33,8 +33,7 @@ msgstr ""
 
 #: ../../../docstring of mlx.core.logaddexp:6
 msgid ""
-"The computation is is a numerically stable version of ``log(exp(a) + "
-"exp(b))``."
+"The computation is a numerically stable version of ``log(exp(a) + exp(b))``."
 msgstr ""
 
 #: ../../../src/python/_autosummary/mlx.core.logaddexp.rst:0
