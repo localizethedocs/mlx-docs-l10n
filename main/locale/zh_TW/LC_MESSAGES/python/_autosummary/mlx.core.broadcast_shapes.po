@@ -33,7 +33,7 @@ msgstr ""
 
 #: ../../../docstring of mlx.core.broadcast_shapes:0
 msgid "Parameters"
-msgstr ""
+msgstr "參數"
 
 #: ../../../docstring of mlx.core.broadcast_shapes:6
 msgid "The shapes to broadcast."
@@ -41,7 +41,7 @@ msgstr ""
 
 #: ../../../docstring of mlx.core.broadcast_shapes:0
 msgid "Returns"
-msgstr ""
+msgstr "回傳值"
 
 #: ../../../docstring of mlx.core.broadcast_shapes:9
 msgid "The broadcasted shape."
@@ -49,7 +49,7 @@ msgstr ""
 
 #: ../../../docstring of mlx.core.broadcast_shapes:0
 msgid "Return type"
-msgstr ""
+msgstr "回傳值型別"
 
 #: ../../../docstring of mlx.core.broadcast_shapes:0
 msgid "Raises"
@@ -61,4 +61,4 @@ msgstr ""
 
 #: ../../../docstring of mlx.core.broadcast_shapes:15
 msgid "Example"
-msgstr ""
+msgstr "範例"

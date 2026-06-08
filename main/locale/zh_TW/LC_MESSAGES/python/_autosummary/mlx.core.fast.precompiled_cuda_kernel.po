@@ -31,7 +31,7 @@ msgstr ""
 
 #: ../../../src/python/_autosummary/mlx.core.fast.precompiled_cuda_kernel.rst:0
 msgid "Parameters"
-msgstr ""
+msgstr "參數"
 
 #: ../../../docstring of mlx.core.fast.precompiled_cuda_kernel:5
 msgid "Name for the kernel"

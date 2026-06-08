@@ -30,6 +30,3 @@ msgstr "套用對數 softmax 函式。"
 #: of mlx.nn.layers.activations.log_softmax:3
 msgid "Applies :math:`x - \\log \\sum_i e^{x_i}` element wise."
 msgstr ""
-
-#~ msgid "Applies :math:`x + \\log \\sum_i e^{x_i}` element wise."
-#~ msgstr "逐元素套用 :math:`x + \\log \\sum_i e^{x_i}`。"

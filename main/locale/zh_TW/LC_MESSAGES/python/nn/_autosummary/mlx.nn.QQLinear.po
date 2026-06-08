@@ -81,7 +81,7 @@ msgstr ""
 
 #: ../../../src/python/nn/_autosummary/mlx.nn.QQLinear.rst:0
 msgid "Parameters"
-msgstr ""
+msgstr "參數"
 
 #: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/quantized.py:docstring
 #: of mlx.nn.layers.quantized.QQLinear:21
@@ -116,7 +116,7 @@ msgstr ""
 
 #: ../../../src/python/nn/_autosummary/mlx.nn.QQLinear.rst:12
 msgid "Methods"
-msgstr ""
+msgstr "方法"
 
 #: ../../../src/python/nn/_autosummary/mlx.nn.QQLinear.rst:17:<autosummary>:1
 msgid ":py:obj:`dequantize <mlx.nn.QQLinear.dequantize>`\\ \\(\\)"

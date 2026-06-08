@@ -41,7 +41,7 @@ msgstr ""
 
 #: ../../../src/python/_autosummary/mlx.core.blackman.rst:0
 msgid "Parameters"
-msgstr ""
+msgstr "參數"
 
 #: ../../../docstring of mlx.core.blackman:9
 msgid "Number of points in the output window."
@@ -49,7 +49,7 @@ msgstr ""
 
 #: ../../../src/python/_autosummary/mlx.core.blackman.rst:0
 msgid "Returns"
-msgstr ""
+msgstr "回傳值"
 
 #: ../../../docstring of mlx.core.blackman:12
 msgid ""
@@ -67,4 +67,4 @@ msgstr ""
 
 #: ../../../src/python/_autosummary/mlx.core.blackman.rst:0
 msgid "Return type"
-msgstr ""
+msgstr "回傳值型別"
