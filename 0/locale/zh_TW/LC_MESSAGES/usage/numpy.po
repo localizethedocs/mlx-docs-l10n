@@ -142,14 +142,12 @@ msgid ""
 "PyTorch Support for :obj:`memoryview` is experimental and can break for "
 "multi-dimensional arrays. Casting to NumPy first is advised for now."
 msgstr ""
-"PyTorch 對 :obj:`memoryview` 的支援屬於實驗性，對多維陣列可能失效。建議目前先"
-"轉為 NumPy。"
 
 #: ../../../src/usage/numpy.rst:83
 msgid ""
 "PyTorch supports the buffer protocol, but it requires an explicit :obj:"
 "`memoryview`."
-msgstr "PyTorch 支援緩衝區協定，但需要明確的 :obj:`memoryview`。"
+msgstr ""
 
 #: ../../../src/usage/numpy.rst:86
 msgid ""
