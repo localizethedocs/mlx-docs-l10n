@@ -12,35 +12,40 @@ msgstr ""
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../../src/python/_autosummary/mlx.core.to_fp8.rst:2
-msgid "mlx.core.to\\_fp8"
+#: ../../../src/python/_autosummary/mlx.core.flip.rst:2
+msgid "mlx.core.flip"
 msgstr ""
 
-#: ../../../docstring of mlx.core.to_fp8:1
-msgid "Convert the array to fp8 (e4m3) from another floating-point type."
+#: ../../../docstring of mlx.core.flip:1
+msgid "Reverse the order of elements along the given axis."
 msgstr ""
 
-#: ../../../src/python/_autosummary/mlx.core.to_fp8.rst:0
+#: ../../../src/python/_autosummary/mlx.core.flip.rst:0
 msgid "Parameters"
 msgstr ""
 
-#: ../../../docstring of mlx.core.to_fp8:3
-msgid "The input array."
+#: ../../../docstring of mlx.core.flip:3
+msgid "Input array."
 msgstr ""
 
-#: ../../../src/python/_autosummary/mlx.core.to_fp8.rst:0
+#: ../../../docstring of mlx.core.flip:5
+msgid ""
+"Axis or axes to flip over. Defaults to ``None`` in which case all axes are "
+"flipped."
+msgstr ""
+
+#: ../../../src/python/_autosummary/mlx.core.flip.rst:0
 msgid "Returns"
 msgstr ""
 
-#: ../../../docstring of mlx.core.to_fp8:6
-msgid "The array converted to fp8 with type ``uint8``."
+#: ../../../docstring of mlx.core.flip:9
+msgid "The flipped array."
 msgstr ""
 
-#: ../../../src/python/_autosummary/mlx.core.to_fp8.rst:0
+#: ../../../src/python/_autosummary/mlx.core.flip.rst:0
 msgid "Return type"
 msgstr ""

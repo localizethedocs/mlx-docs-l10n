@@ -12,35 +12,38 @@ msgstr ""
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../../src/python/_autosummary/mlx.core.to_fp8.rst:2
-msgid "mlx.core.to\\_fp8"
+#: ../../../src/python/_autosummary/mlx.core.astype.rst:2
+msgid "mlx.core.astype"
 msgstr ""
 
-#: ../../../docstring of mlx.core.to_fp8:1
-msgid "Convert the array to fp8 (e4m3) from another floating-point type."
+#: ../../../docstring of mlx.core.astype:1
+msgid "Cast the array to a specified type."
 msgstr ""
 
-#: ../../../src/python/_autosummary/mlx.core.to_fp8.rst:0
+#: ../../../src/python/_autosummary/mlx.core.astype.rst:0
 msgid "Parameters"
 msgstr ""
 
-#: ../../../docstring of mlx.core.to_fp8:3
-msgid "The input array."
+#: ../../../docstring of mlx.core.astype:3
+msgid "Input array."
 msgstr ""
 
-#: ../../../src/python/_autosummary/mlx.core.to_fp8.rst:0
+#: ../../../docstring of mlx.core.astype:5
+msgid "Type to which the array is cast."
+msgstr ""
+
+#: ../../../src/python/_autosummary/mlx.core.astype.rst:0
 msgid "Returns"
 msgstr ""
 
-#: ../../../docstring of mlx.core.to_fp8:6
-msgid "The array converted to fp8 with type ``uint8``."
+#: ../../../docstring of mlx.core.astype:8
+msgid "The array with type ``dtype``."
 msgstr ""
 
-#: ../../../src/python/_autosummary/mlx.core.to_fp8.rst:0
+#: ../../../src/python/_autosummary/mlx.core.astype.rst:0
 msgid "Return type"
 msgstr ""
