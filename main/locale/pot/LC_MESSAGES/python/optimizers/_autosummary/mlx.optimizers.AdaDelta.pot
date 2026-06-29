@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MLX main\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-12-22 08:23+0000\n"
+"POT-Creation-Date: 2026-06-22 13:31+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -68,7 +68,7 @@ msgstr ""
 #: of mlx.optimizers.optimizers.AdaDelta:19
 msgid ""
 "The term :math:`\\epsilon` added to the denominator to improve numerical "
-"stability. Default: `1e-8`"
+"stability. Default: ``1e-6``"
 msgstr ""
 
 #: ../../../src/python/optimizers/_autosummary/mlx.optimizers.AdaDelta.rst:12
