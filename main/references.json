@@ -16,9 +16,9 @@
       "branch" : "main",
       "commit" : 
       {
-        "date" : "2026-06-01 08:23:36 +0900",
-        "hash" : "7df341c0905294f1fc5f746d47972c4c05dde0d1",
-        "title" : "Use uv in macOS CI (#3491)"
+        "date" : "2026-06-22 08:52:13 +0900",
+        "hash" : "51b2768da7e1897d3c4258f7ddbb47083d1eef01",
+        "title" : "Add metal::set_metallib_path() to override the metallib search path (#3597)"
       }
     },
     "zh_TW" : 
@@ -26,9 +26,9 @@
       "branch" : "main",
       "commit" : 
       {
-        "date" : "2026-06-01 08:23:36 +0900",
-        "hash" : "7df341c0905294f1fc5f746d47972c4c05dde0d1",
-        "title" : "Use uv in macOS CI (#3491)"
+        "date" : "2026-06-22 08:52:13 +0900",
+        "hash" : "51b2768da7e1897d3c4258f7ddbb47083d1eef01",
+        "title" : "Add metal::set_metallib_path() to override the metallib search path (#3597)"
       }
     }
   },

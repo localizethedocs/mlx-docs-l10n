@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MLX main\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-12-22 08:23+0000\n"
+"POT-Creation-Date: 2026-06-22 13:31+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -23,4 +23,10 @@ msgstr ""
 
 #: ../../../docstring of mlx.core.new_stream:1
 msgid "Make a new stream on the given device."
+msgstr ""
+
+#: ../../../docstring of mlx.core.new_stream:3
+msgid ""
+"The stream can only be used on the thread where it was created on, using it "
+"in any other thread would result in errors."
 msgstr ""

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MLX main\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-12-22 08:23+0000\n"
+"POT-Creation-Date: 2026-06-22 13:31+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -70,12 +70,12 @@ msgstr ""
 #: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/losses.py:docstring
 #: of mlx.nn.losses.triplet_loss:20
 msgid ""
-"Small positive constant to prevent numerical instability. Defaults to "
-"``1e-6``."
+"Small positive constant added to the p-norm sum before taking the ``1 / p`` "
+"power. Defaults to ``1e-6``."
 msgstr ""
 
 #: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/losses.py:docstring
-#: of mlx.nn.losses.triplet_loss:22
+#: of mlx.nn.losses.triplet_loss:23
 msgid ""
 "Specifies the reduction to apply to the output: ``'none'`` | ``'mean'`` | "
 "``'sum'``. Default: ``'none'``."
@@ -86,7 +86,7 @@ msgid "Returns"
 msgstr "回傳值"
 
 #: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/losses.py:docstring
-#: of mlx.nn.losses.triplet_loss:26
+#: of mlx.nn.losses.triplet_loss:27
 msgid ""
 "Computed triplet loss. If reduction is \"none\", returns a tensor of the "
 "same shape as input;           if reduction is \"mean\" or \"sum\", returns "
@@ -94,14 +94,14 @@ msgid ""
 msgstr ""
 
 #: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/losses.py:docstring
-#: of mlx.nn.losses.triplet_loss:28
+#: of mlx.nn.losses.triplet_loss:29
 msgid ""
 "Computed triplet loss. If reduction is \"none\", returns a tensor of the "
 "same shape as input;"
 msgstr ""
 
 #: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/losses.py:docstring
-#: of mlx.nn.losses.triplet_loss:29
+#: of mlx.nn.losses.triplet_loss:30
 msgid "if reduction is \"mean\" or \"sum\", returns a scalar tensor."
 msgstr ""
 

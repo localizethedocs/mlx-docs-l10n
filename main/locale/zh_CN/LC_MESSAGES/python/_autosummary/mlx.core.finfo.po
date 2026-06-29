@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MLX main\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-12-22 08:23+0000\n"
+"POT-Creation-Date: 2026-06-22 13:31+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -37,36 +37,52 @@ msgstr ""
 msgid "Attributes"
 msgstr ""
 
-#: ../../../src/python/_autosummary/mlx.core.finfo.rst:29:<autosummary>:1
+#: ../../../src/python/_autosummary/mlx.core.finfo.rst:31:<autosummary>:1
+msgid ":py:obj:`bits <mlx.core.finfo.bits>`\\"
+msgstr ""
+
+#: ../../../src/python/_autosummary/mlx.core.finfo.rst:31:<autosummary>:1
+msgid "The number of bits occupied by the type."
+msgstr ""
+
+#: ../../../src/python/_autosummary/mlx.core.finfo.rst:31:<autosummary>:1
 msgid ":py:obj:`dtype <mlx.core.finfo.dtype>`\\"
 msgstr ""
 
-#: ../../../src/python/_autosummary/mlx.core.finfo.rst:29:<autosummary>:1
+#: ../../../src/python/_autosummary/mlx.core.finfo.rst:31:<autosummary>:1
 msgid "The :obj:`Dtype`."
 msgstr ""
 
-#: ../../../src/python/_autosummary/mlx.core.finfo.rst:29:<autosummary>:1
+#: ../../../src/python/_autosummary/mlx.core.finfo.rst:31:<autosummary>:1
 msgid ":py:obj:`eps <mlx.core.finfo.eps>`\\"
 msgstr ""
 
-#: ../../../src/python/_autosummary/mlx.core.finfo.rst:29:<autosummary>:1
+#: ../../../src/python/_autosummary/mlx.core.finfo.rst:31:<autosummary>:1
 msgid ""
 "The difference between 1.0 and the next smallest representable number larger "
 "than 1.0."
 msgstr ""
 
-#: ../../../src/python/_autosummary/mlx.core.finfo.rst:29:<autosummary>:1
+#: ../../../src/python/_autosummary/mlx.core.finfo.rst:31:<autosummary>:1
 msgid ":py:obj:`max <mlx.core.finfo.max>`\\"
 msgstr ""
 
-#: ../../../src/python/_autosummary/mlx.core.finfo.rst:29:<autosummary>:1
+#: ../../../src/python/_autosummary/mlx.core.finfo.rst:31:<autosummary>:1
 msgid "The largest representable number."
 msgstr ""
 
-#: ../../../src/python/_autosummary/mlx.core.finfo.rst:29:<autosummary>:1
+#: ../../../src/python/_autosummary/mlx.core.finfo.rst:31:<autosummary>:1
 msgid ":py:obj:`min <mlx.core.finfo.min>`\\"
 msgstr ""
 
-#: ../../../src/python/_autosummary/mlx.core.finfo.rst:29:<autosummary>:1
+#: ../../../src/python/_autosummary/mlx.core.finfo.rst:31:<autosummary>:1
 msgid "The smallest representable number."
+msgstr ""
+
+#: ../../../src/python/_autosummary/mlx.core.finfo.rst:31:<autosummary>:1
+msgid ":py:obj:`smallest_normal <mlx.core.finfo.smallest_normal>`\\"
+msgstr ""
+
+#: ../../../src/python/_autosummary/mlx.core.finfo.rst:31:<autosummary>:1
+msgid "The smallest positive normal number."
 msgstr ""
