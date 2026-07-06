@@ -224,7 +224,7 @@ msgstr ""
 
 #: ../../../src/python/ops.rst:203:<autosummary>:1
 msgid "Cast the array to a specified type."
-msgstr ""
+msgstr "將陣列轉型為指定型別。"
 
 #: ../../../src/python/ops.rst:203:<autosummary>:1
 msgid ""
