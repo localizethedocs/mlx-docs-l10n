@@ -1,0 +1,58 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023, Apple
+# This file is distributed under the same license as the MLX package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: MLX main\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-08-31 15:41+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../src/python/nn/_autosummary/mlx.nn.layers.distributed.fully_shard.rst:2
+msgid "mlx.nn.layers.distributed.fully\\_shard"
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/distributed.py:docstring
+#: of mlx.nn.layers.distributed.fully_shard:1
+msgid "Wrap ``module`` in a :class:`FullyShardedModule`."
+msgstr ""
+
+#: ../../../src/python/nn/_autosummary/mlx.nn.layers.distributed.fully_shard.rst:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/distributed.py:docstring
+#: of mlx.nn.layers.distributed.fully_shard:3
+msgid "The module to wrap."
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/distributed.py:docstring
+#: of mlx.nn.layers.distributed.fully_shard:5
+msgid ""
+"The group to shard across. If not set, the global group is used. Default: "
+"``None``."
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/distributed.py:docstring
+#: of mlx.nn.layers.distributed.fully_shard:8
+msgid ""
+"If set, the gathered parameters are cast to this dtype for the forward pass. "
+"Default: ``None``."
+msgstr ""
+
+#: ../../../src/python/nn/_autosummary/mlx.nn.layers.distributed.fully_shard.rst:0
+msgid "Returns"
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/distributed.py:docstring
+#: of mlx.nn.layers.distributed.fully_shard:13
+msgid "The wrapped :class:`FullyShardedModule`, or ``module`` unchanged."
+msgstr ""

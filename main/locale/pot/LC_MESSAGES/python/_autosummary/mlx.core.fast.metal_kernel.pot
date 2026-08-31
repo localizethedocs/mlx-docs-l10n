@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MLX main\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-12-22 08:23+0000\n"
+"POT-Creation-Date: 2026-08-31 15:41+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -69,19 +69,38 @@ msgid ""
 "atomic<float>``. Default: ``False``."
 msgstr ""
 
+#: ../../../docstring of mlx.core.fast.metal_kernel:26
+msgid ""
+"Options to compile the Metal kernel with. Supported options:  * "
+"``\"math_mode\"``: The Metal math mode: ``\"safe\"``, ``\"relaxed\"``,   or "
+"``\"fast\"``. ``\"safe\"`` preserves IEEE behavior for special   values such "
+"as ``exp(-inf) == 0``. Default: ``\"safe\"``."
+msgstr ""
+
+#: ../../../docstring of mlx.core.fast.metal_kernel:26
+msgid "Options to compile the Metal kernel with. Supported options:"
+msgstr ""
+
+#: ../../../docstring of mlx.core.fast.metal_kernel:29
+msgid ""
+"``\"math_mode\"``: The Metal math mode: ``\"safe\"``, ``\"relaxed\"``, or "
+"``\"fast\"``. ``\"safe\"`` preserves IEEE behavior for special values such "
+"as ``exp(-inf) == 0``. Default: ``\"safe\"``."
+msgstr ""
+
 #: ../../../src/python/_autosummary/mlx.core.fast.metal_kernel.rst:0
 msgid "Returns"
 msgstr ""
 
-#: ../../../docstring of mlx.core.fast.metal_kernel:27
+#: ../../../docstring of mlx.core.fast.metal_kernel:34
 msgid "Callable ``metal_kernel``."
 msgstr ""
 
-#: ../../../docstring of mlx.core.fast.metal_kernel:30
+#: ../../../docstring of mlx.core.fast.metal_kernel:37
 msgid "Example"
 msgstr ""
 
-#: ../../../docstring of mlx.core.fast.metal_kernel:31
+#: ../../../docstring of mlx.core.fast.metal_kernel:38
 msgid ""
 "def exp_elementwise(a: mx.array):\n"
 "    source = '''\n"

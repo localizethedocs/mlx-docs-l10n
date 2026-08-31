@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MLX main\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-06-01 13:31+0000\n"
+"POT-Creation-Date: 2026-08-31 15:41+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -74,7 +74,7 @@ msgid ""
 msgstr ""
 
 #: ../../../src/python/nn/layers.rst:81:<autosummary>:1
-msgid "Applies Batch Normalization over a 2D or 3D input."
+msgid "Applies Batch Normalization over a 2D, 3D or 4D input."
 msgstr ""
 
 #: ../../../src/python/nn/layers.rst:81:<autosummary>:1
@@ -241,7 +241,7 @@ msgid "A gated recurrent unit (GRU) RNN layer."
 msgstr ""
 
 #: ../../../src/python/nn/layers.rst:81:<autosummary>:1
-msgid ":py:obj:`HardShrink <mlx.nn.HardShrink>`\\ \\(\\)"
+msgid ":py:obj:`HardShrink <mlx.nn.HardShrink>`\\ \\(\\[lambd\\]\\)"
 msgstr ""
 
 #: ../../../src/python/nn/layers.rst:81:<autosummary>:1
@@ -647,8 +647,8 @@ msgstr ""
 
 #: ../../../src/python/nn/layers.rst:81:<autosummary>:1
 msgid ""
-":py:obj:`Upsample <mlx.nn.Upsample>`\\ \\(scale\\_factor\\[\\, mode\\, "
-"align\\_corners\\]\\)"
+":py:obj:`Upsample <mlx.nn.Upsample>`\\ \\(scale\\_factor\\[\\, mode\\, ..."
+"\\]\\)"
 msgstr ""
 
 #: ../../../src/python/nn/layers.rst:81:<autosummary>:1
