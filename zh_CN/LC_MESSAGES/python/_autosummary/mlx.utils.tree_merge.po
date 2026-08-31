@@ -1,0 +1,58 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023, Apple
+# This file is distributed under the same license as the MLX package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: MLX main\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-22 13:31+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../src/python/_autosummary/mlx.utils.tree_merge.rst:2
+msgid "mlx.utils.tree\\_merge"
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/utils.py:docstring
+#: of mlx.utils.tree_merge:1
+msgid ""
+"Merge two Python trees in one containing the values of both. It can be "
+"thought of as a deep dict.update method."
+msgstr ""
+
+#: ../../../src/python/_autosummary/mlx.utils.tree_merge.rst:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/utils.py:docstring
+#: of mlx.utils.tree_merge:4
+msgid "The first Python tree."
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/utils.py:docstring
+#: of mlx.utils.tree_merge:6
+msgid "The second Python tree."
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/utils.py:docstring
+#: of mlx.utils.tree_merge:8
+msgid "A function to merge leaves."
+msgstr ""
+
+#: ../../../src/python/_autosummary/mlx.utils.tree_merge.rst:0
+msgid "Returns"
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/utils.py:docstring
+#: of mlx.utils.tree_merge:11
+msgid ""
+"The Python tree containing the values of both ``tree_a`` and ``tree_b``."
+msgstr ""
