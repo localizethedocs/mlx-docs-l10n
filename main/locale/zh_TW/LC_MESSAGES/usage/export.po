@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MLX main\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-03-09 08:38+0000\n"
+"POT-Creation-Date: 2026-08-31 15:41+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -168,17 +168,54 @@ msgid ""
 msgstr ""
 
 #: ../../../src/usage/export.rst:113
+msgid "Saving Metadata"
+msgstr ""
+
+#: ../../../src/usage/export.rst:115
+msgid ""
+"You can save metadata, such as a model configuration, alongside an exported "
+"function. The metadata is a string, so structured data can be encoded with "
+"JSON:"
+msgstr ""
+
+#: ../../../src/usage/export.rst:119
+msgid ""
+"import json\n"
+"\n"
+"def fun(x, y):\n"
+"  return x + y\n"
+"\n"
+"x = mx.array(1.0)\n"
+"y = mx.array(1.0)\n"
+"config = {\"description\": \"adds two arrays\", \"version\": 1}\n"
+"mx.export_function(\"add.mlxfn\", fun, x, y, metadata=json.dumps(config))"
+msgstr ""
+
+#: ../../../src/usage/export.rst:131
+msgid "Pass ``return_metadata=True`` to read the metadata back when importing:"
+msgstr ""
+
+#: ../../../src/usage/export.rst:133
+msgid ""
+"imported_fun, metadata = mx.import_function(\"add.mlxfn\", "
+"return_metadata=True)\n"
+"\n"
+"# Prints: adds two arrays\n"
+"print(json.loads(metadata)[\"description\"])"
+msgstr ""
+
+#: ../../../src/usage/export.rst:142
 msgid "Exporting Modules"
 msgstr "匯出模組"
 
-#: ../../../src/usage/export.rst:115
+#: ../../../src/usage/export.rst:144
 msgid ""
 "An :obj:`mlx.nn.Module` can be exported with or without the parameters "
 "included in the exported function. Here's an example:"
 msgstr ""
 " :obj:`mlx.nn.Module` 可以連同參數一起匯出，也可以不包含參數。以下為範例："
 
-#: ../../../src/usage/export.rst:118
+#: ../../../src/usage/export.rst:147
 msgid ""
 "model = nn.Linear(4, 4)\n"
 "mx.eval(model.parameters())\n"
@@ -189,7 +226,7 @@ msgid ""
 "mx.export_function(\"model.mlxfn\", call, mx.zeros(4))"
 msgstr ""
 
-#: ../../../src/usage/export.rst:128
+#: ../../../src/usage/export.rst:157
 msgid ""
 "In the above example, the :obj:`mlx.nn.Linear` module is exported. Its "
 "parameters are also saved to the ``model.mlxfn`` file."
@@ -197,7 +234,7 @@ msgstr ""
 "在上述範例中，匯出了 :obj:`mlx.nn.Linear` 模組。其參數也會儲存在 ``model."
 "mlxfn`` 檔案中。"
 
-#: ../../../src/usage/export.rst:133
+#: ../../../src/usage/export.rst:162
 msgid ""
 "For enclosed arrays inside an exported function, be extra careful to ensure "
 "they are evaluated. The computation graph that gets exported will include "
@@ -206,7 +243,7 @@ msgstr ""
 "對於匯出函式中封閉的陣列，請特別注意要先將其評估。匯出的計算圖會包含產生這些"
 "封閉輸入的計算。"
 
-#: ../../../src/usage/export.rst:137
+#: ../../../src/usage/export.rst:166
 msgid ""
 "If the above example was missing ``mx.eval(model.parameters()``, the "
 "exported function would include the random initialization of the :obj:`mlx."
@@ -215,7 +252,7 @@ msgstr ""
 "如果上述範例缺少 ``mx.eval(model.parameters()``，匯出的函式就會包含 :obj:"
 "`mlx.nn.Module` 參數的隨機初始化。"
 
-#: ../../../src/usage/export.rst:141
+#: ../../../src/usage/export.rst:170
 msgid ""
 "If you only want to export the ``Module.__call__`` function without the "
 "parameters, pass them as inputs to the ``call`` wrapper:"
@@ -223,7 +260,7 @@ msgstr ""
 "如果你只想匯出 ``Module.__call__`` 函式而不包含參數，請將參數作為輸入傳給 "
 "``call`` 包裝函式："
 
-#: ../../../src/usage/export.rst:144
+#: ../../../src/usage/export.rst:173
 msgid ""
 "model = nn.Linear(4, 4)\n"
 "mx.eval(model.parameters())\n"
@@ -237,17 +274,17 @@ msgid ""
 "mx.export_function(\"model.mlxfn\", call, (mx.zeros(4),), params)"
 msgstr ""
 
-#: ../../../src/usage/export.rst:159
+#: ../../../src/usage/export.rst:188
 msgid "Exporting with a Callback"
 msgstr ""
 
-#: ../../../src/usage/export.rst:161
+#: ../../../src/usage/export.rst:190
 msgid ""
 "To inspect the exported graph, you can pass a callback instead of a file "
 "path to :func:`export_function`."
 msgstr ""
 
-#: ../../../src/usage/export.rst:164
+#: ../../../src/usage/export.rst:193
 msgid ""
 "def fun(x):\n"
 "  return x.astype(mx.int32)\n"
@@ -258,42 +295,42 @@ msgid ""
 "mx.export_function(callback, fun, mx.array([1.0, 2.0]))"
 msgstr ""
 
-#: ../../../src/usage/export.rst:174
+#: ../../../src/usage/export.rst:203
 msgid ""
 "The argument to the callback (``args``) is a dictionary which includes a "
 "``type`` field. The possible types are:"
 msgstr ""
 
-#: ../../../src/usage/export.rst:177
+#: ../../../src/usage/export.rst:206
 msgid "``\"inputs\"``: The ordered positional inputs to the exported function"
 msgstr ""
 
-#: ../../../src/usage/export.rst:178
+#: ../../../src/usage/export.rst:207
 msgid ""
 "``\"keyword_inputs\"``: The keyword specified inputs to the exported function"
 msgstr ""
 
-#: ../../../src/usage/export.rst:179
+#: ../../../src/usage/export.rst:208
 msgid "``\"outputs\"``: The ordered outputs of the exported function"
 msgstr ""
 
-#: ../../../src/usage/export.rst:180
+#: ../../../src/usage/export.rst:209
 msgid "``\"constants\"``: Any graph constants"
 msgstr ""
 
-#: ../../../src/usage/export.rst:181
+#: ../../../src/usage/export.rst:210
 msgid "``\"primitives\"``: Inner graph nodes representating the operations"
 msgstr ""
 
-#: ../../../src/usage/export.rst:183
+#: ../../../src/usage/export.rst:212
 msgid "Each type has additional fields in the ``args`` dictionary."
 msgstr ""
 
-#: ../../../src/usage/export.rst:187
+#: ../../../src/usage/export.rst:216
 msgid "Shapeless Exports"
 msgstr "無形狀匯出"
 
-#: ../../../src/usage/export.rst:189
+#: ../../../src/usage/export.rst:218
 msgid ""
 "Just like :func:`compile`, functions can also be exported for dynamically "
 "shaped inputs. Pass ``shapeless=True`` to :func:`export_function` or :func:"
@@ -304,7 +341,7 @@ msgstr ""
 "`export_function` 或 :func:`exporter` 傳入 ``shapeless=True``，即可匯出可用於"
 "可變形狀輸入的函式："
 
-#: ../../../src/usage/export.rst:193
+#: ../../../src/usage/export.rst:222
 msgid ""
 "mx.export_function(\"fun.mlxfn\", mx.abs, mx.array([0.0]), shapeless=True)\n"
 "imported_abs = mx.import_function(\"fun.mlxfn\")\n"
@@ -316,7 +353,7 @@ msgid ""
 "out, = imported_abs(mx.array([-1.0, -2.0]))"
 msgstr ""
 
-#: ../../../src/usage/export.rst:204
+#: ../../../src/usage/export.rst:233
 msgid ""
 "With ``shapeless=False`` (which is the default), the second call to "
 "``imported_abs`` would raise an exception with a shape mismatch."
@@ -324,7 +361,7 @@ msgstr ""
 "若 ``shapeless=False``（預設值），第二次呼叫 ``imported_abs`` 會因形狀不符而"
 "拋出例外。"
 
-#: ../../../src/usage/export.rst:207
+#: ../../../src/usage/export.rst:236
 msgid ""
 "Shapeless exporting works the same as shapeless compilation and should be "
 "used carefully. See the :ref:`documentation on shapeless compilation "
@@ -333,11 +370,11 @@ msgstr ""
 "無形狀匯出的運作方式與無形狀編譯相同，應謹慎使用。詳情請參考 :ref:`無形狀編譯"
 "文件 <shapeless_compile>`。"
 
-#: ../../../src/usage/export.rst:212
+#: ../../../src/usage/export.rst:241
 msgid "Exporting Multiple Traces"
 msgstr "匯出多個追蹤"
 
-#: ../../../src/usage/export.rst:214
+#: ../../../src/usage/export.rst:243
 msgid ""
 "In some cases, functions build different computation graphs for different "
 "input arguments. A simple way to manage this is to export to a new file with "
@@ -349,7 +386,7 @@ msgstr ""
 "對每組輸入匯出到新檔案。這在許多情況下可行，但若匯出函式包含大量重複的常數資"
 "料（例如 :obj:`mlx.nn.Module` 的參數）則可能不夠理想。"
 
-#: ../../../src/usage/export.rst:220
+#: ../../../src/usage/export.rst:249
 msgid ""
 "The export API in MLX lets you export multiple traces of the same function "
 "to a single file by creating an exporting context manager with :func:"
@@ -358,7 +395,7 @@ msgstr ""
 "MLX 的匯出 API 可透過 :func:`exporter` 建立匯出內容管理器，將同一函式的多個追"
 "蹤匯出到單一檔案："
 
-#: ../../../src/usage/export.rst:223
+#: ../../../src/usage/export.rst:252
 msgid ""
 "def fun(x, y=None):\n"
 "    constant = mx.array(3.0)\n"
@@ -381,17 +418,17 @@ msgid ""
 "print(out)"
 msgstr ""
 
-#: ../../../src/usage/export.rst:245
+#: ../../../src/usage/export.rst:274
 msgid ""
 "In the above example the function constant data, (i.e. ``constant``), is "
 "only saved once."
 msgstr "在上述範例中，函式的常數資料（即 ``constant``）只會儲存一次。"
 
-#: ../../../src/usage/export.rst:249
+#: ../../../src/usage/export.rst:278
 msgid "Transformations with Imported Functions"
 msgstr "匯入函式的轉換"
 
-#: ../../../src/usage/export.rst:251
+#: ../../../src/usage/export.rst:280
 msgid ""
 "Function transformations like :func:`grad`, :func:`vmap`, and :func:"
 "`compile` work on imported functions just like regular Python functions:"
@@ -399,7 +436,7 @@ msgstr ""
 "像 :func:`grad`、:func:`vmap` 與 :func:`compile` 等函式轉換，在匯入函式上也能"
 "像一般 Python 函式一樣運作："
 
-#: ../../../src/usage/export.rst:254
+#: ../../../src/usage/export.rst:283
 msgid ""
 "def fun(x):\n"
 "    return mx.sin(x)\n"
@@ -420,11 +457,11 @@ msgid ""
 "print(compiled_fun(x)[0])"
 msgstr ""
 
-#: ../../../src/usage/export.rst:276
+#: ../../../src/usage/export.rst:305
 msgid "Importing Functions in C++"
 msgstr "在 C++ 中匯入函式"
 
-#: ../../../src/usage/export.rst:278
+#: ../../../src/usage/export.rst:307
 msgid ""
 "Importing and running functions in C++ is basically the same as importing "
 "and running them in Python. First, follow the :ref:`instructions "
@@ -433,11 +470,11 @@ msgstr ""
 "在 C++ 中匯入與執行函式，基本上與在 Python 中匯入與執行相同。首先依照 :ref:`"
 "指示 <mlx_in_cpp>` 建立一個使用 MLX 作為程式庫的簡單 C++ 專案。"
 
-#: ../../../src/usage/export.rst:282
+#: ../../../src/usage/export.rst:311
 msgid "Next, export a simple function from Python:"
 msgstr "接著從 Python 匯出一個簡單函式："
 
-#: ../../../src/usage/export.rst:284
+#: ../../../src/usage/export.rst:313
 msgid ""
 "def fun(x, y):\n"
 "    return mx.exp(x + y)\n"
@@ -447,11 +484,11 @@ msgid ""
 "mx.export_function(\"fun.mlxfn\", fun, x, y)"
 msgstr ""
 
-#: ../../../src/usage/export.rst:294
+#: ../../../src/usage/export.rst:323
 msgid "Import and run the function in C++ with only a few lines of code:"
 msgstr "只需幾行程式碼即可在 C++ 中匯入並執行該函式："
 
-#: ../../../src/usage/export.rst:296
+#: ../../../src/usage/export.rst:325
 msgid ""
 "auto fun = mx::import_function(\"fun.mlxfn\");\n"
 "\n"
@@ -462,7 +499,7 @@ msgid ""
 "std::cout << outputs[0] << std::endl;"
 msgstr ""
 
-#: ../../../src/usage/export.rst:306
+#: ../../../src/usage/export.rst:335
 msgid ""
 "Imported functions can be transformed in C++ just like in Python. Use ``std::"
 "vector<mx::array>`` for positional arguments and ``std::map<std::string, mx::"
@@ -472,18 +509,18 @@ msgstr ""
 "參數使用 ``std::vector<mx::array>``，關鍵字參數使用 ``std::map<std::string, "
 "mx::array>``。"
 
-#: ../../../src/usage/export.rst:311
+#: ../../../src/usage/export.rst:340
 msgid "More Examples"
 msgstr "更多範例"
 
-#: ../../../src/usage/export.rst:313
+#: ../../../src/usage/export.rst:342
 msgid ""
 "Here are a few more complete examples exporting more complex functions from "
 "Python and importing and running them in C++:"
 msgstr ""
 "以下是更多完整範例，示範從 Python 匯出較複雜的函式，並在 C++ 中匯入與執行："
 
-#: ../../../src/usage/export.rst:316
+#: ../../../src/usage/export.rst:345
 msgid ""
 "`Inference and training a multi-layer perceptron <https://github.com/ml-"
 "explore/mlx/tree/main/examples/export>`_"

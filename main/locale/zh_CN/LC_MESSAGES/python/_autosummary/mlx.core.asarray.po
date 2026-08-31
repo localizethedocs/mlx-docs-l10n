@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MLX main\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-06-22 13:31+0000\n"
+"POT-Creation-Date: 2026-08-31 15:41+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -39,15 +39,16 @@ msgstr ""
 
 #: ../../../docstring of mlx.core.asarray:6
 msgid ""
-"Must be ``True`` or unspecified. ``False`` is not supported, since MLX has "
-"no in-place operations and cannot return a non-copying view."
+"Whether to copy the input. If ``True``, always copy. If ``False``, never "
+"copy. If ``None``, share memory when possible and copy otherwise. Zero-copy "
+"DLPack imports preserve the DLPack strides."
 msgstr ""
 
 #: ../../../src/python/_autosummary/mlx.core.asarray.rst:0
 msgid "Returns"
 msgstr ""
 
-#: ../../../docstring of mlx.core.asarray:11
+#: ../../../docstring of mlx.core.asarray:12
 msgid "An array interpretation of the input."
 msgstr ""
 
@@ -59,6 +60,6 @@ msgstr ""
 msgid "Raises"
 msgstr ""
 
-#: ../../../docstring of mlx.core.asarray:14
-msgid "If ``copy`` is ``False``."
+#: ../../../docstring of mlx.core.asarray:15
+msgid "If ``copy`` is ``False`` and a copy is required."
 msgstr ""

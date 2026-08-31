@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MLX main\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-12-22 08:23+0000\n"
+"POT-Creation-Date: 2026-08-31 15:41+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -30,11 +30,12 @@ msgstr ""
 #: of mlx.nn.layers.activations.step:3
 msgid ""
 "This function implements a binary step activation, where the output is set "
-"to 1 if the input is greater than a specified threshold, and 0 otherwise."
+"to 1 if the input is greater than or equal to a specified threshold, and 0 "
+"otherwise."
 msgstr ""
 
 #: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/activations.py:docstring
-#: of mlx.nn.layers.activations.step:6
+#: of mlx.nn.layers.activations.step:7
 msgid ""
 "\\text{step}(x) = \\begin{cases}\n"
 "0 & \\text{if } x < \\text{threshold} \\\\\n"
@@ -48,6 +49,6 @@ msgid "Parameters"
 msgstr "參數"
 
 #: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/activations.py:docstring
-#: of mlx.nn.layers.activations.step:12
-msgid "The value to threshold at."
+#: of mlx.nn.layers.activations.step:13
+msgid "The value to threshold at. Default: ``0.0``."
 msgstr ""

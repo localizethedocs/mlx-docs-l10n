@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MLX main\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-12-22 08:23+0000\n"
+"POT-Creation-Date: 2026-08-31 15:41+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -42,6 +42,13 @@ msgid "Number of samples, defaults to ``50``."
 msgstr ""
 
 #: ../../../docstring of mlx.core.linspace:9
+msgid ""
+"If ``True``, ``stop`` is the last sample. Otherwise it is not included and "
+"the samples are spaced over the half-open interval ``[start, stop)``. "
+"Default: ``True``."
+msgstr ""
+
+#: ../../../docstring of mlx.core.linspace:13
 msgid "Specifies the data type of the output, default to ``float32``."
 msgstr ""
 
@@ -49,7 +56,7 @@ msgstr ""
 msgid "Returns"
 msgstr "回傳值"
 
-#: ../../../docstring of mlx.core.linspace:13
+#: ../../../docstring of mlx.core.linspace:17
 msgid "The range of values."
 msgstr ""
 

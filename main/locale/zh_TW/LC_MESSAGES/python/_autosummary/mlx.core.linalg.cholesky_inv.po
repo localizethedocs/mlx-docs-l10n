@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MLX main\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-12-22 08:23+0000\n"
+"POT-Creation-Date: 2026-08-31 15:41+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -60,16 +60,18 @@ msgid "Parameters"
 msgstr "參數"
 
 #: ../../../docstring of mlx.core.linalg.cholesky_inv:19
-msgid "Input array."
-msgstr "輸入陣列。"
+msgid ""
+"Input array. This is the Cholesky factor :math:`\\mathbf{L}`, not :math:"
+"`\\mathbf{A}` itself."
+msgstr ""
 
-#: ../../../docstring of mlx.core.linalg.cholesky_inv:21
+#: ../../../docstring of mlx.core.linalg.cholesky_inv:22
 msgid ""
 "If ``True``, return the upper triangular Cholesky factor. If ``False``, "
 "return the lower triangular Cholesky factor. Default: ``False``."
 msgstr ""
 
-#: ../../../docstring of mlx.core.linalg.cholesky_inv:24
+#: ../../../docstring of mlx.core.linalg.cholesky_inv:25
 msgid ""
 "Stream or device. Defaults to ``None`` in which case the default stream of "
 "the default device is used."
@@ -79,7 +81,7 @@ msgstr ""
 msgid "Returns"
 msgstr "回傳值"
 
-#: ../../../docstring of mlx.core.linalg.cholesky_inv:28
+#: ../../../docstring of mlx.core.linalg.cholesky_inv:29
 msgid ""
 ":math:`\\mathbf{A^{-1}}` where :math:`\\mathbf{A} = \\mathbf{L}\\mathbf{L}"
 "^T`."
@@ -88,3 +90,6 @@ msgstr ""
 #: ../../../src/python/_autosummary/mlx.core.linalg.cholesky_inv.rst:0
 msgid "Return type"
 msgstr "回傳值型別"
+
+#~ msgid "Input array."
+#~ msgstr "輸入陣列。"

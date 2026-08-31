@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MLX main\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-06-22 13:31+0000\n"
+"POT-Creation-Date: 2026-08-31 15:41+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -33,14 +33,14 @@ msgstr ""
 
 #: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/linear.py:docstring
 #: of mlx.nn.layers.linear.Bilinear:5
-msgid "y_i = x_1^\\top W_i x_2 + b_i"
+msgid "y_i = x_2^\\top W_i x_1 + b_i"
 msgstr ""
 
 #: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/linear.py:docstring
 #: of mlx.nn.layers.linear.Bilinear:9
 msgid ""
-"where: :math:`W` has shape ``[output_dims, input1_dims, input2_dims]``, :"
-"math:`b` has shape ``[output_dims ]``, and :math:`i` indexes the output "
+"where: :math:`W` has shape ``[output_dims, input2_dims, input1_dims]``, :"
+"math:`b` has shape ``[output_dims]``, and :math:`i` indexes the output "
 "dimension."
 msgstr ""
 

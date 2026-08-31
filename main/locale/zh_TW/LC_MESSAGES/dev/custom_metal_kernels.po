@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MLX main\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-06-22 13:31+0000\n"
+"POT-Creation-Date: 2026-08-31 15:41+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -208,17 +208,46 @@ msgstr ""
 
 #: ../../../src/dev/custom_metal_kernels.rst:95
 msgid ""
-"Passing ``verbose=True`` to :func:`ast.metal_kernel.__call__` will print the "
-"generated code for debugging purposes."
+"Passing ``verbose=True`` when calling the kernel returned by :func:`fast."
+"metal_kernel` will print the generated code for debugging purposes."
 msgstr ""
-"在 :func:`ast.metal_kernel.__call__` 中傳入 ``verbose=True`` 會列印產生的程式"
-"碼以便除錯。"
 
 #: ../../../src/dev/custom_metal_kernels.rst:99
+msgid "Math Mode"
+msgstr ""
+
+#: ../../../src/dev/custom_metal_kernels.rst:101
+msgid ""
+"By default :func:`fast.metal_kernel` compiles kernels with "
+"``compile_options={\"math_mode\": \"safe\"}`` so special values follow IEEE "
+"behavior, for example ``exp(-inf) == 0``. This is important for kernels such "
+"as masked softmax where causal or sliding-window masks depend on "
+"exponentiating ``-inf``."
+msgstr ""
+
+#: ../../../src/dev/custom_metal_kernels.rst:107
+msgid ""
+"If your kernel does not rely on these edge cases, you can opt in to less "
+"strict math with ``compile_options={\"math_mode\": \"relaxed\"}`` or "
+"``compile_options={\"math_mode\": \"fast\"}``:"
+msgstr ""
+
+#: ../../../src/dev/custom_metal_kernels.rst:111
+msgid ""
+"kernel = mx.fast.metal_kernel(\n"
+"    name=\"my_kernel\",\n"
+"    input_names=[\"x\"],\n"
+"    output_names=[\"y\"],\n"
+"    source=source,\n"
+"    compile_options={\"math_mode\": \"relaxed\"},\n"
+")"
+msgstr ""
+
+#: ../../../src/dev/custom_metal_kernels.rst:122
 msgid "Using Shape/Strides"
 msgstr "使用形狀/步幅"
 
-#: ../../../src/dev/custom_metal_kernels.rst:101
+#: ../../../src/dev/custom_metal_kernels.rst:124
 msgid ""
 ":func:`fast.metal_kernel` supports an argument ``ensure_row_contiguous`` "
 "which is ``True`` by default. This will copy the array inputs if needed "
@@ -230,7 +259,7 @@ msgstr ""
 "``True``。這會在啟動內核前視需要複製陣列輸入，以確保記憶體配置為列連續。一般"
 "而言，這會讓撰寫內核更容易，因為索引時不用擔心間隔或維度順序。"
 
-#: ../../../src/dev/custom_metal_kernels.rst:107
+#: ../../../src/dev/custom_metal_kernels.rst:130
 msgid ""
 "If we want to avoid this copy, :func:`fast.metal_kernel` automatically "
 "passes ``a_shape``, ``a_strides`` and ``a_ndim`` for each input array ``a`` "
@@ -241,7 +270,7 @@ msgstr ""
 "會自動為每個輸入陣列 ``a`` 傳入 ``a_shape``、``a_strides`` 與 ``a_ndim``。接"
 "著我們可以使用 MLX 內建的索引工具為每個執行緒取出正確的元素。"
 
-#: ../../../src/dev/custom_metal_kernels.rst:112
+#: ../../../src/dev/custom_metal_kernels.rst:135
 msgid ""
 "Let's convert ``myexp`` above to support arbitrarily strided arrays without "
 "relying on a copy from ``ensure_row_contiguous``:"
@@ -249,7 +278,7 @@ msgstr ""
 "讓我們把上面的 ``myexp`` 改成支援任意步幅的陣列，而不依賴 "
 "``ensure_row_contiguous`` 的複製："
 
-#: ../../../src/dev/custom_metal_kernels.rst:115
+#: ../../../src/dev/custom_metal_kernels.rst:138
 msgid ""
 "source = \"\"\"\n"
 "    uint elem = thread_position_in_grid.x;\n"
@@ -321,21 +350,21 @@ msgstr ""
 "b = exp_elementwise(a)\n"
 "assert mx.allclose(b, mx.exp(a))"
 
-#: ../../../src/dev/custom_metal_kernels.rst:152
+#: ../../../src/dev/custom_metal_kernels.rst:175
 msgid "Complex Example"
 msgstr "複雜範例"
 
-#: ../../../src/dev/custom_metal_kernels.rst:154
+#: ../../../src/dev/custom_metal_kernels.rst:177
 msgid ""
 "Let's implement a more complex example: ``grid_sample`` in ``\"bilinear\"`` "
 "mode."
 msgstr "讓我們實作更複雜的例子：``\"bilinear\"`` 模式的 ``grid_sample``。"
 
-#: ../../../src/dev/custom_metal_kernels.rst:156
+#: ../../../src/dev/custom_metal_kernels.rst:179
 msgid "We'll start with the following MLX implementation using standard ops:"
 msgstr "我們從使用標準運算的 MLX 實作開始："
 
-#: ../../../src/dev/custom_metal_kernels.rst:158
+#: ../../../src/dev/custom_metal_kernels.rst:181
 msgid ""
 "def grid_sample_ref(x, grid):\n"
 "    N, H_in, W_in, _ = x.shape\n"
@@ -429,7 +458,7 @@ msgstr ""
 "\n"
 "    return output"
 
-#: ../../../src/dev/custom_metal_kernels.rst:201
+#: ../../../src/dev/custom_metal_kernels.rst:224
 msgid ""
 "Now let's use :func:`custom_function` together with :func:`fast."
 "metal_kernel` to write a fast GPU kernel for both the forward and backward "
@@ -438,11 +467,11 @@ msgstr ""
 "現在讓我們將 :func:`custom_function` 與 :func:`fast.metal_kernel` 搭配使用，"
 "為正向與反向傳播寫出快速的 GPU 內核。"
 
-#: ../../../src/dev/custom_metal_kernels.rst:204
+#: ../../../src/dev/custom_metal_kernels.rst:227
 msgid "First we'll implement the forward pass as a fused kernel:"
 msgstr "首先我們將正向傳播實作為融合內核："
 
-#: ../../../src/dev/custom_metal_kernels.rst:206
+#: ../../../src/dev/custom_metal_kernels.rst:229
 msgid ""
 "source = \"\"\"\n"
 "    uint elem = thread_position_in_grid.x;\n"
@@ -610,11 +639,11 @@ msgstr ""
 "    )\n"
 "    return outputs[0]"
 
-#: ../../../src/dev/custom_metal_kernels.rst:287
+#: ../../../src/dev/custom_metal_kernels.rst:310
 msgid "For a reasonably sized input such as:"
 msgstr "對於像是以下合理大小的輸入："
 
-#: ../../../src/dev/custom_metal_kernels.rst:289
+#: ../../../src/dev/custom_metal_kernels.rst:312
 msgid ""
 "x.shape = (8, 1024, 1024, 64)\n"
 "grid.shape = (8, 256, 256, 2)"
@@ -622,19 +651,19 @@ msgstr ""
 "x.shape = (8, 1024, 1024, 64)\n"
 "grid.shape = (8, 256, 256, 2)"
 
-#: ../../../src/dev/custom_metal_kernels.rst:294
+#: ../../../src/dev/custom_metal_kernels.rst:317
 msgid "On an M1 Max, we see a big performance improvement:"
 msgstr "在 M1 Max 上，我們看到顯著的效能提升："
 
-#: ../../../src/dev/custom_metal_kernels.rst:296
+#: ../../../src/dev/custom_metal_kernels.rst:319
 msgid "``55.7ms -> 6.7ms => 8x speed up``"
 msgstr "``55.7ms -> 6.7ms => 8x speed up``"
 
-#: ../../../src/dev/custom_metal_kernels.rst:299
+#: ../../../src/dev/custom_metal_kernels.rst:322
 msgid "Grid Sample VJP"
 msgstr ""
 
-#: ../../../src/dev/custom_metal_kernels.rst:301
+#: ../../../src/dev/custom_metal_kernels.rst:324
 msgid ""
 "Since we decorated ``grid_sample`` with :func:`custom_function`, we can now "
 "define its custom vjp transform so MLX can differentiate it."
@@ -642,7 +671,7 @@ msgstr ""
 "由於我們用 :func:`custom_function` 裝飾 ``grid_sample``，現在可以定義自訂的 "
 "vjp 轉換，讓 MLX 能夠對它做微分。"
 
-#: ../../../src/dev/custom_metal_kernels.rst:304
+#: ../../../src/dev/custom_metal_kernels.rst:327
 msgid ""
 "The backwards pass requires atomically updating ``x_grad``/``grid_grad`` and "
 "so requires a few extra :func:`fast.metal_kernel` features:"
@@ -650,22 +679,22 @@ msgstr ""
 "反向傳播需要以原子方式更新 ``x_grad``/``grid_grad``，因此需要一些額外的 :"
 "func:`fast.metal_kernel` 功能："
 
-#: ../../../src/dev/custom_metal_kernels.rst:307
+#: ../../../src/dev/custom_metal_kernels.rst:330
 msgid "``init_value=0``"
 msgstr ""
 
-#: ../../../src/dev/custom_metal_kernels.rst:308
+#: ../../../src/dev/custom_metal_kernels.rst:331
 msgid ""
 "Initialize all of the kernel's outputs to this value before it runs. This "
 "allows us to update only part of the output arrays with the kernel."
 msgstr ""
 "在內核執行前，將所有輸出初始化為此值。這讓我們可以只更新輸出陣列的一部分。"
 
-#: ../../../src/dev/custom_metal_kernels.rst:310
+#: ../../../src/dev/custom_metal_kernels.rst:333
 msgid "``atomic_outputs=True``"
 msgstr ""
 
-#: ../../../src/dev/custom_metal_kernels.rst:311
+#: ../../../src/dev/custom_metal_kernels.rst:334
 msgid ""
 "Designate all of the kernel outputs as ``atomic`` in the function signature. "
 "This means we can use Metal's ``atomic`` features to simultaneously update "
@@ -678,11 +707,11 @@ msgstr ""
 "詳情請參見 `Metal Shading Language Specification <https://developer.apple."
 "com/metal/Metal-Shading-Language-Specification.pdf>`_ 第 6.15 節。"
 
-#: ../../../src/dev/custom_metal_kernels.rst:315
+#: ../../../src/dev/custom_metal_kernels.rst:338
 msgid "We can then implement the backwards pass as follows:"
 msgstr "接著我們可以如下實作反向傳播："
 
-#: ../../../src/dev/custom_metal_kernels.rst:317
+#: ../../../src/dev/custom_metal_kernels.rst:340
 msgid ""
 "source = \"\"\"\n"
 "    uint elem = thread_position_in_grid.x;\n"
@@ -816,10 +845,17 @@ msgid ""
 "    return outputs[0], outputs[1]"
 msgstr ""
 
-#: ../../../src/dev/custom_metal_kernels.rst:443
+#: ../../../src/dev/custom_metal_kernels.rst:466
 msgid "There's an even larger speed up for the vjp:"
 msgstr "vjp 的加速幅度更大："
 
-#: ../../../src/dev/custom_metal_kernels.rst:445
+#: ../../../src/dev/custom_metal_kernels.rst:468
 msgid "``676.4ms -> 16.7ms => 40x speed up``"
 msgstr ""
+
+#~ msgid ""
+#~ "Passing ``verbose=True`` to :func:`ast.metal_kernel.__call__` will print "
+#~ "the generated code for debugging purposes."
+#~ msgstr ""
+#~ "在 :func:`ast.metal_kernel.__call__` 中傳入 ``verbose=True`` 會列印產生的"
+#~ "程式碼以便除錯。"

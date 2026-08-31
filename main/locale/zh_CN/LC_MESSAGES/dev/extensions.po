@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MLX main\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-05-04 10:10+0000\n"
+"POT-Creation-Date: 2026-08-31 15:41+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -464,7 +464,44 @@ msgstr ""
 msgid "Using metal from C++: `Metal-cpp`_"
 msgstr ""
 
-#: ../../../src/dev/extensions.rst:333
+#: ../../../src/dev/extensions.rst:335
+msgid ""
+"As of Metal 4.1, the implicit address space of ``this`` in a member function "
+"is ``__metal_generic`` rather than ``thread``. Member functions in Metal "
+"shading code should therefore carry an explicit address space qualifier, "
+"written after the parameter list:"
+msgstr ""
+
+#: ../../../src/dev/extensions.rst:340
+msgid ""
+"struct Accumulator {\n"
+"    float vals[4];\n"
+"    thread float& at(short i) thread {\n"
+"        return vals[i];\n"
+"    }\n"
+"};"
+msgstr ""
+
+#: ../../../src/dev/extensions.rst:349
+msgid ""
+"Without the trailing ``thread``, returning a ``thread``-qualified reference "
+"to a member no longer compiles::"
+msgstr ""
+
+#: ../../../src/dev/extensions.rst:352
+msgid ""
+"error: reference to type 'thread float' could not bind to an lvalue\n"
+"of type '__metal_generic float'"
+msgstr ""
+
+#: ../../../src/dev/extensions.rst:355
+msgid ""
+"Metal libraries built with ``mlx_build_metallib`` are compiled with ``-"
+"Wmetal-addr-spaces``, which reports a missing qualifier as a warning on "
+"toolchains where it is not yet an error."
+msgstr ""
+
+#: ../../../src/dev/extensions.rst:359
 msgid ""
 "Let's keep the GPU kernel simple. We will launch exactly as many threads as "
 "there are elements in the output. Each thread will pick the element it needs "
@@ -472,7 +509,7 @@ msgid ""
 "element in the output."
 msgstr ""
 
-#: ../../../src/dev/extensions.rst:338
+#: ../../../src/dev/extensions.rst:364
 msgid ""
 "template <typename T>\n"
 "[[kernel]] void axpby_general(\n"
@@ -497,13 +534,13 @@ msgid ""
 "}"
 msgstr ""
 
-#: ../../../src/dev/extensions.rst:361
+#: ../../../src/dev/extensions.rst:387
 msgid ""
 "We then need to instantiate this template for all floating point types and "
 "give each instantiation a unique host name so we can identify it."
 msgstr ""
 
-#: ../../../src/dev/extensions.rst:364
+#: ../../../src/dev/extensions.rst:390
 msgid ""
 "instantiate_kernel(\"axpby_general_float32\", axpby_general, float)\n"
 "instantiate_kernel(\"axpby_general_float16\", axpby_general, float16_t)\n"
@@ -511,14 +548,14 @@ msgid ""
 "instantiate_kernel(\"axpby_general_complex64\", axpby_general, complex64_t)"
 msgstr ""
 
-#: ../../../src/dev/extensions.rst:371
+#: ../../../src/dev/extensions.rst:397
 msgid ""
 "The logic to determine the kernel, set the inputs, resolve the grid "
 "dimensions, and dispatch to the GPU are contained in :meth:`Axpby::eval_gpu` "
 "as shown below."
 msgstr ""
 
-#: ../../../src/dev/extensions.rst:375
+#: ../../../src/dev/extensions.rst:401
 msgid ""
 "/** Evaluate primitive on GPU */\n"
 "void Axpby::eval_gpu(\n"
@@ -593,12 +630,12 @@ msgid ""
 "}"
 msgstr ""
 
-#: ../../../src/dev/extensions.rst:447
+#: ../../../src/dev/extensions.rst:473
 msgid ""
 "We can now call the :meth:`axpby` operation on both the CPU and the GPU!"
 msgstr ""
 
-#: ../../../src/dev/extensions.rst:449
+#: ../../../src/dev/extensions.rst:475
 msgid ""
 "A few things to note about MLX and Metal before moving on. MLX keeps track "
 "of the active ``command_buffer`` and the ``MTLCommandBuffer`` to which it is "
@@ -609,18 +646,18 @@ msgid ""
 "is hit or the command buffer needs to be flushed for synchronization."
 msgstr ""
 
-#: ../../../src/dev/extensions.rst:458
+#: ../../../src/dev/extensions.rst:484
 msgid "Primitive Transforms"
 msgstr ""
 
-#: ../../../src/dev/extensions.rst:460
+#: ../../../src/dev/extensions.rst:486
 msgid ""
 "Next, let's add implementations for transformations in a :class:`Primitive`. "
 "These transformations can be built on top of other operations, including the "
 "one we just defined:"
 msgstr ""
 
-#: ../../../src/dev/extensions.rst:464
+#: ../../../src/dev/extensions.rst:490
 msgid ""
 "/** The Jacobian-vector product. */\n"
 "std::vector<array> Axpby::jvp(\n"
@@ -648,7 +685,7 @@ msgid ""
 "}"
 msgstr ""
 
-#: ../../../src/dev/extensions.rst:491
+#: ../../../src/dev/extensions.rst:517
 msgid ""
 "/** The vector-Jacobian product. */\n"
 "std::vector<array> Axpby::vjp(\n"
@@ -667,13 +704,13 @@ msgid ""
 "}"
 msgstr ""
 
-#: ../../../src/dev/extensions.rst:509
+#: ../../../src/dev/extensions.rst:535
 msgid ""
 "Note, a transformation does not need to be fully defined to start using the :"
 "class:`Primitive`."
 msgstr ""
 
-#: ../../../src/dev/extensions.rst:512
+#: ../../../src/dev/extensions.rst:538
 msgid ""
 "/** Vectorize primitive along given axis */\n"
 "std::pair<std::vector<array>, std::vector<int>> Axpby::vmap(\n"
@@ -683,92 +720,92 @@ msgid ""
 "}"
 msgstr ""
 
-#: ../../../src/dev/extensions.rst:522
+#: ../../../src/dev/extensions.rst:548
 msgid "Building and Binding"
 msgstr ""
 
-#: ../../../src/dev/extensions.rst:524
+#: ../../../src/dev/extensions.rst:550
 msgid "Let's look at the overall directory structure first."
 msgstr ""
 
-#: ../../../src/dev/extensions.rst:526 ../../../src/dev/extensions.rst:705
+#: ../../../src/dev/extensions.rst:552 ../../../src/dev/extensions.rst:731
 msgid "extensions"
 msgstr ""
 
-#: ../../../src/dev/extensions.rst:527
+#: ../../../src/dev/extensions.rst:553
 msgid "├── axpby"
 msgstr ""
 
-#: ../../../src/dev/extensions.rst:528
+#: ../../../src/dev/extensions.rst:554
 msgid "│   ├── axpby.cpp"
 msgstr ""
 
-#: ../../../src/dev/extensions.rst:529
+#: ../../../src/dev/extensions.rst:555
 msgid "│   ├── axpby.h"
 msgstr ""
 
-#: ../../../src/dev/extensions.rst:530
+#: ../../../src/dev/extensions.rst:556
 msgid "│   └── axpby.metal"
 msgstr ""
 
-#: ../../../src/dev/extensions.rst:531 ../../../src/dev/extensions.rst:706
+#: ../../../src/dev/extensions.rst:557 ../../../src/dev/extensions.rst:732
 msgid "├── mlx_sample_extensions"
 msgstr ""
 
-#: ../../../src/dev/extensions.rst:532
+#: ../../../src/dev/extensions.rst:558
 msgid "│   └── __init__.py"
 msgstr ""
 
-#: ../../../src/dev/extensions.rst:533
+#: ../../../src/dev/extensions.rst:559
 msgid "├── bindings.cpp"
 msgstr ""
 
-#: ../../../src/dev/extensions.rst:534
+#: ../../../src/dev/extensions.rst:560
 msgid "├── CMakeLists.txt"
 msgstr ""
 
-#: ../../../src/dev/extensions.rst:535
+#: ../../../src/dev/extensions.rst:561
 msgid "└── setup.py"
 msgstr ""
 
-#: ../../../src/dev/extensions.rst:537
+#: ../../../src/dev/extensions.rst:563
 msgid "``extensions/axpby/`` defines the C++ extension library"
 msgstr ""
 
-#: ../../../src/dev/extensions.rst:538
+#: ../../../src/dev/extensions.rst:564
 msgid ""
 "``extensions/mlx_sample_extensions`` sets out the structure for the "
 "associated Python package"
 msgstr ""
 
-#: ../../../src/dev/extensions.rst:540
+#: ../../../src/dev/extensions.rst:566
 msgid "``extensions/bindings.cpp`` provides Python bindings for our operation"
 msgstr ""
 
-#: ../../../src/dev/extensions.rst:541
+#: ../../../src/dev/extensions.rst:567
 msgid ""
 "``extensions/CMakeLists.txt`` holds CMake rules to build the library and "
 "Python bindings"
 msgstr ""
 
-#: ../../../src/dev/extensions.rst:543
+#: ../../../src/dev/extensions.rst:569
 msgid ""
 "``extensions/setup.py`` holds the ``setuptools`` rules to build and install "
 "the Python package"
 msgstr ""
 
-#: ../../../src/dev/extensions.rst:547
+#: ../../../src/dev/extensions.rst:573
 msgid "Binding to Python"
 msgstr ""
 
-#: ../../../src/dev/extensions.rst:549
+#: ../../../src/dev/extensions.rst:575
 msgid ""
 "We use nanobind_ to build a Python API for the C++ library. Since bindings "
 "for components such as :class:`mlx.core.array`, :class:`mlx.core.stream`, "
 "etc. are already provided, adding our :meth:`axpby` is simple."
 msgstr ""
 
-#: ../../../src/dev/extensions.rst:553
+#: ../../../src/dev/extensions.rst:579
 msgid ""
 "NB_MODULE(_ext, m) {\n"
 "     m.doc() = \"Sample extension for MLX\";\n"
@@ -801,13 +838,13 @@ msgid ""
 " }"
 msgstr ""
 
-#: ../../../src/dev/extensions.rst:585
+#: ../../../src/dev/extensions.rst:611
 msgid ""
 "Most of the complexity in the above example comes from additional bells and "
 "whistles such as the literal names and doc-strings."
 msgstr ""
 
-#: ../../../src/dev/extensions.rst:590
+#: ../../../src/dev/extensions.rst:616
 msgid ""
 ":mod:`mlx.core` must be imported before importing :mod:"
 "`mlx_sample_extensions` as defined by the nanobind module above to ensure "
@@ -815,17 +852,17 @@ msgid ""
 "are available."
 msgstr ""
 
-#: ../../../src/dev/extensions.rst:598
+#: ../../../src/dev/extensions.rst:624
 msgid "Building with CMake"
 msgstr ""
 
-#: ../../../src/dev/extensions.rst:600
+#: ../../../src/dev/extensions.rst:626
 msgid ""
 "Building the C++ extension library only requires that you ``find_package(MLX "
 "CONFIG)`` and then link it to your library."
 msgstr ""
 
-#: ../../../src/dev/extensions.rst:603
+#: ../../../src/dev/extensions.rst:629
 msgid ""
 "# Add library\n"
 "add_library(mlx_ext)\n"
@@ -846,7 +883,7 @@ msgid ""
 "target_link_libraries(mlx_ext PUBLIC mlx)"
 msgstr ""
 
-#: ../../../src/dev/extensions.rst:623
+#: ../../../src/dev/extensions.rst:649
 msgid ""
 "We also need to build the attached Metal library. For convenience, we "
 "provide a :meth:`mlx_build_metallib` function that builds a ``.metallib`` "
@@ -854,11 +891,11 @@ msgid ""
 "extension.cmake`` and automatically imported with MLX package)."
 msgstr ""
 
-#: ../../../src/dev/extensions.rst:628
+#: ../../../src/dev/extensions.rst:654
 msgid "Here is what that looks like in practice:"
 msgstr ""
 
-#: ../../../src/dev/extensions.rst:630
+#: ../../../src/dev/extensions.rst:656
 msgid ""
 "# Build metallib\n"
 "if(MLX_BUILD_METAL)\n"
@@ -879,11 +916,11 @@ msgid ""
 "endif()"
 msgstr ""
 
-#: ../../../src/dev/extensions.rst:650
+#: ../../../src/dev/extensions.rst:676
 msgid "Finally, we build the nanobind_ bindings"
 msgstr ""
 
-#: ../../../src/dev/extensions.rst:652
+#: ../../../src/dev/extensions.rst:678
 msgid ""
 "nanobind_add_module(\n"
 "  _ext\n"
@@ -898,17 +935,17 @@ msgid ""
 "endif()"
 msgstr ""
 
-#: ../../../src/dev/extensions.rst:667
+#: ../../../src/dev/extensions.rst:693
 msgid "Building with ``setuptools``"
 msgstr ""
 
-#: ../../../src/dev/extensions.rst:669
+#: ../../../src/dev/extensions.rst:695
 msgid ""
 "Once we have set out the CMake build rules as described above, we can use "
 "the build utilities defined in :mod:`mlx.extension`:"
 msgstr ""
 
-#: ../../../src/dev/extensions.rst:672
+#: ../../../src/dev/extensions.rst:698
 msgid ""
 "from mlx import extension\n"
 "from setuptools import setup\n"
@@ -927,58 +964,58 @@ msgid ""
 "metallib\"]},\n"
 "        extras_require={\"dev\":[]},\n"
 "        zip_safe=False,\n"
-"        python_requires=\">=3.8\",\n"
+"        python_requires=\">=3.10\",\n"
 "    )"
 msgstr ""
 
-#: ../../../src/dev/extensions.rst:692
+#: ../../../src/dev/extensions.rst:718
 msgid ""
 "We treat ``extensions/mlx_sample_extensions`` as the package directory even "
 "though it only contains a ``__init__.py`` to ensure the following:"
 msgstr ""
 
-#: ../../../src/dev/extensions.rst:695
+#: ../../../src/dev/extensions.rst:721
 msgid ":mod:`mlx.core` must be imported before importing :mod:`_ext`"
 msgstr ""
 
-#: ../../../src/dev/extensions.rst:696
+#: ../../../src/dev/extensions.rst:722
 msgid ""
 "The C++ extension library and the metal library are co-located with the "
 "python bindings and copied together if the package is installed"
 msgstr ""
 
-#: ../../../src/dev/extensions.rst:699
+#: ../../../src/dev/extensions.rst:725
 msgid ""
 "To build the package, first install the build dependencies with ``pip "
 "install -r requirements.txt``.  You can then build inplace for development "
 "using ``python setup.py build_ext -j8 --inplace`` (in ``extensions/``)"
 msgstr ""
 
-#: ../../../src/dev/extensions.rst:703
+#: ../../../src/dev/extensions.rst:729
 msgid "This results in the directory structure:"
 msgstr ""
 
-#: ../../../src/dev/extensions.rst:707
+#: ../../../src/dev/extensions.rst:733
 msgid "│   ├── __init__.py"
 msgstr ""
 
-#: ../../../src/dev/extensions.rst:708
+#: ../../../src/dev/extensions.rst:734
 msgid "│   ├── libmlx_ext.dylib # C++ extension library"
 msgstr ""
 
-#: ../../../src/dev/extensions.rst:709
+#: ../../../src/dev/extensions.rst:735
 msgid "│   ├── mlx_ext.metallib # Metal library"
 msgstr ""
 
-#: ../../../src/dev/extensions.rst:710
+#: ../../../src/dev/extensions.rst:736
 msgid "│   └── _ext.cpython-3x-darwin.so # Python Binding"
 msgstr ""
 
-#: ../../../src/dev/extensions.rst:711
+#: ../../../src/dev/extensions.rst:737
 msgid "..."
 msgstr ""
 
-#: ../../../src/dev/extensions.rst:713
+#: ../../../src/dev/extensions.rst:739
 msgid ""
 "When you try to install using the command ``python -m pip install .`` (in "
 "``extensions/``), the package will be installed with the same structure as "
@@ -987,22 +1024,22 @@ msgid ""
 "``package_data``."
 msgstr ""
 
-#: ../../../src/dev/extensions.rst:720
+#: ../../../src/dev/extensions.rst:746
 msgid "Usage"
 msgstr ""
 
-#: ../../../src/dev/extensions.rst:722
+#: ../../../src/dev/extensions.rst:748
 msgid ""
 "After installing the extension as described above, you should be able to "
 "simply import the Python package and play with it as you would any other MLX "
 "operation."
 msgstr ""
 
-#: ../../../src/dev/extensions.rst:725
+#: ../../../src/dev/extensions.rst:751
 msgid "Let's look at a simple script and its results:"
 msgstr ""
 
-#: ../../../src/dev/extensions.rst:727
+#: ../../../src/dev/extensions.rst:753
 msgid ""
 "import mlx.core as mx\n"
 "from mlx_sample_extensions import axpby\n"
@@ -1016,28 +1053,28 @@ msgid ""
 "print(f\"c is correct: {mx.all(c == 6.0).item()}\")"
 msgstr ""
 
-#: ../../../src/dev/extensions.rst:740
+#: ../../../src/dev/extensions.rst:766
 msgid "Output:"
 msgstr ""
 
-#: ../../../src/dev/extensions.rst:742
+#: ../../../src/dev/extensions.rst:768
 msgid ""
 "c shape: [3, 4]\n"
 "c dtype: float32\n"
 "c is correct: True"
 msgstr ""
 
-#: ../../../src/dev/extensions.rst:749
+#: ../../../src/dev/extensions.rst:775
 msgid "Results"
 msgstr ""
 
-#: ../../../src/dev/extensions.rst:751
+#: ../../../src/dev/extensions.rst:777
 msgid ""
 "Let's run a quick benchmark and see how our new ``axpby`` operation compares "
 "with the naive :meth:`simple_axpby` we first defined."
 msgstr ""
 
-#: ../../../src/dev/extensions.rst:754
+#: ../../../src/dev/extensions.rst:780
 msgid ""
 "import mlx.core as mx\n"
 "from mlx_sample_extensions import axpby\n"
@@ -1078,28 +1115,28 @@ msgid ""
 "{custom_time:.3f} ms\")"
 msgstr ""
 
-#: ../../../src/dev/extensions.rst:792
+#: ../../../src/dev/extensions.rst:818
 msgid ""
 "The results are ``Simple axpby: 1.559 ms | Custom axpby: 0.774 ms``. We see "
 "modest improvements right away!"
 msgstr ""
 
-#: ../../../src/dev/extensions.rst:795
+#: ../../../src/dev/extensions.rst:821
 msgid ""
 "This operation is now good to be used to build other operations, in :class:"
 "`mlx.nn.Module` calls, and also as a part of graph transformations like :"
 "meth:`grad`."
 msgstr ""
 
-#: ../../../src/dev/extensions.rst:800
+#: ../../../src/dev/extensions.rst:826
 msgid "Scripts"
 msgstr ""
 
-#: ../../../src/dev/extensions.rst:802
+#: ../../../src/dev/extensions.rst:828
 msgid "Download the code"
 msgstr ""
 
-#: ../../../src/dev/extensions.rst:804
+#: ../../../src/dev/extensions.rst:830
 msgid ""
 "The full example code is available in `mlx <https://github.com/ml-explore/"
 "mlx/tree/main/examples/extensions/>`_."

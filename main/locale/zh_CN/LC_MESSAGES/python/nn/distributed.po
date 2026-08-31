@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MLX main\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-03-09 08:38+0000\n"
+"POT-Creation-Date: 2026-08-31 15:41+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -31,78 +31,100 @@ msgid ""
 "create sharded layers from existing :class:`Modules <mlx.nn.Module>`."
 msgstr ""
 
-#: ../../../src/python/nn/distributed.rst:18:<autosummary>:1
+#: ../../../src/python/nn/distributed.rst:19:<autosummary>:1
 msgid ""
 ":py:obj:`shard_linear <mlx.nn.layers.distributed.shard_linear>`\\ "
 "\\(module\\, sharding\\, \\*\\[\\, ...\\]\\)"
 msgstr ""
 
-#: ../../../src/python/nn/distributed.rst:18:<autosummary>:1
+#: ../../../src/python/nn/distributed.rst:19:<autosummary>:1
 msgid ""
 "Create a new linear layer that has its parameters sharded and also performs "
 "distributed communication either in the forward or backward pass."
 msgstr ""
 
-#: ../../../src/python/nn/distributed.rst:18:<autosummary>:1
+#: ../../../src/python/nn/distributed.rst:19:<autosummary>:1
 msgid ""
 ":py:obj:`shard_inplace <mlx.nn.layers.distributed.shard_inplace>`\\ "
 "\\(module\\, sharding\\, \\*\\[\\, ...\\]\\)"
 msgstr ""
 
-#: ../../../src/python/nn/distributed.rst:18:<autosummary>:1
+#: ../../../src/python/nn/distributed.rst:19:<autosummary>:1
 msgid ""
 "Shard a module in-place by updating its parameter dictionary with the "
 "sharded parameter dictionary."
 msgstr ""
 
-#: ../../../src/python/nn/distributed.rst:20
+#: ../../../src/python/nn/distributed.rst:19:<autosummary>:1
+msgid ""
+":py:obj:`fully_shard <mlx.nn.layers.distributed.fully_shard>`\\ \\(module\\, "
+"\\*\\[\\, group\\, compute\\_dtype\\]\\)"
+msgstr ""
+
+#: ../../../src/python/nn/distributed.rst:19:<autosummary>:1
+msgid "Wrap ``module`` in a :class:`FullyShardedModule`."
+msgstr ""
+
+#: ../../../src/python/nn/distributed.rst:21
 msgid "Layers"
 msgstr ""
 
-#: ../../../src/python/nn/distributed.rst:30:<autosummary>:1
+#: ../../../src/python/nn/distributed.rst:32:<autosummary>:1
 msgid ""
 ":py:obj:`AllToShardedLinear <mlx.nn.AllToShardedLinear>`\\ "
 "\\(input\\_dims\\, output\\_dims\\)"
 msgstr ""
 
-#: ../../../src/python/nn/distributed.rst:30:<autosummary>:1
+#: ../../../src/python/nn/distributed.rst:32:<autosummary>:1
 msgid ""
 "Each member of the group applies part of the affine transformation such that "
 "the result is sharded across the group."
 msgstr ""
 
-#: ../../../src/python/nn/distributed.rst:30:<autosummary>:1
+#: ../../../src/python/nn/distributed.rst:32:<autosummary>:1
 msgid ""
 ":py:obj:`ShardedToAllLinear <mlx.nn.ShardedToAllLinear>`\\ "
 "\\(input\\_dims\\, output\\_dims\\)"
 msgstr ""
 
-#: ../../../src/python/nn/distributed.rst:30:<autosummary>:1
+#: ../../../src/python/nn/distributed.rst:32:<autosummary>:1
 msgid ""
 "Each member of the group applies part of the affine transformation and then "
 "aggregates the results."
 msgstr ""
 
-#: ../../../src/python/nn/distributed.rst:30:<autosummary>:1
+#: ../../../src/python/nn/distributed.rst:32:<autosummary>:1
 msgid ""
 ":py:obj:`QuantizedAllToShardedLinear <mlx.nn.QuantizedAllToShardedLinear>`\\ "
 "\\(input\\_dims\\, ...\\)"
 msgstr ""
 
-#: ../../../src/python/nn/distributed.rst:30:<autosummary>:1
+#: ../../../src/python/nn/distributed.rst:32:<autosummary>:1
 msgid ""
 "Each member of the group applies part of the affine transformation with a "
 "quantized matrix such that the result is sharded across the group."
 msgstr ""
 
-#: ../../../src/python/nn/distributed.rst:30:<autosummary>:1
+#: ../../../src/python/nn/distributed.rst:32:<autosummary>:1
 msgid ""
 ":py:obj:`QuantizedShardedToAllLinear <mlx.nn.QuantizedShardedToAllLinear>`\\ "
 "\\(input\\_dims\\, ...\\)"
 msgstr ""
 
-#: ../../../src/python/nn/distributed.rst:30:<autosummary>:1
+#: ../../../src/python/nn/distributed.rst:32:<autosummary>:1
 msgid ""
 "Each member of the group applies part of the affine transformation using the "
 "quantized matrix and then aggregates the results."
+msgstr ""
+
+#: ../../../src/python/nn/distributed.rst:32:<autosummary>:1
+msgid ""
+":py:obj:`FullyShardedModule <mlx.nn.FullyShardedModule>`\\ \\(module\\[\\, "
+"group\\, ...\\]\\)"
+msgstr ""
+
+#: ../../../src/python/nn/distributed.rst:32:<autosummary>:1
+msgid ""
+"Wrap a module so each member of the group holds only a shard of its "
+"parameters."
 msgstr ""

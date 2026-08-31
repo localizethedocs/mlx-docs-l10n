@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MLX main\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-01-12 08:24+0000\n"
+"POT-Creation-Date: 2026-08-31 15:41+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -188,35 +188,43 @@ msgid ""
 "one ``dtype`` (or category) is a subtype of another category."
 msgstr ""
 
-#: ../../../src/python/data_types.rst:78:<autosummary>:1
+#: ../../../src/python/data_types.rst:79:<autosummary>:1
 msgid ":py:obj:`Dtype <mlx.core.Dtype>`\\"
 msgstr ""
 
-#: ../../../src/python/data_types.rst:78:<autosummary>:1
+#: ../../../src/python/data_types.rst:79:<autosummary>:1
 msgid "An object to hold the type of a :class:`array`."
 msgstr ""
 
-#: ../../../src/python/data_types.rst:78:<autosummary>:1
+#: ../../../src/python/data_types.rst:79:<autosummary>:1
 msgid ":py:obj:`DtypeCategory <mlx.core.DtypeCategory>`\\ \\(\\*values\\)"
 msgstr ""
 
-#: ../../../src/python/data_types.rst:78:<autosummary>:1
+#: ../../../src/python/data_types.rst:79:<autosummary>:1
 msgid "Type to hold categories of :class:`dtypes <Dtype>`."
 msgstr ""
 
-#: ../../../src/python/data_types.rst:78:<autosummary>:1
+#: ../../../src/python/data_types.rst:79:<autosummary>:1
 msgid ":py:obj:`issubdtype <mlx.core.issubdtype>`\\ \\(arg1\\, arg2\\)"
 msgstr ""
 
-#: ../../../src/python/data_types.rst:78:<autosummary>:1
+#: ../../../src/python/data_types.rst:79:<autosummary>:1
 msgid ""
 "Check if a :obj:`Dtype` or :obj:`DtypeCategory` is a subtype of another."
 msgstr ""
 
-#: ../../../src/python/data_types.rst:78:<autosummary>:1
+#: ../../../src/python/data_types.rst:79:<autosummary>:1
 msgid ":py:obj:`finfo <mlx.core.finfo>`\\ \\(\\*args\\, \\*\\*kwargs\\)"
 msgstr ""
 
-#: ../../../src/python/data_types.rst:78:<autosummary>:1
+#: ../../../src/python/data_types.rst:79:<autosummary>:1
 msgid "Get information on floating-point types."
+msgstr ""
+
+#: ../../../src/python/data_types.rst:79:<autosummary>:1
+msgid ":py:obj:`iinfo <mlx.core.iinfo>`\\ \\(\\*args\\, \\*\\*kwargs\\)"
+msgstr ""
+
+#: ../../../src/python/data_types.rst:79:<autosummary>:1
+msgid "Get information on integer types."
 msgstr ""

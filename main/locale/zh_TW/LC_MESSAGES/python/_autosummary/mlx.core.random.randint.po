@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MLX main\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-12-22 08:23+0000\n"
+"POT-Creation-Date: 2026-08-31 15:41+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -32,27 +32,35 @@ msgid ""
 "and must be broadcastable to ``shape``."
 msgstr ""
 
+#: ../../../docstring of mlx.core.random.randint:8
+msgid ""
+"The samples are drawn from a ``float32`` uniform and clamped to ``[low, high "
+"- 1]``, so not every integer in the range is reachable once the bounds or "
+"the width of the interval go beyond the ``2**24`` integer resolution of "
+"``float32``."
+msgstr ""
+
 #: ../../../src/python/_autosummary/mlx.core.random.randint.rst:0
 msgid "Parameters"
 msgstr "參數"
 
-#: ../../../docstring of mlx.core.random.randint:7
+#: ../../../docstring of mlx.core.random.randint:13
 msgid "Lower bound of the interval."
 msgstr ""
 
-#: ../../../docstring of mlx.core.random.randint:9
+#: ../../../docstring of mlx.core.random.randint:15
 msgid "Upper bound of the interval."
 msgstr ""
 
-#: ../../../docstring of mlx.core.random.randint:11
+#: ../../../docstring of mlx.core.random.randint:17
 msgid "Shape of the output. Default: ``()``."
 msgstr ""
 
-#: ../../../docstring of mlx.core.random.randint:13
+#: ../../../docstring of mlx.core.random.randint:19
 msgid "Type of the output. Default: ``int32``."
 msgstr ""
 
-#: ../../../docstring of mlx.core.random.randint:15
+#: ../../../docstring of mlx.core.random.randint:21
 msgid "A PRNG key. Default: ``None``."
 msgstr ""
 
@@ -60,7 +68,7 @@ msgstr ""
 msgid "Returns"
 msgstr "回傳值"
 
-#: ../../../docstring of mlx.core.random.randint:18
+#: ../../../docstring of mlx.core.random.randint:24
 msgid "The array of random integers."
 msgstr ""
 

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MLX main\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-05-04 10:10+0000\n"
+"POT-Creation-Date: 2026-08-31 15:41+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -25,19 +25,19 @@ msgstr "安裝"
 msgid "Usage"
 msgstr "使用方式"
 
-#: ../../../src/index.rst:50
+#: ../../../src/index.rst:53
 msgid "Examples"
 msgstr "範例"
 
-#: ../../../src/index.rst:60
+#: ../../../src/index.rst:63
 msgid "Python API Reference"
 msgstr "Python API 參考"
 
-#: ../../../src/index.rst:83
+#: ../../../src/index.rst:86
 msgid "C++ API Reference"
 msgstr "C++ API 參考"
 
-#: ../../../src/index.rst:89
+#: ../../../src/index.rst:92
 msgid "Further Reading"
 msgstr "延伸閱讀"
 

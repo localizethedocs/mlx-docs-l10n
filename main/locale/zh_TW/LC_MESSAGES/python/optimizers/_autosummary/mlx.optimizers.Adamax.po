@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MLX main\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-12-22 08:23+0000\n"
+"POT-Creation-Date: 2026-08-31 15:41+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -60,12 +60,13 @@ msgstr ""
 #: ../../../../../../.conda/lib/python3.12/site-packages/mlx/optimizers/optimizers.py:docstring
 #: of mlx.optimizers.optimizers.Adamax:17
 msgid ""
-"The coefficients :math:`(\\beta_1, \\beta_2)` used for computing running "
-"averages of the gradient and its square. Default: ``(0.9, 0.999)``"
+"The coefficients :math:`(\\beta_1, \\beta_2)` used for computing the running "
+"average of the gradient and the exponentially weighted infinity norm. "
+"Default: ``(0.9, 0.999)``"
 msgstr ""
 
 #: ../../../../../../.conda/lib/python3.12/site-packages/mlx/optimizers/optimizers.py:docstring
-#: of mlx.optimizers.optimizers.Adamax:21
+#: of mlx.optimizers.optimizers.Adamax:22
 msgid ""
 "The term :math:`\\epsilon` added to the denominator to improve numerical "
 "stability. Default: ``1e-8``"

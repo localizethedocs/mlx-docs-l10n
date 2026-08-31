@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MLX main\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-03-09 08:38+0000\n"
+"POT-Creation-Date: 2026-08-31 15:41+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -65,25 +65,24 @@ msgstr ""
 #: ../../../src/examples/data_parallelism.rst:36
 msgid ""
 "All we have to do to average the gradients across machines is perform an :"
-"func:`all_sum` and divide by the size of the :class:`Group`. Namely we have "
-"to :func:`mlx.utils.tree_map` the gradients with following function."
+"func:`mlx.core.distributed.all_sum` and divide by the size of the :class:"
+"`mlx.core.distributed.Group`. Namely we have to :func:`mlx.utils.tree_map` "
+"the gradients with following function."
 msgstr ""
-"要在多台機器間對梯度取平均，只需執行 :func:`all_sum` 並除以 :class:`Group` 的"
-"大小。也就是用下列函式對梯度做 :func:`mlx.utils.tree_map`："
 
-#: ../../../src/examples/data_parallelism.rst:40
+#: ../../../src/examples/data_parallelism.rst:41
 msgid ""
 "def all_avg(x):\n"
 "    return mx.distributed.all_sum(x) / mx.distributed.init().size()"
 msgstr ""
 
-#: ../../../src/examples/data_parallelism.rst:45
+#: ../../../src/examples/data_parallelism.rst:46
 msgid ""
 "Putting everything together our training loop step looks as follows with "
 "everything else remaining the same."
 msgstr "把所有內容整合後，在其他部分不變的情況下，訓練步驟如下："
 
-#: ../../../src/examples/data_parallelism.rst:48
+#: ../../../src/examples/data_parallelism.rst:49
 msgid ""
 "from mlx.utils import tree_map\n"
 "\n"
@@ -103,11 +102,11 @@ msgid ""
 "    return loss"
 msgstr ""
 
-#: ../../../src/examples/data_parallelism.rst:68
+#: ../../../src/examples/data_parallelism.rst:69
 msgid "Using ``nn.average_gradients``"
 msgstr ""
 
-#: ../../../src/examples/data_parallelism.rst:70
+#: ../../../src/examples/data_parallelism.rst:71
 msgid ""
 "Although the code example above works correctly; it performs one "
 "communication per gradient. It is significantly more efficient to aggregate "
@@ -116,14 +115,14 @@ msgstr ""
 "雖然上面的程式碼可以正確運作，但每個梯度都會進行一次通訊。將多個梯度聚合後再"
 "通訊，會更有效率。"
 
-#: ../../../src/examples/data_parallelism.rst:74
+#: ../../../src/examples/data_parallelism.rst:75
 msgid ""
 "This is the purpose of :func:`mlx.nn.average_gradients`. The final code "
 "looks almost identical to the example above:"
 msgstr ""
 "這正是 :func:`mlx.nn.average_gradients` 的目的。最終程式碼與上例幾乎相同："
 
-#: ../../../src/examples/data_parallelism.rst:77
+#: ../../../src/examples/data_parallelism.rst:78
 msgid ""
 "model = ...\n"
 "optimizer = ...\n"
@@ -139,3 +138,11 @@ msgid ""
 "    loss = step(model, x, y)\n"
 "    mx.eval(loss, model.parameters())"
 msgstr ""
+
+#~ msgid ""
+#~ "All we have to do to average the gradients across machines is perform an :"
+#~ "func:`all_sum` and divide by the size of the :class:`Group`. Namely we "
+#~ "have to :func:`mlx.utils.tree_map` the gradients with following function."
+#~ msgstr ""
+#~ "要在多台機器間對梯度取平均，只需執行 :func:`all_sum` 並除以 :class:"
+#~ "`Group` 的大小。也就是用下列函式對梯度做 :func:`mlx.utils.tree_map`："

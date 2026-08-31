@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MLX main\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-03-09 08:38+0000\n"
+"POT-Creation-Date: 2026-08-31 15:41+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -32,7 +32,9 @@ msgid "Export an MLX function."
 msgstr ""
 
 #: ../../../src/python/export.rst:14:<autosummary>:1
-msgid ":py:obj:`import_function <mlx.core.import_function>`\\ \\(file\\)"
+msgid ""
+":py:obj:`import_function <mlx.core.import_function>`\\ \\(file\\[\\, "
+"return\\_metadata\\]\\)"
 msgstr ""
 
 #: ../../../src/python/export.rst:14:<autosummary>:1
@@ -42,7 +44,7 @@ msgstr ""
 #: ../../../src/python/export.rst:14:<autosummary>:1
 msgid ""
 ":py:obj:`exporter <mlx.core.exporter>`\\ \\(file\\, fun\\, \\*\\[\\, "
-"shapeless\\]\\)"
+"shapeless\\, metadata\\]\\)"
 msgstr ""
 
 #: ../../../src/python/export.rst:14:<autosummary>:1

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MLX main\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-12-22 08:23+0000\n"
+"POT-Creation-Date: 2026-08-31 15:41+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -47,18 +47,26 @@ msgstr "參數"
 msgid "The file path to import the function from."
 msgstr ""
 
+#: ../../../docstring of mlx.core.import_function:16
+msgid ""
+"If ``True`` also return the metadata string saved with the function. "
+"Default: ``False``."
+msgstr ""
+
 #: ../../../docstring of mlx.core.import_function:0
 msgid "Returns"
 msgstr "回傳值"
 
-#: ../../../docstring of mlx.core.import_function:17
-msgid "The imported function."
+#: ../../../docstring of mlx.core.import_function:20
+msgid ""
+"The imported function. If ``return_metadata`` is ``True`` a tuple of the "
+"imported function and the metadata string is returned instead."
 msgstr ""
 
 #: ../../../docstring of mlx.core.import_function:0
 msgid "Return type"
 msgstr "回傳值型別"
 
-#: ../../../docstring of mlx.core.import_function:21
+#: ../../../docstring of mlx.core.import_function:26
 msgid "Example"
 msgstr "範例"

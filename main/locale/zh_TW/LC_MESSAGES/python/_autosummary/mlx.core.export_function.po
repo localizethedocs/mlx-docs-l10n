@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MLX main\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-12-22 08:23+0000\n"
+"POT-Creation-Date: 2026-08-31 15:41+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -64,14 +64,29 @@ msgid ""
 msgstr ""
 
 #: ../../../docstring of mlx.core.export_function:24
-msgid "Additional example keyword array inputs to the function."
+msgid ""
+"A string to save alongside the function, for example a JSON encoded model "
+"configuration. Only supported when exporting to a file. Read it back with :"
+"func:`import_function`. Default: ``None``."
 msgstr ""
 
 #: ../../../docstring of mlx.core.export_function:29
+msgid "Additional example keyword array inputs to the function."
+msgstr ""
+
+#: ../../../src/python/_autosummary/mlx.core.export_function.rst:0
+msgid "Raises"
+msgstr ""
+
+#: ../../../docstring of mlx.core.export_function:33
+msgid "If ``metadata`` is given when exporting with a callback."
+msgstr ""
+
+#: ../../../docstring of mlx.core.export_function:36
 msgid "Example"
 msgstr "範例"
 
-#: ../../../docstring of mlx.core.export_function:30
+#: ../../../docstring of mlx.core.export_function:37
 msgid ""
 "def fun(x, y):\n"
 "    return x + y\n"

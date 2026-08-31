@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MLX main\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-06-22 13:31+0000\n"
+"POT-Creation-Date: 2026-08-31 15:41+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -59,19 +59,21 @@ msgstr ""
 
 #: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/normalization.py:docstring
 #: of mlx.nn.layers.normalization.LayerNorm:16
-msgid "A small additive constant for numerical stability"
+msgid "A small additive constant for numerical stability. Default: ``1e-5``."
 msgstr ""
 
 #: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/normalization.py:docstring
-#: of mlx.nn.layers.normalization.LayerNorm:18
-msgid "If True learn an affine transform to apply after the normalization"
+#: of mlx.nn.layers.normalization.LayerNorm:19
+msgid ""
+"If True learn an affine transform to apply after the normalization. Default: "
+"``True``."
 msgstr ""
 
 #: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/normalization.py:docstring
-#: of mlx.nn.layers.normalization.LayerNorm:21
+#: of mlx.nn.layers.normalization.LayerNorm:22
 msgid ""
 "If True include a translation to the affine transformation. If set to False "
-"the transformation is not really affine just scaling."
+"the transformation is not really affine just scaling. Default: ``True``."
 msgstr ""
 
 #: ../../../src/python/nn/_autosummary/mlx.nn.LayerNorm.rst:12

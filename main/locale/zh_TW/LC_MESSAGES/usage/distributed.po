@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MLX main\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-02-16 08:39+0000\n"
+"POT-Creation-Date: 2026-08-31 15:41+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -631,29 +631,68 @@ msgstr ""
 
 #: ../../../src/usage/distributed.rst:336
 msgid ""
-"mlx.launch --verbose --backend jaccl --hostfile m3-ultra-jaccl.json \\\n"
-"     --env MLX_METAL_FAST_SYNCH=1 -- \\  # <--- important\n"
+"mlx.launch --verbose --backend jaccl --hostfile m3-ultra-jaccl.json -- \\\n"
 "     /path/to/remote/python -m mlx_lm chat --model mlx-community/DeepSeek-"
 "R1-0528-4bit"
 msgstr ""
 
-#: ../../../src/usage/distributed.rst:344
+#: ../../../src/usage/distributed.rst:343
 msgid ""
-"Defining the environment variable ``MLX_METAL_FAST_SYNCH=1`` enables a "
-"different, faster way of synchronizing between the GPU and the CPU. It is "
-"not specific to the JACCL backend and can be used in all cases where the CPU "
-"and GPU need to collaborate for some computation and is pretty critical for "
-"low-latency communication since the communication is done by the CPU."
+"Defining the environment variable :envvar:`MLX_METAL_FAST_SYNCH` to ``1`` by "
+"passing ``--env MLX_METAL_FAST_SYNCH=1`` enables a different, faster way of "
+"synchronizing between the GPU and the CPU. It is not specific to the JACCL "
+"backend and can be used in all cases where the CPU and GPU need to "
+"collaborate for some computation, and it matters for low-latency "
+"communication since the communication is done by the CPU."
 msgstr ""
-"設定環境變數 ``MLX_METAL_FAST_SYNCH=1`` 會啟用 GPU 與 CPU 之間更快的同步方"
-"式。這並非 JACCL 專用，凡是 CPU 與 GPU 需要協同計算的情況都可使用，且因通訊"
-"由 CPU 執行，對低延遲通訊而言相當關鍵。"
 
-#: ../../../src/usage/distributed.rst:353
+#: ../../../src/usage/distributed.rst:350
+msgid ""
+"It is however not reliable that can lead to deadlock and leave the GPU "
+"wedged (see `#3142 <https://github.com/ml-explore/mlx/issues/3142>`_), so it "
+"is off by default and best left unset."
+msgstr ""
+
+#: ../../../src/usage/distributed.rst:355
+msgid "Custom side channel"
+msgstr ""
+
+#: ../../../src/usage/distributed.rst:357
+msgid ""
+"During initialization JACCL exchanges RDMA connection metadata between ranks "
+"over a side channel. By default this is a simple TCP star all-gather, but "
+"you can provide your own side-channel all-gather via the "
+"``all_gather_factory`` argument of :func:`mlx.core.distributed.init` when "
+"using ``backend='jaccl'``."
+msgstr ""
+
+#: ../../../src/usage/distributed.rst:363
+msgid ""
+"The factory is called once per rank with ``(rank, size)`` and must return a "
+"callable with signature ``f(src: bytes, n_bytes: int) -> bytes``. The "
+"returned bytes must have length ``size * n_bytes`` and contain the inputs "
+"from all ranks concatenated in rank order."
+msgstr ""
+
+#: ../../../src/usage/distributed.rst:368
+msgid ""
+"def make_side_channel(rank, size):\n"
+"    def all_gather(src: bytes, n_bytes: int) -> bytes:\n"
+"        # Exchange src with all ranks and return size * n_bytes bytes\n"
+"        ...\n"
+"    return all_gather\n"
+"\n"
+"world = mx.distributed.init(\n"
+"    backend=\"jaccl\",\n"
+"    all_gather_factory=make_side_channel,\n"
+")"
+msgstr ""
+
+#: ../../../src/usage/distributed.rst:384
 msgid "Getting Started with NCCL"
 msgstr "開始使用 NCCL"
 
-#: ../../../src/usage/distributed.rst:355
+#: ../../../src/usage/distributed.rst:386
 msgid ""
 "MLX on CUDA environments ships with the ability to talk to `NCCL <https://"
 "developer.nvidia.com/nccl>`_ which is a high-performance collective "
@@ -662,14 +701,14 @@ msgstr ""
 "MLX 在 CUDA 環境中可與 `NCCL <https://developer.nvidia.com/nccl>`_ 通訊。"
 "NCCL 是高效能的集合通訊程式庫，支援多 GPU 與多節點設定。"
 
-#: ../../../src/usage/distributed.rst:359
+#: ../../../src/usage/distributed.rst:390
 msgid ""
 "For CUDA environments, NCCL is the default backend for ``mlx.launch`` and "
 "all it takes to run a distributed job is"
 msgstr ""
 "在 CUDA 環境中，NCCL 是 ``mlx.launch`` 的預設後端，要啟動分散式工作只需："
 
-#: ../../../src/usage/distributed.rst:362
+#: ../../../src/usage/distributed.rst:393
 msgid ""
 "mlx.launch -n 8 test.py\n"
 "\n"
@@ -677,17 +716,17 @@ msgid ""
 "mlx.launch -n 8 python -m mlx_lm chat --model my-model"
 msgstr ""
 
-#: ../../../src/usage/distributed.rst:369
+#: ../../../src/usage/distributed.rst:400
 msgid ""
 "You can also use ``mlx.launch`` to ssh to a remote node and launch a script "
 "with the same ease"
 msgstr "你也可以用 ``mlx.launch`` 透過 ssh 連到遠端節點並同樣輕鬆地啟動腳本"
 
-#: ../../../src/usage/distributed.rst:372
+#: ../../../src/usage/distributed.rst:403
 msgid "mlx.launch --hosts my-cuda-node -n 8 test.py"
 msgstr ""
 
-#: ../../../src/usage/distributed.rst:376
+#: ../../../src/usage/distributed.rst:407
 msgid ""
 "In many cases you may not want to use ``mlx.launch`` with the NCCL backend "
 "because the cluster scheduler will be the one launching the processes. You "
@@ -699,11 +738,11 @@ msgstr ""
 "責啟動行程。你可以 :ref:`查看需要設定的環境變數 <no_mlx_launch>`，以便正確初"
 "始化 MLX 的 NCCL 後端。"
 
-#: ../../../src/usage/distributed.rst:384
+#: ../../../src/usage/distributed.rst:415
 msgid "Getting Started with MPI"
 msgstr "開始使用 MPI"
 
-#: ../../../src/usage/distributed.rst:386
+#: ../../../src/usage/distributed.rst:417
 msgid ""
 "MLX already comes with the ability to \"talk\" to `MPI <https://en.wikipedia."
 "org/wiki/Message_Passing_Interface>`_ if it is installed on the machine. "
@@ -719,20 +758,20 @@ msgstr ""
 "backend mpi``，它會處理一些細節，例如為 ``mpirun`` 可執行檔與 ``libmpi."
 "dyld`` 共享程式庫設定絕對路徑。"
 
-#: ../../../src/usage/distributed.rst:394
+#: ../../../src/usage/distributed.rst:425
 msgid ""
 "The simplest possible usage is the following which, assuming the minimal "
 "example in the beginning of this page, should result in:"
 msgstr "最簡單的用法如下，假設使用本頁開頭的最小範例，輸出應為："
 
-#: ../../../src/usage/distributed.rst:397
+#: ../../../src/usage/distributed.rst:428
 msgid ""
 "$ mlx.launch --backend mpi -n 2 test.py\n"
 "1 array([2, 2, 2, ..., 2, 2, 2], dtype=float32)\n"
 "0 array([2, 2, 2, ..., 2, 2, 2], dtype=float32)"
 msgstr ""
 
-#: ../../../src/usage/distributed.rst:403
+#: ../../../src/usage/distributed.rst:434
 msgid ""
 "The above launches two processes on the same (local) machine and we can see "
 "both standard output streams. The processes send the array of 1s to each "
@@ -743,11 +782,11 @@ msgstr ""
 "送全 1 陣列並計算總和後印出。若使用 ``mlx.launch -n 4 ...`` 則會印出 4，依此"
 "類推。"
 
-#: ../../../src/usage/distributed.rst:409
+#: ../../../src/usage/distributed.rst:440
 msgid "Installing MPI"
 msgstr "安裝 MPI"
 
-#: ../../../src/usage/distributed.rst:411
+#: ../../../src/usage/distributed.rst:442
 msgid ""
 "MPI can be installed with Homebrew, pip, using the Anaconda package manager, "
 "or compiled from source. Most of our testing is done using ``openmpi`` "
@@ -756,11 +795,11 @@ msgstr ""
 "MPI 可透過 Homebrew、pip、Anaconda 軟體包管理器安裝，或從來源碼編譯。我們大多"
 "數測試使用 Anaconda 軟體包管理器安裝的 ``openmpi``："
 
-#: ../../../src/usage/distributed.rst:415
+#: ../../../src/usage/distributed.rst:446
 msgid "$ conda install conda-forge::openmpi"
 msgstr ""
 
-#: ../../../src/usage/distributed.rst:419
+#: ../../../src/usage/distributed.rst:450
 msgid ""
 "Installing with Homebrew or pip requires specifying the location of ``libmpi."
 "dyld`` so that MLX can find it and load it at runtime. This can simply be "
@@ -775,7 +814,7 @@ msgstr ""
 "成，而 ``mlx.launch`` 會自動完成。某些環境使用非標準的程式庫檔名，可用 "
 "``MPI_LIBNAME`` 環境變數指定，``mlx.launch`` 同樣會自動處理。"
 
-#: ../../../src/usage/distributed.rst:426
+#: ../../../src/usage/distributed.rst:457
 msgid ""
 "$ mpirun -np 2 -x DYLD_LIBRARY_PATH=/opt/homebrew/lib/ -x "
 "MPI_LIBNAME=libmpi.40.dylib python test.py\n"
@@ -783,11 +822,11 @@ msgid ""
 "$ mlx.launch -n 2 test.py"
 msgstr ""
 
-#: ../../../src/usage/distributed.rst:433
+#: ../../../src/usage/distributed.rst:464
 msgid "Setting up Remote Hosts"
 msgstr "設定遠端主機"
 
-#: ../../../src/usage/distributed.rst:435
+#: ../../../src/usage/distributed.rst:466
 msgid ""
 "MPI can automatically connect to remote hosts and set up the communication "
 "over the network if the remote hosts can be accessed via ssh. A good "
@@ -796,28 +835,28 @@ msgstr ""
 "若可透過 ssh 連線到遠端主機，MPI 便可自動連線並建立網路通訊。以下是排查連線問"
 "題的檢查列表："
 
-#: ../../../src/usage/distributed.rst:439
+#: ../../../src/usage/distributed.rst:470
 msgid ""
 "``ssh hostname`` works from all machines to all machines without asking for "
 "password or host confirmation"
 msgstr "所有機器之間執行 ``ssh hostname`` 不需密碼或主機確認"
 
-#: ../../../src/usage/distributed.rst:441
+#: ../../../src/usage/distributed.rst:472
 msgid "``mpirun`` is accessible on all machines."
 msgstr "所有機器皆可存取 ``mpirun``。"
 
-#: ../../../src/usage/distributed.rst:442
+#: ../../../src/usage/distributed.rst:473
 msgid ""
 "Ensure that the ``hostname`` used by MPI is the one that you have configured "
 "in the ``.ssh/config`` files on all machines."
 msgstr ""
 "請確保 MPI 使用的 ``hostname`` 與所有機器 ``.ssh/config`` 中設定的一致。"
 
-#: ../../../src/usage/distributed.rst:446
+#: ../../../src/usage/distributed.rst:477
 msgid "Tuning MPI All Reduce"
 msgstr "調校 MPI All Reduce"
 
-#: ../../../src/usage/distributed.rst:450
+#: ../../../src/usage/distributed.rst:481
 msgid ""
 "For faster all reduce consider using the ring backend either with "
 "Thunderbolt connections or over Ethernet."
@@ -825,7 +864,7 @@ msgstr ""
 "若要更快的 all-reduce，可考慮使用 ring 後端（透過 Thunderbolt 連線或乙太網"
 "路）。"
 
-#: ../../../src/usage/distributed.rst:453
+#: ../../../src/usage/distributed.rst:484
 msgid ""
 "Configure MPI to use N tcp connections between each host to improve "
 "bandwidth by passing ``--mca btl_tcp_links N``."
@@ -833,7 +872,7 @@ msgstr ""
 "透過 ``--mca btl_tcp_links N`` 設定 MPI 在每個主機間使用 N 條 TCP 連線，以提"
 "升頻寬。"
 
-#: ../../../src/usage/distributed.rst:456
+#: ../../../src/usage/distributed.rst:487
 msgid ""
 "Force MPI to use the most performant network interface by setting ``--mca "
 "btl_tcp_if_include <iface>`` where ``<iface>`` should be the interface you "
@@ -842,11 +881,11 @@ msgstr ""
 "透過 ``--mca btl_tcp_if_include <iface>`` 強制 MPI 使用效能最佳的網路介面，其"
 "中 ``<iface>`` 為你想使用的介面。"
 
-#: ../../../src/usage/distributed.rst:463
+#: ../../../src/usage/distributed.rst:494
 msgid "Distributed Without ``mlx.launch``"
 msgstr "不使用 ``mlx.launch`` 的分散式"
 
-#: ../../../src/usage/distributed.rst:465
+#: ../../../src/usage/distributed.rst:496
 msgid ""
 "None of the implementations of the distributed backends require launching "
 "with ``mlx.launch``. The script simply connects to each host. Starts a "
@@ -858,7 +897,7 @@ msgstr ""
 "rank 啟動一個行程，並在移交給你的 MLX 腳本前設定必要的環境變數。詳情請參考 :"
 "doc:`專門文件頁 <launching_distributed>`。"
 
-#: ../../../src/usage/distributed.rst:471
+#: ../../../src/usage/distributed.rst:502
 msgid ""
 "For many use-cases this will be the easiest way to perform distributed "
 "computations in MLX. However, there may be reasons that you cannot or should "
@@ -870,31 +909,29 @@ msgstr ""
 "應使用 ``mlx.launch``。常見例子是使用排程器，在排程時尚未確定的機器上為你啟動"
 "所有行程。"
 
-#: ../../../src/usage/distributed.rst:477
+#: ../../../src/usage/distributed.rst:508
 msgid "Below we list the environment variables required to use each backend."
 msgstr "以下列出各後端所需的環境變數。"
 
-#: ../../../src/usage/distributed.rst:480
+#: ../../../src/usage/distributed.rst:511
 msgid "Ring"
 msgstr ""
 
-#: ../../../src/usage/distributed.rst:482
-#: ../../../src/usage/distributed.rst:503
-#: ../../../src/usage/distributed.rst:526
+#: ../../../src/usage/distributed.rst:513
+#: ../../../src/usage/distributed.rst:534
+#: ../../../src/usage/distributed.rst:557
 msgid ""
-"**MLX_RANK** should contain a single 0-based integer that defines the rank "
-"of the process."
-msgstr "**MLX_RANK** 應包含一個以 0 為起始的整數，用於定義行程的 rank。"
-
-#: ../../../src/usage/distributed.rst:485
-msgid ""
-"**MLX_HOSTFILE** should contain the path to a json file that contains IPs "
-"and ports for each rank to listen to, something like the following:"
+":envvar:`MLX_RANK` should contain a single 0-based integer that defines the "
+"rank of the process."
 msgstr ""
-"**MLX_HOSTFILE** 應包含一個 json 檔路徑，其中列出各 rank 要監聽的 IP 與連接"
-"埠，例如："
 
-#: ../../../src/usage/distributed.rst:488
+#: ../../../src/usage/distributed.rst:516
+msgid ""
+":envvar:`MLX_HOSTFILE` should contain the path to a json file that contains "
+"IPs and ports for each rank to listen to, something like the following:"
+msgstr ""
+
+#: ../../../src/usage/distributed.rst:519
 msgid ""
 "[\n"
 "  [\"123.123.1.1:5000\", \"123.123.1.2:5000\"],\n"
@@ -904,35 +941,31 @@ msgid ""
 "]"
 msgstr ""
 
-#: ../../../src/usage/distributed.rst:497
+#: ../../../src/usage/distributed.rst:528
 msgid ""
-"**MLX_RING_VERBOSE** is optional and if set to 1 it enables some more "
+":envvar:`MLX_RING_VERBOSE` is optional and if set to 1 it enables some more "
 "logging from the distributed backend."
-msgstr "**MLX_RING_VERBOSE** 為選用，設為 1 時會啟用更多分散式後端的日誌輸出。"
+msgstr ""
 
-#: ../../../src/usage/distributed.rst:501
+#: ../../../src/usage/distributed.rst:532
 msgid "JACCL"
 msgstr ""
 
-#: ../../../src/usage/distributed.rst:506
+#: ../../../src/usage/distributed.rst:537
 msgid ""
-"**MLX_JACCL_COORDINATOR** should contain the IP and port that rank 0 can "
-"listen to all the other ranks connect to in order to establish the RDMA "
+":envvar:`MLX_JACCL_COORDINATOR` should contain the IP and port that rank 0 "
+"can listen to all the other ranks connect to in order to establish the RDMA "
 "connections."
 msgstr ""
-"**MLX_JACCL_COORDINATOR** 應包含 rank 0 監聽的 IP 與埠號，供其他 rank 連線建"
-"立 RDMA 連線。"
 
-#: ../../../src/usage/distributed.rst:509
+#: ../../../src/usage/distributed.rst:540
 msgid ""
-"**MLX_IBV_DEVICES** should contain the path to a json file that contains the "
-"ibverbs device names that connect each node to each other node, something "
-"like the following:"
+":envvar:`MLX_IBV_DEVICES` should contain the path to a json file that "
+"contains the ibverbs device names that connect each node to each other node, "
+"something like the following:"
 msgstr ""
-"**MLX_IBV_DEVICES** 應包含一個 json 檔路徑，其中列出連接各節點彼此的 ibverbs "
-"裝置名稱，例如："
 
-#: ../../../src/usage/distributed.rst:513
+#: ../../../src/usage/distributed.rst:544
 msgid ""
 "[\n"
 "   [null, \"rdma_en5\", \"rdma_en4\", \"rdma_en3\"],\n"
@@ -942,17 +975,17 @@ msgid ""
 "]"
 msgstr ""
 
-#: ../../../src/usage/distributed.rst:524
+#: ../../../src/usage/distributed.rst:555
 msgid "NCCL"
 msgstr ""
 
-#: ../../../src/usage/distributed.rst:529
+#: ../../../src/usage/distributed.rst:560
 msgid ""
-"**MLX_WORLD_SIZE** should contain the total number of processes that will be "
-"launched."
-msgstr "**MLX_WORLD_SIZE** 應包含將啟動的行程總數。"
+":envvar:`MLX_WORLD_SIZE` should contain the total number of processes that "
+"will be launched."
+msgstr ""
 
-#: ../../../src/usage/distributed.rst:532
+#: ../../../src/usage/distributed.rst:563
 msgid ""
 "**NCCL_HOST_IP** and **NCCL_PORT** should contain the IP and port that all "
 "hosts can connect to to establish the NCCL communication."
@@ -960,13 +993,13 @@ msgstr ""
 "**NCCL_HOST_IP** 與 **NCCL_PORT** 應包含所有主機可連線以建立 NCCL 通訊的 IP "
 "與埠號。"
 
-#: ../../../src/usage/distributed.rst:535
+#: ../../../src/usage/distributed.rst:566
 msgid ""
 "**CUDA_VISIBLE_DEVICES** should contain the local index of the gpu that "
 "corresponds to this process."
 msgstr "**CUDA_VISIBLE_DEVICES** 應包含對應此行程的 GPU 本地索引。"
 
-#: ../../../src/usage/distributed.rst:538
+#: ../../../src/usage/distributed.rst:569
 msgid ""
 "Of course any `other environment variable <https://docs.nvidia.com/"
 "deeplearning/nccl/user-guide/docs/env.html>`_ that is used by NCCL can be "
@@ -975,32 +1008,32 @@ msgstr ""
 "當然，NCCL 使用的 `其他環境變數 <https://docs.nvidia.com/deeplearning/nccl/"
 "user-guide/docs/env.html>`_ 也可設定。"
 
-#: ../../../src/usage/distributed.rst:545
+#: ../../../src/usage/distributed.rst:576
 msgid "Tips and Tricks"
 msgstr "技巧與提示"
 
-#: ../../../src/usage/distributed.rst:547
+#: ../../../src/usage/distributed.rst:578
 msgid ""
 "This is a small collection of tips to help you utilize better the "
 "distributed communication capabilities of MLX."
 msgstr "這裡提供一些小技巧，協助你更好地運用 MLX 的分散式通訊能力。"
 
-#: ../../../src/usage/distributed.rst:550
+#: ../../../src/usage/distributed.rst:581
 msgid "*Test locally first.*"
 msgstr "*先在本機測試。*"
 
-#: ../../../src/usage/distributed.rst:552
+#: ../../../src/usage/distributed.rst:583
 msgid ""
 "You can use the pattern ``mlx.launch -n2 -- my_script.py`` to run a small "
 "scale test on a single node first."
 msgstr ""
 "你可以用 ``mlx.launch -n2 -- my_script.py`` 的模式先在單一節點做小規模測試。"
 
-#: ../../../src/usage/distributed.rst:555
+#: ../../../src/usage/distributed.rst:586
 msgid "*Batch your communication.*"
 msgstr "*批次化通訊。*"
 
-#: ../../../src/usage/distributed.rst:557
+#: ../../../src/usage/distributed.rst:588
 msgid ""
 "As described in the :ref:`training example <training_example>`, performing a "
 "lot of small communications can hurt performance. Copy the approach of :func:"
@@ -1010,11 +1043,11 @@ msgstr ""
 "如 :ref:`訓練範例 <training_example>` 所述，進行大量小型通訊會影響效能。可參"
 "照 :func:`mlx.nn.average_gradients` 的做法，把多次小通訊聚合成一次大型通訊。"
 
-#: ../../../src/usage/distributed.rst:562
+#: ../../../src/usage/distributed.rst:593
 msgid "*Visualize the connectivity.*"
 msgstr "*視覺化連線。*"
 
-#: ../../../src/usage/distributed.rst:564
+#: ../../../src/usage/distributed.rst:595
 msgid ""
 "Use ``mlx.distributed_config --hosts h1,h2,h3 --over thunderbolt --dot`` to "
 "visualize the connnections and make sure that the cables are connected "
@@ -1023,11 +1056,11 @@ msgstr ""
 "使用 ``mlx.distributed_config --hosts h1,h2,h3 --over thunderbolt --dot`` 來"
 "視覺化連線，確認線纜正確連接。範例請參考 :ref:`JACCL 章節 <jaccl_section>`。"
 
-#: ../../../src/usage/distributed.rst:568
+#: ../../../src/usage/distributed.rst:599
 msgid "*Use the debugger.*"
 msgstr "*使用除錯器。*"
 
-#: ../../../src/usage/distributed.rst:570
+#: ../../../src/usage/distributed.rst:601
 msgid ""
 "``mlx.launch`` is meant for interactive use. It broadcasts stdin to all "
 "processes and gathers stdout from all processes. This makes using ``pdb`` a "
@@ -1035,3 +1068,54 @@ msgid ""
 msgstr ""
 "``mlx.launch`` 用於互動式操作。它會將 stdin 廣播到所有行程並收集各行程的 "
 "stdout，讓使用 ``pdb`` 變得很容易。"
+
+#~ msgid ""
+#~ "Defining the environment variable ``MLX_METAL_FAST_SYNCH=1`` enables a "
+#~ "different, faster way of synchronizing between the GPU and the CPU. It is "
+#~ "not specific to the JACCL backend and can be used in all cases where the "
+#~ "CPU and GPU need to collaborate for some computation and is pretty "
+#~ "critical for low-latency communication since the communication is done by "
+#~ "the CPU."
+#~ msgstr ""
+#~ "設定環境變數 ``MLX_METAL_FAST_SYNCH=1`` 會啟用 GPU 與 CPU 之間更快的同步方"
+#~ "式。這並非 JACCL 專用，凡是 CPU 與 GPU 需要協同計算的情況都可使用，且因通"
+#~ "訊由 CPU 執行，對低延遲通訊而言相當關鍵。"
+
+#~ msgid ""
+#~ "**MLX_RANK** should contain a single 0-based integer that defines the "
+#~ "rank of the process."
+#~ msgstr "**MLX_RANK** 應包含一個以 0 為起始的整數，用於定義行程的 rank。"
+
+#~ msgid ""
+#~ "**MLX_HOSTFILE** should contain the path to a json file that contains IPs "
+#~ "and ports for each rank to listen to, something like the following:"
+#~ msgstr ""
+#~ "**MLX_HOSTFILE** 應包含一個 json 檔路徑，其中列出各 rank 要監聽的 IP 與連"
+#~ "接埠，例如："
+
+#~ msgid ""
+#~ "**MLX_RING_VERBOSE** is optional and if set to 1 it enables some more "
+#~ "logging from the distributed backend."
+#~ msgstr ""
+#~ "**MLX_RING_VERBOSE** 為選用，設為 1 時會啟用更多分散式後端的日誌輸出。"
+
+#~ msgid ""
+#~ "**MLX_JACCL_COORDINATOR** should contain the IP and port that rank 0 can "
+#~ "listen to all the other ranks connect to in order to establish the RDMA "
+#~ "connections."
+#~ msgstr ""
+#~ "**MLX_JACCL_COORDINATOR** 應包含 rank 0 監聽的 IP 與埠號，供其他 rank 連線"
+#~ "建立 RDMA 連線。"
+
+#~ msgid ""
+#~ "**MLX_IBV_DEVICES** should contain the path to a json file that contains "
+#~ "the ibverbs device names that connect each node to each other node, "
+#~ "something like the following:"
+#~ msgstr ""
+#~ "**MLX_IBV_DEVICES** 應包含一個 json 檔路徑，其中列出連接各節點彼此的 "
+#~ "ibverbs 裝置名稱，例如："
+
+#~ msgid ""
+#~ "**MLX_WORLD_SIZE** should contain the total number of processes that will "
+#~ "be launched."
+#~ msgstr "**MLX_WORLD_SIZE** 應包含將啟動的行程總數。"

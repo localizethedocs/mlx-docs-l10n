@@ -16,9 +16,9 @@
       "branch" : "main",
       "commit" : 
       {
-        "date" : "2026-06-22 08:52:13 +0900",
-        "hash" : "51b2768da7e1897d3c4258f7ddbb47083d1eef01",
-        "title" : "Add metal::set_metallib_path() to override the metallib search path (#3597)"
+        "date" : "2026-08-30 12:45:08 +0200",
+        "hash" : "37c26e5755da637255d57ea34b4879196a485301",
+        "title" : "Fix SGD and Adafactor weight decay mutating caller arrays (#4426)"
       }
     },
     "zh_TW" : 
@@ -26,9 +26,9 @@
       "branch" : "main",
       "commit" : 
       {
-        "date" : "2026-06-22 08:52:13 +0900",
-        "hash" : "51b2768da7e1897d3c4258f7ddbb47083d1eef01",
-        "title" : "Add metal::set_metallib_path() to override the metallib search path (#3597)"
+        "date" : "2026-08-30 12:45:08 +0200",
+        "hash" : "37c26e5755da637255d57ea34b4879196a485301",
+        "title" : "Fix SGD and Adafactor weight decay mutating caller arrays (#4426)"
       }
     }
   },

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MLX main\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-01-12 08:24+0000\n"
+"POT-Creation-Date: 2026-08-31 15:41+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -194,35 +194,43 @@ msgstr ""
 "資料型別以階層排列。請參見 :obj:`DtypeCategory` 物件文件以取得更多資訊。使"
 "用 :func:`issubdtype` 判斷某個 ``dtype``（或類別）是否為另一類別的子型別。"
 
-#: ../../../src/python/data_types.rst:78:<autosummary>:1
+#: ../../../src/python/data_types.rst:79:<autosummary>:1
 msgid ":py:obj:`Dtype <mlx.core.Dtype>`\\"
 msgstr ""
 
-#: ../../../src/python/data_types.rst:78:<autosummary>:1
+#: ../../../src/python/data_types.rst:79:<autosummary>:1
 msgid "An object to hold the type of a :class:`array`."
 msgstr "用於保存 :class:`array` 型別的物件。"
 
-#: ../../../src/python/data_types.rst:78:<autosummary>:1
+#: ../../../src/python/data_types.rst:79:<autosummary>:1
 msgid ":py:obj:`DtypeCategory <mlx.core.DtypeCategory>`\\ \\(\\*values\\)"
 msgstr ""
 
-#: ../../../src/python/data_types.rst:78:<autosummary>:1
+#: ../../../src/python/data_types.rst:79:<autosummary>:1
 msgid "Type to hold categories of :class:`dtypes <Dtype>`."
 msgstr "用於保存 :class:`dtypes <Dtype>` 類別的型別。"
 
-#: ../../../src/python/data_types.rst:78:<autosummary>:1
+#: ../../../src/python/data_types.rst:79:<autosummary>:1
 msgid ":py:obj:`issubdtype <mlx.core.issubdtype>`\\ \\(arg1\\, arg2\\)"
 msgstr ""
 
-#: ../../../src/python/data_types.rst:78:<autosummary>:1
+#: ../../../src/python/data_types.rst:79:<autosummary>:1
 msgid ""
 "Check if a :obj:`Dtype` or :obj:`DtypeCategory` is a subtype of another."
 msgstr "檢查 :obj:`Dtype` 或 :obj:`DtypeCategory` 是否為另一者的子型別。"
 
-#: ../../../src/python/data_types.rst:78:<autosummary>:1
+#: ../../../src/python/data_types.rst:79:<autosummary>:1
 msgid ":py:obj:`finfo <mlx.core.finfo>`\\ \\(\\*args\\, \\*\\*kwargs\\)"
 msgstr ""
 
-#: ../../../src/python/data_types.rst:78:<autosummary>:1
+#: ../../../src/python/data_types.rst:79:<autosummary>:1
 msgid "Get information on floating-point types."
 msgstr "取得浮點數型別資訊。"
+
+#: ../../../src/python/data_types.rst:79:<autosummary>:1
+msgid ":py:obj:`iinfo <mlx.core.iinfo>`\\ \\(\\*args\\, \\*\\*kwargs\\)"
+msgstr ""
+
+#: ../../../src/python/data_types.rst:79:<autosummary>:1
+msgid "Get information on integer types."
+msgstr ""

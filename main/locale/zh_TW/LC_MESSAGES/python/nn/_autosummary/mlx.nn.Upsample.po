@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MLX main\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-12-22 08:23+0000\n"
+"POT-Creation-Date: 2026-08-31 15:41+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -59,12 +59,40 @@ msgid ""
 "output will be matching as will the bottom right edge."
 msgstr ""
 
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/upsample.py:docstring
+#: of mlx.nn.layers.upsample.Upsample:23
+msgid ""
+"When ``antialias=True`` is used with ``\"linear\"`` or ``\"cubic\"`` mode, "
+"an antialiased filter is applied during downsampling (scale factor < 1), "
+"producing smoother results by avoiding aliasing artifacts. For 2D integer-"
+"ratio downscales with ``align_corners=False``, this matches the behavior of "
+"PyTorch's ``F.interpolate(antialias=True)``. Non-integer scale factors are "
+"supported but may differ from PyTorch because of existing index-selection "
+"differences."
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/upsample.py:docstring
+#: of mlx.nn.layers.upsample.Upsample:31
+msgid ""
+"For ``\"cubic\"`` mode, enabling ``antialias`` also changes the cubic kernel "
+"coefficient from ``a=-0.75`` (OpenCV convention) to ``a=-0.5`` (PIL/Pillow "
+"convention), matching PyTorch's behavior. This affects the interpolant "
+"shape, not just the filter width."
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/upsample.py:docstring
+#: of mlx.nn.layers.upsample.Upsample:36
+msgid ""
+"``antialias=True`` with ``align_corners=True`` is not supported and will "
+"raise a ``ValueError``."
+msgstr ""
+
 #: ../../../src/python/nn/_autosummary/mlx.nn.Upsample.rst:0
 msgid "Parameters"
 msgstr "參數"
 
 #: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/upsample.py:docstring
-#: of mlx.nn.layers.upsample.Upsample:22
+#: of mlx.nn.layers.upsample.Upsample:39
 msgid ""
 "The multiplier for the spatial size. If a ``float`` is provided, it is the "
 "multiplier for all spatial dimensions. Otherwise, the number of scale "
@@ -72,14 +100,14 @@ msgid ""
 msgstr ""
 
 #: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/upsample.py:docstring
-#: of mlx.nn.layers.upsample.Upsample:27
+#: of mlx.nn.layers.upsample.Upsample:44
 msgid ""
 "The upsampling algorithm, either ``\"nearest\"``, ``\"linear\"`` or "
 "``\"cubic\"``. Default: ``\"nearest\"``."
 msgstr ""
 
 #: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/upsample.py:docstring
-#: of mlx.nn.layers.upsample.Upsample:30
+#: of mlx.nn.layers.upsample.Upsample:47
 msgid ""
 "Changes the way the corners are treated during ``\"linear\"`` and "
 "``\"cubic\"`` upsampling.  See the note above and the examples below for "
@@ -87,7 +115,16 @@ msgid ""
 msgstr ""
 
 #: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/upsample.py:docstring
-#: of mlx.nn.layers.upsample.Upsample:36
+#: of mlx.nn.layers.upsample.Upsample:51
+msgid ""
+"If ``True``, apply an antialiasing filter when downsampling with "
+"``\"linear\"`` or ``\"cubic\"`` mode. For ``\"cubic\"`` mode this also "
+"switches the kernel coefficient to ``a=-0.5``. Not supported with "
+"``\"nearest\"`` mode or with ``align_corners=True``. Default: ``False``."
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/upsample.py:docstring
+#: of mlx.nn.layers.upsample.Upsample:59
 msgid "Examples"
 msgstr "範例"
 

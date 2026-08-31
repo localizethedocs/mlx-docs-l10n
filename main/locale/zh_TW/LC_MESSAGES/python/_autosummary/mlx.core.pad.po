@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MLX main\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-12-22 08:23+0000\n"
+"POT-Creation-Date: 2026-08-31 15:41+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -45,10 +45,13 @@ msgstr ""
 #: ../../../docstring of mlx.core.pad:12
 msgid ""
 "Padding mode. One of the following strings: \"constant\" (default): Pads "
-"with a constant value. \"edge\": Pads with the edge values of array."
+"with a constant value. \"edge\": Pads with the edge values of array. "
+"\"reflect\": Pads with the reflection of the array, without repeating the "
+"edge values. \"symmetric\": Pads with the reflection of the array, repeating "
+"the edge values."
 msgstr ""
 
-#: ../../../docstring of mlx.core.pad:15
+#: ../../../docstring of mlx.core.pad:17
 msgid "Optional constant value to pad the edges of the array with."
 msgstr ""
 
@@ -56,7 +59,7 @@ msgstr ""
 msgid "Returns"
 msgstr "回傳值"
 
-#: ../../../docstring of mlx.core.pad:19
+#: ../../../docstring of mlx.core.pad:21
 msgid "The padded array."
 msgstr ""
 

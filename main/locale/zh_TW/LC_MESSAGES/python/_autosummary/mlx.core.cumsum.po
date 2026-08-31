@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MLX main\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-12-22 08:23+0000\n"
+"POT-Creation-Date: 2026-08-31 15:41+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -30,8 +30,8 @@ msgid "Parameters"
 msgstr "參數"
 
 #: ../../../docstring of mlx.core.cumsum:3
-msgid "Input array"
-msgstr "輸入陣列"
+msgid "Input array."
+msgstr ""
 
 #: ../../../docstring of mlx.core.cumsum:5
 msgid ""
@@ -47,14 +47,21 @@ msgstr ""
 msgid "The i-th element of the output includes the i-th element of the input."
 msgstr ""
 
+#: ../../../docstring of mlx.core.cumsum:14
+msgid "Cast the input to this type before summing."
+msgstr ""
+
 #: ../../../src/python/_autosummary/mlx.core.cumsum.rst:0
 msgid "Returns"
 msgstr "回傳值"
 
-#: ../../../docstring of mlx.core.cumsum:15
+#: ../../../docstring of mlx.core.cumsum:17
 msgid "The output array."
 msgstr "輸出陣列。"
 
 #: ../../../src/python/_autosummary/mlx.core.cumsum.rst:0
 msgid "Return type"
 msgstr "回傳值型別"
+
+#~ msgid "Input array"
+#~ msgstr "輸入陣列"
