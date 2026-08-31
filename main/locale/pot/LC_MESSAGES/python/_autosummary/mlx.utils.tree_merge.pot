@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MLX main\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-06-22 13:31+0000\n"
+"POT-Creation-Date: 2026-08-31 15:41+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -25,7 +25,8 @@ msgstr ""
 #: of mlx.utils.tree_merge:1
 msgid ""
 "Merge two Python trees in one containing the values of both. It can be "
-"thought of as a deep dict.update method."
+"thought of as a deep dict.update method. Empty containers are treated as "
+"empty subtrees."
 msgstr ""
 
 #: ../../../src/python/_autosummary/mlx.utils.tree_merge.rst:0
@@ -33,17 +34,17 @@ msgid "Parameters"
 msgstr ""
 
 #: ../../../../../../.conda/lib/python3.12/site-packages/mlx/utils.py:docstring
-#: of mlx.utils.tree_merge:4
+#: of mlx.utils.tree_merge:5
 msgid "The first Python tree."
 msgstr ""
 
 #: ../../../../../../.conda/lib/python3.12/site-packages/mlx/utils.py:docstring
-#: of mlx.utils.tree_merge:6
+#: of mlx.utils.tree_merge:7
 msgid "The second Python tree."
 msgstr ""
 
 #: ../../../../../../.conda/lib/python3.12/site-packages/mlx/utils.py:docstring
-#: of mlx.utils.tree_merge:8
+#: of mlx.utils.tree_merge:9
 msgid "A function to merge leaves."
 msgstr ""
 
@@ -52,7 +53,7 @@ msgid "Returns"
 msgstr ""
 
 #: ../../../../../../.conda/lib/python3.12/site-packages/mlx/utils.py:docstring
-#: of mlx.utils.tree_merge:11
+#: of mlx.utils.tree_merge:12
 msgid ""
 "The Python tree containing the values of both ``tree_a`` and ``tree_b``."
 msgstr ""

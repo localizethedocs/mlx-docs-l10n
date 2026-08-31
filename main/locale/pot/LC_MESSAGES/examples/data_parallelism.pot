@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MLX main\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-03-09 08:38+0000\n"
+"POT-Creation-Date: 2026-08-31 15:41+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -63,23 +63,24 @@ msgstr ""
 #: ../../../src/examples/data_parallelism.rst:36
 msgid ""
 "All we have to do to average the gradients across machines is perform an :"
-"func:`all_sum` and divide by the size of the :class:`Group`. Namely we have "
-"to :func:`mlx.utils.tree_map` the gradients with following function."
+"func:`mlx.core.distributed.all_sum` and divide by the size of the :class:"
+"`mlx.core.distributed.Group`. Namely we have to :func:`mlx.utils.tree_map` "
+"the gradients with following function."
 msgstr ""
 
-#: ../../../src/examples/data_parallelism.rst:40
+#: ../../../src/examples/data_parallelism.rst:41
 msgid ""
 "def all_avg(x):\n"
 "    return mx.distributed.all_sum(x) / mx.distributed.init().size()"
 msgstr ""
 
-#: ../../../src/examples/data_parallelism.rst:45
+#: ../../../src/examples/data_parallelism.rst:46
 msgid ""
 "Putting everything together our training loop step looks as follows with "
 "everything else remaining the same."
 msgstr ""
 
-#: ../../../src/examples/data_parallelism.rst:48
+#: ../../../src/examples/data_parallelism.rst:49
 msgid ""
 "from mlx.utils import tree_map\n"
 "\n"
@@ -99,24 +100,24 @@ msgid ""
 "    return loss"
 msgstr ""
 
-#: ../../../src/examples/data_parallelism.rst:68
+#: ../../../src/examples/data_parallelism.rst:69
 msgid "Using ``nn.average_gradients``"
 msgstr ""
 
-#: ../../../src/examples/data_parallelism.rst:70
+#: ../../../src/examples/data_parallelism.rst:71
 msgid ""
 "Although the code example above works correctly; it performs one "
 "communication per gradient. It is significantly more efficient to aggregate "
 "several gradients together and perform fewer communication steps."
 msgstr ""
 
-#: ../../../src/examples/data_parallelism.rst:74
+#: ../../../src/examples/data_parallelism.rst:75
 msgid ""
 "This is the purpose of :func:`mlx.nn.average_gradients`. The final code "
 "looks almost identical to the example above:"
 msgstr ""
 
-#: ../../../src/examples/data_parallelism.rst:77
+#: ../../../src/examples/data_parallelism.rst:78
 msgid ""
 "model = ...\n"
 "optimizer = ...\n"

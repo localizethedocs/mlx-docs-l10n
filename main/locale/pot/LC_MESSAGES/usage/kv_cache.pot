@@ -1,0 +1,179 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023, Apple
+# This file is distributed under the same license as the MLX package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: MLX main\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-08-31 15:41+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../src/usage/kv_cache.rst:4
+msgid "Writing a Fast KV Cache"
+msgstr ""
+
+#: ../../../src/usage/kv_cache.rst:6
+msgid ""
+"Autoregressive generation appends one position to the key and value arrays "
+"for each generated token. The append strategy can dominate KV-cache "
+"performance."
+msgstr ""
+
+#: ../../../src/usage/kv_cache.rst:9
+msgid "Avoid appending naively with :func:`concatenate`:"
+msgstr ""
+
+#: ../../../src/usage/kv_cache.rst:11
+msgid ""
+"# Avoid this\n"
+"cache = mx.zeros((1, 0, d))\n"
+"for x in steps:\n"
+"    cache = mx.concatenate([cache, x], axis=1)\n"
+"    mx.eval(cache)"
+msgstr ""
+
+#: ../../../src/usage/kv_cache.rst:19
+msgid "Instead, preallocate fixed-size chunks and update the cache in place:"
+msgstr ""
+
+#: ../../../src/usage/kv_cache.rst:21
+msgid ""
+"chunk = 256\n"
+"cache = mx.zeros((1, chunk, d))\n"
+"offset = 0\n"
+"for x in steps:\n"
+"    if offset == cache.shape[1]:\n"
+"        cache = mx.concatenate([cache, mx.zeros((1, chunk, d))], axis=1)\n"
+"    cache = mx.slice_update(cache, x, mx.array(offset), (1,))\n"
+"    offset += 1\n"
+"    mx.eval(cache)\n"
+"\n"
+"keys = cache[:, :offset]"
+msgstr ""
+
+#: ../../../src/usage/kv_cache.rst:35
+msgid ""
+"You can also use indexed assignment, which may read more naturally: "
+"``cache[:, offset : offset + 1, :] = x``."
+msgstr ""
+
+#: ../../../src/usage/kv_cache.rst:38
+msgid ""
+"The following measurements append one position per step to 20 ``bfloat16`` "
+"caches of shape ``[1, 4, N, 512]`` on an M4 Max:"
+msgstr ""
+
+#: ../../../src/usage/kv_cache.rst:45
+msgid "Context"
+msgstr ""
+
+#: ../../../src/usage/kv_cache.rst:46
+msgid "Concatenate"
+msgstr ""
+
+#: ../../../src/usage/kv_cache.rst:47
+msgid "Preallocate + update"
+msgstr ""
+
+#: ../../../src/usage/kv_cache.rst:48
+msgid "512"
+msgstr ""
+
+#: ../../../src/usage/kv_cache.rst:49
+msgid "0.90 ms / step"
+msgstr ""
+
+#: ../../../src/usage/kv_cache.rst:50
+msgid "0.24 ms / step"
+msgstr ""
+
+#: ../../../src/usage/kv_cache.rst:51
+msgid "1024"
+msgstr ""
+
+#: ../../../src/usage/kv_cache.rst:52
+msgid "1.11 ms / step"
+msgstr ""
+
+#: ../../../src/usage/kv_cache.rst:53
+msgid "0.21 ms / step"
+msgstr ""
+
+#: ../../../src/usage/kv_cache.rst:54
+msgid "4096"
+msgstr ""
+
+#: ../../../src/usage/kv_cache.rst:55
+msgid "3.73 ms / step"
+msgstr ""
+
+#: ../../../src/usage/kv_cache.rst:56
+msgid "0.22 ms / step"
+msgstr ""
+
+#: ../../../src/usage/kv_cache.rst:58
+msgid ""
+"With preallocation, step time remains nearly constant as context length "
+"grows. Concatenation becomes progressively slower."
+msgstr ""
+
+#: ../../../src/usage/kv_cache.rst:62
+msgid "Why Concatenating Is Slow"
+msgstr ""
+
+#: ../../../src/usage/kv_cache.rst:64
+msgid "Concatenation has two costs: copying data and preventing buffer reuse."
+msgstr ""
+
+#: ../../../src/usage/kv_cache.rst:66
+msgid ""
+":func:`concatenate` creates a new array and copies the existing cache at "
+"every step. Appending ``n`` positions therefore copies on the order of "
+"``n^2`` elements."
+msgstr ""
+
+#: ../../../src/usage/kv_cache.rst:70
+msgid ""
+"Growing the cache also prevents buffer reuse. MLX pools freed device "
+"buffers, but reuses a buffer only for a similarly sized request. It does not "
+"split a larger buffer for a smaller request or combine smaller buffers for a "
+"larger one. Because a growing cache has a new size at every step, each "
+"allocation typically comes from the driver while freed buffers remain unused."
+msgstr ""
+
+#: ../../../src/usage/kv_cache.rst:76
+msgid ""
+"This allocation work occurs on the CPU. In profiles, it appears as GPU idle "
+"time between kernels rather than as a slow kernel, which can make the model "
+"appear to be the bottleneck."
+msgstr ""
+
+#: ../../../src/usage/kv_cache.rst:80
+msgid ""
+"Preallocation avoids both costs. The cache shape remains fixed, eliminating "
+"both repeated copies and per-step allocations."
+msgstr ""
+
+#: ../../../src/usage/kv_cache.rst:84
+msgid "Choosing a Chunk Size"
+msgstr ""
+
+#: ../../../src/usage/kv_cache.rst:86
+msgid "Use a chunk size that is a multiple of 256."
+msgstr ""
+
+#: ../../../src/usage/kv_cache.rst:88
+msgid ""
+"This both amortizes growth and enables the fused cuDNN attention kernel on "
+"CUDA. For single-token attention, the key and value arrays must be slices of "
+"a contiguous cache with a capacity that is a multiple of 256, and at least "
+"256 positions must be in use. Other chunk sizes silently use a slower path."
+msgstr ""

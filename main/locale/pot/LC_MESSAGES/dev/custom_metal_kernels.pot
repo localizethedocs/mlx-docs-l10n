@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MLX main\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-06-22 13:31+0000\n"
+"POT-Creation-Date: 2026-08-31 15:41+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -165,15 +165,46 @@ msgstr ""
 
 #: ../../../src/dev/custom_metal_kernels.rst:95
 msgid ""
-"Passing ``verbose=True`` to :func:`ast.metal_kernel.__call__` will print the "
-"generated code for debugging purposes."
+"Passing ``verbose=True`` when calling the kernel returned by :func:`fast."
+"metal_kernel` will print the generated code for debugging purposes."
 msgstr ""
 
 #: ../../../src/dev/custom_metal_kernels.rst:99
-msgid "Using Shape/Strides"
+msgid "Math Mode"
 msgstr ""
 
 #: ../../../src/dev/custom_metal_kernels.rst:101
+msgid ""
+"By default :func:`fast.metal_kernel` compiles kernels with "
+"``compile_options={\"math_mode\": \"safe\"}`` so special values follow IEEE "
+"behavior, for example ``exp(-inf) == 0``. This is important for kernels such "
+"as masked softmax where causal or sliding-window masks depend on "
+"exponentiating ``-inf``."
+msgstr ""
+
+#: ../../../src/dev/custom_metal_kernels.rst:107
+msgid ""
+"If your kernel does not rely on these edge cases, you can opt in to less "
+"strict math with ``compile_options={\"math_mode\": \"relaxed\"}`` or "
+"``compile_options={\"math_mode\": \"fast\"}``:"
+msgstr ""
+
+#: ../../../src/dev/custom_metal_kernels.rst:111
+msgid ""
+"kernel = mx.fast.metal_kernel(\n"
+"    name=\"my_kernel\",\n"
+"    input_names=[\"x\"],\n"
+"    output_names=[\"y\"],\n"
+"    source=source,\n"
+"    compile_options={\"math_mode\": \"relaxed\"},\n"
+")"
+msgstr ""
+
+#: ../../../src/dev/custom_metal_kernels.rst:122
+msgid "Using Shape/Strides"
+msgstr ""
+
+#: ../../../src/dev/custom_metal_kernels.rst:124
 msgid ""
 ":func:`fast.metal_kernel` supports an argument ``ensure_row_contiguous`` "
 "which is ``True`` by default. This will copy the array inputs if needed "
@@ -182,7 +213,7 @@ msgid ""
 "have to worry about gaps or the ordering of the dims when indexing."
 msgstr ""
 
-#: ../../../src/dev/custom_metal_kernels.rst:107
+#: ../../../src/dev/custom_metal_kernels.rst:130
 msgid ""
 "If we want to avoid this copy, :func:`fast.metal_kernel` automatically "
 "passes ``a_shape``, ``a_strides`` and ``a_ndim`` for each input array ``a`` "
@@ -190,13 +221,13 @@ msgid ""
 "utils to fetch the right elements for each thread."
 msgstr ""
 
-#: ../../../src/dev/custom_metal_kernels.rst:112
+#: ../../../src/dev/custom_metal_kernels.rst:135
 msgid ""
 "Let's convert ``myexp`` above to support arbitrarily strided arrays without "
 "relying on a copy from ``ensure_row_contiguous``:"
 msgstr ""
 
-#: ../../../src/dev/custom_metal_kernels.rst:115
+#: ../../../src/dev/custom_metal_kernels.rst:138
 msgid ""
 "source = \"\"\"\n"
 "    uint elem = thread_position_in_grid.x;\n"
@@ -234,21 +265,21 @@ msgid ""
 "assert mx.allclose(b, mx.exp(a))"
 msgstr ""
 
-#: ../../../src/dev/custom_metal_kernels.rst:152
+#: ../../../src/dev/custom_metal_kernels.rst:175
 msgid "Complex Example"
 msgstr ""
 
-#: ../../../src/dev/custom_metal_kernels.rst:154
+#: ../../../src/dev/custom_metal_kernels.rst:177
 msgid ""
 "Let's implement a more complex example: ``grid_sample`` in ``\"bilinear\"`` "
 "mode."
 msgstr ""
 
-#: ../../../src/dev/custom_metal_kernels.rst:156
+#: ../../../src/dev/custom_metal_kernels.rst:179
 msgid "We'll start with the following MLX implementation using standard ops:"
 msgstr ""
 
-#: ../../../src/dev/custom_metal_kernels.rst:158
+#: ../../../src/dev/custom_metal_kernels.rst:181
 msgid ""
 "def grid_sample_ref(x, grid):\n"
 "    N, H_in, W_in, _ = x.shape\n"
@@ -297,18 +328,18 @@ msgid ""
 "    return output"
 msgstr ""
 
-#: ../../../src/dev/custom_metal_kernels.rst:201
+#: ../../../src/dev/custom_metal_kernels.rst:224
 msgid ""
 "Now let's use :func:`custom_function` together with :func:`fast."
 "metal_kernel` to write a fast GPU kernel for both the forward and backward "
 "passes."
 msgstr ""
 
-#: ../../../src/dev/custom_metal_kernels.rst:204
+#: ../../../src/dev/custom_metal_kernels.rst:227
 msgid "First we'll implement the forward pass as a fused kernel:"
 msgstr ""
 
-#: ../../../src/dev/custom_metal_kernels.rst:206
+#: ../../../src/dev/custom_metal_kernels.rst:229
 msgid ""
 "source = \"\"\"\n"
 "    uint elem = thread_position_in_grid.x;\n"
@@ -394,55 +425,55 @@ msgid ""
 "    return outputs[0]"
 msgstr ""
 
-#: ../../../src/dev/custom_metal_kernels.rst:287
+#: ../../../src/dev/custom_metal_kernels.rst:310
 msgid "For a reasonably sized input such as:"
 msgstr ""
 
-#: ../../../src/dev/custom_metal_kernels.rst:289
+#: ../../../src/dev/custom_metal_kernels.rst:312
 msgid ""
 "x.shape = (8, 1024, 1024, 64)\n"
 "grid.shape = (8, 256, 256, 2)"
 msgstr ""
 
-#: ../../../src/dev/custom_metal_kernels.rst:294
+#: ../../../src/dev/custom_metal_kernels.rst:317
 msgid "On an M1 Max, we see a big performance improvement:"
 msgstr ""
 
-#: ../../../src/dev/custom_metal_kernels.rst:296
+#: ../../../src/dev/custom_metal_kernels.rst:319
 msgid "``55.7ms -> 6.7ms => 8x speed up``"
 msgstr ""
 
-#: ../../../src/dev/custom_metal_kernels.rst:299
+#: ../../../src/dev/custom_metal_kernels.rst:322
 msgid "Grid Sample VJP"
 msgstr ""
 
-#: ../../../src/dev/custom_metal_kernels.rst:301
+#: ../../../src/dev/custom_metal_kernels.rst:324
 msgid ""
 "Since we decorated ``grid_sample`` with :func:`custom_function`, we can now "
 "define its custom vjp transform so MLX can differentiate it."
 msgstr ""
 
-#: ../../../src/dev/custom_metal_kernels.rst:304
+#: ../../../src/dev/custom_metal_kernels.rst:327
 msgid ""
 "The backwards pass requires atomically updating ``x_grad``/``grid_grad`` and "
 "so requires a few extra :func:`fast.metal_kernel` features:"
 msgstr ""
 
-#: ../../../src/dev/custom_metal_kernels.rst:307
+#: ../../../src/dev/custom_metal_kernels.rst:330
 msgid "``init_value=0``"
 msgstr ""
 
-#: ../../../src/dev/custom_metal_kernels.rst:308
+#: ../../../src/dev/custom_metal_kernels.rst:331
 msgid ""
 "Initialize all of the kernel's outputs to this value before it runs. This "
 "allows us to update only part of the output arrays with the kernel."
 msgstr ""
 
-#: ../../../src/dev/custom_metal_kernels.rst:310
+#: ../../../src/dev/custom_metal_kernels.rst:333
 msgid "``atomic_outputs=True``"
 msgstr ""
 
-#: ../../../src/dev/custom_metal_kernels.rst:311
+#: ../../../src/dev/custom_metal_kernels.rst:334
 msgid ""
 "Designate all of the kernel outputs as ``atomic`` in the function signature. "
 "This means we can use Metal's ``atomic`` features to simultaneously update "
@@ -451,11 +482,11 @@ msgid ""
 "apple.com/metal/Metal-Shading-Language-Specification.pdf>`_ for more details."
 msgstr ""
 
-#: ../../../src/dev/custom_metal_kernels.rst:315
+#: ../../../src/dev/custom_metal_kernels.rst:338
 msgid "We can then implement the backwards pass as follows:"
 msgstr ""
 
-#: ../../../src/dev/custom_metal_kernels.rst:317
+#: ../../../src/dev/custom_metal_kernels.rst:340
 msgid ""
 "source = \"\"\"\n"
 "    uint elem = thread_position_in_grid.x;\n"
@@ -589,10 +620,10 @@ msgid ""
 "    return outputs[0], outputs[1]"
 msgstr ""
 
-#: ../../../src/dev/custom_metal_kernels.rst:443
+#: ../../../src/dev/custom_metal_kernels.rst:466
 msgid "There's an even larger speed up for the vjp:"
 msgstr ""
 
-#: ../../../src/dev/custom_metal_kernels.rst:445
+#: ../../../src/dev/custom_metal_kernels.rst:468
 msgid "``676.4ms -> 16.7ms => 40x speed up``"
 msgstr ""

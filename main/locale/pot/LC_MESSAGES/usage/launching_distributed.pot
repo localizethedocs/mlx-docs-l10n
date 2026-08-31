@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MLX main\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-12-22 08:23+0000\n"
+"POT-Creation-Date: 2026-08-31 15:41+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -290,19 +290,11 @@ msgstr ""
 msgid "the script you want to run is available on all hosts at the same path"
 msgstr ""
 
-#: ../../../src/usage/launching_distributed.rst:163
-msgid ""
-"If you are launching from a node with a completely different setup than the "
-"nodes that the program will run on, you can specify ``--no-verify-script`` "
-"so that ``mlx.launch`` does not attempt to verify that the executable and "
-"script exist locally before launching the distributed job."
-msgstr ""
-
-#: ../../../src/usage/launching_distributed.rst:171
+#: ../../../src/usage/launching_distributed.rst:166
 msgid "Ring Specifics"
 msgstr ""
 
-#: ../../../src/usage/launching_distributed.rst:173
+#: ../../../src/usage/launching_distributed.rst:168
 msgid ""
 "The :ref:`ring <ring_section>` backend, which is also the default backend, "
 "can be explicitly selected with the argument ``--backend ring``. The ring "
@@ -310,32 +302,32 @@ msgid ""
 "other backends:"
 msgstr ""
 
-#: ../../../src/usage/launching_distributed.rst:178
+#: ../../../src/usage/launching_distributed.rst:173
 msgid ""
 "The argument ``--hosts`` only accepts IPs and not hostnames. If we need to "
 "ssh to a hostname that does not correspond to the IP we want to bind to we "
 "have to provide a hostfile."
 msgstr ""
 
-#: ../../../src/usage/launching_distributed.rst:181
+#: ../../../src/usage/launching_distributed.rst:176
 msgid ""
 "``--starting-port`` defines the port to bind to on the remote hosts. "
 "Specifically rank 0 for the first IP will use this port and each subsequent "
 "IP or rank will add 1 to this port."
 msgstr ""
 
-#: ../../../src/usage/launching_distributed.rst:184
+#: ../../../src/usage/launching_distributed.rst:179
 msgid ""
 "``--connections-per-ip`` allows us to increase the number of connections "
 "between neighboring nodes. This corresponds to ``--mca btl_tcp_links 2`` for "
 "``mpirun``."
 msgstr ""
 
-#: ../../../src/usage/launching_distributed.rst:191
+#: ../../../src/usage/launching_distributed.rst:186
 msgid "JACCL Specifics"
 msgstr ""
 
-#: ../../../src/usage/launching_distributed.rst:193
+#: ../../../src/usage/launching_distributed.rst:188
 msgid ""
 "The :ref:`JACCL <jaccl_section>` backend can be selected with the argument "
 "``--backend jaccl``. A hostfile is necessary to launch with this backend "
@@ -343,67 +335,65 @@ msgid ""
 "other node."
 msgstr ""
 
-#: ../../../src/usage/launching_distributed.rst:199
+#: ../../../src/usage/launching_distributed.rst:194
 msgid "NCCL Specifics"
 msgstr ""
 
-#: ../../../src/usage/launching_distributed.rst:201
+#: ../../../src/usage/launching_distributed.rst:196
 msgid ""
 "The :ref:`NCCL <nccl_section>` backend is the default backend for CUDA "
 "environments. When launching from a Mac to a Linux machine with CUDA then "
 "the backend should be selected using ``--backend nccl``."
 msgstr ""
 
-#: ../../../src/usage/launching_distributed.rst:205
+#: ../../../src/usage/launching_distributed.rst:200
 msgid ""
 "The ``--repeat-hosts, -n`` argument should be used to launch multi-node and "
 "multi-gpu jobs. For instance"
 msgstr ""
 
-#: ../../../src/usage/launching_distributed.rst:208
-msgid ""
-"mlx.launch --backend nccl --hosts linux-1,linux-2 -n 8 --no-verify-script "
-"-- ./my-job.sh"
+#: ../../../src/usage/launching_distributed.rst:203
+msgid "mlx.launch --backend nccl --hosts linux-1,linux-2 -n 8 -- ./my-job.sh"
 msgstr ""
 
-#: ../../../src/usage/launching_distributed.rst:212
+#: ../../../src/usage/launching_distributed.rst:207
 msgid ""
 "will attempt to launch 16 processes, 8 on each node that will all run ``my-"
 "job.sh``."
 msgstr ""
 
-#: ../../../src/usage/launching_distributed.rst:218
+#: ../../../src/usage/launching_distributed.rst:213
 msgid "MPI Specifics"
 msgstr ""
 
-#: ../../../src/usage/launching_distributed.rst:220
+#: ../../../src/usage/launching_distributed.rst:215
 msgid ""
 "One can use MPI by passing ``--backend mpi`` to ``mlx.launch``. In that "
 "case, ``mlx.launch`` is a thin wrapper over ``mpirun``. Moreover,"
 msgstr ""
 
-#: ../../../src/usage/launching_distributed.rst:223
+#: ../../../src/usage/launching_distributed.rst:218
 msgid "The IPs in the hostfile are ignored"
 msgstr ""
 
-#: ../../../src/usage/launching_distributed.rst:224
+#: ../../../src/usage/launching_distributed.rst:219
 msgid ""
 "The ssh connectivity requirement is stronger as every node needs to be able "
 "to connect to every other node"
 msgstr ""
 
-#: ../../../src/usage/launching_distributed.rst:226
+#: ../../../src/usage/launching_distributed.rst:221
 msgid "``mpirun`` needs to be available on every node at the same path"
 msgstr ""
 
-#: ../../../src/usage/launching_distributed.rst:228
+#: ../../../src/usage/launching_distributed.rst:223
 msgid ""
 "Finally, one can pass arguments to ``mpirun`` using ``--mpi-arg``. For "
 "instance to choose a specific interface for the byte-transfer-layer of MPI "
 "we can call ``mlx.launch`` as follows:"
 msgstr ""
 
-#: ../../../src/usage/launching_distributed.rst:232
+#: ../../../src/usage/launching_distributed.rst:227
 msgid ""
 "mlx.launch --backend mpi --mpi-arg '--mca btl_tcp_if_include en0' --hostfile "
 "hosts.json my_script.py"

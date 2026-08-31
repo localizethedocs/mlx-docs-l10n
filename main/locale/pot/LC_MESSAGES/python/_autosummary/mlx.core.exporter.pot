@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MLX main\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-12-22 08:23+0000\n"
+"POT-Creation-Date: 2026-08-31 15:41+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -47,11 +47,17 @@ msgid ""
 "``False``."
 msgstr ""
 
-#: ../../../docstring of mlx.core.exporter:16
+#: ../../../docstring of mlx.core.exporter:14
+msgid ""
+"A string to save alongside the function, for example a JSON encoded model "
+"configuration. Read it back with :func:`import_function`. Default: ``None``."
+msgstr ""
+
+#: ../../../docstring of mlx.core.exporter:20
 msgid "Example"
 msgstr ""
 
-#: ../../../docstring of mlx.core.exporter:17
+#: ../../../docstring of mlx.core.exporter:21
 msgid ""
 "def fun(*args):\n"
 "    return sum(args)\n"
