@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MLX 0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-06-23 11:30+0000\n"
+"POT-Creation-Date: 2026-09-01 13:30+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -28,88 +28,121 @@ msgid ""
 "also made available."
 msgstr ""
 
-#: ../../../src/python/distributed.rst:22:<autosummary>:1
+#: ../../../src/python/distributed.rst:25:<autosummary>:1
 msgid ":py:obj:`Group <mlx.core.distributed.Group>`\\"
 msgstr ""
 
-#: ../../../src/python/distributed.rst:22:<autosummary>:1
+#: ../../../src/python/distributed.rst:25:<autosummary>:1
 msgid ""
 "An :class:`mlx.core.distributed.Group` represents a group of independent mlx "
 "processes that can communicate."
 msgstr ""
 
-#: ../../../src/python/distributed.rst:22:<autosummary>:1
+#: ../../../src/python/distributed.rst:25:<autosummary>:1
 msgid ""
 ":py:obj:`is_available <mlx.core.distributed.is_available>`\\ "
 "\\(\\[backend\\]\\)"
 msgstr ""
 
-#: ../../../src/python/distributed.rst:22:<autosummary>:1
+#: ../../../src/python/distributed.rst:25:<autosummary>:1
 msgid "Check if a communication backend is available."
 msgstr ""
 
-#: ../../../src/python/distributed.rst:22:<autosummary>:1
+#: ../../../src/python/distributed.rst:25:<autosummary>:1
 msgid ""
-":py:obj:`init <mlx.core.distributed.init>`\\ \\(\\[strict\\, backend\\]\\)"
+":py:obj:`init <mlx.core.distributed.init>`\\ \\(\\[strict\\, backend\\, "
+"all\\_gather\\_factory\\]\\)"
 msgstr ""
 
-#: ../../../src/python/distributed.rst:22:<autosummary>:1
+#: ../../../src/python/distributed.rst:25:<autosummary>:1
 msgid ""
 "Initialize the communication backend and create the global communication "
 "group."
 msgstr ""
 
-#: ../../../src/python/distributed.rst:22:<autosummary>:1
+#: ../../../src/python/distributed.rst:25:<autosummary>:1
+msgid ""
+":py:obj:`all_max <mlx.core.distributed.all_max>`\\ \\(x\\, \\*\\[\\, "
+"group\\, stream\\]\\)"
+msgstr ""
+
+#: ../../../src/python/distributed.rst:25:<autosummary>:1
+msgid "All reduce max."
+msgstr ""
+
+#: ../../../src/python/distributed.rst:25:<autosummary>:1
+msgid ""
+":py:obj:`all_min <mlx.core.distributed.all_min>`\\ \\(x\\, \\*\\[\\, "
+"group\\, stream\\]\\)"
+msgstr ""
+
+#: ../../../src/python/distributed.rst:25:<autosummary>:1
+msgid "All reduce min."
+msgstr ""
+
+#: ../../../src/python/distributed.rst:25:<autosummary>:1
 msgid ""
 ":py:obj:`all_sum <mlx.core.distributed.all_sum>`\\ \\(x\\, \\*\\[\\, "
 "group\\, stream\\]\\)"
 msgstr ""
 
-#: ../../../src/python/distributed.rst:22:<autosummary>:1
+#: ../../../src/python/distributed.rst:25:<autosummary>:1
 msgid "All reduce sum."
 msgstr ""
 
-#: ../../../src/python/distributed.rst:22:<autosummary>:1
+#: ../../../src/python/distributed.rst:25:<autosummary>:1
 msgid ""
 ":py:obj:`all_gather <mlx.core.distributed.all_gather>`\\ \\(x\\, \\*\\[\\, "
 "group\\, stream\\]\\)"
 msgstr ""
 
-#: ../../../src/python/distributed.rst:22:<autosummary>:1
+#: ../../../src/python/distributed.rst:25:<autosummary>:1
 msgid "Gather arrays from all processes."
 msgstr ""
 
-#: ../../../src/python/distributed.rst:22:<autosummary>:1
+#: ../../../src/python/distributed.rst:25:<autosummary>:1
 msgid ""
 ":py:obj:`send <mlx.core.distributed.send>`\\ \\(x\\, dst\\, \\*\\[\\, "
 "group\\, stream\\]\\)"
 msgstr ""
 
-#: ../../../src/python/distributed.rst:22:<autosummary>:1
+#: ../../../src/python/distributed.rst:25:<autosummary>:1
 msgid ""
 "Send an array from the current process to the process that has rank ``dst`` "
 "in the group."
 msgstr ""
 
-#: ../../../src/python/distributed.rst:22:<autosummary>:1
+#: ../../../src/python/distributed.rst:25:<autosummary>:1
 msgid ""
 ":py:obj:`recv <mlx.core.distributed.recv>`\\ \\(shape\\, dtype\\, src\\, "
 "\\*\\[\\, group\\, stream\\]\\)"
 msgstr ""
 
-#: ../../../src/python/distributed.rst:22:<autosummary>:1
+#: ../../../src/python/distributed.rst:25:<autosummary>:1
 msgid ""
 "Recv an array with shape ``shape`` and dtype ``dtype`` from process with "
 "rank ``src``."
 msgstr ""
 
-#: ../../../src/python/distributed.rst:22:<autosummary>:1
+#: ../../../src/python/distributed.rst:25:<autosummary>:1
 msgid ""
 ":py:obj:`recv_like <mlx.core.distributed.recv_like>`\\ \\(x\\, src\\, "
 "\\*\\[\\, group\\, stream\\]\\)"
 msgstr ""
 
-#: ../../../src/python/distributed.rst:22:<autosummary>:1
+#: ../../../src/python/distributed.rst:25:<autosummary>:1
 msgid ""
 "Recv an array with shape and type like ``x`` from process with rank ``src``."
+msgstr ""
+
+#: ../../../src/python/distributed.rst:25:<autosummary>:1
+msgid ""
+":py:obj:`sum_scatter <mlx.core.distributed.sum_scatter>`\\ \\(x\\, \\*\\[\\, "
+"group\\, stream\\]\\)"
+msgstr ""
+
+#: ../../../src/python/distributed.rst:25:<autosummary>:1
+msgid ""
+"Sum ``x`` across all processes in the group and shard the result along the "
+"first axis across ranks."
 msgstr ""

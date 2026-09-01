@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MLX 0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-06-23 11:30+0000\n"
+"POT-Creation-Date: 2026-09-01 13:30+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -119,11 +119,19 @@ msgstr ""
 msgid "An optional array of attention sinks. Default: ``None``."
 msgstr ""
 
+#: ../../../docstring of mlx.core.fast.scaled_dot_product_attention:46
+msgid ""
+"If ``True``, use a fused kernel regardless of the builtin heuristics and "
+"raise error when no fused kernel is available. For certain configurations "
+"this would result in slower kernel getting used but can reduce memory "
+"consumption. Default: ``False``."
+msgstr ""
+
 #: ../../../src/python/_autosummary/mlx.core.fast.scaled_dot_product_attention.rst:0
 msgid "Returns"
 msgstr ""
 
-#: ../../../docstring of mlx.core.fast.scaled_dot_product_attention:47
+#: ../../../docstring of mlx.core.fast.scaled_dot_product_attention:53
 msgid "The output array."
 msgstr ""
 
@@ -131,11 +139,11 @@ msgstr ""
 msgid "Return type"
 msgstr ""
 
-#: ../../../docstring of mlx.core.fast.scaled_dot_product_attention:51
+#: ../../../docstring of mlx.core.fast.scaled_dot_product_attention:57
 msgid "Example"
 msgstr ""
 
-#: ../../../docstring of mlx.core.fast.scaled_dot_product_attention:52
+#: ../../../docstring of mlx.core.fast.scaled_dot_product_attention:58
 msgid ""
 "B = 2\n"
 "N_q = N_kv = 32\n"

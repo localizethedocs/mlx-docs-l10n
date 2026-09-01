@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MLX 0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-06-23 11:30+0000\n"
+"POT-Creation-Date: 2026-09-01 13:30+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -57,69 +57,88 @@ msgid ""
 "model.apply(init_fn)"
 msgstr ""
 
-#: ../../../src/python/nn/init.rst:45:<autosummary>:1
+#: ../../../src/python/nn/init.rst:47:<autosummary>:1
 msgid ":py:obj:`constant <mlx.nn.init.constant>`\\ \\(value\\[\\, dtype\\]\\)"
 msgstr ""
 
-#: ../../../src/python/nn/init.rst:45:<autosummary>:1
+#: ../../../src/python/nn/init.rst:47:<autosummary>:1
 msgid "An initializer that returns an array filled with ``value``."
 msgstr ""
 
-#: ../../../src/python/nn/init.rst:45:<autosummary>:1
+#: ../../../src/python/nn/init.rst:47:<autosummary>:1
 msgid ""
 ":py:obj:`normal <mlx.nn.init.normal>`\\ \\(\\[mean\\, std\\, dtype\\]\\)"
 msgstr ""
 
-#: ../../../src/python/nn/init.rst:45:<autosummary>:1
+#: ../../../src/python/nn/init.rst:47:<autosummary>:1
 msgid "An initializer that returns samples from a normal distribution."
 msgstr ""
 
-#: ../../../src/python/nn/init.rst:45:<autosummary>:1
+#: ../../../src/python/nn/init.rst:47:<autosummary>:1
 msgid ""
 ":py:obj:`uniform <mlx.nn.init.uniform>`\\ \\(\\[low\\, high\\, dtype\\]\\)"
 msgstr ""
 
-#: ../../../src/python/nn/init.rst:45:<autosummary>:1
+#: ../../../src/python/nn/init.rst:47:<autosummary>:1
 msgid "An initializer that returns samples from a uniform distribution."
 msgstr ""
 
-#: ../../../src/python/nn/init.rst:45:<autosummary>:1
+#: ../../../src/python/nn/init.rst:47:<autosummary>:1
 msgid ":py:obj:`identity <mlx.nn.init.identity>`\\ \\(\\[dtype\\]\\)"
 msgstr ""
 
-#: ../../../src/python/nn/init.rst:45:<autosummary>:1
+#: ../../../src/python/nn/init.rst:47:<autosummary>:1
 msgid "An initializer that returns an identity matrix."
 msgstr ""
 
-#: ../../../src/python/nn/init.rst:45:<autosummary>:1
+#: ../../../src/python/nn/init.rst:47:<autosummary>:1
 msgid ":py:obj:`glorot_normal <mlx.nn.init.glorot_normal>`\\ \\(\\[dtype\\]\\)"
 msgstr ""
 
-#: ../../../src/python/nn/init.rst:45:<autosummary>:1
+#: ../../../src/python/nn/init.rst:47:<autosummary>:1
 msgid "A Glorot normal initializer."
 msgstr ""
 
-#: ../../../src/python/nn/init.rst:45:<autosummary>:1
+#: ../../../src/python/nn/init.rst:47:<autosummary>:1
 msgid ""
 ":py:obj:`glorot_uniform <mlx.nn.init.glorot_uniform>`\\ \\(\\[dtype\\]\\)"
 msgstr ""
 
-#: ../../../src/python/nn/init.rst:45:<autosummary>:1
+#: ../../../src/python/nn/init.rst:47:<autosummary>:1
 msgid "A Glorot uniform initializer."
 msgstr ""
 
-#: ../../../src/python/nn/init.rst:45:<autosummary>:1
+#: ../../../src/python/nn/init.rst:47:<autosummary>:1
 msgid ":py:obj:`he_normal <mlx.nn.init.he_normal>`\\ \\(\\[dtype\\]\\)"
 msgstr ""
 
-#: ../../../src/python/nn/init.rst:45:<autosummary>:1
+#: ../../../src/python/nn/init.rst:47:<autosummary>:1
 msgid "Build a He normal initializer."
 msgstr ""
 
-#: ../../../src/python/nn/init.rst:45:<autosummary>:1
+#: ../../../src/python/nn/init.rst:47:<autosummary>:1
 msgid ":py:obj:`he_uniform <mlx.nn.init.he_uniform>`\\ \\(\\[dtype\\]\\)"
 msgstr ""
 
-#: ../../../src/python/nn/init.rst:45:<autosummary>:1
+#: ../../../src/python/nn/init.rst:47:<autosummary>:1
 msgid "A He uniform (Kaiming uniform) initializer."
+msgstr ""
+
+#: ../../../src/python/nn/init.rst:47:<autosummary>:1
+msgid ""
+":py:obj:`sparse <mlx.nn.init.sparse>`\\ \\(sparsity\\[\\, mean\\, std\\, "
+"dtype\\]\\)"
+msgstr ""
+
+#: ../../../src/python/nn/init.rst:47:<autosummary>:1
+msgid "An initializer that returns a sparse matrix."
+msgstr ""
+
+#: ../../../src/python/nn/init.rst:47:<autosummary>:1
+msgid ""
+":py:obj:`orthogonal <mlx.nn.init.orthogonal>`\\ \\(\\[gain\\, dtype\\]\\)"
+msgstr ""
+
+#: ../../../src/python/nn/init.rst:47:<autosummary>:1
+msgid "An initializer that returns an orthogonal matrix."
 msgstr ""

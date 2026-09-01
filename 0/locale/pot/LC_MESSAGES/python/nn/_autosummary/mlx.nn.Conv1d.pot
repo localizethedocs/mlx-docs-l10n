@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MLX 0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-06-23 11:30+0000\n"
+"POT-Creation-Date: 2026-09-01 13:30+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -80,16 +80,16 @@ msgstr ""
 
 #: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/convolution.py:docstring
 #: of mlx.nn.layers.convolution.Conv1d:21
-msgid "The dilation of the convolution."
+msgid "The dilation of the convolution. Default: ``1``."
 msgstr ""
 
 #: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/convolution.py:docstring
-#: of mlx.nn.layers.convolution.Conv1d:23
+#: of mlx.nn.layers.convolution.Conv1d:24
 msgid "The number of groups for the convolution. Default: ``1``."
 msgstr ""
 
 #: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/convolution.py:docstring
-#: of mlx.nn.layers.convolution.Conv1d:26
+#: of mlx.nn.layers.convolution.Conv1d:27
 msgid "If ``True`` add a learnable bias to the output. Default: ``True``"
 msgstr ""
 

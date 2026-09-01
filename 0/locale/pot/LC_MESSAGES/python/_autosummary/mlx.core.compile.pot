@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MLX 0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-06-23 11:30+0000\n"
+"POT-Creation-Date: 2026-09-01 13:30+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -69,7 +69,7 @@ msgstr ""
 #: ../../../docstring of mlx.core.compile:27
 msgid ""
 "A compiled function which has the same input arguments as ``fun`` and "
-"returns the the same output(s)."
+"returns the same output(s)."
 msgstr ""
 
 #: ../../../src/python/_autosummary/mlx.core.compile.rst:0

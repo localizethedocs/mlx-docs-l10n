@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MLX 0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-06-23 11:30+0000\n"
+"POT-Creation-Date: 2026-09-01 13:30+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -124,37 +124,89 @@ msgstr ""
 msgid "PyTorch"
 msgstr ""
 
-#: ../../../src/usage/numpy.rst:80
+#: ../../../src/usage/numpy.rst:78
 msgid ""
-"PyTorch Support for :obj:`memoryview` is experimental and can break for "
-"multi-dimensional arrays. Casting to NumPy first is advised for now."
+"PyTorch supports DLPack inputs and can import MLX arrays directly. MLX can "
+"also import PyTorch tensors through DLPack with ``mx.asarray`` or ``mx."
+"from_dlpack``. Use ``torch.as_tensor`` to import an MLX array with DLPack; "
+"``torch.tensor`` copies the data instead. Similarly, ``mx.asarray`` can "
+"share DLPack inputs when possible, while ``mx.array`` copies:"
 msgstr ""
 
-#: ../../../src/usage/numpy.rst:83
-msgid ""
-"PyTorch supports the buffer protocol, but it requires an explicit :obj:"
-"`memoryview`."
-msgstr ""
-
-#: ../../../src/usage/numpy.rst:86
+#: ../../../src/usage/numpy.rst:84
 msgid ""
 "import mlx.core as mx\n"
 "import torch\n"
 "\n"
-"a = mx.arange(3)\n"
-"b = torch.tensor(memoryview(a))\n"
-"c = mx.array(b)"
+"a = mx.arange(3, dtype=mx.float32)\n"
+"mx.eval(a)\n"
+"\n"
+"shared = torch.as_tensor(a)\n"
+"copied = torch.tensor(a)"
 msgstr ""
 
-#: ../../../src/usage/numpy.rst:96
+#: ../../../src/usage/numpy.rst:95
+msgid ""
+"Creating an MLX array from a CPU tensor copies the data into MLX-owned "
+"storage. The arrays do not share memory:"
+msgstr ""
+
+#: ../../../src/usage/numpy.rst:98
+msgid ""
+"b = torch.arange(3)\n"
+"c = mx.array(b)\n"
+"\n"
+"b += 10\n"
+"print(c.tolist()) # [0, 1, 2]"
+msgstr ""
+
+#: ../../../src/usage/numpy.rst:106
+msgid ""
+"Metal DLPack inputs are different. If a PyTorch MPS tensor is passed to ``mx."
+"asarray`` or to ``mx.from_dlpack`` with ``copy=None``, MLX imports it "
+"without a copy when the underlying Metal buffer is not private. Private "
+"Metal buffers are copied into MLX-managed storage instead. Passing "
+"``copy=False`` requires zero-copy import and raises an error if a copy would "
+"be needed. Passing ``copy=True`` asks MLX to create a new array instead of "
+"reusing the Metal buffer. Zero-copy imports preserve the DLPack strides. "
+"``mx.array`` also creates a new array instead of reusing the Metal buffer. "
+"MLX arrays exported to PyTorch with DLPack are exported without a copy on "
+"Metal."
+msgstr ""
+
+#: ../../../src/usage/numpy.rst:116
+msgid ""
+"In particular, PyTorch 2.12 and later use shared storage for ordinary MPS "
+"tensors on Apple silicon, while older PyTorch versions may use private "
+"storage and require a copy on import. DLPack conversion does not synchronize "
+"pending Metal work; synchronize or evaluate the producing framework before "
+"reading the converted array."
+msgstr ""
+
+#: ../../../src/usage/numpy.rst:122
+msgid ""
+"b = torch.arange(3, device=\"mps\", dtype=torch.float32)\n"
+"torch.mps.synchronize()\n"
+"c = mx.asarray(b) # zero-copy if the Metal buffer can be reused\n"
+"d = mx.from_dlpack(b, copy=True) # explicit copy"
+msgstr ""
+
+#: ../../../src/usage/numpy.rst:129
+msgid ""
+"a = mx.arange(3, dtype=mx.float32)\n"
+"mx.eval(a)\n"
+"b = torch.as_tensor(a) # zero-copy DLPack import on Metal"
+msgstr ""
+
+#: ../../../src/usage/numpy.rst:136
 msgid "JAX"
 msgstr ""
 
-#: ../../../src/usage/numpy.rst:97
+#: ../../../src/usage/numpy.rst:137
 msgid "JAX fully supports the buffer protocol."
 msgstr ""
 
-#: ../../../src/usage/numpy.rst:99
+#: ../../../src/usage/numpy.rst:139
 msgid ""
 "import mlx.core as mx\n"
 "import jax.numpy as jnp\n"
@@ -164,17 +216,17 @@ msgid ""
 "c = mx.array(b)"
 msgstr ""
 
-#: ../../../src/usage/numpy.rst:109
+#: ../../../src/usage/numpy.rst:149
 msgid "TensorFlow"
 msgstr ""
 
-#: ../../../src/usage/numpy.rst:111
+#: ../../../src/usage/numpy.rst:151
 msgid ""
 "TensorFlow supports the buffer protocol, but it requires an explicit :obj:"
 "`memoryview`."
 msgstr ""
 
-#: ../../../src/usage/numpy.rst:114
+#: ../../../src/usage/numpy.rst:154
 msgid ""
 "import mlx.core as mx\n"
 "import tensorflow as tf\n"

@@ -1,0 +1,88 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023, Apple
+# This file is distributed under the same license as the MLX package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: MLX 0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-09-01 13:30+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../src/python/nn/_autosummary/mlx.nn.init.sparse.rst:2
+msgid "mlx.nn.init.sparse"
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/init.py:docstring
+#: of mlx.nn.init.sparse:1
+msgid "An initializer that returns a sparse matrix."
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/init.py:docstring
+#: of mlx.nn.init.sparse:3
+msgid ""
+"Sparsity is applied along each row: every row has the same fraction of its "
+"entries set to zero. With a weight matrix applied as ``x @ w.T``, this "
+"limits each output feature to at most a ``1 - sparsity`` fraction of the "
+"input features, following the sparse initialization of Martens, J. (2010), "
+"\"Deep learning via Hessian-free optimization\"."
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/init.py:docstring
+#: of mlx.nn.init.sparse:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/init.py:docstring
+#: of mlx.nn.init.sparse:9
+msgid "The fraction of elements in each row to be set to zero."
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/init.py:docstring
+#: of mlx.nn.init.sparse:12
+msgid "Mean of the normal distribution. Default: ``0.0``."
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/init.py:docstring
+#: of mlx.nn.init.sparse:15
+msgid "Standard deviation of the normal distribution. Default: ``1.0``."
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/init.py:docstring
+#: of mlx.nn.init.sparse:18
+msgid "The data type of the array. Default: ``float32``."
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/init.py:docstring
+#: of mlx.nn.init.sparse:0
+msgid "Returns"
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/init.py:docstring
+#: of mlx.nn.init.sparse:22
+msgid ""
+"An initializer that returns an array with the same shape as the input, "
+"filled with samples from a normal distribution."
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/init.py:docstring
+#: of mlx.nn.init.sparse:0
+msgid "Return type"
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/init.py:docstring
+#: of mlx.nn.init.sparse:27
+msgid "Example"
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/init.py:docstring
+#: of mlx.nn.init.sparse:32
+msgid "[0, -0.117483]], dtype=float32)"
+msgstr ""

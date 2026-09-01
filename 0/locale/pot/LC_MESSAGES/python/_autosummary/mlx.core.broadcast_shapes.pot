@@ -1,0 +1,63 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023, Apple
+# This file is distributed under the same license as the MLX package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: MLX 0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-09-01 13:30+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../src/python/_autosummary/mlx.core.broadcast_shapes.rst:2
+msgid "mlx.core.broadcast\\_shapes"
+msgstr ""
+
+#: ../../../docstring of mlx.core.broadcast_shapes:1
+msgid "Broadcast shapes."
+msgstr ""
+
+#: ../../../docstring of mlx.core.broadcast_shapes:3
+msgid ""
+"Returns the shape that results from broadcasting the supplied array shapes "
+"against each other."
+msgstr ""
+
+#: ../../../docstring of mlx.core.broadcast_shapes:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../docstring of mlx.core.broadcast_shapes:6
+msgid "The shapes to broadcast."
+msgstr ""
+
+#: ../../../docstring of mlx.core.broadcast_shapes:0
+msgid "Returns"
+msgstr ""
+
+#: ../../../docstring of mlx.core.broadcast_shapes:9
+msgid "The broadcasted shape."
+msgstr ""
+
+#: ../../../docstring of mlx.core.broadcast_shapes:0
+msgid "Return type"
+msgstr ""
+
+#: ../../../docstring of mlx.core.broadcast_shapes:0
+msgid "Raises"
+msgstr ""
+
+#: ../../../docstring of mlx.core.broadcast_shapes:12
+msgid "If the shapes cannot be broadcast."
+msgstr ""
+
+#: ../../../docstring of mlx.core.broadcast_shapes:15
+msgid "Example"
+msgstr ""

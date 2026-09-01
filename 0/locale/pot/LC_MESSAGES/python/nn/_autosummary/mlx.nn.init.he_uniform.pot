@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MLX 0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-06-23 11:30+0000\n"
+"POT-Creation-Date: 2026-09-01 13:30+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -29,18 +29,19 @@ msgstr ""
 #: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/init.py:docstring
 #: of mlx.nn.init.he_uniform:3
 msgid ""
-"This initializer samples from a uniform distribution with a range computed "
-"from the number of input (``fan_in``) or output (``fan_out``) units "
+"This initializer samples from a uniform distribution on the interval :math:"
+"`[-\\text{limit}, \\text{limit}]`, where the bound :math:`\\text{limit}` is "
+"computed from the number of input (``fan_in``) or output (``fan_out``) units "
 "according to:"
 msgstr ""
 
 #: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/init.py:docstring
-#: of mlx.nn.init.he_uniform:7
-msgid "\\sigma = \\gamma \\sqrt{\\frac{3.0}{\\text{fan}}}"
+#: of mlx.nn.init.he_uniform:8
+msgid "\\text{limit} = \\gamma \\sqrt{\\frac{3.0}{\\text{fan}}}"
 msgstr ""
 
 #: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/init.py:docstring
-#: of mlx.nn.init.he_uniform:11
+#: of mlx.nn.init.he_uniform:12
 msgid ""
 "where :math:`\\text{fan}` is either the number of input units when the "
 "``mode`` is ``\"fan_in\"`` or output units when the ``mode`` is "
@@ -48,7 +49,7 @@ msgid ""
 msgstr ""
 
 #: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/init.py:docstring
-#: of mlx.nn.init.he_uniform:15
+#: of mlx.nn.init.he_uniform:16
 msgid ""
 "For more details see the original reference: `Delving Deep into Rectifiers: "
 "Surpassing Human-Level Performance on ImageNet Classification <https://arxiv."
@@ -61,7 +62,7 @@ msgid "Parameters"
 msgstr ""
 
 #: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/init.py:docstring
-#: of mlx.nn.init.he_uniform:20
+#: of mlx.nn.init.he_uniform:21
 msgid "The data type of the array. Default: ``float32``."
 msgstr ""
 
@@ -71,7 +72,7 @@ msgid "Returns"
 msgstr ""
 
 #: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/init.py:docstring
-#: of mlx.nn.init.he_uniform:23
+#: of mlx.nn.init.he_uniform:24
 msgid ""
 "An initializer that returns an array with the same shape as the input, "
 "filled with samples from  the He uniform distribution."
@@ -83,6 +84,6 @@ msgid "Return type"
 msgstr ""
 
 #: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/init.py:docstring
-#: of mlx.nn.init.he_uniform:29
+#: of mlx.nn.init.he_uniform:30
 msgid "Example"
 msgstr ""

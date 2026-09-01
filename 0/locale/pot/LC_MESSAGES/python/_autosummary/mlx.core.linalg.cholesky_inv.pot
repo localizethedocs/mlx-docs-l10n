@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MLX 0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-06-23 11:30+0000\n"
+"POT-Creation-Date: 2026-09-01 13:30+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -60,16 +60,18 @@ msgid "Parameters"
 msgstr ""
 
 #: ../../../docstring of mlx.core.linalg.cholesky_inv:19
-msgid "Input array."
+msgid ""
+"Input array. This is the Cholesky factor :math:`\\mathbf{L}`, not :math:"
+"`\\mathbf{A}` itself."
 msgstr ""
 
-#: ../../../docstring of mlx.core.linalg.cholesky_inv:21
+#: ../../../docstring of mlx.core.linalg.cholesky_inv:22
 msgid ""
 "If ``True``, return the upper triangular Cholesky factor. If ``False``, "
 "return the lower triangular Cholesky factor. Default: ``False``."
 msgstr ""
 
-#: ../../../docstring of mlx.core.linalg.cholesky_inv:24
+#: ../../../docstring of mlx.core.linalg.cholesky_inv:25
 msgid ""
 "Stream or device. Defaults to ``None`` in which case the default stream of "
 "the default device is used."
@@ -79,7 +81,7 @@ msgstr ""
 msgid "Returns"
 msgstr ""
 
-#: ../../../docstring of mlx.core.linalg.cholesky_inv:28
+#: ../../../docstring of mlx.core.linalg.cholesky_inv:29
 msgid ""
 ":math:`\\mathbf{A^{-1}}` where :math:`\\mathbf{A} = \\mathbf{L}\\mathbf{L}"
 "^T`."

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MLX 0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-06-23 11:30+0000\n"
+"POT-Creation-Date: 2026-09-01 13:30+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -88,7 +88,7 @@ msgstr ""
 #: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/recurrent.py:docstring
 #: of mlx.nn.layers.recurrent.RNN:26
 msgid ""
-"Non-linearity to use. If ``None``, then func:`tanh` is used. Default: "
+"Non-linearity to use. If ``None``, then :func:`tanh` is used. Default: "
 "``None``."
 msgstr ""
 
