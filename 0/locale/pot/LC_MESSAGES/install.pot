@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MLX 0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-06-23 11:30+0000\n"
+"POT-Creation-Date: 2026-09-01 13:30+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -219,7 +219,7 @@ msgid "Run the tests with:"
 msgstr ""
 
 #: ../../../src/install.rst:128
-msgid "python -m unittest discover python/tests"
+msgid "python python/tests/run.py"
 msgstr ""
 
 #: ../../../src/install.rst:133

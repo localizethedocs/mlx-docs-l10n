@@ -1,0 +1,89 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023, Apple
+# This file is distributed under the same license as the MLX package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: MLX 0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-09-01 13:30+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../src/python/_autosummary/mlx.core.fast.precompiled_cuda_kernel.rst:2
+msgid "mlx.core.fast.precompiled\\_cuda\\_kernel"
+msgstr ""
+
+#: ../../../docstring of mlx.core.fast.precompiled_cuda_kernel:1
+msgid "Run a precompiled CUDA kernel defined from PTX or cubin."
+msgstr ""
+
+#: ../../../docstring of mlx.core.fast.precompiled_cuda_kernel:3
+msgid "This op is still experimental and various parts of the API may change."
+msgstr ""
+
+#: ../../../src/python/_autosummary/mlx.core.fast.precompiled_cuda_kernel.rst:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../docstring of mlx.core.fast.precompiled_cuda_kernel:5
+msgid "Name for the kernel"
+msgstr ""
+
+#: ../../../docstring of mlx.core.fast.precompiled_cuda_kernel:7
+msgid "The precompiled kernel in raw bytes."
+msgstr ""
+
+#: ../../../docstring of mlx.core.fast.precompiled_cuda_kernel:9
+msgid "The inputs passed to the CUDA kernel."
+msgstr ""
+
+#: ../../../docstring of mlx.core.fast.precompiled_cuda_kernel:11
+msgid "The list of shapes for each output."
+msgstr ""
+
+#: ../../../docstring of mlx.core.fast.precompiled_cuda_kernel:13
+msgid "The list of data types for each output."
+msgstr ""
+
+#: ../../../docstring of mlx.core.fast.precompiled_cuda_kernel:15
+msgid "A list of scalar arguments to pass to the kernel."
+msgstr ""
+
+#: ../../../docstring of mlx.core.fast.precompiled_cuda_kernel:18
+msgid ""
+"3-tuple specifying the grid to launch the kernel with. For compatibility "
+"with :func:`metal_kernel` the grid is in threads and not in threadblocks."
+msgstr ""
+
+#: ../../../docstring of mlx.core.fast.precompiled_cuda_kernel:21
+msgid "3-tuple specifying the threadgroup size to use."
+msgstr ""
+
+#: ../../../docstring of mlx.core.fast.precompiled_cuda_kernel:23
+msgid ""
+"The dynamic shared memory to request for the kernel. A value of 0 means no "
+"dynamic shared memory. Default: ``0``."
+msgstr ""
+
+#: ../../../docstring of mlx.core.fast.precompiled_cuda_kernel:26
+msgid ""
+"Optional value to use to initialize all of the output arrays. By default, "
+"output arrays are uninitialized. Default: ``None``."
+msgstr ""
+
+#: ../../../docstring of mlx.core.fast.precompiled_cuda_kernel:29
+msgid ""
+"Whether to ensure the inputs are row contiguous before the kernel runs. "
+"Default: ``False``."
+msgstr ""
+
+#: ../../../docstring of mlx.core.fast.precompiled_cuda_kernel:32
+msgid "Stream to run the kernel on. Default: ``None``."
+msgstr ""

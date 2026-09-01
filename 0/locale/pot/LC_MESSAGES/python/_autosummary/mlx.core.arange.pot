@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MLX 0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-06-23 11:30+0000\n"
+"POT-Creation-Date: 2026-09-01 13:30+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -27,9 +27,9 @@ msgstr ""
 
 #: ../../../docstring of mlx.core.arange:3
 msgid ""
-"``arange(start : Union[int, float], stop : Union[int, float], step : "
-"Union[None, int, float], dtype: Optional[Dtype] = None, *, stream: "
-"Union[None, Stream, Device] = None) -> array``"
+"``arange(start : int | float, stop : None | int | float, step : None | int | "
+"float, dtype: Dtype | None = None, *, stream: StreamOrDevice = None) -> "
+"array``"
 msgstr ""
 
 #: ../../../docstring of mlx.core.arange:5
@@ -49,10 +49,12 @@ msgstr ""
 #: ../../../docstring of mlx.core.arange:11
 msgid ""
 "start (float or int, optional): Starting value which defaults to ``0``. stop "
-"(float or int): Stopping value. step (float or int, optional): Increment "
-"which defaults to ``1``. dtype (Dtype, optional): Specifies the data type of "
-"the output. If unspecified will default to ``float32`` if any of ``start``, "
-"``stop``, or ``step`` are ``float``. Otherwise will default to ``int32``."
+"(float or int, optional): Stopping value. step (float or int, optional): "
+"Increment which defaults to ``1``. dtype (Dtype, optional): Specifies the "
+"data type of the output. If unspecified will default to ``float32`` if any "
+"of ``start``, ``stop``, or ``step`` are ``float``. Otherwise will default to "
+"``int32``, or ``int64`` if any of ``start``, ``stop``, or ``step`` does not "
+"fit in ``int32``."
 msgstr ""
 
 #: ../../../docstring of mlx.core.arange:16
@@ -77,7 +79,6 @@ msgstr ""
 
 #: ../../../docstring of mlx.core.arange:26
 msgid ""
-"``arange(stop : Union[int, float], step : Union[None, int, float] = None, "
-"dtype: Optional[Dtype] = None, *, stream: Union[None, Stream, Device] = "
-"None) -> array``"
+"``arange(stop : int | float, step : None | int | float = None, dtype: Dtype "
+"| None = None, *, stream: StreamOrDevice = None) -> array``"
 msgstr ""

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MLX 0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-06-23 11:30+0000\n"
+"POT-Creation-Date: 2026-09-01 13:30+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -44,7 +44,7 @@ msgstr ""
 #: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/losses.py:docstring
 #: of mlx.nn.losses.gaussian_nll_loss:10
 msgid ""
-"where ``inputs`` are the predicted means and ``vars`` are the the predicted "
+"where ``inputs`` are the predicted means and ``vars`` are the predicted "
 "variances."
 msgstr ""
 
@@ -83,7 +83,7 @@ msgstr ""
 #: of mlx.nn.losses.gaussian_nll_loss:25
 msgid ""
 "Specifies the reduction to apply to the output: ``'none'`` | ``'mean'`` | "
-"``'sum'``. Default: ``'none'``."
+"``'sum'``. Default: ``'mean'``."
 msgstr ""
 
 #: ../../../src/python/nn/_autosummary_functions/mlx.nn.losses.gaussian_nll_loss.rst:0

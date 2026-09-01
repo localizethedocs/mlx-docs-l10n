@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MLX 0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-06-23 11:30+0000\n"
+"POT-Creation-Date: 2026-09-01 13:30+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -43,7 +43,7 @@ msgstr ""
 #: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/base.py:docstring
 #: of mlx.nn.layers.base.Module.filter_and_map:7
 msgid ""
-"Given a value, the key in which it is found and the containing module, "
+"Given the containing module, the key in which it is found and the value, "
 "decide whether to keep the value or drop it."
 msgstr ""
 
@@ -55,8 +55,8 @@ msgstr ""
 #: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/base.py:docstring
 #: of mlx.nn.layers.base.Module.filter_and_map:14
 msgid ""
-"Given a value, the key in which it is found and the containing module decide "
-"if it is a leaf."
+"Given the containing module, the key in which it is found and the value "
+"decide if it is a leaf."
 msgstr ""
 
 #: ../../../src/python/nn/_autosummary/mlx.nn.Module.filter_and_map.rst:0

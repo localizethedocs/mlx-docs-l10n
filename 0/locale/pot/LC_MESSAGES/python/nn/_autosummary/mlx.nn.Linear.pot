@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MLX 0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-06-23 11:30+0000\n"
+"POT-Creation-Date: 2026-09-01 13:30+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -39,12 +39,12 @@ msgstr ""
 #: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/linear.py:docstring
 #: of mlx.nn.layers.linear.Linear:9
 msgid ""
-"where: where :math:`W` has shape ``[output_dims, input_dims]`` and :math:`b` "
-"has shape ``[output_dims]``."
+"where :math:`W` has shape ``[output_dims, input_dims]`` and :math:`b` has "
+"shape ``[output_dims]``."
 msgstr ""
 
 #: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/linear.py:docstring
-#: of mlx.nn.layers.linear.Linear:12
+#: of mlx.nn.layers.linear.Linear:11
 msgid ""
 "The values are initialized from the uniform distribution :math:`\\mathcal{U}"
 "(-{k}, {k})`, where :math:`k = \\frac{1}{\\sqrt{D_i}}` and :math:`D_i` is "
@@ -56,17 +56,17 @@ msgid "Parameters"
 msgstr ""
 
 #: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/linear.py:docstring
-#: of mlx.nn.layers.linear.Linear:15
+#: of mlx.nn.layers.linear.Linear:14
 msgid "The dimensionality of the input features"
 msgstr ""
 
 #: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/linear.py:docstring
-#: of mlx.nn.layers.linear.Linear:17
+#: of mlx.nn.layers.linear.Linear:16
 msgid "The dimensionality of the output features"
 msgstr ""
 
 #: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/linear.py:docstring
-#: of mlx.nn.layers.linear.Linear:19
+#: of mlx.nn.layers.linear.Linear:18
 msgid ""
 "If set to ``False`` then the layer will not use a bias. Default is ``True``."
 msgstr ""

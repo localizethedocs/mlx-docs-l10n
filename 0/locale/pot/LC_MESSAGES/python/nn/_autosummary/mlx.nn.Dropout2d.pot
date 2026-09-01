@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MLX 0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-06-23 11:30+0000\n"
+"POT-Creation-Date: 2026-09-01 13:30+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -31,7 +31,7 @@ msgstr ""
 msgid ""
 "Randomly zero out entire channels independently with probability :math:`p`. "
 "This layer expects the channels to be last, i.e. the input shape should be "
-"``NWHC`` or ``WHC`` where:``N`` is the batch dimension,``H`` is the input "
+"``NHWC`` or ``HWC`` where:``N`` is the batch dimension,``H`` is the input "
 "image height,``W`` is the input image width, and``C`` is the number of input "
 "channels"
 msgstr ""
@@ -60,7 +60,7 @@ msgstr ""
 
 #: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/dropout.py:docstring
 #: of mlx.nn.layers.dropout.Dropout2d:19
-msgid "Probability of zeroing a channel during training."
+msgid "Probability of zeroing a channel during training. Default: ``0.5``."
 msgstr ""
 
 #: ../../../src/python/nn/_autosummary/mlx.nn.Dropout2d.rst:12
