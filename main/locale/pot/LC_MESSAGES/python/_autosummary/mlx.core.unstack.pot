@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MLX main\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-08-31 15:41+0000\n"
+"POT-Creation-Date: 2026-09-07 13:50+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -48,7 +48,7 @@ msgid "Returns"
 msgstr ""
 
 #: ../../../docstring of mlx.core.unstack:11
-msgid "A list of arrays, one for each index along ``axis``."
+msgid "A tuple of arrays, one for each index along ``axis``."
 msgstr ""
 
 #: ../../../src/python/_autosummary/mlx.core.unstack.rst:0
