@@ -29,7 +29,7 @@ msgstr ""
 
 #: ../../../docstring of mlx.core.searchsorted:0
 msgid "Parameters"
-msgstr ""
+msgstr "參數"
 
 #: ../../../docstring of mlx.core.searchsorted:3
 msgid "A 1-D array sorted in ascending order."
@@ -50,7 +50,7 @@ msgstr ""
 
 #: ../../../docstring of mlx.core.searchsorted:0
 msgid "Returns"
-msgstr ""
+msgstr "回傳值"
 
 #: ../../../docstring of mlx.core.searchsorted:15
 msgid ""
@@ -60,8 +60,8 @@ msgstr ""
 
 #: ../../../docstring of mlx.core.searchsorted:0
 msgid "Return type"
-msgstr ""
+msgstr "回傳值型別"
 
 #: ../../../docstring of mlx.core.searchsorted:20
 msgid "Example"
-msgstr ""
+msgstr "範例"

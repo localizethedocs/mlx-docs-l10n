@@ -31,7 +31,7 @@ msgstr "參數"
 
 #: ../../../docstring of mlx.core.cumsum:3
 msgid "Input array."
-msgstr ""
+msgstr "輸入陣列。"
 
 #: ../../../docstring of mlx.core.cumsum:5
 msgid ""
@@ -62,6 +62,3 @@ msgstr "輸出陣列。"
 #: ../../../src/python/_autosummary/mlx.core.cumsum.rst:0
 msgid "Return type"
 msgstr "回傳值型別"
-
-#~ msgid "Input array"
-#~ msgstr "輸入陣列"

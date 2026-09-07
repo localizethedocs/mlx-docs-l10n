@@ -29,7 +29,7 @@ msgstr ""
 
 #: ../../../src/python/_autosummary/mlx.core.ThreadLocalStream.rst:13
 msgid "Methods"
-msgstr ""
+msgstr "方法"
 
 #: ../../../src/python/_autosummary/mlx.core.ThreadLocalStream.rst:21:<autosummary>:1
 msgid ""
@@ -39,7 +39,7 @@ msgstr ""
 
 #: ../../../src/python/_autosummary/mlx.core.ThreadLocalStream.rst:23
 msgid "Attributes"
-msgstr ""
+msgstr "屬性"
 
 #: ../../../src/python/_autosummary/mlx.core.ThreadLocalStream.rst:26:<autosummary>:1
 msgid ":py:obj:`device <mlx.core.ThreadLocalStream.device>`\\"

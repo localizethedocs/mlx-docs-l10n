@@ -50,7 +50,7 @@ msgstr ""
 
 #: ../../../src/python/nn/_autosummary/mlx.nn.FullyShardedModule.rst:0
 msgid "Parameters"
-msgstr ""
+msgstr "參數"
 
 #: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/distributed.py:docstring
 #: of mlx.nn.layers.distributed.FullyShardedModule:13
@@ -73,7 +73,7 @@ msgstr ""
 
 #: ../../../src/python/nn/_autosummary/mlx.nn.FullyShardedModule.rst:12
 msgid "Methods"
-msgstr ""
+msgstr "方法"
 
 #: ../../../src/python/nn/_autosummary/mlx.nn.FullyShardedModule.rst:15:<autosummary>:1
 msgid ""

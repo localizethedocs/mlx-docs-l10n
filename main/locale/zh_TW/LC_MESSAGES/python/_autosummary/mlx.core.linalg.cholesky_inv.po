@@ -90,6 +90,3 @@ msgstr ""
 #: ../../../src/python/_autosummary/mlx.core.linalg.cholesky_inv.rst:0
 msgid "Return type"
 msgstr "回傳值型別"
-
-#~ msgid "Input array."
-#~ msgstr "輸入陣列。"
