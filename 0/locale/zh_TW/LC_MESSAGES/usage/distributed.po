@@ -645,9 +645,6 @@ msgid ""
 "and GPU need to collaborate for some computation and is pretty critical for "
 "low-latency communication since the communication is done by the CPU."
 msgstr ""
-"設定環境變數 ``MLX_METAL_FAST_SYNCH=1`` 會啟用 GPU 與 CPU 之間更快的同步方"
-"式。這並非 JACCL 專用，凡是 CPU 與 GPU 需要協同計算的情況都可使用，且因通訊"
-"由 CPU 執行，對低延遲通訊而言相當關鍵。"
 
 #: ../../../src/usage/distributed.rst:353
 msgid "Getting Started with NCCL"
@@ -884,15 +881,13 @@ msgstr ""
 msgid ""
 "**MLX_RANK** should contain a single 0-based integer that defines the rank "
 "of the process."
-msgstr "**MLX_RANK** 應包含一個以 0 為起始的整數，用於定義行程的 rank。"
+msgstr ""
 
 #: ../../../src/usage/distributed.rst:485
 msgid ""
 "**MLX_HOSTFILE** should contain the path to a json file that contains IPs "
 "and ports for each rank to listen to, something like the following:"
 msgstr ""
-"**MLX_HOSTFILE** 應包含一個 json 檔路徑，其中列出各 rank 要監聽的 IP 與連接"
-"埠，例如："
 
 #: ../../../src/usage/distributed.rst:488
 msgid ""
@@ -908,7 +903,7 @@ msgstr ""
 msgid ""
 "**MLX_RING_VERBOSE** is optional and if set to 1 it enables some more "
 "logging from the distributed backend."
-msgstr "**MLX_RING_VERBOSE** 為選用，設為 1 時會啟用更多分散式後端的日誌輸出。"
+msgstr ""
 
 #: ../../../src/usage/distributed.rst:501
 msgid "JACCL"
@@ -920,8 +915,6 @@ msgid ""
 "listen to all the other ranks connect to in order to establish the RDMA "
 "connections."
 msgstr ""
-"**MLX_JACCL_COORDINATOR** 應包含 rank 0 監聽的 IP 與埠號，供其他 rank 連線建"
-"立 RDMA 連線。"
 
 #: ../../../src/usage/distributed.rst:509
 msgid ""
@@ -929,8 +922,6 @@ msgid ""
 "ibverbs device names that connect each node to each other node, something "
 "like the following:"
 msgstr ""
-"**MLX_IBV_DEVICES** 應包含一個 json 檔路徑，其中列出連接各節點彼此的 ibverbs "
-"裝置名稱，例如："
 
 #: ../../../src/usage/distributed.rst:513
 msgid ""
@@ -950,7 +941,7 @@ msgstr ""
 msgid ""
 "**MLX_WORLD_SIZE** should contain the total number of processes that will be "
 "launched."
-msgstr "**MLX_WORLD_SIZE** 應包含將啟動的行程總數。"
+msgstr ""
 
 #: ../../../src/usage/distributed.rst:532
 msgid ""

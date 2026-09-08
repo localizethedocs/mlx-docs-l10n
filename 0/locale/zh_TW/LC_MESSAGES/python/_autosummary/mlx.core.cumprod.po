@@ -31,7 +31,7 @@ msgstr "參數"
 
 #: ../../../docstring of mlx.core.cumprod:3
 msgid "Input array"
-msgstr "輸入陣列"
+msgstr ""
 
 #: ../../../docstring of mlx.core.cumprod:5
 msgid ""

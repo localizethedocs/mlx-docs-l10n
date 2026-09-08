@@ -54,10 +54,6 @@ msgid ""
 "the output. If unspecified will default to ``float32`` if any of ``start``, "
 "``stop``, or ``step`` are ``float``. Otherwise will default to ``int32``."
 msgstr ""
-"start（float 或 int，可選）：起始值，預設為 ``0``。stop（float 或 int）：終止"
-"值。step（float 或 int，可選）：增量，預設為 ``1``。dtype（Dtype，可選）：指"
-"定輸出資料型別。若未指定，當 ``start``、``stop`` 或 ``step`` 任一為 "
-"``float`` 時預設為 ``float32``，否則預設為 ``int32``。"
 
 #: ../../../docstring of mlx.core.arange:16
 msgid "Returns:"

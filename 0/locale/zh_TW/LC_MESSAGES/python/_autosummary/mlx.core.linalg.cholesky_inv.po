@@ -61,7 +61,7 @@ msgstr "參數"
 
 #: ../../../docstring of mlx.core.linalg.cholesky_inv:19
 msgid "Input array."
-msgstr "輸入陣列。"
+msgstr ""
 
 #: ../../../docstring of mlx.core.linalg.cholesky_inv:21
 msgid ""

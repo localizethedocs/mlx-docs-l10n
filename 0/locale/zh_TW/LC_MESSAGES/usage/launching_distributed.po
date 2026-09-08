@@ -336,9 +336,6 @@ msgid ""
 "so that ``mlx.launch`` does not attempt to verify that the executable and "
 "script exist locally before launching the distributed job."
 msgstr ""
-"如果你從與實際執行節點環境完全不同的主機啟動，可以指定 ``--no-verify-"
-"script``，讓 ``mlx.launch`` 不在啟動分散式工作前檢查本機是否存在可執行檔與腳"
-"本。"
 
 #: ../../../src/usage/launching_distributed.rst:171
 msgid "Ring Specifics"

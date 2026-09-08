@@ -210,8 +210,6 @@ msgid ""
 "Passing ``verbose=True`` to :func:`ast.metal_kernel.__call__` will print the "
 "generated code for debugging purposes."
 msgstr ""
-"在 :func:`ast.metal_kernel.__call__` 中傳入 ``verbose=True`` 會列印產生的程式"
-"碼以便除錯。"
 
 #: ../../../src/dev/custom_metal_kernels.rst:99
 msgid "Using Shape/Strides"

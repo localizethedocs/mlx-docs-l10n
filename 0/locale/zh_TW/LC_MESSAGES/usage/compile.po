@@ -255,9 +255,6 @@ msgid ""
 "``MLX_DISABLE_COMPILE`` flag. For example the following is okay even though "
 "``fun`` is compiled:"
 msgstr ""
-"為了除錯，檢視陣列很有幫助。一種作法是用 :func:`disable_compile` 或 "
-"``MLX_DISABLE_COMPILE`` 旗標全域停用編譯。例如以下即使 ``fun`` 已編譯也沒問"
-"題："
 
 #: ../../../src/usage/compile.rst:161
 msgid ""

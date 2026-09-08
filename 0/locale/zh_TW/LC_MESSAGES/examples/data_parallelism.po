@@ -68,8 +68,6 @@ msgid ""
 "func:`all_sum` and divide by the size of the :class:`Group`. Namely we have "
 "to :func:`mlx.utils.tree_map` the gradients with following function."
 msgstr ""
-"要在多台機器間對梯度取平均，只需執行 :func:`all_sum` 並除以 :class:`Group` 的"
-"大小。也就是用下列函式對梯度做 :func:`mlx.utils.tree_map`："
 
 #: ../../../src/examples/data_parallelism.rst:40
 msgid ""
