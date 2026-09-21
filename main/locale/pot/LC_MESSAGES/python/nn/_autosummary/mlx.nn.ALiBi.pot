@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MLX main\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-02-16 08:39+0000\n"
+"POT-Creation-Date: 2026-09-21 14:41+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,6 +19,25 @@ msgstr ""
 
 #: ../../../src/python/nn/_autosummary/mlx.nn.ALiBi.rst:2
 msgid "mlx.nn.ALiBi"
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/positional_encoding.py:docstring
+#: of mlx.nn.layers.positional_encoding.ALiBi:1
+msgid "Implements Attention with Linear Biases (ALiBi)."
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/positional_encoding.py:docstring
+#: of mlx.nn.layers.positional_encoding.ALiBi:3
+msgid ""
+"ALiBi adds a static, non-learnable bias matrix to attention scores "
+"proportional to the distance between query and key tokens."
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/positional_encoding.py:docstring
+#: of mlx.nn.layers.positional_encoding.ALiBi:6
+msgid ""
+"For more details see `Train Short, Test Long: Attention with Linear Biases "
+"Enables Input Length Extrapolation <https://arxiv.org/abs/2108.12409>`_."
 msgstr ""
 
 #: ../../../src/python/nn/_autosummary/mlx.nn.ALiBi.rst:12
@@ -32,7 +51,15 @@ msgid ""
 msgstr ""
 
 #: ../../../src/python/nn/_autosummary/mlx.nn.ALiBi.rst:16:<autosummary>:1
+msgid "Create the ALiBi bias matrix."
+msgstr ""
+
+#: ../../../src/python/nn/_autosummary/mlx.nn.ALiBi.rst:16:<autosummary>:1
 msgid ""
 ":py:obj:`create_alibi_slope <mlx.nn.ALiBi.create_alibi_slope>`\\ "
-"\\(num\\_heads\\, dtype\\)"
+"\\(num\\_heads\\[\\, dtype\\]\\)"
+msgstr ""
+
+#: ../../../src/python/nn/_autosummary/mlx.nn.ALiBi.rst:16:<autosummary>:1
+msgid "Create the geometric slopes for ALiBi across attention heads."
 msgstr ""
