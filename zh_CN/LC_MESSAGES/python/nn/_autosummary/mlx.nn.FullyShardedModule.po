@@ -1,0 +1,82 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023, Apple
+# This file is distributed under the same license as the MLX package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: MLX main\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-08-31 15:41+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../src/python/nn/_autosummary/mlx.nn.FullyShardedModule.rst:2
+msgid "mlx.nn.FullyShardedModule"
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/distributed.py:docstring
+#: of mlx.nn.layers.distributed.FullyShardedModule:1
+msgid ""
+"Wrap a module so each member of the group holds only a shard of its "
+"parameters."
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/distributed.py:docstring
+#: of mlx.nn.layers.distributed.FullyShardedModule:4
+msgid ""
+"The full parameters are gathered for the forward pass and the gradients are "
+"reduce-scattered in the backward pass, so during training each member of the "
+"group stores and updates only its own shard."
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/distributed.py:docstring
+#: of mlx.nn.layers.distributed.FullyShardedModule:8
+msgid ""
+"Every parameter is sharded along axis 0, so each parameter's size along that "
+"axis must be divisible by the size of ``group``."
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/distributed.py:docstring
+#: of mlx.nn.layers.distributed.FullyShardedModule:11
+msgid "Use :func:`~mlx.nn.layers.distributed.fully_shard` to wrap a module."
+msgstr ""
+
+#: ../../../src/python/nn/_autosummary/mlx.nn.FullyShardedModule.rst:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/distributed.py:docstring
+#: of mlx.nn.layers.distributed.FullyShardedModule:13
+msgid "The module whose parameters will be sharded."
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/distributed.py:docstring
+#: of mlx.nn.layers.distributed.FullyShardedModule:15
+msgid ""
+"The group to shard across. If not set, the global group is used. Default: "
+"``None``."
+msgstr ""
+
+#: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/distributed.py:docstring
+#: of mlx.nn.layers.distributed.FullyShardedModule:18
+msgid ""
+"If set, the gathered parameters are cast to this dtype for the forward pass. "
+"Default: ``None``."
+msgstr ""
+
+#: ../../../src/python/nn/_autosummary/mlx.nn.FullyShardedModule.rst:12
+msgid "Methods"
+msgstr ""
+
+#: ../../../src/python/nn/_autosummary/mlx.nn.FullyShardedModule.rst:15:<autosummary>:1
+msgid ""
+":py:obj:`as_linear <mlx.nn.FullyShardedModule.as_linear>`\\ \\(\\*args\\, "
+"\\*\\*kwargs\\)"
+msgstr ""
