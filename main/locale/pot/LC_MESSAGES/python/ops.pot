@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MLX main\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-08-31 15:41+0000\n"
+"POT-Creation-Date: 2026-09-28 16:15+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -787,8 +787,8 @@ msgstr ""
 
 #: ../../../src/python/ops.rst:212:<autosummary>:1
 msgid ""
-":py:obj:`gather_mm <mlx.core.gather_mm>`\\ \\(a\\, b\\, \\/\\, "
-"lhs\\_indices\\, rhs\\_indices\\, \\*\\)"
+":py:obj:`gather_mm <mlx.core.gather_mm>`\\ \\(a\\, b\\, \\/\\[\\, "
+"lhs\\_indices\\, ...\\]\\)"
 msgstr ""
 
 #: ../../../src/python/ops.rst:212:<autosummary>:1
@@ -1791,7 +1791,7 @@ msgstr ""
 
 #: ../../../src/python/ops.rst:212:<autosummary>:1
 msgid ""
-":py:obj:`tri <mlx.core.tri>`\\ \\(n\\, m\\, k\\[\\, dtype\\, stream\\]\\)"
+":py:obj:`tri <mlx.core.tri>`\\ \\(n\\[\\, m\\, k\\, dtype\\, stream\\]\\)"
 msgstr ""
 
 #: ../../../src/python/ops.rst:212:<autosummary>:1
@@ -1799,7 +1799,7 @@ msgid "An array with ones at and below the given diagonal and zeros elsewhere."
 msgstr ""
 
 #: ../../../src/python/ops.rst:212:<autosummary>:1
-msgid ":py:obj:`tril <mlx.core.tril>`\\ \\(x\\, k\\, \\*\\[\\, stream\\]\\)"
+msgid ":py:obj:`tril <mlx.core.tril>`\\ \\(x\\[\\, k\\, stream\\]\\)"
 msgstr ""
 
 #: ../../../src/python/ops.rst:212:<autosummary>:1
@@ -1807,7 +1807,7 @@ msgid "Zeros the array above the given diagonal."
 msgstr ""
 
 #: ../../../src/python/ops.rst:212:<autosummary>:1
-msgid ":py:obj:`triu <mlx.core.triu>`\\ \\(x\\, k\\, \\*\\[\\, stream\\]\\)"
+msgid ":py:obj:`triu <mlx.core.triu>`\\ \\(x\\[\\, k\\, stream\\]\\)"
 msgstr ""
 
 #: ../../../src/python/ops.rst:212:<autosummary>:1
