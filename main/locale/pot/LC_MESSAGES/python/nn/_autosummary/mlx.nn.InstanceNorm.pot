@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MLX main\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-08-31 15:41+0000\n"
+"POT-Creation-Date: 2026-10-05 16:37+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -35,11 +35,12 @@ msgstr ""
 #: of mlx.nn.layers.normalization.InstanceNorm:5
 msgid ""
 "y = \\frac{x - \\mathrm{E}[x]}{ \\sqrt{\\mathrm{Var}[x] + \\epsilon}} * "
-"\\gamma + \\beta,"
+"\\gamma +\n"
+"\\beta,"
 msgstr ""
 
 #: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/normalization.py:docstring
-#: of mlx.nn.layers.normalization.InstanceNorm:9
+#: of mlx.nn.layers.normalization.InstanceNorm:10
 msgid ""
 "where :math:`\\gamma` and :math:`\\beta` are learned per feature dimension "
 "parameters initialized at 1 and 0 respectively. Both are of size :attr:"
@@ -51,50 +52,50 @@ msgid "Parameters"
 msgstr ""
 
 #: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/normalization.py:docstring
-#: of mlx.nn.layers.normalization.InstanceNorm:13
+#: of mlx.nn.layers.normalization.InstanceNorm:14
 msgid "The number of features of the input."
 msgstr ""
 
 #: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/normalization.py:docstring
-#: of mlx.nn.layers.normalization.InstanceNorm:15
+#: of mlx.nn.layers.normalization.InstanceNorm:16
 msgid ""
 "A value added to the denominator for numerical stability. Default: ``1e-5``."
 msgstr ""
 
 #: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/normalization.py:docstring
-#: of mlx.nn.layers.normalization.InstanceNorm:17
+#: of mlx.nn.layers.normalization.InstanceNorm:19
 msgid "Default: ``False``."
 msgstr ""
 
 #: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/normalization.py:docstring
-#: of mlx.nn.layers.normalization.InstanceNorm:20
+#: of mlx.nn.layers.normalization.InstanceNorm:22
 msgid "Shape:"
 msgstr ""
 
 #: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/normalization.py:docstring
-#: of mlx.nn.layers.normalization.InstanceNorm:21
+#: of mlx.nn.layers.normalization.InstanceNorm:23
 msgid ""
 "Input: :math:`(N, ..., C)` where :math:`C` is equal to :attr:`dims`. The "
 "input must have at least 3 dimensions."
 msgstr ""
 
 #: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/normalization.py:docstring
-#: of mlx.nn.layers.normalization.InstanceNorm:23
+#: of mlx.nn.layers.normalization.InstanceNorm:25
 msgid "Output: Same shape as the input."
 msgstr ""
 
 #: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/normalization.py:docstring
-#: of mlx.nn.layers.normalization.InstanceNorm:26
+#: of mlx.nn.layers.normalization.InstanceNorm:28
 msgid "Examples"
 msgstr ""
 
 #: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/normalization.py:docstring
-#: of mlx.nn.layers.normalization.InstanceNorm:34
+#: of mlx.nn.layers.normalization.InstanceNorm:36
 msgid "References"
 msgstr ""
 
 #: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/normalization.py:docstring
-#: of mlx.nn.layers.normalization.InstanceNorm:35
+#: of mlx.nn.layers.normalization.InstanceNorm:37
 msgid "[1]: https://arxiv.org/abs/1607.08022"
 msgstr ""
 

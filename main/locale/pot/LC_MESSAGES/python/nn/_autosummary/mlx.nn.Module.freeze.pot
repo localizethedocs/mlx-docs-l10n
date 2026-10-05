@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MLX main\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-12-22 08:23+0000\n"
+"POT-Creation-Date: 2026-10-05 16:37+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -48,8 +48,9 @@ msgstr ""
 msgid ""
 "model = nn.Transformer()\n"
 "model.freeze()\n"
-"model.apply_to_modules(lambda k, v: v.unfreeze() if k."
-"endswith(\"attention\") else None)"
+"model.apply_to_modules(\n"
+"    lambda k, v: v.unfreeze() if k.endswith(\"attention\") else None\n"
+")"
 msgstr ""
 
 #: ../../../src/python/nn/_autosummary/mlx.nn.Module.freeze.rst:0
@@ -57,14 +58,14 @@ msgid "Parameters"
 msgstr ""
 
 #: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/base.py:docstring
-#: of mlx.nn.layers.base.Module.freeze:16
+#: of mlx.nn.layers.base.Module.freeze:18
 msgid ""
 "If True then freeze the parameters of the submodules as well. Default: "
 "``True``."
 msgstr ""
 
 #: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/base.py:docstring
-#: of mlx.nn.layers.base.Module.freeze:19
+#: of mlx.nn.layers.base.Module.freeze:21
 msgid ""
 "If provided then only these parameters will be frozen otherwise all the "
 "parameters of a module. For instance freeze all biases by calling ``module."
@@ -72,7 +73,7 @@ msgid ""
 msgstr ""
 
 #: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/base.py:docstring
-#: of mlx.nn.layers.base.Module.freeze:24
+#: of mlx.nn.layers.base.Module.freeze:26
 msgid ""
 "If set to ``True`` validate that the passed keys exist. Default: ``False``."
 msgstr ""
@@ -82,6 +83,6 @@ msgid "Returns"
 msgstr ""
 
 #: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/base.py:docstring
-#: of mlx.nn.layers.base.Module.freeze:28
+#: of mlx.nn.layers.base.Module.freeze:30
 msgid "The module instance after freezing the parameters."
 msgstr ""

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MLX main\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-06-01 13:31+0000\n"
+"POT-Creation-Date: 2026-10-05 16:37+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -47,26 +47,26 @@ msgstr ""
 #: of mlx.nn.layers.activations.GELU:10
 msgid ""
 "\\textrm{GELUApprox}(x) &= 0.5 * x * \\left(1 + "
-"\\text{Tanh}\\left(\\sqrt{2 / \\pi} * \\left(x + 0.044715 * "
-"x^3\\right)\\right)\\right) \\\\\n"
+"\\text{Tanh}\\left(\\sqrt{2 / \\pi} *\n"
+"\\left(x + 0.044715 * x^3\\right)\\right)\\right) \\\\\n"
 "\\textrm{GELUFast}(x) &= x * \\sigma\\left(1.702 * x\\right)\n"
 "\n"
 msgstr ""
 
 #: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/activations.py:docstring
-#: of mlx.nn.layers.activations.GELU:14
+#: of mlx.nn.layers.activations.GELU:15
 msgid "respectively."
 msgstr ""
 
 #: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/activations.py:docstring
-#: of mlx.nn.layers.activations.GELU:17
+#: of mlx.nn.layers.activations.GELU:18
 msgid ""
 "For compatibility with the PyTorch API, 'tanh' can be used as an alias for "
 "'precise'."
 msgstr ""
 
 #: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/activations.py:docstring
-#: of mlx.nn.layers.activations.GELU:20
+#: of mlx.nn.layers.activations.GELU:21
 msgid ""
 "See :func:`gelu`, :func:`gelu_approx` and :func:`gelu_fast_approx` for the "
 "functional equivalents and information regarding error bounds."
@@ -77,7 +77,7 @@ msgid "Parameters"
 msgstr ""
 
 #: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/activations.py:docstring
-#: of mlx.nn.layers.activations.GELU:24
+#: of mlx.nn.layers.activations.GELU:25
 msgid "Which approximation to gelu to use if any."
 msgstr ""
 

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MLX main\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-12-22 08:23+0000\n"
+"POT-Creation-Date: 2026-10-05 16:37+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -25,15 +25,21 @@ msgstr ""
 msgid "Perform the Einstein summation convention on the operands."
 msgstr ""
 
+#: ../../../docstring of mlx.core.einsum:3
+msgid ""
+"Contractions are implemented with :func:`matmul` and have the same "
+"requirements."
+msgstr ""
+
 #: ../../../src/python/_autosummary/mlx.core.einsum.rst:0
 msgid "Parameters"
 msgstr ""
 
-#: ../../../docstring of mlx.core.einsum:3
+#: ../../../docstring of mlx.core.einsum:6
 msgid "The Einstein summation convention equation."
 msgstr ""
 
-#: ../../../docstring of mlx.core.einsum:5
+#: ../../../docstring of mlx.core.einsum:8
 msgid "The input arrays."
 msgstr ""
 
@@ -41,7 +47,7 @@ msgstr ""
 msgid "Returns"
 msgstr ""
 
-#: ../../../docstring of mlx.core.einsum:8
+#: ../../../docstring of mlx.core.einsum:11
 msgid "The output array."
 msgstr ""
 
