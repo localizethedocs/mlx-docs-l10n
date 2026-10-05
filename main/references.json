@@ -37,9 +37,9 @@
     "branch" : "main",
     "commit" : 
     {
-      "date" : "2026-08-30 12:45:08 +0200",
-      "hash" : "37c26e5755da637255d57ea34b4879196a485301",
-      "title" : "Fix SGD and Adafactor weight decay mutating caller arrays (#4426)"
+      "date" : "2026-10-05 20:00:15 +0900",
+      "hash" : "264c14fe650e1dd9bb0c3902dc06b08033d8f89c",
+      "title" : "Replace Black formatter with ruff (#4600)"
     }
   },
   "type" : "branch",

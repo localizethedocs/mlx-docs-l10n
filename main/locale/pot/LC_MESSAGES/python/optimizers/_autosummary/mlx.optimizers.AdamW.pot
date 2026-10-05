@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MLX main\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-12-22 08:23+0000\n"
+"POT-Creation-Date: 2026-10-05 16:37+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -41,7 +41,8 @@ msgid ""
 "m_{t+1} &= \\beta_1 m_t + (1 - \\beta_1) g_t \\\\\n"
 "v_{t+1} &= \\beta_2 v_t + (1 - \\beta_2) g_t^2 \\\\\n"
 "w_{t+1} &= w_t - \\alpha (\\frac{m_{t+1}}{\\sqrt{v_{t+1}} + \\epsilon} + "
-"\\lambda w_t)"
+"\\lambda\n"
+"w_t)"
 msgstr ""
 
 #: ../../../src/python/optimizers/_autosummary/mlx.optimizers.AdamW.rst:0
@@ -49,31 +50,31 @@ msgid "Parameters"
 msgstr ""
 
 #: ../../../../../../.conda/lib/python3.12/site-packages/mlx/optimizers/optimizers.py:docstring
-#: of mlx.optimizers.optimizers.AdamW:13
+#: of mlx.optimizers.optimizers.AdamW:14
 msgid "The learning rate :math:`\\alpha`."
 msgstr ""
 
 #: ../../../../../../.conda/lib/python3.12/site-packages/mlx/optimizers/optimizers.py:docstring
-#: of mlx.optimizers.optimizers.AdamW:15
+#: of mlx.optimizers.optimizers.AdamW:16
 msgid ""
 "The coefficients :math:`(\\beta_1, \\beta_2)` used for computing running "
 "averages of the gradient and its square. Default: ``(0.9, 0.999)``"
 msgstr ""
 
 #: ../../../../../../.conda/lib/python3.12/site-packages/mlx/optimizers/optimizers.py:docstring
-#: of mlx.optimizers.optimizers.AdamW:19
+#: of mlx.optimizers.optimizers.AdamW:20
 msgid ""
 "The term :math:`\\epsilon` added to the denominator to improve numerical "
 "stability. Default: ``1e-8``"
 msgstr ""
 
 #: ../../../../../../.conda/lib/python3.12/site-packages/mlx/optimizers/optimizers.py:docstring
-#: of mlx.optimizers.optimizers.AdamW:22
+#: of mlx.optimizers.optimizers.AdamW:23
 msgid "The weight decay :math:`\\lambda`. Default: ``0.01``."
 msgstr ""
 
 #: ../../../../../../.conda/lib/python3.12/site-packages/mlx/optimizers/optimizers.py:docstring
-#: of mlx.optimizers.optimizers.AdamW:25
+#: of mlx.optimizers.optimizers.AdamW:26
 msgid "If set to ``True``, bias correction is applied. Default: ``False``"
 msgstr ""
 

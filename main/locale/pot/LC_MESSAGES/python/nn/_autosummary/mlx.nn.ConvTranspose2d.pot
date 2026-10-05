@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MLX main\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-08-31 15:41+0000\n"
+"POT-Creation-Date: 2026-10-05 16:37+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -29,29 +29,29 @@ msgid ""
 msgstr ""
 
 #: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/convolution_transpose.py:docstring
-#: of mlx.nn.layers.convolution_transpose.ConvTranspose2d:3
+#: of mlx.nn.layers.convolution_transpose.ConvTranspose2d:4
 msgid ""
 "The channels are expected to be last i.e. the input shape should be ``NHWC`` "
 "where:"
 msgstr ""
 
 #: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/convolution_transpose.py:docstring
-#: of mlx.nn.layers.convolution_transpose.ConvTranspose2d:5
+#: of mlx.nn.layers.convolution_transpose.ConvTranspose2d:6
 msgid "``N`` is the batch dimension"
 msgstr ""
 
 #: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/convolution_transpose.py:docstring
-#: of mlx.nn.layers.convolution_transpose.ConvTranspose2d:6
+#: of mlx.nn.layers.convolution_transpose.ConvTranspose2d:7
 msgid "``H`` is the input image height"
 msgstr ""
 
 #: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/convolution_transpose.py:docstring
-#: of mlx.nn.layers.convolution_transpose.ConvTranspose2d:7
+#: of mlx.nn.layers.convolution_transpose.ConvTranspose2d:8
 msgid "``W`` is the input image width"
 msgstr ""
 
 #: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/convolution_transpose.py:docstring
-#: of mlx.nn.layers.convolution_transpose.ConvTranspose2d:8
+#: of mlx.nn.layers.convolution_transpose.ConvTranspose2d:9
 msgid "``C`` is the number of input channels"
 msgstr ""
 
@@ -60,42 +60,42 @@ msgid "Parameters"
 msgstr ""
 
 #: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/convolution_transpose.py:docstring
-#: of mlx.nn.layers.convolution_transpose.ConvTranspose2d:10
+#: of mlx.nn.layers.convolution_transpose.ConvTranspose2d:11
 msgid "The number of input channels."
 msgstr ""
 
 #: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/convolution_transpose.py:docstring
-#: of mlx.nn.layers.convolution_transpose.ConvTranspose2d:12
+#: of mlx.nn.layers.convolution_transpose.ConvTranspose2d:13
 msgid "The number of output channels."
 msgstr ""
 
 #: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/convolution_transpose.py:docstring
-#: of mlx.nn.layers.convolution_transpose.ConvTranspose2d:14
+#: of mlx.nn.layers.convolution_transpose.ConvTranspose2d:15
 msgid "The size of the convolution filters."
 msgstr ""
 
 #: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/convolution_transpose.py:docstring
-#: of mlx.nn.layers.convolution_transpose.ConvTranspose2d:16
+#: of mlx.nn.layers.convolution_transpose.ConvTranspose2d:17
 msgid "The size of the stride when applying the filter. Default: ``1``."
 msgstr ""
 
 #: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/convolution_transpose.py:docstring
-#: of mlx.nn.layers.convolution_transpose.ConvTranspose2d:19
+#: of mlx.nn.layers.convolution_transpose.ConvTranspose2d:20
 msgid "How many positions to 0-pad the input with. Default: ``0``."
 msgstr ""
 
 #: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/convolution_transpose.py:docstring
-#: of mlx.nn.layers.convolution_transpose.ConvTranspose2d:22
+#: of mlx.nn.layers.convolution_transpose.ConvTranspose2d:23
 msgid "The dilation of the convolution. Default: ``1``."
 msgstr ""
 
 #: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/convolution_transpose.py:docstring
-#: of mlx.nn.layers.convolution_transpose.ConvTranspose2d:25
+#: of mlx.nn.layers.convolution_transpose.ConvTranspose2d:26
 msgid "Additional size added to one side of the output shape. Default: ``0``."
 msgstr ""
 
 #: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/convolution_transpose.py:docstring
-#: of mlx.nn.layers.convolution_transpose.ConvTranspose2d:28
+#: of mlx.nn.layers.convolution_transpose.ConvTranspose2d:29
 msgid "If ``True`` add a learnable bias to the output. Default: ``True``"
 msgstr ""
 

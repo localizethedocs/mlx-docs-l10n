@@ -1,0 +1,113 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023, Apple
+# This file is distributed under the same license as the MLX package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: MLX main\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-10-05 16:37+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../src/python/_autosummary/mlx.core.unique.rst:2
+msgid "mlx.core.unique"
+msgstr ""
+
+#: ../../../docstring of mlx.core.unique:1
+msgid "Returns the sorted unique elements of the flattened array."
+msgstr ""
+
+#: ../../../docstring of mlx.core.unique:3
+msgid ""
+"The shape of the output does not depend on the values in ``a``, so ``a`` is "
+"not evaluated. Unlike NumPy, the size is never inferred from the values and "
+"must be provided."
+msgstr ""
+
+#: ../../../docstring of mlx.core.unique:7
+msgid ""
+"Entries past the last unique element hold ``fill_value`` and their count is "
+"``0``, so ``mx.sum(counts > 0)`` gives the number of unique elements as long "
+"as the output is not truncated."
+msgstr ""
+
+#: ../../../docstring of mlx.core.unique:11
+msgid ""
+"A truncated output keeps the smallest ``size`` unique elements, and "
+"``index``, ``inverse`` and ``counts`` then stop describing all of ``a``, and "
+"``inverse`` and ``counts`` stop agreeing with each other: the counts of the "
+"dropped elements are gone, while their indices in ``inverse`` are clamped to "
+"the last entry. ``inverse`` is meaningless for a ``size`` of ``0``, since "
+"there is no element left for it to point at."
+msgstr ""
+
+#: ../../../docstring of mlx.core.unique:19
+msgid ""
+"This op builds on ``mx.sort``, so a ``bool`` input needs the CPU stream, "
+"which is where ``mx.sort`` supports it."
+msgstr ""
+
+#: ../../../docstring of mlx.core.unique:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../docstring of mlx.core.unique:22
+msgid "Input array."
+msgstr ""
+
+#: ../../../docstring of mlx.core.unique:24
+msgid ""
+"The size of the output. If the size is smaller than the number of unique "
+"elements of ``a``, the output is truncated. If it is larger, the output is "
+"padded with ``fill_value``."
+msgstr ""
+
+#: ../../../docstring of mlx.core.unique:28
+msgid ""
+"If ``True``, also return the index in the flattened ``a`` of the first "
+"occurrence of each unique element. Default: ``False``."
+msgstr ""
+
+#: ../../../docstring of mlx.core.unique:32
+msgid ""
+"If ``True``, also return the indices of the unique array that rebuild ``a``. "
+"The indices have the same shape as ``a``. Default: ``False``."
+msgstr ""
+
+#: ../../../docstring of mlx.core.unique:36
+msgid ""
+"If ``True``, also return the number of times each unique element occurs in "
+"``a``. Default: ``False``."
+msgstr ""
+
+#: ../../../docstring of mlx.core.unique:39
+msgid ""
+"The value of the entries past the last unique element. If ``None``, this "
+"defaults to the first of the sorted unique elements. Default: ``None``."
+msgstr ""
+
+#: ../../../docstring of mlx.core.unique:0
+msgid "Returns"
+msgstr ""
+
+#: ../../../docstring of mlx.core.unique:44
+msgid ""
+"The sorted unique elements. If any of ``return_index``, ``return_inverse`` "
+"or ``return_counts`` is ``True``, a tuple with the requested arrays in the "
+"order values, index, inverse, counts."
+msgstr ""
+
+#: ../../../docstring of mlx.core.unique:0
+msgid "Return type"
+msgstr ""
+
+#: ../../../docstring of mlx.core.unique:51
+msgid "Example"
+msgstr ""

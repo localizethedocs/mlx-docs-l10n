@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MLX main\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-12-22 08:23+0000\n"
+"POT-Creation-Date: 2026-10-05 16:37+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -52,11 +52,17 @@ msgid ""
 "using standard numpy-style broadcasting semantics."
 msgstr ""
 
+#: ../../../docstring of mlx.core.matmul:16
+msgid ""
+"Only inexact types are supported. The promoted type of ``a`` and ``b`` must "
+"be floating point or complex."
+msgstr ""
+
 #: ../../../src/python/_autosummary/mlx.core.matmul.rst:0
 msgid "Parameters"
 msgstr ""
 
-#: ../../../docstring of mlx.core.matmul:16 mlx.core.matmul:18
+#: ../../../docstring of mlx.core.matmul:19 mlx.core.matmul:21
 msgid "Input array or scalar."
 msgstr ""
 
@@ -64,7 +70,7 @@ msgstr ""
 msgid "Returns"
 msgstr ""
 
-#: ../../../docstring of mlx.core.matmul:21
+#: ../../../docstring of mlx.core.matmul:24
 msgid "The matrix product of ``a`` and ``b``."
 msgstr ""
 
