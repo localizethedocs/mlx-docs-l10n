@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MLX main\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-12-22 08:23+0000\n"
+"POT-Creation-Date: 2026-10-12 17:11+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -30,7 +30,7 @@ msgid "Parameters"
 msgstr ""
 
 #: ../../../docstring of mlx.core.arctan2:3 mlx.core.arctan2:5
-msgid "Input array."
+msgid "Input array or scalar."
 msgstr ""
 
 #: ../../../src/python/_autosummary/mlx.core.arctan2.rst:0
