@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MLX 0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-06-23 11:30+0000\n"
+"POT-Creation-Date: 2026-10-06 15:14+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -389,7 +389,7 @@ msgstr ""
 #: ../../../src/python/_autosummary/mlx.core.array.rst:65:<autosummary>:1
 msgid ""
 ":py:obj:`std <mlx.core.array.std>`\\ \\(self\\[\\, axis\\, keepdims\\, "
-"ddof\\, stream\\]\\)"
+"ddof\\, ...\\]\\)"
 msgstr ""
 
 #: ../../../src/python/_autosummary/mlx.core.array.rst:65:<autosummary>:1
@@ -439,7 +439,7 @@ msgstr ""
 #: ../../../src/python/_autosummary/mlx.core.array.rst:65:<autosummary>:1
 msgid ""
 ":py:obj:`var <mlx.core.array.var>`\\ \\(self\\[\\, axis\\, keepdims\\, "
-"ddof\\, stream\\]\\)"
+"ddof\\, ...\\]\\)"
 msgstr ""
 
 #: ../../../src/python/_autosummary/mlx.core.array.rst:65:<autosummary>:1
@@ -460,82 +460,91 @@ msgstr ""
 msgid "Attributes"
 msgstr ""
 
-#: ../../../src/python/_autosummary/mlx.core.array.rst:79:<autosummary>:1
+#: ../../../src/python/_autosummary/mlx.core.array.rst:80:<autosummary>:1
 msgid ":py:obj:`T <mlx.core.array.T>`\\"
 msgstr ""
 
-#: ../../../src/python/_autosummary/mlx.core.array.rst:79:<autosummary>:1
+#: ../../../src/python/_autosummary/mlx.core.array.rst:80:<autosummary>:1
 msgid "Equivalent to calling ``self.transpose()`` with no arguments."
 msgstr ""
 
-#: ../../../src/python/_autosummary/mlx.core.array.rst:79:<autosummary>:1
+#: ../../../src/python/_autosummary/mlx.core.array.rst:80:<autosummary>:1
 msgid ":py:obj:`at <mlx.core.array.at>`\\"
 msgstr ""
 
-#: ../../../src/python/_autosummary/mlx.core.array.rst:79:<autosummary>:1
+#: ../../../src/python/_autosummary/mlx.core.array.rst:80:<autosummary>:1
 msgid "Used to apply updates at the given indices."
 msgstr ""
 
-#: ../../../src/python/_autosummary/mlx.core.array.rst:79:<autosummary>:1
+#: ../../../src/python/_autosummary/mlx.core.array.rst:80:<autosummary>:1
 msgid ":py:obj:`dtype <mlx.core.array.dtype>`\\"
 msgstr ""
 
-#: ../../../src/python/_autosummary/mlx.core.array.rst:79:<autosummary>:1
+#: ../../../src/python/_autosummary/mlx.core.array.rst:80:<autosummary>:1
 msgid "The array's :class:`Dtype`."
 msgstr ""
 
-#: ../../../src/python/_autosummary/mlx.core.array.rst:79:<autosummary>:1
+#: ../../../src/python/_autosummary/mlx.core.array.rst:80:<autosummary>:1
 msgid ":py:obj:`imag <mlx.core.array.imag>`\\"
 msgstr ""
 
-#: ../../../src/python/_autosummary/mlx.core.array.rst:79:<autosummary>:1
+#: ../../../src/python/_autosummary/mlx.core.array.rst:80:<autosummary>:1
 msgid "The imaginary part of a complex array."
 msgstr ""
 
-#: ../../../src/python/_autosummary/mlx.core.array.rst:79:<autosummary>:1
+#: ../../../src/python/_autosummary/mlx.core.array.rst:80:<autosummary>:1
 msgid ":py:obj:`itemsize <mlx.core.array.itemsize>`\\"
 msgstr ""
 
-#: ../../../src/python/_autosummary/mlx.core.array.rst:79:<autosummary>:1
+#: ../../../src/python/_autosummary/mlx.core.array.rst:80:<autosummary>:1
 msgid "The size of the array's datatype in bytes."
 msgstr ""
 
-#: ../../../src/python/_autosummary/mlx.core.array.rst:79:<autosummary>:1
+#: ../../../src/python/_autosummary/mlx.core.array.rst:80:<autosummary>:1
+msgid ":py:obj:`mT <mlx.core.array.mT>`\\"
+msgstr ""
+
+#: ../../../src/python/_autosummary/mlx.core.array.rst:80:<autosummary>:1
+msgid ""
+"Equivalent to calling ``self.transpose()`` with the last two axes swapped."
+msgstr ""
+
+#: ../../../src/python/_autosummary/mlx.core.array.rst:80:<autosummary>:1
 msgid ":py:obj:`nbytes <mlx.core.array.nbytes>`\\"
 msgstr ""
 
-#: ../../../src/python/_autosummary/mlx.core.array.rst:79:<autosummary>:1
+#: ../../../src/python/_autosummary/mlx.core.array.rst:80:<autosummary>:1
 msgid "The number of bytes in the array."
 msgstr ""
 
-#: ../../../src/python/_autosummary/mlx.core.array.rst:79:<autosummary>:1
+#: ../../../src/python/_autosummary/mlx.core.array.rst:80:<autosummary>:1
 msgid ":py:obj:`ndim <mlx.core.array.ndim>`\\"
 msgstr ""
 
-#: ../../../src/python/_autosummary/mlx.core.array.rst:79:<autosummary>:1
+#: ../../../src/python/_autosummary/mlx.core.array.rst:80:<autosummary>:1
 msgid "The array's dimension."
 msgstr ""
 
-#: ../../../src/python/_autosummary/mlx.core.array.rst:79:<autosummary>:1
+#: ../../../src/python/_autosummary/mlx.core.array.rst:80:<autosummary>:1
 msgid ":py:obj:`real <mlx.core.array.real>`\\"
 msgstr ""
 
-#: ../../../src/python/_autosummary/mlx.core.array.rst:79:<autosummary>:1
+#: ../../../src/python/_autosummary/mlx.core.array.rst:80:<autosummary>:1
 msgid "The real part of a complex array."
 msgstr ""
 
-#: ../../../src/python/_autosummary/mlx.core.array.rst:79:<autosummary>:1
+#: ../../../src/python/_autosummary/mlx.core.array.rst:80:<autosummary>:1
 msgid ":py:obj:`shape <mlx.core.array.shape>`\\"
 msgstr ""
 
-#: ../../../src/python/_autosummary/mlx.core.array.rst:79:<autosummary>:1
+#: ../../../src/python/_autosummary/mlx.core.array.rst:80:<autosummary>:1
 msgid "The shape of the array as a Python tuple."
 msgstr ""
 
-#: ../../../src/python/_autosummary/mlx.core.array.rst:79:<autosummary>:1
+#: ../../../src/python/_autosummary/mlx.core.array.rst:80:<autosummary>:1
 msgid ":py:obj:`size <mlx.core.array.size>`\\"
 msgstr ""
 
-#: ../../../src/python/_autosummary/mlx.core.array.rst:79:<autosummary>:1
+#: ../../../src/python/_autosummary/mlx.core.array.rst:80:<autosummary>:1
 msgid "Number of elements in the array."
 msgstr ""
