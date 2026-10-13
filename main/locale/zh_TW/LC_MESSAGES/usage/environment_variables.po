@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MLX main\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-08-31 15:41+0000\n"
+"POT-Creation-Date: 2026-10-12 17:11+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -131,15 +131,32 @@ msgstr ""
 
 #: ../../../src/usage/environment_variables.rst:92
 msgid ""
+"Re-request residency for existing wired allocations at this interval in "
+"milliseconds. This works around macOS releasing residency while the GPU is "
+"idle. The default is ``0`` (disabled); nonpositive values disable renewal. "
+"For example, ``1000`` renews once per second. This does not change the wired "
+"limit set by :func:`mlx.core.set_wired_limit` or submit GPU work. Renewal "
+"continues while the Metal device exists and can keep memory wired during "
+"long idle periods. Requires a Metal 3 GPU on macOS 15 or iOS 18 or later."
+msgstr ""
+
+#: ../../../src/usage/environment_variables.rst:102
+msgid ""
 "Enable the faster Metal CPU/GPU synchronization path. The default is ``0``. "
 "This requires Metal 3.2 or later (macOS 15 or later, or iOS 18 or later)."
 msgstr ""
 
-#: ../../../src/usage/environment_variables.rst:96
+#: ../../../src/usage/environment_variables.rst:107
+msgid ""
+"Allow the Winograd algorithm for 3x3 ``conv2d``. The default is ``1``. Set "
+"it to ``0`` to use the GEMM convolution for all inputs. See :doc:`precision`."
+msgstr ""
+
+#: ../../../src/usage/environment_variables.rst:112
 msgid "Advanced tuning"
 msgstr ""
 
-#: ../../../src/usage/environment_variables.rst:98
+#: ../../../src/usage/environment_variables.rst:114
 msgid ""
 "These variables tune MLX implementation details. They are primarily intended "
 "for development, diagnostics, and performance experiments. The defaults are "
@@ -147,25 +164,25 @@ msgid ""
 "users. Their behavior may change as the implementation evolves."
 msgstr ""
 
-#: ../../../src/usage/environment_variables.rst:105
+#: ../../../src/usage/environment_variables.rst:121
 msgid ""
 "Set the breadth-first-search width limit used when constructing an "
 "evaluation tape. The default is ``20``."
 msgstr ""
 
-#: ../../../src/usage/environment_variables.rst:110
+#: ../../../src/usage/environment_variables.rst:126
 msgid ""
 "Override the maximum number of operations encoded in one Metal command "
 "buffer or CUDA graph. The default depends on the device."
 msgstr ""
 
-#: ../../../src/usage/environment_variables.rst:115
+#: ../../../src/usage/environment_variables.rst:131
 msgid ""
 "Override the approximate memory limit, in megabytes, for one Metal command "
 "buffer or CUDA graph. The default depends on the device."
 msgstr ""
 
-#: ../../../src/usage/environment_variables.rst:120
+#: ../../../src/usage/environment_variables.rst:136
 msgid ""
 "Override the Metal GPU architecture string reported to MLX. This affects "
 "architecture-specific kernel and scheduling choices, but does not change the "
@@ -173,75 +190,76 @@ msgid ""
 "match the GPU can select incompatible kernels and produce incorrect results."
 msgstr ""
 
-#: ../../../src/usage/environment_variables.rst:127
+#: ../../../src/usage/environment_variables.rst:143
 msgid ""
 "Override the number of reduction blocks used by the Metal scaled dot-product "
 "attention kernel. Positive values are rounded up to a multiple of ``32``."
 msgstr ""
 
-#: ../../../src/usage/environment_variables.rst:132
+#: ../../../src/usage/environment_variables.rst:148
 msgid "CUDA"
 msgstr ""
 
-#: ../../../src/usage/environment_variables.rst:134
+#: ../../../src/usage/environment_variables.rst:150
 msgid ""
 "The MLX-prefixed variables in this section are advanced CUDA backend "
 "controls."
 msgstr ""
 
-#: ../../../src/usage/environment_variables.rst:138
+#: ../../../src/usage/environment_variables.rst:154
 msgid "Enable CUDA graph capture and replay. The default is ``1``."
 msgstr ""
 
-#: ../../../src/usage/environment_variables.rst:142
+#: ../../../src/usage/environment_variables.rst:158
 msgid ""
 "Use the specified value as the filename prefix when writing captured CUDA "
 "graphs to numbered DOT files. An unset or empty value disables the output."
 msgstr ""
 
-#: ../../../src/usage/environment_variables.rst:147
+#: ../../../src/usage/environment_variables.rst:163
 msgid ""
 "Override the directory used to cache runtime-compiled PTX. By default MLX "
 "uses an ``mlx/<version>/ptx`` directory under the system temporary directory."
 msgstr ""
 
-#: ../../../src/usage/environment_variables.rst:153
+#: ../../../src/usage/environment_variables.rst:169
 msgid ""
 "Allow the CUDA backend to use cuDNN scaled dot-product attention when the "
 "inputs and device are supported. The default is ``1``."
 msgstr ""
 
-#: ../../../src/usage/environment_variables.rst:158
+#: ../../../src/usage/environment_variables.rst:174
 msgid "Set the CUDA convolution cache capacity. The default is ``128``."
 msgstr ""
 
-#: ../../../src/usage/environment_variables.rst:162
+#: ../../../src/usage/environment_variables.rst:178
 msgid "Set the CUDA FFT plan cache capacity. The default is ``128``."
 msgstr ""
 
-#: ../../../src/usage/environment_variables.rst:166
+#: ../../../src/usage/environment_variables.rst:182
 msgid "Set the CUDA graph cache capacity. The default is ``400``."
 msgstr ""
 
-#: ../../../src/usage/environment_variables.rst:170
+#: ../../../src/usage/environment_variables.rst:186
 msgid ""
 "Set the CUDA forward scaled dot-product attention cache capacity. The "
 "default is ``256``."
 msgstr ""
 
-#: ../../../src/usage/environment_variables.rst:175
+#: ../../../src/usage/environment_variables.rst:191
 msgid ""
 "Set the CUDA backward scaled dot-product attention cache capacity. The "
 "default is ``64``."
 msgstr ""
 
-#: ../../../src/usage/environment_variables.rst:180
+#: ../../../src/usage/environment_variables.rst:196
 msgid ""
-"Detect repeated CUDA cache misses and raise an error suggesting a larger "
-"cache capacity. The default is ``1``."
+"Detect consecutive CUDA cache misses (more than twice the capacity with no "
+"hit in between) and raise an error suggesting a larger cache capacity. The "
+"default is ``1``."
 msgstr ""
 
-#: ../../../src/usage/environment_variables.rst:183
+#: ../../../src/usage/environment_variables.rst:200
 msgid ""
 "MLX also uses ``CUDA_HOME`` or ``CUDA_PATH`` to locate CUDA headers for "
 "runtime kernel compilation when they cannot be found in the Python "

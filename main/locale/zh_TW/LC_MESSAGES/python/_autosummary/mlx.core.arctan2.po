@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MLX main\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-12-22 08:23+0000\n"
+"POT-Creation-Date: 2026-10-12 17:11+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -30,8 +30,8 @@ msgid "Parameters"
 msgstr "參數"
 
 #: ../../../docstring of mlx.core.arctan2:3 mlx.core.arctan2:5
-msgid "Input array."
-msgstr "輸入陣列。"
+msgid "Input array or scalar."
+msgstr ""
 
 #: ../../../src/python/_autosummary/mlx.core.arctan2.rst:0
 msgid "Returns"
@@ -44,3 +44,6 @@ msgstr "``a`` 與 ``b`` 比值的反正切。"
 #: ../../../src/python/_autosummary/mlx.core.arctan2.rst:0
 msgid "Return type"
 msgstr "回傳型別"
+
+#~ msgid "Input array."
+#~ msgstr "輸入陣列。"

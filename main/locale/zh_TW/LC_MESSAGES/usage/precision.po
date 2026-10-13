@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MLX main\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-08-31 15:41+0000\n"
+"POT-Creation-Date: 2026-10-12 17:11+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -45,4 +45,21 @@ msgstr ""
 msgid ""
 "Which operations take the reduced-precision path, and how large the "
 "difference is, depends on the backend and the hardware."
+msgstr ""
+
+#: ../../../src/usage/precision.rst:23
+msgid ""
+"On Metal, ``conv2d`` can use the Winograd algorithm for 3x3 convolutions "
+"with stride 1. Winograd is faster for large inputs, but its rounding error "
+"in ``float32`` can be approximately 10 times larger. MLX selects Winograd "
+"from the total input size, which includes the batch size. Thus, the same "
+"image can give different results in a batch of 3 and in a batch of 1."
+msgstr ""
+
+#: ../../../src/usage/precision.rst:29
+msgid "To disable Winograd, set :envvar:`MLX_CONV_WINOGRAD` to ``0``:"
+msgstr ""
+
+#: ../../../src/usage/precision.rst:31
+msgid "MLX_CONV_WINOGRAD=0 python my_script.py"
 msgstr ""
