@@ -27,7 +27,7 @@ msgstr ""
 
 #: ../../../src/python/_autosummary/mlx.core.iinfo.rst:13
 msgid "Methods"
-msgstr ""
+msgstr "方法"
 
 #: ../../../src/python/_autosummary/mlx.core.iinfo.rst:21:<autosummary>:1
 msgid ":py:obj:`__init__ <mlx.core.iinfo.__init__>`\\ \\(self\\, arg\\, \\/\\)"
@@ -35,7 +35,7 @@ msgstr ""
 
 #: ../../../src/python/_autosummary/mlx.core.iinfo.rst:23
 msgid "Attributes"
-msgstr ""
+msgstr "屬性"
 
 #: ../../../src/python/_autosummary/mlx.core.iinfo.rst:28:<autosummary>:1
 msgid ":py:obj:`dtype <mlx.core.iinfo.dtype>`\\"

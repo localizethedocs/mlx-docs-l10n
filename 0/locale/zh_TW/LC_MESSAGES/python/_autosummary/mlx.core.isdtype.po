@@ -27,7 +27,7 @@ msgstr ""
 
 #: ../../../src/python/_autosummary/mlx.core.isdtype.rst:0
 msgid "Parameters"
-msgstr ""
+msgstr "參數"
 
 #: ../../../docstring of mlx.core.isdtype:3
 msgid "The dtype to test."
@@ -43,7 +43,7 @@ msgstr ""
 
 #: ../../../src/python/_autosummary/mlx.core.isdtype.rst:0
 msgid "Returns"
-msgstr ""
+msgstr "回傳值"
 
 #: ../../../docstring of mlx.core.isdtype:12
 msgid "``True`` if ``dtype`` matches any of the given kinds."
@@ -51,4 +51,4 @@ msgstr ""
 
 #: ../../../src/python/_autosummary/mlx.core.isdtype.rst:0
 msgid "Return type"
-msgstr ""
+msgstr "回傳值型別"

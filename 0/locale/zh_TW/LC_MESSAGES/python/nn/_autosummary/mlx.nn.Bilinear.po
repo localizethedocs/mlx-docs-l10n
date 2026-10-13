@@ -54,7 +54,7 @@ msgstr ""
 
 #: ../../../src/python/nn/_autosummary/mlx.nn.Bilinear.rst:0
 msgid "Parameters"
-msgstr ""
+msgstr "參數"
 
 #: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/linear.py:docstring
 #: of mlx.nn.layers.linear.Bilinear:16
@@ -79,4 +79,4 @@ msgstr ""
 
 #: ../../../src/python/nn/_autosummary/mlx.nn.Bilinear.rst:12
 msgid "Methods"
-msgstr ""
+msgstr "方法"

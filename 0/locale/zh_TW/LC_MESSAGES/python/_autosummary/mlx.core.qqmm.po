@@ -38,7 +38,7 @@ msgstr ""
 
 #: ../../../docstring of mlx.core.qqmm:11
 msgid "Notes"
-msgstr ""
+msgstr "備註"
 
 #: ../../../docstring of mlx.core.qqmm:12
 msgid ""
@@ -56,11 +56,11 @@ msgstr ""
 
 #: ../../../src/python/_autosummary/mlx.core.qqmm.rst:0
 msgid "Parameters"
-msgstr ""
+msgstr "參數"
 
 #: ../../../docstring of mlx.core.qqmm:20
 msgid "Input array."
-msgstr ""
+msgstr "輸入陣列。"
 
 #: ../../../docstring of mlx.core.qqmm:22
 msgid "Weight matrix. If quantized, it is packed in unsigned integers."
@@ -107,7 +107,7 @@ msgstr ""
 
 #: ../../../src/python/_autosummary/mlx.core.qqmm.rst:0
 msgid "Returns"
-msgstr ""
+msgstr "回傳值"
 
 #: ../../../docstring of mlx.core.qqmm:46
 msgid ""
@@ -117,4 +117,4 @@ msgstr ""
 
 #: ../../../src/python/_autosummary/mlx.core.qqmm.rst:0
 msgid "Return type"
-msgstr ""
+msgstr "回傳值型別"

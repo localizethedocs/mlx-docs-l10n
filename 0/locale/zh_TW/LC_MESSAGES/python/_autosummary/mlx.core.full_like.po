@@ -27,7 +27,7 @@ msgstr ""
 
 #: ../../../src/python/_autosummary/mlx.core.full_like.rst:0
 msgid "Parameters"
-msgstr ""
+msgstr "參數"
 
 #: ../../../docstring of mlx.core.full_like:3
 msgid "The input to take the shape from."
@@ -44,12 +44,12 @@ msgstr ""
 
 #: ../../../src/python/_autosummary/mlx.core.full_like.rst:0
 msgid "Returns"
-msgstr ""
+msgstr "回傳值"
 
 #: ../../../docstring of mlx.core.full_like:11
 msgid "The output array."
-msgstr ""
+msgstr "輸出陣列。"
 
 #: ../../../src/python/_autosummary/mlx.core.full_like.rst:0
 msgid "Return type"
-msgstr ""
+msgstr "回傳值型別"

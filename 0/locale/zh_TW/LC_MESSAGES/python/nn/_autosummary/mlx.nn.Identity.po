@@ -28,7 +28,7 @@ msgstr ""
 
 #: ../../../src/python/nn/_autosummary/mlx.nn.Identity.rst:0
 msgid "Parameters"
-msgstr ""
+msgstr "參數"
 
 #: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/linear.py:docstring
 #: of mlx.nn.layers.linear.Identity:3
@@ -42,4 +42,4 @@ msgstr ""
 
 #: ../../../src/python/nn/_autosummary/mlx.nn.Identity.rst:12
 msgid "Methods"
-msgstr ""
+msgstr "方法"

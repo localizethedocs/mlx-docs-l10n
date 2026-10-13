@@ -27,15 +27,15 @@ msgstr ""
 
 #: ../../../src/python/_autosummary/mlx.core.to_fp8.rst:0
 msgid "Parameters"
-msgstr ""
+msgstr "參數"
 
 #: ../../../docstring of mlx.core.to_fp8:3
 msgid "The input array."
-msgstr ""
+msgstr "輸入陣列。"
 
 #: ../../../src/python/_autosummary/mlx.core.to_fp8.rst:0
 msgid "Returns"
-msgstr ""
+msgstr "回傳值"
 
 #: ../../../docstring of mlx.core.to_fp8:6
 msgid "The array converted to fp8 with type ``uint8``."
@@ -43,4 +43,4 @@ msgstr ""
 
 #: ../../../src/python/_autosummary/mlx.core.to_fp8.rst:0
 msgid "Return type"
-msgstr ""
+msgstr "回傳值型別"
