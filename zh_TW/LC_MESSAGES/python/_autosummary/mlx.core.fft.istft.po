@@ -1,0 +1,90 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023, Apple
+# This file is distributed under the same license as the MLX package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: MLX main\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-10-12 17:11+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../src/python/_autosummary/mlx.core.fft.istft.rst:2
+msgid "mlx.core.fft.istft"
+msgstr ""
+
+#: ../../../docstring of mlx.core.fft.istft:1
+msgid "Inverse Short-Time Fourier Transform."
+msgstr ""
+
+#: ../../../docstring of mlx.core.fft.istft:3
+msgid ""
+"Inverts :func:`stft` by overlap-adding the windowed inverse transform of "
+"each frame, normalized by the squared-window envelope."
+msgstr ""
+
+#: ../../../src/python/_autosummary/mlx.core.fft.istft.rst:0
+msgid "Parameters"
+msgstr "參數"
+
+#: ../../../docstring of mlx.core.fft.istft:6
+msgid "The STFT with shape ``(..., n_freq, n_frames)``."
+msgstr ""
+
+#: ../../../docstring of mlx.core.fft.istft:8
+msgid ""
+"Size of the Fourier Transform. Default is inferred from ``n_freq`` and "
+"``onesided``. The onesided inference is even; pass ``n_fft`` for an odd "
+"transform size."
+msgstr ""
+
+#: ../../../docstring of mlx.core.fft.istft:12
+msgid "Samples between frames. Default is ``n_fft // 4``."
+msgstr ""
+
+#: ../../../docstring of mlx.core.fft.istft:14
+msgid "Window size. Default is ``n_fft``."
+msgstr ""
+
+#: ../../../docstring of mlx.core.fft.istft:16
+msgid "A one-dimensional window. Default is a rectangular window."
+msgstr ""
+
+#: ../../../docstring of mlx.core.fft.istft:19
+msgid "Whether the STFT was centered. Default is ``True``."
+msgstr ""
+
+#: ../../../docstring of mlx.core.fft.istft:21
+msgid ""
+"One of ``\"backward\"``, ``\"ortho\"``, or ``\"forward\"``. Default is "
+"``\"backward\"``."
+msgstr ""
+
+#: ../../../docstring of mlx.core.fft.istft:24
+msgid ""
+"Whether the STFT has only non-negative frequencies. Default is ``True``."
+msgstr ""
+
+#: ../../../docstring of mlx.core.fft.istft:27
+msgid "Trim or zero-pad the output to this length."
+msgstr ""
+
+#: ../../../src/python/_autosummary/mlx.core.fft.istft.rst:0
+msgid "Returns"
+msgstr "回傳值"
+
+#: ../../../docstring of mlx.core.fft.istft:30
+msgid "The reconstructed signal."
+msgstr ""
+
+#: ../../../src/python/_autosummary/mlx.core.fft.istft.rst:0
+msgid "Return type"
+msgstr "回傳值型別"

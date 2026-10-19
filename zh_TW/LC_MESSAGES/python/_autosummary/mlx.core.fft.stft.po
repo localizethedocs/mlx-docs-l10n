@@ -1,0 +1,93 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023, Apple
+# This file is distributed under the same license as the MLX package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: MLX main\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-10-12 17:11+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../src/python/_autosummary/mlx.core.fft.stft.rst:2
+msgid "mlx.core.fft.stft"
+msgstr ""
+
+#: ../../../docstring of mlx.core.fft.stft:1
+msgid "Short-Time Fourier Transform."
+msgstr ""
+
+#: ../../../docstring of mlx.core.fft.stft:3
+msgid ""
+"Splits the last axis of ``x`` into overlapping frames of length ``n_fft``, "
+"applies ``window``, and takes the Fourier Transform of each frame. The "
+"output is always complex with shape ``(..., n_freq, n_frames)``."
+msgstr ""
+
+#: ../../../src/python/_autosummary/mlx.core.fft.stft.rst:0
+msgid "Parameters"
+msgstr "參數"
+
+#: ../../../docstring of mlx.core.fft.stft:7
+msgid "The input array."
+msgstr "輸入陣列。"
+
+#: ../../../docstring of mlx.core.fft.stft:9
+msgid "Size of the Fourier Transform. Default is ``2048``."
+msgstr ""
+
+#: ../../../docstring of mlx.core.fft.stft:11
+msgid "Samples between frames. Default is ``n_fft // 4``."
+msgstr ""
+
+#: ../../../docstring of mlx.core.fft.stft:13
+msgid "Window size. Default is ``n_fft``."
+msgstr ""
+
+#: ../../../docstring of mlx.core.fft.stft:15
+msgid ""
+"A one-dimensional window, centered and zero-padded to ``n_fft``. Default is "
+"a rectangular window."
+msgstr ""
+
+#: ../../../docstring of mlx.core.fft.stft:18
+msgid "Pad both ends so frames are centered. Default is ``True``."
+msgstr ""
+
+#: ../../../docstring of mlx.core.fft.stft:20
+msgid ""
+"One of ``\"reflect\"``, ``\"constant\"``, or ``\"edge\"``, used when "
+"``center`` is ``True``. Default is ``\"reflect\"``."
+msgstr ""
+
+#: ../../../docstring of mlx.core.fft.stft:23
+msgid ""
+"One of ``\"backward\"``, ``\"ortho\"``, or ``\"forward\"``. Default is "
+"``\"backward\"``."
+msgstr ""
+
+#: ../../../docstring of mlx.core.fft.stft:26
+msgid ""
+"Return only non-negative frequencies. Default is ``True`` for real input and "
+"``False`` for complex input."
+msgstr ""
+
+#: ../../../src/python/_autosummary/mlx.core.fft.stft.rst:0
+msgid "Returns"
+msgstr "回傳值"
+
+#: ../../../docstring of mlx.core.fft.stft:30
+msgid "The STFT of ``x``."
+msgstr ""
+
+#: ../../../src/python/_autosummary/mlx.core.fft.stft.rst:0
+msgid "Return type"
+msgstr "回傳值型別"
