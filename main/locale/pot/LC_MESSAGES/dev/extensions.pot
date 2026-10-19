@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MLX main\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-10-12 17:11+0000\n"
+"POT-Creation-Date: 2026-10-19 15:11+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -728,8 +728,8 @@ msgstr ""
 msgid "Let's look at the overall directory structure first."
 msgstr ""
 
-#: ../../../src/dev/extensions.rst:552 ../../../src/dev/extensions.rst:731
-msgid "extensions"
+#: ../../../src/dev/extensions.rst:552 ../../../src/dev/extensions.rst:723
+msgid "cmake_extension"
 msgstr ""
 
 #: ../../../src/dev/extensions.rst:553
@@ -748,66 +748,53 @@ msgstr ""
 msgid "│   └── axpby.metal"
 msgstr ""
 
-#: ../../../src/dev/extensions.rst:557 ../../../src/dev/extensions.rst:732
-msgid "├── mlx_sample_extensions"
-msgstr ""
-
-#: ../../../src/dev/extensions.rst:558
-msgid "│   └── __init__.py"
-msgstr ""
-
-#: ../../../src/dev/extensions.rst:559
+#: ../../../src/dev/extensions.rst:557
 msgid "├── bindings.cpp"
 msgstr ""
 
-#: ../../../src/dev/extensions.rst:560
+#: ../../../src/dev/extensions.rst:558
 msgid "├── CMakeLists.txt"
 msgstr ""
 
-#: ../../../src/dev/extensions.rst:561
+#: ../../../src/dev/extensions.rst:559
 msgid "└── setup.py"
 msgstr ""
 
+#: ../../../src/dev/extensions.rst:561
+msgid "``cmake_extension/axpby/`` defines the C++ extension library"
+msgstr ""
+
+#: ../../../src/dev/extensions.rst:562
+msgid ""
+"``cmake_extension/bindings.cpp`` provides Python bindings for our operation"
+msgstr ""
+
 #: ../../../src/dev/extensions.rst:563
-msgid "``extensions/axpby/`` defines the C++ extension library"
-msgstr ""
-
-#: ../../../src/dev/extensions.rst:564
 msgid ""
-"``extensions/mlx_sample_extensions`` sets out the structure for the "
-"associated Python package"
+"``cmake_extension/CMakeLists.txt`` holds CMake rules to build the library "
+"and Python bindings"
 msgstr ""
 
-#: ../../../src/dev/extensions.rst:566
-msgid "``extensions/bindings.cpp`` provides Python bindings for our operation"
-msgstr ""
-
-#: ../../../src/dev/extensions.rst:567
+#: ../../../src/dev/extensions.rst:565
 msgid ""
-"``extensions/CMakeLists.txt`` holds CMake rules to build the library and "
-"Python bindings"
+"``cmake_extension/setup.py`` holds the ``setuptools`` rules to build and "
+"install the Python package"
 msgstr ""
 
 #: ../../../src/dev/extensions.rst:569
-msgid ""
-"``extensions/setup.py`` holds the ``setuptools`` rules to build and install "
-"the Python package"
-msgstr ""
-
-#: ../../../src/dev/extensions.rst:573
 msgid "Binding to Python"
 msgstr ""
 
-#: ../../../src/dev/extensions.rst:575
+#: ../../../src/dev/extensions.rst:571
 msgid ""
 "We use nanobind_ to build a Python API for the C++ library. Since bindings "
 "for components such as :class:`mlx.core.array`, :class:`mlx.core.stream`, "
 "etc. are already provided, adding our :meth:`axpby` is simple."
 msgstr ""
 
-#: ../../../src/dev/extensions.rst:579
+#: ../../../src/dev/extensions.rst:575
 msgid ""
-"NB_MODULE(_ext, m) {\n"
+"NB_MODULE(mlx_sample_extensions, m) {\n"
 "     m.doc() = \"Sample extension for MLX\";\n"
 "\n"
 "     m.def(\n"
@@ -838,31 +825,23 @@ msgid ""
 " }"
 msgstr ""
 
-#: ../../../src/dev/extensions.rst:611
+#: ../../../src/dev/extensions.rst:607
 msgid ""
 "Most of the complexity in the above example comes from additional bells and "
 "whistles such as the literal names and doc-strings."
 msgstr ""
 
-#: ../../../src/dev/extensions.rst:616
-msgid ""
-":mod:`mlx.core` must be imported before importing :mod:"
-"`mlx_sample_extensions` as defined by the nanobind module above to ensure "
-"that the casters for :mod:`mlx.core` components like :class:`mlx.core.array` "
-"are available."
-msgstr ""
-
-#: ../../../src/dev/extensions.rst:624
+#: ../../../src/dev/extensions.rst:613
 msgid "Building with CMake"
 msgstr ""
 
-#: ../../../src/dev/extensions.rst:626
+#: ../../../src/dev/extensions.rst:615
 msgid ""
 "Building the C++ extension library only requires that you ``find_package(MLX "
 "CONFIG)`` and then link it to your library."
 msgstr ""
 
-#: ../../../src/dev/extensions.rst:629
+#: ../../../src/dev/extensions.rst:618
 msgid ""
 "# Add library\n"
 "add_library(mlx_ext)\n"
@@ -883,7 +862,7 @@ msgid ""
 "target_link_libraries(mlx_ext PUBLIC mlx)"
 msgstr ""
 
-#: ../../../src/dev/extensions.rst:649
+#: ../../../src/dev/extensions.rst:638
 msgid ""
 "We also need to build the attached Metal library. For convenience, we "
 "provide a :meth:`mlx_build_metallib` function that builds a ``.metallib`` "
@@ -891,11 +870,11 @@ msgid ""
 "extension.cmake`` and automatically imported with MLX package)."
 msgstr ""
 
-#: ../../../src/dev/extensions.rst:654
+#: ../../../src/dev/extensions.rst:643
 msgid "Here is what that looks like in practice:"
 msgstr ""
 
-#: ../../../src/dev/extensions.rst:656
+#: ../../../src/dev/extensions.rst:645
 msgid ""
 "# Build metallib\n"
 "if(MLX_BUILD_METAL)\n"
@@ -916,36 +895,36 @@ msgid ""
 "endif()"
 msgstr ""
 
-#: ../../../src/dev/extensions.rst:676
+#: ../../../src/dev/extensions.rst:665
 msgid "Finally, we build the nanobind_ bindings"
 msgstr ""
 
-#: ../../../src/dev/extensions.rst:678
+#: ../../../src/dev/extensions.rst:667
 msgid ""
 "nanobind_add_module(\n"
-"  _ext\n"
+"  mlx_sample_extensions\n"
 "  NB_STATIC FREE_THREADED LTO NOMINSIZE\n"
 "  NB_DOMAIN mlx\n"
 "  ${CMAKE_CURRENT_LIST_DIR}/bindings.cpp\n"
 ")\n"
-"target_link_libraries(_ext PRIVATE mlx_ext)\n"
-"\n"
-"if(BUILD_SHARED_LIBS)\n"
-"  target_link_options(_ext PRIVATE -Wl,-rpath,@loader_path)\n"
-"endif()"
+"target_link_libraries(mlx_sample_extensions PRIVATE mlx_ext)"
 msgstr ""
 
-#: ../../../src/dev/extensions.rst:693
+#: ../../../src/dev/extensions.rst:678
 msgid "Building with ``setuptools``"
 msgstr ""
 
-#: ../../../src/dev/extensions.rst:695
+#: ../../../src/dev/extensions.rst:681
+msgid "Building with a ``CMakeLists.txt``"
+msgstr ""
+
+#: ../../../src/dev/extensions.rst:683
 msgid ""
 "Once we have set out the CMake build rules as described above, we can use "
 "the build utilities defined in :mod:`mlx.extension`:"
 msgstr ""
 
-#: ../../../src/dev/extensions.rst:698
+#: ../../../src/dev/extensions.rst:686
 msgid ""
 "from mlx import extension\n"
 "from setuptools import setup\n"
@@ -956,90 +935,251 @@ msgid ""
 "        version=\"0.0.0\",\n"
 "        description=\"Sample C++ and Metal extensions for MLX primitives."
 "\",\n"
-"        ext_modules=[extension.CMakeExtension(\"mlx_sample_extensions."
-"_ext\")],\n"
+"        ext_modules=[extension.CMakeExtension(\"mlx_sample_extensions\")],\n"
 "        cmdclass={\"build_ext\": extension.CMakeBuild},\n"
-"        packages=[\"mlx_sample_extensions\"],\n"
-"        package_data={\"mlx_sample_extensions\": [\"*.so\", \"*.dylib\", \"*."
-"metallib\"]},\n"
+"        packages=[],\n"
 "        extras_require={\"dev\":[]},\n"
 "        zip_safe=False,\n"
 "        python_requires=\">=3.10\",\n"
 "    )"
 msgstr ""
 
-#: ../../../src/dev/extensions.rst:718
+#: ../../../src/dev/extensions.rst:704
 msgid ""
-"We treat ``extensions/mlx_sample_extensions`` as the package directory even "
-"though it only contains a ``__init__.py`` to ensure the following:"
+"On macOS and Linux, ``CMakeBuild`` configures a relocatable runtime search "
+"path for all targets. It locates colocated libraries through "
+"``@loader_path`` on macOS or ``$ORIGIN`` on Linux, and locates the MLX "
+"library under ``mlx/lib`` in the same ``site-packages`` directory. The "
+"extension module can therefore load without importing ``mlx.core`` first. "
+"Values provided through ``CMAKE_ARGS`` can override this default."
 msgstr ""
 
-#: ../../../src/dev/extensions.rst:721
-msgid ":mod:`mlx.core` must be imported before importing :mod:`_ext`"
-msgstr ""
-
-#: ../../../src/dev/extensions.rst:722
+#: ../../../src/dev/extensions.rst:711
 msgid ""
-"The C++ extension library and the metal library are co-located with the "
-"python bindings and copied together if the package is installed"
+"The extension name is the Python import name. This example builds the top-"
+"level module ``mlx_sample_extensions`` without a Python wrapper package. A "
+"suffix such as ``._ext`` is optional: use a dotted name such as ``my_package."
+"_ext`` only when placing the extension inside a Python package. For "
+"``CMakeExtension``, the nanobind module name must match the final component "
+"of the extension name."
 msgstr ""
 
-#: ../../../src/dev/extensions.rst:725
+#: ../../../src/dev/extensions.rst:717
 msgid ""
 "To build the package, first install the build dependencies with ``pip "
 "install -r requirements.txt``.  You can then build inplace for development "
-"using ``python setup.py build_ext -j8 --inplace`` (in ``extensions/``)"
+"using ``python setup.py build_ext -j8 --inplace`` (in ``cmake_extension/``)"
 msgstr ""
 
-#: ../../../src/dev/extensions.rst:729
+#: ../../../src/dev/extensions.rst:721
 msgid "This results in the directory structure:"
 msgstr ""
 
-#: ../../../src/dev/extensions.rst:733
-msgid "│   ├── __init__.py"
+#: ../../../src/dev/extensions.rst:724
+msgid "├── libmlx_ext.dylib # C++ extension library"
 msgstr ""
 
-#: ../../../src/dev/extensions.rst:734
-msgid "│   ├── libmlx_ext.dylib # C++ extension library"
+#: ../../../src/dev/extensions.rst:725
+msgid "├── mlx_ext.metallib # Metal library"
 msgstr ""
 
-#: ../../../src/dev/extensions.rst:735
-msgid "│   ├── mlx_ext.metallib # Metal library"
+#: ../../../src/dev/extensions.rst:726
+msgid "├── mlx_sample_extensions.cpython-3x-darwin.so # Python binding"
 msgstr ""
 
-#: ../../../src/dev/extensions.rst:736
-msgid "│   └── _ext.cpython-3x-darwin.so # Python Binding"
-msgstr ""
-
-#: ../../../src/dev/extensions.rst:737
+#: ../../../src/dev/extensions.rst:727
 msgid "..."
 msgstr ""
 
-#: ../../../src/dev/extensions.rst:739
+#: ../../../src/dev/extensions.rst:729
 msgid ""
 "When you try to install using the command ``python -m pip install .`` (in "
-"``extensions/``), the package will be installed with the same structure as "
-"``extensions/mlx_sample_extensions`` and the C++ and Metal library will be "
-"copied along with the Python binding since they are specified as "
-"``package_data``."
+"``cmake_extension/``), the Python module and its C++ and Metal libraries are "
+"installed together directly under ``site-packages``."
 msgstr ""
 
-#: ../../../src/dev/extensions.rst:746
+#: ../../../src/dev/extensions.rst:734
+msgid "Building without a ``CMakeLists.txt``"
+msgstr ""
+
+#: ../../../src/dev/extensions.rst:736
+msgid ""
+"For a source-list based build, use ``mlx.extension.MetalExtension`` with "
+"``mlx.extension.BuildExtension``. The helper builds the C++/nanobind module "
+"and a colocated Metal library without requiring a ``CMakeLists.txt`` in the "
+"extension project."
+msgstr ""
+
+#: ../../../src/dev/extensions.rst:741
+msgid ""
+"from importlib.metadata import version as package_version\n"
+"\n"
+"from mlx import extension\n"
+"from setuptools import setup\n"
+"\n"
+"setup(\n"
+"    name=\"mlx_sample_metal_extension\",\n"
+"    ext_modules=[\n"
+"        extension.MetalExtension(\n"
+"            \"mlx_sample_metal_extension\",\n"
+"            sources=[\n"
+"                \"activation.cpp\",\n"
+"                \"silu_and_mul.metal\",\n"
+"            ],\n"
+"            extra_compile_args={\n"
+"                \"cxx\": [\"-O3\"],\n"
+"                \"metal\": [\"-O3\"],\n"
+"            },\n"
+"        )\n"
+"    ],\n"
+"    cmdclass={\"build_ext\": extension.BuildExtension},\n"
+"    install_requires=[f\"mlx=={package_version('mlx')}\"],\n"
+"    packages=[],\n"
+")"
+msgstr ""
+
+#: ../../../src/dev/extensions.rst:768
+msgid ""
+"As with ``CMakeExtension``, a ``._ext`` suffix is not required. The final "
+"component of the extension name is also the default Metal library name. This "
+"example builds the top-level module ``mlx_sample_metal_extension``, with "
+"``mlx_sample_metal_extension.metallib`` and ``mlx_sample_metal_extension."
+"pyi`` beside it. These files are included in the wheel and installed "
+"together under ``site-packages``."
+msgstr ""
+
+#: ../../../src/dev/extensions.rst:775
+msgid ""
+"A list passed as ``extra_compile_args`` applies to C++; a dictionary can "
+"provide separate ``cxx`` and ``metal`` options. To disable nanobind stub "
+"generation, configure the command class with ``BuildExtension."
+"with_options(generate_stubs=False)``."
+msgstr ""
+
+#: ../../../src/dev/extensions.rst:780
+msgid ""
+"Pin the ``mlx`` install requirement to the version used for the build "
+"because MLX does not provide a stable C++ ABI across releases. Reading the "
+"version from the installed package metadata avoids importing ``mlx.core`` "
+"during setup."
+msgstr ""
+
+#: ../../../src/dev/extensions.rst:784
+msgid ""
+"The generated extension uses a relocatable runtime search path to locate "
+"``libmlx.dylib`` under ``mlx/lib`` in the same ``site-packages`` directory. "
+"This avoids embedding the build machine's absolute MLX library path and lets "
+"the extension module load without importing ``mlx.core`` first."
+msgstr ""
+
+#: ../../../src/dev/extensions.rst:789
+msgid ""
+"The build defines ``MLX_EXTENSION_NAME`` as the final component of the "
+"extension name and ``MLX_METAL_LIBRARY_NAME`` as its string form. Use them "
+"so the binding does not hard-code either the module or Metal library name:"
+msgstr ""
+
+#: ../../../src/dev/extensions.rst:793
+msgid ""
+"auto library =\n"
+"    device.get_library(MLX_METAL_LIBRARY_NAME, current_binary_dir());\n"
+"\n"
+"NB_MODULE(MLX_EXTENSION_NAME, m) {\n"
+"  // bindings\n"
+"}"
+msgstr ""
+
+#: ../../../src/dev/extensions.rst:802
+msgid ""
+"To choose Metal library names or build multiple libraries, pass ``extension."
+"MetalLibrary`` objects through ``metal_libraries``:"
+msgstr ""
+
+#: ../../../src/dev/extensions.rst:805
+msgid ""
+"extension.MetalExtension(\n"
+"    \"mlx_sample_metal_extension\",\n"
+"    sources=[\"activation.cpp\"],\n"
+"    metal_libraries=[\n"
+"        extension.MetalLibrary(\n"
+"            \"activation\",\n"
+"            sources=[\"silu_and_mul.metal\"],\n"
+"            extra_compile_args=[\"-O3\"],\n"
+"            deployment_target=\"14.0\",\n"
+"        ),\n"
+"        extension.MetalLibrary(\n"
+"            \"something_else\",\n"
+"            sources=[\"something_else.metal\"],\n"
+"        ),\n"
+"    ],\n"
+")"
+msgstr ""
+
+#: ../../../src/dev/extensions.rst:824
+msgid ""
+"When ``metal_libraries`` is set, put all ``.metal`` sources in those objects "
+"and keep only C++ sources in ``MetalExtension.sources``. Each library needs "
+"a unique name, given without a path or ``.metallib`` suffix. This example "
+"builds ``activation.metallib`` and ``something_else.metallib`` beside the "
+"Python extension."
+msgstr ""
+
+#: ../../../src/dev/extensions.rst:830
+msgid ""
+"Each library's ``extra_compile_args`` are added after the extension's shared "
+"``extra_compile_args[\"metal\"]`` options. ``MLX_METAL_LIBRARY_NAME`` still "
+"contains the final component of the Python extension name. Load libraries "
+"explicitly by their configured names:"
+msgstr ""
+
+#: ../../../src/dev/extensions.rst:835
+msgid ""
+"auto library = device.get_library(\"activation\", current_binary_dir());"
+msgstr ""
+
+#: ../../../src/dev/extensions.rst:839
+msgid ""
+"Debug builds include Metal line tables and recorded sources. Metal logging "
+"is enabled when the current ``xcrun metal`` compiler advertises support. The "
+"effective Python ``MACOSX_DEPLOYMENT_TARGET`` is forwarded to CMake and "
+"applied to both AIR compilation and metallib linking. By default, the target "
+"recorded in the installed ``libmlx.dylib`` is used. Set "
+"``MACOSX_DEPLOYMENT_TARGET`` or pass ``CMAKE_OSX_DEPLOYMENT_TARGET`` through "
+"``CMAKE_ARGS`` to override it. This can select a lower target for cross-"
+"building, provided the extension is used with an MLX build for that target "
+"at runtime. Explicit targets below macOS 14 are rejected."
+msgstr ""
+
+#: ../../../src/dev/extensions.rst:850
+msgid ""
+"``BuildExtension`` uses CMake's platform default generator. To use Ninja, "
+"include ``ninja`` in the build requirements and configure the command class "
+"with ``BuildExtension.with_options(use_ninja=True)``. It falls back to the "
+"platform default generator if Ninja is not available."
+msgstr ""
+
+#: ../../../src/dev/extensions.rst:855
+msgid ""
+"The complete standalone example is available in ``examples/metal_extension/"
+"``."
+msgstr ""
+
+#: ../../../src/dev/extensions.rst:859
 msgid "Usage"
 msgstr ""
 
-#: ../../../src/dev/extensions.rst:748
+#: ../../../src/dev/extensions.rst:861
 msgid ""
 "After installing the extension as described above, you should be able to "
 "simply import the Python package and play with it as you would any other MLX "
 "operation."
 msgstr ""
 
-#: ../../../src/dev/extensions.rst:751
+#: ../../../src/dev/extensions.rst:864
 msgid "Let's look at a simple script and its results:"
 msgstr ""
 
-#: ../../../src/dev/extensions.rst:753
+#: ../../../src/dev/extensions.rst:866
 msgid ""
 "import mlx.core as mx\n"
 "from mlx_sample_extensions import axpby\n"
@@ -1053,28 +1193,28 @@ msgid ""
 "print(f\"c is correct: {mx.all(c == 6.0).item()}\")"
 msgstr ""
 
-#: ../../../src/dev/extensions.rst:766
+#: ../../../src/dev/extensions.rst:879
 msgid "Output:"
 msgstr ""
 
-#: ../../../src/dev/extensions.rst:768
+#: ../../../src/dev/extensions.rst:881
 msgid ""
 "c shape: [3, 4]\n"
 "c dtype: float32\n"
 "c is correct: True"
 msgstr ""
 
-#: ../../../src/dev/extensions.rst:775
+#: ../../../src/dev/extensions.rst:888
 msgid "Results"
 msgstr ""
 
-#: ../../../src/dev/extensions.rst:777
+#: ../../../src/dev/extensions.rst:890
 msgid ""
 "Let's run a quick benchmark and see how our new ``axpby`` operation compares "
 "with the naive :meth:`simple_axpby` we first defined."
 msgstr ""
 
-#: ../../../src/dev/extensions.rst:780
+#: ../../../src/dev/extensions.rst:893
 msgid ""
 "import mlx.core as mx\n"
 "from mlx_sample_extensions import axpby\n"
@@ -1115,29 +1255,29 @@ msgid ""
 "{custom_time:.3f} ms\")"
 msgstr ""
 
-#: ../../../src/dev/extensions.rst:818
+#: ../../../src/dev/extensions.rst:931
 msgid ""
 "The results are ``Simple axpby: 1.559 ms | Custom axpby: 0.774 ms``. We see "
 "modest improvements right away!"
 msgstr ""
 
-#: ../../../src/dev/extensions.rst:821
+#: ../../../src/dev/extensions.rst:934
 msgid ""
 "This operation is now good to be used to build other operations, in :class:"
 "`mlx.nn.Module` calls, and also as a part of graph transformations like :"
 "meth:`grad`."
 msgstr ""
 
-#: ../../../src/dev/extensions.rst:826
+#: ../../../src/dev/extensions.rst:939
 msgid "Scripts"
 msgstr ""
 
-#: ../../../src/dev/extensions.rst:828
+#: ../../../src/dev/extensions.rst:941
 msgid "Download the code"
 msgstr ""
 
-#: ../../../src/dev/extensions.rst:830
+#: ../../../src/dev/extensions.rst:943
 msgid ""
 "The full example code is available in `mlx <https://github.com/ml-explore/"
-"mlx/tree/main/examples/extensions/>`_."
+"mlx/tree/main/examples/cmake_extension/>`_."
 msgstr ""
