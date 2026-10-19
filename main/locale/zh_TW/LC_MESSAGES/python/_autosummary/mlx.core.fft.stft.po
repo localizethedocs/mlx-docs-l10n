@@ -34,11 +34,11 @@ msgstr ""
 
 #: ../../../src/python/_autosummary/mlx.core.fft.stft.rst:0
 msgid "Parameters"
-msgstr ""
+msgstr "參數"
 
 #: ../../../docstring of mlx.core.fft.stft:7
 msgid "The input array."
-msgstr ""
+msgstr "輸入陣列。"
 
 #: ../../../docstring of mlx.core.fft.stft:9
 msgid "Size of the Fourier Transform. Default is ``2048``."
@@ -82,7 +82,7 @@ msgstr ""
 
 #: ../../../src/python/_autosummary/mlx.core.fft.stft.rst:0
 msgid "Returns"
-msgstr ""
+msgstr "回傳值"
 
 #: ../../../docstring of mlx.core.fft.stft:30
 msgid "The STFT of ``x``."
@@ -90,4 +90,4 @@ msgstr ""
 
 #: ../../../src/python/_autosummary/mlx.core.fft.stft.rst:0
 msgid "Return type"
-msgstr ""
+msgstr "回傳值型別"

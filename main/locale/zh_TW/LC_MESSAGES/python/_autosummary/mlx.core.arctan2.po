@@ -31,7 +31,7 @@ msgstr "參數"
 
 #: ../../../docstring of mlx.core.arctan2:3 mlx.core.arctan2:5
 msgid "Input array or scalar."
-msgstr ""
+msgstr "輸入陣列或純量。"
 
 #: ../../../src/python/_autosummary/mlx.core.arctan2.rst:0
 msgid "Returns"
@@ -44,6 +44,3 @@ msgstr "``a`` 與 ``b`` 比值的反正切。"
 #: ../../../src/python/_autosummary/mlx.core.arctan2.rst:0
 msgid "Return type"
 msgstr "回傳型別"
-
-#~ msgid "Input array."
-#~ msgstr "輸入陣列。"
