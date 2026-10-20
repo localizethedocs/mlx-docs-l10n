@@ -37,9 +37,9 @@
     "branch" : "main",
     "commit" : 
     {
-      "date" : "2026-10-12 15:44:27 +0900",
-      "hash" : "388f227f466ef600243bcfce64181ad0d675c476",
-      "title" : "python: Make arctan2/radians/degrees support scalar inputs (#4679)"
+      "date" : "2026-10-19 15:26:34 +0900",
+      "hash" : "f41bec734ac9fc96723ab7d4e64e385796f15561",
+      "title" : "Fix unaligned scalar reads and oversized contiguous buffer views (#4721)"
     }
   },
   "type" : "branch",
