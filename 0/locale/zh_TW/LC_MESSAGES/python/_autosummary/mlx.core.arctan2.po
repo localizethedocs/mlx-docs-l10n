@@ -31,7 +31,7 @@ msgstr "參數"
 
 #: ../../../docstring of mlx.core.arctan2:3 mlx.core.arctan2:5
 msgid "Input array."
-msgstr "輸入陣列。"
+msgstr ""
 
 #: ../../../src/python/_autosummary/mlx.core.arctan2.rst:0
 msgid "Returns"
