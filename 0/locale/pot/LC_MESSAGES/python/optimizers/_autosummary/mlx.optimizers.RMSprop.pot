@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MLX 0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-06-23 11:30+0000\n"
+"POT-Creation-Date: 2026-10-27 14:13+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -34,7 +34,7 @@ msgid ""
 msgstr ""
 
 #: ../../../../../../.conda/lib/python3.12/site-packages/mlx/optimizers/optimizers.py:docstring
-#: of mlx.optimizers.optimizers.RMSprop:5
+#: of mlx.optimizers.optimizers.RMSprop:6
 msgid ""
 "v_{t+1} &= \\alpha v_t + (1 - \\alpha) g_t^2 \\\\\n"
 "w_{t+1} &= w_t - \\lambda \\frac{g_t}{\\sqrt{v_{t+1}} + \\epsilon}"
@@ -45,17 +45,17 @@ msgid "Parameters"
 msgstr ""
 
 #: ../../../../../../.conda/lib/python3.12/site-packages/mlx/optimizers/optimizers.py:docstring
-#: of mlx.optimizers.optimizers.RMSprop:10
+#: of mlx.optimizers.optimizers.RMSprop:11
 msgid "The learning rate :math:`\\lambda`."
 msgstr ""
 
 #: ../../../../../../.conda/lib/python3.12/site-packages/mlx/optimizers/optimizers.py:docstring
-#: of mlx.optimizers.optimizers.RMSprop:12
+#: of mlx.optimizers.optimizers.RMSprop:13
 msgid "The smoothing constant :math:`\\alpha`. Default: ``0.99``"
 msgstr ""
 
 #: ../../../../../../.conda/lib/python3.12/site-packages/mlx/optimizers/optimizers.py:docstring
-#: of mlx.optimizers.optimizers.RMSprop:15
+#: of mlx.optimizers.optimizers.RMSprop:16
 msgid ""
 "The term :math:`\\epsilon` added to the denominator to improve numerical "
 "stability. Default: ``1e-8``"
@@ -67,14 +67,14 @@ msgstr ""
 
 #: ../../../src/python/optimizers/_autosummary/mlx.optimizers.RMSprop.rst:17:<autosummary>:1
 msgid ""
-":py:obj:`__init__ <mlx.optimizers.RMSprop.__init__>`\\ "
-"\\(learning\\_rate\\[\\, alpha\\, eps\\]\\)"
+":py:obj:`__init__ <mlx.optimizers.RMSprop.__init__>`\\ \\(learning\\_rate\\"
+"[\\, alpha\\, eps\\]\\)"
 msgstr ""
 
 #: ../../../src/python/optimizers/_autosummary/mlx.optimizers.RMSprop.rst:17:<autosummary>:1
 msgid ""
-":py:obj:`apply_single <mlx.optimizers.RMSprop.apply_single>`\\ "
-"\\(gradient\\, parameter\\, state\\)"
+":py:obj:`apply_single <mlx.optimizers.RMSprop.apply_single>`\\ \\"
+"(gradient\\, parameter\\, state\\)"
 msgstr ""
 
 #: ../../../src/python/optimizers/_autosummary/mlx.optimizers.RMSprop.rst:17:<autosummary>:1

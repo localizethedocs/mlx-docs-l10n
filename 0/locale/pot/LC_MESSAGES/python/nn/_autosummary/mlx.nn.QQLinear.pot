@@ -8,10 +8,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MLX 0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-10-06 15:14+0000\n"
+"POT-Creation-Date: 2026-10-27 14:13+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -60,21 +61,21 @@ msgid ""
 msgstr ""
 
 #: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/quantized.py:docstring
-#: of mlx.nn.layers.quantized.QQLinear:13
+#: of mlx.nn.layers.quantized.QQLinear:14
 msgid ""
 "Compared to the :class:`mlx.nn.QuantizedLinear` layer, this layer quantizes "
 "the input as well and includes weights in gradient computations."
 msgstr ""
 
 #: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/quantized.py:docstring
-#: of mlx.nn.layers.quantized.QQLinear:16
+#: of mlx.nn.layers.quantized.QQLinear:17
 msgid ""
 ":obj:`QQLinear` also provides the class method :meth:`from_linear` to "
 "convert :class:`mlx.nn.Linear` layers to :obj:`QQLinear` layers."
 msgstr ""
 
 #: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/quantized.py:docstring
-#: of mlx.nn.layers.quantized.QQLinear:19
+#: of mlx.nn.layers.quantized.QQLinear:20
 msgid "Note: This layer does not support a bias term yet."
 msgstr ""
 
@@ -83,31 +84,31 @@ msgid "Parameters"
 msgstr ""
 
 #: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/quantized.py:docstring
-#: of mlx.nn.layers.quantized.QQLinear:21
+#: of mlx.nn.layers.quantized.QQLinear:22
 msgid "The dimensionality of the input features."
 msgstr ""
 
 #: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/quantized.py:docstring
-#: of mlx.nn.layers.quantized.QQLinear:23
+#: of mlx.nn.layers.quantized.QQLinear:24
 msgid "The dimensionality of the output features."
 msgstr ""
 
 #: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/quantized.py:docstring
-#: of mlx.nn.layers.quantized.QQLinear:25
+#: of mlx.nn.layers.quantized.QQLinear:26
 msgid ""
-"The group size to use for the quantized weight. See :func:`~mlx.core."
-"quantize`. Default: ``None``."
+"The group size to use for the quantized weight. "
+"See :func:`~mlx.core.quantize`. Default: ``None``."
 msgstr ""
 
 #: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/quantized.py:docstring
-#: of mlx.nn.layers.quantized.QQLinear:28
+#: of mlx.nn.layers.quantized.QQLinear:29
 msgid ""
-"The bit width to use for the quantized weight. See :func:`~mlx.core."
-"quantize`. Default: ``None``."
+"The bit width to use for the quantized weight. "
+"See :func:`~mlx.core.quantize`. Default: ``None``."
 msgstr ""
 
 #: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/quantized.py:docstring
-#: of mlx.nn.layers.quantized.QQLinear:31
+#: of mlx.nn.layers.quantized.QQLinear:32
 msgid ""
 "The quantization method to use (see :func:`mlx.core.quantize`). Currently, "
 "only ``\"nvfp4\"`` and ``\"mxfp8\"`` are supported. Default: ``\"nvfp4\"``."
@@ -123,8 +124,8 @@ msgstr ""
 
 #: ../../../src/python/nn/_autosummary/mlx.nn.QQLinear.rst:17:<autosummary>:1
 msgid ""
-":py:obj:`from_linear <mlx.nn.QQLinear.from_linear>`\\ "
-"\\(linear\\_layer\\[\\, group\\_size\\, ...\\]\\)"
+":py:obj:`from_linear <mlx.nn.QQLinear.from_linear>`\\ \\(linear\\_layer\\"
+"[\\, group\\_size\\, ...\\]\\)"
 msgstr ""
 
 #: ../../../src/python/nn/_autosummary/mlx.nn.QQLinear.rst:17:<autosummary>:1

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MLX 0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-06-23 11:30+0000\n"
+"POT-Creation-Date: 2026-10-27 14:13+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -145,7 +145,7 @@ msgid "32, 64\\ :sup:`*`, 128"
 msgstr ""
 
 #: ../../../docstring of mlx.core.quantize:47
-msgid "2, 3, 4\\ :sup:`*`, 5, 6, 8"
+msgid "1, 2, 3, 4\\ :sup:`*`, 5, 6, 8"
 msgstr ""
 
 #: ../../../docstring of mlx.core.quantize:47
@@ -229,8 +229,9 @@ msgstr ""
 
 #: ../../../docstring of mlx.core.quantize:74
 msgid ""
-"To dequantize the elements of ``w``, we also save :math:`s` and :math:"
-"`\\beta` which are the returned ``scales`` and ``biases`` respectively."
+"To dequantize the elements of ``w``, we also save :math:`s` "
+"and :math:`\\beta` which are the returned ``scales`` and ``biases`` "
+"respectively."
 msgstr ""
 
 #: ../../../docstring of mlx.core.quantize:78
