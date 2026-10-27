@@ -29,8 +29,8 @@ msgstr ""
 msgid ""
 "Performs a gather of the operands with the given indices followed by a "
 "(possibly batched) matrix multiplication of two arrays.  This operation is "
-"more efficient than explicitly applying a :func:`take` followed by a :func:"
-"`matmul`."
+"more efficient than explicitly applying a :func:`take` followed by "
+"a :func:`matmul`."
 msgstr ""
 
 #: ../../../docstring of mlx.core.gather_mm:8

@@ -38,20 +38,23 @@ msgstr ""
 
 #: ../../../docstring of mlx.core.block_masked_mm:8
 msgid ""
-"``lhs_mask`` must have shape (..., :math:`\\lceil` `M` / ``block_size`` :"
-"math:`\\rceil`, :math:`\\lceil` `K` / ``block_size`` :math:`\\rceil`)"
+"``lhs_mask`` must have shape (..., :math:`\\lceil` `M` / "
+"``block_size`` :math:`\\rceil`, :math:`\\lceil` `K` / "
+"``block_size`` :math:`\\rceil`)"
 msgstr ""
 
 #: ../../../docstring of mlx.core.block_masked_mm:10
 msgid ""
-"``rhs_mask`` must have shape (..., :math:`\\lceil` `K` / ``block_size`` :"
-"math:`\\rceil`, :math:`\\lceil` `N` / ``block_size`` :math:`\\rceil`)"
+"``rhs_mask`` must have shape (..., :math:`\\lceil` `K` / "
+"``block_size`` :math:`\\rceil`, :math:`\\lceil` `N` / "
+"``block_size`` :math:`\\rceil`)"
 msgstr ""
 
 #: ../../../docstring of mlx.core.block_masked_mm:12
 msgid ""
-"``out_mask`` must have shape (..., :math:`\\lceil` `M` / ``block_size`` :"
-"math:`\\rceil`, :math:`\\lceil` `N` / ``block_size`` :math:`\\rceil`)"
+"``out_mask`` must have shape (..., :math:`\\lceil` `M` / "
+"``block_size`` :math:`\\rceil`, :math:`\\lceil` `N` / "
+"``block_size`` :math:`\\rceil`)"
 msgstr ""
 
 #: ../../../docstring of mlx.core.block_masked_mm:14

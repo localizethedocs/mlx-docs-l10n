@@ -67,14 +67,14 @@ msgstr "方法"
 
 #: ../../../src/python/optimizers/_autosummary/mlx.optimizers.Adagrad.rst:17:<autosummary>:1
 msgid ""
-":py:obj:`__init__ <mlx.optimizers.Adagrad.__init__>`\\ "
-"\\(learning\\_rate\\[\\, eps\\]\\)"
+":py:obj:`__init__ <mlx.optimizers.Adagrad.__init__>`\\ \\(learning\\_rate\\"
+"[\\, eps\\]\\)"
 msgstr ""
 
 #: ../../../src/python/optimizers/_autosummary/mlx.optimizers.Adagrad.rst:17:<autosummary>:1
 msgid ""
-":py:obj:`apply_single <mlx.optimizers.Adagrad.apply_single>`\\ "
-"\\(gradient\\, parameter\\, state\\)"
+":py:obj:`apply_single <mlx.optimizers.Adagrad.apply_single>`\\ \\"
+"(gradient\\, parameter\\, state\\)"
 msgstr ""
 
 #: ../../../src/python/optimizers/_autosummary/mlx.optimizers.Adagrad.rst:17:<autosummary>:1

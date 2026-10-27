@@ -61,8 +61,8 @@ msgstr ""
 
 #: ../../../docstring of mlx.core.linalg.cholesky_inv:19
 msgid ""
-"Input array. This is the Cholesky factor :math:`\\mathbf{L}`, not :math:"
-"`\\mathbf{A}` itself."
+"Input array. This is the Cholesky factor :math:`\\mathbf{L}`, "
+"not :math:`\\mathbf{A}` itself."
 msgstr ""
 
 #: ../../../docstring of mlx.core.linalg.cholesky_inv:22

@@ -23,11 +23,11 @@ msgstr ""
 
 #: ../../../src/python/nn.rst:8
 msgid ""
-"Writing arbitrarily complex neural networks in MLX can be done using only :"
-"class:`mlx.core.array` and :meth:`mlx.core.value_and_grad`. However, this "
-"requires the user to write again and again the same simple neural network "
-"operations as well as handle all the parameter state and initialization "
-"manually and explicitly."
+"Writing arbitrarily complex neural networks in MLX can be done using "
+"only :class:`mlx.core.array` and :meth:`mlx.core.value_and_grad`. However, "
+"this requires the user to write again and again the same simple neural "
+"network operations as well as handle all the parameter state and "
+"initialization manually and explicitly."
 msgstr ""
 
 #: ../../../src/python/nn.rst:13
@@ -96,8 +96,8 @@ msgstr ""
 #: ../../../src/python/nn.rst:72
 msgid ""
 "The workhorse of any neural network library is the :class:`Module` class. In "
-"MLX the :class:`Module` class is a container of :class:`mlx.core.array` or :"
-"class:`Module` instances. Its main function is to provide a way to "
+"MLX the :class:`Module` class is a container of :class:`mlx.core.array` "
+"or :class:`Module` instances. Its main function is to provide a way to "
 "recursively **access** and **update** its parameters and those of its "
 "submodules."
 msgstr ""
@@ -121,9 +121,10 @@ msgstr ""
 
 #: ../../../src/python/nn.rst:88
 msgid ""
-"A :class:`Module` can also keep track of \"frozen\" parameters. See the :"
-"meth:`Module.freeze` method for more details. :meth:`mlx.nn.value_and_grad` "
-"the gradients returned will be with respect to these trainable parameters."
+"A :class:`Module` can also keep track of \"frozen\" parameters. See "
+"the :meth:`Module.freeze` method for more "
+"details. :meth:`mlx.nn.value_and_grad` the gradients returned will be with "
+"respect to these trainable parameters."
 msgstr ""
 
 #: ../../../src/python/nn.rst:94
@@ -179,8 +180,8 @@ msgstr ""
 
 #: ../../../src/python/nn.rst:130
 msgid ""
-"As another example, you can count the number of parameters in a :class:"
-"`Module` with:"
+"As another example, you can count the number of parameters in "
+"a :class:`Module` with:"
 msgstr ""
 
 #: ../../../src/python/nn.rst:133
@@ -231,8 +232,9 @@ msgstr ""
 
 #: ../../../src/python/nn.rst:164
 msgid ""
-"it wraps the passed function with a function that calls :meth:`Module."
-"update` to make sure the model is using the provided parameters."
+"it wraps the passed function with a function that "
+"calls :meth:`Module.update` to make sure the model is using the provided "
+"parameters."
 msgstr ""
 
 #: ../../../src/python/nn.rst:166
@@ -245,8 +247,8 @@ msgstr ""
 #: ../../../src/python/nn.rst:168
 msgid ""
 "it wraps the returned function with a function that passes the trainable "
-"parameters as the first argument to the function returned by :meth:`mlx.core."
-"value_and_grad`"
+"parameters as the first argument to the function returned "
+"by :meth:`mlx.core.value_and_grad`"
 msgstr ""
 
 #: ../../../src/python/nn.rst:178:<autosummary>:1

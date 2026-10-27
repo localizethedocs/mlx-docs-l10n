@@ -47,8 +47,8 @@ msgid ""
 "library. For more information see the :ref:`documentation on installing MLX "
 "<build_and_install>`."
 msgstr ""
-"你也可以從來源碼安裝 MLX Python 軟體包，或只安裝 C++ 程式庫。更多資訊請見 :"
-"ref:`安裝 MLX 的文件 <build_and_install>`。"
+"你也可以從來源碼安裝 MLX Python 軟體包，或只安裝 C++ 程式庫。更多資訊請"
+"見 :ref:`安裝 MLX 的文件 <build_and_install>`。"
 
 #: ../../../src/dev/mlx_in_cpp.rst:23
 msgid "Next make an example program in ``example.cpp``:"

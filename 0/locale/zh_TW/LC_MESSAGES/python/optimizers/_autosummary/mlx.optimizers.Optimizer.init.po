@@ -33,8 +33,8 @@ msgid ""
 "momentum in :class:`SGD`). Using this method is optional as the optimizer "
 "will initialize itself if the state is not yet set. However, there are some "
 "cases where explicit initialization is useful in order to have access to "
-"the :attr:`Optimizer.state` before the first call to :meth:`Optimizer."
-"update`."
+"the :attr:`Optimizer.state` before the first call "
+"to :meth:`Optimizer.update`."
 msgstr ""
 
 #: ../../../../../../.conda/lib/python3.12/site-packages/mlx/optimizers/optimizers.py:docstring

@@ -66,8 +66,8 @@ msgstr ""
 #: of mlx.nn.layers.base.Module.unfreeze:19
 msgid ""
 "If provided then only these parameters will be unfrozen otherwise all the "
-"parameters of a module. For instance unfreeze all biases by calling ``module."
-"unfreeze(keys=\"bias\")``."
+"parameters of a module. For instance unfreeze all biases by calling "
+"``module.unfreeze(keys=\"bias\")``."
 msgstr ""
 
 #: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/base.py:docstring

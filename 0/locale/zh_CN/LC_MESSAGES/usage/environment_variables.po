@@ -42,8 +42,8 @@ msgstr ""
 #: ../../../src/usage/environment_variables.rst:19
 msgid ""
 "Disable compilation globally. This variable is enabled by its presence, so "
-"setting it to ``0`` also disables compilation. Calling :func:`mlx.core."
-"enable_compile` overrides it."
+"setting it to ``0`` also disables compilation. "
+"Calling :func:`mlx.core.enable_compile` overrides it."
 msgstr ""
 
 #: ../../../src/usage/environment_variables.rst:25
@@ -120,8 +120,8 @@ msgid ""
 "The NCCL backend also requires ``NCCL_HOST_IP`` and ``NCCL_PORT``. Setting "
 "``NCCL_DEBUG=INFO`` enables additional logging while MLX establishes the "
 "bootstrap connection. NCCL itself recognizes additional `NCCL environment "
-"variables <https://docs.nvidia.com/deeplearning/nccl/user-guide/docs/env."
-"html>`_. ``CUDA_VISIBLE_DEVICES`` selects the local CUDA device for each "
+"variables <https://docs.nvidia.com/deeplearning/nccl/user-guide/docs/"
+"env.html>`_. ``CUDA_VISIBLE_DEVICES`` selects the local CUDA device for each "
 "process and is handled by the CUDA runtime."
 msgstr ""
 

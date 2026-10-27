@@ -178,8 +178,8 @@ msgstr "請參見 :func:`argmin`。"
 
 #: ../../../src/python/array.rst:65:<autosummary>:1
 msgid ""
-":py:obj:`array.conj <mlx.core.array.conj>`\\ \\(self\\, \\*\\[\\, "
-"stream\\]\\)"
+":py:obj:`array.conj <mlx.core.array.conj>`\\ \\(self\\, \\*\\[\\, stream\\]"
+"\\)"
 msgstr ""
 
 #: ../../../src/python/array.rst:65:<autosummary>:1
@@ -284,8 +284,8 @@ msgstr "請參見 :func:`log`。"
 
 #: ../../../src/python/array.rst:65:<autosummary>:1
 msgid ""
-":py:obj:`array.log10 <mlx.core.array.log10>`\\ \\(self\\, \\*\\[\\, "
-"stream\\]\\)"
+":py:obj:`array.log10 <mlx.core.array.log10>`\\ \\(self\\, \\*\\[\\, stream\\]"
+"\\)"
 msgstr ""
 
 #: ../../../src/python/array.rst:65:<autosummary>:1
@@ -294,8 +294,8 @@ msgstr "請參見 :func:`log10`。"
 
 #: ../../../src/python/array.rst:65:<autosummary>:1
 msgid ""
-":py:obj:`array.log1p <mlx.core.array.log1p>`\\ \\(self\\, \\*\\[\\, "
-"stream\\]\\)"
+":py:obj:`array.log1p <mlx.core.array.log1p>`\\ \\(self\\, \\*\\[\\, stream\\]"
+"\\)"
 msgstr ""
 
 #: ../../../src/python/array.rst:65:<autosummary>:1
@@ -304,8 +304,8 @@ msgstr "請參見 :func:`log1p`。"
 
 #: ../../../src/python/array.rst:65:<autosummary>:1
 msgid ""
-":py:obj:`array.log2 <mlx.core.array.log2>`\\ \\(self\\, \\*\\[\\, "
-"stream\\]\\)"
+":py:obj:`array.log2 <mlx.core.array.log2>`\\ \\(self\\, \\*\\[\\, stream\\]"
+"\\)"
 msgstr ""
 
 #: ../../../src/python/array.rst:65:<autosummary>:1
@@ -384,8 +384,8 @@ msgstr "請參見 :func:`prod`。"
 
 #: ../../../src/python/array.rst:65:<autosummary>:1
 msgid ""
-":py:obj:`array.reciprocal <mlx.core.array.reciprocal>`\\ \\(self\\, "
-"\\*\\[\\, stream\\]\\)"
+":py:obj:`array.reciprocal <mlx.core.array.reciprocal>`\\ \\(self\\, \\*\\"
+"[\\, stream\\]\\)"
 msgstr ""
 
 #: ../../../src/python/array.rst:65:<autosummary>:1
@@ -400,8 +400,8 @@ msgstr ""
 
 #: ../../../src/python/array.rst:65:<autosummary>:1
 msgid ""
-"Equivalent to :func:`reshape` but the shape can be passed either as a :obj:"
-"`tuple` or as separate arguments."
+"Equivalent to :func:`reshape` but the shape can be passed either as "
+"a :obj:`tuple` or as separate arguments."
 msgstr "等同於 :func:`reshape`，但形狀可用 :obj:`tuple` 或分開參數傳入。"
 
 #: ../../../src/python/array.rst:65:<autosummary>:1
@@ -416,8 +416,8 @@ msgstr "請參見 :func:`round`。"
 
 #: ../../../src/python/array.rst:65:<autosummary>:1
 msgid ""
-":py:obj:`array.rsqrt <mlx.core.array.rsqrt>`\\ \\(self\\, \\*\\[\\, "
-"stream\\]\\)"
+":py:obj:`array.rsqrt <mlx.core.array.rsqrt>`\\ \\(self\\, \\*\\[\\, stream\\]"
+"\\)"
 msgstr ""
 
 #: ../../../src/python/array.rst:65:<autosummary>:1
@@ -445,8 +445,8 @@ msgstr "請參見 :func:`split`。"
 
 #: ../../../src/python/array.rst:65:<autosummary>:1
 msgid ""
-":py:obj:`array.sqrt <mlx.core.array.sqrt>`\\ \\(self\\, \\*\\[\\, "
-"stream\\]\\)"
+":py:obj:`array.sqrt <mlx.core.array.sqrt>`\\ \\(self\\, \\*\\[\\, stream\\]"
+"\\)"
 msgstr ""
 
 #: ../../../src/python/array.rst:65:<autosummary>:1
@@ -505,8 +505,8 @@ msgstr "請參見 :func:`swapaxes`。"
 
 #: ../../../src/python/array.rst:65:<autosummary>:1
 msgid ""
-":py:obj:`array.transpose <mlx.core.array.transpose>`\\ \\(self\\, "
-"\\*axes\\[\\, stream\\]\\)"
+":py:obj:`array.transpose <mlx.core.array.transpose>`\\ \\(self\\, \\*axes\\"
+"[\\, stream\\]\\)"
 msgstr ""
 
 #: ../../../src/python/array.rst:65:<autosummary>:1

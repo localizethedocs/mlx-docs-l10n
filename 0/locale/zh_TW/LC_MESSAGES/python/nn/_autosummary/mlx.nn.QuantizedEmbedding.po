@@ -52,15 +52,15 @@ msgstr ""
 #: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/quantized.py:docstring
 #: of mlx.nn.layers.quantized.QuantizedEmbedding:12
 msgid ""
-"The group size to use for the quantized weight. See :func:`~mlx.core."
-"quantize`. Default: ``None``."
+"The group size to use for the quantized weight. "
+"See :func:`~mlx.core.quantize`. Default: ``None``."
 msgstr ""
 
 #: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/quantized.py:docstring
 #: of mlx.nn.layers.quantized.QuantizedEmbedding:15
 msgid ""
-"The bit width to use for the quantized weight. See :func:`~mlx.core."
-"quantize`. Default: ``None``."
+"The bit width to use for the quantized weight. "
+"See :func:`~mlx.core.quantize`. Default: ``None``."
 msgstr ""
 
 #: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/quantized.py:docstring
@@ -84,8 +84,8 @@ msgstr ""
 
 #: ../../../src/python/nn/_autosummary/mlx.nn.QuantizedEmbedding.rst:16:<autosummary>:1
 msgid ""
-":py:obj:`from_embedding <mlx.nn.QuantizedEmbedding.from_embedding>`\\ "
-"\\(embedding\\_layer\\[\\, ...\\]\\)"
+":py:obj:`from_embedding <mlx.nn.QuantizedEmbedding.from_embedding>`\\ \\"
+"(embedding\\_layer\\[\\, ...\\]\\)"
 msgstr ""
 
 #: ../../../src/python/nn/_autosummary/mlx.nn.QuantizedEmbedding.rst:16:<autosummary>:1

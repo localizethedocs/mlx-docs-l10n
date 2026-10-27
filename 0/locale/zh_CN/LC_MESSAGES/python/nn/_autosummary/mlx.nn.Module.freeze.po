@@ -48,8 +48,8 @@ msgstr ""
 msgid ""
 "model = nn.Transformer()\n"
 "model.freeze()\n"
-"model.apply_to_modules(lambda k, v: v.unfreeze() if k."
-"endswith(\"attention\") else None)"
+"model.apply_to_modules(lambda k, v: v.unfreeze() if "
+"k.endswith(\"attention\") else None)"
 msgstr ""
 
 #: ../../../src/python/nn/_autosummary/mlx.nn.Module.freeze.rst:0
@@ -67,8 +67,8 @@ msgstr ""
 #: of mlx.nn.layers.base.Module.freeze:19
 msgid ""
 "If provided then only these parameters will be frozen otherwise all the "
-"parameters of a module. For instance freeze all biases by calling ``module."
-"freeze(keys=\"bias\")``."
+"parameters of a module. For instance freeze all biases by calling "
+"``module.freeze(keys=\"bias\")``."
 msgstr ""
 
 #: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/base.py:docstring

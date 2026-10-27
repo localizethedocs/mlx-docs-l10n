@@ -96,15 +96,15 @@ msgstr ""
 #: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/quantized.py:docstring
 #: of mlx.nn.layers.quantized.QQLinear:25
 msgid ""
-"The group size to use for the quantized weight. See :func:`~mlx.core."
-"quantize`. Default: ``None``."
+"The group size to use for the quantized weight. "
+"See :func:`~mlx.core.quantize`. Default: ``None``."
 msgstr ""
 
 #: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/quantized.py:docstring
 #: of mlx.nn.layers.quantized.QQLinear:28
 msgid ""
-"The bit width to use for the quantized weight. See :func:`~mlx.core."
-"quantize`. Default: ``None``."
+"The bit width to use for the quantized weight. "
+"See :func:`~mlx.core.quantize`. Default: ``None``."
 msgstr ""
 
 #: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/quantized.py:docstring
@@ -124,8 +124,8 @@ msgstr ""
 
 #: ../../../src/python/nn/_autosummary/mlx.nn.QQLinear.rst:17:<autosummary>:1
 msgid ""
-":py:obj:`from_linear <mlx.nn.QQLinear.from_linear>`\\ "
-"\\(linear\\_layer\\[\\, group\\_size\\, ...\\]\\)"
+":py:obj:`from_linear <mlx.nn.QQLinear.from_linear>`\\ \\(linear\\_layer\\"
+"[\\, group\\_size\\, ...\\]\\)"
 msgstr ""
 
 #: ../../../src/python/nn/_autosummary/mlx.nn.QQLinear.rst:17:<autosummary>:1

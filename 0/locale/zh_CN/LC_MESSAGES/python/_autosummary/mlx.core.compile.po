@@ -31,9 +31,9 @@ msgstr ""
 
 #: ../../../docstring of mlx.core.compile:3
 msgid ""
-"A function which takes a variable number of :class:`array` or trees of :"
-"class:`array` and returns a variable number of :class:`array` or trees of :"
-"class:`array`."
+"A function which takes a variable number of :class:`array` or trees "
+"of :class:`array` and returns a variable number of :class:`array` or trees "
+"of :class:`array`."
 msgstr ""
 
 #: ../../../docstring of mlx.core.compile:7

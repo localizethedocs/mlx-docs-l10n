@@ -23,8 +23,8 @@ msgstr "快速"
 
 #: ../../../src/python/fast.rst:18:<autosummary>:1
 msgid ""
-":py:obj:`rms_norm <mlx.core.fast.rms_norm>`\\ \\(x\\, weight\\, eps\\, "
-"\\*\\[\\, stream\\]\\)"
+":py:obj:`rms_norm <mlx.core.fast.rms_norm>`\\ \\(x\\, weight\\, eps\\, \\*\\"
+"[\\, stream\\]\\)"
 msgstr ""
 
 #: ../../../src/python/fast.rst:18:<autosummary>:1
@@ -63,8 +63,9 @@ msgstr "對輸入套用旋轉位置編碼。"
 
 #: ../../../src/python/fast.rst:18:<autosummary>:1
 msgid ""
-":py:obj:`scaled_dot_product_attention <mlx.core.fast."
-"scaled_dot_product_attention>`\\ \\(q\\, k\\, v\\, \\*\\, scale\\)"
+":py:obj:`scaled_dot_product_attention "
+"<mlx.core.fast.scaled_dot_product_attention>`\\ \\(q\\, k\\, v\\, \\*\\, "
+"scale\\)"
 msgstr ""
 
 #: ../../../src/python/fast.rst:18:<autosummary>:1

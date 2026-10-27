@@ -46,8 +46,8 @@ msgstr ""
 
 #: ../../../src/python/nn/_autosummary/mlx.nn.ALiBi.rst:16:<autosummary>:1
 msgid ""
-":py:obj:`create_alibi_matrix <mlx.nn.ALiBi.create_alibi_matrix>`\\ "
-"\\(q\\_sequence\\_length\\, ...\\)"
+":py:obj:`create_alibi_matrix <mlx.nn.ALiBi.create_alibi_matrix>`\\ \\"
+"(q\\_sequence\\_length\\, ...\\)"
 msgstr ""
 
 #: ../../../src/python/nn/_autosummary/mlx.nn.ALiBi.rst:16:<autosummary>:1
@@ -56,8 +56,8 @@ msgstr ""
 
 #: ../../../src/python/nn/_autosummary/mlx.nn.ALiBi.rst:16:<autosummary>:1
 msgid ""
-":py:obj:`create_alibi_slope <mlx.nn.ALiBi.create_alibi_slope>`\\ "
-"\\(num\\_heads\\[\\, dtype\\]\\)"
+":py:obj:`create_alibi_slope <mlx.nn.ALiBi.create_alibi_slope>`\\ \\"
+"(num\\_heads\\[\\, dtype\\]\\)"
 msgstr ""
 
 #: ../../../src/python/nn/_autosummary/mlx.nn.ALiBi.rst:16:<autosummary>:1

@@ -29,9 +29,9 @@ msgstr ""
 #: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/dropout.py:docstring
 #: of mlx.nn.layers.dropout.Dropout:3
 msgid ""
-"The remaining elements are multiplied with :math:`\\frac{1}{1-p}` where :"
-"math:`p` is the probability of zeroing an element. This is done so the "
-"expected value of a given element will remain the same."
+"The remaining elements are multiplied with :math:`\\frac{1}{1-p}` "
+"where :math:`p` is the probability of zeroing an element. This is done so "
+"the expected value of a given element will remain the same."
 msgstr ""
 
 #: ../../../src/python/nn/_autosummary/mlx.nn.Dropout.rst:0

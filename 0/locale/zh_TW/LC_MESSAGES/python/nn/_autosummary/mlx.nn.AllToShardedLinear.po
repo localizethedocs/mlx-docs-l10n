@@ -66,6 +66,6 @@ msgstr "方法"
 
 #: ../../../src/python/nn/_autosummary/mlx.nn.AllToShardedLinear.rst:15:<autosummary>:1
 msgid ""
-":py:obj:`from_linear <mlx.nn.AllToShardedLinear.from_linear>`\\ "
-"\\(linear\\_layer\\, \\*\\[\\, segments\\, group\\]\\)"
+":py:obj:`from_linear <mlx.nn.AllToShardedLinear.from_linear>`\\ \\"
+"(linear\\_layer\\, \\*\\[\\, segments\\, group\\]\\)"
 msgstr ""

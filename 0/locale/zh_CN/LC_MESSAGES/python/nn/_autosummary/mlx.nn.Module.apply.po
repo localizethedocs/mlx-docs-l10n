@@ -47,8 +47,8 @@ msgstr ""
 #: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/base.py:docstring
 #: of mlx.nn.layers.base.Module.apply:9
 msgid ""
-"Filter to select which arrays to map (default: :meth:`Module."
-"valid_parameter_filter`)."
+"Filter to select which arrays to map "
+"(default: :meth:`Module.valid_parameter_filter`)."
 msgstr ""
 
 #: ../../../src/python/nn/_autosummary/mlx.nn.Module.apply.rst:0

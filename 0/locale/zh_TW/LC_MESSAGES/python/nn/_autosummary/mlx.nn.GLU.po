@@ -29,8 +29,8 @@ msgstr ""
 #: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/activations.py:docstring
 #: of mlx.nn.layers.activations.GLU:3
 msgid ""
-"This function splits the ``axis`` dimension of the input into two halves (:"
-"math:`a` and :math:`b`) and applies :math:`a * \\sigma(b)`."
+"This function splits the ``axis`` dimension of the input into two halves "
+"(:math:`a` and :math:`b`) and applies :math:`a * \\sigma(b)`."
 msgstr ""
 
 #: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/activations.py:docstring

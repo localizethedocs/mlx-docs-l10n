@@ -23,8 +23,8 @@ msgstr ""
 
 #: ../../../docstring of mlx.core.array.reshape:1
 msgid ""
-"Equivalent to :func:`reshape` but the shape can be passed either as a :obj:"
-"`tuple` or as separate arguments."
+"Equivalent to :func:`reshape` but the shape can be passed either as "
+"a :obj:`tuple` or as separate arguments."
 msgstr ""
 
 #: ../../../docstring of mlx.core.array.reshape:4

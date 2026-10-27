@@ -68,8 +68,8 @@ msgstr ""
 #: ../../../src/dev/custom_metal_kernels.rst:45
 msgid ""
 "Every time you make a kernel, a new Metal library is created and possibly "
-"JIT compiled. To reduce the overhead from that, build the kernel once with :"
-"func:`fast.metal_kernel` and then use it many times."
+"JIT compiled. To reduce the overhead from that, build the kernel once "
+"with :func:`fast.metal_kernel` and then use it many times."
 msgstr ""
 
 #: ../../../src/dev/custom_metal_kernels.rst:50
@@ -124,8 +124,9 @@ msgstr ""
 #: ../../../src/dev/custom_metal_kernels.rst:68
 msgid ""
 "These will be added as function arguments. All the attributes defined in "
-"Table 5.8 of the `Metal Shading Language Specification <https://developer."
-"apple.com/metal/Metal-Shading-Language-Specification.pdf>`_ are supported."
+"Table 5.8 of the `Metal Shading Language Specification <https://"
+"developer.apple.com/metal/Metal-Shading-Language-Specification.pdf>`_ are "
+"supported."
 msgstr ""
 
 #: ../../../src/dev/custom_metal_kernels.rst:71
@@ -165,8 +166,9 @@ msgstr ""
 
 #: ../../../src/dev/custom_metal_kernels.rst:95
 msgid ""
-"Passing ``verbose=True`` when calling the kernel returned by :func:`fast."
-"metal_kernel` will print the generated code for debugging purposes."
+"Passing ``verbose=True`` when calling the kernel returned "
+"by :func:`fast.metal_kernel` will print the generated code for debugging "
+"purposes."
 msgstr ""
 
 #: ../../../src/dev/custom_metal_kernels.rst:99
@@ -330,9 +332,9 @@ msgstr ""
 
 #: ../../../src/dev/custom_metal_kernels.rst:224
 msgid ""
-"Now let's use :func:`custom_function` together with :func:`fast."
-"metal_kernel` to write a fast GPU kernel for both the forward and backward "
-"passes."
+"Now let's use :func:`custom_function` together "
+"with :func:`fast.metal_kernel` to write a fast GPU kernel for both the "
+"forward and backward passes."
 msgstr ""
 
 #: ../../../src/dev/custom_metal_kernels.rst:227
@@ -478,8 +480,9 @@ msgid ""
 "Designate all of the kernel outputs as ``atomic`` in the function signature. "
 "This means we can use Metal's ``atomic`` features to simultaneously update "
 "the ``x_grad`` and ``grid_grad`` arrays from multiple threadgroups. See "
-"section 6.15 of the `Metal Shading Language Specification <https://developer."
-"apple.com/metal/Metal-Shading-Language-Specification.pdf>`_ for more details."
+"section 6.15 of the `Metal Shading Language Specification <https://"
+"developer.apple.com/metal/Metal-Shading-Language-Specification.pdf>`_ for "
+"more details."
 msgstr ""
 
 #: ../../../src/dev/custom_metal_kernels.rst:338

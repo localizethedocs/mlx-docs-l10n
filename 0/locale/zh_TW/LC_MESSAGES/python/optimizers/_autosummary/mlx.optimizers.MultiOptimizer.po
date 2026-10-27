@@ -58,8 +58,8 @@ msgstr "方法"
 
 #: ../../../src/python/optimizers/_autosummary/mlx.optimizers.MultiOptimizer.rst:17:<autosummary>:1
 msgid ""
-":py:obj:`__init__ <mlx.optimizers.MultiOptimizer.__init__>`\\ "
-"\\(optimizers\\[\\, filters\\]\\)"
+":py:obj:`__init__ <mlx.optimizers.MultiOptimizer.__init__>`\\ \\(optimizers\\"
+"[\\, filters\\]\\)"
 msgstr ""
 
 #: ../../../src/python/optimizers/_autosummary/mlx.optimizers.MultiOptimizer.rst:17:<autosummary>:1

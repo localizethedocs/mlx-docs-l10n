@@ -102,6 +102,7 @@ msgstr ""
 
 #: ../../../src/python/nn/_autosummary/mlx.nn.MultiHeadAttention.rst:15:<autosummary>:1
 msgid ""
-":py:obj:`create_additive_causal_mask <mlx.nn.MultiHeadAttention."
-"create_additive_causal_mask>`\\ \\(N\\[\\, dtype\\]\\)"
+":py:obj:`create_additive_causal_mask "
+"<mlx.nn.MultiHeadAttention.create_additive_causal_mask>`\\ \\(N\\[\\, "
+"dtype\\]\\)"
 msgstr ""

@@ -23,8 +23,8 @@ msgstr ""
 
 #: ../../../docstring of mlx.core.fft.rfftfreq:1
 msgid ""
-"Return the discrete Fourier Transform sample frequencies for use with :func:"
-"`rfft` and :func:`irfft`."
+"Return the discrete Fourier Transform sample frequencies for use "
+"with :func:`rfft` and :func:`irfft`."
 msgstr ""
 
 #: ../../../docstring of mlx.core.fft.rfftfreq:4

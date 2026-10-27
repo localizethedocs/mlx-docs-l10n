@@ -148,8 +148,8 @@ msgstr ""
 #: ../../../src/usage/function_transforms.rst:106
 msgid ""
 "You can also take the gradient with respect to arbitrarily nested Python "
-"containers of arrays (specifically any of :obj:`list`, :obj:`tuple`, or :obj:"
-"`dict`)."
+"containers of arrays (specifically any of :obj:`list`, :obj:`tuple`, "
+"or :obj:`dict`)."
 msgstr ""
 
 #: ../../../src/usage/function_transforms.rst:110
@@ -197,9 +197,9 @@ msgstr ""
 #: ../../../src/usage/function_transforms.rst:144
 msgid ""
 "Use :func:`vmap` to automate vectorizing complex functions. Here we'll go "
-"through a basic and contrived example for the sake of clarity, but :func:"
-"`vmap` can be quite powerful for more complex functions which are difficult "
-"to optimize by hand."
+"through a basic and contrived example for the sake of clarity, "
+"but :func:`vmap` can be quite powerful for more complex functions which are "
+"difficult to optimize by hand."
 msgstr ""
 
 #: ../../../src/usage/function_transforms.rst:151

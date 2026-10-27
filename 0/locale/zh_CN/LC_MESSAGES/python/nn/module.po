@@ -36,10 +36,10 @@ msgstr ""
 #: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/base.py:docstring
 #: of mlx.nn.layers.base.Module:6
 msgid ""
-"A ``Module`` can contain other ``Module`` instances or :class:`mlx.core."
-"array` instances in arbitrary nesting of python lists or dicts. The "
-"``Module`` then allows recursively extracting all the :class:`mlx.core."
-"array` instances using :meth:`mlx.nn.Module.parameters`."
+"A ``Module`` can contain other ``Module`` instances "
+"or :class:`mlx.core.array` instances in arbitrary nesting of python lists or "
+"dicts. The ``Module`` then allows recursively extracting all "
+"the :class:`mlx.core.array` instances using :meth:`mlx.nn.Module.parameters`."
 msgstr ""
 
 #: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/base.py:docstring
@@ -121,8 +121,8 @@ msgstr ""
 
 #: ../../../src/python/nn/module.rst:38:<autosummary>:1
 msgid ""
-":py:obj:`Module.apply_to_modules <mlx.nn.Module.apply_to_modules>`\\ "
-"\\(apply\\_fn\\)"
+":py:obj:`Module.apply_to_modules <mlx.nn.Module.apply_to_modules>`\\ \\"
+"(apply\\_fn\\)"
 msgstr ""
 
 #: ../../../src/python/nn/module.rst:38:<autosummary>:1
@@ -149,8 +149,8 @@ msgstr ""
 
 #: ../../../src/python/nn/module.rst:38:<autosummary>:1
 msgid ""
-":py:obj:`Module.filter_and_map <mlx.nn.Module.filter_and_map>`\\ "
-"\\(filter\\_fn\\[\\, map\\_fn\\, ...\\]\\)"
+":py:obj:`Module.filter_and_map <mlx.nn.Module.filter_and_map>`\\ \\"
+"(filter\\_fn\\[\\, map\\_fn\\, ...\\]\\)"
 msgstr ""
 
 #: ../../../src/python/nn/module.rst:38:<autosummary>:1
@@ -179,8 +179,8 @@ msgstr ""
 
 #: ../../../src/python/nn/module.rst:38:<autosummary>:1
 msgid ""
-":py:obj:`Module.load_weights <mlx.nn.Module.load_weights>`\\ "
-"\\(file\\_or\\_weights\\[\\, strict\\]\\)"
+":py:obj:`Module.load_weights <mlx.nn.Module.load_weights>`\\ \\"
+"(file\\_or\\_weights\\[\\, strict\\]\\)"
 msgstr ""
 
 #: ../../../src/python/nn/module.rst:38:<autosummary>:1
@@ -279,8 +279,8 @@ msgstr ""
 
 #: ../../../src/python/nn/module.rst:38:<autosummary>:1
 msgid ""
-":py:obj:`Module.update_modules <mlx.nn.Module.update_modules>`\\ "
-"\\(modules\\[\\, strict\\]\\)"
+":py:obj:`Module.update_modules <mlx.nn.Module.update_modules>`\\ \\(modules\\"
+"[\\, strict\\]\\)"
 msgstr ""
 
 #: ../../../src/python/nn/module.rst:38:<autosummary>:1

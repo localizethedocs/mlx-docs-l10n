@@ -47,8 +47,8 @@ msgstr "參數"
 #: ../../../../../../.conda/lib/python3.12/site-packages/mlx/utils.py:docstring
 #: of mlx.utils.tree_unflatten:15
 msgid ""
-"The flat representation of a Python tree. For instance as returned by :meth:"
-"`tree_flatten`."
+"The flat representation of a Python tree. For instance as returned "
+"by :meth:`tree_flatten`."
 msgstr ""
 
 #: ../../../src/python/_autosummary/mlx.utils.tree_unflatten.rst:0

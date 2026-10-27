@@ -29,8 +29,8 @@ msgstr ""
 
 #: ../../../src/python/printoptions.rst:12:<autosummary>:1
 msgid ""
-":py:obj:`set_printoptions <mlx.core.set_printoptions>`\\ "
-"\\(\\[precision\\]\\)"
+":py:obj:`set_printoptions <mlx.core.set_printoptions>`\\ \\(\\[precision\\]"
+"\\)"
 msgstr ""
 
 #: ../../../src/python/printoptions.rst:12:<autosummary>:1

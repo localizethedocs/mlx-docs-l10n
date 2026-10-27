@@ -24,8 +24,8 @@ msgstr ""
 #: ../../../../../../.conda/lib/python3.12/site-packages/mlx/optimizers/optimizers.py:docstring
 #: of mlx.optimizers.optimizers.AdamW:1
 msgid ""
-"The AdamW optimizer [1]. We update the weights with a weight_decay (:math:"
-"`\\lambda`) value:"
+"The AdamW optimizer [1]. We update the weights with a weight_decay "
+"(:math:`\\lambda`) value:"
 msgstr ""
 
 #: ../../../../../../.conda/lib/python3.12/site-packages/mlx/optimizers/optimizers.py:docstring
@@ -83,8 +83,8 @@ msgstr ""
 
 #: ../../../src/python/optimizers/_autosummary/mlx.optimizers.AdamW.rst:16:<autosummary>:1
 msgid ""
-":py:obj:`__init__ <mlx.optimizers.AdamW.__init__>`\\ "
-"\\(learning\\_rate\\[\\, betas\\, eps\\, ...\\]\\)"
+":py:obj:`__init__ <mlx.optimizers.AdamW.__init__>`\\ \\(learning\\_rate\\"
+"[\\, betas\\, eps\\, ...\\]\\)"
 msgstr ""
 
 #: ../../../src/python/optimizers/_autosummary/mlx.optimizers.AdamW.rst:16:<autosummary>:1

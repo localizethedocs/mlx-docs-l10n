@@ -57,8 +57,8 @@ msgid ""
 msgstr ""
 "由於 NumPy 不支援 ``bfloat16`` 陣列，你需要先轉成 ``float16`` 或 "
 "``float32``：``np.array(a.astype(mx.float32))``。否則會出現例如 ``Item size "
-"2 for PEP 3118 buffer format string does not match the dtype V item size 0."
-"`` 的錯誤。"
+"2 for PEP 3118 buffer format string does not match the dtype V item size "
+"0.`` 的錯誤。"
 
 #: ../../../src/usage/numpy.rst:29
 msgid ""
@@ -140,10 +140,10 @@ msgstr ""
 #: ../../../src/usage/numpy.rst:78
 msgid ""
 "PyTorch supports DLPack inputs and can import MLX arrays directly. MLX can "
-"also import PyTorch tensors through DLPack with ``mx.asarray`` or ``mx."
-"from_dlpack``. Use ``torch.as_tensor`` to import an MLX array with DLPack; "
-"``torch.tensor`` copies the data instead. Similarly, ``mx.asarray`` can "
-"share DLPack inputs when possible, while ``mx.array`` copies:"
+"also import PyTorch tensors through DLPack with ``mx.asarray`` or "
+"``mx.from_dlpack``. Use ``torch.as_tensor`` to import an MLX array with "
+"DLPack; ``torch.tensor`` copies the data instead. Similarly, ``mx.asarray`` "
+"can share DLPack inputs when possible, while ``mx.array`` copies:"
 msgstr ""
 
 #: ../../../src/usage/numpy.rst:84
@@ -175,8 +175,8 @@ msgstr ""
 
 #: ../../../src/usage/numpy.rst:106
 msgid ""
-"Metal DLPack inputs are different. If a PyTorch MPS tensor is passed to ``mx."
-"asarray`` or to ``mx.from_dlpack`` with ``copy=None``, MLX imports it "
+"Metal DLPack inputs are different. If a PyTorch MPS tensor is passed to "
+"``mx.asarray`` or to ``mx.from_dlpack`` with ``copy=None``, MLX imports it "
 "without a copy when the underlying Metal buffer is not private. Private "
 "Metal buffers are copied into MLX-managed storage instead. Passing "
 "``copy=False`` requires zero-copy import and raises an error if a copy would "
@@ -235,8 +235,8 @@ msgstr ""
 
 #: ../../../src/usage/numpy.rst:151
 msgid ""
-"TensorFlow supports the buffer protocol, but it requires an explicit :obj:"
-"`memoryview`."
+"TensorFlow supports the buffer protocol, but it requires an "
+"explicit :obj:`memoryview`."
 msgstr "TensorFlow 支援緩衝區協定，但需要明確的 :obj:`memoryview`。"
 
 #: ../../../src/usage/numpy.rst:154

@@ -36,8 +36,8 @@ msgstr "輸入陣列。"
 #: ../../../docstring of mlx.core.fft.ifft:5
 msgid ""
 "Size of the transformed axis. The corresponding axis in the input is "
-"truncated or padded with zeros to match ``n``. The default value is ``a."
-"shape[axis]``."
+"truncated or padded with zeros to match ``n``. The default value is "
+"``a.shape[axis]``."
 msgstr ""
 
 #: ../../../docstring of mlx.core.fft.ifft:9

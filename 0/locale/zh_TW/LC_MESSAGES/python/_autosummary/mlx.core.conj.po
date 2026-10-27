@@ -23,8 +23,8 @@ msgstr ""
 
 #: ../../../docstring of mlx.core.conj:1
 msgid ""
-"Return the elementwise complex conjugate of the input. Alias for `mx."
-"conjugate`."
+"Return the elementwise complex conjugate of the input. Alias for "
+"`mx.conjugate`."
 msgstr ""
 
 #: ../../../src/python/_autosummary/mlx.core.conj.rst:0

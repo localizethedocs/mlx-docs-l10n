@@ -23,8 +23,8 @@ msgstr ""
 
 #: ../../../src/python/fft.rst:26:<autosummary>:1
 msgid ""
-":py:obj:`fft <mlx.core.fft.fft>`\\ \\(a\\[\\, n\\, axis\\, norm\\, "
-"stream\\]\\)"
+":py:obj:`fft <mlx.core.fft.fft>`\\ \\(a\\[\\, n\\, axis\\, norm\\, stream\\]"
+"\\)"
 msgstr ""
 
 #: ../../../src/python/fft.rst:26:<autosummary>:1
@@ -156,8 +156,8 @@ msgstr ""
 
 #: ../../../src/python/fft.rst:26:<autosummary>:1
 msgid ""
-"Return the discrete Fourier Transform sample frequencies for use with :func:"
-"`rfft` and :func:`irfft`."
+"Return the discrete Fourier Transform sample frequencies for use "
+"with :func:`rfft` and :func:`irfft`."
 msgstr ""
 
 #: ../../../src/python/fft.rst:26:<autosummary>:1
@@ -171,8 +171,8 @@ msgstr "將零頻率成分移到頻譜中心。"
 
 #: ../../../src/python/fft.rst:26:<autosummary>:1
 msgid ""
-":py:obj:`ifftshift <mlx.core.fft.ifftshift>`\\ \\(a\\[\\, axes\\, "
-"stream\\]\\)"
+":py:obj:`ifftshift <mlx.core.fft.ifftshift>`\\ \\(a\\[\\, axes\\, stream\\]"
+"\\)"
 msgstr ""
 
 #: ../../../src/python/fft.rst:26:<autosummary>:1

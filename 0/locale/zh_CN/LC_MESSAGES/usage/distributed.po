@@ -223,9 +223,9 @@ msgid ""
 "available. It uses TCP sockets so the nodes need to be reachable via a "
 "network. As the name suggests the nodes are connected in a ring which means "
 "that rank 1 can only communicate with rank 0 and rank 2, rank 2 only with "
-"rank 1 and rank 3 and so on and so forth. As a result :func:`send` and :func:"
-"`recv` with arbitrary sender and receiver are not supported in the ring "
-"backend."
+"rank 1 and rank 3 and so on and so forth. As a result :func:`send` "
+"and :func:`recv` with arbitrary sender and receiver are not supported in the "
+"ring backend."
 msgstr ""
 
 #: ../../../src/usage/distributed.rst:139
@@ -273,8 +273,8 @@ msgid ""
 "Although the ring backend can have benefits over MPI even for Ethernet, its "
 "main purpose is to use Thunderbolt rings for higher bandwidth communication. "
 "Setting up such thunderbolt rings can be done manually, but is a relatively "
-"tedious process. To simplify this, we provide the utility ``mlx."
-"distributed_config``."
+"tedious process. To simplify this, we provide the utility "
+"``mlx.distributed_config``."
 msgstr ""
 
 #: ../../../src/usage/distributed.rst:171
@@ -657,13 +657,13 @@ msgstr ""
 
 #: ../../../src/usage/distributed.rst:417
 msgid ""
-"MLX already comes with the ability to \"talk\" to `MPI <https://en.wikipedia."
-"org/wiki/Message_Passing_Interface>`_ if it is installed on the machine. "
-"Launching distributed MLX programs that use MPI can be done with ``mpirun`` "
-"as expected. However, in the following examples we will be using ``mlx."
-"launch --backend mpi`` which takes care of some nuisances such as setting "
-"absolute paths for the ``mpirun`` executable and the ``libmpi.dyld`` shared "
-"library."
+"MLX already comes with the ability to \"talk\" to `MPI <https://"
+"en.wikipedia.org/wiki/Message_Passing_Interface>`_ if it is installed on the "
+"machine. Launching distributed MLX programs that use MPI can be done with "
+"``mpirun`` as expected. However, in the following examples we will be using "
+"``mlx.launch --backend mpi`` which takes care of some nuisances such as "
+"setting absolute paths for the ``mpirun`` executable and the ``libmpi.dyld`` "
+"shared library."
 msgstr ""
 
 #: ../../../src/usage/distributed.rst:425
@@ -704,13 +704,13 @@ msgstr ""
 
 #: ../../../src/usage/distributed.rst:450
 msgid ""
-"Installing with Homebrew or pip requires specifying the location of ``libmpi."
-"dyld`` so that MLX can find it and load it at runtime. This can simply be "
-"achieved by passing the ``DYLD_LIBRARY_PATH`` environment variable to "
-"``mpirun`` and it is done automatically by ``mlx.launch``. Some environments "
-"use a non-standard library filename that can be specified using the "
-"``MPI_LIBNAME`` environment variable. This is automatically taken care of by "
-"``mlx.launch`` as well."
+"Installing with Homebrew or pip requires specifying the location of "
+"``libmpi.dyld`` so that MLX can find it and load it at runtime. This can "
+"simply be achieved by passing the ``DYLD_LIBRARY_PATH`` environment variable "
+"to ``mpirun`` and it is done automatically by ``mlx.launch``. Some "
+"environments use a non-standard library filename that can be specified using "
+"the ``MPI_LIBNAME`` environment variable. This is automatically taken care "
+"of by ``mlx.launch`` as well."
 msgstr ""
 
 #: ../../../src/usage/distributed.rst:457
@@ -915,9 +915,9 @@ msgstr ""
 #: ../../../src/usage/distributed.rst:588
 msgid ""
 "As described in the :ref:`training example <training_example>`, performing a "
-"lot of small communications can hurt performance. Copy the approach of :func:"
-"`mlx.nn.average_gradients` to gather many small communications in a single "
-"large one."
+"lot of small communications can hurt performance. Copy the approach "
+"of :func:`mlx.nn.average_gradients` to gather many small communications in a "
+"single large one."
 msgstr ""
 
 #: ../../../src/usage/distributed.rst:593

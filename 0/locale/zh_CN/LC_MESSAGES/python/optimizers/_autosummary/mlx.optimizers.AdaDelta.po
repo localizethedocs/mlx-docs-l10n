@@ -77,14 +77,14 @@ msgstr ""
 
 #: ../../../src/python/optimizers/_autosummary/mlx.optimizers.AdaDelta.rst:17:<autosummary>:1
 msgid ""
-":py:obj:`__init__ <mlx.optimizers.AdaDelta.__init__>`\\ "
-"\\(learning\\_rate\\[\\, rho\\, eps\\]\\)"
+":py:obj:`__init__ <mlx.optimizers.AdaDelta.__init__>`\\ \\(learning\\_rate\\"
+"[\\, rho\\, eps\\]\\)"
 msgstr ""
 
 #: ../../../src/python/optimizers/_autosummary/mlx.optimizers.AdaDelta.rst:17:<autosummary>:1
 msgid ""
-":py:obj:`apply_single <mlx.optimizers.AdaDelta.apply_single>`\\ "
-"\\(gradient\\, parameter\\, state\\)"
+":py:obj:`apply_single <mlx.optimizers.AdaDelta.apply_single>`\\ \\"
+"(gradient\\, parameter\\, state\\)"
 msgstr ""
 
 #: ../../../src/python/optimizers/_autosummary/mlx.optimizers.AdaDelta.rst:17:<autosummary>:1
@@ -95,8 +95,8 @@ msgstr ""
 
 #: ../../../src/python/optimizers/_autosummary/mlx.optimizers.AdaDelta.rst:17:<autosummary>:1
 msgid ""
-":py:obj:`init_single <mlx.optimizers.AdaDelta.init_single>`\\ "
-"\\(parameter\\, state\\)"
+":py:obj:`init_single <mlx.optimizers.AdaDelta.init_single>`\\ \\"
+"(parameter\\, state\\)"
 msgstr ""
 
 #: ../../../src/python/optimizers/_autosummary/mlx.optimizers.AdaDelta.rst:17:<autosummary>:1

@@ -27,8 +27,8 @@ msgstr ""
 
 #: ../../../docstring of mlx.core.floor_divide:3
 msgid ""
-"If either array is a floating point type then it is equivalent to calling :"
-"func:`floor` after :func:`divide`."
+"If either array is a floating point type then it is equivalent to "
+"calling :func:`floor` after :func:`divide`."
 msgstr ""
 
 #: ../../../src/python/_autosummary/mlx.core.floor_divide.rst:0

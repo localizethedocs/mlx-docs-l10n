@@ -28,8 +28,8 @@ msgstr ""
 #: ../../../src/usage/lazy_evaluation.rst:11
 msgid ""
 "When you perform operations in MLX, no computation actually happens. Instead "
-"a compute graph is recorded. The actual computation only happens if an :func:"
-"`eval` is performed."
+"a compute graph is recorded. The actual computation only happens if "
+"an :func:`eval` is performed."
 msgstr ""
 
 #: ../../../src/usage/lazy_evaluation.rst:15
@@ -86,13 +86,13 @@ msgstr ""
 #: ../../../src/usage/lazy_evaluation.rst:48
 msgid ""
 "Similarly, lazy evaluation can be beneficial for saving memory while keeping "
-"code simple. Say you have a very large model ``Model`` derived from :obj:"
-"`mlx.nn.Module`. You can instantiate this model with ``model = Model()``. "
-"Typically, this will initialize all of the weights as ``float32``, but the "
-"initialization does not actually compute anything until you perform an :func:"
-"`eval`. If you update the model with ``float16`` weights, your maximum "
-"consumed memory will be half that required if eager computation was used "
-"instead."
+"code simple. Say you have a very large model ``Model`` derived "
+"from :obj:`mlx.nn.Module`. You can instantiate this model with ``model = "
+"Model()``. Typically, this will initialize all of the weights as "
+"``float32``, but the initialization does not actually compute anything until "
+"you perform an :func:`eval`. If you update the model with ``float16`` "
+"weights, your maximum consumed memory will be half that required if eager "
+"computation was used instead."
 msgstr ""
 
 #: ../../../src/usage/lazy_evaluation.rst:57
@@ -172,10 +172,11 @@ msgstr ""
 #: ../../../src/usage/lazy_evaluation.rst:110
 msgid ""
 "An important behavior to be aware of is when the graph will be implicitly "
-"evaluated. Anytime you ``print`` an array, convert it to an :obj:`numpy."
-"ndarray`, or otherwise access its memory via :obj:`memoryview`, the graph "
-"will be evaluated. Saving arrays via :func:`save` (or any other MLX saving "
-"functions) will also evaluate the array."
+"evaluated. Anytime you ``print`` an array, convert it to "
+"an :obj:`numpy.ndarray`, or otherwise access its memory "
+"via :obj:`memoryview`, the graph will be evaluated. Saving arrays "
+"via :func:`save` (or any other MLX saving functions) will also evaluate the "
+"array."
 msgstr ""
 
 #: ../../../src/usage/lazy_evaluation.rst:117

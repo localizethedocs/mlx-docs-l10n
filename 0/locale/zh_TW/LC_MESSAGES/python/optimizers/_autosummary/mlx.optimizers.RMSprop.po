@@ -67,14 +67,14 @@ msgstr "方法"
 
 #: ../../../src/python/optimizers/_autosummary/mlx.optimizers.RMSprop.rst:17:<autosummary>:1
 msgid ""
-":py:obj:`__init__ <mlx.optimizers.RMSprop.__init__>`\\ "
-"\\(learning\\_rate\\[\\, alpha\\, eps\\]\\)"
+":py:obj:`__init__ <mlx.optimizers.RMSprop.__init__>`\\ \\(learning\\_rate\\"
+"[\\, alpha\\, eps\\]\\)"
 msgstr ""
 
 #: ../../../src/python/optimizers/_autosummary/mlx.optimizers.RMSprop.rst:17:<autosummary>:1
 msgid ""
-":py:obj:`apply_single <mlx.optimizers.RMSprop.apply_single>`\\ "
-"\\(gradient\\, parameter\\, state\\)"
+":py:obj:`apply_single <mlx.optimizers.RMSprop.apply_single>`\\ \\"
+"(gradient\\, parameter\\, state\\)"
 msgstr ""
 
 #: ../../../src/python/optimizers/_autosummary/mlx.optimizers.RMSprop.rst:17:<autosummary>:1

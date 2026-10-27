@@ -73,8 +73,8 @@ msgid ""
 "semantics of streams in MLX."
 msgstr ""
 "在上例中，CPU 與 GPU 都會執行相同的加法運算。因為兩者之間沒有相依性，所以這些"
-"運算可以（而且很可能會）並行執行。關於 MLX 中串流語意的更多資訊，請參考 :ref:"
-"`using_streams`。"
+"運算可以（而且很可能會）並行執行。關於 MLX 中串流語意的更多資訊，請參"
+"考 :ref:`using_streams`。"
 
 #: ../../../src/usage/unified_memory.rst:35
 msgid ""

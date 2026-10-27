@@ -75,8 +75,8 @@ msgstr ""
 
 #: ../../../src/usage/quick_start.rst:49
 msgid ""
-"MLX has standard function transformations like :func:`grad` and :func:"
-"`vmap`. Transformations can be composed arbitrarily. For example "
+"MLX has standard function transformations like :func:`grad` "
+"and :func:`vmap`. Transformations can be composed arbitrarily. For example "
 "``grad(vmap(grad(fn)))`` (or any other composition) is allowed."
 msgstr ""
 

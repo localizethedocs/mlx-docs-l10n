@@ -33,8 +33,8 @@ msgstr ""
 msgid ""
 "If ``rest`` is provided, every item is assumed to be a superset of ``tree`` "
 "and the corresponding leaves are provided as extra positional arguments to "
-"``fn``. In that respect, :meth:`tree_map` is closer to :func:`itertools."
-"starmap` than to :func:`map`."
+"``fn``. In that respect, :meth:`tree_map` is closer "
+"to :func:`itertools.starmap` than to :func:`map`."
 msgstr ""
 
 #: ../../../../../../.conda/lib/python3.12/site-packages/mlx/utils.py:docstring
