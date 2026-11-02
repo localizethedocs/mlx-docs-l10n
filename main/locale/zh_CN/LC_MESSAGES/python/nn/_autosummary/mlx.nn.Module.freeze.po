@@ -68,8 +68,8 @@ msgstr ""
 #: of mlx.nn.layers.base.Module.freeze:21
 msgid ""
 "If provided then only these parameters will be frozen otherwise all the "
-"parameters of a module. For instance freeze all biases by calling ``module."
-"freeze(keys=\"bias\")``."
+"parameters of a module. For instance freeze all biases by calling "
+"``module.freeze(keys=\"bias\")``."
 msgstr ""
 
 #: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/base.py:docstring

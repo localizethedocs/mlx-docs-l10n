@@ -66,8 +66,8 @@ msgstr ""
 #: ../../../docstring of mlx.core.export_function:24
 msgid ""
 "A string to save alongside the function, for example a JSON encoded model "
-"configuration. Only supported when exporting to a file. Read it back with :"
-"func:`import_function`. Default: ``None``."
+"configuration. Only supported when exporting to a file. Read it back "
+"with :func:`import_function`. Default: ``None``."
 msgstr ""
 
 #: ../../../docstring of mlx.core.export_function:29

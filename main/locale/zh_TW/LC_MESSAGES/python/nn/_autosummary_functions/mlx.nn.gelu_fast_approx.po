@@ -53,8 +53,8 @@ msgstr "其中 :math:`\\sigma(\\cdot)` 為 logistic sigmoid。"
 #: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/activations.py:docstring
 #: of mlx.nn.layers.activations.gelu_fast_approx:14
 msgid ""
-"References: - https://github.com/hendrycks/GELUs - https://arxiv.org/"
-"abs/1606.08415"
+"References: - https://github.com/hendrycks/GELUs - https://arxiv.org/abs/"
+"1606.08415"
 msgstr ""
-"參考資料：- https://github.com/hendrycks/GELUs - https://arxiv.org/"
-"abs/1606.08415"
+"參考資料：- https://github.com/hendrycks/GELUs - https://arxiv.org/abs/"
+"1606.08415"

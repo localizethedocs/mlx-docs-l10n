@@ -116,8 +116,8 @@ msgstr "產生常態分佈的隨機數。"
 
 #: ../../../src/python/random.rst:48:<autosummary>:1
 msgid ""
-":py:obj:`multivariate_normal <mlx.core.random.multivariate_normal>`\\ "
-"\\(mean\\, cov\\[\\, shape\\, ...\\]\\)"
+":py:obj:`multivariate_normal <mlx.core.random.multivariate_normal>`\\ \\"
+"(mean\\, cov\\[\\, shape\\, ...\\]\\)"
 msgstr ""
 
 #: ../../../src/python/random.rst:48:<autosummary>:1

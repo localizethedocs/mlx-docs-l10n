@@ -29,10 +29,10 @@ msgstr ""
 #: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/init.py:docstring
 #: of mlx.nn.init.he_uniform:3
 msgid ""
-"This initializer samples from a uniform distribution on the interval :math:"
-"`[-\\text{limit}, \\text{limit}]`, where the bound :math:`\\text{limit}` is "
-"computed from the number of input (``fan_in``) or output (``fan_out``) units "
-"according to:"
+"This initializer samples from a uniform distribution on the "
+"interval :math:`[-\\text{limit}, \\text{limit}]`, where the "
+"bound :math:`\\text{limit}` is computed from the number of input "
+"(``fan_in``) or output (``fan_out``) units according to:"
 msgstr ""
 
 #: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/init.py:docstring
@@ -52,8 +52,8 @@ msgstr ""
 #: of mlx.nn.init.he_uniform:16
 msgid ""
 "For more details see the original reference: `Delving Deep into Rectifiers: "
-"Surpassing Human-Level Performance on ImageNet Classification <https://arxiv."
-"org/abs/1502.01852>`_"
+"Surpassing Human-Level Performance on ImageNet Classification <https://"
+"arxiv.org/abs/1502.01852>`_"
 msgstr ""
 
 #: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/init.py:docstring

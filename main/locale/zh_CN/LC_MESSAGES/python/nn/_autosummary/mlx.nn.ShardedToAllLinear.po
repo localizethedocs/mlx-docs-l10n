@@ -72,6 +72,6 @@ msgstr ""
 
 #: ../../../src/python/nn/_autosummary/mlx.nn.ShardedToAllLinear.rst:15:<autosummary>:1
 msgid ""
-":py:obj:`from_linear <mlx.nn.ShardedToAllLinear.from_linear>`\\ "
-"\\(linear\\_layer\\, \\*\\[\\, segments\\, group\\]\\)"
+":py:obj:`from_linear <mlx.nn.ShardedToAllLinear.from_linear>`\\ \\"
+"(linear\\_layer\\, \\*\\[\\, segments\\, group\\]\\)"
 msgstr ""

@@ -31,9 +31,9 @@ msgstr ""
 #: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/base.py:docstring
 #: of mlx.nn.layers.base.Module.filter_and_map:4
 msgid ""
-"This is used to implement :meth:`parameters` and :meth:"
-"`trainable_parameters` but it can also be used to extract any subset of the "
-"module's parameters."
+"This is used to implement :meth:`parameters` "
+"and :meth:`trainable_parameters` but it can also be used to extract any "
+"subset of the module's parameters."
 msgstr ""
 
 #: ../../../src/python/nn/_autosummary/mlx.nn.Module.filter_and_map.rst:0

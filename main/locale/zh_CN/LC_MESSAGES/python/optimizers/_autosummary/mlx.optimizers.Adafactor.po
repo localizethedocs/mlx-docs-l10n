@@ -30,8 +30,8 @@ msgstr ""
 #: of mlx.optimizers.optimizers.Adafactor:3
 msgid ""
 "Our Adafactor implementation follows the original paper: `Adafactor: "
-"Adaptive Learning Rates with Sublinear Memory Cost <https://arxiv.org/"
-"abs/1804.04235>`_"
+"Adaptive Learning Rates with Sublinear Memory Cost <https://arxiv.org/abs/"
+"1804.04235>`_"
 msgstr ""
 
 #: ../../../src/python/optimizers/_autosummary/mlx.optimizers.Adafactor.rst:0
@@ -79,8 +79,8 @@ msgstr ""
 #: ../../../../../../.conda/lib/python3.12/site-packages/mlx/optimizers/optimizers.py:docstring
 #: of mlx.optimizers.optimizers.Adafactor:28
 msgid ""
-"If set to ``True`` the learning rate will be scaled by :math:"
-"`\\max(\\epsilon_1, \\text{RMS}(w_{t-1}))`. Default: ``True``."
+"If set to ``True`` the learning rate will be scaled "
+"by :math:`\\max(\\epsilon_1, \\text{RMS}(w_{t-1}))`. Default: ``True``."
 msgstr ""
 
 #: ../../../../../../.conda/lib/python3.12/site-packages/mlx/optimizers/optimizers.py:docstring
@@ -103,14 +103,14 @@ msgstr ""
 
 #: ../../../src/python/optimizers/_autosummary/mlx.optimizers.Adafactor.rst:17:<autosummary>:1
 msgid ""
-":py:obj:`__init__ <mlx.optimizers.Adafactor.__init__>`\\ "
-"\\(\\[learning\\_rate\\, eps\\, ...\\]\\)"
+":py:obj:`__init__ <mlx.optimizers.Adafactor.__init__>`\\ \\(\\"
+"[learning\\_rate\\, eps\\, ...\\]\\)"
 msgstr ""
 
 #: ../../../src/python/optimizers/_autosummary/mlx.optimizers.Adafactor.rst:17:<autosummary>:1
 msgid ""
-":py:obj:`apply_single <mlx.optimizers.Adafactor.apply_single>`\\ "
-"\\(gradient\\, parameter\\, state\\)"
+":py:obj:`apply_single <mlx.optimizers.Adafactor.apply_single>`\\ \\"
+"(gradient\\, parameter\\, state\\)"
 msgstr ""
 
 #: ../../../src/python/optimizers/_autosummary/mlx.optimizers.Adafactor.rst:17:<autosummary>:1
@@ -119,8 +119,8 @@ msgstr ""
 
 #: ../../../src/python/optimizers/_autosummary/mlx.optimizers.Adafactor.rst:17:<autosummary>:1
 msgid ""
-":py:obj:`init_single <mlx.optimizers.Adafactor.init_single>`\\ "
-"\\(parameter\\, state\\)"
+":py:obj:`init_single <mlx.optimizers.Adafactor.init_single>`\\ \\"
+"(parameter\\, state\\)"
 msgstr ""
 
 #: ../../../src/python/optimizers/_autosummary/mlx.optimizers.Adafactor.rst:17:<autosummary>:1

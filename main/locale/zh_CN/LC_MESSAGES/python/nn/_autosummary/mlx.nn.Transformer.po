@@ -88,8 +88,8 @@ msgstr ""
 #: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/transformer.py:docstring
 #: of mlx.nn.layers.transformer.Transformer:31
 msgid ""
-"the activation function for the MLP hidden layer. Default: :func:`mlx.nn."
-"relu`."
+"the activation function for the MLP hidden layer. "
+"Default: :func:`mlx.nn.relu`."
 msgstr ""
 
 #: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/transformer.py:docstring

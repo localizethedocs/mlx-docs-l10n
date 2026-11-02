@@ -64,10 +64,10 @@ msgstr ""
 
 #: ../../../src/examples/data_parallelism.rst:36
 msgid ""
-"All we have to do to average the gradients across machines is perform an :"
-"func:`mlx.core.distributed.all_sum` and divide by the size of the :class:"
-"`mlx.core.distributed.Group`. Namely we have to :func:`mlx.utils.tree_map` "
-"the gradients with following function."
+"All we have to do to average the gradients across machines is perform "
+"an :func:`mlx.core.distributed.all_sum` and divide by the size of "
+"the :class:`mlx.core.distributed.Group`. Namely we have "
+"to :func:`mlx.utils.tree_map` the gradients with following function."
 msgstr ""
 
 #: ../../../src/examples/data_parallelism.rst:41

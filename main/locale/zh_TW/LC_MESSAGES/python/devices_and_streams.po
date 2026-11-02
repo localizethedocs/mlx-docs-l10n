@@ -82,8 +82,8 @@ msgstr "在指定裝置上建立新的串流。"
 
 #: ../../../src/python/devices_and_streams.rst:25:<autosummary>:1
 msgid ""
-":py:obj:`new_thread_local_stream <mlx.core.new_thread_local_stream>`\\ "
-"\\(device\\)"
+":py:obj:`new_thread_local_stream <mlx.core.new_thread_local_stream>`\\ \\"
+"(device\\)"
 msgstr ""
 
 #: ../../../src/python/devices_and_streams.rst:25:<autosummary>:1
@@ -92,8 +92,8 @@ msgstr ""
 
 #: ../../../src/python/devices_and_streams.rst:25:<autosummary>:1
 msgid ""
-":py:obj:`new_thread_unsafe_stream <mlx.core.new_thread_unsafe_stream>`\\ "
-"\\(device\\)"
+":py:obj:`new_thread_unsafe_stream <mlx.core.new_thread_unsafe_stream>`\\ \\"
+"(device\\)"
 msgstr ""
 
 #: ../../../src/python/devices_and_streams.rst:25:<autosummary>:1

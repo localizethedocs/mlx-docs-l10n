@@ -27,9 +27,9 @@ msgstr ""
 
 #: ../../../docstring of mlx.core.gather_qmm:3
 msgid ""
-"This operation is the quantized equivalent to :func:`gather_mm`. Similar to :"
-"func:`gather_mm`, the indices ``lhs_indices`` and ``rhs_indices`` contain "
-"flat indices along the batch dimensions (i.e. all but the last two "
+"This operation is the quantized equivalent to :func:`gather_mm`. Similar "
+"to :func:`gather_mm`, the indices ``lhs_indices`` and ``rhs_indices`` "
+"contain flat indices along the batch dimensions (i.e. all but the last two "
 "dimensions) of ``x`` and ``w`` respectively."
 msgstr ""
 

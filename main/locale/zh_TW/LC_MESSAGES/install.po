@@ -144,8 +144,8 @@ msgid ""
 "good way to do this is with `Conda <https://stackoverflow.com/q/65415996>`_."
 msgstr ""
 "應該是 ``arm``。若顯示為 ``i386``（且你使用 M 系列機器），代表你在使用非原生"
-"的 Python。請切換到原生 Python。可使用 `Conda <https://stackoverflow.com/"
-"q/65415996>`_ 來達成。"
+"的 Python。請切換到原生 Python。可使用 `Conda <https://stackoverflow.com/q/"
+"65415996>`_ 來達成。"
 
 #: ../../../src/install.rst:81
 msgid "Build from source"

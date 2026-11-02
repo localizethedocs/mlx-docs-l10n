@@ -23,8 +23,8 @@ msgstr "匯出函式"
 
 #: ../../../src/python/export.rst:14:<autosummary>:1
 msgid ""
-":py:obj:`export_function <mlx.core.export_function>`\\ "
-"\\(file\\_or\\_callback\\, fun\\, \\*args\\)"
+":py:obj:`export_function <mlx.core.export_function>`\\ \\"
+"(file\\_or\\_callback\\, fun\\, \\*args\\)"
 msgstr ""
 
 #: ../../../src/python/export.rst:14:<autosummary>:1

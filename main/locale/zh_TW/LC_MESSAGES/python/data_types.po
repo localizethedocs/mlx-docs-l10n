@@ -26,8 +26,8 @@ msgid ""
 "The default floating point type is ``float32`` and the default integer type "
 "is ``int32``. The table below shows supported values for :obj:`Dtype`."
 msgstr ""
-"預設浮點數型別為 ``float32``，預設整數型別為 ``int32``。下表列出 :obj:"
-"`Dtype` 支援的值。"
+"預設浮點數型別為 ``float32``，預設整數型別為 ``int32``。下表列"
+"出 :obj:`Dtype` 支援的值。"
 
 #: ../../../src/python/data_types.rst:11
 msgid "Supported Data Types"

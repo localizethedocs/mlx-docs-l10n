@@ -64,8 +64,8 @@ msgstr ""
 
 #: ../../../src/python/nn/_autosummary/mlx.nn.Embedding.rst:16:<autosummary>:1
 msgid ""
-":py:obj:`to_quantized <mlx.nn.Embedding.to_quantized>`\\ "
-"\\(\\[group\\_size\\, bits\\, mode\\, ...\\]\\)"
+":py:obj:`to_quantized <mlx.nn.Embedding.to_quantized>`\\ \\(\\"
+"[group\\_size\\, bits\\, mode\\, ...\\]\\)"
 msgstr ""
 
 #: ../../../src/python/nn/_autosummary/mlx.nn.Embedding.rst:16:<autosummary>:1

@@ -39,8 +39,8 @@ msgstr ""
 #: ../../../src/examples/tensor_parallelism.rst:16
 msgid ""
 "This layer replicates a common input and shards the weight matrix along the "
-"output dimension across all devices in the :class:`mlx.core.distributed."
-"Group`. The layer produces a sharded output."
+"output dimension across all devices in "
+"the :class:`mlx.core.distributed.Group`. The layer produces a sharded output."
 msgstr ""
 
 #: ../../../src/examples/tensor_parallelism.rst:20
@@ -69,9 +69,9 @@ msgstr ""
 #: ../../../src/examples/tensor_parallelism.rst:35
 msgid ""
 ":class:`QuantizedAllToShardedLinear <mlx.nn.QuantizedAllToShardedLinear>` is "
-"the quantized equivalent of :class:`mlx.nn.AllToShardedLinear`.  Similar to :"
-"class:`mlx.nn.QuantizedLinear`, its parameters are frozen and will not be "
-"included in any gradient computation."
+"the quantized equivalent of :class:`mlx.nn.AllToShardedLinear`.  Similar "
+"to :class:`mlx.nn.QuantizedLinear`, its parameters are frozen and will not "
+"be included in any gradient computation."
 msgstr ""
 
 #: ../../../src/examples/tensor_parallelism.rst:42
@@ -116,9 +116,9 @@ msgstr ""
 #: ../../../src/examples/tensor_parallelism.rst:68
 msgid ""
 ":class:`QuantizedShardedToAllLinear <mlx.nn.QuantizedShardedToAllLinear>` is "
-"the quantized equivalent of :class:`mlx.nn.ShardedToAllLinear`.  Similar to :"
-"class:`mlx.nn.QuantizedLinear`, its parameters are frozen and will not be "
-"included in any gradient computation."
+"the quantized equivalent of :class:`mlx.nn.ShardedToAllLinear`.  Similar "
+"to :class:`mlx.nn.QuantizedLinear`, its parameters are frozen and will not "
+"be included in any gradient computation."
 msgstr ""
 
 #: ../../../src/examples/tensor_parallelism.rst:75
@@ -132,11 +132,11 @@ msgstr ""
 #: ../../../src/examples/tensor_parallelism.rst:80
 msgid ""
 "Converts a regular linear layer into a tensor parallel layer that "
-"distributes computation across multiple devices. Takes an existing :class:"
-"`mlx.nn.Linear` or :class:`mlx.nn.QuantizedLinear` layer and returns a new "
-"distributed layer (either :class:`mlx.nn.AllToShardedLinear` or :class:`mlx."
-"nn.ShardedToAllLinear`, depending on the sharding type). The original layer "
-"is not modified."
+"distributes computation across multiple devices. Takes an "
+"existing :class:`mlx.nn.Linear` or :class:`mlx.nn.QuantizedLinear` layer and "
+"returns a new distributed layer (either :class:`mlx.nn.AllToShardedLinear` "
+"or :class:`mlx.nn.ShardedToAllLinear`, depending on the sharding type). The "
+"original layer is not modified."
 msgstr ""
 
 #: ../../../src/examples/tensor_parallelism.rst:88
@@ -146,10 +146,10 @@ msgstr ""
 #: ../../../src/examples/tensor_parallelism.rst:90
 msgid ""
 "Splits the parameters of an existing layer across multiple devices by "
-"modifying the layer in-place. Unlike :func:`shard_linear <mlx.nn.layers."
-"distributed.shard_linear>`, this function does not create a new layer or add "
-"distributed communication. The layer itself must handle distributed "
-"communication if needed."
+"modifying the layer in-place. Unlike :func:`shard_linear "
+"<mlx.nn.layers.distributed.shard_linear>`, this function does not create a "
+"new layer or add distributed communication. The layer itself must handle "
+"distributed communication if needed."
 msgstr ""
 
 #: ../../../src/examples/tensor_parallelism.rst:100
@@ -219,10 +219,10 @@ msgstr ""
 
 #: ../../../src/examples/tensor_parallelism.rst:141
 msgid ""
-"To demonstrate this, let's apply TP to the Transformer block of our :doc:"
-"`Llama Inference <llama-inference>` example. In this example, we will use "
-"the same inference script as the Llama Inference example, which can be found "
-"in `mlx-examples`_."
+"To demonstrate this, let's apply TP to the Transformer block of "
+"our :doc:`Llama Inference <llama-inference>` example. In this example, we "
+"will use the same inference script as the Llama Inference example, which can "
+"be found in `mlx-examples`_."
 msgstr ""
 
 #: ../../../src/examples/tensor_parallelism.rst:146
@@ -360,7 +360,7 @@ msgstr ""
 
 #: ../../../src/examples/tensor_parallelism.rst:235
 msgid ""
-"This allows us to use the llama inference file as normal when running :code:"
-"`python llama.py`, but now we can also run it across two (or more) devices "
-"via :code:`mlx.launch -n 2 llama.py`."
+"This allows us to use the llama inference file as normal when "
+"running :code:`python llama.py`, but now we can also run it across two (or "
+"more) devices via :code:`mlx.launch -n 2 llama.py`."
 msgstr ""

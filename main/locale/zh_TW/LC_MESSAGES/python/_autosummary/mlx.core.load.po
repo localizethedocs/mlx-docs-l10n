@@ -27,8 +27,8 @@ msgstr ""
 
 #: ../../../docstring of mlx.core.load:3
 msgid ""
-"The supported formats are ``.npy``, ``.npz``, ``.safetensors``, and ``."
-"gguf``."
+"The supported formats are ``.npy``, ``.npz``, ``.safetensors``, and "
+"``.gguf``."
 msgstr ""
 
 #: ../../../src/python/_autosummary/mlx.core.load.rst:0

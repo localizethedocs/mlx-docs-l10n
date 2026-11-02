@@ -106,8 +106,8 @@ msgstr ""
 #: ../../../src/usage/saving_and_loading.rst:35
 msgid ""
 "The :func:`load` function will load any of the supported serialization "
-"formats. It determines the format from the extensions. The output of :func:"
-"`load` depends on the format."
+"formats. It determines the format from the extensions. The output "
+"of :func:`load` depends on the format."
 msgstr ""
 
 #: ../../../src/usage/saving_and_loading.rst:39
@@ -163,8 +163,9 @@ msgstr ""
 
 #: ../../../src/usage/saving_and_loading.rst:74
 msgid ""
-"The functions :func:`save_safetensors` and :func:`save_gguf` are similar to :"
-"func:`savez`, but they take as input a :obj:`dict` of string names to arrays:"
+"The functions :func:`save_safetensors` and :func:`save_gguf` are similar "
+"to :func:`savez`, but they take as input a :obj:`dict` of string names to "
+"arrays:"
 msgstr ""
 
 #: ../../../src/usage/saving_and_loading.rst:77

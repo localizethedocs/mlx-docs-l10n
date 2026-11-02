@@ -28,8 +28,8 @@ msgid ""
 "doc/stable/user/basics.indexing.html>`_ for more details on how that works."
 msgstr ""
 "大多數情況下，MLX :obj:`array` 的索引方式與 NumPy :obj:`numpy.ndarray` 相同。"
-"更多細節請參考 `NumPy 文件 <https://numpy.org/doc/stable/user/basics."
-"indexing.html>`_。"
+"更多細節請參考 `NumPy 文件 <https://numpy.org/doc/stable/user/"
+"basics.indexing.html>`_。"
 
 #: ../../../src/usage/indexing.rst:13
 msgid ""
@@ -120,8 +120,8 @@ msgstr "索引不會進行邊界檢查。超出範圍的索引屬於未定義行
 
 #: ../../../src/usage/indexing.rst:72
 msgid ""
-"Boolean mask based indexing is supported for assignment only (see :ref:"
-"`boolean-mask-assignment`)."
+"Boolean mask based indexing is supported for assignment only "
+"(see :ref:`boolean-mask-assignment`)."
 msgstr "布林遮罩索引僅支援賦值（參見 :ref:`boolean-mask-assignment`）。"
 
 #: ../../../src/usage/indexing.rst:75
@@ -142,8 +142,8 @@ msgid ""
 "input version of :func:`numpy.where`."
 msgstr ""
 "以布林遮罩做索引可能會在未來被 MLX 支援。一般而言，MLX 對輸出*形狀*依賴輸入*"
-"資料*的運算支援有限。MLX 尚未支援的其他例子包含 :func:`numpy.nonzero` 與 :"
-"func:`numpy.where` 的單輸入版本。"
+"資料*的運算支援有限。MLX 尚未支援的其他例子包含 :func:`numpy.nonzero` "
+"與 :func:`numpy.where` 的單輸入版本。"
 
 #: ../../../src/usage/indexing.rst:86
 msgid "In Place Updates"
@@ -238,13 +238,14 @@ msgstr "布林遮罩賦值"
 
 #: ../../../src/usage/indexing.rst:152
 msgid ""
-"MLX supports boolean indices using NumPy syntax. A mask must already be a :"
-"class:`bool_` MLX :class:`array` or a NumPy ``ndarray`` with ``dtype=bool``. "
-"Other index types are routed through the standard scatter code."
+"MLX supports boolean indices using NumPy syntax. A mask must already be "
+"a :class:`bool_` MLX :class:`array` or a NumPy ``ndarray`` with "
+"``dtype=bool``. Other index types are routed through the standard scatter "
+"code."
 msgstr ""
-"MLX 支援使用 NumPy 語法的布林索引。遮罩必須是 :class:`bool_` 的 MLX :class:"
-"`array` 或 ``dtype=bool`` 的 NumPy ``ndarray``。其他索引類型會走標準的 "
-"scatter 程式碼路徑。"
+"MLX 支援使用 NumPy 語法的布林索引。遮罩必須是 :class:`bool_` 的 "
+"MLX :class:`array` 或 ``dtype=bool`` 的 NumPy ``ndarray``。其他索引類型會走標"
+"準的 scatter 程式碼路徑。"
 
 #: ../../../src/usage/indexing.rst:156
 msgid ""

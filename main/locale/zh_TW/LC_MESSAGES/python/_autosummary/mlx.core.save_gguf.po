@@ -45,6 +45,6 @@ msgstr ""
 
 #: ../../../docstring of mlx.core.save_gguf:12
 msgid ""
-"The dictionary of metadata to be saved. The values can be a scalar or 1D obj:"
-"`array`, a :obj:`str`, or a :obj:`list` of :obj:`str`."
+"The dictionary of metadata to be saved. The values can be a scalar or 1D "
+"obj:`array`, a :obj:`str`, or a :obj:`list` of :obj:`str`."
 msgstr ""

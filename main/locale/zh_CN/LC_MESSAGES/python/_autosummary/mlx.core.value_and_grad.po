@@ -62,8 +62,8 @@ msgstr ""
 
 #: ../../../docstring of mlx.core.value_and_grad:30
 msgid ""
-"A function which takes a variable number of :class:`array` or trees of :"
-"class:`array` and returns a scalar output :class:`array` or a tuple the "
+"A function which takes a variable number of :class:`array` or trees "
+"of :class:`array` and returns a scalar output :class:`array` or a tuple the "
 "first element of which should be a scalar :class:`array`."
 msgstr ""
 

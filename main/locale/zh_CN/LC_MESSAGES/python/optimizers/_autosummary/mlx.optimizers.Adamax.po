@@ -78,8 +78,8 @@ msgstr ""
 
 #: ../../../src/python/optimizers/_autosummary/mlx.optimizers.Adamax.rst:17:<autosummary>:1
 msgid ""
-":py:obj:`__init__ <mlx.optimizers.Adamax.__init__>`\\ "
-"\\(learning\\_rate\\[\\, betas\\, eps\\]\\)"
+":py:obj:`__init__ <mlx.optimizers.Adamax.__init__>`\\ \\(learning\\_rate\\"
+"[\\, betas\\, eps\\]\\)"
 msgstr ""
 
 #: ../../../src/python/optimizers/_autosummary/mlx.optimizers.Adamax.rst:17:<autosummary>:1

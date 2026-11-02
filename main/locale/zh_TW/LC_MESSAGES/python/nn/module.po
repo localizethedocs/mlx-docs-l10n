@@ -36,10 +36,10 @@ msgstr ":mod:`mlx.nn.layers` 中提供的所有層都繼承此類別，你的模
 #: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/base.py:docstring
 #: of mlx.nn.layers.base.Module:6
 msgid ""
-"A ``Module`` can contain other ``Module`` instances or :class:`mlx.core."
-"array` instances in arbitrary nesting of python lists or dicts. The "
-"``Module`` then allows recursively extracting all the :class:`mlx.core."
-"array` instances using :meth:`mlx.nn.Module.parameters`."
+"A ``Module`` can contain other ``Module`` instances "
+"or :class:`mlx.core.array` instances in arbitrary nesting of python lists or "
+"dicts. The ``Module`` then allows recursively extracting all "
+"the :class:`mlx.core.array` instances using :meth:`mlx.nn.Module.parameters`."
 msgstr ""
 "``Module`` 可以在任意巢狀的 Python list 或 dict 中包含其他 ``Module`` 實例"
 "或 :class:`mlx.core.array` 實例。之後可使用 :meth:`mlx.nn.Module.parameters` "
@@ -54,9 +54,9 @@ msgid ""
 "arrays in a module are trainable unless they are added in the \"frozen\" set "
 "by calling :meth:`freeze`."
 msgstr ""
-"此外，``Module`` 有可訓練與不可訓練（稱為「凍結」）參數的概念。使用 :func:"
-"`mlx.nn.value_and_grad` 時，回傳的梯度僅針對可訓練參數。模組中的所有陣列預設"
-"為可訓練，除非透過 :meth:`freeze` 加入「凍結」集合。"
+"此外，``Module`` 有可訓練與不可訓練（稱為「凍結」）參數的概念。使"
+"用 :func:`mlx.nn.value_and_grad` 時，回傳的梯度僅針對可訓練參數。模組中的所有"
+"陣列預設為可訓練，除非透過 :meth:`freeze` 加入「凍結」集合。"
 
 #: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/base.py:docstring
 #: of mlx.nn.layers.base.Module:17
@@ -127,8 +127,8 @@ msgstr "使用提供的 ``map_fn`` 映射所有參數，並立即用映射後的
 
 #: ../../../src/python/nn/module.rst:38:<autosummary>:1
 msgid ""
-":py:obj:`Module.apply_to_modules <mlx.nn.Module.apply_to_modules>`\\ "
-"\\(apply\\_fn\\)"
+":py:obj:`Module.apply_to_modules <mlx.nn.Module.apply_to_modules>`\\ \\"
+"(apply\\_fn\\)"
 msgstr ""
 
 #: ../../../src/python/nn/module.rst:38:<autosummary>:1
@@ -155,8 +155,8 @@ msgstr "將模型設為評估模式。"
 
 #: ../../../src/python/nn/module.rst:38:<autosummary>:1
 msgid ""
-":py:obj:`Module.filter_and_map <mlx.nn.Module.filter_and_map>`\\ "
-"\\(filter\\_fn\\[\\, map\\_fn\\, ...\\]\\)"
+":py:obj:`Module.filter_and_map <mlx.nn.Module.filter_and_map>`\\ \\"
+"(filter\\_fn\\[\\, map\\_fn\\, ...\\]\\)"
 msgstr ""
 
 #: ../../../src/python/nn/module.rst:38:<autosummary>:1
@@ -187,8 +187,8 @@ msgstr "回傳不包含其他模組的子模組。"
 
 #: ../../../src/python/nn/module.rst:38:<autosummary>:1
 msgid ""
-":py:obj:`Module.load_weights <mlx.nn.Module.load_weights>`\\ "
-"\\(file\\_or\\_weights\\[\\, strict\\]\\)"
+":py:obj:`Module.load_weights <mlx.nn.Module.load_weights>`\\ \\"
+"(file\\_or\\_weights\\[\\, strict\\]\\)"
 msgstr ""
 
 #: ../../../src/python/nn/module.rst:38:<autosummary>:1
@@ -290,8 +290,8 @@ msgstr "將此 Module 的參數替換為提供的巢狀字典與清單中的參�
 
 #: ../../../src/python/nn/module.rst:38:<autosummary>:1
 msgid ""
-":py:obj:`Module.update_modules <mlx.nn.Module.update_modules>`\\ "
-"\\(modules\\[\\, strict\\]\\)"
+":py:obj:`Module.update_modules <mlx.nn.Module.update_modules>`\\ \\(modules\\"
+"[\\, strict\\]\\)"
 msgstr ""
 
 #: ../../../src/python/nn/module.rst:38:<autosummary>:1

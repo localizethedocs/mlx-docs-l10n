@@ -52,9 +52,9 @@ msgid ""
 "automatically evaluate the array."
 msgstr ""
 "MLX 的運算是惰性的。MLX 運算的輸出只有在需要時才會被計算。若要強制計算陣列，"
-"請使用 :func:`eval`。在某些情況下陣列會自動被計算，例如使用 :meth:`array."
-"item` 檢視純量、列印陣列，或將 :class:`array` 轉換為 :class:`numpy.ndarray`，"
-"都會自動計算該陣列。"
+"請使用 :func:`eval`。在某些情況下陣列會自動被計算，例如使"
+"用 :meth:`array.item` 檢視純量、列印陣列，或將 :class:`array` 轉換"
+"為 :class:`numpy.ndarray`，都會自動計算該陣列。"
 
 #: ../../../src/usage/quick_start.rst:31
 msgid ""
@@ -79,8 +79,8 @@ msgstr "函式與圖形轉換"
 
 #: ../../../src/usage/quick_start.rst:49
 msgid ""
-"MLX has standard function transformations like :func:`grad` and :func:"
-"`vmap`. Transformations can be composed arbitrarily. For example "
+"MLX has standard function transformations like :func:`grad` "
+"and :func:`vmap`. Transformations can be composed arbitrarily. For example "
 "``grad(vmap(grad(fn)))`` (or any other composition) is allowed."
 msgstr ""
 "MLX 具備標準的函式轉換，例如 :func:`grad` 與 :func:`vmap`。轉換可以任意組合，"

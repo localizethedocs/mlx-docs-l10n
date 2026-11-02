@@ -229,8 +229,9 @@ msgstr ""
 
 #: ../../../docstring of mlx.core.quantize:74
 msgid ""
-"To dequantize the elements of ``w``, we also save :math:`s` and :math:"
-"`\\beta` which are the returned ``scales`` and ``biases`` respectively."
+"To dequantize the elements of ``w``, we also save :math:`s` "
+"and :math:`\\beta` which are the returned ``scales`` and ``biases`` "
+"respectively."
 msgstr ""
 
 #: ../../../docstring of mlx.core.quantize:78

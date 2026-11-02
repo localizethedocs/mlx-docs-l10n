@@ -40,6 +40,6 @@ msgstr ""
 #: ../../../../../../.conda/lib/python3.12/site-packages/mlx/optimizers/optimizers.py:docstring
 #: of mlx.optimizers.optimizers.Optimizer.update:6
 msgid ""
-"A Python tree of gradients, most likely computed via :func:`mlx.nn."
-"value_and_grad`."
+"A Python tree of gradients, most likely computed "
+"via :func:`mlx.nn.value_and_grad`."
 msgstr ""

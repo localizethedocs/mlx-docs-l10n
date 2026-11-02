@@ -31,8 +31,8 @@ msgstr ""
 
 #: ../../../docstring of mlx.core.grad:3
 msgid ""
-"A function which takes a variable number of :class:`array` or trees of :"
-"class:`array` and returns a scalar output :class:`array`."
+"A function which takes a variable number of :class:`array` or trees "
+"of :class:`array` and returns a scalar output :class:`array`."
 msgstr ""
 
 #: ../../../docstring of mlx.core.grad:7

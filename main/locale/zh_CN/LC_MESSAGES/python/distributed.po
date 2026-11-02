@@ -40,8 +40,8 @@ msgstr ""
 
 #: ../../../src/python/distributed.rst:25:<autosummary>:1
 msgid ""
-":py:obj:`is_available <mlx.core.distributed.is_available>`\\ "
-"\\(\\[backend\\]\\)"
+":py:obj:`is_available <mlx.core.distributed.is_available>`\\ \\(\\[backend\\]"
+"\\)"
 msgstr ""
 
 #: ../../../src/python/distributed.rst:25:<autosummary>:1
@@ -126,8 +126,8 @@ msgstr ""
 
 #: ../../../src/python/distributed.rst:25:<autosummary>:1
 msgid ""
-":py:obj:`recv_like <mlx.core.distributed.recv_like>`\\ \\(x\\, src\\, "
-"\\*\\[\\, group\\, stream\\]\\)"
+":py:obj:`recv_like <mlx.core.distributed.recv_like>`\\ \\(x\\, src\\, \\*\\"
+"[\\, group\\, stream\\]\\)"
 msgstr ""
 
 #: ../../../src/python/distributed.rst:25:<autosummary>:1

@@ -85,8 +85,8 @@ msgstr ""
 
 #: ../../../src/python/nn/functions.rst:41:<autosummary>:1
 msgid ""
-":py:obj:`hard_tanh <mlx.nn.hard_tanh>`\\ \\(x\\[\\, min\\_val\\, "
-"max\\_val\\]\\)"
+":py:obj:`hard_tanh <mlx.nn.hard_tanh>`\\ \\(x\\[\\, min\\_val\\, max\\_val\\]"
+"\\)"
 msgstr ""
 
 #: ../../../src/python/nn/functions.rst:41:<autosummary>:1

@@ -115,8 +115,8 @@ msgstr ""
 
 #: ../../../src/usage/indexing.rst:72
 msgid ""
-"Boolean mask based indexing is supported for assignment only (see :ref:"
-"`boolean-mask-assignment`)."
+"Boolean mask based indexing is supported for assignment only "
+"(see :ref:`boolean-mask-assignment`)."
 msgstr ""
 
 #: ../../../src/usage/indexing.rst:75
@@ -227,9 +227,10 @@ msgstr ""
 
 #: ../../../src/usage/indexing.rst:152
 msgid ""
-"MLX supports boolean indices using NumPy syntax. A mask must already be a :"
-"class:`bool_` MLX :class:`array` or a NumPy ``ndarray`` with ``dtype=bool``. "
-"Other index types are routed through the standard scatter code."
+"MLX supports boolean indices using NumPy syntax. A mask must already be "
+"a :class:`bool_` MLX :class:`array` or a NumPy ``ndarray`` with "
+"``dtype=bool``. Other index types are routed through the standard scatter "
+"code."
 msgstr ""
 
 #: ../../../src/usage/indexing.rst:156

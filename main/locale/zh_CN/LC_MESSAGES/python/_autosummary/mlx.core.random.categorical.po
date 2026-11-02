@@ -47,8 +47,8 @@ msgstr ""
 
 #: ../../../docstring of mlx.core.random.categorical:13
 msgid ""
-"The shape of the output. This must be broadcast compatible with ``logits."
-"shape`` with the ``axis`` dimension removed. Default: ``None``"
+"The shape of the output. This must be broadcast compatible with "
+"``logits.shape`` with the ``axis`` dimension removed. Default: ``None``"
 msgstr ""
 
 #: ../../../docstring of mlx.core.random.categorical:17

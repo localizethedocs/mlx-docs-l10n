@@ -59,15 +59,15 @@ msgstr ""
 #: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/distributed.py:docstring
 #: of mlx.nn.layers.distributed.QuantizedAllToShardedLinear:15
 msgid ""
-"The group size to use for the quantized weight. See :func:`~mlx.core."
-"quantize`. Default: ``64``."
+"The group size to use for the quantized weight. "
+"See :func:`~mlx.core.quantize`. Default: ``64``."
 msgstr ""
 
 #: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/distributed.py:docstring
 #: of mlx.nn.layers.distributed.QuantizedAllToShardedLinear:18
 msgid ""
-"The bit width to use for the quantized weight. See :func:`~mlx.core."
-"quantize`. Default: ``4``."
+"The bit width to use for the quantized weight. "
+"See :func:`~mlx.core.quantize`. Default: ``4``."
 msgstr ""
 
 #: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/distributed.py:docstring
@@ -90,14 +90,15 @@ msgstr ""
 
 #: ../../../src/python/nn/_autosummary/mlx.nn.QuantizedAllToShardedLinear.rst:16:<autosummary>:1
 msgid ""
-":py:obj:`from_quantized_linear <mlx.nn.QuantizedAllToShardedLinear."
-"from_quantized_linear>`\\ \\(quantized\\_linear\\_layer\\, \\*\\)"
+":py:obj:`from_quantized_linear "
+"<mlx.nn.QuantizedAllToShardedLinear.from_quantized_linear>`\\ \\"
+"(quantized\\_linear\\_layer\\, \\*\\)"
 msgstr ""
 
 #: ../../../src/python/nn/_autosummary/mlx.nn.QuantizedAllToShardedLinear.rst:16:<autosummary>:1
 msgid ""
-":py:obj:`unfreeze <mlx.nn.QuantizedAllToShardedLinear.unfreeze>`\\ "
-"\\(\\*args\\, \\*\\*kwargs\\)"
+":py:obj:`unfreeze <mlx.nn.QuantizedAllToShardedLinear.unfreeze>`\\ \\"
+"(\\*args\\, \\*\\*kwargs\\)"
 msgstr ""
 
 #: ../../../src/python/nn/_autosummary/mlx.nn.QuantizedAllToShardedLinear.rst:16:<autosummary>:1

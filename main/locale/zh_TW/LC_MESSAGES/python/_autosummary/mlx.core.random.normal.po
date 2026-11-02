@@ -29,8 +29,8 @@ msgstr ""
 msgid ""
 "If ``loc`` and ``scale`` are not provided the \"standard\" normal "
 "distribution is used. That means $x \\sim \\mathcal{N}(0, 1)$ for real "
-"numbers and $\\text{Re}(x),\\text{Im}(x) \\sim \\mathcal{N}(0, \\frac{1}"
-"{2})$ for complex numbers."
+"numbers and $\\text{Re}(x),\\text{Im}(x) \\sim \\mathcal{N}(0, \\frac{1}{2})"
+"$ for complex numbers."
 msgstr ""
 
 #: ../../../src/python/_autosummary/mlx.core.random.normal.rst:0

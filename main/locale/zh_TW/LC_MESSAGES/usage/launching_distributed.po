@@ -422,8 +422,8 @@ msgid ""
 "One can use MPI by passing ``--backend mpi`` to ``mlx.launch``. In that "
 "case, ``mlx.launch`` is a thin wrapper over ``mpirun``. Moreover,"
 msgstr ""
-"可透過對 ``mlx.launch`` 傳入 ``--backend mpi`` 來使用 MPI。在此情況下，``mlx."
-"launch`` 只是 ``mpirun`` 的薄包裝。此外："
+"可透過對 ``mlx.launch`` 傳入 ``--backend mpi`` 來使用 MPI。在此情況下，"
+"``mlx.launch`` 只是 ``mpirun`` 的薄包裝。此外："
 
 #: ../../../src/usage/launching_distributed.rst:218
 msgid "The IPs in the hostfile are ignored"

@@ -42,15 +42,16 @@ msgstr ""
 
 #: ../../../src/examples/mlp.rst:20
 msgid ""
-"The model is defined as the ``MLP`` class which inherits from :class:`mlx.nn."
-"Module`. We follow the standard idiom to make a new module:"
+"The model is defined as the ``MLP`` class which inherits "
+"from :class:`mlx.nn.Module`. We follow the standard idiom to make a new "
+"module:"
 msgstr ""
 
 #: ../../../src/examples/mlp.rst:23
 msgid ""
 "Define an ``__init__`` where the parameters and/or submodules are setup. See "
-"the :ref:`Module class docs<module_class>` for more information on how :"
-"class:`mlx.nn.Module` registers parameters."
+"the :ref:`Module class docs<module_class>` for more information on "
+"how :class:`mlx.nn.Module` registers parameters."
 msgstr ""
 
 #: ../../../src/examples/mlp.rst:26
@@ -143,8 +144,8 @@ msgstr ""
 
 #: ../../../src/examples/mlp.rst:96
 msgid ""
-"Finally, we put it all together by instantiating the model, the :class:`mlx."
-"optimizers.SGD` optimizer, and running the training loop:"
+"Finally, we put it all together by instantiating the model, "
+"the :class:`mlx.optimizers.SGD` optimizer, and running the training loop:"
 msgstr ""
 
 #: ../../../src/examples/mlp.rst:99

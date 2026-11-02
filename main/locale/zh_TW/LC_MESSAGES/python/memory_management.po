@@ -31,8 +31,8 @@ msgstr "取得目前使用中的記憶體位元組數。"
 
 #: ../../../src/python/memory_management.rst:17:<autosummary>:1
 msgid ""
-":py:obj:`get_array_buffer_size <mlx.core.get_array_buffer_size>`\\ "
-"\\(\\*args\\)"
+":py:obj:`get_array_buffer_size <mlx.core.get_array_buffer_size>`\\ \\"
+"(\\*args\\)"
 msgstr ""
 
 #: ../../../src/python/memory_management.rst:17:<autosummary>:1

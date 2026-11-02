@@ -43,8 +43,8 @@ msgstr ""
 
 #: ../../../src/python/optimizers/common_optimizers.rst:22:<autosummary>:1
 msgid ""
-":py:obj:`Adagrad <mlx.optimizers.Adagrad>`\\ \\(learning\\_rate\\[\\, "
-"eps\\]\\)"
+":py:obj:`Adagrad <mlx.optimizers.Adagrad>`\\ \\(learning\\_rate\\[\\, eps\\]"
+"\\)"
 msgstr ""
 
 #: ../../../src/python/optimizers/common_optimizers.rst:22:<autosummary>:1
@@ -113,8 +113,8 @@ msgstr ""
 
 #: ../../../src/python/optimizers/common_optimizers.rst:22:<autosummary>:1
 msgid ""
-":py:obj:`MultiOptimizer <mlx.optimizers.MultiOptimizer>`\\ "
-"\\(optimizers\\[\\, filters\\]\\)"
+":py:obj:`MultiOptimizer <mlx.optimizers.MultiOptimizer>`\\ \\(optimizers\\"
+"[\\, filters\\]\\)"
 msgstr ""
 
 #: ../../../src/python/optimizers/common_optimizers.rst:22:<autosummary>:1

@@ -30,8 +30,8 @@ msgstr ""
 #: of mlx.nn.layers.containers.Sequential:3
 msgid ""
 "We can pass either modules or plain callables to the Sequential module. If "
-"our functions have learnable parameters they should be implemented as ``nn."
-"Module`` instances."
+"our functions have learnable parameters they should be implemented as "
+"``nn.Module`` instances."
 msgstr ""
 
 #: ../../../src/python/nn/_autosummary/mlx.nn.Sequential.rst:0

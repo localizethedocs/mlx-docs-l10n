@@ -98,8 +98,8 @@ msgstr ""
 #: ../../../docstring of mlx.core.dequantize:37
 msgid ""
 "For ``affine`` quantization, given the notation in :func:`quantize`, we "
-"compute :math:`w_i` from :math:`\\hat{w_i}` and corresponding :math:`s` and :"
-"math:`\\beta` as follows"
+"compute :math:`w_i` from :math:`\\hat{w_i}` and corresponding :math:`s` "
+"and :math:`\\beta` as follows"
 msgstr ""
 
 #: ../../../docstring of mlx.core.dequantize:41

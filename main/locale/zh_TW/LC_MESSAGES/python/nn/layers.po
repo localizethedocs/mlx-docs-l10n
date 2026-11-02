@@ -31,8 +31,8 @@ msgstr ""
 
 #: ../../../src/python/nn/layers.rst:81:<autosummary>:1
 msgid ""
-":py:obj:`AllToShardedLinear <mlx.nn.AllToShardedLinear>`\\ "
-"\\(input\\_dims\\, output\\_dims\\)"
+":py:obj:`AllToShardedLinear <mlx.nn.AllToShardedLinear>`\\ \\"
+"(input\\_dims\\, output\\_dims\\)"
 msgstr ""
 
 #: ../../../src/python/nn/layers.rst:81:<autosummary>:1
@@ -236,8 +236,8 @@ msgstr ""
 
 #: ../../../src/python/nn/layers.rst:81:<autosummary>:1
 msgid ""
-":py:obj:`GRU <mlx.nn.GRU>`\\ \\(input\\_size\\, hidden\\_size\\[\\, "
-"bias\\]\\)"
+":py:obj:`GRU <mlx.nn.GRU>`\\ \\(input\\_size\\, hidden\\_size\\[\\, bias\\]"
+"\\)"
 msgstr ""
 
 #: ../../../src/python/nn/layers.rst:81:<autosummary>:1
@@ -278,8 +278,8 @@ msgstr ""
 
 #: ../../../src/python/nn/layers.rst:81:<autosummary>:1
 msgid ""
-":py:obj:`InstanceNorm <mlx.nn.InstanceNorm>`\\ \\(dims\\[\\, eps\\, "
-"affine\\]\\)"
+":py:obj:`InstanceNorm <mlx.nn.InstanceNorm>`\\ \\(dims\\[\\, eps\\, affine\\]"
+"\\)"
 msgstr ""
 
 #: ../../../src/python/nn/layers.rst:81:<autosummary>:1
@@ -332,8 +332,8 @@ msgstr ""
 
 #: ../../../src/python/nn/layers.rst:81:<autosummary>:1
 msgid ""
-":py:obj:`LSTM <mlx.nn.LSTM>`\\ \\(input\\_size\\, hidden\\_size\\[\\, "
-"bias\\]\\)"
+":py:obj:`LSTM <mlx.nn.LSTM>`\\ \\(input\\_size\\, hidden\\_size\\[\\, bias\\]"
+"\\)"
 msgstr ""
 
 #: ../../../src/python/nn/layers.rst:81:<autosummary>:1
@@ -398,8 +398,8 @@ msgstr ""
 
 #: ../../../src/python/nn/layers.rst:81:<autosummary>:1
 msgid ""
-":py:obj:`QQLinear <mlx.nn.QQLinear>`\\ \\(input\\_dims\\, "
-"output\\_dims\\[\\, ...\\]\\)"
+":py:obj:`QQLinear <mlx.nn.QQLinear>`\\ \\(input\\_dims\\, output\\_dims\\"
+"[\\, ...\\]\\)"
 msgstr ""
 
 #: ../../../src/python/nn/layers.rst:81:<autosummary>:1
@@ -422,8 +422,8 @@ msgstr ""
 
 #: ../../../src/python/nn/layers.rst:81:<autosummary>:1
 msgid ""
-":py:obj:`QuantizedEmbedding <mlx.nn.QuantizedEmbedding>`\\ "
-"\\(num\\_embeddings\\, dims\\[\\, ...\\]\\)"
+":py:obj:`QuantizedEmbedding <mlx.nn.QuantizedEmbedding>`\\ \\"
+"(num\\_embeddings\\, dims\\[\\, ...\\]\\)"
 msgstr ""
 
 #: ../../../src/python/nn/layers.rst:81:<autosummary>:1
@@ -498,8 +498,8 @@ msgstr ""
 
 #: ../../../src/python/nn/layers.rst:81:<autosummary>:1
 msgid ""
-":py:obj:`RoPE <mlx.nn.RoPE>`\\ \\(dims\\[\\, traditional\\, base\\, "
-"scale\\]\\)"
+":py:obj:`RoPE <mlx.nn.RoPE>`\\ \\(dims\\[\\, traditional\\, base\\, scale\\]"
+"\\)"
 msgstr ""
 
 #: ../../../src/python/nn/layers.rst:81:<autosummary>:1
@@ -524,8 +524,8 @@ msgstr ""
 
 #: ../../../src/python/nn/layers.rst:81:<autosummary>:1
 msgid ""
-":py:obj:`ShardedToAllLinear <mlx.nn.ShardedToAllLinear>`\\ "
-"\\(input\\_dims\\, output\\_dims\\)"
+":py:obj:`ShardedToAllLinear <mlx.nn.ShardedToAllLinear>`\\ \\"
+"(input\\_dims\\, output\\_dims\\)"
 msgstr ""
 
 #: ../../../src/python/nn/layers.rst:81:<autosummary>:1
@@ -552,8 +552,8 @@ msgstr ""
 
 #: ../../../src/python/nn/layers.rst:81:<autosummary>:1
 msgid ""
-":py:obj:`SinusoidalPositionalEncoding <mlx.nn."
-"SinusoidalPositionalEncoding>`\\ \\(dims\\[\\, ...\\]\\)"
+":py:obj:`SinusoidalPositionalEncoding "
+"<mlx.nn.SinusoidalPositionalEncoding>`\\ \\(dims\\[\\, ...\\]\\)"
 msgstr ""
 
 #: ../../../src/python/nn/layers.rst:81:<autosummary>:1
@@ -627,32 +627,32 @@ msgstr ""
 
 #: ../../../src/python/nn/layers.rst:81:<autosummary>:1
 msgid ""
-":py:obj:`TransformerDecoder <mlx.nn.TransformerDecoder>`\\ "
-"\\(num\\_layers\\, dims\\, ...\\[\\, ...\\]\\)"
+":py:obj:`TransformerDecoder <mlx.nn.TransformerDecoder>`\\ \\"
+"(num\\_layers\\, dims\\, ...\\[\\, ...\\]\\)"
 msgstr ""
 
 #: ../../../src/python/nn/layers.rst:81:<autosummary>:1
 msgid ""
-":py:obj:`TransformerDecoderLayer <mlx.nn.TransformerDecoderLayer>`\\ "
-"\\(dims\\, num\\_heads\\, ...\\)"
+":py:obj:`TransformerDecoderLayer <mlx.nn.TransformerDecoderLayer>`\\ \\"
+"(dims\\, num\\_heads\\, ...\\)"
 msgstr ""
 
 #: ../../../src/python/nn/layers.rst:81:<autosummary>:1
 msgid ""
-":py:obj:`TransformerEncoder <mlx.nn.TransformerEncoder>`\\ "
-"\\(num\\_layers\\, dims\\, ...\\[\\, ...\\]\\)"
+":py:obj:`TransformerEncoder <mlx.nn.TransformerEncoder>`\\ \\"
+"(num\\_layers\\, dims\\, ...\\[\\, ...\\]\\)"
 msgstr ""
 
 #: ../../../src/python/nn/layers.rst:81:<autosummary>:1
 msgid ""
-":py:obj:`TransformerEncoderLayer <mlx.nn.TransformerEncoderLayer>`\\ "
-"\\(dims\\, num\\_heads\\, ...\\)"
+":py:obj:`TransformerEncoderLayer <mlx.nn.TransformerEncoderLayer>`\\ \\"
+"(dims\\, num\\_heads\\, ...\\)"
 msgstr ""
 
 #: ../../../src/python/nn/layers.rst:81:<autosummary>:1
 msgid ""
-":py:obj:`Upsample <mlx.nn.Upsample>`\\ \\(scale\\_factor\\[\\, mode\\, ..."
-"\\]\\)"
+":py:obj:`Upsample <mlx.nn.Upsample>`\\ \\(scale\\_factor\\[\\, mode\\, ...\\]"
+"\\)"
 msgstr ""
 
 #: ../../../src/python/nn/layers.rst:81:<autosummary>:1

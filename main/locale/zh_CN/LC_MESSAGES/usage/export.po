@@ -226,8 +226,8 @@ msgstr ""
 #: ../../../src/usage/export.rst:166
 msgid ""
 "If the above example was missing ``mx.eval(model.parameters()``, the "
-"exported function would include the random initialization of the :obj:`mlx."
-"nn.Module` parameters."
+"exported function would include the random initialization of "
+"the :obj:`mlx.nn.Module` parameters."
 msgstr ""
 
 #: ../../../src/usage/export.rst:170
@@ -309,9 +309,9 @@ msgstr ""
 #: ../../../src/usage/export.rst:218
 msgid ""
 "Just like :func:`compile`, functions can also be exported for dynamically "
-"shaped inputs. Pass ``shapeless=True`` to :func:`export_function` or :func:"
-"`exporter` to export a function which can be used for inputs with variable "
-"shapes:"
+"shaped inputs. Pass ``shapeless=True`` to :func:`export_function` "
+"or :func:`exporter` to export a function which can be used for inputs with "
+"variable shapes:"
 msgstr ""
 
 #: ../../../src/usage/export.rst:222
@@ -355,8 +355,8 @@ msgstr ""
 #: ../../../src/usage/export.rst:249
 msgid ""
 "The export API in MLX lets you export multiple traces of the same function "
-"to a single file by creating an exporting context manager with :func:"
-"`exporter`:"
+"to a single file by creating an exporting context manager "
+"with :func:`exporter`:"
 msgstr ""
 
 #: ../../../src/usage/export.rst:252
@@ -394,8 +394,9 @@ msgstr ""
 
 #: ../../../src/usage/export.rst:280
 msgid ""
-"Function transformations like :func:`grad`, :func:`vmap`, and :func:"
-"`compile` work on imported functions just like regular Python functions:"
+"Function transformations like :func:`grad`, :func:`vmap`, "
+"and :func:`compile` work on imported functions just like regular Python "
+"functions:"
 msgstr ""
 
 #: ../../../src/usage/export.rst:283
@@ -461,9 +462,10 @@ msgstr ""
 
 #: ../../../src/usage/export.rst:335
 msgid ""
-"Imported functions can be transformed in C++ just like in Python. Use ``std::"
-"vector<mx::array>`` for positional arguments and ``std::map<std::string, mx::"
-"array>`` for keyword arguments when calling imported functions in C++."
+"Imported functions can be transformed in C++ just like in Python. Use "
+"``std::vector<mx::array>`` for positional arguments and "
+"``std::map<std::string, mx::array>`` for keyword arguments when calling "
+"imported functions in C++."
 msgstr ""
 
 #: ../../../src/usage/export.rst:340

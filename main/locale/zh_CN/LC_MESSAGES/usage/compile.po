@@ -160,8 +160,8 @@ msgstr ""
 msgid ""
 "If you use this function with small arrays, it will be overhead bound. If "
 "you use it with large arrays it will be memory bandwidth bound.  However, "
-"all of the operations in the ``gelu`` are fusible into a single kernel with :"
-"func:`compile`. This can speedup both cases considerably."
+"all of the operations in the ``gelu`` are fusible into a single kernel "
+"with :func:`compile`. This can speedup both cases considerably."
 msgstr ""
 
 #: ../../../src/usage/compile.rst:107
@@ -230,9 +230,9 @@ msgstr ""
 #: ../../../src/usage/compile.rst:156
 msgid ""
 "For debugging, inspecting arrays can be helpful. One way to do that is to "
-"globally disable compilation using the :func:`disable_compile` function or :"
-"envvar:`MLX_DISABLE_COMPILE` flag. For example the following is okay even "
-"though ``fun`` is compiled:"
+"globally disable compilation using the :func:`disable_compile` function "
+"or :envvar:`MLX_DISABLE_COMPILE` flag. For example the following is okay "
+"even though ``fun`` is compiled:"
 msgstr ""
 
 #: ../../../src/usage/compile.rst:161
@@ -302,8 +302,8 @@ msgstr ""
 
 #: ../../../src/usage/compile.rst:214
 msgid ""
-"In some cases returning updated state can be pretty inconvenient. Hence, :"
-"func:`compile` has a parameter to capture implicit outputs:"
+"In some cases returning updated state can be pretty inconvenient. "
+"Hence, :func:`compile` has a parameter to capture implicit outputs:"
 msgstr ""
 
 #: ../../../src/usage/compile.rst:217
@@ -503,10 +503,10 @@ msgstr ""
 
 #: ../../../src/usage/compile.rst:388
 msgid ""
-"If you are using a module which performs random sampling such as :func:`mlx."
-"nn.Dropout`, make sure you also include ``mx.random.state`` in the ``state`` "
-"captured by :func:`compile`, i.e. ``state = [model.state, optimizer.state, "
-"mx.random.state]``."
+"If you are using a module which performs random sampling such "
+"as :func:`mlx.nn.Dropout`, make sure you also include ``mx.random.state`` in "
+"the ``state`` captured by :func:`compile`, i.e. ``state = [model.state, "
+"optimizer.state, mx.random.state]``."
 msgstr ""
 
 #: ../../../src/usage/compile.rst:396
@@ -632,9 +632,10 @@ msgstr ""
 
 #: ../../../src/usage/compile.rst:498
 msgid ""
-"The second call to the ``compiled_fun`` fails because of the call to :func:"
-"`reshape` which uses the static shape of ``x`` in the first call. We can fix "
-"this by using :func:`flatten` to avoid hardcoding the shape of ``x``:"
+"The second call to the ``compiled_fun`` fails because of the call "
+"to :func:`reshape` which uses the static shape of ``x`` in the first call. "
+"We can fix this by using :func:`flatten` to avoid hardcoding the shape of "
+"``x``:"
 msgstr ""
 
 #: ../../../src/usage/compile.rst:502

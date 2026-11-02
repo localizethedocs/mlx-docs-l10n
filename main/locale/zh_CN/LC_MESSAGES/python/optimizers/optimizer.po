@@ -46,8 +46,8 @@ msgstr ""
 
 #: ../../../src/python/optimizers/optimizer.rst:23:<autosummary>:1
 msgid ""
-":py:obj:`Optimizer.apply_gradients <mlx.optimizers.Optimizer."
-"apply_gradients>`\\ \\(gradients\\, parameters\\)"
+":py:obj:`Optimizer.apply_gradients "
+"<mlx.optimizers.Optimizer.apply_gradients>`\\ \\(gradients\\, parameters\\)"
 msgstr ""
 
 #: ../../../src/python/optimizers/optimizer.rst:23:<autosummary>:1
