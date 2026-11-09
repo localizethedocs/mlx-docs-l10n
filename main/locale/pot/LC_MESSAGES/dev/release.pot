@@ -1,0 +1,175 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023, Apple
+# This file is distributed under the same license as the MLX package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: MLX main\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-10-26 14:43+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../src/dev/release.rst:2
+msgid "Publishing a New Release"
+msgstr ""
+
+#: ../../../src/dev/release.rst:5
+msgid "Steps"
+msgstr ""
+
+#: ../../../src/dev/release.rst:7
+msgid ""
+"Check the current version on the latest ``main`` branch in ``mlx/version.h``."
+msgstr ""
+
+#: ../../../src/dev/release.rst:8
+msgid ""
+"Push a new tag for current version to the GitHub repository, which would "
+"automatically trigger release workflow."
+msgstr ""
+
+#: ../../../src/dev/release.rst:10
+msgid "Wait for the release workflow to **succeed**."
+msgstr ""
+
+#: ../../../src/dev/release.rst:11
+msgid ""
+"Create a new GitHub Release for the latest tag from the `Tags <https://"
+"github.com/ml-explore/mlx/tags>`__ page."
+msgstr ""
+
+#: ../../../src/dev/release.rst:13
+msgid "Create a pull request that increases the version in ``mlx/version.h``."
+msgstr ""
+
+#: ../../../src/dev/release.rst:16
+msgid "Troubleshooting"
+msgstr ""
+
+#: ../../../src/dev/release.rst:19
+msgid "Build or test failure"
+msgstr ""
+
+#: ../../../src/dev/release.rst:21
+msgid "If the release workflow fails at the build or test step:"
+msgstr ""
+
+#: ../../../src/dev/release.rst:23
+msgid "Remove the tag from GitHub."
+msgstr ""
+
+#: ../../../src/dev/release.rst:24
+msgid "Fix the build or test failure."
+msgstr ""
+
+#: ../../../src/dev/release.rst:25
+msgid "Do the steps again."
+msgstr ""
+
+#: ../../../src/dev/release.rst:27
+msgid "See `Common causes of release build failures`_ for possible causes."
+msgstr ""
+
+#: ../../../src/dev/release.rst:30
+msgid "All publish jobs fail"
+msgstr ""
+
+#: ../../../src/dev/release.rst:32
+msgid ""
+"If all the publish jobs fail, remove the tag from GitHub first. A possible "
+"cause is that the credentials are not valid anymore, you must get it fixed "
+"before retrying."
+msgstr ""
+
+#: ../../../src/dev/release.rst:37
+msgid "Some publish jobs fail"
+msgstr ""
+
+#: ../../../src/dev/release.rst:39
+msgid "If only some publish jobs fail, find the cause:"
+msgstr ""
+
+#: ../../../src/dev/release.rst:41
+msgid ""
+"If the cause is a network issue, restart **only** the failed publish jobs."
+msgstr ""
+
+#: ../../../src/dev/release.rst:42
+msgid ""
+"If restarting cannot fix the cause (for example, the package is larger than "
+"the PyPI size limit), create a fix and merge it to the main branch. Then "
+"`trigger the release workflow manually`_."
+msgstr ""
+
+#: ../../../src/dev/release.rst:47
+msgid "Trigger the release workflow manually"
+msgstr ""
+
+#: ../../../src/dev/release.rst:49
+msgid ""
+"Use this method only for troubleshooting. It is **not** the recommended way "
+"to publish a release."
+msgstr ""
+
+#: ../../../src/dev/release.rst:52
+msgid "Open https://github.com/ml-explore/mlx/actions/workflows/release.yml."
+msgstr ""
+
+#: ../../../src/dev/release.rst:53
+msgid ""
+"For a dry run, which only tests that the release build works, keep the "
+"\"Publish to PyPI\" option unchecked. Then click \"Run workflow\"."
+msgstr ""
+
+#: ../../../src/dev/release.rst:55
+msgid ""
+"To publish a release, select \"Publish to PyPI\". Then click \"Run "
+"workflow\". Note that it is only possible to publish from main branch."
+msgstr ""
+
+#: ../../../src/dev/release.rst:59
+msgid "Common causes of release build failures"
+msgstr ""
+
+#: ../../../src/dev/release.rst:61
+msgid ""
+"Release build failures are rare, because pull requests run the full tests. "
+"But the usual CI makes only debug builds, so a release build can fail "
+"because:"
+msgstr ""
+
+#: ../../../src/dev/release.rst:64
+msgid ""
+"Some code is inside a debug macro guard and behaves differently in release "
+"builds."
+msgstr ""
+
+#: ../../../src/dev/release.rst:66
+msgid ""
+"A bug, for example a race condition, shows only when the code runs faster in "
+"release builds."
+msgstr ""
+
+#: ../../../src/dev/release.rst:68
+msgid ""
+"In the CUDA build, the debug build targets only the current architecture, "
+"while the release build targets all supported architectures, on which CUDA "
+"code can fail to compile or run. So when changing a CUDA kernel that makes "
+"use of hardware specific features, also start a dry run of the release build "
+"to avoid such problems."
+msgstr ""
+
+#: ../../../src/dev/release.rst:73
+msgid ""
+"The release build makes two Python packages: a frontend package with only "
+"the Python bindings, and a backend package with the headers and the backend- "
+"and platform-specific binaries. A change to the CMake files or ``setup.py`` "
+"can break them. See ``.github/actions/build-wheel/action.yml`` for details."
+msgstr ""
