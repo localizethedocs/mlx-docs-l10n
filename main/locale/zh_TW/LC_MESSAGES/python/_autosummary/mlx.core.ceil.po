@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../../src/python/_autosummary/mlx.core.ceil.rst:2
 msgid "mlx.core.ceil"
-msgstr ""
+msgstr "mlx.core.ceil"
 
 #: ../../../docstring of mlx.core.ceil:1
 msgid "Element-wise ceil."

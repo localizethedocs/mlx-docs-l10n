@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../../src/python/_autosummary/mlx.core.set_cache_limit.rst:2
 msgid "mlx.core.set\\_cache\\_limit"
-msgstr ""
+msgstr "mlx.core.set\\_cache\\_limit"
 
 #: ../../../docstring of mlx.core.set_cache_limit:1
 msgid "Set the free cache limit."

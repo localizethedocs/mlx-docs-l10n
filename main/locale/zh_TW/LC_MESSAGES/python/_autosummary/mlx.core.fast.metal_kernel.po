@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../../src/python/_autosummary/mlx.core.fast.metal_kernel.rst:2
 msgid "mlx.core.fast.metal\\_kernel"
-msgstr ""
+msgstr "mlx.core.fast.metal\\_kernel"
 
 #: ../../../docstring of mlx.core.fast.metal_kernel:1
 msgid "A jit-compiled custom Metal kernel defined from a source string."
@@ -94,7 +94,7 @@ msgstr "回傳值"
 
 #: ../../../docstring of mlx.core.fast.metal_kernel:34
 msgid "Callable ``metal_kernel``."
-msgstr ""
+msgstr "可呼叫的 ``metal_kernel``。"
 
 #: ../../../docstring of mlx.core.fast.metal_kernel:37
 msgid "Example"

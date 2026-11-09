@@ -23,7 +23,7 @@ msgstr ""
 
 #: ../../../src/python/cuda.rst:9:<autosummary>:1
 msgid ":py:obj:`is_available <mlx.core.cuda.is_available>`\\ \\(\\)"
-msgstr ""
+msgstr ":py:obj:`is_available <mlx.core.cuda.is_available>`\\ \\(\\)"
 
 #: ../../../src/python/cuda.rst:9:<autosummary>:1
 msgid "Check if the CUDA back-end is available."

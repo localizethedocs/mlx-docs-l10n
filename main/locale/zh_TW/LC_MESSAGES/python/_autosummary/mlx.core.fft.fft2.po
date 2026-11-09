@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../../src/python/_autosummary/mlx.core.fft.fft2.rst:2
 msgid "mlx.core.fft.fft2"
-msgstr ""
+msgstr "mlx.core.fft.fft2"
 
 #: ../../../docstring of mlx.core.fft.fft2:1
 msgid "Two dimensional discrete Fourier Transform."

@@ -247,7 +247,7 @@ msgstr ""
 
 #: ../../../src/python/_autosummary/mlx.core.array.rst:65:<autosummary>:1
 msgid "See :func:`logsumexp`."
-msgstr ""
+msgstr "請參見 :func:`logsumexp`。"
 
 #: ../../../src/python/_autosummary/mlx.core.array.rst:65:<autosummary>:1
 msgid ""
@@ -523,7 +523,7 @@ msgstr ""
 
 #: ../../../src/python/_autosummary/mlx.core.array.rst:80:<autosummary>:1
 msgid "The array's dimension."
-msgstr ""
+msgstr "陣列的維度。"
 
 #: ../../../src/python/_autosummary/mlx.core.array.rst:80:<autosummary>:1
 msgid ":py:obj:`real <mlx.core.array.real>`\\"

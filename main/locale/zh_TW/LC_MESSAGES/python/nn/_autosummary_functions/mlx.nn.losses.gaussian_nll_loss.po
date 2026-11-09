@@ -40,6 +40,11 @@ msgid ""
 "{\\max\\left(\\text{vars}, \\ \\epsilon \\right)}\\right) + \\text{const.}\n"
 "\n"
 msgstr ""
+"\\frac{1}{2}\\left(\\log\\left(\\max\\left(\\text{vars},\n"
+"\\ \\epsilon\\right)\\right) + \\frac{\\left(\\text{inputs} - "
+"\\text{targets} \\right)^2}\n"
+"{\\max\\left(\\text{vars}, \\ \\epsilon \\right)}\\right) + \\text{const.}\n"
+"\n"
 
 #: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/losses.py:docstring
 #: of mlx.nn.losses.gaussian_nll_loss:10

@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../../src/python/_autosummary/mlx.core.broadcast_arrays.rst:2
 msgid "mlx.core.broadcast\\_arrays"
-msgstr ""
+msgstr "mlx.core.broadcast\\_arrays"
 
 #: ../../../docstring of mlx.core.broadcast_arrays:1
 msgid "Broadcast arrays against one another."

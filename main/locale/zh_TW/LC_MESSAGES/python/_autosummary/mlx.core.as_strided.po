@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../../src/python/_autosummary/mlx.core.as_strided.rst:2
 msgid "mlx.core.as\\_strided"
-msgstr ""
+msgstr "mlx.core.as\\_strided"
 
 #: ../../../docstring of mlx.core.as_strided:1
 msgid "Create a view into the array with the given shape and strides."

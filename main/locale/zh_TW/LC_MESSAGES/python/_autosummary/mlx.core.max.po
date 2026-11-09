@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../../src/python/_autosummary/mlx.core.max.rst:2
 msgid "mlx.core.max"
-msgstr ""
+msgstr "mlx.core.max"
 
 #: ../../../docstring of mlx.core.max:1
 msgid "A `max` reduction over the given axes."

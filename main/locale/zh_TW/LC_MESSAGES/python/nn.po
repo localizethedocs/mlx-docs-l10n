@@ -310,6 +310,8 @@ msgid ""
 ":py:obj:`average_gradients <mlx.nn.average_gradients>`\\ \\(gradients\\[\\, "
 "group\\, ...\\]\\)"
 msgstr ""
+":py:obj:`average_gradients <mlx.nn.average_gradients>`\\ \\(gradients\\[\\, "
+"group\\, ...\\]\\)"
 
 #: ../../../src/python/nn.rst:178:<autosummary>:1
 msgid ""

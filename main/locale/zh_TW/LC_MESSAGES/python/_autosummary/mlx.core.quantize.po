@@ -23,7 +23,7 @@ msgstr "mlx.core.quantize"
 
 #: ../../../docstring of mlx.core.quantize:1
 msgid "Quantize the array ``w``."
-msgstr ""
+msgstr "量化陣列 ``w``。"
 
 #: ../../../docstring of mlx.core.quantize:3
 msgid ""
@@ -50,7 +50,7 @@ msgstr "參數"
 
 #: ../../../docstring of mlx.core.quantize:15
 msgid "Array to be quantized"
-msgstr ""
+msgstr "要被量化的陣列"
 
 #: ../../../docstring of mlx.core.quantize:17
 msgid ""

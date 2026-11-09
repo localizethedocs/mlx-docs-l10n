@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../../src/python/_autosummary/mlx.core.fft.irfftn.rst:2
 msgid "mlx.core.fft.irfftn"
-msgstr ""
+msgstr "mlx.core.fft.irfftn"
 
 #: ../../../docstring of mlx.core.fft.irfftn:1
 msgid "The inverse of :func:`rfftn`."

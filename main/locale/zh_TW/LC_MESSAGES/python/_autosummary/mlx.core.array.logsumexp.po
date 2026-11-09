@@ -19,8 +19,8 @@ msgstr ""
 
 #: ../../../src/python/_autosummary/mlx.core.array.logsumexp.rst:2
 msgid "mlx.core.array.logsumexp"
-msgstr ""
+msgstr "mlx.core.array.logsumexp"
 
 #: ../../../docstring of mlx.core.array.logsumexp:1
 msgid "See :func:`logsumexp`."
-msgstr ""
+msgstr "請參見 :func:`logsumexp`。"

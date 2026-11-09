@@ -105,11 +105,11 @@ msgstr ""
 msgid ""
 "Only pass the body of the Metal kernel in ``source``. The function signature "
 "is generated automatically."
-msgstr "在 ``source`` 中只需提供 Metal 內核的主體即可。函式簽名會自動產生。"
+msgstr "在 ``source`` 中只需提供 Metal 內核的主體即可。函數簽名會自動產生。"
 
 #: ../../../src/dev/custom_metal_kernels.rst:53
 msgid "The full function signature will be generated using:"
-msgstr "完整的函式簽名會根據以下內容自動產生："
+msgstr "完整的函數簽名會根據以下內容自動產生："
 
 #: ../../../src/dev/custom_metal_kernels.rst:55
 msgid "The shapes/dtypes of ``inputs``"
@@ -163,15 +163,15 @@ msgid ""
 "developer.apple.com/metal/Metal-Shading-Language-Specification.pdf>`_ are "
 "supported."
 msgstr ""
-"這些會被加入為函式參數。支援 `Metal Shading Language Specification <https://"
-"developer.apple.com/metal/Metal-Shading-Language-Specification.pdf>`_ 表 5.8 "
-"中定義的所有屬性。"
+"這些會被增添為函數引數。支援 `Metal 算繪語言規格 <https://"
+"developer.apple.com/metal/Metal-Shading-Language-Specification.pdf>`_\\ 表 "
+"5.8 中定義的所有特性。"
 
 #: ../../../src/dev/custom_metal_kernels.rst:71
 msgid ""
 "Putting this all together, the generated function signature for ``myexp`` is "
 "as follows:"
-msgstr "綜合以上內容，``myexp`` 產生的函式簽名如下："
+msgstr "綜合以上內容，``myexp`` 產生的函數簽名如下："
 
 #: ../../../src/dev/custom_metal_kernels.rst:73
 msgid ""
@@ -191,6 +191,21 @@ msgid ""
 "[[kernel]] decltype(custom_kernel_myexp_float_float16_t_float16_t<float>) "
 "custom_kernel_myexp_float_float16_t_float16_t<float>;"
 msgstr ""
+"template <typename T>\n"
+"[[kernel]] void custom_kernel_myexp_float_float16_t_float16_t(\n"
+"  const device float16_t* inp [[buffer(0)]],\n"
+"  device float16_t* out [[buffer(1)]],\n"
+"  uint3 thread_position_in_grid [[thread_position_in_grid]]) {\n"
+"\n"
+"        uint elem = thread_position_in_grid.x;\n"
+"        T tmp = inp[elem];\n"
+"        out[elem] = metal::exp(tmp);\n"
+"\n"
+"}\n"
+"\n"
+"template [[host_name(\"custom_kernel_myexp_float_float16_t_float16_t\")]] "
+"[[kernel]] decltype(custom_kernel_myexp_float_float16_t_float16_t<float>) "
+"custom_kernel_myexp_float_float16_t_float16_t<float>;"
 
 #: ../../../src/dev/custom_metal_kernels.rst:89
 msgid ""
@@ -201,9 +216,9 @@ msgid ""
 "threadgroups.  For optimal performance, each thread group dimension should "
 "be less than or equal to the corresponding grid dimension."
 msgstr ""
-"注意：``grid`` 與 ``threadgroup`` 是 Metal `dispatchThreads <https://"
+"備註：``grid`` 與 ``threadgroup`` 是 Metal `dispatchThreads <https://"
 "developer.apple.com/documentation/metal/mtlcomputecommandencoder/2866532-"
-"dispatchthreads>`_ 函式的參數。這代表我們會啟動 ``mx.prod(grid)`` 個執行緒，"
+"dispatchthreads>`_ 函數的參數。這代表我們會啟動 ``mx.prod(grid)`` 個執行緒，"
 "並依 ``threadgroup`` 大小分成多個執行緒群組。為了最佳效能，每個執行緒群組的各"
 "維度應小於或等於對應的 grid 維度。"
 
@@ -683,7 +698,7 @@ msgstr ""
 
 #: ../../../src/dev/custom_metal_kernels.rst:330
 msgid "``init_value=0``"
-msgstr ""
+msgstr "``init_value=0``"
 
 #: ../../../src/dev/custom_metal_kernels.rst:331
 msgid ""
@@ -694,7 +709,7 @@ msgstr ""
 
 #: ../../../src/dev/custom_metal_kernels.rst:333
 msgid "``atomic_outputs=True``"
-msgstr ""
+msgstr "``atomic_outputs=True``"
 
 #: ../../../src/dev/custom_metal_kernels.rst:334
 msgid ""
@@ -705,11 +720,10 @@ msgid ""
 "developer.apple.com/metal/Metal-Shading-Language-Specification.pdf>`_ for "
 "more details."
 msgstr ""
-"在函式簽名中將所有內核輸出指定為 ``atomic``。這表示我們可以使用 Metal 的 "
+"在函數簽名中將所有內核輸出指定為 ``atomic``。這表示我們可以使用 Metal 的 "
 "``atomic`` 功能，從多個執行緒群組同時更新 ``x_grad`` 和 ``grid_grad`` 陣列。"
-"詳情請參見 `Metal Shading Language Specification <https://"
-"developer.apple.com/metal/Metal-Shading-Language-Specification.pdf>`_ 第 "
-"6.15 節。"
+"詳情請參見 `Metal 算繪語言規格 <https://developer.apple.com/metal/Metal-"
+"Shading-Language-Specification.pdf>`_\\ 第 6.15 節。"
 
 #: ../../../src/dev/custom_metal_kernels.rst:338
 msgid "We can then implement the backwards pass as follows:"
@@ -855,4 +869,4 @@ msgstr "vjp 的加速幅度更大："
 
 #: ../../../src/dev/custom_metal_kernels.rst:468
 msgid "``676.4ms -> 16.7ms => 40x speed up``"
-msgstr ""
+msgstr "``676.4ms -> 16.7ms => 40x speed up``"

@@ -102,7 +102,7 @@ msgid ""
 "Other functions which may be useful for indexing arrays are :func:`take` "
 "and :func:`take_along_axis`."
 msgstr ""
-"其他可能有助於索引陣列的函式還有 :func:`take` 與 :func:`take_along_axis`。"
+"其他可能有助於索引陣列的函數還有 :func:`take` 與 :func:`take_along_axis`。"
 
 #: ../../../src/usage/indexing.rst:64
 msgid "Differences from NumPy"
@@ -214,7 +214,7 @@ msgstr "``a`` 的第一個元素可能是 ``4`` 或 ``5``。"
 msgid ""
 "Transformations of functions which use in-place updates are allowed and work "
 "as expected. For example:"
-msgstr "允許對使用就地更新的函式進行轉換，且可如預期運作。例如："
+msgstr "允許對使用就地更新的函數進行轉換，且可如預期運作。例如："
 
 #: ../../../src/usage/indexing.rst:135
 msgid ""

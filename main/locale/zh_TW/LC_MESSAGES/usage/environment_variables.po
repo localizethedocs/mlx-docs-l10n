@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../../src/usage/environment_variables.rst:4
 msgid "Environment Variables"
-msgstr ""
+msgstr "環境變數"
 
 #: ../../../src/usage/environment_variables.rst:6
 msgid ""

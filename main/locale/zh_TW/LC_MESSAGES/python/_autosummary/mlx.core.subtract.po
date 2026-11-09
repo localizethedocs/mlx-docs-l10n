@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../../src/python/_autosummary/mlx.core.subtract.rst:2
 msgid "mlx.core.subtract"
-msgstr ""
+msgstr "mlx.core.subtract"
 
 #: ../../../docstring of mlx.core.subtract:1
 msgid "Element-wise subtraction."
@@ -37,7 +37,7 @@ msgstr "參數"
 
 #: ../../../docstring of mlx.core.subtract:6 mlx.core.subtract:8
 msgid "Input array or scalar."
-msgstr ""
+msgstr "輸入陣列或純量。"
 
 #: ../../../src/python/_autosummary/mlx.core.subtract.rst:0
 msgid "Returns"

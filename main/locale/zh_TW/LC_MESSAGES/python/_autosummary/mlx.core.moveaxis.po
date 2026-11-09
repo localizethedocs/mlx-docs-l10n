@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../../src/python/_autosummary/mlx.core.moveaxis.rst:2
 msgid "mlx.core.moveaxis"
-msgstr ""
+msgstr "mlx.core.moveaxis"
 
 #: ../../../docstring of mlx.core.moveaxis:1
 msgid "Move an axis to a new position."

@@ -379,13 +379,15 @@ msgstr ""
 
 #: ../../../src/python/ops.rst:213:<autosummary>:1
 msgid "See :func:`concatenate`."
-msgstr ""
+msgstr "請參見 :func:`concatenate`。"
 
 #: ../../../src/python/ops.rst:213:<autosummary>:1
 msgid ""
 ":py:obj:`concatenate <mlx.core.concatenate>`\\ \\(arrays\\[\\, axis\\, "
 "stream\\]\\)"
 msgstr ""
+":py:obj:`concatenate <mlx.core.concatenate>`\\ \\(arrays\\[\\, axis\\, "
+"stream\\]\\)"
 
 #: ../../../src/python/ops.rst:213:<autosummary>:1
 msgid "Concatenate the arrays along the given axis."
@@ -1338,7 +1340,7 @@ msgstr ""
 
 #: ../../../src/python/ops.rst:213:<autosummary>:1
 msgid "Quantize the array ``w``."
-msgstr ""
+msgstr "量化陣列 ``w``。"
 
 #: ../../../src/python/ops.rst:213:<autosummary>:1
 msgid ""

@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../../src/python/_autosummary/mlx.core.disable_compile.rst:2
 msgid "mlx.core.disable\\_compile"
-msgstr ""
+msgstr "mlx.core.disable\\_compile"
 
 #: ../../../docstring of mlx.core.disable_compile:1
 msgid ""

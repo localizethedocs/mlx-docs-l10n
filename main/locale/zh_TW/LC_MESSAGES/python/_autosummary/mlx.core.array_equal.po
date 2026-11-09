@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../../src/python/_autosummary/mlx.core.array_equal.rst:2
 msgid "mlx.core.array\\_equal"
-msgstr ""
+msgstr "mlx.core.array\\_equal"
 
 #: ../../../docstring of mlx.core.array_equal:1
 msgid "Array equality check."

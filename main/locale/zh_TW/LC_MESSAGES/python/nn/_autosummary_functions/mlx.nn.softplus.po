@@ -19,12 +19,12 @@ msgstr ""
 
 #: ../../../src/python/nn/_autosummary_functions/mlx.nn.softplus.rst:2
 msgid "mlx.nn.softplus"
-msgstr ""
+msgstr "mlx.nn.softplus"
 
 #: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/activations.py:docstring
 #: of mlx.nn.layers.activations.softplus:1
 msgid "Applies the Softplus function."
-msgstr ""
+msgstr "套用 Softplus 函數。"
 
 #: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/activations.py:docstring
 #: of mlx.nn.layers.activations.softplus:3

@@ -69,7 +69,7 @@ msgstr "參數"
 #: ../../../docstring of mlx.core.block_masked_mm:16
 #: mlx.core.block_masked_mm:18
 msgid "Input array or scalar."
-msgstr ""
+msgstr "輸入陣列或純量。"
 
 #: ../../../docstring of mlx.core.block_masked_mm:20
 msgid "Size of blocks to be masked. Must be ``32`` or ``64``. Default: ``64``."

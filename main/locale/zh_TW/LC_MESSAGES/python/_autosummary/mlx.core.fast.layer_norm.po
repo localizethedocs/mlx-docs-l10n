@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../../src/python/_autosummary/mlx.core.fast.layer_norm.rst:2
 msgid "mlx.core.fast.layer\\_norm"
-msgstr ""
+msgstr "mlx.core.fast.layer\\_norm"
 
 #: ../../../docstring of mlx.core.fast.layer_norm:1
 msgid "Layer normalization."

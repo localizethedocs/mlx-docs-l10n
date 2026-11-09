@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../../src/python/nn/_autosummary/mlx.nn.AvgPool2d.rst:2
 msgid "mlx.nn.AvgPool2d"
-msgstr ""
+msgstr "mlx.nn.AvgPool2d"
 
 #: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/pooling.py:docstring
 #: of mlx.nn.layers.pooling.AvgPool2d:1

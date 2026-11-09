@@ -19,8 +19,8 @@ msgstr ""
 
 #: ../../../src/python/_autosummary/mlx.core.default_stream.rst:2
 msgid "mlx.core.default\\_stream"
-msgstr ""
+msgstr "mlx.core.default\\_stream"
 
 #: ../../../docstring of mlx.core.default_stream:1
 msgid "Get the device's default stream."
-msgstr ""
+msgstr "取得裝置的默認串流。"

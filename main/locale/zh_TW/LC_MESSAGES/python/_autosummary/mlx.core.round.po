@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../../src/python/_autosummary/mlx.core.round.rst:2
 msgid "mlx.core.round"
-msgstr ""
+msgstr "mlx.core.round"
 
 #: ../../../docstring of mlx.core.round:1
 msgid "Round to the given number of decimals."
@@ -34,6 +34,8 @@ msgid ""
 "s = 10**decimals\n"
 "x = round(x * s) / s"
 msgstr ""
+"s = 10**decimals\n"
+"x = round(x * s) / s"
 
 #: ../../../src/python/_autosummary/mlx.core.round.rst:0
 msgid "Parameters"

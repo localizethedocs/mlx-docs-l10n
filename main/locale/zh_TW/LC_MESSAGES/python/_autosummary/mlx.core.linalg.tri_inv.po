@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../../src/python/_autosummary/mlx.core.linalg.tri_inv.rst:2
 msgid "mlx.core.linalg.tri\\_inv"
-msgstr ""
+msgstr "mlx.core.linalg.tri\\_inv"
 
 #: ../../../docstring of mlx.core.linalg.tri_inv:1
 msgid "Compute the inverse of a triangular square matrix."

@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../../src/python/_autosummary/mlx.core.topk.rst:2
 msgid "mlx.core.topk"
-msgstr ""
+msgstr "mlx.core.topk"
 
 #: ../../../docstring of mlx.core.topk:1
 msgid "Returns the ``k`` largest elements from the input along a given axis."
