@@ -72,7 +72,7 @@ msgstr ""
 msgid ""
 "The output of both the regular function and the compiled function is the "
 "same up to numerical precision."
-msgstr "一般函式與編譯後函式的輸出在數值精度上是一致的。"
+msgstr "一般函數與編譯函數的輸出在數值精確度上是一致的。"
 
 #: ../../../src/usage/compile.rst:42
 msgid ""
@@ -122,7 +122,7 @@ msgstr "變更任何輸入的型別"
 
 #: ../../../src/usage/compile.rst:72
 msgid "Changing the number of inputs to the function"
-msgstr "變更函式輸入的數量"
+msgstr "變更函數輸入的數量"
 
 #: ../../../src/usage/compile.rst:74
 msgid ""
@@ -270,13 +270,13 @@ msgstr ""
 
 #: ../../../src/usage/compile.rst:174
 msgid "Pure Functions"
-msgstr "純函式"
+msgstr "純函數"
 
 #: ../../../src/usage/compile.rst:176
 msgid ""
 "Compiled functions are intended to be *pure*; that is they should not have "
 "side effects. For example:"
-msgstr "編譯函式預期是*純函式*，也就是不應有副作用。例如："
+msgstr "編譯函數預期是\\ *純函數*\\ ，也就是不應有副作用。例如："
 
 #: ../../../src/usage/compile.rst:179
 msgid ""
@@ -354,7 +354,7 @@ msgid ""
 "update to a container of arrays, as is commonly done when training the "
 "parameters of a :class:`mlx.nn.Module`."
 msgstr ""
-"當你編譯的函式會更新一個陣列容器時（例如訓練 :class:`mlx.nn.Module` 的參數時"
+"當你編譯的函數會更新一個陣列容器時（例如訓練 :class:`mlx.nn.Module` 的參數時"
 "常見），這尤其有用。"
 
 #: ../../../src/usage/compile.rst:238

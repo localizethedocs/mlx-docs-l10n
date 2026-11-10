@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../../src/python/_autosummary/mlx.nn.average_gradients.rst:2
 msgid "mlx.nn.average\\_gradients"
-msgstr ""
+msgstr "mlx.nn.average\\_gradients"
 
 #: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/utils.py:docstring
 #: of mlx.nn.utils.average_gradients:1

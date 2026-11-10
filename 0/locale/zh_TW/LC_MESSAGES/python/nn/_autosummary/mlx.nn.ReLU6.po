@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../../src/python/nn/_autosummary/mlx.nn.ReLU6.rst:2
 msgid "mlx.nn.ReLU6"
-msgstr ""
+msgstr "mlx.nn.ReLU6"
 
 #: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/activations.py:docstring
 #: of mlx.nn.layers.activations.ReLU6:1

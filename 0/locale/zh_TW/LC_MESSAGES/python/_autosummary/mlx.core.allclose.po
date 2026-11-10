@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../../src/python/_autosummary/mlx.core.allclose.rst:2
 msgid "mlx.core.allclose"
-msgstr ""
+msgstr "mlx.core.allclose"
 
 #: ../../../docstring of mlx.core.allclose:1
 msgid "Approximate comparison of two arrays."
@@ -39,7 +39,7 @@ msgstr "在以下情況視為陣列相等："
 
 #: ../../../docstring of mlx.core.allclose:7
 msgid "all(abs(a - b) <= (atol + rtol * abs(b)))"
-msgstr ""
+msgstr "all(abs(a - b) <= (atol + rtol * abs(b)))"
 
 #: ../../../docstring of mlx.core.allclose:11
 msgid ""

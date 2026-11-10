@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../../src/python/_autosummary/mlx.core.concatenate.rst:2
 msgid "mlx.core.concatenate"
-msgstr ""
+msgstr "mlx.core.concatenate"
 
 #: ../../../docstring of mlx.core.concatenate:1
 msgid "Concatenate the arrays along the given axis."
@@ -43,7 +43,7 @@ msgstr "回傳值"
 
 #: ../../../docstring of mlx.core.concatenate:9
 msgid "The concatenated array."
-msgstr ""
+msgstr "拼接陣列。"
 
 #: ../../../src/python/_autosummary/mlx.core.concatenate.rst:0
 msgid "Return type"

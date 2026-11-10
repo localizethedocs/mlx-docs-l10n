@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../../src/python/_autosummary/mlx.core.isfinite.rst:2
 msgid "mlx.core.isfinite"
-msgstr ""
+msgstr "mlx.core.isfinite"
 
 #: ../../../docstring of mlx.core.isfinite:1
 msgid "Return a boolean array indicating which elements are finite."

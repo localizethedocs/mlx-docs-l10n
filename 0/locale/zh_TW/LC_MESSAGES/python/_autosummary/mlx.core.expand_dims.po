@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../../src/python/_autosummary/mlx.core.expand_dims.rst:2
 msgid "mlx.core.expand\\_dims"
-msgstr ""
+msgstr "mlx.core.expand\\_dims"
 
 #: ../../../docstring of mlx.core.expand_dims:1
 msgid "Add a size one dimension at the given axis."

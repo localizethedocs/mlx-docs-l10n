@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../../src/python/nn/_autosummary_functions/mlx.nn.softshrink.rst:2
 msgid "mlx.nn.softshrink"
-msgstr ""
+msgstr "mlx.nn.softshrink"
 
 #: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/activations.py:docstring
 #: of mlx.nn.layers.activations.softshrink:1
@@ -36,3 +36,9 @@ msgid ""
 "\\end{cases}\n"
 "\n"
 msgstr ""
+"\\text{softshrink}(x) = \\begin{cases}\n"
+"x - \\lambda & \\text{if } x > \\lambda \\\\\n"
+"x + \\lambda & \\text{if } x < -\\lambda \\\\\n"
+"0 & \\text{otherwise}\n"
+"\\end{cases}\n"
+"\n"

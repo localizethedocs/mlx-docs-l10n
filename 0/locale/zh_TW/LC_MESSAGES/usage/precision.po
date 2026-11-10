@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../../src/usage/precision.rst:4
 msgid "Numerical Precision"
-msgstr ""
+msgstr "數值精確度"
 
 #: ../../../src/usage/precision.rst:6
 msgid ""

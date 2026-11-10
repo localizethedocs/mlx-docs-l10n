@@ -39,7 +39,7 @@ msgstr "副檔名"
 
 #: ../../../src/usage/saving_and_loading.rst:16
 msgid "Function"
-msgstr "函式"
+msgstr "函數"
 
 #: ../../../src/usage/saving_and_loading.rst:17
 msgid "Notes"
@@ -85,23 +85,23 @@ msgstr ""
 
 #: ../../../src/usage/saving_and_loading.rst:27
 msgid "``.safetensors``"
-msgstr ""
+msgstr "``.safetensors``"
 
 #: ../../../src/usage/saving_and_loading.rst:28
 msgid ":func:`save_safetensors`"
-msgstr ""
+msgstr ":func:`save_safetensors`"
 
 #: ../../../src/usage/saving_and_loading.rst:30
 msgid "GGUF"
-msgstr ""
+msgstr "GGUF"
 
 #: ../../../src/usage/saving_and_loading.rst:31
 msgid "``.gguf``"
-msgstr ""
+msgstr "``.gguf``"
 
 #: ../../../src/usage/saving_and_loading.rst:32
 msgid ":func:`save_gguf`"
-msgstr ""
+msgstr ":func:`save_gguf`"
 
 #: ../../../src/usage/saving_and_loading.rst:35
 msgid ""
@@ -109,7 +109,7 @@ msgid ""
 "formats. It determines the format from the extensions. The output "
 "of :func:`load` depends on the format."
 msgstr ""
-":func:`load` 函式可載入任何支援的序列化格式。它會依副檔名判斷格"
+":func:`load` 函數可載入任何支援的序列化格式。它會依副檔名判斷格"
 "式。:func:`load` 的輸出會依格式而定。"
 
 #: ../../../src/usage/saving_and_loading.rst:39
@@ -121,6 +121,8 @@ msgid ""
 ">>> a = mx.array([1.0])\n"
 ">>> mx.save(\"array\", a)"
 msgstr ""
+">>> a = mx.array([1.0])\n"
+">>> mx.save(\"array\", a)"
 
 #: ../../../src/usage/saving_and_loading.rst:46
 msgid ""
@@ -136,6 +138,8 @@ msgid ""
 ">>> mx.load(\"array.npy\")\n"
 "array([1], dtype=float32)"
 msgstr ""
+">>> mx.load(\"array.npy\")\n"
+"array([1], dtype=float32)"
 
 #: ../../../src/usage/saving_and_loading.rst:55
 msgid "Here's an example of saving several arrays to a single file:"
@@ -147,6 +151,9 @@ msgid ""
 ">>> b = mx.array([2.0])\n"
 ">>> mx.savez(\"arrays\", a, b=b)"
 msgstr ""
+">>> a = mx.array([1.0])\n"
+">>> b = mx.array([2.0])\n"
+">>> mx.savez(\"arrays\", a, b=b)"
 
 #: ../../../src/usage/saving_and_loading.rst:63
 msgid ""
@@ -162,6 +169,8 @@ msgid ""
 ">>> mx.load(\"arrays.npz\")\n"
 "{'b': array([2], dtype=float32), 'arr_0': array([1], dtype=float32)}"
 msgstr ""
+">>> mx.load(\"arrays.npz\")\n"
+"{'b': array([2], dtype=float32), 'arr_0': array([1], dtype=float32)}"
 
 #: ../../../src/usage/saving_and_loading.rst:72
 msgid "In this case :func:`load` returns a dictionary of names to arrays."
@@ -182,3 +191,6 @@ msgid ""
 ">>> b = mx.array([2.0])\n"
 ">>> mx.save_safetensors(\"arrays\", {\"a\": a, \"b\": b})"
 msgstr ""
+">>> a = mx.array([1.0])\n"
+">>> b = mx.array([2.0])\n"
+">>> mx.save_safetensors(\"arrays\", {\"a\": a, \"b\": b})"

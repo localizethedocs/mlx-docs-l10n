@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../../src/python/nn/_autosummary/mlx.nn.Softmin.rst:2
 msgid "mlx.nn.Softmin"
-msgstr ""
+msgstr "mlx.nn.Softmin"
 
 #: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/activations.py:docstring
 #: of mlx.nn.layers.activations.Softmin:1

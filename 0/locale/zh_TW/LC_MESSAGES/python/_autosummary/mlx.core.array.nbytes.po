@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../../src/python/_autosummary/mlx.core.array.nbytes.rst:2
 msgid "mlx.core.array.nbytes"
-msgstr ""
+msgstr "mlx.core.array.nbytes"
 
 #: ../../../docstring of mlx.core.array.nbytes:1
 msgid "The number of bytes in the array."

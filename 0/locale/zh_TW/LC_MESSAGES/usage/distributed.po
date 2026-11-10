@@ -226,11 +226,11 @@ msgstr ""
 
 #: ../../../src/usage/distributed.rst:123
 msgid ":ref:`Data Parallelism <data_parallelism>`"
-msgstr ""
+msgstr ":ref:`資料並行 <data_parallelism>`"
 
 #: ../../../src/usage/distributed.rst:124
 msgid ":ref:`Tensor Parallelism <tensor_parallelism>`"
-msgstr ""
+msgstr ":ref:`張量並行 <tensor_parallelism>`"
 
 #: ../../../src/usage/distributed.rst:129
 msgid "Getting Started with Ring"

@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../../src/python/optimizers/_autosummary/mlx.optimizers.Lion.rst:2
 msgid "mlx.optimizers.Lion"
-msgstr ""
+msgstr "mlx.optimizers.Lion"
 
 #: ../../../../../../.conda/lib/python3.12/site-packages/mlx/optimizers/optimizers.py:docstring
 #: of mlx.optimizers.optimizers.Lion:1
@@ -81,12 +81,16 @@ msgid ""
 ":py:obj:`__init__ <mlx.optimizers.Lion.__init__>`\\ \\(learning\\_rate\\[\\, "
 "betas\\, weight\\_decay\\]\\)"
 msgstr ""
+":py:obj:`__init__ <mlx.optimizers.Lion.__init__>`\\ \\(learning\\_rate\\[\\, "
+"betas\\, weight\\_decay\\]\\)"
 
 #: ../../../src/python/optimizers/_autosummary/mlx.optimizers.Lion.rst:17:<autosummary>:1
 msgid ""
 ":py:obj:`apply_single <mlx.optimizers.Lion.apply_single>`\\ \\(gradient\\, "
 "parameter\\, state\\)"
 msgstr ""
+":py:obj:`apply_single <mlx.optimizers.Lion.apply_single>`\\ \\(gradient\\, "
+"parameter\\, state\\)"
 
 #: ../../../src/python/optimizers/_autosummary/mlx.optimizers.Lion.rst:17:<autosummary>:1
 msgid ""
@@ -99,6 +103,8 @@ msgid ""
 ":py:obj:`init_single <mlx.optimizers.Lion.init_single>`\\ \\(parameter\\, "
 "state\\)"
 msgstr ""
+":py:obj:`init_single <mlx.optimizers.Lion.init_single>`\\ \\(parameter\\, "
+"state\\)"
 
 #: ../../../src/python/optimizers/_autosummary/mlx.optimizers.Lion.rst:17:<autosummary>:1
 msgid "Initialize optimizer state"

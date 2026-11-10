@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../../src/python/_autosummary/mlx.core.identity.rst:2
 msgid "mlx.core.identity"
-msgstr ""
+msgstr "mlx.core.identity"
 
 #: ../../../docstring of mlx.core.identity:1
 msgid "Create a square identity matrix."

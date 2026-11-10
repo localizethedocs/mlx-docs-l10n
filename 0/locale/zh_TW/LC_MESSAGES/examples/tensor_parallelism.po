@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../../src/examples/tensor_parallelism.rst:4
 msgid "Tensor Parallelism"
-msgstr ""
+msgstr "張量並行"
 
 #: ../../../src/examples/tensor_parallelism.rst:6
 msgid ""
@@ -141,7 +141,7 @@ msgstr ""
 
 #: ../../../src/examples/tensor_parallelism.rst:88
 msgid ":func:`shard_inplace <mlx.nn.layers.distributed.shard_inplace>`"
-msgstr ""
+msgstr ":func:`shard_inplace <mlx.nn.layers.distributed.shard_inplace>`"
 
 #: ../../../src/examples/tensor_parallelism.rst:90
 msgid ""
@@ -154,7 +154,7 @@ msgstr ""
 
 #: ../../../src/examples/tensor_parallelism.rst:100
 msgid "Useful Design Choices"
-msgstr ""
+msgstr "實用的設計選擇"
 
 #: ../../../src/examples/tensor_parallelism.rst:102
 msgid ""

@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../../src/python/nn/init.rst:6
 msgid "Initializers"
-msgstr ""
+msgstr "初始化器"
 
 #: ../../../src/python/nn/init.rst:8
 msgid ""

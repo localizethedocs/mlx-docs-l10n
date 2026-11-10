@@ -37,7 +37,7 @@ msgstr "參數"
 
 #: ../../../docstring of mlx.core.maximum:6 mlx.core.maximum:8
 msgid "Input array or scalar."
-msgstr ""
+msgstr "輸入陣列或純量。"
 
 #: ../../../src/python/_autosummary/mlx.core.maximum.rst:0
 msgid "Returns"

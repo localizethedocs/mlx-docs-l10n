@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../../src/python/optimizers/_autosummary/mlx.optimizers.linear_schedule.rst:2
 msgid "mlx.optimizers.linear\\_schedule"
-msgstr ""
+msgstr "mlx.optimizers.linear\\_schedule"
 
 #: ../../../../../../.conda/lib/python3.12/site-packages/mlx/optimizers/schedulers.py:docstring
 #: of mlx.optimizers.schedulers.linear_schedule:1

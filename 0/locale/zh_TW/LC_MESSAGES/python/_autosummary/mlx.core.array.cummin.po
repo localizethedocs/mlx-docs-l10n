@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../../src/python/_autosummary/mlx.core.array.cummin.rst:2
 msgid "mlx.core.array.cummin"
-msgstr ""
+msgstr "mlx.core.array.cummin"
 
 #: ../../../docstring of mlx.core.array.cummin:1
 msgid "See :func:`cummin`."

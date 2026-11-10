@@ -38,7 +38,7 @@ msgstr "參數"
 
 #: ../../../docstring of mlx.core.divmod:7 mlx.core.divmod:9
 msgid "Input array or scalar."
-msgstr ""
+msgstr "輸入陣列或純量。"
 
 #: ../../../src/python/_autosummary/mlx.core.divmod.rst:0
 msgid "Returns"

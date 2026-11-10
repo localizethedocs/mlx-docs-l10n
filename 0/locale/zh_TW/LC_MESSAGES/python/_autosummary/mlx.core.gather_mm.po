@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../../src/python/_autosummary/mlx.core.gather_mm.rst:2
 msgid "mlx.core.gather\\_mm"
-msgstr ""
+msgstr "mlx.core.gather\\_mm"
 
 #: ../../../docstring of mlx.core.gather_mm:1
 msgid "Matrix multiplication with matrix-level gather."

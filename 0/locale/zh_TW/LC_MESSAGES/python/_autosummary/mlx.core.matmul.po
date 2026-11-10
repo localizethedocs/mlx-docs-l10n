@@ -58,7 +58,7 @@ msgstr "參數"
 
 #: ../../../docstring of mlx.core.matmul:16 mlx.core.matmul:18
 msgid "Input array or scalar."
-msgstr ""
+msgstr "輸入陣列或純量。"
 
 #: ../../../src/python/_autosummary/mlx.core.matmul.rst:0
 msgid "Returns"

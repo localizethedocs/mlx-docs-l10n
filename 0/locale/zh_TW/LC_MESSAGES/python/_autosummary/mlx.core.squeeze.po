@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../../src/python/_autosummary/mlx.core.squeeze.rst:2
 msgid "mlx.core.squeeze"
-msgstr ""
+msgstr "mlx.core.squeeze"
 
 #: ../../../docstring of mlx.core.squeeze:1
 msgid "Remove length one axes from an array."

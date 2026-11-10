@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../../src/python/_autosummary/mlx.core.conv3d.rst:2
 msgid "mlx.core.conv3d"
-msgstr ""
+msgstr "mlx.core.conv3d"
 
 #: ../../../docstring of mlx.core.conv3d:1
 msgid "3D convolution over an input with several channels"

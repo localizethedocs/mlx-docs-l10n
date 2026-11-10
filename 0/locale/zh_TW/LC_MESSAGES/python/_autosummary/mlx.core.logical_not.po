@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../../src/python/_autosummary/mlx.core.logical_not.rst:2
 msgid "mlx.core.logical\\_not"
-msgstr ""
+msgstr "mlx.core.logical\\_not"
 
 #: ../../../docstring of mlx.core.logical_not:1
 msgid "Element-wise logical not."
@@ -31,7 +31,7 @@ msgstr "參數"
 
 #: ../../../docstring of mlx.core.logical_not:3
 msgid "Input array or scalar."
-msgstr ""
+msgstr "輸入陣列或純量。"
 
 #: ../../../src/python/_autosummary/mlx.core.logical_not.rst:0
 msgid "Returns"

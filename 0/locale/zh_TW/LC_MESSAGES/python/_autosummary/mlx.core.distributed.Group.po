@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../../src/python/_autosummary/mlx.core.distributed.Group.rst:2
 msgid "mlx.core.distributed.Group"
-msgstr ""
+msgstr "mlx.core.distributed.Group"
 
 #: ../../../docstring of mlx.core.distributed.Group:1
 msgid ""
@@ -36,10 +36,12 @@ msgid ""
 ":py:obj:`__init__ <mlx.core.distributed.Group.__init__>`\\ \\(\\*args\\, "
 "\\*\\*kwargs\\)"
 msgstr ""
+":py:obj:`__init__ <mlx.core.distributed.Group.__init__>`\\ \\(\\*args\\, "
+"\\*\\*kwargs\\)"
 
 #: ../../../src/python/_autosummary/mlx.core.distributed.Group.rst:19:<autosummary>:1
 msgid ":py:obj:`rank <mlx.core.distributed.Group.rank>`\\ \\(self\\)"
-msgstr ""
+msgstr ":py:obj:`rank <mlx.core.distributed.Group.rank>`\\ \\(self\\)"
 
 #: ../../../src/python/_autosummary/mlx.core.distributed.Group.rst:19:<autosummary>:1
 msgid "Get the rank of this process"
@@ -47,7 +49,7 @@ msgstr ""
 
 #: ../../../src/python/_autosummary/mlx.core.distributed.Group.rst:19:<autosummary>:1
 msgid ":py:obj:`size <mlx.core.distributed.Group.size>`\\ \\(self\\)"
-msgstr ""
+msgstr ":py:obj:`size <mlx.core.distributed.Group.size>`\\ \\(self\\)"
 
 #: ../../../src/python/_autosummary/mlx.core.distributed.Group.rst:19:<autosummary>:1
 msgid "Get the size of the group"
@@ -58,6 +60,8 @@ msgid ""
 ":py:obj:`split <mlx.core.distributed.Group.split>`\\ \\(self\\, color\\[\\, "
 "key\\]\\)"
 msgstr ""
+":py:obj:`split <mlx.core.distributed.Group.split>`\\ \\(self\\, color\\[\\, "
+"key\\]\\)"
 
 #: ../../../src/python/_autosummary/mlx.core.distributed.Group.rst:19:<autosummary>:1
 msgid "Split the group to subgroups based on the provided color."

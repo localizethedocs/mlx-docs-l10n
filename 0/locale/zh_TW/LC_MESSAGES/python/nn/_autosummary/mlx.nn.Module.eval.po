@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../../src/python/nn/_autosummary/mlx.nn.Module.eval.rst:2
 msgid "mlx.nn.Module.eval"
-msgstr ""
+msgstr "mlx.nn.Module.eval"
 
 #: ../../../../../../.conda/lib/python3.12/site-packages/mlx/nn/layers/base.py:docstring
 #: of mlx.nn.layers.base.Module.eval:1

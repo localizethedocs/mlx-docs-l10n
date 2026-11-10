@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../../src/python/optimizers/_autosummary/mlx.optimizers.cosine_decay.rst:2
 msgid "mlx.optimizers.cosine\\_decay"
-msgstr ""
+msgstr "mlx.optimizers.cosine\\_decay"
 
 #: ../../../../../../.conda/lib/python3.12/site-packages/mlx/optimizers/schedulers.py:docstring
 #: of mlx.optimizers.schedulers.cosine_decay:1

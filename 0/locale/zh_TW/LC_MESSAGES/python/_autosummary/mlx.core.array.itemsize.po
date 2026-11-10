@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../../src/python/_autosummary/mlx.core.array.itemsize.rst:2
 msgid "mlx.core.array.itemsize"
-msgstr ""
+msgstr "mlx.core.array.itemsize"
 
 #: ../../../docstring of mlx.core.array.itemsize:1
 msgid "The size of the array's datatype in bytes."

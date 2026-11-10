@@ -44,7 +44,7 @@ msgstr "參數"
 
 #: ../../../docstring of mlx.core.view:10
 msgid "Input array or scalar."
-msgstr ""
+msgstr "輸入陣列或純量。"
 
 #: ../../../docstring of mlx.core.view:12
 msgid "The data type to change to."

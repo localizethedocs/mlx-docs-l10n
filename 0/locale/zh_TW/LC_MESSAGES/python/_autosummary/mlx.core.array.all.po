@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../../src/python/_autosummary/mlx.core.array.all.rst:2
 msgid "mlx.core.array.all"
-msgstr ""
+msgstr "mlx.core.array.all"
 
 #: ../../../docstring of mlx.core.array.all:1
 msgid "See :func:`all`."

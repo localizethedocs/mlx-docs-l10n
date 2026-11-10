@@ -99,7 +99,7 @@ msgstr ""
 
 #: ../../../src/python/nn/functions.rst:41:<autosummary>:1
 msgid "Applies the hardswish function, element-wise."
-msgstr "逐元素套用 hardswish 函式。"
+msgstr "逐元素套用 hardswish 函數。"
 
 #: ../../../src/python/nn/functions.rst:41:<autosummary>:1
 msgid ""

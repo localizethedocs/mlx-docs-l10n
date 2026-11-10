@@ -59,6 +59,17 @@ msgid ""
 "\n"
 "keys = cache[:, :offset]"
 msgstr ""
+"chunk = 256\n"
+"cache = mx.zeros((1, chunk, d))\n"
+"offset = 0\n"
+"for x in steps:\n"
+"    if offset == cache.shape[1]:\n"
+"        cache = mx.concatenate([cache, mx.zeros((1, chunk, d))], axis=1)\n"
+"    cache = mx.slice_update(cache, x, mx.array(offset), (1,))\n"
+"    offset += 1\n"
+"    mx.eval(cache)\n"
+"\n"
+"keys = cache[:, :offset]"
 
 #: ../../../src/usage/kv_cache.rst:35
 msgid ""
@@ -78,7 +89,7 @@ msgstr ""
 
 #: ../../../src/usage/kv_cache.rst:46
 msgid "Concatenate"
-msgstr ""
+msgstr "拼接"
 
 #: ../../../src/usage/kv_cache.rst:47
 msgid "Preallocate + update"
