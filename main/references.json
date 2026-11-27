@@ -37,9 +37,9 @@
     "branch" : "main",
     "commit" : 
     {
-      "date" : "2026-10-12 15:44:27 +0900",
-      "hash" : "388f227f466ef600243bcfce64181ad0d675c476",
-      "title" : "python: Make arctan2/radians/degrees support scalar inputs (#4679)"
+      "date" : "2026-10-26 19:23:47 +0900",
+      "hash" : "8329918163528f23bec5472c178419521c20ae2f",
+      "title" : "Cleanup metal quantized kernel instantiations (#4741)"
     }
   },
   "type" : "branch",
